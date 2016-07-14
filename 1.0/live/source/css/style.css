@@ -646,7 +646,7 @@ abbr {
   display: flex;
   transition: all 0.2s ease; }
   .c-block-media:hover .c-block-media__headline, .c-block-media:focus .c-block-media__headline {
-    color: #5C832F; }
+    color: #478ab8; }
   .c-block-media--small {
     font-size: 0.875rem; }
 
@@ -787,7 +787,7 @@ abbr {
  */
 .c-btn {
   display: inline-block;
-  background: #3b4a20;
+  background: #2d343d;
   color: #fff;
   line-height: 1;
   font-weight: bold;
@@ -800,7 +800,7 @@ abbr {
    * Disabled button
    */ }
   .c-btn:hover, .c-btn:focus {
-    background: #5C832F;
+    background: #478ab8;
     color: #fff; }
   .c-btn.disabled {
     background: #d9d9d9;
@@ -910,7 +910,7 @@ abbr {
 .c-footer {
   clear: both;
   overflow: hidden;
-  background: #3b4a20;
+  background: #2d343d;
   color: #fff;
   line-height: 1.2;
   padding: 1em 0; }
