@@ -1,9 +1,9 @@
 {
     "company" : {
-        "name" : "HikeTracker",
-        "url" : "http://hiketracker.com"
+        "name" : "App-Arena.com",
+        "url" : "https://www.app-arena.com"
     },
-    "title" : "Pattern Lab",
+    "title" : "Pattern Lab 123",
     "pageTitle": "Page Title",
     "htmlClass": "pl",
     "bodyClass": "body",
