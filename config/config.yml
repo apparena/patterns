@@ -32,4 +32,4 @@ lineageMatchKey: 2
 patternExtension: mustache
 mustacheHelperExt: helper.php
 styleguideKit: pattern-lab/styleguidekit-mustache-default
-styleguideKitPath: 'C:\Users\s.buckpesch\Projects\styleguide\vendor/pattern-lab/styleguidekit-mustache-default'
+styleguideKitPath: vendor/pattern-lab/styleguidekit-mustache-default
