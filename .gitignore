@@ -1,6 +1,6 @@
 .DS_Store
 export/*
-public/*
+# public/*
 source/styleguide/*
 
 # Created by .ignore support plugin (hsz.mobi)

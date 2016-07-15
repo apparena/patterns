@@ -20,6 +20,7 @@ publicDir: public
 sourceDir: source
 defaultPattern: all
 defaultShowPatternInfo: false
+baseDir: /var/www/html/
 plugins:
     reload:
         enabled: false
