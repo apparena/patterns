@@ -10,6 +10,7 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
                         MM                         6'     dP
                       .JMML.                       Ybmmmd'
 
+
 Pattern Lab doesn't have any CSS requirements, which means you can write your styles however you want. Hooray!
 You can use Sass, Less, vanilla CSS, or some other crazy thing I haven't heard of yet.
 So please don't use these styles. They're just here to put together the demo, and nothing more.
@@ -23,7 +24,6 @@ Atomic design is philosophically complimentary with these CSS approaches:
 * CSS Guidelines by Harry Roberts : https://github.com/csswizardry/CSS-Guidelines
 
 So feel free to use any of these approaches. Or don't. It's totally up to you.
-
 */
 /*------------------------------------*\
     $TABLE OF CONTENTS
@@ -787,7 +787,7 @@ abbr {
  */
 .c-btn {
   display: inline-block;
-  background: #3b4a21;
+  background: #2D343D;
   color: #fff;
   line-height: 1;
   font-weight: bold;
@@ -910,7 +910,7 @@ abbr {
 .c-footer {
   clear: both;
   overflow: hidden;
-  background: #3b4a21;
+  background: #2D343D;
   color: #fff;
   line-height: 1.2;
   padding: 1em 0; }

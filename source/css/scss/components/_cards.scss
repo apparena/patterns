@@ -1,0 +1,5 @@
+/* Custom bootstrap cards */
+
+.card-secondary {
+  @include card-variant($brand-secondary, $brand-secondary);
+}

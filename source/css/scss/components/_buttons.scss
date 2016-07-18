@@ -7,7 +7,7 @@
  */
 .c-btn {
 	display: inline-block;
-	background: $color-brand-green-dark;
+	background: $color-brand-blue-dark;
 	color: $color-white;
 	line-height: 1;
 	font-weight: bold;
@@ -18,7 +18,7 @@
 	transition: background 0.2s ease;
 
 	&:hover, &:focus {
-		background: $color-brand-light-blue;
+		background: $color-brand-blue-light;
 		color: $color-white;
 	}
 

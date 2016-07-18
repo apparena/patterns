@@ -1,0 +1,30 @@
+{
+  "name": "App-Arena Styleguide",
+  "version": "1.0.0",
+  "authors": [
+    "Sebastian Buckpesch <s.buckpesch@app-arena.com>"
+  ],
+  "description": "Styleguid including all components used for App-Arena Frontends",
+  "main": "index.php",
+  "keywords": [
+    "styleguide",
+    "coporate identity",
+    "ux",
+    "ui"
+  ],
+  "license": "Proprietary",
+  "homepage": "https://www.app-arena.com",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "^2.0.0",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.0.0"
+  }
+}

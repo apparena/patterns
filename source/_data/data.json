@@ -8,6 +8,7 @@
     "htmlClass": "pl",
     "bodyClass": "body",
     "btnText" : "Button",
+    "buttonClass" : "btn-default",
     "progress" : true,
     "max" : "100",
     "progressValue" : "85",
@@ -44,12 +45,19 @@
         "short" : "Lorem ipsum dolor sit (37 characters)",
         "medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit iopa. (76 characters)"
     },
+    "heading" : "Example heading",
+    "label" : "My label",
+    "cta": "Click me!",
     "sectionTitle" : "Section Title",
     "excerpt" : {
         "short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
         "medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "long" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
+    "listItem" : "Lorem ipsum dolor sit amet",
+    "listItemNested" : "Consectetur adipisicing elit",
+    "term" : "HTML",
+    "definition" : "Hypertext Markup Language",
     "number" : "12",
     "primaryNav" : [
         {
