@@ -1,245 +1,348 @@
 <!DOCTYPE html>
 <html class="pl">
-  <head>
+<head>
     <title>App-Arena.com Styleguide</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
-      <meta about="App-Arena.com">
-    
-    <link rel="stylesheet" href="../../css/style.css?1468626012" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1468626012" media="all" />
+    <meta name="viewport" content="width=device-width"/>
+    <meta about="App-Arena.com">
 
-      <link rel="stylesheet" href="../../css/bootstrap.css?1468626012" media="all" />
-      <link rel="stylesheet" href="../../css/bootstrap-theme.css?1468626012" media="all" />
-      
-      <script src="../../js/vendor/jquery.min.js" ></script>
-      <script src="../../js/bootstrap.js" ></script>
-    
+    <link rel="stylesheet" href="../../css/style.css?1468853823" media="all"/>
+    <link rel="stylesheet" href="../../css/app-arena-styles.css?1468853823" media="all"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1468853823" media="all"/>
+
+    <!--<link rel="stylesheet" href="../../css/bootstrap.css?1468853823" media="all"/>
+    <link rel="stylesheet" href="../../css/bootstrap-theme.css?1468853823" media="all"/>-->
+
+    <script src="../../js/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../../js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     
     <!-- End Pattern Lab -->
-  
-  </head>
-  <body class="body">
-    
+
+</head>
+<body class="body">
+
 <!-- View All Patterns in a Pattern Sub-Type -->
 <div class="sg-main" role="main">
   
   <!-- Patterns -->
   <div id="sg-patterns">
-        <div id="viewall-atoms-global" class="sg-pattern-category">
-          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-01-global/index.html" class="patternLink" data-patternpartial="viewall-atoms-global">global</a></h2>
+        <div id="viewall-atoms-atoms" class="sg-pattern-category">
+          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-00-atoms/index.html" class="patternLink" data-patternpartial="viewall-atoms-atoms">atoms</a></h2>
         
           <div class="sg-pattern-category-body">
-            <p>The global category defines visual elements such as color, font families, and motion. While not technically UI components, these elements are critical to document in the pattern library.</p>
+            <h3>Atoms</h3>
+
+<p>Read about <a href="http://bradfrost.com/blog/post/atomic-web-design/#atoms">atoms</a></p>
+
+<p>Atoms are the basic building blocks of matter. Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button.</p>
+
+<p>Atoms can also include more abstract elements like color palettes, fonts and even more invisible aspects of an interface like animations.</p>
+
+<p>Like atoms in nature they’re fairly abstract and often not terribly useful on their own. However, they’re good as a reference in the context of a pattern library as you can see all your global styles laid out at a glance.</p>
 
           </div><!--end sg-pattern-category-body-->
           
         </div><!--end sg-pattern-category-->
-        <div id="atoms-brand-colors" class="sg-pattern">
+        <div id="viewall-atoms-global" class="sg-pattern-category">
+          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-01-global/index.html" class="patternLink" data-patternpartial="viewall-atoms-global">global</a></h2>
+        
+          <div class="sg-pattern-category-body">
+            <p>The global category defines visual elements such as logos, color, font families, and motion. 
+While not technically UI components, these elements are critical to document in the pattern library.</p>
+
+          </div><!--end sg-pattern-category-body-->
+          
+        </div><!--end sg-pattern-category-->
+        <div id="atoms-logo" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-00-global-00-brand-colors@inprogress/00-atoms-00-global-00-brand-colors@inprogress.html" class="patternLink" data-patternpartial="atoms-brand-colors" title="Link to Pattern">
-                  Brand Colors 123
+              <a href="../../patterns/00-atoms-01-global-00-logo@inprogress/00-atoms-01-global-00-logo@inprogress.html" class="patternLink" data-patternpartial="atoms-logo" title="Link to Pattern">
+                  Logo Image
                     <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-brand-colors" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-brand-colors" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+            <a href="#" data-patternpartial="atoms-logo" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-logo" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
           </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-brand-colors">
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-logo">
             
           </div>
           <div class="sg-pattern-example">
-            <ul class="sg-colors">
-		<li>
-		<span class="sg-swatch" style="background: #478AB8"></span>
-		<span class="sg-label">
-			$color-brand-blue <br />
-			#478AB8
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #3b4a20;"></span>
-		<span class="sg-label">
-			$color-brand-green-dark <br />
-			#3b4a20
-		</span>
-	</li>
-</ul>
+            <img src="../../images/logo.svg" class="c-logo " alt="App-Arena.com" />
 
+
+<img src="../../images/logo-reversed.svg" class="c-logo " alt="App-Arena.com" />
           </div>
-          <script type="text/json" id="sg-pattern-data-atoms-brand-colors" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"<p>This color palette contains HikeTracker-specific colors to be used throughout the interface.<\/p>\n","patternExtension":"mustache","patternName":"Brand Colors 123","patternPartial":"atoms-brand-colors","patternState":"inprogress"}
+          <script type="text/json" id="sg-pattern-data-atoms-logo" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[{"lineagePattern":"templates-form","lineagePath":"..\/..\/patterns\/03-templates-form\/03-templates-form.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"<p>The company logo, rules regarding the logo and variations of the logo in different contexts<\/p>\n","patternExtension":"mustache","patternName":"Logo Image","patternPartial":"atoms-logo","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
-        <div id="atoms-neutral-colors" class="sg-pattern">
+        <div id="atoms-colors" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-00-global-01-neutral-colors/00-atoms-00-global-01-neutral-colors.html" class="patternLink" data-patternpartial="atoms-neutral-colors" title="Link to Pattern">
-                  Neutral Colors
+              <a href="../../patterns/00-atoms-01-global-01-colors@inprogress/00-atoms-01-global-01-colors@inprogress.html" class="patternLink" data-patternpartial="atoms-colors" title="Link to Pattern">
+                  Brand Colors
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-neutral-colors" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-neutral-colors" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+            <a href="#" data-patternpartial="atoms-colors" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-colors" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
           </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-neutral-colors">
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-colors">
             
           </div>
           <div class="sg-pattern-example">
-            <ul class="sg-colors">
-	<li>
-		<span class="sg-swatch" style="background: #ffffff;"></span>
-		<span class="sg-label">
-            $color-white <br />
-            #ffffff
-        </span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #f7f9f9;"></span>
-		<span class="sg-label">
-			$color-gray-02 <br />
-			#f7f9f9
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #d9d9d9;"></span>
-		<span class="sg-label">
-			$color-gray-15 <br />
-			#d9d9d9
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #a5a5a5;"></span>
-		<span class="sg-label">
-			$color-gray-35 <br />
-			#a5a5a5
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #808080;"></span>
-		<span class="sg-label">
-			$color-gray-50 <br />
-			#808080
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #595959;"></span>
-		<span class="sg-label">
-			$color-gray-65 <br />
-			#595959
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #444444;"></span>
-		<span class="sg-label">
-			$color-gray-73 <br />
-			#444444
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #222222;"></span>
-		<span class="sg-label">
-			$color-gray-87 <br />
-			#222222
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #000000;"></span>
-		<span class="sg-label">
-			$color-black <br />
-			#000000
-		</span>
-	</li>
-</ul>
+            <h5>Primary colors</h5>
 
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-neutral-colors" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"<p>The neutral color palette contains grayscale values that are used throughout the interface. For great tips about color in design systems, check out <a href=\"https:\/\/medium.com\/eightshapes-llc\/color-in-design-systems-a1c80f65fa3\">this post<\/a> by Nathan Curtis.<\/p>\n","patternExtension":"mustache","patternName":"Neutral Colors","patternPartial":"atoms-neutral-colors","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-utility-colors" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-00-global-02-utility-colors/00-atoms-00-global-02-utility-colors.html" class="patternLink" data-patternpartial="atoms-utility-colors" title="Link to Pattern">
-                  Utility Colors
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-utility-colors" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-utility-colors" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-utility-colors">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <ul class="sg-colors">
-	<li>
-		<span class="sg-swatch" style="background: #03804d;"></span>
-		<span class="sg-label">
-            $color-utility-positive <br />
-            #03804d
-        </span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #d4f3e6;"></span>
-		<span class="sg-label">
-			$color-utility-positive-subtle <br />
-			#d4f3e6
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #a59b15;"></span>
-		<span class="sg-label">
-			$color-utility-caution <br />
-			#a59b15
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #fffecf;"></span>
-		<span class="sg-label">
-			$color-utility-caution-subtle <br />
-			#fffecf
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #b12a0b;"></span>
-		<span class="sg-label">
-			$color-utility-negative <br />
-			#b12a0b
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #fdded8;"></span>
-		<span class="sg-label">
-			$color-utility-negative-subtle <br />
-			#fdded8
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #0192d0;"></span>
-		<span class="sg-label">
-			$color-utility-neutral <br />
-			#0192d0
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #d3f2ff;"></span>
-		<span class="sg-label">
-			$color-utility-neutral-subtle <br />
-			#d3f2ff
-		</span>
-	</li>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card card-inverse card-primary text-xs-center">
+            <div class="card-block">
+                <h3 class="card-title">$brand-primary</h3>
+                <blockquote class="card-blockquote">
+                    <p>#478AB8</p>
+                    <footer>
+                        THIS COLOR IS USED FOR XXXXXXXXXXXXXXXXXX???
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-inverse card-secondary text-xs-center">
+            <div class="card-block">
+                <h3 class="card-title">$brand-secondary</h3>
+                <blockquote class="card-blockquote">
+                    <p>#2D343D</p>
+                    <footer>THIS COLOR IS USED FOR XXXXXXXXXXXXXXXXXX???</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-background text-xs-center">
+            <div class="card-block">
+                <h3 class="card-title">$brand-background</h3>
+                <blockquote class="card-blockquote">
+                    <p>#FFFFFF</p>
+                    <footer>THIS COLOR IS USED FOR XXXXXXXXXXXXXXXXXX</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h5>Secondary colors</h5>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card card-inverse card-success text-xs-center">
+            <div class="card-block">
+                <h3 class="card-title">$brand-success</h3>
+                <blockquote class="card-blockquote">
+                    <p>#??????</p>
+                    <footer>
+                        THIS COLOR IS USED FOR XXXXXXXXXXXXXXXXXX???
+                        <ul>
+                            <li>...</li>
+                            <li>...</li>
+                        </ul>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-inverse card-info text-xs-center">
+            <div class="card-block">
+                <h3 class="card-title">$brand-info</h3>
+                <blockquote class="card-blockquote">
+                    <p>#??????</p>
+                    <footer>
+                        THIS COLOR IS USED FOR XXXXXXXXXXXXXXXXXX???
+                        <ul>
+                            <li>...</li>
+                        </ul>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-inverse card-warning text-xs-center">
+            <div class="card-block">
+                <h3 class="card-title">$brand-warning</h3>
+                <blockquote class="card-blockquote">
+                    <p>#??????</p>
+                    <footer>
+                        THIS COLOR IS USED FOR XXXXXXXXXXXXXXXXXX???
+                        <ul>
+                            <li>...</li>
+                        </ul>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-inverse card-danger text-xs-center">
+            <div class="card-block">
+                <h3 class="card-title">$brand-danger</h3>
+                <blockquote class="card-blockquote">
+                    <p>#??????</p>
+                    <footer>
+                        THIS COLOR IS USED FOR XXXXXXXXXXXXXXXXXX???
+                        <ul>
+                            <li>...</li>
+                        </ul>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h5>Color variations</h5>
+
+<ul class="sg-colors">
+    <li>
+        <span class="sg-swatch" style="background: #222;"></span>
+        <span class="sg-label">#222</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #333;"></span>
+        <span class="sg-label">#333</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #555;"></span>
+        <span class="sg-label">#555</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #777;"></span>
+        <span class="sg-label">#777</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #eee;"></span>
+        <span class="sg-label">#eee</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #337ab7;"></span>
+        <span class="sg-label">#337ab7</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #5cb85c;"></span>
+        <span class="sg-label">#5cb85c</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #5bc0de;"></span>
+        <span class="sg-label">#5bc0de</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #f0ad4e;"></span>
+        <span class="sg-label">#f0ad4e</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #d9534f;"></span>
+        <span class="sg-label">#d9534f</span>
+    </li>
+</ul>
+<ul class="sg-colors">
+    <li>
+        <span class="sg-swatch" style="background: #222;"></span>
+        <span class="sg-label">#222</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #333;"></span>
+        <span class="sg-label">#333</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #555;"></span>
+        <span class="sg-label">#555</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #777;"></span>
+        <span class="sg-label">#777</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #eee;"></span>
+        <span class="sg-label">#eee</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #337ab7;"></span>
+        <span class="sg-label">#337ab7</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #5cb85c;"></span>
+        <span class="sg-label">#5cb85c</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #5bc0de;"></span>
+        <span class="sg-label">#5bc0de</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #f0ad4e;"></span>
+        <span class="sg-label">#f0ad4e</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #d9534f;"></span>
+        <span class="sg-label">#d9534f</span>
+    </li>
+</ul>
+<ul class="sg-colors">
+    <li>
+        <span class="sg-swatch" style="background: #222;"></span>
+        <span class="sg-label">#222</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #333;"></span>
+        <span class="sg-label">#333</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #555;"></span>
+        <span class="sg-label">#555</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #777;"></span>
+        <span class="sg-label">#777</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #eee;"></span>
+        <span class="sg-label">#eee</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #337ab7;"></span>
+        <span class="sg-label">#337ab7</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #5cb85c;"></span>
+        <span class="sg-label">#5cb85c</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #5bc0de;"></span>
+        <span class="sg-label">#5bc0de</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #f0ad4e;"></span>
+        <span class="sg-label">#f0ad4e</span>
+    </li>
+    <li>
+        <span class="sg-swatch" style="background: #d9534f;"></span>
+        <span class="sg-label">#d9534f</span>
+    </li>
 </ul>
           </div>
-          <script type="text/json" id="sg-pattern-data-atoms-utility-colors" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"<p>The utility color palette defines colors that are used to convey meaning such as success, error, warning, and information to the user. These colors should be used for things like alert messages, form validation, tooltips, and other kinds of messaging.<\/p>\n","patternExtension":"mustache","patternName":"Utility Colors","patternPartial":"atoms-utility-colors","patternState":""}
+          <script type="text/json" id="sg-pattern-data-atoms-colors" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"<p>This color palette contains App-Arena primary colors, which dominate all user interfaces.<\/p>\n\n<p>The neutral color palette contains grayscale values that are used throughout the interface. \nFor great tips about color in design systems, check out\n <a href=\"https:\/\/medium.com\/eightshapes-llc\/color-in-design-systems-a1c80f65fa3\">this post<\/a> by Nathan Curtis.<\/p>\n","patternExtension":"mustache","patternName":"Brand Colors","patternPartial":"atoms-colors","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-fonts" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-00-global-03-fonts/00-atoms-00-global-03-fonts.html" class="patternLink" data-patternpartial="atoms-fonts" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-01-global-03-fonts@inprogress/00-atoms-01-global-03-fonts@inprogress.html" class="patternLink" data-patternpartial="atoms-fonts" title="Link to Pattern">
                   Fonts
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -258,14 +361,15 @@
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-fonts" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Fonts","patternPartial":"atoms-fonts","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"<p>These fonts that are used on the site.<\/p>\n","patternExtension":"mustache","patternName":"Fonts","patternPartial":"atoms-fonts","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-animations" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-00-global-04-animations/00-atoms-00-global-04-animations.html" class="patternLink" data-patternpartial="atoms-animations" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-01-global-04-animations@inprogress/00-atoms-01-global-04-animations@inprogress.html" class="patternLink" data-patternpartial="atoms-animations" title="Link to Pattern">
                   Animations
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -279,72 +383,11 @@
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-animations" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"<p>This is a demo of the animations that are being used on the page.<\/p>\n","patternExtension":"mustache","patternName":"Animations","patternPartial":"atoms-animations","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-colors" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-01-global-00-colors/00-atoms-01-global-00-colors.html" class="patternLink" data-patternpartial="atoms-colors" title="Link to Pattern">
-                  Colors
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-colors" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-colors" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-colors">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <ul class="sg-colors">
-	<li>
-		<span class="sg-swatch" style="background: #222;"></span>
-		<span class="sg-label">#222</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #333;"></span>
-		<span class="sg-label">#333</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #555;"></span>
-		<span class="sg-label">#555</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #777;"></span>
-		<span class="sg-label">#777</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #eee;"></span>
-		<span class="sg-label">#eee</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #337ab7;"></span>
-		<span class="sg-label">#337ab7</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #5cb85c;"></span>
-		<span class="sg-label">#5cb85c</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #5bc0de;"></span>
-		<span class="sg-label">#5bc0de</span>
-	</li>
-		<li>
-		<span class="sg-swatch" style="background: #f0ad4e;"></span>
-		<span class="sg-label">#f0ad4e</span>
-	</li>
-		<li>
-		<span class="sg-swatch" style="background: #d9534f;"></span>
-		<span class="sg-label">#d9534f</span>
-	</li>
-</ul>
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-colors" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Colors","patternPartial":"atoms-colors","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternDesc":"<p>This is a demo of the animations that are being used on the page.<\/p>\n","patternExtension":"mustache","patternName":"Animations","patternPartial":"atoms-animations","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="viewall-atoms-text" class="sg-pattern-category">
-          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-text/index.html" class="patternLink" data-patternpartial="viewall-atoms-text">text</a></h2>
+          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-02-text/index.html" class="patternLink" data-patternpartial="viewall-atoms-text">text</a></h2>
         
           <div class="sg-pattern-category-body">
             
@@ -373,7 +416,7 @@
 <h6>Heading Level 6</h6>
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-headings" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Headings","patternPartial":"atoms-headings","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Headings","patternPartial":"atoms-headings","patternState":""}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-paragraph" class="sg-pattern">
@@ -393,7 +436,7 @@
             <p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-paragraph" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Paragraph","patternPartial":"atoms-paragraph","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Paragraph","patternPartial":"atoms-paragraph","patternState":""}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-blockquote" class="sg-pattern">
@@ -475,7 +518,7 @@
 </div><!--end .text-->
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-inline-elements" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Inline Elements","patternPartial":"atoms-inline-elements","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Inline Elements","patternPartial":"atoms-inline-elements","patternState":""}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-time" class="sg-pattern">
@@ -523,50 +566,7 @@ p q r s t u v w x y z { | } ~
 </pre>
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-preformatted-text" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Preformatted Text","patternPartial":"atoms-preformatted-text","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-hr" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-02-text-06-hr/00-atoms-02-text-06-hr.html" class="patternLink" data-patternpartial="atoms-hr" title="Link to Pattern">
-                  Horizontal Rule
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-hr" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-hr" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-hr">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <hr />
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-hr" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Horizontal Rule","patternPartial":"atoms-hr","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-page-header" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-02-text-07-page-header/00-atoms-02-text-07-page-header.html" class="patternLink" data-patternpartial="atoms-page-header" title="Link to Pattern">
-                  Page Header
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-page-header" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-page-header" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-page-header">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <div class="page-header">
-	<h1> <small></small></h1>
-</div>
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-page-header" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"<p>A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles).<\/p>\n","patternExtension":"mustache","patternName":"Page Header","patternPartial":"atoms-page-header","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"text"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Preformatted Text","patternPartial":"atoms-preformatted-text","patternState":""}
           </script>
         </div><!--end .sg-pattern-->
         <div id="viewall-atoms-lists" class="sg-pattern-category">
@@ -593,16 +593,16 @@ p q r s t u v w x y z { | } ~
           <div class="sg-pattern-example">
             <div class="text">
 	<ul>
-		<li></li>
-		<li></li>
+		<li>Lorem ipsum dolor sit amet</li>
+		<li>Lorem ipsum dolor sit amet</li>
 		<li>
-			
+			Lorem ipsum dolor sit amet
 			<ul>
-				<li></li>
-				<li></li>
+				<li>Consectetur adipisicing elit</li>
+				<li>Consectetur adipisicing elit</li>
 			</ul>
 		</li>
-		<li></li>
+		<li>Lorem ipsum dolor sit amet</li>
 	</ul>
 </div>
           </div>
@@ -626,16 +626,16 @@ p q r s t u v w x y z { | } ~
           <div class="sg-pattern-example">
             <div class="text">
 	<ol>
-		<li></li>
-		<li></li>
+		<li>Lorem ipsum dolor sit amet</li>
+		<li>Lorem ipsum dolor sit amet</li>
 		<li>
-			
+			Lorem ipsum dolor sit amet
 			<ol>
-				<li></li>
-				<li></li>
+				<li>Consectetur adipisicing elit</li>
+				<li>Consectetur adipisicing elit</li>
 			</ol>
 		</li>
-		<li></li>
+		<li>Lorem ipsum dolor sit amet</li>
 	</ol>
 </div>
           </div>
@@ -646,8 +646,9 @@ p q r s t u v w x y z { | } ~
         <div id="atoms-definition" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-03-lists-02-definition/00-atoms-03-lists-02-definition.html" class="patternLink" data-patternpartial="atoms-definition" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-03-lists-02-definition@inprogress/00-atoms-03-lists-02-definition@inprogress.html" class="patternLink" data-patternpartial="atoms-definition" title="Link to Pattern">
                   Definition
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -658,16 +659,16 @@ p q r s t u v w x y z { | } ~
           </div>
           <div class="sg-pattern-example">
             <dl>
-	<dt></dt>
-	<dd></dd>
+	<dt>HTML</dt>
+	<dd>Hypertext Markup Language</dd>
 </dl>
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-definition" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"lists"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Definition","patternPartial":"atoms-definition","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"lists"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Definition","patternPartial":"atoms-definition","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="viewall-atoms-forms" class="sg-pattern-category">
-          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-forms/index.html" class="patternLink" data-patternpartial="viewall-atoms-forms">forms</a></h2>
+          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-04-forms/index.html" class="patternLink" data-patternpartial="viewall-atoms-forms">forms</a></h2>
         
           <div class="sg-pattern-category-body">
             
@@ -677,8 +678,9 @@ p q r s t u v w x y z { | } ~
         <div id="atoms-input" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-04-forms-00-input/00-atoms-04-forms-00-input.html" class="patternLink" data-patternpartial="atoms-input" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-04-forms-00-input@inprogress/00-atoms-04-forms-00-input@inprogress.html" class="patternLink" data-patternpartial="atoms-input" title="Link to Pattern">
                   Input
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -696,11 +698,127 @@ p q r s t u v w x y z { | } ~
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-input" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[{"lineagePattern":"molecules-input-groups","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-00-input-groups\/01-molecules-02-forms-00-input-groups.html","lineageState":"inprogress"},{"lineagePattern":"molecules-input-groups-checkbox","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-02-input-groups-checkbox\/01-molecules-02-forms-02-input-groups-checkbox.html","lineageState":"inprogress"},{"lineagePattern":"molecules-input-groups-radio","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-03-input-groups-radio\/01-molecules-02-forms-03-input-groups-radio.html","lineageState":"inprogress"},{"lineagePattern":"molecules-input-groups-button","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-04-input-groups-button\/01-molecules-02-forms-04-input-groups-button.html","lineageState":"inprogress"},{"lineagePattern":"organisms-input-groups-dropdown","lineagePath":"..\/..\/patterns\/02-organisms-01-forms-00-input-groups-dropdown\/02-organisms-01-forms-00-input-groups-dropdown.html","lineageState":"inprogress"},{"lineagePattern":"organisms-input-groups-segmented","lineagePath":"..\/..\/patterns\/02-organisms-01-forms-01-input-groups-segmented\/02-organisms-01-forms-01-input-groups-segmented.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Input","patternPartial":"atoms-input","patternState":""}
+            {"lineage":[],"lineageR":[{"lineagePattern":"molecules-input-groups","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-00-input-groups@inprogress\/01-molecules-02-forms-00-input-groups@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"molecules-input-groups-checkbox","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-02-input-groups-checkbox@inprogress\/01-molecules-02-forms-02-input-groups-checkbox@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"molecules-input-groups-radio","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-03-input-groups-radio@inprogress\/01-molecules-02-forms-03-input-groups-radio@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"molecules-input-groups-button","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-04-input-groups-button@inprogress\/01-molecules-02-forms-04-input-groups-button@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"organisms-input-groups-dropdown","lineagePath":"..\/..\/patterns\/02-organisms-04-forms-00-input-groups-dropdown\/02-organisms-04-forms-00-input-groups-dropdown.html","lineageState":"inprogress"},{"lineagePattern":"organisms-input-groups-segmented","lineagePath":"..\/..\/patterns\/02-organisms-04-forms-01-input-groups-segmented\/02-organisms-04-forms-01-input-groups-segmented.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Input","patternPartial":"atoms-input","patternState":"inprogress"}
+          </script>
+        </div><!--end .sg-pattern-->
+        <div id="atoms-text-field" class="sg-pattern">
+          <div class="sg-pattern-head">
+            <h3 class="sg-pattern-title">
+              <a href="../../patterns/00-atoms-04-forms-00-text-field@inprogress/00-atoms-04-forms-00-text-field@inprogress.html" class="patternLink" data-patternpartial="atoms-text-field" title="Link to Pattern">
+                  Text Field
+                    <span class="sg-pattern-state inprogress">inprogress</span>
+              </a>
+            </h3>
+            <div class="sg-pattern-breadcrumb"></div>
+            <a href="#" data-patternpartial="atoms-text-field" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-text-field" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+          </div>
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-text-field">
+            
+          </div>
+          <div class="sg-pattern-example">
+            <input id="text" type="text" placeholder="Text Input">
+
+          </div>
+          <script type="text/json" id="sg-pattern-data-atoms-text-field" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Text Field","patternPartial":"atoms-text-field","patternState":"inprogress"}
+          </script>
+        </div><!--end .sg-pattern-->
+        <div id="atoms-text-area" class="sg-pattern">
+          <div class="sg-pattern-head">
+            <h3 class="sg-pattern-title">
+              <a href="../../patterns/00-atoms-04-forms-01-text-area@inprogress/00-atoms-04-forms-01-text-area@inprogress.html" class="patternLink" data-patternpartial="atoms-text-area" title="Link to Pattern">
+                  Text Area
+                    <span class="sg-pattern-state inprogress">inprogress</span>
+              </a>
+            </h3>
+            <div class="sg-pattern-breadcrumb"></div>
+            <a href="#" data-patternpartial="atoms-text-area" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-text-area" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+          </div>
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-text-area">
+            
+          </div>
+          <div class="sg-pattern-example">
+            <textarea placeholder="Text area"></textarea>
+
+          </div>
+          <script type="text/json" id="sg-pattern-data-atoms-text-area" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Text Area","patternPartial":"atoms-text-area","patternState":"inprogress"}
+          </script>
+        </div><!--end .sg-pattern-->
+        <div id="atoms-select-menu" class="sg-pattern">
+          <div class="sg-pattern-head">
+            <h3 class="sg-pattern-title">
+              <a href="../../patterns/00-atoms-04-forms-02-select-menu@inprogress/00-atoms-04-forms-02-select-menu@inprogress.html" class="patternLink" data-patternpartial="atoms-select-menu" title="Link to Pattern">
+                  Select Menu
+                    <span class="sg-pattern-state inprogress">inprogress</span>
+              </a>
+            </h3>
+            <div class="sg-pattern-breadcrumb"></div>
+            <a href="#" data-patternpartial="atoms-select-menu" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-select-menu" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+          </div>
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-select-menu">
+            
+          </div>
+          <div class="sg-pattern-example">
+            <select id="select">
+    <optgroup label="Select">
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+    </optgroup>
+</select>
+
+          </div>
+          <script type="text/json" id="sg-pattern-data-atoms-select-menu" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Select Menu","patternPartial":"atoms-select-menu","patternState":"inprogress"}
+          </script>
+        </div><!--end .sg-pattern-->
+        <div id="atoms-radio-button" class="sg-pattern">
+          <div class="sg-pattern-head">
+            <h3 class="sg-pattern-title">
+              <a href="../../patterns/00-atoms-04-forms-03-radio-button@inprogress/00-atoms-04-forms-03-radio-button@inprogress.html" class="patternLink" data-patternpartial="atoms-radio-button" title="Link to Pattern">
+                  Radio Button
+                    <span class="sg-pattern-state inprogress">inprogress</span>
+              </a>
+            </h3>
+            <div class="sg-pattern-breadcrumb"></div>
+            <a href="#" data-patternpartial="atoms-radio-button" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-radio-button" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+          </div>
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-radio-button">
+            
+          </div>
+          <div class="sg-pattern-example">
+            <input type="radio" checked="checked" />
+
+          </div>
+          <script type="text/json" id="sg-pattern-data-atoms-radio-button" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Radio Button","patternPartial":"atoms-radio-button","patternState":"inprogress"}
+          </script>
+        </div><!--end .sg-pattern-->
+        <div id="atoms-checkbox" class="sg-pattern">
+          <div class="sg-pattern-head">
+            <h3 class="sg-pattern-title">
+              <a href="../../patterns/00-atoms-04-forms-04-checkbox@inprogress/00-atoms-04-forms-04-checkbox@inprogress.html" class="patternLink" data-patternpartial="atoms-checkbox" title="Link to Pattern">
+                  Checkbox
+                    <span class="sg-pattern-state inprogress">inprogress</span>
+              </a>
+            </h3>
+            <div class="sg-pattern-breadcrumb"></div>
+            <a href="#" data-patternpartial="atoms-checkbox" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-checkbox" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+          </div>
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-checkbox">
+            
+          </div>
+          <div class="sg-pattern-example">
+            <input type="checkbox" checked="checked" />
+
+          </div>
+          <script type="text/json" id="sg-pattern-data-atoms-checkbox" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Checkbox","patternPartial":"atoms-checkbox","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="viewall-atoms-buttons" class="sg-pattern-category">
-          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-buttons/index.html" class="patternLink" data-patternpartial="viewall-atoms-buttons">buttons</a></h2>
+          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-05-buttons/index.html" class="patternLink" data-patternpartial="viewall-atoms-buttons">buttons</a></h2>
         
           <div class="sg-pattern-category-body">
             
@@ -721,11 +839,32 @@ p q r s t u v w x y z { | } ~
             
           </div>
           <div class="sg-pattern-example">
-            <button type="button" class="btn "></button>
- 
+            <h5>Default buttons</h5>
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+<!-- Secondary, outline button -->
+<button type="button" class="btn btn-secondary">Secondary</button>
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Success</button>
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info</button>
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Warning</button>
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Danger</button>
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">Link</button>
+
+<h5>Outline buttons</h5>
+<button type="button" class="btn btn-primary-outline">Primary</button>
+<button type="button" class="btn btn-secondary-outline">Secondary</button>
+<button type="button" class="btn btn-success-outline">Success</button>
+<button type="button" class="btn btn-info-outline">Info</button>
+<button type="button" class="btn btn-warning-outline">Warning</button>
+<button type="button" class="btn btn-danger-outline">Danger</button>
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-button" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[{"lineagePattern":"molecules-input-groups-button","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-04-input-groups-button\/01-molecules-02-forms-04-input-groups-button.html","lineageState":"inprogress"},{"lineagePattern":"molecules-button-dropdown-split","lineagePath":"..\/..\/patterns\/01-molecules-03-navigation-03-button-dropdown-split\/01-molecules-03-navigation-03-button-dropdown-split.html","lineageState":"inprogress"},{"lineagePattern":"molecules-button-dropup","lineagePath":"..\/..\/patterns\/01-molecules-03-navigation-05-button-dropup\/01-molecules-03-navigation-05-button-dropup.html","lineageState":"inprogress"},{"lineagePattern":"molecules-navbar-form","lineagePath":"..\/..\/patterns\/01-molecules-03-navigation-17-navbar-form\/01-molecules-03-navigation-17-navbar-form.html","lineageState":"inprogress"},{"lineagePattern":"molecules-button-groups","lineagePath":"..\/..\/patterns\/01-molecules-04-components-00-button-groups\/01-molecules-04-components-00-button-groups.html","lineageState":"inprogress"},{"lineagePattern":"organisms-input-groups-segmented","lineagePath":"..\/..\/patterns\/02-organisms-01-forms-01-input-groups-segmented\/02-organisms-01-forms-01-input-groups-segmented.html","lineageState":"inprogress"},{"lineagePattern":"organisms-stacked-form","lineagePath":"..\/..\/patterns\/02-organisms-forms-stacked-form\/02-organisms-forms-stacked-form.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"buttons"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Button","patternPartial":"atoms-button","patternState":""}
+            {"lineage":[],"lineageR":[{"lineagePattern":"molecules-input-groups-button","lineagePath":"..\/..\/patterns\/01-molecules-02-forms-04-input-groups-button@inprogress\/01-molecules-02-forms-04-input-groups-button@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"molecules-button-dropdown-split","lineagePath":"..\/..\/patterns\/01-molecules-03-navigation-03-button-dropdown-split@inprogress\/01-molecules-03-navigation-03-button-dropdown-split@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"molecules-button-dropup","lineagePath":"..\/..\/patterns\/01-molecules-03-navigation-05-button-dropup@inprogress\/01-molecules-03-navigation-05-button-dropup@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"molecules-navbar-form","lineagePath":"..\/..\/patterns\/01-molecules-03-navigation-17-navbar-form@inprogress\/01-molecules-03-navigation-17-navbar-form@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"molecules-button-groups","lineagePath":"..\/..\/patterns\/01-molecules-04-components-00-button-groups\/01-molecules-04-components-00-button-groups.html","lineageState":"inprogress"},{"lineagePattern":"organisms-input-groups-segmented","lineagePath":"..\/..\/patterns\/02-organisms-04-forms-01-input-groups-segmented\/02-organisms-04-forms-01-input-groups-segmented.html","lineageState":"inprogress"},{"lineagePattern":"organisms-stacked-form","lineagePath":"..\/..\/patterns\/02-organisms-04-forms-stacked-form\/02-organisms-04-forms-stacked-form.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"buttons"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Button","patternPartial":"atoms-button","patternState":""}
           </script>
         </div><!--end .sg-pattern-->
         <div id="viewall-atoms-tables" class="sg-pattern-category">
@@ -739,8 +878,9 @@ p q r s t u v w x y z { | } ~
         <div id="atoms-table" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-06-tables-00-table/00-atoms-06-tables-00-table.html" class="patternLink" data-patternpartial="atoms-table" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-06-tables-00-table@inprogress/00-atoms-06-tables-00-table@inprogress.html" class="patternLink" data-patternpartial="atoms-table" title="Link to Pattern">
                   Table
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -753,7 +893,7 @@ p q r s t u v w x y z { | } ~
              
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-table" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"tables"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Table","patternPartial":"atoms-table","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"tables"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Table","patternPartial":"atoms-table","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="viewall-atoms-media" class="sg-pattern-category">
@@ -764,34 +904,12 @@ p q r s t u v w x y z { | } ~
           </div><!--end sg-pattern-category-body-->
           
         </div><!--end sg-pattern-category-->
-        <div id="atoms-badges" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-07-media-00-badges/00-atoms-07-media-00-badges.html" class="patternLink" data-patternpartial="atoms-badges" title="Link to Pattern">
-                  Badges
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-badges" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-badges" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-badges">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <span class="badge"></span>
-
-
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-badges" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[{"lineagePattern":"molecules-list-group","lineagePath":"..\/..\/patterns\/01-molecules-06-list-groups-03-list-group\/01-molecules-06-list-groups-03-list-group.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>Easily highlight new or unread items by adding a <span class=\"badge\"> to links, Bootstrap navs, and more.<\/p>\n\n<h4>Self collapsing<\/h4>\n\n<p>When there are no new or unread items, badges will simply collapse (via CSS's <code>:empty<\/code> selector) provided no content exists within.<\/p>\n\n<div class=\"bs-callout bs-callout-danger\" id=\"callout-badges-ie8-empty\">\n    <h4>Cross-browser compatibility<\/h4>\n    <p>Badges won't self collapse in Internet Explorer 8 because it lacks support for the <code>:empty<\/code> selector.<\/p>\n<\/div>\n\n<h4>Adapts to active nav states<\/h4>\n\n<p>Built-in styles are included for placing badges in active states in pill navigations.<\/p>\n","patternExtension":"mustache","patternName":"Badges","patternPartial":"atoms-badges","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
         <div id="atoms-labels" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-07-media-02-labels/00-atoms-07-media-02-labels.html" class="patternLink" data-patternpartial="atoms-labels" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-07-media-02-labels@inprogress/00-atoms-07-media-02-labels@inprogress.html" class="patternLink" data-patternpartial="atoms-labels" title="Link to Pattern">
                   Labels
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -801,34 +919,12 @@ p q r s t u v w x y z { | } ~
             
           </div>
           <div class="sg-pattern-example">
-            <span class="label "></span>
-
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-labels" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Labels","patternPartial":"atoms-labels","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-labels-variants" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-07-media-03-labels-variants/00-atoms-07-media-03-labels-variants.html" class="patternLink" data-patternpartial="atoms-labels-variants" title="Link to Pattern">
-                  Labels Variants
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-labels-variants" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-labels-variants" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-labels-variants">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <h1> <span class="label label-default"></span></h1>
-<h2> <span class="label label-default"></span></h2>
-<h3> <span class="label label-default"></span></h3>
-<h4> <span class="label label-default"></span></h4>
-<h5> <span class="label label-default"></span></h5>
-<h6> <span class="label label-default"></span></h6>
+            <h1>Example heading <span class="label label-default">My label</span></h1>
+<h2>Example heading <span class="label label-default">My label</span></h2>
+<h3>Example heading <span class="label label-default">My label</span></h3>
+<h4>Example heading <span class="label label-default">My label</span></h4>
+<h5>Example heading <span class="label label-default">My label</span></h5>
+<h6>Example heading <span class="label label-default">My label</span></h6>
 
 <span class="label label-primary">Primary</span>
 <span class="label label-success">Success</span>
@@ -836,16 +932,18 @@ p q r s t u v w x y z { | } ~
 <span class="label label-warning">Warning</span>
 <span class="label label-danger">Danger</span>
 
+
           </div>
-          <script type="text/json" id="sg-pattern-data-atoms-labels-variants" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>Add any of the below mentioned modifier classes to change the appearance of a label.<\/p>\n\n<p>Have tons of labels?\nRendering problems can arise when you have dozens of inline labels within a narrow container, each containing its own <code>inline-block<\/code> element (like an icon). The way around this is setting <code>display: inline-block;<\/code>. For context and an example, <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/13219\">see #13219<\/a>.<\/p>\n","patternExtension":"mustache","patternName":"Labels Variants","patternPartial":"atoms-labels-variants","patternState":""}
+          <script type="text/json" id="sg-pattern-data-atoms-labels" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Labels","patternPartial":"atoms-labels","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-progress-bars" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-07-media-04-progress-bars/00-atoms-07-media-04-progress-bars.html" class="patternLink" data-patternpartial="atoms-progress-bars" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-07-media-04-progress-bars@inprogress/00-atoms-07-media-04-progress-bars@inprogress.html" class="patternLink" data-patternpartial="atoms-progress-bars" title="Link to Pattern">
                   Progress Bars
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -864,14 +962,15 @@ p q r s t u v w x y z { | } ~
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-progress-bars" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.<\/p>\n\n<p>Cross-browser compatibility\nProgress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.<\/p>\n","patternExtension":"mustache","patternName":"Progress Bars","patternPartial":"atoms-progress-bars","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.<\/p>\n\n<p>Cross-browser compatibility\nProgress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.<\/p>\n","patternExtension":"mustache","patternName":"Progress Bars","patternPartial":"atoms-progress-bars","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-progress-bars-variants" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-07-media-05-progress-bars-variants/00-atoms-07-media-05-progress-bars-variants.html" class="patternLink" data-patternpartial="atoms-progress-bars-variants" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-07-media-05-progress-bars-variants@inprogress/00-atoms-07-media-05-progress-bars-variants@inprogress.html" class="patternLink" data-patternpartial="atoms-progress-bars-variants" title="Link to Pattern">
                   Progress Bars Variants
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -972,14 +1071,15 @@ p q r s t u v w x y z { | } ~
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-progress-bars-variants" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Progress Bars Variants","patternPartial":"atoms-progress-bars-variants","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"\n","patternExtension":"mustache","patternName":"Progress Bars Variants","patternPartial":"atoms-progress-bars-variants","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-thumbnails" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-07-media-06-thumbnails/00-atoms-07-media-06-thumbnails.html" class="patternLink" data-patternpartial="atoms-thumbnails" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-07-media-06-thumbnails@inprogress/00-atoms-07-media-06-thumbnails@inprogress.html" class="patternLink" data-patternpartial="atoms-thumbnails" title="Link to Pattern">
                   Thumbnails
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -996,479 +1096,15 @@ p q r s t u v w x y z { | } ~
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-thumbnails" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>Extend Bootstrap's <a href=\"..\/css\/#grid\">grid system<\/a> with the thumbnail component to easily display grids of images, videos, text, and more.\nIf you're looking for Pinterest-like presentation of thumbnails of varying heights and\/or widths, you'll need to use a third-party plugin such as <a href=\"http:\/\/masonry.desandro.com\">Masonry<\/a>, <a href=\"http:\/\/isotope.metafizzy.co\">Isotope<\/a>, or <a href=\"http:\/\/salvattore.com\">Salvattore<\/a>.<\/p>\n\n<h2 id=\"thumbnails-default\">Default example<\/h2>\n\n<p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.<\/p>\n","patternExtension":"mustache","patternName":"Thumbnails","patternPartial":"atoms-thumbnails","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>Extend Bootstrap's <a href=\"..\/css\/#grid\">grid system<\/a> with the thumbnail component to easily display grids of images, videos, text, and more.\nIf you're looking for Pinterest-like presentation of thumbnails of varying heights and\/or widths, you'll need to use a third-party plugin such as <a href=\"http:\/\/masonry.desandro.com\">Masonry<\/a>, <a href=\"http:\/\/isotope.metafizzy.co\">Isotope<\/a>, or <a href=\"http:\/\/salvattore.com\">Salvattore<\/a>.<\/p>\n\n<h2 id=\"thumbnails-default\">Default example<\/h2>\n\n<p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.<\/p>\n","patternExtension":"mustache","patternName":"Thumbnails","patternPartial":"atoms-thumbnails","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
-        <div id="viewall-atoms-glyphicons" class="sg-pattern-category">
-          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-09-glyphicons/index.html" class="patternLink" data-patternpartial="viewall-atoms-glyphicons">glyphicons</a></h2>
-        
-          <div class="sg-pattern-category-body">
-            
-          </div><!--end sg-pattern-category-body-->
-          
-        </div><!--end sg-pattern-category-->
-        <div id="atoms-glyphicons" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-09-glyphicons-00-glyphicons/00-atoms-09-glyphicons-00-glyphicons.html" class="patternLink" data-patternpartial="atoms-glyphicons" title="Link to Pattern">
-                  Glyphicons
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-glyphicons" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-glyphicons" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-glyphicons">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <div class="bs-glyphicons"> 
-	<ul class="bs-glyphicons-list"> 
-		<li> <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-asterisk</span> </li> 
-		<li> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-plus</span> </li> 
-		<li> <span class="glyphicon glyphicon-euro" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-euro</span> </li> 
-		<li> <span class="glyphicon glyphicon-eur" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-eur</span> </li> 
-		<li> <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-minus</span> </li> 
-		<li> <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cloud</span> </li> 
-		<li> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-envelope</span> </li> 
-		<li> <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-pencil</span> </li> 
-		<li> <span class="glyphicon glyphicon-glass" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-glass</span> </li> 
-		<li> <span class="glyphicon glyphicon-music" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-music</span> </li>
-		<li> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-search</span> </li>
-		<li> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-heart</span> </li> 
-	    <li> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-star</span> </li> 
-	    <li> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-star-empty</span> </li> 
-	    <li> <span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-user</span> </li> 
-	    <li> <span class="glyphicon glyphicon-film" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-film</span> </li> 
-	    <li> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-th-large</span> </li> 
-	    <li> <span class="glyphicon glyphicon-th" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-th</span> </li> 
-	    <li> <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-th-list</span> </li> 
-	    <li> <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ok</span> </li> 
-	    <li> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-remove</span> </li> 
-	    <li> <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-zoom-in</span> </li> 
-	    <li> <span class="glyphicon glyphicon-zoom-out" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-zoom-out</span> </li> 
-	    <li> <span class="glyphicon glyphicon-off" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-off</span> </li> 
-	    <li> <span class="glyphicon glyphicon-signal" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-signal</span> </li> 
-	    <li> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cog</span> </li> 
-	    <li> <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-trash</span> </li> 
-	    <li> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-home</span> </li> 
-	    <li> <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-file</span> </li> 
-	    <li> <span class="glyphicon glyphicon-time" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-time</span> </li> 
-	    <li> <span class="glyphicon glyphicon-road" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-road</span> </li> 
-	    <li> <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-download-alt</span> </li> 
-	    <li> <span class="glyphicon glyphicon-download" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-download</span> </li> 
-	    <li> <span class="glyphicon glyphicon-upload" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-upload</span> </li>
-	     <li> <span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-inbox</span> </li> 
-	     <li> <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-play-circle</span> </li> 
-	     <li> <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-repeat</span> </li> 
-	     <li> <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-refresh</span> </li> 
-	     <li> <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-list-alt</span> </li> 
-	     <li> <span class="glyphicon glyphicon-lock" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-lock</span> </li> 
-	     <li> <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-flag</span> </li> 
-	     <li> <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-headphones</span> </li> 
-	     <li> <span class="glyphicon glyphicon-volume-off" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-volume-off</span> </li> 
-	     <li> <span class="glyphicon glyphicon-volume-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-volume-down</span> </li> 
-	     <li> <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-volume-up</span> </li> 
-	     <li> <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-qrcode</span> </li> 
-	     <li> <span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-barcode</span> </li> 
-	     <li> <span class="glyphicon glyphicon-tag" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tag</span> </li> 
-	     <li> <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tags</span> </li> 
-	     <li> <span class="glyphicon glyphicon-book" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-book</span> </li> 
-	     <li> <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bookmark</span> </li> 
-	     <li> <span class="glyphicon glyphicon-print" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-print</span> </li> 
-	     <li> <span class="glyphicon glyphicon-camera" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-camera</span> </li> 
-	     <li> <span class="glyphicon glyphicon-font" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-font</span> </li> 
-	     <li> <span class="glyphicon glyphicon-bold" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bold</span> </li> 
-	     <li> <span class="glyphicon glyphicon-italic" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-italic</span> </li> 
-	     <li> <span class="glyphicon glyphicon-text-height" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-height</span> </li> 
-	     <li> <span class="glyphicon glyphicon-text-width" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-width</span> </li> 
-	     <li> <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-align-left</span> </li> 
-	     <li> <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-align-center</span> </li> 
-	     <li> <span class="glyphicon glyphicon-align-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-align-right</span> </li> 
-	     <li> <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-align-justify</span> </li> 
-	     <li> <span class="glyphicon glyphicon-list" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-list</span> </li> 
-	     <li> <span class="glyphicon glyphicon-indent-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-indent-left</span> </li>
-	     <li> <span class="glyphicon glyphicon-indent-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-indent-right</span> </li> 
-	     <li> <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-facetime-video</span> </li> 
-	     <li> <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-picture</span> </li> 
-	     <li> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-map-marker</span> </li> 
-	     <li> <span class="glyphicon glyphicon-adjust" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-adjust</span> </li> 
-	     <li> <span class="glyphicon glyphicon-tint" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tint</span> </li> 
-	     <li> <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-edit</span> </li> 
-	     <li> <span class="glyphicon glyphicon-share" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-share</span> </li> 
-	     <li> <span class="glyphicon glyphicon-check" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-check</span> </li> 
-	     <li> <span class="glyphicon glyphicon-move" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-move</span> </li> 
-	     <li> <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-step-backward</span> </li> 
-	     <li> <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-fast-backward</span> </li> 
-	     <li> <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-backward</span> </li> 
-	     <li> <span class="glyphicon glyphicon-play" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-play</span> </li> <li> <span class="glyphicon glyphicon-pause" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-pause</span> </li> 
-	     <li> <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-stop</span> </li> 
-	     <li> <span class="glyphicon glyphicon-forward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-forward</span> </li> 
-	     <li> <span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-fast-forward</span> </li> 
-	     <li> <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-step-forward</span> </li> 
-	     <li> <span class="glyphicon glyphicon-eject" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-eject</span> </li> 
-	     <li> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-chevron-left</span> </li> 
-	     <li> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-chevron-right</span> </li> 
-	     <li> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-plus-sign</span> </li> 
-	     <li> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-minus-sign</span> </li> 
-	     <li> <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-remove-sign</span> </li> 
-	     <li> <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ok-sign</span> </li> 
-	     <li> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-question-sign</span> </li> 
-	     <li> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-info-sign</span> </li> 
-	     <li> <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-screenshot</span> </li> 
-	     <li> <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-remove-circle</span> </li> 
-	     <li> <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ok-circle</span> </li> 
-	     <li> <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ban-circle</span> </li> 
-	     <li> <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-arrow-left</span> </li> 
-	     <li> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-arrow-right</span> </li> 
-	     <li> <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-arrow-up</span> </li> 
-	     <li> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-arrow-down</span> </li> 
-	     <li> <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-share-alt</span> </li> 
-	     <li> <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-resize-full</span> </li> 
-	     <li> <span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-resize-small</span> </li> 
-	     <li> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-exclamation-sign</span> </li> 
-	     <li> <span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-gift</span> </li> 
-	     <li> <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-leaf</span> </li> 
-	     <li> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-fire</span> </li> 
-	     <li> <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-eye-open</span> </li> 
-	     <li> <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-eye-close</span> </li> 
-	     <li> <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-warning-sign</span> </li> 
-	     <li> <span class="glyphicon glyphicon-plane" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-plane</span> </li> 
-	     <li> <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-calendar</span> </li> 
-	     <li> <span class="glyphicon glyphicon-random" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-random</span> </li> 
-	     <li> <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-comment</span> </li> 
-	     <li> <span class="glyphicon glyphicon-magnet" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-magnet</span> </li> 
-	     <li> <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-chevron-up</span> </li> 
-	     <li> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-chevron-down</span> </li> 
-	     <li> <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-retweet</span> </li> 
-	     <li> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-shopping-cart</span> </li> 
-	     <li> <span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-folder-close</span> </li> 
-	     <li> <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-folder-open</span> </li> 
-	     <li> <span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-resize-vertical</span> </li> 
-	     <li> <span class="glyphicon glyphicon-resize-horizontal" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-resize-horizontal</span> </li> 
-	     <li> <span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hdd</span> </li> 
-	     <li> <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bullhorn</span> </li> 
-	     <li> <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bell</span> </li> 
-	     <li> <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-certificate</span> </li> 
-	     <li> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-thumbs-up</span> </li> 
-	     <li> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-thumbs-down</span> </li> 
-	     <li> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hand-right</span> </li> 
-	     <li> <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hand-left</span> </li> 
-	     <li> <span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hand-up</span> </li> 
-	     <li> <span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hand-down</span> </li> 
-	     <li> <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-right</span> </li> 
-	     <li> <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-left</span> </li>
-	     <li> <span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-up</span> </li> 
-	     <li> <span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-down</span> </li> 
-	     <li> <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-globe</span> </li> 
-	     <li> <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-wrench</span> </li> 
-	     <li> <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tasks</span> </li> 
-	     <li> <span class="glyphicon glyphicon-filter" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-filter</span> </li> 
-	     <li> <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-briefcase</span> </li> 
-	     <li> <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-fullscreen</span> </li> 
-	     <li> <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-dashboard</span> </li> 
-	     <li> <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-paperclip</span> </li> 
-	     <li> <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-heart-empty</span> </li> 
-	     <li> <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-link</span> </li> 
-	     <li> <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-phone</span> </li> 
-	     <li> <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-pushpin</span> </li> 
-	     <li> <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-usd</span> </li> 
-	     <li> <span class="glyphicon glyphicon-gbp" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-gbp</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sort" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-alphabet</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sort-by-alphabet-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-alphabet-alt</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sort-by-order" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-order</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sort-by-order-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-order-alt</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-attributes</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-attributes-alt</span> </li> 
-	     <li> <span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-unchecked</span> </li> 
-	     <li> <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-expand</span> </li> 
-	     <li> <span class="glyphicon glyphicon-collapse-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-collapse-down</span> </li> 
-	     <li> <span class="glyphicon glyphicon-collapse-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-collapse-up</span> </li> 
-	     <li> <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-log-in</span> </li> 
-	     <li> <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-flash</span> </li> 
-	     <li> <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-log-out</span> </li> 
-	     <li> <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-new-window</span> </li> 
-	     <li> <span class="glyphicon glyphicon-record" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-record</span> </li> 
-	     <li> <span class="glyphicon glyphicon-save" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-save</span> </li> 
-	     <li> <span class="glyphicon glyphicon-open" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-open</span> </li> 
-	     <li> <span class="glyphicon glyphicon-saved" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-saved</span> </li> 
-	     <li> <span class="glyphicon glyphicon-import" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-import</span> </li> 
-	     <li> <span class="glyphicon glyphicon-export" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-export</span> </li> 
-	     <li> <span class="glyphicon glyphicon-send" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-send</span> </li> 
-	     <li> <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-disk</span> </li> 
-	     <li> <span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-saved</span> </li> 
-	     <li> <span class="glyphicon glyphicon-floppy-remove" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-remove</span> </li> 
-	     <li> <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-save</span> </li> 
-	     <li> <span class="glyphicon glyphicon-floppy-open" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-open</span> </li> 
-	     <li> <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-credit-card</span> </li> 
-	     <li> <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-transfer</span> </li> 
-	     <li> <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cutlery</span> </li> 
-	     <li> <span class="glyphicon glyphicon-header" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-header</span> </li> 
-	     <li> <span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-compressed</span> </li> 
-	     <li> <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-earphone</span> </li> 
-	     <li> <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-phone-alt</span> </li> 
-	     <li> <span class="glyphicon glyphicon-tower" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tower</span> </li> 
-	     <li> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-stats</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sd-video" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sd-video</span> </li> 
-	     <li> <span class="glyphicon glyphicon-hd-video" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hd-video</span> </li> 
-	     <li> <span class="glyphicon glyphicon-subtitles" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-subtitles</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sound-stereo" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-stereo</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sound-dolby" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-dolby</span> </li>
-	     <li> <span class="glyphicon glyphicon-sound-5-1" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-5-1</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sound-6-1" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-6-1</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sound-7-1" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-7-1</span> </li> 
-	     <li> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-copyright-mark</span> </li> 
-	     <li> <span class="glyphicon glyphicon-registration-mark" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-registration-mark</span> </li> 
-	     <li> <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cloud-download</span> </li> 
-	     <li> <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cloud-upload</span> </li> 
-	     <li> <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tree-conifer</span> </li> 
-	     <li> <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tree-deciduous</span> </li> 
-	     <li> <span class="glyphicon glyphicon-cd" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cd</span> </li> 
-	     <li> <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-save-file</span> </li> 
-	     <li> <span class="glyphicon glyphicon-open-file" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-open-file</span> </li> 
-	     <li> <span class="glyphicon glyphicon-level-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-level-up</span> </li> 
-	     <li> <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-copy</span> </li> 
-	     <li> <span class="glyphicon glyphicon-paste" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-paste</span> </li> 
-	     <li> <span class="glyphicon glyphicon-alert" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-alert</span> </li> 
-	     <li> <span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-equalizer</span> </li> 
-	     <li> <span class="glyphicon glyphicon-king" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-king</span> </li> 
-	     <li> <span class="glyphicon glyphicon-queen" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-queen</span> </li> 
-	     <li> <span class="glyphicon glyphicon-pawn" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-pawn</span> </li> 
-	     <li> <span class="glyphicon glyphicon-bishop" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bishop</span> </li> 
-	     <li> <span class="glyphicon glyphicon-knight" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-knight</span> </li> 
-	     <li> <span class="glyphicon glyphicon-baby-formula" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-baby-formula</span> </li> 
-	     <li> <span class="glyphicon glyphicon-tent" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tent</span> </li> 
-	     <li> <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-blackboard</span> </li> 
-	     <li> <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bed</span> </li> 
-	     <li> <span class="glyphicon glyphicon-apple" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-apple</span> </li> 
-	     <li> <span class="glyphicon glyphicon-erase" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-erase</span> </li> 
-	     <li> <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hourglass</span> </li> 
-	     <li> <span class="glyphicon glyphicon-lamp" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-lamp</span> </li> 
-	     <li> <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-duplicate</span> </li> 
-	     <li> <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-piggy-bank</span> </li> 
-	     <li> <span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-scissors</span> </li> 
-	     <li> <span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bitcoin</span> </li> 
-	     <li> <span class="glyphicon glyphicon-btc" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-btc</span> </li> 
-	     <li> <span class="glyphicon glyphicon-xbt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-xbt</span> </li> 
-	     <li> <span class="glyphicon glyphicon-yen" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-yen</span> </li> 
-	     <li> <span class="glyphicon glyphicon-jpy" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-jpy</span> </li> 
-	     <li> <span class="glyphicon glyphicon-ruble" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ruble</span> </li> 
-	     <li> <span class="glyphicon glyphicon-rub" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-rub</span> </li> 
-	     <li> <span class="glyphicon glyphicon-scale" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-scale</span> </li> 
-	     <li> <span class="glyphicon glyphicon-ice-lolly" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ice-lolly</span> </li> 
-	     <li> <span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ice-lolly-tasted</span> </li> 
-	     <li> <span class="glyphicon glyphicon-education" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-education</span> </li> 
-	     <li> <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-option-horizontal</span> </li> 
-	     <li> <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-option-vertical</span> </li> 
-	     <li> <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-hamburger</span> </li> 
-	     <li> <span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-modal-window</span> </li> 
-	     <li> <span class="glyphicon glyphicon-oil" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-oil</span> </li> 
-	     <li> <span class="glyphicon glyphicon-grain" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-grain</span> </li> 
-	     <li> <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sunglasses</span> </li> 
-	     <li> <span class="glyphicon glyphicon-text-size" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-size</span> </li> 
-	     <li> <span class="glyphicon glyphicon-text-color" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-color</span> </li> 
-	     <li> <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-background</span> </li> 
-	     <li> <span class="glyphicon glyphicon-object-align-top" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-top</span> </li> 
-	     <li> <span class="glyphicon glyphicon-object-align-bottom" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-bottom</span> </li> 
-	     <li> <span class="glyphicon glyphicon-object-align-horizontal" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-horizontal</span> </li> 
-	     <li> <span class="glyphicon glyphicon-object-align-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-left</span> </li> 
-	     <li> <span class="glyphicon glyphicon-object-align-vertical" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-vertical</span> </li> 
-	     <li> <span class="glyphicon glyphicon-object-align-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-right</span> </li> 
-	     <li> <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-triangle-right</span> </li> 
-	     <li> <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-triangle-left</span> </li> 
-	     <li> <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-triangle-bottom</span> </li> 
-	     <li> <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-triangle-top</span> </li> 
-	     <li> <span class="glyphicon glyphicon-console" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-console</span> </li> 
-	     <li> <span class="glyphicon glyphicon-superscript" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-superscript</span> </li> 
-	     <li> <span class="glyphicon glyphicon-subscript" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-subscript</span> </li> 
-	     <li> <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-left</span> </li> 
-	     <li> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-right</span> </li> 
-	     <li> <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-down</span> </li> 
-	     <li> <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-up</span> </li> 
-	</ul>
-</div>
-
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-glyphicons" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"glyphicons"},"patternDesc":"<h2 id=\"glyphicons-glyphs\">Available glyphs<\/h2>\n\n<p>Includes over 250 glyphs in font format from the Glyphicon Halflings set. <a href=\"http:\/\/glyphicons.com\/\">Glyphicons<\/a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to <a href=\"http:\/\/glyphicons.com\/\">Glyphicons<\/a> whenever possible.<\/p>\n\n<h2 id=\"glyphicons-how-to-use\">How to use<\/h2>\n\n<p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.<\/p>\n\n<div class=\"bs-callout bs-callout-danger\" id=\"callout-glyphicons-dont-mix\">\n    <h4>Don't mix with other components<\/h4>\n    <p>Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <code>&lt;span&gt;<\/code> and apply the icon classes to the <code>&lt;span&gt;<\/code>.<\/p>\n<\/div>\n\n<div class=\"bs-callout bs-callout-danger\" id=\"callout-glyphicons-empty-only\">\n    <h4>Only for use on empty elements<\/h4>\n    <p>Icon classes should only be used on elements that contain no text content and have no child elements.<\/p>\n<\/div>\n\n<div class=\"bs-callout bs-callout-info\" id=\"callout-glyphicons-location\">\n    <h4>Changing the icon font location<\/h4>\n    <p>Bootstrap assumes icon font files will be located in the <code>..\/fonts\/<\/code> directory, relative to the compiled CSS files. Moving or renaming those font files means updating the CSS in one of three ways:<\/p>\n    <ul>\n      <li>Change the <code>@icon-font-path<\/code> and\/or <code>@icon-font-name<\/code> variables in the source Less files.<\/li>\n      <li>Utilize the <a href=\"http:\/\/lesscss.org\/usage\/#command-line-usage-relative-urls\">relative URLs option<\/a> provided by the Less compiler.<\/li>\n      <li>Change the <code>url()<\/code> paths in the compiled CSS.<\/li>\n    <\/ul>\n    <p>Use whatever option best suits your specific development setup.<\/p>\n<\/div>\n\n<div class=\"bs-callout bs-callout-warning\" id=\"callout-glyphicons-accessibility\">\n    <h4>Accessible icons<\/h4>\n    <p>Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the <code>aria-hidden=\"true\"<\/code> attribute.<\/p>\n    <p>If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies \u2013 for instance, include additional content, visually hidden with the <code>.sr-only<\/code> class.<\/p>\n    <p>If you're creating controls with no other text (such as a <code>&lt;button&gt;<\/code> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive technologies. In this case, you could add an <code>aria-label<\/code> attribute on the control itself.<\/p>\n<\/div>\n","patternExtension":"mustache","patternName":"Glyphicons","patternPartial":"atoms-glyphicons","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-text-button" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-buttons-text-button/00-atoms-buttons-text-button.html" class="patternLink" data-patternpartial="atoms-text-button" title="Link to Pattern">
-                  Text Button
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-text-button" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-text-button" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-text-button">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <a href="" class="c-text-btn ">Button</a>
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-text-button" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[{"lineagePattern":"organisms-section-media-list","lineagePath":"..\/..\/patterns\/02-organisms-sections-section-media-list\/02-organisms-sections-section-media-list.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"buttons"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Text Button","patternPartial":"atoms-text-button","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="viewall-atoms-feedback" class="sg-pattern-category">
-          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-feedback/index.html" class="patternLink" data-patternpartial="viewall-atoms-feedback">feedback</a></h2>
-        
-          <div class="sg-pattern-category-body">
-            
-          </div><!--end sg-pattern-category-body-->
-          
-        </div><!--end sg-pattern-category-->
-        <div id="atoms-progress" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-feedback-progress/00-atoms-feedback-progress.html" class="patternLink" data-patternpartial="atoms-progress" title="Link to Pattern">
-                  Progress
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-progress" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-progress" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-progress">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <progress class="c-progress" max="100" value="85">
-	<strong></strong>
-</progress>
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-progress" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[{"lineagePattern":"molecules-block-tile","lineagePath":"..\/..\/patterns\/01-molecules-blocks-block-tile\/01-molecules-blocks-block-tile.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"feedback"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Progress","patternPartial":"atoms-progress","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-text-field" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-forms-00-text-field/00-atoms-forms-00-text-field.html" class="patternLink" data-patternpartial="atoms-text-field" title="Link to Pattern">
-                  Text Field
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-text-field" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-text-field" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-text-field">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <input id="text" type="text" placeholder="Text Input">
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-text-field" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Text Field","patternPartial":"atoms-text-field","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-text-area" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-forms-01-text-area/00-atoms-forms-01-text-area.html" class="patternLink" data-patternpartial="atoms-text-area" title="Link to Pattern">
-                  Text Area
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-text-area" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-text-area" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-text-area">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <textarea placeholder="Text area"></textarea>
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-text-area" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Text Area","patternPartial":"atoms-text-area","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-select-menu" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-forms-02-select-menu/00-atoms-forms-02-select-menu.html" class="patternLink" data-patternpartial="atoms-select-menu" title="Link to Pattern">
-                  Select Menu
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-select-menu" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-select-menu" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-select-menu">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <select id="select">
-    <optgroup label="Select">
-        <option>Option One</option>
-        <option>Option Two</option>
-        <option>Option Three</option>
-    </optgroup>
-</select>
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-select-menu" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Select Menu","patternPartial":"atoms-select-menu","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-radio-button" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-forms-03-radio-button/00-atoms-forms-03-radio-button.html" class="patternLink" data-patternpartial="atoms-radio-button" title="Link to Pattern">
-                  Radio Button
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-radio-button" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-radio-button" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-radio-button">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <input type="radio" checked="checked" />
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-radio-button" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Radio Button","patternPartial":"atoms-radio-button","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-checkbox" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-forms-04-checkbox/00-atoms-forms-04-checkbox.html" class="patternLink" data-patternpartial="atoms-checkbox" title="Link to Pattern">
-                  Checkbox
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-checkbox" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-checkbox" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-checkbox">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <input type="checkbox" checked="checked" />
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-checkbox" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Checkbox","patternPartial":"atoms-checkbox","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="viewall-atoms-images" class="sg-pattern-category">
-          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-images/index.html" class="patternLink" data-patternpartial="viewall-atoms-images">images</a></h2>
-        
-          <div class="sg-pattern-category-body">
-            
-          </div><!--end sg-pattern-category-body-->
-          
-        </div><!--end sg-pattern-category-->
         <div id="atoms-avatar" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-images-avatar/00-atoms-images-avatar.html" class="patternLink" data-patternpartial="atoms-avatar" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-07-media-avatar@inprogress/00-atoms-07-media-avatar@inprogress.html" class="patternLink" data-patternpartial="atoms-avatar" title="Link to Pattern">
                   Avatar Image
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -1482,14 +1118,15 @@ p q r s t u v w x y z { | } ~
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-avatar" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"images"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Avatar Image","patternPartial":"atoms-avatar","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Avatar Image","patternPartial":"atoms-avatar","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-hero" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-images-hero/00-atoms-images-hero.html" class="patternLink" data-patternpartial="atoms-hero" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-07-media-hero@inprogress/00-atoms-07-media-hero@inprogress.html" class="patternLink" data-patternpartial="atoms-hero" title="Link to Pattern">
                   Hero Image
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -1503,14 +1140,15 @@ p q r s t u v w x y z { | } ~
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-hero" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"images"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Hero Image","patternPartial":"atoms-hero","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Hero Image","patternPartial":"atoms-hero","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-landscape" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-images-landscape/00-atoms-images-landscape.html" class="patternLink" data-patternpartial="atoms-landscape" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-07-media-landscape@inprogress/00-atoms-07-media-landscape@inprogress.html" class="patternLink" data-patternpartial="atoms-landscape" title="Link to Pattern">
                   Landscape Image
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -1524,56 +1162,15 @@ p q r s t u v w x y z { | } ~
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-landscape" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[{"lineagePattern":"molecules-figure-with-caption","lineagePath":"..\/..\/patterns\/01-molecules-media-figure-with-caption\/01-molecules-media-figure-with-caption.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"images"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Landscape Image","patternPartial":"atoms-landscape","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-logo-reversed" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-images-logo-reversed/00-atoms-images-logo-reversed.html" class="patternLink" data-patternpartial="atoms-logo-reversed" title="Link to Pattern">
-                  Logo Reversed
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-logo-reversed" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-logo-reversed" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-logo-reversed">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <img src="../../images/logo-reversed.svg" class="c-logo " alt="App-Arena.com" />
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-logo-reversed" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"images"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Logo Reversed","patternPartial":"atoms-logo-reversed","patternState":""}
-          </script>
-        </div><!--end .sg-pattern-->
-        <div id="atoms-logo" class="sg-pattern">
-          <div class="sg-pattern-head">
-            <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-images-logo/00-atoms-images-logo.html" class="patternLink" data-patternpartial="atoms-logo" title="Link to Pattern">
-                  Logo Image
-              </a>
-            </h3>
-            <div class="sg-pattern-breadcrumb"></div>
-            <a href="#" data-patternpartial="atoms-logo" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-logo" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-          </div>
-          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-logo">
-            
-          </div>
-          <div class="sg-pattern-example">
-            <img src="../../images/logo.svg" class="c-logo " alt="App-Arena.com" />
-
-          </div>
-          <script type="text/json" id="sg-pattern-data-atoms-logo" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[{"lineagePattern":"templates-form","lineagePath":"..\/..\/patterns\/03-templates-form\/03-templates-form.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"images"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Logo Image","patternPartial":"atoms-logo","patternState":""}
+            {"lineage":[],"lineageR":[{"lineagePattern":"molecules-figure-with-caption","lineagePath":"..\/..\/patterns\/01-molecules-media-figure-with-caption\/01-molecules-media-figure-with-caption.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Landscape Image","patternPartial":"atoms-landscape","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="atoms-square" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-images-square/00-atoms-images-square.html" class="patternLink" data-patternpartial="atoms-square" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-07-media-square@inprogress/00-atoms-07-media-square@inprogress.html" class="patternLink" data-patternpartial="atoms-square" title="Link to Pattern">
                   Square Image
+                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -1587,7 +1184,40 @@ p q r s t u v w x y z { | } ~
 
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-square" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"images"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Square Image","patternPartial":"atoms-square","patternState":""}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternDesc":"<p>[Insert description here]<\/p>\n","patternExtension":"mustache","patternName":"Square Image","patternPartial":"atoms-square","patternState":"inprogress"}
+          </script>
+        </div><!--end .sg-pattern-->
+        <div id="viewall-atoms-icons" class="sg-pattern-category">
+          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-09-icons/index.html" class="patternLink" data-patternpartial="viewall-atoms-icons">icons</a></h2>
+        
+          <div class="sg-pattern-category-body">
+            
+          </div><!--end sg-pattern-category-body-->
+          
+        </div><!--end sg-pattern-category-->
+        <div id="atoms-icons" class="sg-pattern">
+          <div class="sg-pattern-head">
+            <h3 class="sg-pattern-title">
+              <a href="../../patterns/00-atoms-09-icons-00-icons/00-atoms-09-icons-00-icons.html" class="patternLink" data-patternpartial="atoms-icons" title="Link to Pattern">
+                  Fontawesome icons
+              </a>
+            </h3>
+            <div class="sg-pattern-breadcrumb"></div>
+            <a href="#" data-patternpartial="atoms-icons" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-icons" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+          </div>
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-icons">
+            
+          </div>
+          <div class="sg-pattern-example">
+            <div class="row">
+    <div class="col-md-offset-1 col-md-10">
+        <iframe src="http://fontawesome.io/icons/" frameborder="0" width="100%" height="400"></iframe>
+    </div>
+</div>
+
+          </div>
+          <script type="text/json" id="sg-pattern-data-atoms-icons" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"icons"},"patternDesc":"<p>Fontawesome is the default iconset. You can see all icons on the \n<a href=\"https:\/\/medium.com\/eightshapes-llc\/color-in-design-systems-a1c80f65fa3\">Fontawesome<\/a> page<\/p>\n","patternExtension":"mustache","patternName":"Fontawesome icons","patternPartial":"atoms-icons","patternState":""}
           </script>
         </div><!--end .sg-pattern-->
   </div> <!--end #sg-patterns-->

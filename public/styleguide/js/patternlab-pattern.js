@@ -234,7 +234,7 @@ var urlHandler = {
       if (history.pushState !== undefined) {
         history.pushState(data, null, addressReplacement);
       }
-      document.getElementById("title").innerHTML = "Styleguide - "+pattern;
+      document.getElementById("title").innerHTML = "Pattern Lab - "+pattern;
       if (document.getElementById("sg-raw") !== undefined) {
         document.getElementById("sg-raw").setAttribute("href",urlHandler.getFileName(pattern));
       }
@@ -265,7 +265,7 @@ var urlHandler = {
     
     var obj = JSON.stringify({ "event": "patternLab.updatePath", "path": iFramePath });
     document.getElementById("sg-viewport").contentWindow.postMessage( obj, urlHandler.targetOrigin);
-    document.getElementById("title").innerHTML = "Styleguide - "+patternName;
+    document.getElementById("title").innerHTML = "Pattern Lab - "+patternName;
     document.getElementById("sg-raw").setAttribute("href",urlHandler.getFileName(patternName));
     
     /*

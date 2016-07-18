@@ -358,7 +358,7 @@ var urlHandler = {
     
     var obj = JSON.stringify({ "event": "patternLab.updatePath", "path": iFramePath });
     document.getElementById("sg-viewport").contentWindow.postMessage( obj, urlHandler.targetOrigin);
-    document.getElementById("title").innerHTML = "Styleguide - "+patternName;
+    document.getElementById("title").innerHTML = "Pattern Lab - "+patternName;
     document.getElementById("sg-raw").setAttribute("href",urlHandler.getFileName(patternName));
     
     /*
@@ -1806,7 +1806,7 @@ window.addEventListener("message", receiveIframeMessage, false);
   if (patternName !== "all") {
     patternPath = urlHandler.getFileName(patternName);
     iFramePath  = (patternPath !== "") ? baseIframePath+patternPath+"?"+Date.now() : iFramePath;
-    document.getElementById("title").innerHTML = "Styleguide - "+patternName;
+    document.getElementById("title").innerHTML = "Pattern Lab - "+patternName;
     history.replaceState({ "pattern": patternName }, null, null);
   }
 
