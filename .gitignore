@@ -4,7 +4,7 @@ export/*
 source/styleguide/*
 
 ### Ignore bower components
-*/js/vendor/
+source/js/vendor/
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Composer template
