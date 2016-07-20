@@ -11,6 +11,8 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
                       .JMML.                       Ybmmmd'
 
 
+
+
 Pattern Lab doesn't have any CSS requirements, which means you can write your styles however you want. Hooray!
 You can use Sass, Less, vanilla CSS, or some other crazy thing I haven't heard of yet.
 So please don't use these styles. They're just here to put together the demo, and nothing more.
@@ -80,6 +82,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
     $ABSTRACTS
 \*------------------------------------*/
 @import "scss/abstracts/mixins";
+@import "scss/abstracts/variables_bootstrap";
 @import "scss/abstracts/variables";
 
 

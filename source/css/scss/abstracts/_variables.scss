@@ -27,15 +27,25 @@
 $color-brand-blue-light: #478AB8;
 $color-brand-blue-dark: #2D343D;
 
+$brand-primary-10: lighten($brand-primary, 90);
+$brand-primary-20: lighten($brand-primary, 80);
+$brand-primary-30: lighten($brand-primary, 70);
+$brand-primary-40: lighten($brand-primary, 60);
+$brand-primary-50: lighten($brand-primary, 50);
+$brand-primary-60: lighten($brand-primary, 40);
+$brand-primary-70: lighten($brand-primary, 30);
+$brand-primary-80: lighten($brand-primary, 20);
+$brand-primary-90: lighten($brand-primary, 10);
 
 /*
  * Neutral Colors
  * 1) Neutral color variables use a numbered system to define variables for better maintainability.
  *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
- *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3
  */
 $color-white: #fff;
-$color-gray-02: #f7f9f9;
+$color-black: #000;
+$color-gray-02: lighten($brand-primary, 98);
 $color-gray-15: #d9d9d9;
 $color-gray-35: #a5a5a5;
 $color-gray-50: #808080;
