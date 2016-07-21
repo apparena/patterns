@@ -111,7 +111,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  * Neutral Colors
  * 1) Neutral color variables use a numbered system to define variables for better maintainability.
  *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
- *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3
  */
 /**
  * Utility Colors
@@ -1373,7 +1373,7 @@ abbr {
 .alert {
   text-align: center;
   padding: 0 1rem;
-  background: #f7f9f9;
+  background: white;
   overflow: hidden;
   font-size: 1em;
   animation: slideDown 2s forwards; }
