@@ -2,7 +2,7 @@
 export/*
 # public/*
 source/styleguide/*
-#/public/patterns/
+/public/patterns/
 
 ### Ignore bower components
 source/js/vendor/
