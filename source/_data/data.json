@@ -122,6 +122,62 @@
   "quoteSource": "<a href='https://en.wikipedia.org/wiki/Block_quotation'>Wikiepedia</a>",
   "sectionBlock": true,
   "sectionTitle": "Section Title",
+  "table": {
+    "thead": {
+      "th": [
+        {
+          "title": "Column 1"
+        },
+        {
+          "title": "Column 2"
+        },
+        {
+          "title": "Column 3"
+        },
+        {
+          "title": "Column 4"
+        }
+      ]
+    },
+    "tbody": [
+      {
+        "tr": {
+          "td": [
+            {
+              "text": "Value 1"
+            },
+            {
+              "text": "Value 2"
+            },
+            {
+              "text": "Value 3"
+            },
+            {
+              "text": "Value 4"
+            }
+          ]
+        }
+      },
+      {
+        "tr": {
+          "td": [
+            {
+              "text": "Value 1"
+            },
+            {
+              "text": "Value 2"
+            },
+            {
+              "text": "Value 3"
+            },
+            {
+              "text": "Value 4"
+            }
+          ]
+        }
+      }
+    ]
+  },
   "textarea": {
     "label": "label"
   },

@@ -3,6 +3,13 @@ export/*
 # public/*
 source/styleguide/*
 /public/patterns/
+/public/css/
+/public/fonts/
+/public/images/
+/public/js/
+/public/annotations/
+/public/styleguide/
+/public/latest-change.txt
 
 ### Ignore bower components
 source/js/vendor/
