@@ -2,7 +2,7 @@
 title: Navs
 ---
 
-  <p class="lead">Navs available in Bootstrap have shared markup, starting with the base <code>.nav</code> class, as well as shared states. Swap modifier classes to switch between each style.</p>
+  <p>Navigation available in Bootstrap share general markup and styles, from the base <code class="highlighter-rouge">.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>
 
   <div class="bs-callout bs-callout-info" id="callout-navs-tabs-plugin">
     <h4>Using navs for tab panels requires JavaScript tabs plugin</h4>

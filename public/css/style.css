@@ -1019,52 +1019,6 @@ abbr {
 /**
  * Header
  */
-.c-header {
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
-  padding: 0.5em 0; }
-  @media all and (min-height: 46.8em) {
-    .c-header {
-      padding: 1em 0; } }
-
-/**
- * Header Controls
- * 1) This container holds the primary nav and search menu
- */
-.c-header__controls {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  padding-right: 1rem; }
-
-/**
- * Nav toggle button
- * 1) Styles for the general nav toggle button
- */
-.nav-toggle {
-  display: block;
-  padding: 0.9rem 1rem 0.7rem;
-  font-size: 1.3rem;
-  line-height: 1; }
-  @media all and (min-width: 46.8em) {
-    .nav-toggle {
-      display: none; } }
-  @media all and (max-width: 17em) {
-    .nav-toggle {
-      padding-left: 0.2rem;
-      padding-right: 0.2rem; } }
-
-/**
- * Search nav toggle button
- * 1) Specific nav toggle button for the search form
- */
-.nav-toggle-search {
-  display: block; }
-  @media all and (min-width: 29.75em) {
-    .nav-toggle-search {
-      display: none; } }
-
 /*------------------------------------*\
     #LOGO
 \*------------------------------------*/
@@ -1497,17 +1451,11 @@ abbr {
   padding: 1rem; }
 
 /**
- * Pagination
+ * Navbar
  */
-.pagination {
-  overflow: hidden; }
-  .pagination li {
-    float: left;
-    border-right: 1px solid #d9d9d9; }
-    .pagination li:last-child {
-      border: 0; }
-  .pagination a {
-    padding: 1em; }
+.navbar-brand > img {
+  min-width: 200px;
+  min-height: 60px; }
 
 /*------------------------------------*\
     #PAGE HEADER

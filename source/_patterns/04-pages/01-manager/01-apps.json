@@ -1,0 +1,19 @@
+{
+  "sidebarNav": [
+    {
+      "label": "Wizard Schritt 1"
+    },
+    {
+      "label": "Wizard Schritt 2"
+    },
+    {
+      "label": "Wizard Schritt 3"
+    },
+    {
+      "label": "Wizard Schritt 4"
+    },
+    {
+      "label": "Wizard Schritt 5"
+    }
+  ]
+}
