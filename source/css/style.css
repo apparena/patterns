@@ -469,7 +469,14 @@ dd {
  * Main content area
  */
 [role=main] {
-  flex: 1; }
+  flex: 1;
+  background-color: #eceeef; }
+
+/**
+  * Left column in main content area
+  */
+.l-col-left {
+  background-color: #373a3c; }
 
 /*------------------------------------*\
     #MEDIA ELEMENTS
@@ -1456,6 +1463,22 @@ abbr {
 .navbar-brand > img {
   min-width: 200px;
   min-height: 60px; }
+
+/**
+  * Top navigations
+  */
+/**
+ * Primary top navigation
+ */
+.l-nav-primary > .nav {
+  margin-top: 20px; }
+
+/**
+ * Secondary top navigation
+ */
+.l-nav-secondary {
+  padding: 15px;
+  border-bottom: 1px solid #eceeef; }
 
 /*------------------------------------*\
     #PAGE HEADER

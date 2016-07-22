@@ -7,4 +7,12 @@
  */
 [role=main] {
 	flex: 1;
+	background-color: $gray-lighter;
+}
+
+/**
+  * Left column in main content area
+  */
+.l-col-left {
+	background-color: $gray-dark;
 }

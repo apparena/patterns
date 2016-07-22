@@ -5,3 +5,28 @@
 	min-width: 200px;
 	min-height: 60px;
 }
+
+/**
+  * Top navigations
+  */
+.l-nav {
+
+}
+
+/**
+ * Primary top navigation
+ */
+.l-nav-primary {
+	> .nav {
+		margin-top: 20px;
+	}
+}
+
+/**
+ * Secondary top navigation
+ */
+.l-nav-secondary {
+	padding:15px;
+	border-bottom: 1px solid $gray-lighter;
+}
+
