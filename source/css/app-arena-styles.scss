@@ -71,6 +71,7 @@
  *
  * BASE...................Base/reset styles for certain elements
  * Animation..............Animation base styles
+ * Colors.................All color related styles
  * Forms..................Form field base styles
  * Global Classes.........Base styles used across the entirety of the site
  * Headings...............Base styles for headings (h1, h2, etc.)
@@ -135,6 +136,8 @@
 @import "scss/base/reset";
 @import "scss/base/tables";
 @import "scss/base/text";*/
+@import "scss/base/colors";
+
 
 
 
