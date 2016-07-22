@@ -1,0 +1,59 @@
+{
+  "cardsList": [
+    {
+      "cardHeader": "Card 1",
+      "cardImage": "../../images/sample/apps/app-screenshot1.jpg",
+      "cardContent": "EM Tippspiel",
+      "cardFooter": "Card Footer 1"
+    },
+    {
+      "cardHeader": "Card 2",
+      "cardImage": "../../images/sample/apps/app-screenshot2.jpg",
+      "cardContent": "Adventskalender",
+      "cardFooter": "Card Footer 2",
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "status": "active",
+              "header": "List item Header 1",
+              "text": "List group item text"
+            },
+            {
+              "status": "disabled",
+              "header": "List item Header 2",
+              "text": "List group item text 2"
+            },
+            {
+              "status": "list-group-item-success",
+              "header": "List item Header 3",
+              "text": "List group item text 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardHeader": "Card 3",
+      "cardImage": "../../images/sample/apps/app-screenshot3.jpg",
+      "cardContent": "Fotowettbewerb",
+      "cardFooter": "Card Footer 3",
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "header": "List item Header 1",
+              "text": "List group item text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardHeader": "Card 4",
+      "cardImage": "../../images/sample/apps/app-screenshot4.jpg",
+      "cardContent": "Bundesliga Tippspiel",
+      "cardFooter": "Card Footer 4"
+    }
+  ]
+}

@@ -1,7 +1,12 @@
-<ul class="list-group {{ listGroupClass }}">
-	{{# listGroup }}
-  	<li class="list-group-item">{{{ text }}}
+<ul class="list-group">
+	{{# listGroupItems }}
+  	<li class="list-group-item {{ status }}">
+        {{# header }}
+        <h4 class="list-group-item-heading">{{ header }}</h4>
+        {{/ header }}
+        <p class="list-group-item-text">{{{ text }}}</p>
+
   		{{# badge }}{{> atoms-badges }}{{/ badge }}
   	</li>
-  	{{/ listGroup }}
+  	{{/ listGroupItems }}
 </ul>

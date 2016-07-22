@@ -1,6 +1,8 @@
 /*!
   * App-Arena.com Styles related to the styleguide. Include this file to your pages to apply all styles described in
   * the styleguide. Use bootstrap 4 as base and then overwrite and extend it
+  *
+  * PLEASE USE SMACSS by Jonathan Snook http://smacss.com/ for all styling.
   */
 /*------------------------------------*\
     Include bootstrap 4 components
@@ -4888,18 +4890,30 @@ a.bg-danger:focus, a.bg-danger:hover {
 @import "scss/components/footer-nav";
 @import "scss/components/forms";
 @import "scss/components/fields";
-@import "scss/components/header";
 @import "scss/components/logo";
 @import "scss/components/icons";
 @import "scss/components/lists";
 @import "scss/components/messaging";
 @import "scss/components/primary-nav";
-@import "scss/components/nav";
+
 @import "scss/components/page-header";
 @import "scss/components/sections";
 @import "scss/components/text";
 @import "scss/components/box";
 @import "scss/components/feedback";*/
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+/**
+ * Header
+ */
+/**
+ * Navbar
+ */
+.navbar-brand > img {
+  min-width: 200px;
+  min-height: 60px; }
+
 /* Custom bootstrap cards */
 .card-secondary {
   background-color: #2D343D;

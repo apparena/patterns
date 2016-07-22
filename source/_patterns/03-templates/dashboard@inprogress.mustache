@@ -4,24 +4,22 @@
 		{{> molecules-alert }}
 	{{/ alert }}
 
-	{{# sectionBlock }}
+    {{# sectionBlock }}
+        {{> organisms-tile-grid }}
+    {{/ sectionBlock }}
 
-	{{> organisms-tile-grid }}
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="col-md-9">
+                {{# featuredChallenges }}
+                    {{> organisms-section-media-list }}
+                {{/ featuredChallenges }}
+            </div>
+            <div class="col-md-3">
+                {{> organisms-sidebar }}
+            </div>
+        </div>
+    </div>
 
-	{{/ sectionBlock }}
-
-	<div class="l l--two-col">
-		<div class="l-main">
-			{{# featuredChallenges }}
-			{{> organisms-section-media-list }}
-			{{/ featuredChallenges }}
-		</div><!--end .l-main-->
-
-		<div class="l-sidebar">
-			{{# featuredPeople }}
-			{{> organisms-section-media-list }}
-			{{/ featuredPeople}}
-		</div><!--end .l-sidebar-->
-	</div><!--end .l-two-col-->
 </main>
 {{> organisms-footer }}

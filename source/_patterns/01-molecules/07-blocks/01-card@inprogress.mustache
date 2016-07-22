@@ -1,0 +1,19 @@
+<div class="card">
+    {{# cardHeader }}
+        <div class="card-header">
+            {{ cardHeader }}
+        </div>
+    {{/cardHeader}}
+    <img class="card-img-top img-fluid" src="{{ cardImage }}" alt="Card image">
+    <div class="card-block">
+        {{{ cardContent }}}
+    </div>
+    {{# cardListGroup }}
+        {{> molecules-list-group }}
+    {{/ cardListGroup }}
+    {{# cardFooter }}
+    <div class="card-footer">
+        {{ cardFooter }}
+    </div>
+    {{/cardFooter}}
+</div>
