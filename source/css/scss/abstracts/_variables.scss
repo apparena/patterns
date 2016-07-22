@@ -27,15 +27,25 @@
 $color-brand-blue-light: #478AB8;
 $color-brand-blue-dark: #2D343D;
 
-$brand-primary-10: lighten($brand-primary, 90);
-$brand-primary-20: lighten($brand-primary, 80);
-$brand-primary-30: lighten($brand-primary, 70);
-$brand-primary-40: lighten($brand-primary, 60);
-$brand-primary-50: lighten($brand-primary, 50);
-$brand-primary-60: lighten($brand-primary, 40);
-$brand-primary-70: lighten($brand-primary, 30);
-$brand-primary-80: lighten($brand-primary, 20);
-$brand-primary-90: lighten($brand-primary, 10);
+$brand-primary-80: lighten($brand-primary, lightness($brand-primary) * 0.2);
+$brand-primary-60: lighten($brand-primary, lightness($brand-primary) * 0.4);
+$brand-primary-40: lighten($brand-primary, lightness($brand-primary) * 0.6);
+
+$brand-secondary-80: lighten($brand-secondary, lightness($brand-secondary) * 0.2);
+$brand-secondary-60: lighten($brand-secondary, lightness($brand-secondary) * 0.4);
+$brand-secondary-40: lighten($brand-secondary, lightness($brand-secondary) * 0.6);
+
+$brand-success-80: lighten($brand-success, lightness($brand-success) * 0.2);
+$brand-success-60: lighten($brand-success, lightness($brand-success) * 0.4);
+$brand-success-40: lighten($brand-success, lightness($brand-success) * 0.6);
+
+$brand-warning-80: lighten($brand-warning, lightness($brand-warning) * 0.2);
+$brand-warning-60: lighten($brand-warning, lightness($brand-warning) * 0.4);
+$brand-warning-40: lighten($brand-warning, lightness($brand-warning) * 0.6);
+
+$brand-danger-80: lighten($brand-danger, lightness($brand-danger) * 0.2);
+$brand-danger-60: lighten($brand-danger, lightness($brand-danger) * 0.4);
+$brand-danger-40: lighten($brand-danger, lightness($brand-danger) * 0.6);
 
 /*
  * Neutral Colors
@@ -119,14 +129,9 @@ $font-secondary : Georgia, Times, "Times New Roman", serif;
 
 $font-size-small : 0.75rem;
 $font-size-small-2 : 0.875rem;
-$font-size-med : 1rem;
+$font-size-med: 1rem;
 $font-size-med-2: 1.0625rem;
 $font-size-large : 1.4375rem;
-
-
-
-
-
 
 /*------------------------------------*\
     #LAYOUT

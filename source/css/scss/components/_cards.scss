@@ -3,3 +3,12 @@
 .card-secondary {
   @include card-variant($brand-secondary, $brand-secondary);
 }
+.card-focus {
+  @include card-variant($brand-focus, $brand-focus);
+}
+.card-grey-dark {
+  @include card-variant($brand-grey-dark, $brand-grey-dark);
+}
+.card-grey-light {
+  @include card-variant($brand-grey-light, $brand-grey-light);
+}
