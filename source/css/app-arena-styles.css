@@ -7098,6 +7098,12 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-color: #DDDDDD;
   border-color: #DDDDDD; }
 
+/* Entity cards list styling */
+.l-entity-list .card-header {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 /*------------------------------------*\
     #Filter Bar
 \*------------------------------------*/
