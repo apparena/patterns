@@ -32,7 +32,9 @@
   "scripts": {
     "server": "php core/console --server",
     "generate": "php core/console --generate",
+    "generate-patterns": "php core/console --generate --patternsonly",
     "watch": "php core/console --watch",
+    "watch-sass": "sass --watch /var/www/html/source/css:/var/www/html/public/css &",
     "start": "php core/console --server --with-watch",
     "install-demo": "php core/console --starterkit --install pattern-lab/starterkit-mustache-demo",
     "post-install-cmd": [

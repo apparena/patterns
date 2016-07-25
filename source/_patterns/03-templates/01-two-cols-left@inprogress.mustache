@@ -5,10 +5,14 @@
             <div class="col-md-2 l-col-left p-t-1">
                 {{> organisms-nav-sidebar }}
             </div>
-            <div class="col-md-10 p-t-1">
+            <div class="col-md-10 l-col-main p-t-1">
                 {{> molecules-page-title }}
 
-                {{> organisms-cards-list }}
+                {{> molecules-filter-bar }}
+
+                <div class="l-col-main-content p-a-1">
+                    {{> organisms-cards-list }}
+                </div>
 
             </div>
         </div>

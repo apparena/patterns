@@ -1,14 +1,127 @@
 {
-  "btnGroupList": [
-    {"btnText": "<i class=\"fa fa-caret-left\"></i>", "btnClass":"btn-secondary btn-sm"},
-    {"btnText": "<i class=\"fa fa-calendar\"></i> 01.Januar 2017 - 31. Januar 2017", "btnClass":"btn-secondary btn-sm"},
-    {"btnText": "<i class=\"fa fa-caret-left\"></i>", "btnClass":"btn-secondary btn-sm"},
-    {"btnText": "Heute", "btnClass":"btn-secondary btn-sm"}
+  "btnGroupList": false,
+  "cardsList": [
+    {
+      "cardHeader": "EM Tippspiel 2016",
+      "cardImage": "../../images/sample/apps/app-screenshot1.jpg",
+      "cardContent": "EM Tippspiel für den Kunden App-Arena",
+      "cardFooter": false,
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "status": false,
+              "header": false,
+              "text": "<span class=\"pull-right\"><a href=\"\">Verlängern</a></span><i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<span class=\"pull-right\"><a href=\"\">Buchen</a></span><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"English\" />"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardHeader": "Adventskalender 2015",
+      "cardImage": "../../images/sample/apps/app-screenshot2.jpg",
+      "cardContent": false,
+      "cardFooter": false,
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "status": false,
+              "header": false,
+              "text": "<span class=\"pull-right\"><a href=\"\">Verlängern</a></span><i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<span class=\"pull-right\"><a href=\"\">Buchen</a></span><img src=\"../../images/flags/24/us.png\" alt=\"English\" />"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardHeader": "Sommer Fotowettbewerb",
+      "cardImage": "../../images/sample/apps/app-screenshot3.jpg",
+      "cardContent": false,
+      "cardFooter": false,
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "status": false,
+              "header": false,
+              "text": "<span class=\"pull-right\"><a href=\"\">Verlängern</a></span><i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<span class=\"pull-right\"><a href=\"\">Buchen</a></span><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" />"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardHeader": "Buli 2017 Tippspiel",
+      "cardImage": "../../images/sample/apps/app-screenshot4.jpg",
+      "cardContent": false,
+      "cardFooter": false,
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "status": false,
+              "header": false,
+              "text": "<span class=\"pull-right\"><a href=\"\">Verlängern</a></span><i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016"
+            },
+            {
+              "text": "<span class=\"pull-right\"><a href=\"\">Buchen</a></span><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" />"
+            }
+          ]
+        }
+      ]
+    }
   ],
+  "filterBar": {
+    "searchActivated": {
+      "placeholder":"Search for apps"
+    }
+  },
+  "navSecondary": false,
+  "navPrimary": {
+    "searchActivated": false,
+    "navList": [
+      {
+        "isActive": false
+      },
+      {
+        "isActive": true
+      }
+    ]
+  },
+  "navSidebar": {
+    "btnList": [
+      { "btnText": "App erstellen", "btnClass": "btn-primary btn-block"}
+    ],
+    "navList": [
+      {
+        "text": "Apps <span class=\"pull-right label label-success\">12</span>",
+        "isActive": true
+      },
+      {
+        "text": "Vorlagen <span class=\"pull-right label label-success\">3</span>"
+      }
+    ]
+  },
   "pageHeaderCta": {
     "btnText": "App erstellen",
     "btnClass": "btn-sm btn-primary"
   },
-  "pageTitle": "App Übersicht",
-  "navSecondary": false
+  "pageTitle": "App Übersicht"
 }

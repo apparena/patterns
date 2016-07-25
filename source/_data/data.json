@@ -46,6 +46,10 @@
     "avatar": {
       "src": "../../images/fpo_avatar.png",
       "alt": "Person Name"
+    },
+    "icon": {
+      "src": "../../images/flags/16/de.png",
+      "alt": "Deuschland"
     }
   },
   "imgSquare": {
@@ -60,7 +64,14 @@
     "src": "../../images/fpo_16x9.png",
     "alt": "Landscape Image"
   },
-  "label": "My label",
+  "filterBar": {
+    "searchActivated": {
+      "inputAddonBefore":"<i class=\"fa fa-search\"></i>",
+      "placeholder":"Search for something"
+    }
+  },
+  "labelClass": "label-primary",
+  "labelText": "My label",
   "listItem": "Lorem ipsum dolor sit amet",
   "listItemNested": "Consectetur adipisicing elit",
   "max": "100",

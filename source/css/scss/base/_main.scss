@@ -6,13 +6,21 @@
  * Main content area
  */
 [role=main] {
-	flex: 1;
-	background-color: $gray-lighter;
+  flex: 1;
+  background-color: $gray-lighter;
 }
 
 /**
   * Left column in main content area
   */
 .l-col-left {
-	background-color: $gray;
+  background-color: $gray;
+}
+
+/**
+  * Main column
+  */
+.l-col-main-content {
+  background-color: #fff;
+  border: 1px solid $card-border-color;
 }

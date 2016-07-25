@@ -262,7 +262,14 @@ dd {
   * Left column in main content area
   */
 .l-col-left {
-  background-color: #373a3c; }
+  background-color: #666666; }
+
+/**
+  * Main column
+  */
+.l-col-main-content {
+  background-color: #fff;
+  border: 1px solid #e5e5e5; }
 
 /*------------------------------------*\
     #MEDIA ELEMENTS

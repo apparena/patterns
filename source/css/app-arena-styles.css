@@ -7022,7 +7022,14 @@ a.bg-danger:focus, a.bg-danger:hover {
   * Left column in main content area
   */
 .l-col-left {
-  background-color: #373a3c; }
+  background-color: #666666; }
+
+/**
+  * Main column
+  */
+.l-col-main-content {
+  background-color: #fff;
+  border: 1px solid #e5e5e5; }
 
 /*------------------------------------*\
     $COMPONENTS
@@ -7090,6 +7097,12 @@ a.bg-danger:focus, a.bg-danger:hover {
 .card-grey-light {
   background-color: #DDDDDD;
   border-color: #DDDDDD; }
+
+/*------------------------------------*\
+    #Filter Bar
+\*------------------------------------*/
+.filter-bar {
+  border: 1px solid #e5e5e5; }
 
 /*------------------------------------*\
     $LAYOUT

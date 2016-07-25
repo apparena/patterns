@@ -4,20 +4,16 @@
   "navFooter": {
     "navList": [
       {
-        "text": "Impressum",
-        "url": "link.pages-dashboard"
+        "text": "Impressum"
       },
       {
-        "text": "API Docs",
-        "url": "link.pages-apps"
+        "text": "API Docs"
       },
       {
-        "text": "Datenschutz",
-        "url": "link.pages-customers"
+        "text": "Datenschutz"
       },
       {
-        "text": "Github",
-        "url": "link.pages-developers"
+        "text": "Github"
       }
     ]
   },
@@ -44,7 +40,8 @@
         "text": "Login",
         "url": "link.pages-login"
       }
-    ]
+    ],
+    "searchActivated": true
   },
   "navSecondary": {
     "navList": [
@@ -61,6 +58,9 @@
     ]
   },
   "navSidebar": {
+    "btnList": [
+      { "btnText": "Call to action", "btnClass": "btn-primary btn-block"}
+    ],
     "navList": [
       {
         "text": "Sidebar Nav 1",
@@ -68,15 +68,6 @@
       },
       {
         "text": "Sidebar Nav 2"
-      },
-      {
-        "text": "Sidebar Nav 3"
-      },
-      {
-        "text": "Sidebar Nav 4"
-      },
-      {
-        "text": "Sidebar Nav 5"
       }
     ]
   }

@@ -13,6 +13,9 @@
       "btnClass": "btn-secondary btn-sm"
     }
   ],
+  "navPrimary": {
+    "searchActivated": false
+  },
   "pageHeaderCta": {
     "btnText": "Call to action",
     "btnClass": "btn-sm btn-primary"
