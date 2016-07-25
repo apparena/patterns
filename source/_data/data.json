@@ -68,6 +68,45 @@
     "searchActivated": {
       "inputAddonBefore":"<i class=\"fa fa-search\"></i>",
       "placeholder":"Search for something"
+    },
+    "filter1": {
+      "radioButtonsList": [
+        {
+          "isChecked": true,
+          "label": "Filter Option 1",
+          "name": "filter1"
+        },
+        {
+          "label": "Filter option 2",
+          "name": "filter1"
+        }
+      ]
+    },
+    "filter2": {
+      "checkboxesList": [
+        {
+          "isChecked": true,
+          "label": "Filter Option 1",
+          "name": "filter2"
+        },
+        {
+          "label": "Filter option 2",
+          "name": "filter2"
+        }
+      ]
+    },
+    "filter3": {
+      "checkboxesList": [
+        {
+          "isChecked": true,
+          "label": "Filter Option 1",
+          "name": "filter3"
+        },
+        {
+          "label": "Filter option 2",
+          "name": "filter3"
+        }
+      ]
     }
   },
   "labelClass": "label-primary",

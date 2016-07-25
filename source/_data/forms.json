@@ -1,0 +1,13 @@
+{
+  "radioButtonsList": [
+    {
+      "isChecked": true,
+      "label": "Radio button 1",
+      "name": "radio-buttons"
+    },
+    {
+      "label": "Radio button 2",
+      "name": "radio-buttons"
+    }
+  ]
+}

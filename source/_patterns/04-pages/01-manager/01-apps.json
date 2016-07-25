@@ -4,7 +4,7 @@
     {
       "cardHeader": "EM Tippspiel 2016",
       "cardImage": "../../images/sample/apps/app-screenshot1.jpg",
-      "cardContent": "EM Tippspiel für den Kunden App-Arena",
+      "cardContent": false,
       "cardFooter": false,
       "cardListGroup": [
         {
@@ -12,12 +12,12 @@
             {
               "status": false,
               "header": false,
-              "text": "<span class=\"pull-right\"><a href=\"\">Verlängern</a></span><i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016"
+              "text": "<i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016 <br> <a class=\"btn btn-sm btn-block btn-secondary\">Verlängern</a>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<span class=\"pull-right\"><a href=\"\">Buchen</a></span><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"English\" />"
+              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /><a class=\"btn btn-sm btn-block btn-secondary\">Sprachpaket buchen</a>"
             }
           ]
         }
@@ -34,12 +34,12 @@
             {
               "status": false,
               "header": false,
-              "text": "<span class=\"pull-right\"><a href=\"\">Verlängern</a></span><i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016"
+              "text": "<i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016 <br> <a class=\"btn btn-sm btn-block btn-secondary\">Verlängern</a>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<span class=\"pull-right\"><a href=\"\">Buchen</a></span><img src=\"../../images/flags/24/us.png\" alt=\"English\" />"
+              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><a class=\"btn btn-sm btn-block btn-secondary\">Sprachpaket buchen</a>"
             }
           ]
         }
@@ -56,12 +56,12 @@
             {
               "status": false,
               "header": false,
-              "text": "<span class=\"pull-right\"><a href=\"\">Verlängern</a></span><i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016"
+              "text": "<i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016 <br> <a class=\"btn btn-sm btn-block btn-secondary\">Verlängern</a>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<span class=\"pull-right\"><a href=\"\">Buchen</a></span><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" />"
+              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><a class=\"btn btn-sm btn-block btn-secondary\">Sprachpaket buchen</a>"
             }
           ]
         }
@@ -78,10 +78,10 @@
             {
               "status": false,
               "header": false,
-              "text": "<span class=\"pull-right\"><a href=\"\">Verlängern</a></span><i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016"
+              "text": "<i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016 <br> <a class=\"btn btn-sm btn-block btn-secondary\">Verlängern</a>"
             },
             {
-              "text": "<span class=\"pull-right\"><a href=\"\">Buchen</a></span><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" />"
+              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><a class=\"btn btn-sm btn-block btn-secondary\">Sprachpaket buchen</a>"
             }
           ]
         }
@@ -90,7 +90,10 @@
   ],
   "filterBar": {
     "searchActivated": {
-      "placeholder":"Search for apps"
+      "placeholder": "Apps durchsuchen..."
+    },
+    "filter1": {
+
     }
   },
   "navSecondary": false,
@@ -107,7 +110,10 @@
   },
   "navSidebar": {
     "btnList": [
-      { "btnText": "App erstellen", "btnClass": "btn-primary btn-block"}
+      {
+        "btnText": "App erstellen",
+        "btnClass": "btn-primary btn-block"
+      }
     ],
     "navList": [
       {

@@ -12,3 +12,10 @@
 .card-grey-light {
   @include card-variant($brand-grey-light, $brand-grey-light);
 }
+
+/* Entity cards list styling */
+.l-entity-list .card-header {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
