@@ -1,175 +1,83 @@
 {
   "logoSrc": "../../images/logo.svg",
   "navbarFormClass": "pull-xs-right",
-  "navList": [
-    {
-      "text": "Dashboard",
-      "url": "link.pages-dashboard",
-      "isActive": true
-    },
-    {
-      "text": "Apps",
-      "url": "link.pages-apps"
-    },
-    {
-      "text": "Kunden",
-      "url": "link.pages-customers"
-    },
-    {
-      "text": "Entwickler",
-      "url": "link.pages-developers",
-      "isDisabled": true
-    },
-    {
-      "text": "Login",
-      "url": "link.pages-login"
-    }
-  ],
-  "footerNav": [
-    {
-      "label": "Dashboard",
-      "url": "link.pages-dashboard"
-    },
-    {
-      "label": "Apps",
-      "url": "link.pages-apps"
-    },
-    {
-      "label": "Kunden",
-      "url": "link.pages-customers"
-    },
-    {
-      "label": "Entwickler",
-      "url": "link.pages-developers"
-    },
-    {
-      "label": "Login",
-      "url": "link.pages-login"
-    }
-  ],
-  "sidebarNav": [
-    {
-      "label": "Dashboard",
-      "url": "link.pages-dashboard"
-    },
-    {
-      "label": "Apps",
-      "url": "link.pages-apps"
-    },
-    {
-      "label": "Kunden",
-      "url": "link.pages-customers"
-    },
-    {
-      "label": "Entwickler",
-      "url": "link.pages-developers"
-    },
-    {
-      "label": "Login",
-      "url": "link.pages-login"
-    }
-  ],
-  "primaryNav": [
-    {
-      "label": "Dashboard",
-      "url": "link.pages-dashboard"
-    },
-    {
-      "label": "Apps",
-      "url": "link.pages-apps"
-    },
-    {
-      "label": "Kunden",
-      "url": "link.pages-customers"
-    },
-    {
-      "label": "Entwickler",
-      "url": "link.pages-developers"
-    },
-    {
-      "label": "Login",
-      "url": "link.pages-login"
-    }
-  ],
-  "secondaryNav": [
-    {
-      "caption": "Category 1",
-      "nav": [
-        {
-          "label": "Subnav 1",
-          "url": "link.pages-dashboard"
-        },
-        {
-          "label": "Subnav 2",
-          "url": "link.pages-apps"
-        },
-        {
-          "label": "Subnav 3",
-          "url": "link.pages-customers"
-        }
-      ]
-    },
-    {
-      "caption": "Dashboard",
-      "nav": [
-        {
-          "label": "Subnav 1",
-          "url": "link.pages-dashboard"
-        },
-        {
-          "label": "Subnav 2",
-          "url": "link.pages-apps"
-        },
-        {
-          "label": "Subnav 3",
-          "url": "link.pages-dashboard"
-        },
-        {
-          "label": "Subnav 4",
-          "url": "link.pages-apps"
-        },
-        {
-          "label": "Subnav 5",
-          "url": "link.pages-dashboard"
-        },
-        {
-          "label": "Subnav 6",
-          "url": "link.pages-apps"
-        },
-        {
-          "label": "Subnav 7",
-          "url": "link.pages-dashboard"
-        },
-        {
-          "label": "Subnav 8",
-          "url": "link.pages-apps"
-        },
-        {
-          "label": "Subnav 9",
-          "url": "link.pages-dashboard"
-        },
-        {
-          "label": "Subnav 10",
-          "url": "link.pages-apps"
-        }
-      ]
-    },
-    {
-      "caption": "Category 3",
-      "nav": [
-        {
-          "label": "Subnav 1",
-          "url": "link.pages-dashboard"
-        },
-        {
-          "label": "Subnav 2",
-          "url": "link.pages-apps"
-        },
-        {
-          "label": "Subnav 3",
-          "url": "link.pages-customers"
-        }
-      ]
-    }
-  ]
+  "navFooter": {
+    "navList": [
+      {
+        "text": "Impressum",
+        "url": "link.pages-dashboard"
+      },
+      {
+        "text": "API Docs",
+        "url": "link.pages-apps"
+      },
+      {
+        "text": "Datenschutz",
+        "url": "link.pages-customers"
+      },
+      {
+        "text": "Github",
+        "url": "link.pages-developers"
+      }
+    ]
+  },
+  "navPrimary": {
+    "navList": [
+      {
+        "text": "Dashboard",
+        "url": "link.pages-dashboard",
+        "isActive": true
+      },
+      {
+        "text": "Apps",
+        "url": "link.pages-apps"
+      },
+      {
+        "text": "Kunden",
+        "url": "link.pages-customers"
+      },
+      {
+        "text": "Entwickler",
+        "url": "link.pages-developers"
+      },
+      {
+        "text": "Login",
+        "url": "link.pages-login"
+      }
+    ]
+  },
+  "navSecondary": {
+    "navList": [
+      {
+        "text": "Subnav 1",
+        "isActive": true
+      },
+      {
+        "text": "Subnav 2"
+      },
+      {
+        "text": "Subnav 3"
+      }
+    ]
+  },
+  "navSidebar": {
+    "navList": [
+      {
+        "text": "Sidebar Nav 1",
+        "isActive": true
+      },
+      {
+        "text": "Sidebar Nav 2"
+      },
+      {
+        "text": "Sidebar Nav 3"
+      },
+      {
+        "text": "Sidebar Nav 4"
+      },
+      {
+        "text": "Sidebar Nav 5"
+      }
+    ]
+  }
 }

@@ -1,9 +1,11 @@
-<nav id="l-nav-sidebar">
+{{# navSidebar }}
+    <nav id="l-nav-sidebar">
 
-    {{> atoms-button:btn-primary btn-block(btnText:"App erstellen") }}
-    {{> atoms-button:btn-secondary btn-block(btnText:"Vorlage erstellen") }}
+        {{> atoms-button:btn-primary btn-block(btnText:"App erstellen") }}
+        {{> atoms-button:btn-secondary btn-block(btnText:"Vorlage erstellen") }}
 
-    <hr />
+        <hr />
 
-    {{> molecules-navs:nav-pills nav-stacked }}
-</nav>
+        {{> molecules-navs:nav-pills nav-stacked }}
+    </nav>
+{{/ navSidebar }}

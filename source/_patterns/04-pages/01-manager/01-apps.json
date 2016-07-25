@@ -1,0 +1,14 @@
+{
+  "btnGroupList": [
+    {"btnText": "<i class=\"fa fa-caret-left\"></i>", "btnClass":"btn-secondary btn-sm"},
+    {"btnText": "<i class=\"fa fa-calendar\"></i> 01.Januar 2017 - 31. Januar 2017", "btnClass":"btn-secondary btn-sm"},
+    {"btnText": "<i class=\"fa fa-caret-left\"></i>", "btnClass":"btn-secondary btn-sm"},
+    {"btnText": "Heute", "btnClass":"btn-secondary btn-sm"}
+  ],
+  "pageHeaderCta": {
+    "btnText": "App erstellen",
+    "btnClass": "btn-sm btn-primary"
+  },
+  "pageTitle": "App Übersicht",
+  "navSecondary": false
+}

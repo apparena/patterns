@@ -1,0 +1,9 @@
+{
+  "btnText": "Button",
+  "btnClass": "btn-secondary",
+  "btnGroupList": [
+    {"btnText": "Button 1", "btnClass":"btn-sm btn-secondary"},
+    {"btnText": "Button 2", "btnClass":"btn-sm btn-secondary"},
+    {"btnText": "Button 3", "btnClass":"btn-sm btn-secondary"}
+  ]
+}

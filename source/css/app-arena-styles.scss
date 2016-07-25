@@ -61,6 +61,27 @@
 @import "../js/vendor/bootstrap/scss/utilities-spacing";
 @import "../js/vendor/bootstrap/scss/utilities-responsive";
 
+/*!
+ *  Font Awesome 4.6.3.1 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+//@import "../js/vendor/font-awesome/scss/variables";
+@import "scss/abstracts/variables_font-awesome"; // Font awesome variable overwrites
+@import "../js/vendor/font-awesome/scss/mixins";
+@import "../js/vendor/font-awesome/scss/path";
+@import "../js/vendor/font-awesome/scss/core";
+@import "../js/vendor/font-awesome/scss/larger";
+@import "../js/vendor/font-awesome/scss/fixed-width";
+@import "../js/vendor/font-awesome/scss/list";
+@import "../js/vendor/font-awesome/scss/bordered-pulled";
+@import "../js/vendor/font-awesome/scss/animated";
+@import "../js/vendor/font-awesome/scss/rotated-flipped";
+@import "../js/vendor/font-awesome/scss/stacked";
+@import "../js/vendor/font-awesome/scss/icons";
+@import "../js/vendor/font-awesome/scss/screen-reader";
+
+
 
 /*------------------------------------*\
     $TABLE OF CONTENTS
@@ -116,7 +137,7 @@
 /*------------------------------------*\
     $ABSTRACTS
 \*------------------------------------*/
-//@import "scss/abstracts/mixins";
+@import "scss/abstracts/mixins";
 @import "scss/abstracts/variables";
 
 
@@ -130,16 +151,15 @@
 @import "scss/base/animation";
 @import "scss/base/forms";
 @import "scss/base/global-classes";
-@import "scss/base/headings";
 @import "scss/base/links";
 @import "scss/base/lists";
 @import "scss/base/media";
 @import "scss/base/reset";
 @import "scss/base/tables";
 @import "scss/base/text";*/
+
 @import "scss/base/colors";
-
-
+@import "scss/base/headings";
 @import "scss/base/main";
 
 
