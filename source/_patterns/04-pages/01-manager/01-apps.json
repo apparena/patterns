@@ -89,11 +89,64 @@
     }
   ],
   "filterBar": {
-    "searchActivated": {
-      "placeholder": "Apps durchsuchen..."
-    },
     "filter1": {
-
+      "radioButtonsList": [
+        {
+          "isChecked": true,
+          "label": "Alle Apps",
+          "name": "filter1"
+        },
+        {
+          "label": "Apps mit aktiver Lizenz",
+          "name": "filter1"
+        }
+      ]
+    },
+    "filter2": {
+      "checkboxesList": [
+        {
+          "isChecked": true,
+          "label": "Kunde 1",
+          "name": "filter2"
+        },
+        {
+          "isChecked": true,
+          "label": "Kunde 2",
+          "name": "filter2"
+        }
+      ]
+    },
+    "filter3": {
+      "checkboxesList": [
+        {
+          "isChecked": true,
+          "label": "Template 1",
+          "name": "filter3"
+        },
+        {
+          "isChecked": true,
+          "label": "Template 2",
+          "name": "filter3"
+        }
+      ]
+    },
+    "searchActivated": {
+      "placeholder":"Apps durchsuchen..."
+    },
+    "sortActivated": {
+      "dropdown": {
+        "class": "dropdown",
+        "btnCaption": "Sortieren nach...",
+        "header": false,
+        "menuClass": "dropdown-menu dropdown-menu-right"
+      },
+      "dropdownList": [
+        {"listItemClass": "dropdown-item disabled", "text": "Lizenzdatum (Absteigend)", "url":false},
+        {"listItemClass": "dropdown-item", "text": "Lizenzdatum (Aufsteigend)", "url":false},
+        {"listItemClass": "dropdown-divider"},
+        {"listItemClass": "dropdown-item", "text": "Name (Absteigend)", "url": false},
+        {"listItemClass": "dropdown-item", "text": "Name (Aufsteigend)", "url": false}
+      ]
     }
   },
   "navSecondary": false,

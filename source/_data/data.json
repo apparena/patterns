@@ -65,6 +65,12 @@
     "alt": "Landscape Image"
   },
   "filterBar": {
+    "displayModeActivated": {
+      "btnGroupList": [
+        {"btnText": "<i class=\"fa fa-th\"></i>", "btnTitle": "Raster-Darstellung"},
+        {"btnText": "<i class=\"fa fa-th-list\"></i>", "btnTitle": "Listen-Darstellung"}
+      ]
+    },
     "filter1": {
       "radioButtonsList": [
         {

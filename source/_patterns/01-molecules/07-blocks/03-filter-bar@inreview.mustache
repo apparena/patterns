@@ -5,7 +5,7 @@
         <a class="btn btn-secondary" data-toggle="collapse" href="#filterBarSelection" aria-expanded="false" aria-controls="collapseExample">
             <i class="fa fa-filter"></i> Filter
         </a>
-
+        <!-- See the collapsable after the .filter-bar container -->
     </div>
 
     <!-- Search functionality -->
@@ -15,14 +15,22 @@
         </div>
     {{/ filterBar.searchActivated }}
 
-    <!-- sort functionality functionality -->
+    <!-- sort functionality -->
     {{# filterBar.sortActivated }}
-        <div class="filter-bar-sort">
+        <div class="filter-bar-sort m-r-1">
             {{> molecules-dropdown }}
         </div>
     {{/ filterBar.sortActivated }}
 
+    <!-- display mode functionality (grid or list) -->
+    {{# filterBar.displayModeActivated }}
+        <div class="filter-bar-display-mode">
+            {{> molecules-button-group }}
+        </div>
+    {{/ filterBar.displayModeActivated }}
+
 </div>
+<!-- Collapsable part comes after the main div, as it should appear after the div, when not collapsed -->
 <div class="collapse" id="filterBarSelection">
     <div class="card card-block">
         <div class="row">
