@@ -65,10 +65,6 @@
     "alt": "Landscape Image"
   },
   "filterBar": {
-    "searchActivated": {
-      "inputAddonBefore":"<i class=\"fa fa-search\"></i>",
-      "placeholder":"Search for something"
-    },
     "filter1": {
       "radioButtonsList": [
         {
@@ -106,6 +102,25 @@
           "label": "Filter option 2",
           "name": "filter3"
         }
+      ]
+    },
+    "searchActivated": {
+      "inputAddonBefore":"<i class=\"fa fa-search\"></i>",
+      "placeholder":"Search for something"
+    },
+    "sortActivated": {
+      "dropdown": {
+        "class": "dropdown",
+        "btnCaption": "Sortieren nach...",
+        "header": false,
+        "menuClass": "dropdown-menu dropdown-menu-right"
+      },
+      "dropdownList": [
+        {"listItemClass": "dropdown-item disabled", "text": "Lizenzdatum (Absteigend)", "url":false},
+        {"listItemClass": "dropdown-item", "text": "Lizenzdatum (Aufsteigend)", "url":false},
+        {"listItemClass": "dropdown-divider"},
+        {"listItemClass": "dropdown-item", "text": "Name (Absteigend)", "url": false},
+        {"listItemClass": "dropdown-item", "text": "Name (Aufsteigend)", "url": false}
       ]
     }
   },

@@ -1,41 +1,48 @@
 <div class="filter-bar p-a-1">
 
-
-    <div class="filter-bar-filter">
+    <!-- data filter functionality -->
+    <div class="filter-bar-filter m-r-1">
         <a class="btn btn-secondary" data-toggle="collapse" href="#filterBarSelection" aria-expanded="false" aria-controls="collapseExample">
             <i class="fa fa-filter"></i> Filter
         </a>
-        <div class="collapse" id="filterBarSelection">
-            <div class="card card-block">
-                <div class="row">
-                    {{# filterBar.filter1}}
-                        <div class="col-md-4">
-                            {{> molecules-radio-buttons }}
-                        </div>
-                    {{/filterBar.filter1}}
 
-                    {{# filterBar.filter2}}
-                        <div class="col-md-4">
-                            {{> molecules-checkboxes }}
-                        </div>
-                    {{/filterBar.filter2}}
-
-                    {{# filterBar.filter3}}
-                        <div class="col-md-4">
-                            {{> molecules-checkboxes }}
-                        </div>
-                    {{/filterBar.filter3}}
-                </div>
-            </div>
-        </div>
     </div>
-
-
 
     <!-- Search functionality -->
     {{# filterBar.searchActivated }}
-        <div class="filter-bar-search">
+        <div class="filter-bar-search m-r-1">
             {{> molecules-input-group }}
         </div>
     {{/ filterBar.searchActivated }}
+
+    <!-- sort functionality functionality -->
+    {{# filterBar.sortActivated }}
+        <div class="filter-bar-sort">
+            {{> molecules-dropdown }}
+        </div>
+    {{/ filterBar.sortActivated }}
+
+</div>
+<div class="collapse" id="filterBarSelection">
+    <div class="card card-block">
+        <div class="row">
+            {{# filterBar.filter1}}
+                <div class="col-md-4">
+                    {{> molecules-radio-buttons }}
+                </div>
+            {{/filterBar.filter1}}
+
+            {{# filterBar.filter2}}
+                <div class="col-md-4">
+                    {{> molecules-checkboxes }}
+                </div>
+            {{/filterBar.filter2}}
+
+            {{# filterBar.filter3}}
+                <div class="col-md-4">
+                    {{> molecules-checkboxes }}
+                </div>
+            {{/filterBar.filter3}}
+        </div>
+    </div>
 </div>

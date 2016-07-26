@@ -7108,7 +7108,12 @@ a.bg-danger:focus, a.bg-danger:hover {
     #Filter Bar
 \*------------------------------------*/
 .filter-bar {
-  border: 1px solid #e5e5e5; }
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between; }
+
+.filter-bar-search {
+  flex: 1; }
 
 /*------------------------------------*\
     $LAYOUT

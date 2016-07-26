@@ -4,4 +4,9 @@
 
 .filter-bar {
 	border: 1px solid $card-border-color;
+	display: flex;
+	justify-content: space-between;
+}
+.filter-bar-search {
+	flex: 1;
 }
