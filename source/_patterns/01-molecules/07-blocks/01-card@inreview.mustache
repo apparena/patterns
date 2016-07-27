@@ -1,12 +1,20 @@
 <div class="card">
     {{# cardHeader }}
         <div class="card-header">
-            {{ cardHeader }}
+            {{{ cardHeader }}}
         </div>
     {{/cardHeader}}
 
     {{#cardImage}}
-        <img class="card-img-top img-fluid" src="{{ cardImage }}" alt="Card image">
+        <div class="card-img">
+            <img class="card-img-top img-fluid" src="{{ cardImage }}" alt="Card image">
+            {{#cardImageOverlay}}
+                <div class="card-img-overlay">
+                    {{#cardImageOverlayTitle}}<h4 class="card-title">{{{cardImageOverlayTitle}}}</h4>{{/cardImageOverlayTitle}}
+                    {{#cardImageOverlayText}}<p class="card-text">{{{cardImageOverlayText}}}</p>{{/cardImageOverlayText}}
+                </div>
+            {{/cardImageOverlay}}
+        </div>
     {{/cardImage}}
 
     {{#cardContent}}

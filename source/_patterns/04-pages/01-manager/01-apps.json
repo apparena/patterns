@@ -2,8 +2,11 @@
   "btnGroupList": false,
   "cardsList": [
     {
-      "cardHeader": "EM Tippspiel 2016",
+      "cardHeader": "<div class=\"label label-info pull-right\" title=\"Vorlage der App\">EM Tippspiel</div>EM Tippspiel 2016",
       "cardImage": "../../images/sample/apps/app-screenshot1.jpg",
+      "cardImageOverlay": {
+        "cardImageOverlayText": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+      },
       "cardContent": false,
       "cardFooter": false,
       "cardListGroup": [
@@ -12,20 +15,23 @@
             {
               "status": false,
               "header": false,
-              "text": "<i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016 <br> <a class=\"btn btn-sm btn-block btn-secondary\">Verlängern</a>"
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /><a class=\"btn btn-sm btn-block btn-secondary\">Sprachpaket buchen</a>"
+              "text": "<a class=\"btn btn-sm btn-block btn-primary\">Bearbeiten</a><a class=\"btn btn-sm btn-block btn-secondary\">Als Vorlage speichern</a>"
             }
           ]
         }
       ]
     },
     {
-      "cardHeader": "Adventskalender 2015",
+      "cardHeader": "<div class=\"label label-info pull-right\" title=\"Vorlage der App\">Adventskalender für Sparkassen</div>Adventskalender 2015",
       "cardImage": "../../images/sample/apps/app-screenshot2.jpg",
+      "cardImageOverlay": {
+        "cardImageOverlayText": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+      },
       "cardContent": false,
       "cardFooter": false,
       "cardListGroup": [
@@ -34,20 +40,23 @@
             {
               "status": false,
               "header": false,
-              "text": "<i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016 <br> <a class=\"btn btn-sm btn-block btn-secondary\">Verlängern</a>"
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><a class=\"btn btn-sm btn-block btn-secondary\">Sprachpaket buchen</a>"
+              "text": "<a class=\"btn btn-sm btn-block btn-primary\">Bearbeiten</a><a class=\"btn btn-sm btn-block btn-secondary\">Als Vorlage speichern</a>"
             }
           ]
         }
       ]
     },
     {
-      "cardHeader": "Sommer Fotowettbewerb",
+      "cardHeader": "<div class=\"label label-info pull-right\" title=\"Vorlage der App\">Fotowettbewerb</div>Sommer Fotowettbewerb",
       "cardImage": "../../images/sample/apps/app-screenshot3.jpg",
+      "cardImageOverlay": {
+        "cardImageOverlayText": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" />"
+      },
       "cardContent": false,
       "cardFooter": false,
       "cardListGroup": [
@@ -56,20 +65,23 @@
             {
               "status": false,
               "header": false,
-              "text": "<i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016 <br> <a class=\"btn btn-sm btn-block btn-secondary\">Verlängern</a>"
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><a class=\"btn btn-sm btn-block btn-secondary\">Sprachpaket buchen</a>"
+              "text": "<a class=\"btn btn-sm btn-block btn-primary\">Bearbeiten</a><a class=\"btn btn-sm btn-block btn-secondary\">Als Vorlage speichern</a>"
             }
           ]
         }
       ]
     },
     {
-      "cardHeader": "Buli 2017 Tippspiel",
+      "cardHeader": "<div class=\"label label-info pull-right\" title=\"Vorlage der App\">Bundesliga Tippspiel</div>Buli 2017 Tippspiel",
       "cardImage": "../../images/sample/apps/app-screenshot4.jpg",
+      "cardImageOverlay": {
+        "cardImageOverlayText": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+      },
       "cardContent": false,
       "cardFooter": false,
       "cardListGroup": [
@@ -78,10 +90,12 @@
             {
               "status": false,
               "header": false,
-              "text": "<i class=\"fa fa-calendar\"></i> Lizenz bis 12.12.2016 <br> <a class=\"btn btn-sm btn-block btn-secondary\">Verlängern</a>"
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
             },
             {
-              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><a class=\"btn btn-sm btn-block btn-secondary\">Sprachpaket buchen</a>"
+              "status": false,
+              "header": false,
+              "text": "<a class=\"btn btn-sm btn-block btn-primary\">Bearbeiten</a><a class=\"btn btn-sm btn-block btn-secondary\">Als Vorlage speichern</a>"
             }
           ]
         }

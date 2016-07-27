@@ -1,5 +1,4 @@
 /* Custom bootstrap cards */
-
 .card-secondary {
   @include card-variant($brand-secondary, $brand-secondary);
 }
@@ -11,6 +10,11 @@
 }
 .card-grey-light {
   @include card-variant($brand-grey-light, $brand-grey-light);
+}
+
+// Fix bootstrap img-overlay bug, when using a card header
+.card-img {
+  position: relative;
 }
 
 /* Entity cards list styling */
