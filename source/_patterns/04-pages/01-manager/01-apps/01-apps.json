@@ -20,12 +20,12 @@
             {
               "status": false,
               "header": false,
-              "text": "<small class=\"text-muted\"><i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: EM Tippspiel für Mode-Marken<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: EM Tippspiel für Mode-Marken<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Bearbeiten</a><a class=\"btn btn-sm btn-block btn-secondary\">Als Vorlage speichern</a>"
+              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
             }
           ]
         }
@@ -47,12 +47,12 @@
             {
               "status": false,
               "header": false,
-              "text": "<small class=\"text-muted\"><i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Fotowettbewerb<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Fotowettbewerb<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Bearbeiten</a><a class=\"btn btn-sm btn-block btn-secondary\">Als Vorlage speichern</a>"
+              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
             }
           ]
         }
@@ -79,12 +79,12 @@
             {
               "status": false,
               "header": false,
-              "text": "<small class=\"text-muted\"><i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Bundesliga Tippspiel<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Bundesliga Tippspiel<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Bearbeiten</a><a class=\"btn btn-sm btn-block btn-secondary\">Als Vorlage speichern</a>"
+              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
             }
           ]
         }
@@ -111,12 +111,12 @@
             {
               "status": false,
               "header": false,
-              "text": "<small class=\"text-muted\"><i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Adventskalender 2016<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Adventskalender 2016<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
             },
             {
               "status": false,
               "header": false,
-              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Bearbeiten</a><a class=\"btn btn-sm btn-block btn-secondary\">Als Vorlage speichern</a>"
+              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
             }
           ]
         }
@@ -176,11 +176,14 @@
         "menuClass": "dropdown-menu dropdown-menu-right"
       },
       "dropdownList": [
-        {"listItemClass": "dropdown-item disabled", "text": "Lizenzdatum (Absteigend)", "url":false},
-        {"listItemClass": "dropdown-item", "text": "Lizenzdatum (Aufsteigend)", "url":false},
+        {"listItemClass": "dropdown-item disabled", "text": "<i class=\"fa fa-sort-amount-desc\"></i> Letzte Bearbeitung", "url":false},
+        {"listItemClass": "dropdown-item", "text": "<i class=\"fa fa-sort-amount-asc\"></i> Letzte Bearbeitung", "url":false},
         {"listItemClass": "dropdown-divider"},
-        {"listItemClass": "dropdown-item", "text": "Name (Absteigend)", "url": false},
-        {"listItemClass": "dropdown-item", "text": "Name (Aufsteigend)", "url": false}
+        {"listItemClass": "dropdown-item disabled", "text": "<i class=\"fa fa-sort-amount-desc\"></i> Lizenzdatum", "url":false},
+        {"listItemClass": "dropdown-item", "text": "<i class=\"fa fa-sort-amount-asc\"></i> Lizenzdatum", "url":false},
+        {"listItemClass": "dropdown-divider"},
+        {"listItemClass": "dropdown-item", "text": "<i class=\"fa fa-sort-amount-desc\"></i> Name", "url": false},
+        {"listItemClass": "dropdown-item", "text": "<i class=\"fa fa-sort-amount-asc\"></i> Name", "url": false}
       ]
     }
   },
