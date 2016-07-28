@@ -1,0 +1,61 @@
+.sg-nav a {
+	color: #ddd !important;
+	font-size: 90% !important;
+}
+.sg-tools-toggle {
+	font-size: 90% !important;
+	background: #666 !important;
+}
+#sg-form {
+	color: #ddd !important;
+}
+.sg-input {
+	background: #666 !important;
+	color: #ddd !important;
+}
+.sg-current-size {
+	font-size: 90% !important;
+}
+.sg-header {
+	font-family: 'Ubuntu' !important;
+	background: #666 !important;
+}
+.sg-header a {
+	font-size: 90% !important;
+	color: #ddd !important
+}
+input#sg-size-px, input.sg-input.sg-size-em {
+	color: #4299d4 !important;
+}
+@media (min-width:42em) {
+	.sg-nav>li>ol {
+		top: auto !important;
+	}
+}
+.sg-acc-handle:after {
+	color: #4299d4 !important;
+}
+.sg-acc-handle:hover:after {
+	color: #666 !important;
+}
+.sg-current-size {
+	padding: .90em .7em;
+}
+.sg-nav * > * > * a {
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-property: color, background-color;
+	transition-property: color, background-color;
+}
+.sg-nav * > * > * a:hover {
+	background-color: #4299d4 !important;
+	color: #ddd !important;
+}
+#sg-patterns {
+	padding: 1em 0.5em !important;
+}
+.m-logo {
+    float: left;
+    width: 120px;
+    margin-right: 20px;
+}
