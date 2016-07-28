@@ -166,7 +166,7 @@
       ]
     },
     "searchActivated": {
-      "placeholder":"Apps durchsuchen..."
+      "placeholder":"Kunden durchsuchen..."
     },
     "sortActivated": {
       "dropdown": {
@@ -195,6 +195,9 @@
         "isActive": false
       },
       {
+        "isActive": false
+      },
+      {
         "isActive": true
       }
     ]
@@ -217,8 +220,8 @@
     ]
   },
   "pageHeaderCta": {
-    "btnText": "App erstellen",
+    "btnText": "Kunde erstellen",
     "btnClass": "btn-sm btn-primary-outline"
   },
-  "pageTitle": "App Übersicht"
+  "pageTitle": "Kunden Übersicht"
 }

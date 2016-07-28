@@ -128,7 +128,7 @@
       "radioButtonsList": [
         {
           "isChecked": true,
-          "label": "Alle Apps",
+          "label": "Alle Projekte",
           "name": "filter1"
         },
         {
@@ -166,7 +166,7 @@
       ]
     },
     "searchActivated": {
-      "placeholder":"Apps durchsuchen..."
+      "placeholder":"Projekte durchsuchen..."
     },
     "sortActivated": {
       "dropdown": {
@@ -195,6 +195,12 @@
         "isActive": false
       },
       {
+        "isActive": false
+      },
+      {
+        "isActive": false
+      },
+      {
         "isActive": true
       }
     ]
@@ -217,8 +223,8 @@
     ]
   },
   "pageHeaderCta": {
-    "btnText": "App erstellen",
+    "btnText": "Projekt erstellen",
     "btnClass": "btn-sm btn-primary-outline"
   },
-  "pageTitle": "App Übersicht"
+  "pageTitle": "Projekt Übersicht"
 }
