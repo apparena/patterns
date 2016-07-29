@@ -1,1 +1,6 @@
-{{> templates-entity-list }}
+{{# gridView }}
+    {{> templates-collection-grid }}
+{{/ gridView }}
+{{^ gridView }}
+    {{> templates-collection-list }}
+{{/ gridView }}

@@ -1,6 +1,6 @@
 {{> organisms-header }}
 <main role="main">
-    <div class="container-fluid" >
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-2 t-col-left p-t-1">
                 {{> organisms-nav-sidebar }}
@@ -8,8 +8,14 @@
             <div class="col-md-10 t-col-main p-t-1">
                 {{> molecules-page-title }}
 
-                {{{ main.content }}}
+                {{> molecules-filter-bar }}
 
+                <div class="t-col-main-content p-a-1">
+                    <div class="t-entity-list">
+                        {{> organisms-cards-list }}
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

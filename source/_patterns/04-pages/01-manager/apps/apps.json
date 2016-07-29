@@ -3,13 +3,12 @@
   "cardsList": [
     {
       "header": "EM Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
-      "image": "../../images/sample/apps/app-screenshot1.jpg",
-      "imageOverlay": {
-        "imageOverlayText": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+      "image": {
+        "src": "../../images/sample/apps/app-screenshot1.jpg"
       },
       "content": false,
       "footer": false,
-      "listGroup": [
+      "listGroup":
         {
           "items": [
             {
@@ -29,14 +28,16 @@
             }
           ]
         }
-      ]
+
     },
     {
       "header": "Sommer Fotowettbewerb <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
-      "image": "../../images/sample/apps/app-screenshot3.jpg",
+      "image": {
+        "src": "../../images/sample/apps/app-screenshot3.jpg"
+      },
       "content": false,
       "footer": false,
-      "listGroup": [
+      "listGroup":
         {
           "items": [
             {
@@ -56,14 +57,16 @@
             }
           ]
         }
-      ]
+
     },
     {
       "header": "Buli 2017 Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
-      "image": "../../images/sample/apps/app-screenshot4.jpg",
+      "image": {
+        "src": "../../images/sample/apps/app-screenshot4.jpg"
+      },
       "content": false,
       "footer": false,
-      "listGroup": [
+      "listGroup":
         {
           "items": [
             {
@@ -88,14 +91,16 @@
             }
           ]
         }
-      ]
+
     },
     {
       "header": "Adventskalender 2015 <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
-      "image": "../../images/sample/apps/app-screenshot2.jpg",
+      "image": {
+        "src": "../../images/sample/apps/app-screenshot2.jpg"
+      },
       "content": false,
       "footer": false,
-      "listGroup": [
+      "listGroup":
         {
           "items": [
             {
@@ -120,7 +125,7 @@
             }
           ]
         }
-      ]
+
     }
   ],
   "filterBar": {
@@ -187,6 +192,7 @@
       ]
     }
   },
+  "gridView": true,
   "navSecondary": false,
   "navPrimary": {
     "searchActivated": false,

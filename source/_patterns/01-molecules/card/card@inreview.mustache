@@ -1,37 +1,35 @@
-{{# card }}
-    <div class="card">
-        {{# header }}
-            <div class="card-header">
-                {{{ header }}}
-            </div>
-        {{/header}}
+<div class="card">
+    {{# header }}
+        <div class="card-header">
+            {{{ header }}}
+        </div>
+    {{/header}}
 
-        {{# image}}
-            <div class="card-img">
-                <img class="card-img-top img-fluid" src="{{  src }}" alt="Card image">
-                {{# overlay}}
-                    <div class="card-img-overlay">
-                        {{# title}}<h4 class="card-title">{{{ title }}}</h4>{{/ title }}
-                        {{# text }}<p class="card-text">{{{ text }}}</p>{{/ text }}
-                    </div>
-                {{/ overlay}}
-            </div>
-        {{/ image}}
+    {{# image}}
+        <div class="card-img">
+            <img class="card-img-top img-fluid" src="{{  src }}" alt="Card image">
+            {{# overlay}}
+                <div class="card-img-overlay">
+                    {{# title}}<h4 class="card-title">{{{ title }}}</h4>{{/ title }}
+                    {{# text }}<p class="card-text">{{{ text }}}</p>{{/ text }}
+                </div>
+            {{/ overlay}}
+        </div>
+    {{/ image}}
 
-        {{# content }}
-            <div class="card-block">
-                {{{ content }}}
-            </div>
-        {{/ content }}
+    {{# content }}
+        <div class="card-block">
+            {{{ content }}}
+        </div>
+    {{/ content }}
 
-        {{# listGroup }}
-            {{> molecules-list-group }}
-        {{/ listGroup }}
+    {{# listGroup }}
+        {{> molecules-list-group }}
+    {{/ listGroup }}
 
-        {{# footer }}
-            <div class="card-footer">
-                {{ footer }}
-            </div>
-        {{/footer}}
-    </div>
-{{/card}}
+    {{# footer }}
+        <div class="card-footer">
+            {{ footer }}
+        </div>
+    {{/footer}}
+</div>

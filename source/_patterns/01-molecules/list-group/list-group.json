@@ -1,14 +1,4 @@
 {
-  "content": "Card Content",
-  "footer": "Card Footer",
-  "header": "Card Header",
-  "image": {
-    "src": "../../images/fpo_square.png",
-    "overlay": {
-      "title": "Image overlay title",
-      "text": "Image overlay text"
-    }
-  },
   "listGroup": {
     "items": [
       {

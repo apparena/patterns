@@ -7257,13 +7257,13 @@ a.text-danger:focus, a.text-danger:hover {
 /**
   * Left column in main content area
   */
-.l-col-left {
+.t-col-left {
   background-color: #666666; }
 
 /**
   * Main column
   */
-.l-col-main-content {
+.t-col-main-content {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125); }
 

@@ -1,7 +1,5 @@
-{{# btnGroup }}
-    <div class="btn-group" role="group" aria-label="{{ ariaLabel }}">
-        {{# btnGroup.items }}
-            {{> atoms-button }}
-        {{/ btnGroup.items }}
-    </div>
-{{/btnGroup}}
+<div class="btn-group" role="group" aria-label="{{ ariaLabel }}">
+    {{# items }}
+        {{> atoms-button }}
+    {{/ items }}
+</div>
