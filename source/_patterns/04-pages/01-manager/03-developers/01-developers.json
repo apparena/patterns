@@ -208,7 +208,7 @@
   "navSidebar": {
     "btnList": [
       {
-        "btnText": "App erstellen",
+        "btnText": "Projekt erstellen",
         "btnClass": "btn-primary btn-block"
       }
     ],
@@ -223,8 +223,7 @@
     ]
   },
   "pageHeaderCta": {
-    "btnText": "Projekt erstellen",
-    "btnClass": "btn-sm btn-primary-outline"
+    "btnText": "Projekt erstellen"
   },
   "pageTitle": "Projekt Übersicht"
 }

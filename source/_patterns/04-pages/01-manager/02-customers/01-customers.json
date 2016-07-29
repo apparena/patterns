@@ -205,7 +205,7 @@
   "navSidebar": {
     "btnList": [
       {
-        "btnText": "App erstellen",
+        "btnText": "Kunde erstellen",
         "btnClass": "btn-primary btn-block"
       }
     ],
@@ -220,8 +220,7 @@
     ]
   },
   "pageHeaderCta": {
-    "btnText": "Kunde erstellen",
-    "btnClass": "btn-sm btn-primary-outline"
+    "btnText": "Kunde erstellen"
   },
   "pageTitle": "Kunden Übersicht"
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
   * App-Arena.com Styles related to the styleguide. Include this file to your pages to apply all styles described in
   * the styleguide. Use bootstrap 4 as base and then overwrite and extend it
@@ -11,7 +12,18 @@
 //
 
 // Core variables and mixins
+
+
+/*!
+ * Bootstrap v4.0.0-alpha.3 (http://getbootstrap.com)
+ * Copyright 2011-2016 The Bootstrap Authors
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
 @import "scss/abstracts/variables_bootstrap";
+@import "../js/vendor/bootstrap/scss/variables";
 @import "../js/vendor/bootstrap/scss/mixins";
 
 // Reset and dependencies
@@ -39,8 +51,7 @@
 @import "../js/vendor/bootstrap/scss/card";
 @import "../js/vendor/bootstrap/scss/breadcrumb";
 @import "../js/vendor/bootstrap/scss/pagination";
-@import "../js/vendor/bootstrap/scss/pager";
-@import "../js/vendor/bootstrap/scss/labels";
+@import "../js/vendor/bootstrap/scss/tags";
 @import "../js/vendor/bootstrap/scss/jumbotron";
 @import "../js/vendor/bootstrap/scss/alert";
 @import "../js/vendor/bootstrap/scss/progress";
@@ -57,9 +68,7 @@
 
 // Utility classes
 @import "../js/vendor/bootstrap/scss/utilities";
-@import "../js/vendor/bootstrap/scss/utilities-background";
-@import "../js/vendor/bootstrap/scss/utilities-spacing";
-@import "../js/vendor/bootstrap/scss/utilities-responsive";
+
 
 /*!
  *  Font Awesome 4.6.3.1 by @davegandy - http://fontawesome.io - @fontawesome

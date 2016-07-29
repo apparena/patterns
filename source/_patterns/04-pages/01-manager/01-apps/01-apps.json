@@ -217,8 +217,7 @@
     ]
   },
   "pageHeaderCta": {
-    "btnText": "App erstellen",
-    "btnClass": "btn-sm btn-primary-outline"
+    "btnText": "App erstellen"
   },
   "pageTitle": "App Übersicht"
 }
