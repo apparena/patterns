@@ -2,16 +2,16 @@
   "btnGroupList": false,
   "cardsList": [
     {
-      "cardHeader": "EM Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
-      "cardImage": "../../images/sample/apps/app-screenshot1.jpg",
-      "cardImageOverlay": {
-        "cardImageOverlayText": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+      "header": "EM Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "image": "../../images/sample/apps/app-screenshot1.jpg",
+      "imageOverlay": {
+        "imageOverlayText": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
       },
-      "cardContent": false,
-      "cardFooter": false,
-      "cardListGroup": [
+      "content": false,
+      "footer": false,
+      "listGroup": [
         {
-          "listGroupItems": [
+          "items": [
             {
               "status": "list-group-item-info",
               "header": false,
@@ -32,13 +32,13 @@
       ]
     },
     {
-      "cardHeader": "Sommer Fotowettbewerb <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
-      "cardImage": "../../images/sample/apps/app-screenshot3.jpg",
-      "cardContent": false,
-      "cardFooter": false,
-      "cardListGroup": [
+      "header": "Sommer Fotowettbewerb <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "image": "../../images/sample/apps/app-screenshot3.jpg",
+      "content": false,
+      "footer": false,
+      "listGroup": [
         {
-          "listGroupItems": [
+          "items": [
             {
               "status": false,
               "header": false,
@@ -59,13 +59,13 @@
       ]
     },
     {
-      "cardHeader": "Buli 2017 Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
-      "cardImage": "../../images/sample/apps/app-screenshot4.jpg",
-      "cardContent": false,
-      "cardFooter": false,
-      "cardListGroup": [
+      "header": "Buli 2017 Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "image": "../../images/sample/apps/app-screenshot4.jpg",
+      "content": false,
+      "footer": false,
+      "listGroup": [
         {
-          "listGroupItems": [
+          "items": [
             {
               "status": "list-group-item-danger",
               "header": false,
@@ -91,13 +91,13 @@
       ]
     },
     {
-      "cardHeader": "Adventskalender 2015 <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
-      "cardImage": "../../images/sample/apps/app-screenshot2.jpg",
-      "cardContent": false,
-      "cardFooter": false,
-      "cardListGroup": [
+      "header": "Adventskalender 2015 <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "image": "../../images/sample/apps/app-screenshot2.jpg",
+      "content": false,
+      "footer": false,
+      "listGroup": [
         {
-          "listGroupItems": [
+          "items": [
             {
               "status": "list-group-item-warning",
               "header": false,
