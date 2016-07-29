@@ -1,0 +1,6 @@
+{
+  "modal": {
+    "header": "My modal header",
+    "body": "<h3></h3>"
+  }
+}

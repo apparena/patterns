@@ -1,0 +1,229 @@
+{
+  "btnGroupList": false,
+  "cardsList": [
+    {
+      "cardHeader": "EM Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "cardImage": "../../images/sample/apps/app-screenshot1.jpg",
+      "cardImageOverlay": {
+        "cardImageOverlayText": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+      },
+      "cardContent": false,
+      "cardFooter": false,
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "status": "list-group-item-info",
+              "header": false,
+              "text": "Die App wurde noch nicht veröffentlicht.<a href=\"#\" class=\"btn btn-primary btn-block btn-sm m-t-1 \">Jetzt veröffentlichen</a>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: EM Tippspiel für Mode-Marken<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardHeader": "Sommer Fotowettbewerb <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "cardImage": "../../images/sample/apps/app-screenshot3.jpg",
+      "cardContent": false,
+      "cardFooter": false,
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "status": false,
+              "header": false,
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-facebook\"></i> <a href=\"https://www.facebook.com/apparena\" target=\"_blank\">App-Arena.com</a><br> <i class=\"fa fa-facebook\"></i> <a href=\"https://www.facebook.com/iconsultants\" target=\"_blank\">iConsultants</a><br> <i class=\"fa fa-globe\"></i> <a href=\"https://www.app-arena.com/fotowettbewerb\" target=\"_blank\">https://www.app-arena.com/fotowettbewerb</a> <br> <i class=\"fa fa-globe\"></i> <a href=\"https://www.iconsultants.eu/fotowettbewerb\" target=\"_blank\">https://www.iconsultants.eu/fotowettbewerb</a></small>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Fotowettbewerb<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardHeader": "Buli 2017 Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "cardImage": "../../images/sample/apps/app-screenshot4.jpg",
+      "cardContent": false,
+      "cardFooter": false,
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "status": "list-group-item-danger",
+              "header": false,
+              "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz läuft in 5 Tagen ab!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm m-t-1 \">Jetzt verlängern</a>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-facebook\"></i> <a href=\"https://www.facebook.com/apparena\" target=\"_blank\">App-Arena.com</a><br> <i class=\"fa fa-facebook\"></i> <a href=\"https://www.facebook.com/iconsultants\" target=\"_blank\">iConsultants</a><br> <i class=\"fa fa-globe\"></i> <a href=\"https://www.app-arena.com/fotowettbewerb\" target=\"_blank\">https://www.app-arena.com/fotowettbewerb</a> <br> <i class=\"fa fa-globe\"></i> <a href=\"https://www.iconsultants.eu/fotowettbewerb\" target=\"_blank\">https://www.iconsultants.eu/fotowettbewerb</a></small>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Bundesliga Tippspiel<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardHeader": "Adventskalender 2015 <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "cardImage": "../../images/sample/apps/app-screenshot2.jpg",
+      "cardContent": false,
+      "cardFooter": false,
+      "cardListGroup": [
+        {
+          "listGroupItems": [
+            {
+              "status": "list-group-item-warning",
+              "header": false,
+              "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz ist abgelaufen!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm m-t-1 \">Jetzt verlängern</a>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-facebook\"></i> <a href=\"https://www.facebook.com/apparena\" target=\"_blank\">App-Arena.com</a><br> <i class=\"fa fa-facebook\"></i> <a href=\"https://www.facebook.com/iconsultants\" target=\"_blank\">iConsultants</a><br> <i class=\"fa fa-globe\"></i> <a href=\"https://www.app-arena.com/fotowettbewerb\" target=\"_blank\">https://www.app-arena.com/fotowettbewerb</a> <br> <i class=\"fa fa-globe\"></i> <a href=\"https://www.iconsultants.eu/fotowettbewerb\" target=\"_blank\">https://www.iconsultants.eu/fotowettbewerb</a></small>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Adventskalender 2016<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+            },
+            {
+              "status": false,
+              "header": false,
+              "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filterBar": {
+    "filter1": {
+      "radioButtonsList": [
+        {
+          "isChecked": true,
+          "label": "Alle Projekte",
+          "name": "filter1"
+        },
+        {
+          "label": "Apps mit aktiver Lizenz",
+          "name": "filter1"
+        }
+      ]
+    },
+    "filter2": {
+      "checkboxesList": [
+        {
+          "isChecked": true,
+          "label": "Kunde 1",
+          "name": "filter2"
+        },
+        {
+          "isChecked": true,
+          "label": "Kunde 2",
+          "name": "filter2"
+        }
+      ]
+    },
+    "filter3": {
+      "checkboxesList": [
+        {
+          "isChecked": true,
+          "label": "Template 1",
+          "name": "filter3"
+        },
+        {
+          "isChecked": true,
+          "label": "Template 2",
+          "name": "filter3"
+        }
+      ]
+    },
+    "searchActivated": {
+      "placeholder":"Projekte durchsuchen..."
+    },
+    "sortActivated": {
+      "dropdown": {
+        "class": "dropdown",
+        "btnCaption": "Sortieren nach...",
+        "header": false,
+        "menuClass": "dropdown-menu dropdown-menu-right"
+      },
+      "dropdownList": [
+        {"listItemClass": "dropdown-item disabled", "text": "<i class=\"fa fa-sort-amount-desc\"></i> Letzte Bearbeitung", "url":false},
+        {"listItemClass": "dropdown-item", "text": "<i class=\"fa fa-sort-amount-asc\"></i> Letzte Bearbeitung", "url":false},
+        {"listItemClass": "dropdown-divider"},
+        {"listItemClass": "dropdown-item disabled", "text": "<i class=\"fa fa-sort-amount-desc\"></i> Lizenzdatum", "url":false},
+        {"listItemClass": "dropdown-item", "text": "<i class=\"fa fa-sort-amount-asc\"></i> Lizenzdatum", "url":false},
+        {"listItemClass": "dropdown-divider"},
+        {"listItemClass": "dropdown-item", "text": "<i class=\"fa fa-sort-amount-desc\"></i> Name", "url": false},
+        {"listItemClass": "dropdown-item", "text": "<i class=\"fa fa-sort-amount-asc\"></i> Name", "url": false}
+      ]
+    }
+  },
+  "navSecondary": false,
+  "navPrimary": {
+    "searchActivated": false,
+    "navList": [
+      {
+        "isActive": false
+      },
+      {
+        "isActive": false
+      },
+      {
+        "isActive": false
+      },
+      {
+        "isActive": true
+      }
+    ]
+  },
+  "navSidebar": {
+    "btnList": [
+      {
+        "btnText": "Projekt erstellen",
+        "btnClass": "btn-primary btn-block"
+      }
+    ],
+    "navList": [
+      {
+        "text": "Apps <span class=\"pull-right label label-success\">12</span>",
+        "isActive": true
+      },
+      {
+        "text": "Vorlagen <span class=\"pull-right label label-success\">3</span>"
+      }
+    ]
+  },
+  "pageHeaderCta": {
+    "btnText": "Projekt erstellen"
+  },
+  "pageTitle": "Projekt Übersicht"
+}

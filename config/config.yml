@@ -24,6 +24,8 @@ baseDir: /var/www/html/
 plugins:
     reload:
         enabled: false
+    dataInheritance:
+        enabled: true
 ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:
