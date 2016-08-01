@@ -8,10 +8,6 @@
     {
       "btnText": "Button 2",
       "btnClass": "btn-secondary"
-    },
-    {
-      "btnText": "Button 3",
-      "btnClass": "btn-secondary"
     }
   ]
 }

@@ -1,0 +1,13 @@
+<div class="dropdown {{ dropdown.class }}">
+	<button class="btn {{ dropdown.btnClass }} dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    {{{ dropdown.btnCaption }}}
+	</button>
+	<ul class="{{ dropdown.menuClass }}" aria-labelledby="dropdownMenu1">
+        {{# dropdown.header }}<h6 class="dropdown-header">{{dropdown.header}}</h6>{{/dropdown.header}}
+		{{# dropdown.items }}
+		<li {{# class }} class="{{ class }}"{{/ class }}>
+            <a href="{{ url }}">{{{ text }}}</a>
+        </li>
+		{{/ dropdown.items }}
+	</ul>
+</div>

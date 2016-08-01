@@ -1,0 +1,14 @@
+{
+  "dropdown": {
+    "class": "open",
+    "btnCaption": "Dropdown Menu 1",
+    "btnClass": "btn-secondary",
+    "items": [
+      {"class": "dropdown-item", "text": "Option 1", "url":"link.molecules-dropdown"},
+      {"class": "dropdown-divider"},
+      {"class": "dropdown-item", "text": "Option 2", "url":"link.molecules-dropdown"}
+    ],
+    "header":"Dropdown header",
+    "menuClass": "dropdown-menu"
+  }
+}

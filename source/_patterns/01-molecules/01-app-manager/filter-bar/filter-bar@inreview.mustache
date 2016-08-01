@@ -1,12 +1,14 @@
 <div class="filter-bar p-a-1">
 
     <!-- data filter functionality -->
-    <div class="filter-bar-filter m-r-1">
-        <a class="btn btn-secondary" data-toggle="collapse" href="#filterBarSelection" aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-filter"></i> Filter
-        </a>
-        <!-- See the collapsable after the .filter-bar container -->
-    </div>
+    {{# filterBar.filtersActivated }}
+        <div class="filter-bar-filter m-r-1">
+            <a class="btn btn-secondary" data-toggle="collapse" href="#filterBarSelection" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-filter"></i> Filter
+            </a>
+            <!-- See the collapsable after the .filter-bar container -->
+        </div>
+    {{/ filterBar.filtersActivated }}
 
     <!-- Search functionality -->
     {{# filterBar.searchActivated }}
@@ -24,33 +26,30 @@
 
     <!-- display mode functionality (grid or list) -->
     {{# filterBar.displayModeActivated }}
-        <div class="filter-bar-display-mode">
-            {{> molecules-button-group }}
-        </div>
+        {{# btnGroup }}
+            <div class="filter-bar-display-mode">
+                {{> molecules-button-group }}
+            </div>
+        {{/btnGroup}}
     {{/ filterBar.displayModeActivated }}
 
 </div>
 <!-- Collapsable part comes after the main div, as it should appear after the div, when not collapsed -->
-<div class="collapse" id="filterBarSelection">
-    <div class="card card-block">
-        <div class="row">
-            {{# filterBar.filter1}}
-                <div class="col-md-4">
-                    {{> molecules-radio-buttons }}
-                </div>
-            {{/filterBar.filter1}}
-
-            {{# filterBar.filter2}}
-                <div class="col-md-4">
-                    {{> molecules-checkboxes }}
-                </div>
-            {{/filterBar.filter2}}
-
-            {{# filterBar.filter3}}
-                <div class="col-md-4">
-                    {{> molecules-checkboxes }}
-                </div>
-            {{/filterBar.filter3}}
+{{# filterBar.filtersActivated }}
+    <div class="collapse" id="filterBarSelection">
+        <div class="card card-block">
+            <div class="row">
+                {{#items}}
+                    <div class="col-md-4">
+                    {{#checkboxes}}
+                        {{> molecules-checkboxes }}
+                    {{/checkboxes}}
+                    {{#radioButtons}}
+                        {{> molecules-radio-buttons }}
+                    {{/radioButtons}}
+                    </div>
+                {{/items}}
+            </div>
         </div>
     </div>
-</div>
+{{/filterBar.filtersActivated}}

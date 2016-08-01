@@ -1,0 +1,16 @@
+{
+  "navSecondary": {
+    "navList": [
+      {
+        "text": "Subnav 1",
+        "isActive": true
+      },
+      {
+        "text": "Subnav 2"
+      },
+      {
+        "text": "Subnav 3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "filterBar": {
+    "displayModeActivated": {
+      "btnGroup": {
+        "items": [
+          {
+            "btnText": "<i class=\"fa fa-th\"></i>",
+            "btnTitle": "Raster-Darstellung",
+            "btnClass": "btn-secondary"
+          },
+          {
+            "btnText": "<i class=\"fa fa-th-list\"></i>",
+            "btnTitle": "Listen-Darstellung",
+            "btnClass": "btn-secondary"
+          }
+        ]
+      }
+    },
+    "filtersActivated": {
+      "items": [
+        {
+          "type": "radioButtons",
+          "checkboxes": false,
+          "radioButtons": {
+            "items": [
+              {
+                "isChecked": true,
+                "label": "Filter Option 1",
+                "name": "filter1"
+              },
+              {
+                "label": "Filter option 2",
+                "name": "filter1"
+              }
+            ]
+          }
+        },
+        {
+          "type": "checkboxes",
+          "radioButtons": false,
+          "checkboxes": {
+            "items": [
+              {
+                "isChecked": true,
+                "label": "Filter Option 1",
+                "name": "filter2"
+              },
+              {
+                "label": "Filter option 2",
+                "name": "filter2"
+              }
+            ]
+          }
+        },
+        {
+          "type": "checkboxes",
+          "radioButtons": false,
+          "checkboxes": {
+            "items": [
+              {
+                "isChecked": true,
+                "label": "Filter Option 1",
+                "name": "filter2"
+              },
+              {
+                "label": "Filter option 2",
+                "name": "filter2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "searchActivated": {
+      "inputAddonBefore": "<i class=\"fa fa-search\"></i>",
+      "placeholder": "Search for something"
+    },
+    "sortActivated": {
+      "dropdown": {
+        "class": "dropdown",
+        "btnCaption": "Sortieren nach...",
+        "btnClass": "btn-secondary",
+        "header": false,
+        "items": [
+          {
+            "class": "dropdown-item disabled",
+            "text": "<i class=\"fa fa-sort-amount-desc\"></i> Lizenzdatum",
+            "url": false
+          },
+          {
+            "class": "dropdown-item",
+            "text": "<i class=\"fa fa-sort-amount-asc\"></i> Lizenzdatum",
+            "url": false
+          },
+          {
+            "class": "dropdown-divider"
+          },
+          {
+            "class": "dropdown-item",
+            "text": "<i class=\"fa fa-sort-amount-desc\"></i> Name",
+            "url": false
+          },
+          {
+            "class": "dropdown-item",
+            "text": "<i class=\"fa fa-sort-amount-asc\"></i> Name",
+            "url": false
+          }
+        ],
+        "menuClass": "dropdown-menu dropdown-menu-right"
+      }
+    }
+  }
+}

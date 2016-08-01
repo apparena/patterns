@@ -4,7 +4,8 @@
       {
         "status": "active",
         "header": "List item Header 1 Active",
-        "text": "List group item text"
+        "text": "List group item text",
+        "tag": "12"
       },
       {
         "status": "disabled",

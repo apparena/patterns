@@ -1,0 +1,18 @@
+{
+  "navFooter": {
+    "navList": [
+      {
+        "text": "Impressum"
+      },
+      {
+        "text": "API Docs"
+      },
+      {
+        "text": "Datenschutz"
+      },
+      {
+        "text": "Github"
+      }
+    ]
+  }
+}

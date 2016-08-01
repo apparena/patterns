@@ -1,0 +1,16 @@
+{
+  "navSidebar": {
+    "btnList": [
+      { "btnText": "Call to action", "btnClass": "btn-primary btn-block"}
+    ],
+    "navList": [
+      {
+        "text": "Sidebar Nav 1",
+        "isActive": true
+      },
+      {
+        "text": "Sidebar Nav 2"
+      }
+    ]
+  }
+}
