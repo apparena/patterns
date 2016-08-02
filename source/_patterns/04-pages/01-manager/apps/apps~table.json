@@ -1,6 +1,8 @@
 {
-  "filtersActivated": false,
-  "sortActivated": false,
+  "filterBar": {
+    "filtersActivated": false,
+    "sortActivated": false
+  },
   "gridView": false,
   "tableView": true,
   "listView": false,
