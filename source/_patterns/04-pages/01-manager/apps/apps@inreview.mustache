@@ -1,6 +1,9 @@
 {{# gridView }}
     {{> templates-collection-grid }}
 {{/ gridView }}
-{{^ gridView }}
+{{# listView }}
     {{> templates-collection-list }}
-{{/ gridView }}
+{{/ listView }}
+{{# tableView }}
+    {{> templates-collection-table }}
+{{/ tableView }}

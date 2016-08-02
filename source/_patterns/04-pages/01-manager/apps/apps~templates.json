@@ -1,0 +1,213 @@
+{
+  "btnGroupList": false,
+  "cardsList": [
+    {
+      "header": "EM Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "image": {
+        "src": "https://www.app-arena.com/media/catalog/product/cache/1/small_image/286x169/040ec09b1e35df139433887a97daa66f/e/m/em-tippspiel-v2_1_laptop.png"
+      },
+      "content": false,
+      "footer": false,
+      "listGroup": {
+        "items": [
+          {
+            "status": false,
+            "header": false,
+            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> Vorlagen-ID: 345 <br> <i class=\"fa fa-star-o\"></i> Anzahl Apps aus Vorlage: 32 Apps <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Tippspiel<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016</small>"
+          },
+          {
+            "status": false,
+            "header": false,
+            "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
+          },
+          {
+            "status": false,
+            "header": false,
+            "text": false
+          }
+        ]
+      }
+    },
+    {
+      "header": "Fotowettbewerb <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "image": {
+        "src": "https://www.app-arena.com/media/catalog/product/cache/1/small_image/286x169/040ec09b1e35df139433887a97daa66f/f/o/fotowettbewerb_slider01_2.png"
+      },
+      "content": false,
+      "footer": false,
+      "listGroup": {
+        "items": [
+          {
+            "status": false,
+            "header": false,
+            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> Vorlagen-ID: 345 <br> <i class=\"fa fa-star-o\"></i> Anzahl Apps aus Vorlage: 32 Apps <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Tippspiel<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016</small>"
+          },
+          {
+            "status": false,
+            "header": false,
+            "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
+          },
+          {
+            "status": false,
+            "header": false,
+            "text": false
+          }
+        ]
+      }
+    },
+    {
+      "header": "Adventskalender für Sparkassen <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "image": {
+        "src": "https://www.app-arena.com/media/catalog/product/cache/1/small_image/286x169/040ec09b1e35df139433887a97daa66f/a/d/adventskalender_slider01_sk.png"
+      },
+      "content": false,
+      "footer": false,
+      "listGroup": {
+        "items": [
+          {
+            "status": false,
+            "header": false,
+            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> Vorlagen-ID: 345 <br> <i class=\"fa fa-star-o\"></i> Anzahl Apps aus Vorlage: 32 Apps <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Adventskalender<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016</small>"
+          },
+          {
+            "status": false,
+            "header": false,
+            "text": "<a class=\"btn btn-sm btn-block btn-secondary\">Alle Informationen</a>"
+          },
+          {
+            "status": false,
+            "header": false,
+            "text": false
+          },
+          {
+            "status": false,
+            "header": false,
+            "text": false
+          }
+        ]
+      }
+    },
+    {
+      "header": false,
+      "image": false,
+      "content": false,
+      "footer": false,
+      "listGroup": false
+    }
+  ],
+  "filterBar": {
+    "filtersActivated": {
+      "items": [
+        {
+          "type": "checkboxes",
+          "radioButtons": false,
+          "checkboxes": {
+            "items": [
+              {
+                "isChecked": true,
+                "label": "Fotowettbewerb",
+                "name": "project-filter"
+              },
+              {
+                "label": "Tippspiel",
+                "name": "project-filter"
+              },
+              {
+                "label": "Adventskalender",
+                "name": "project-filter"
+              },
+              {
+                "label": "Pairs",
+                "name": "project-filter"
+              }
+            ]
+          }
+        },
+        {
+          "type": "checkboxes",
+          "checkboxes": false,
+          "radioButtons": false
+        },
+        {
+          "type": "checkboxes",
+          "checkboxes": false,
+          "radioButtons": false
+        }
+      ]
+    },
+    "searchActivated": {
+      "placeholder": "Vorlagen durchsuchen..."
+    },
+    "sortActivated": {
+      "dropdown": {
+        "class": "dropdown",
+        "btnCaption": "Sortieren nach...",
+        "header": false,
+        "items": [
+          {
+            "class": "dropdown-item disabled",
+            "text": "<i class=\"fa fa-sort-amount-desc\"></i> Letzte Bearbeitung",
+            "url": false
+          },
+          {
+            "class": "dropdown-item",
+            "text": "<i class=\"fa fa-sort-amount-asc\"></i> Letzte Bearbeitung",
+            "url": false
+          },
+          {
+            "class": "dropdown-divider"
+          },
+          {
+            "class": "dropdown-item",
+            "text": "<i class=\"fa fa-sort-amount-desc\"></i> Name",
+            "url": false
+          },
+          {
+            "class": "dropdown-item",
+            "text": "<i class=\"fa fa-sort-amount-asc\"></i> Name",
+            "url": false
+          }
+        ],
+        "menuClass": "dropdown-menu dropdown-menu-right"
+      }
+    }
+  },
+  "gridView": true,
+  "navSecondary": false,
+  "navPrimary": {
+    "searchActivated": false,
+    "navList": [
+      {
+        "isActive": false
+      },
+      {
+        "isActive": true
+      }
+    ]
+  },
+  "navSidebar": {
+    "btnList": [
+      {
+        "btnText": "App erstellen",
+        "btnClass": "btn-primary btn-block"
+      }
+    ],
+    "navList": [
+      {
+        "text": "Apps <span class=\"pull-right label label-success\">12</span>",
+        "url": "link.pages-apps",
+        "isActive": false
+      },
+      {
+        "text": "Vorlagen <span class=\"pull-right label label-success\">3</span>",
+        "isActive": true
+      }
+    ]
+  },
+  "pageTitle": {
+    "title": "Vorlagen Übersicht",
+    "cta": {
+      "btnText": "Vorlage erstellen"
+    }
+  }
+}

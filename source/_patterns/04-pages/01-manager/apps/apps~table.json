@@ -1,0 +1,145 @@
+{
+  "filtersActivated": false,
+  "sortActivated": false,
+  "gridView": false,
+  "tableView": true,
+  "listView": false,
+  "table": {
+    "thead": {
+      "th": [
+        {
+          "text": "Screenshot"
+        },
+        {
+          "text": "App-ID"
+        },
+        {
+          "text": "Name"
+        },
+        {
+          "text": "Sprachen"
+        },
+        {
+          "text": "Lizenz bis <i class=\"fa fa-sort-desc\"></i>",
+          "class": "table-active"
+        },
+        {
+          "text": "Besitzer"
+        },
+        {
+          "text": "Actions"
+        }
+      ]
+    },
+    "tbody": [
+      {
+        "tr": {
+          "td": [
+            {
+              "text": "<img src=\"../../images/sample/apps/app-screenshot1.jpg\" width=\"80\">"
+            },
+            {
+              "text": "12345"
+            },
+            {
+              "text": "<a href=\"/patterns/04-pages-01-manager-apps-app-detail@inprogress/04-pages-01-manager-apps-app-detail@inprogress.html\">EM Tippspiel</a>"
+            },
+            {
+              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+            },
+            {
+              "text": "12. Dezember 2016"
+            },
+            {
+              "text": "App-Arena.com"
+            },
+            {
+              "text": "<a class=\"btn btn-link\" href=\"\"><i class=\"fa fa-ellipsis-h\"></i></a> <-- DROPDOWN"
+            }
+          ]
+        }
+      },
+      {
+        "tr": {
+          "td": [
+            {
+              "text": "<img src=\"../../images/sample/apps/app-screenshot3.jpg\" width=\"80\">"
+            },
+            {
+              "text": "23456"
+            },
+            {
+              "text": "<a href=\"/patterns/04-pages-01-manager-apps-app-detail@inprogress/04-pages-01-manager-apps-app-detail@inprogress.html\">Sommer Fotowettbewerb</a>"
+            },
+            {
+              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+            },
+            {
+              "text": "12. Dezember 2016"
+            },
+            {
+              "text": "Hugo Boss"
+            },
+            {
+              "text": "<a class=\"btn btn-link\" href=\"\"><i class=\"fa fa-ellipsis-h\"></i></a>"
+            }
+          ]
+        }
+      },
+      {
+        "tr": {
+          "td": [
+            {
+              "text": "<img src=\"../../images/sample/apps/app-screenshot2.jpg\" width=\"80\">"
+            },
+            {
+              "text": "34567"
+            },
+            {
+              "text": "<a href=\"/patterns/04-pages-01-manager-apps-app-detail@inprogress/04-pages-01-manager-apps-app-detail@inprogress.html\">Buli 2017 Tippspiel</a>"
+            },
+            {
+              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+            },
+            {
+              "text": "12. Dezember 2016"
+            },
+            {
+              "text": "App-Arena.com"
+            },
+            {
+              "text": "<a class=\"btn btn-link\" href=\"\"><i class=\"fa fa-ellipsis-h\"></i></a>"
+            }
+          ]
+        }
+      },
+      {
+        "tr": {
+          "td": [
+            {
+              "text": "<img src=\"../../images/sample/apps/app-screenshot4.jpg\" width=\"80\">"
+            },
+            {
+              "text": "12345"
+            },
+            {
+              "text": "<a href=\"/patterns/04-pages-01-manager-apps-app-detail@inprogress/04-pages-01-manager-apps-app-detail@inprogress.html\">Adventskalender 2015 für Sparkassen</a>"
+            },
+            {
+              "text": "<img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" />"
+            },
+            {
+              "text": "<a class=\"tag tag-warning\">12. Dezember 2016</a>"
+            },
+            {
+              "text": "Sparkassen Verlag Neuraudropsbudenlist"
+            },
+            {
+              "text": "<a class=\"btn btn-link\" href=\"\"><i class=\"fa fa-ellipsis-h\"></i></a>"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

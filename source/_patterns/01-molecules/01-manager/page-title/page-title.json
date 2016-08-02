@@ -1,0 +1,14 @@
+{
+  "pageTitle": {
+    "btnGroup": {
+      "ariaLabel": "App erstellen",
+      "items": [
+        {
+          "btnText": "App erstellen",
+          "btnClass": "btn-outline-primary btn-sm"
+        }
+      ]
+    },
+    "title": "Page Title"
+  }
+}

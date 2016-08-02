@@ -1,3 +1,5 @@
 {
-  "gridView": false
+  "gridView": false,
+  "tableView": false,
+  "listView": true
 }

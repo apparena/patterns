@@ -20,6 +20,7 @@
       "items": [
         {
           "type": "radioButtons",
+          "title": "Filter Title 1",
           "checkboxes": false,
           "radioButtons": {
             "items": [
@@ -37,6 +38,7 @@
         },
         {
           "type": "checkboxes",
+          "title": "Filter Title 2",
           "radioButtons": false,
           "checkboxes": {
             "items": [
@@ -54,6 +56,7 @@
         },
         {
           "type": "checkboxes",
+          "title": "Filter Title 3",
           "radioButtons": false,
           "checkboxes": {
             "items": [

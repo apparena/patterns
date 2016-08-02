@@ -1,10 +1,12 @@
-<ul class="checkboxes">
-    {{# checkboxes.items }}
-        <div class="checkbox {{ status }}">
-            <label>
-                {{> atoms-checkbox }}
-                {{ label }}
-            </label>
+{{# checkboxes }}
+    {{# items }}
+        <div class="form-check">
+            <div class="checkbox {{ status }}">
+                <label class="form-check-label">
+                    {{> atoms-checkbox }}
+                    {{ label }}
+                </label>
+            </div>
         </div>
-    {{/ checkboxes.items }}
-</ul>
+    {{/items}}
+{{/checkboxes}}

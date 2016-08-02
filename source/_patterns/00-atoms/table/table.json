@@ -1,0 +1,58 @@
+{
+  "table": {
+    "thead": {
+      "th": [
+        {
+          "text": "Column 1"
+        },
+        {
+          "text": "Column 2"
+        },
+        {
+          "text": "Column 3"
+        },
+        {
+          "text": "Column 4"
+        }
+      ]
+    },
+    "tbody": [
+      {
+        "tr": {
+          "td": [
+            {
+              "text": "Value 1"
+            },
+            {
+              "text": "Value 2"
+            },
+            {
+              "text": "Value 3"
+            },
+            {
+              "text": "Value 4"
+            }
+          ]
+        }
+      },
+      {
+        "tr": {
+          "td": [
+            {
+              "text": "Value 1"
+            },
+            {
+              "text": "Value 2"
+            },
+            {
+              "text": "Value 3"
+            },
+            {
+              "text": "Value 4"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

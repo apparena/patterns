@@ -125,6 +125,7 @@
       "items": [
         {
           "type": "radioButtons",
+          "title": "Filtern nach Lizenzstatus",
           "radioButtons": {
             "items": [
               {
@@ -141,32 +142,42 @@
         },
         {
           "type": "checkboxes",
+          "title": "Filtern nach Kunden",
           "checkboxes": {
             "items": [
               {
                 "isChecked": true,
-                "label": "Kunde 1",
-                "name": "filter2"
+                "label": "App-Arena.com",
+                "name": "customer-filter"
               },
               {
-                "label": "Kunde 2",
-                "name": "filter2"
+                "label": "iConsultants GmbH",
+                "name": "customer-filter"
+              },
+              {
+                "label": "Marcapo GmbH",
+                "name": "customer-filter"
               }
             ]
           }
         },
         {
           "type": "checkboxes",
+          "title": "Filtern nach Vorlage",
           "checkboxes": {
             "items": [
               {
                 "isChecked": true,
-                "label": "Template 1",
-                "name": "filter3"
+                "label": "Adventskalender für Sparkassen",
+                "name": "template-filter"
               },
               {
-                "label": "Template 2",
-                "name": "filter3"
+                "label": "EM Tippspiel",
+                "name": "template-filter"
+              },
+              {
+                "label": "Fotowettbewerb für VR-Banken",
+                "name": "template-filter"
               }
             ]
           }
@@ -249,12 +260,15 @@
         "isActive": true
       },
       {
-        "text": "Vorlagen <span class=\"pull-right label label-success\">3</span>"
+        "text": "Vorlagen <span class=\"pull-right label label-success\">3</span>",
+        "url": "link.pages-apps-templates"
       }
     ]
   },
-  "pageHeaderCta": {
-    "btnText": "App erstellen"
-  },
-  "pageTitle": "App Übersicht"
+  "pageTitle": {
+    "title": "App Übersicht",
+    "cta": {
+      "btnText": "App erstellen"
+    }
+  }
 }
