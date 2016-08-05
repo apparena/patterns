@@ -1,0 +1,10 @@
+{
+  "inputGroup": {
+    "class": false,
+    "addonBefore": "<i class=\"fa fa-envelope\"></i>",
+    "addonAfter": "@test.de"
+  },
+  "input": {
+    "placeholder": "Enter your email here..."
+  }
+}

@@ -1,0 +1,13 @@
+<div class="form-group {{ styleModifier }} {{ formGroup.class }}">
+    <label class="col-form-label" for="{{ inputGroup.id }}">{{ formGroup.label }}</label>
+
+    {{> molecules-input-group }}
+
+    {{# formGroup.feedback }}
+        <div class="form-control-feedback">{{ formGroup.feedback }}</div>
+    {{/ formGroup.feedback}}
+
+    {{# formGroup.helpText }}
+        <div class="form-text text-muted">{{ formGroup.helpText }}</div>
+    {{/ formGroup.helpText }}
+</div>

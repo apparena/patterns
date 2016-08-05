@@ -1,0 +1,22 @@
+<div class="o-login">
+<div>
+    <h1 class="c-login-logo">
+        {{> atoms-logo-inverse }}
+    </h1>
+
+    <!-- CARD component -->
+    <div class="card">
+        <div class="card-header">
+            {{{ header }}}
+        </div>
+
+        <div class="card-block">
+            {{# login.items }}
+                {{> molecules-form-group }}
+            {{/ login.items }}
+        </div>
+    </div>
+
+</div>
+
+</div>

@@ -7307,7 +7307,7 @@ a.text-danger:focus, a.text-danger:hover {
 /**
  * Primary top navigation
  */
-.t-nav-primary > .nav {
+.o-nav-primary > .nav {
   margin-top: 20px; }
 
 /**

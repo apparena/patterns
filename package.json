@@ -1,6 +1,6 @@
 {
   "name": "apparena-patterns",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license" : "MIT",
   "description": "Styleguide and patterns of App-Arena.com",
   "keywords": [
@@ -11,6 +11,7 @@
     "reactjs",
     "react"
   ],
+  "main": "./source/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/apparena/patterns.git"
