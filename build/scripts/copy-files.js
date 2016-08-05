@@ -58,7 +58,7 @@ function createPackageFile() {
             } = packageData;
 
             const minimalPackage = {
-                name: 'App-Arena GmbH',
+                name: "apparena-patterns-react",
                 author,
                 version,
                 description,

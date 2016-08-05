@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../../js/reactComponent";
+import ReactComponent from "../../reactComponent";
 import cx from "classnames"
 
 export default class Card extends ReactComponent {
