@@ -7307,13 +7307,13 @@ a.text-danger:focus, a.text-danger:hover {
 /**
  * Primary top navigation
  */
-.t-nav-primary > .nav {
+.o-nav-primary > .nav {
   margin-top: 20px; }
 
 /**
  * Secondary top navigation
  */
-.t-nav-secondary {
+.o-nav-secondary {
   padding: 15px;
   border-bottom: 1px solid #eceeef; }
 
@@ -7365,6 +7365,9 @@ a.text-danger:focus, a.text-danger:hover {
 
 .filter-bar-search {
   flex: 1; }
+
+.o-login .o-login-logo img {
+  max-width: 300px; }
 
 /*------------------------------------*\
     $LAYOUT
