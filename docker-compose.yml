@@ -1,7 +1,7 @@
 web:
   build: .
   ports:
-    - "80:80"
+    - "81:80"
   #links:
   #  - mysql
   volumes:

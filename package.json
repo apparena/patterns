@@ -11,6 +11,9 @@
     "reactjs",
     "react"
   ],
+  "scripts": {
+    "sass-watch": "sass --watch source/css:source/css &"
+  },
   "main": "./source/index.js",
   "repository": {
     "type": "git",
@@ -19,6 +22,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
-    "react": "^15.3.0"
+    "react": "^15.3.0",
+    "bootstrap": "^4"
   }
 }
