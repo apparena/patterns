@@ -1,6 +1,6 @@
 {
   "name": "apparena-patterns",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license" : "MIT",
   "description": "Styleguide and patterns of App-Arena.com",
   "keywords": [
@@ -15,5 +15,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/apparena/patterns.git"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
+    "react": "^15.3.0"
   }
 }
