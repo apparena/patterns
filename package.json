@@ -1,6 +1,6 @@
 {
   "name": "apparena-patterns",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "license" : "MIT",
   "description": "Styleguide and patterns of App-Arena.com",
   "keywords": [
@@ -12,6 +12,13 @@
     "react"
   ],
   "scripts": {
+    "build": "npm run build:babel && npm run build:copy-files",
+    "build:babel": "babel ./source/_patterns --ignore *.md,*.txt,*.mustache,*.scss  --out-dir ./build/react",
+    "build:copy-files": "babel-node ./build/scripts/copy-files.js",
+    "clean:build": "rimraf build/react",
+    "lint": "eslint src docs/src test/integration && echo \"eslint: no lint errors\"",
+    "lint:find-rules": "eslint-find-rules -u .eslintrc.js",
+    "prebuild": "npm run clean:build",
     "sass-watch": "sass --watch source/css:source/css &"
   },
   "main": "./source/index.js",
@@ -19,10 +26,63 @@
     "type": "git",
     "url": "https://github.com/apparena/patterns.git"
   },
+  "scripts": {
+
+  },
+  "peerDependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
   "dependencies": {
     "classnames": "^2.2.5",
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
     "react": "^15.3.0",
     "bootstrap": "^4"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.3.7",
+    "babel-cli": "^6.7.7",
+    "babel-core": "6.10.4",
+    "babel-eslint": "6.1.2",
+    "babel-loader": "6.2.4",
+    "babel-plugin-syntax-trailing-function-commas": "6.8.0",
+    "babel-plugin-transform-class-properties": "6.10.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "6.8.0",
+    "babel-plugin-transform-dev-warning": "^0.1.0",
+    "babel-plugin-transform-react-constant-elements": "^6.5.0",
+    "babel-plugin-transform-react-inline-elements": "^6.6.5",
+    "babel-plugin-transform-react-remove-prop-types": "^0.2.6",
+    "babel-plugin-transform-replace-object-assign": "^0.2.1",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-es2016": "6.11.3",
+    "babel-preset-react": "6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "chalk": "1.1.3",
+    "cross-spawn": "4.0.0",
+    "css-loader": "0.23.1",
+    "eslint": "3.1.1",
+    "eslint-loader": "1.4.1",
+    "eslint-plugin-import": "1.10.3",
+    "eslint-plugin-react": "5.2.2",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.9.0",
+    "fs": "0.0.2",
+    "fs-extra": "^0.30.0",
+    "html-webpack-plugin": "2.22.0",
+    "json-loader": "0.5.4",
+    "less": "^2.6.0",
+    "less-loader": "^2.2.2",
+    "node-sass": "^3.8.0",
+    "opn": "4.0.2",
+    "postcss-loader": "0.9.1",
+    "rimraf": "2.5.3",
+    "sass-loader": "^4.0.0",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
   }
 }

@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../../js/reactComponent";
+import ReactComponent from "../../reactComponent";
 import Card from "../../01-molecules/card/card";
 
 export default class CardsList extends ReactComponent {
