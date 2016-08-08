@@ -1,0 +1,83 @@
+.progress-tracker {
+  display: block;
+  font-size: 12px;
+  margin: 10px 0 0;
+  padding: 0;
+  table-layout: fixed;
+  word-wrap: break-word
+}
+
+.progress-tracker:first-child {
+  margin-top: 0
+}
+
+.progress-tracker-step {
+  box-sizing: border-box;
+  display: table-cell;
+  padding: 0 10px;
+  max-width: 140px;
+  min-width: 80px;
+  text-align: center
+}
+
+.progress-tracker-step>a,.progress-tracker-step>span {
+  display: block;
+  font-weight: 700;
+  outline: none;
+  padding-top: 25px;
+  position: relative
+}
+
+.progress-tracker-step>a:before,.progress-tracker-step>span:before {
+  background: $brand-primary;
+  border-radius: 100%;
+  box-shadow: 0 0 0 3px #f5f5f5;
+  content: "";
+  height: 10px;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  top: 3px;
+  width: 10px
+}
+
+.progress-tracker-step+.progress-tracker-step>a:after,.progress-tracker-step+.progress-tracker-step>span:after {
+  background: $brand-primary;
+  border: solid #f5f5f5;
+  border-width: 2px 0;
+  box-shadow: -5px 0 0 -2px $brand-primary,5px 0 0 -2px $brand-primary;
+  box-sizing: content-box;
+  content: "";
+  height: 4px;
+  left: -50%;
+  margin-left: -14px;
+  margin-right: 6px;
+  position: absolute;
+  right: 50%;
+  top: 4px;
+}
+
+.progress-tracker-step-active~.progress-tracker-step {
+  color: #707070
+}
+
+.progress-tracker-step-active~.progress-tracker-step>a:before,.progress-tracker-step-active~.progress-tracker-step>span:before {
+  background-color: #ccc
+}
+
+.progress-tracker-step-active~.progress-tracker-step>a:after,.progress-tracker-step-active~.progress-tracker-step>span:after {
+  background-color: #f5f5f5;
+  box-shadow: none
+}
+
+.progress-tracker-inverted .progress-tracker-step>a:before,.progress-tracker-inverted .progress-tracker-step>span:before {
+  box-shadow: 0 0 0 3px #fff
+}
+
+.progress-tracker-inverted .progress-tracker-step+.progress-tracker-step>a:after,.progress-tracker-inverted .progress-tracker-step+.progress-tracker-step>span:after {
+  border-color: #fff
+}
+
+.progress-tracker-inverted .progress-tracker-step-active~.progress-tracker-step>a:after,.progress-tracker-inverted .progress-tracker-step-active~.progress-tracker-step>span:after {
+  background-color: #fff
+}

@@ -1,0 +1,31 @@
+{{% BLOCKS }}
+{{< templates-focused-task }}
+
+{{$ contentBlock }}
+<div class="card">
+    {{# header }}
+        <div class="card-header">
+            {{{ header }}}
+        </div>
+    {{/header}}
+
+    {{# content }}
+        {{#progressTracker}}
+            {{> molecules-progress-tracker }}
+        {{/progressTracker}}
+        <div class="card-block">
+            {{> molecules-form-group }}
+            {{> molecules-form-group }}
+        </div>
+    {{/ content }}
+
+    {{# footer }}
+        <div class="card-footer text-xs-right">
+            {{{ footer }}}
+        </div>
+    {{/footer}}
+</div>
+{{/ contentBlock }}
+
+{{/ templates-focused-task }}
+

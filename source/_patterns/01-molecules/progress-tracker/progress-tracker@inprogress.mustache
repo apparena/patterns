@@ -1,0 +1,13 @@
+<div class="progress-tracker">
+    <ol class="progress-tracker">
+        {{#items}}
+            <li class="progress-tracker-step {{class}} {{#isActive}}progress-tracker-step-active{{/isActive}}"
+                {{#id}}id="{{id}}"{{/id}}
+                {{#href}}href="{{href}}"{{/href}}
+                style="width:25%">
+                <span>{{text}}</span>
+            </li>
+        {{/items}}
+    </ol>
+</div>
+
