@@ -2,6 +2,7 @@ import React, {PropTypes} from "react";
 import ReactComponent from "../../reactComponent";
 
 export default class Button extends ReactComponent {
+    // @todo: jmorr: so ist das nicht korrekt!! alle strings müssen als einzelne props übergeben werden.
     static propTypes = {
         button: PropTypes.shape({
             btnText: PropTypes.string,

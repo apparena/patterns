@@ -3,6 +3,7 @@ import path from 'path';
 import fse from 'fs-extra';
 
 const files = [
+    './source/css/scss',
     'README.md',
     'CHANGELOG.md',
     'LICENSE',
