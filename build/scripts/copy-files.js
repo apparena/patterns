@@ -1,6 +1,9 @@
 /* eslint-disable no-console */
-import path from 'path';
-import fse from 'fs-extra';
+import path from "path";
+import fse from "fs-extra";
+import Minimist from "minimist";
+
+const argv = Minimist(process.argv.slice(2));
 
 const files = [
     './source/css/scss',
@@ -47,7 +50,6 @@ function createPackageFile() {
         .then((packageData) => {
             const {
                 author,
-                version,
                 description,
                 keywords,
                 repository,
@@ -57,6 +59,11 @@ function createPackageFile() {
                 peerDependencies,
                 dependencies,
             } = packageData;
+
+            var {version}  = packageData;
+            if (argv._.length) {
+                version = argv._[0];
+            }
 
             const minimalPackage = {
                 name: "apparena-patterns-react",

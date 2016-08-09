@@ -42,7 +42,7 @@ export default class Card extends ReactComponent {
                     })
                 )
             }).isRequired
-        })
+        }).isRequired
     };
 
     _renderHeader() {

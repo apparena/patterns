@@ -16,10 +16,15 @@
     "build:babel": "babel ./source/_patterns --ignore *.md,*.txt,*.mustache,*.scss  --out-dir ./build/react",
     "build:copy-files": "babel-node ./build/scripts/copy-files.js",
     "clean:build": "rimraf build/react",
-    "lint": "eslint src docs/src test/integration && echo \"eslint: no lint errors\"",
+    "lint": "eslint src docs/src build/test/integration && echo \"eslint: no lint errors\"",
     "lint:find-rules": "eslint-find-rules -u .eslintrc.js",
     "prebuild": "npm run clean:build",
-    "sass-watch": "sass --watch source/css:source/css &"
+    "sass-watch": "sass --watch source/css:source/css &",
+    "test": "cross-env NODE_ENV=test babel-node build/test/index.js",
+    "test:coverage": "cross-env NODE_ENV=test babel-node ./node_modules/istanbul/lib/cli.js cover build/test/index.js",
+    "test:karma": "karma start build/test/karma.conf.js --single-run",
+    "test:unit": "cross-env NODE_ENV=test babel-node build/test/index.js unit",
+    "test:unit:watch": "cross-env NODE_ENV=test babel-node build/test/watch.js unit"
   },
   "main": "./source/index.js",
   "repository": {
@@ -33,8 +38,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
-    "react": "^15.3.0",
-    "bootstrap": "^4"
+    "react": "^15.3.0"
   },
   "devDependencies": {
     "autoprefixer": "6.3.7",
@@ -67,6 +71,38 @@
     "opn": "4.0.2",
     "rimraf": "2.5.3",
     "react": "^15.3.0",
-    "react-dom": "^15.3.0"
+    "react-dom": "^15.3.0",
+    "simple-assign": "^0.1.0",
+    "app-module-path": "^1.0.6",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-stage-1": "^6.5.0",
+    "babel-runtime": "^6.6.1",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "cross-env": "^2.0.0",
+    "enzyme": "^2.4.1",
+    "eslint-find-rules": "^1.11.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-mocha": "^4.0.0",
+    "glob": "^7.0.3",
+    "istanbul": "^1.1.0-alpha.1",
+    "jsdom": "^9.4.1",
+    "json-loader": "^0.5.4",
+    "karma": "^1.1.1",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "minimist": "^1.2.0",
+    "mocha": "^2.4.5",
+    "nodemon": "^1.9.1",
+    "phantomjs-prebuilt": "^2.1.7",
+    "react-addons-test-utils": "^15.2.1",
+    "react-hot-loader": "^1.3.0",
+    "react-tap-event-plugin": "^1.0.0",
+    "recursive-readdir-sync": "^1.0.6",
+    "sinon": "^1.17.3",
+    "webpack": "^1.13.1"
   }
 }
