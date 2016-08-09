@@ -1,5 +1,4 @@
 <div class="o-login">
-<div>
     <h1 class="o-login-logo text-xs-center">
         {{> atoms-logo }}
     </h1>
@@ -15,8 +14,11 @@
                 {{> molecules-form-group }}
             {{/ login.items }}
 
-            {{> atoms-button:btn btn-primary btn-block btn-lg(btnText:"Anmelden") }}
+
+        </div>
+
+        <div class="card-footer text-xs-right">
+            {{> atoms-button:btn btn-primary(btnText:"Anmelden") }}
         </div>
     </div>
-</div>
 </div>

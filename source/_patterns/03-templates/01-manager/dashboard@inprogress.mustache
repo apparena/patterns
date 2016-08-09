@@ -1,0 +1,39 @@
+{{> organisms-header }}
+<main role="main">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    {{#appList}}
+                        <div class="div col-md-6">
+                            {{> molecules-card }}
+                        </div>
+                    {{/appList}}
+                    {{#customerList}}
+                        <div class="div col-md-6">
+                            {{> molecules-card }}
+                        </div>
+                    {{/customerList}}
+                    {{#templateList}}
+                        <div class="div col-md-6">
+                            {{> molecules-card }}
+                        </div>
+                    {{/templateList}}
+                    {{#projectList}}
+                        <div class="div col-md-6">
+                            {{> molecules-card }}
+                        </div>
+                    {{/projectList}}
+                </div>
+            </div>
+            <div class="col-md-3">
+                {{#userList}}
+                    {{> molecules-card }}
+                {{/userList}}
+            </div>
+        </div>
+    </div>
+
+</main>
+{{> organisms-footer }}
