@@ -14,8 +14,12 @@
             {{> molecules-progress-tracker }}
         {{/progressTracker}}
         <div class="card-block">
-            {{> molecules-form-group }}
-            {{> molecules-form-group }}
+            {{#customer}}
+                {{> molecules-form-group }}
+            {{/customer}}
+            {{#app}}
+                {{> molecules-form-group }}
+            {{/app}}
         </div>
     {{/ content }}
 

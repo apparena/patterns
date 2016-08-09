@@ -7373,7 +7373,7 @@ a.text-danger:focus, a.text-danger:hover {
 .progress-tracker {
   display: block;
   font-size: 12px;
-  margin: 10px 0 0;
+  margin: 1rem 0 0;
   padding: 0;
   table-layout: fixed;
   word-wrap: break-word; }
@@ -7383,9 +7383,8 @@ a.text-danger:focus, a.text-danger:hover {
 
 .progress-tracker-step {
   box-sizing: border-box;
-  display: table-cell;
+  display: inline-block;
   padding: 0 10px;
-  max-width: 140px;
   min-width: 80px;
   text-align: center; }
 

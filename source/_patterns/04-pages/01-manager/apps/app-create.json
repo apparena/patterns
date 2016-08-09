@@ -6,9 +6,44 @@
     "header": "Neue App erstellen",
     "progressTracker": {
         "items": [
-            {"text":"App aussuchen", "href":"#step1", "id": "step1", "class": "step1", "isActive": true },
-            {"text":"Zusatzleistungen", "href":"#step2", "id": "step2", "class": "step2", "isActive": false },
-            {"text":"Lizenz", "href":"#step3", "id": "step3", "class": "step3", "isActive": false }
+            {"text":"App aussuchen", "href":"#step1", "id": "step1", "style":"width:33%", "class": "step1", "isActive": true },
+            {"text":"Zusatzleistungen buchen", "href":"#step2", "id": "step2", "style":"width:33%", "class": "step2", "isActive": false },
+            {"text":"Lizenz wählen", "href":"#step3", "id": "step3", "style":"width:33%", "class": "step3", "isActive": false }
         ]
+    },
+    "customer": {
+        "formGroup": {
+            "class": "has-success",
+            "feedback": false,
+            "label": "App anlegen für:",
+            "helpText": false
+        },
+        "inputGroup": {
+            "class": false,
+            "addonBefore": false,
+            "addonAfter": false
+        },
+        "input": {
+            "class": "form-control-success",
+            "placeholder": "Kunden durchsuchen...",
+            "value": "App-Arena GmbH"
+        }
+    },
+    "app": {
+        "formGroup": {
+            "class": false,
+            "feedback": false,
+            "label": "App auswählen",
+            "helpText": false
+        },
+        "inputGroup": {
+            "class": false,
+            "addonBefore": false,
+            "addonAfter": false
+        },
+        "input": {
+            "class": "form-control-success",
+            "placeholder": "Vorlagen durchsuchen..."
+        }
     }
 }

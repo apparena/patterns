@@ -1,7 +1,7 @@
 .progress-tracker {
   display: block;
   font-size: 12px;
-  margin: 10px 0 0;
+  margin: $spacer-x 0 0;
   padding: 0;
   table-layout: fixed;
   word-wrap: break-word
@@ -15,7 +15,6 @@
   box-sizing: border-box;
   display: inline-block;
   padding: 0 10px;
-  max-width: 140px;
   min-width: 80px;
   text-align: center
 }
