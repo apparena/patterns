@@ -94,7 +94,7 @@ export default class Card extends ReactComponent {
                         return (
                             <li className={cx("list-group-item", item.status)} key={index}>
                                 <h5 className="list-group-item-heading">{item.header}</h5>
-                                <p className="list-group-item-text">{item.text}</p>
+                                <div className="list-group-item-text"><p dangerouslySetInnerHTML={{__html: item.text}}/></div>
                             </li>
                         )}
                     )}
