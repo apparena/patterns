@@ -50,7 +50,7 @@ export default class CardsList extends ReactComponent {
     _renderCard() {
         if (this.props.cardsList.length) {
             return (
-                <div>
+                <div className="card-deck">
                     {this.props.cardsList.map((item, index) => {
                         return (
                             <Card
@@ -65,8 +65,10 @@ export default class CardsList extends ReactComponent {
 
     render() {
         return (
-            <div className="card-deck">
-                {this._renderCard()}
+            <div className="t-col-main-content p-a-1">
+                <div className="t-entity-list">
+                    {this._renderCard()}
+                </div>
             </div>
         )
     }

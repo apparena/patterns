@@ -38,7 +38,8 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
-    "react": "^15.3.0"
+    "react": "^15.3.0",
+    "bootstrap": "^4.0.0-alpha.3"
   },
   "devDependencies": {
     "autoprefixer": "6.3.7",
