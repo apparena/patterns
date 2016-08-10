@@ -3,7 +3,7 @@
   * App-Arena.com Styles related to the styleguide. Include this file to your pages to apply all styles described in
   * the styleguide. Use bootstrap 4 as base and then overwrite and extend it
   *
-  * PLEASE USE SMACSS by Jonathan Snook http://smacss.com/ for all styling.
+  * PLEASE USE SMACSS by Jonathan Snook http://smacss.com/ for all styling
   */
 /*------------------------------------*\
     Include bootstrap 4 components
@@ -7618,13 +7618,13 @@ main[role=main] {
 /**
  * Breakpoints
  */
-.navbar-form.has-icon {
+.m-navbar-form.has-icon {
   position: relative; }
-  .navbar-form.has-icon i {
+  .m-navbar-form.has-icon i {
     position: absolute;
     left: 10px;
     top: 10px; }
-  .navbar-form.has-icon input {
+  .m-navbar-form.has-icon input {
     padding-left: 30px; }
 
 .o-login .o-login-logo img {
