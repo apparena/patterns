@@ -7184,7 +7184,6 @@ a.text-danger:focus, a.text-danger:hover {
 @import "scss/base/links";
 @import "scss/base/lists";
 @import "scss/base/media";
-@import "scss/base/reset";
 @import "scss/base/tables";
 @import "scss/base/text";*/
 .brand-primary-80 {
@@ -7267,6 +7266,23 @@ a.text-danger:focus, a.text-danger:hover {
 .t-col-main-content {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125); }
+
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+html, body {
+  height: 100%; }
+
+main[role=main] {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -180px;
+  /* the bottom margin is the negative value of the footer's height */ }
+
+.o-footer, .push {
+  height: 180px;
+  /* .push must be the same height as .footer */ }
 
 /*------------------------------------*\
     $COMPONENTS
