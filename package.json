@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "build": "npm run build:babel && npm run build:copy-files",
-    "build:babel": "babel ./source/_patterns --ignore *.md,*.txt,*.mustache,*.scss  --out-dir ./build/react",
+    "build:babel": "babel ./source/_patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./build/react/src --copy-files",
     "build:copy-files": "babel-node ./build/scripts/copy-files.js",
     "clean:build": "rimraf build/react",
     "lint": "eslint src docs/src build/test/integration && echo \"eslint: no lint errors\"",
@@ -26,7 +26,6 @@
     "test:unit": "cross-env NODE_ENV=test babel-node build/test/index.js unit",
     "test:unit:watch": "cross-env NODE_ENV=test babel-node build/test/watch.js unit"
   },
-  "main": "./source/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/apparena/patterns.git"

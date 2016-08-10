@@ -6,7 +6,7 @@ import Minimist from "minimist";
 const argv = Minimist(process.argv.slice(2));
 
 const files = [
-    './source/css/scss',
+    './source/css',
     'README.md',
     'CHANGELOG.md',
     'LICENSE',
@@ -70,7 +70,7 @@ function createPackageFile() {
                 author,
                 version,
                 description,
-                main: './index.js',
+                main: './src/index.js',
                 keywords,
                 repository,
                 license,
