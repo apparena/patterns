@@ -7247,12 +7247,11 @@ a.text-danger:focus, a.text-danger:hover {
     #MAIN
 \*------------------------------------*/
 /**
- * Main content area
+ * Main content area.
  */
 [role=main] {
   flex: 1;
-  background-color: #eceeef;
-  padding-top: 1rem; }
+  background-color: #eceeef; }
 
 /**
   * Left column in main content area
@@ -7314,9 +7313,12 @@ main[role=main] {
 /**
  * Navbar
  */
-.navbar-brand > img {
-  min-width: 200px;
-  min-height: 60px; }
+.navbar-brand {
+  height: 40px;
+  padding: 10px 0;
+  margin-right: 2rem; }
+  .navbar-brand > img {
+    height: 20px; }
 
 /**
   * Top navigations
@@ -7631,7 +7633,8 @@ main[role=main] {
   background: #373a3c;
   color: #fff;
   line-height: 1.2;
-  padding: 2rem; }
+  padding: 2rem;
+  font-size: 90%; }
   .o-footer .nav-link {
     color: #fff; }
   .o-footer .nav-link:hover {

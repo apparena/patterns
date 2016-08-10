@@ -7247,12 +7247,11 @@ a.text-danger:focus, a.text-danger:hover {
     #MAIN
 \*------------------------------------*/
 /**
- * Main content area
+ * Main content area.
  */
 [role=main] {
   flex: 1;
-  background-color: #eceeef;
-  padding-top: 1rem; }
+  background-color: #eceeef; }
 
 /**
   * Left column in main content area
@@ -7314,9 +7313,12 @@ main[role=main] {
 /**
  * Navbar
  */
-.navbar-brand > img {
-  min-width: 200px;
-  min-height: 60px; }
+.navbar-brand {
+  height: 40px;
+  padding: 10px 0;
+  margin-right: 2rem; }
+  .navbar-brand > img {
+    height: 20px; }
 
 /**
   * Top navigations
@@ -7383,6 +7385,87 @@ main[role=main] {
 .filter-bar-search {
   flex: 1; }
 
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+/*
+ * 1) Color variables involve a two-tier system to keep colors in sync. The
+ *    first tier defines the brand and neutral colors, and the second tier
+ *    defines the application of those colors.
+ */
+/*
+ * Brand Colors
+ * 1) Brand color variables use English names to define colors to make palettes easier to
+ *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
+ * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
+ *    second-tier application colors.
+ *
+ */
+/*
+ * Neutral Colors
+ * 1) Neutral color variables use a numbered system to define variables for better maintainability.
+ *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3
+ */
+/**
+ * Utility Colors
+ * 1) Utility colors are colors used to provide feedback, such as alert messages,
+ * form validation, etc.
+ */
+/*
+ * Text Colors
+ * 1) These are non-linked text colors, such as body copy.
+ */
+/*
+ * Heading Colors
+ * 1) These are non-linked heading colors, such as h2, h3, etc.
+ */
+/*
+ * Text Link Colors
+ * 1) These are for linked text, such as a link found within an article,
+ *    navigation link, footer link, etc.
+ */
+/*
+ * Border Colors
+ * 1) Border colors are used as decoration or dividers, such as as a seperator
+ *    for navigation items, block borders, etc.
+ */
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+/**
+ * Spacing Defaults
+ */
+/*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+/**
+ * Border Width
+ */
+/**
+ * Border Radius
+ */
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+/**
+ * Animation Duration
+ */
+/**
+ * Animation Easing
+ */
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+/**
+ * Breakpoints
+ */
 .progress-tracker {
   display: block;
   font-size: 12px;
@@ -7550,7 +7633,8 @@ main[role=main] {
   background: #373a3c;
   color: #fff;
   line-height: 1.2;
-  padding: 2rem; }
+  padding: 2rem;
+  font-size: 90%; }
   .o-footer .nav-link {
     color: #fff; }
   .o-footer .nav-link:hover {
