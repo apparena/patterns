@@ -1,0 +1,62 @@
+{
+  "navbar": {
+    "class": "navbar-light bg-faded",
+    "helpNavigation": {
+      "dropdown": {
+        "class": "",
+        "btnCaption": "<i class=\"fa fa-question-circle-o\" aria-hidden=\"true\"></i>",
+        "btnClass": "",
+        "id":"navbarHelp",
+        "items": [
+          {"class": "dropdown-item", "text": "Option 1", "url":"link.molecules-dropdown"},
+          {"class": "dropdown-divider"},
+          {"class": "dropdown-item", "text": "Option 2", "url":"link.molecules-dropdown"}
+        ],
+        "header":"Dropdown header",
+        "menuClass": "dropdown-menu dropdown-menu-right"
+      }
+    },
+    "primaryNavigation": {
+      "navList": [
+        {
+          "text": "Dashboard",
+          "url": "link.pages-dashboard",
+          "isActive": true
+        },
+        {
+          "text": "Apps",
+          "url": "link.pages-apps"
+        },
+        {
+          "text": "Kunden",
+          "url": "link.pages-customers"
+        },
+        {
+          "text": "Entwickler",
+          "url": "link.pages-developers"
+        }
+      ]
+    },
+    "searchForm": {
+      "navbarForm": {
+        "icon":"<i class=\"fa fa-search text-muted\"></i>",
+        "placeholder": "Suchen..."
+      }
+    },
+    "userNavigation": {
+      "dropdown": {
+        "class": "",
+        "btnCaption": "<img class=\"img-rounded\" src=\"../../images/sample/avatar1.jpg\" />",
+        "btnClass": "",
+        "id":"navbarUser",
+        "items": [
+          {"class": "dropdown-item", "text": "Option 1", "url":"link.molecules-dropdown"},
+          {"class": "dropdown-divider"},
+          {"class": "dropdown-item", "text": "Option 2", "url":"link.molecules-dropdown"}
+        ],
+        "header":"Dropdown header",
+        "menuClass": "dropdown-menu dropdown-menu-right"
+      }
+    }
+  }
+}

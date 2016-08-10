@@ -1,0 +1,17 @@
+@import "../../../css/scss/abstracts/variables_bootstrap";
+@import "../../../js/vendor/bootstrap/scss/variables";
+@import "../../../css/scss/abstracts/variables";
+
+.m-navbar-form.has-icon {
+  position: relative;
+
+  i {
+    position: absolute;
+    left:10px;
+    top: 10px;
+  }
+
+  input {
+    padding-left: 30px;
+  }
+}

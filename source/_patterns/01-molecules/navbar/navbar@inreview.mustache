@@ -1,11 +1,27 @@
-<nav class="navbar {{ styleModifier }}">
+<nav class="navbar {{navbar.class }} {{ styleModifier }}">
     <a class="navbar-brand" href="#">
         {{> atoms-logo }}
     </a>
 
-    {{> molecules-navs:navbar-nav }}
+    {{# navbar.primaryNavigation }}
+        {{> molecules-navs:navbar-nav }}
+    {{/navbar.primaryNavigation}}
 
-    {{# searchActivated }}
-        {{> molecules-navbar-form }}
-    {{/searchActivated}}
+    {{# navbar.userNavigation }}
+        <ul class="nav navbar-nav pull-xs-right m-l-1">
+            <li class="nav-item">
+                {{> molecules-dropdown }}
+            </li>
+        </ul>
+    {{/navbar.userNavigation}}
+
+    {{# navbar.helpNavigation }}
+        <ul class="nav navbar-nav pull-xs-right m-l-1">
+            {{> molecules-dropdown }}
+        </ul>
+    {{/navbar.helpNavigation}}
+
+    {{# navbar.searchForm }}
+        {{> molecules-navbar-form:pull-xs-right }}
+    {{/navbar.searchForm}}
 </nav>
