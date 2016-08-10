@@ -2,16 +2,29 @@
   "navFooter": {
     "navList": [
       {
-        "text": "Impressum"
+        "text": "Mein Konto",
+        "url": ""
       },
       {
-        "text": "API Docs"
+        "text": "Impressum"
       },
       {
         "text": "Datenschutz"
       },
       {
-        "text": "Github"
+        "text": "Partnerprogramm"
+      },
+      {
+        "text": "|"
+      },
+      {
+        "text": "Unternehmen"
+      },
+      {
+        "text": "Karriere"
+      },
+      {
+        "text": "Kontakt"
       }
     ]
   }

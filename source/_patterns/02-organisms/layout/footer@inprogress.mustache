@@ -1,7 +1,17 @@
-<footer id="footer" role="contentinfo">
+<footer class="o-footer text-xs-center"" role="contentinfo">
 
-    {{> organisms-nav-footer }}
+{{> organisms-nav-footer }}
 
-    <p class="copyright">&copy; {{ year }} {{ company.name }}. All rights reserved.</p>
+{{#footer.copyright}}
+    <p>
+        <small class="o-footer-copyright">Copyright &copy; {{ year }} {{ company.name }}</small>
+    </p>
+{{/footer.copyright}}
 
-</footer><!-- end c-footer -->
+{{# footer.logo }}
+    <a class="o-footer-logo" href="#">
+        {{> atoms-logo(logoSrc:"../../images/logo-inverse.svg") }}
+    </a>
+{{/footer.logo}}
+
+</footer><!-- end o-footer -->

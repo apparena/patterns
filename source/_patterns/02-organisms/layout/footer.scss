@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+@import "../../../css/scss/abstracts/variables";
+@import "../../../css/scss/abstracts/variables_bootstrap";
+
+/**
+ * Footer
+ */
+.o-footer {
+	clear: both;
+	overflow: hidden;
+	background: $brand-inverse;
+	color: $color-white;
+	line-height: 1.2;
+	padding: ($spacer-y * 2);
+
+	.nav-link {
+		color: $color-white;
+	}
+	.nav-link:hover {
+		color: $link-color;
+	}
+}
+
+.o-footer-logo > img {
+	max-width: 200px;
+}
+

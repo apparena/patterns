@@ -17,7 +17,7 @@
 /*!
  * Bootstrap v4.0.0-alpha.3 (http://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2016 Twitter, Inc
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -201,8 +201,13 @@
 @import "scss/components/cards";
 @import "scss/components/filter-bar";
 
-@import "../_patterns/02-organisms/auth/login";
+// Molecules
 @import "../_patterns/01-molecules/progress-tracker/progress-tracker";
+
+// Organisms
+@import "../_patterns/02-organisms/auth/login";
+@import "../_patterns/02-organisms/layout/footer";
+
 
 /*------------------------------------*\
     $LAYOUT
