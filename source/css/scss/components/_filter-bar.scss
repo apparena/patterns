@@ -1,6 +1,12 @@
-/*------------------------------------*\
-    #Filter Bar
-\*------------------------------------*/
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+@import "~bootstrap/scss/modal";
+
+/*=========================================================================
+  Molecules Filter bar
+ ========================================================================== */
 
 .filter-bar {
 	border: 1px solid $card-border-color;

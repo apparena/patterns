@@ -1,8 +1,12 @@
-@import "../../../css/scss/abstracts/variables_bootstrap";
-@import "../../../js/vendor/bootstrap/scss/variables";
+/**
+ * Pattern Dependencies
+ */
 @import "../../../css/scss/abstracts/variables";
-@import "../../../js/vendor/bootstrap/scss/input-group";
+@import "~bootstrap/scss/input-group";
 
+/*=========================================================================
+  Molecules Input group
+ ========================================================================== */
 .input-group {
   align-items: center;
 }

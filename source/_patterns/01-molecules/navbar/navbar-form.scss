@@ -1,7 +1,11 @@
-@import "../../../css/scss/abstracts/variables_bootstrap";
-@import "../../../js/vendor/bootstrap/scss/variables";
+/**
+ * Pattern Dependencies
+ */
 @import "../../../css/scss/abstracts/variables";
 
+/*=========================================================================
+  Molecules Navbar
+ ========================================================================== */
 .m-navbar-form.has-icon {
   position: relative;
 

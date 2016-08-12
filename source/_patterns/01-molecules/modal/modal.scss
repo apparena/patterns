@@ -1,9 +1,12 @@
-@import "../../../css/scss/abstracts/variables_bootstrap";
-@import "../../../js/vendor/bootstrap/scss/variables";
+/**
+ * Pattern Dependencies
+ */
 @import "../../../css/scss/abstracts/variables";
-@import "../../../js/vendor/bootstrap/scss/modal";
+@import "~bootstrap/scss/modal";
 
-// Add custom modal stylings
+/*=========================================================================
+  Molecules Modal
+ ========================================================================== */
 .modal-header, .modal-footer {
   background-color: $gray-lightest;
 }
