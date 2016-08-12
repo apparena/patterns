@@ -1,6 +1,33 @@
 {
   "modal": {
-    "header": "My modal header",
-    "body": "<h3></h3>"
+    "class": "fade in",
+    "body": "Content area",
+    "footer": {
+      "hint": "Help text",
+      "btnProgress": {
+        "btnText": "Save",
+        "btnTitle": false,
+        "btnClass": "btn-primary"
+      },
+      "btnCancel": {
+        "btnText": "Cancel",
+        "btnTitle": false,
+        "btnClass": "btn-link"
+      }
+    },
+    "header": {
+      "link":{
+        "url": "#",
+        "text": "Link Text"
+      },
+      "filter": {
+        "input": {
+          "class": "",
+          "placeholder": "Filter data",
+          "value": false
+        }
+      },
+      "title": "Dialog title"
+    }
   }
 }

@@ -23,51 +23,51 @@
 
 // Core variables and mixins
 @import "scss/abstracts/variables_bootstrap";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
+@import "../js/vendor/bootstrap/scss/variables";
+@import "../js/vendor/bootstrap/scss/mixins";
 
 // Reset and dependencies
-@import "~bootstrap/scss/normalize";
-@import "~bootstrap/scss/print";
+@import "../js/vendor/bootstrap/scss/normalize";
+@import "../js/vendor/bootstrap/scss/print";
 
 // Core CSS
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/images";
-@import "~bootstrap/scss/code";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/tables";
-@import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/buttons";
+@import "../js/vendor/bootstrap/scss/reboot";
+@import "../js/vendor/bootstrap/scss/type";
+@import "../js/vendor/bootstrap/scss/images";
+@import "../js/vendor/bootstrap/scss/code";
+@import "../js/vendor/bootstrap/scss/grid";
+@import "../js/vendor/bootstrap/scss/tables";
+@import "../js/vendor/bootstrap/scss/forms";
+@import "../js/vendor/bootstrap/scss/buttons";
 
 // Components
-@import "~bootstrap/scss/animation";
-@import "~bootstrap/scss/dropdown";
-@import "~bootstrap/scss/button-group";
-@import "~bootstrap/scss/input-group";
-@import "~bootstrap/scss/custom-forms";
-@import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/navbar";
-@import "~bootstrap/scss/card";
-@import "~bootstrap/scss/breadcrumb";
-@import "~bootstrap/scss/pagination";
-@import "~bootstrap/scss/tags";
-@import "~bootstrap/scss/jumbotron";
-@import "~bootstrap/scss/alert";
-@import "~bootstrap/scss/progress";
-@import "~bootstrap/scss/media";
-@import "~bootstrap/scss/list-group";
-@import "~bootstrap/scss/responsive-embed";
-@import "~bootstrap/scss/close";
+@import "../js/vendor/bootstrap/scss/animation";
+@import "../js/vendor/bootstrap/scss/dropdown";
+@import "../js/vendor/bootstrap/scss/button-group";
+@import "../js/vendor/bootstrap/scss/input-group";
+@import "../js/vendor/bootstrap/scss/custom-forms";
+@import "../js/vendor/bootstrap/scss/nav";
+@import "../js/vendor/bootstrap/scss/navbar";
+@import "../js/vendor/bootstrap/scss/card";
+@import "../js/vendor/bootstrap/scss/breadcrumb";
+@import "../js/vendor/bootstrap/scss/pagination";
+@import "../js/vendor/bootstrap/scss/tags";
+@import "../js/vendor/bootstrap/scss/jumbotron";
+@import "../js/vendor/bootstrap/scss/alert";
+@import "../js/vendor/bootstrap/scss/progress";
+@import "../js/vendor/bootstrap/scss/media";
+@import "../js/vendor/bootstrap/scss/list-group";
+@import "../js/vendor/bootstrap/scss/responsive-embed";
+@import "../js/vendor/bootstrap/scss/close";
 
 // Components w/ JavaScript
-@import "~bootstrap/scss/modal";
-@import "~bootstrap/scss/tooltip";
-@import "~bootstrap/scss/popover";
-@import "~bootstrap/scss/carousel";
+@import "../js/vendor/bootstrap/scss/modal";
+@import "../js/vendor/bootstrap/scss/tooltip";
+@import "../js/vendor/bootstrap/scss/popover";
+@import "../js/vendor/bootstrap/scss/carousel";
 
 // Utility classes
-@import "~bootstrap/scss/utilities";
+@import "../js/vendor/bootstrap/scss/utilities";
 
 
 /*!
@@ -75,20 +75,20 @@
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 
-//@import "~font-awesome/scss/variables";
+//@import "../js/vendor/font-awesome/scss/variables";
 @import "scss/abstracts/variables_font-awesome"; // Font awesome variable overwrites
-@import "~font-awesome/scss/mixins";
-@import "~font-awesome/scss/path";
-@import "~font-awesome/scss/core";
-@import "~font-awesome/scss/larger";
-@import "~font-awesome/scss/fixed-width";
-@import "~font-awesome/scss/list";
-@import "~font-awesome/scss/bordered-pulled";
-@import "~font-awesome/scss/animated";
-@import "~font-awesome/scss/rotated-flipped";
-@import "~font-awesome/scss/stacked";
-@import "~font-awesome/scss/icons";
-@import "~font-awesome/scss/screen-reader";
+@import "../js/vendor/font-awesome/scss/mixins";
+@import "../js/vendor/font-awesome/scss/path";
+@import "../js/vendor/font-awesome/scss/core";
+@import "../js/vendor/font-awesome/scss/larger";
+@import "../js/vendor/font-awesome/scss/fixed-width";
+@import "../js/vendor/font-awesome/scss/list";
+@import "../js/vendor/font-awesome/scss/bordered-pulled";
+@import "../js/vendor/font-awesome/scss/animated";
+@import "../js/vendor/font-awesome/scss/rotated-flipped";
+@import "../js/vendor/font-awesome/scss/stacked";
+@import "../js/vendor/font-awesome/scss/icons";
+@import "../js/vendor/font-awesome/scss/screen-reader";
 
 
 
@@ -204,6 +204,7 @@
 // Molecules
 @import "../_patterns/01-molecules/progress-tracker/progress-tracker";
 @import "../_patterns/01-molecules/navbar/navbar-form";
+@import "../_patterns/01-molecules/modal/modal";
 
 // Organisms
 @import "../_patterns/02-organisms/auth/login";
