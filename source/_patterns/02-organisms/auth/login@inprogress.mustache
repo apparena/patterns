@@ -3,6 +3,13 @@
         {{> atoms-logo }}
     </div>
 
+    {{# contextInfo }}
+        <div class="card card-block">
+            <h4 class="card-title">{{title}}</h4>
+            <p class="card-text">{{text}}</p>
+        </div>
+    {{/contextInfo}}
+
     <!-- CARD component -->
     <div class="card">
         <div class="card-header">
@@ -16,7 +23,7 @@
         </div>
 
         <div class="card-footer text-xs-right">
-            {{> atoms-button:btn btn-primary(btnText:"Anmelden") }}
+            {{> atoms-button:btn btn-primary }}
         </div>
     </div>
 </div>
