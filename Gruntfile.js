@@ -8,6 +8,7 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     'public/css/app-arena-styles.css': 'source/css/app-arena-styles.scss',
+                    'source/css/app-arena-styles.css': 'source/css/app-arena-styles.scss',
                 }
             }
         }

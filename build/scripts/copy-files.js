@@ -33,7 +33,7 @@ function copyFile(file) {
 }
 
 function resolveBuildPath(file) {
-    return path.resolve(__dirname, '../react/', path.basename(file));
+    return path.resolve(__dirname, '../apparena-patterns-react/', path.basename(file));
 }
 
 function createPackageFile() {
@@ -81,7 +81,7 @@ function createPackageFile() {
             };
 
             return new Promise((resolve) => {
-                const buildPath = path.resolve(__dirname, '../react/package.json');
+                const buildPath = path.resolve(__dirname, '../apparena-patterns-react/package.json');
                 const data = JSON.stringify(minimalPackage, null, 2);
                 fse.writeFile(buildPath, data, (err) => {
                     if (err) throw (err);
