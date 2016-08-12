@@ -13,9 +13,9 @@
   ],
   "scripts": {
     "build": "npm run build:babel && npm run build:copy-files",
-    "build:babel": "babel ./source/_patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./build/react/src --copy-files",
+    "build:babel": "babel ./source/_patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./build/apparena-patterns-react/src --copy-files",
     "build:copy-files": "babel-node ./build/scripts/copy-files.js",
-    "clean:build": "rimraf build/react",
+    "clean:build": "rimraf build/apparena-patterns-react",
     "lint": "eslint src docs/src build/test/integration && echo \"eslint: no lint errors\"",
     "lint:find-rules": "eslint-find-rules -u .eslintrc.js",
     "prebuild": "npm run clean:build",
@@ -37,7 +37,6 @@
     "bootstrap": "^4.0.0-alpha.3",
     "classnames": "^2.2.5",
     "font-awesome": "^4.6.3",
-    "grunt-cli": "^1.2.0",
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
     "node-sass": "^3.8.0",
     "react": "^15.3.0"
@@ -82,6 +81,7 @@
     "file-loader": "0.9.0",
     "glob": "^7.0.3",
     "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
     "grunt-sass": "^1.2.0",
     "grunt-sass-tilde-importer": "^1.0.2",
     "istanbul": "^1.1.0-alpha.1",
