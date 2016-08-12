@@ -185,8 +185,9 @@
 @import "scss/components/forms";
 @import "scss/components/fields";
 @import "scss/components/logo";
-@import "scss/components/icons";
 @import "scss/components/lists";
+
+@import "scss/components/icons";.
 @import "scss/components/messaging";
 @import "scss/components/primary-nav";
 
@@ -202,9 +203,10 @@
 @import "scss/components/filter-bar";
 
 // Molecules
-@import "../_patterns/01-molecules/progress-tracker/progress-tracker";
-@import "../_patterns/01-molecules/navbar/navbar-form";
+@import "../_patterns/01-molecules/input-group/input-group";
 @import "../_patterns/01-molecules/modal/modal";
+@import "../_patterns/01-molecules/navbar/navbar-form";
+@import "../_patterns/01-molecules/progress-tracker/progress-tracker";
 
 // Organisms
 @import "../_patterns/02-organisms/auth/login";

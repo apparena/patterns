@@ -1,0 +1,21 @@
+@import "../../../css/scss/abstracts/variables_bootstrap";
+@import "../../../js/vendor/bootstrap/scss/variables";
+@import "../../../css/scss/abstracts/variables";
+@import "../../../js/vendor/bootstrap/scss/input-group";
+
+.input-group {
+  align-items: center;
+}
+
+.input-group.has-icon {
+
+  i {
+    position: absolute;
+    left: 25px;
+    z-index: 4;
+    color: $gray-light;
+  }
+  input {
+    padding-left: 35px;
+  }
+}
