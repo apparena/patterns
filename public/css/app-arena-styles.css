@@ -517,7 +517,7 @@ mark,
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  border-left: 0.25rem solid #dddddd; }
+  border-left: 0.25rem solid #eceeef; }
 
 .blockquote-footer {
   display: block;
@@ -530,7 +530,7 @@ mark,
   padding-right: 1rem;
   padding-left: 0;
   text-align: right;
-  border-right: 0.25rem solid #dddddd;
+  border-right: 0.25rem solid #eceeef;
   border-left: 0; }
 
 .blockquote-reverse .blockquote-footer::before {
@@ -1506,12 +1506,12 @@ pre {
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #dddddd; }
+    border-top: 1px solid #eceeef; }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dddddd; }
+    border-bottom: 2px solid #eceeef; }
   .table tbody + tbody {
-    border-top: 2px solid #dddddd; }
+    border-top: 2px solid #eceeef; }
   .table .table {
     background-color: #fff; }
 
@@ -1520,10 +1520,10 @@ pre {
   padding: 0.3rem; }
 
 .table-bordered {
-  border: 1px solid #dddddd; }
+  border: 1px solid #eceeef; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #dddddd; }
+    border: 1px solid #eceeef; }
   .table-bordered thead th,
   .table-bordered thead td {
     border-bottom-width: 2px; }
@@ -1595,10 +1595,10 @@ pre {
 
 .thead-default th {
   color: #666666;
-  background-color: #dddddd; }
+  background-color: #eceeef; }
 
 .table-inverse {
-  color: #dddddd;
+  color: #eceeef;
   background-color: #373a3c; }
   .table-inverse th,
   .table-inverse td,
@@ -1620,24 +1620,24 @@ pre {
   white-space: nowrap; }
 .table-reflow th,
 .table-reflow td {
-  border-top: 1px solid #dddddd;
-  border-left: 1px solid #dddddd; }
+  border-top: 1px solid #eceeef;
+  border-left: 1px solid #eceeef; }
   .table-reflow th:last-child,
   .table-reflow td:last-child {
-    border-right: 1px solid #dddddd; }
+    border-right: 1px solid #eceeef; }
 .table-reflow thead:last-child tr:last-child th,
 .table-reflow thead:last-child tr:last-child td,
 .table-reflow tbody:last-child tr:last-child th,
 .table-reflow tbody:last-child tr:last-child td,
 .table-reflow tfoot:last-child tr:last-child th,
 .table-reflow tfoot:last-child tr:last-child td {
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #eceeef; }
 .table-reflow tr {
   float: left; }
   .table-reflow tr th,
   .table-reflow tr td {
     display: block !important;
-    border: 1px solid #dddddd; }
+    border: 1px solid #eceeef; }
 
 .form-control {
   display: block;
@@ -1665,7 +1665,7 @@ pre {
     color: #999;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
-    background-color: #dddddd;
+    background-color: #eceeef;
     opacity: 1; }
   .form-control:disabled {
     cursor: not-allowed; }
@@ -2564,7 +2564,7 @@ input[type="button"].btn-block {
   line-height: 1.25;
   color: #666666;
   text-align: center;
-  background-color: #dddddd;
+  background-color: #eceeef;
   border: 1px solid rgba(0, 0, 0, 0.15); }
   .input-group-addon.form-control-sm,
   .input-group-sm > .input-group-addon,
@@ -2697,7 +2697,7 @@ input[type="button"].btn-block {
   .custom-select:disabled {
     color: #818a91;
     cursor: not-allowed;
-    background-color: #dddddd; }
+    background-color: #eceeef; }
   .custom-select::-ms-expand {
     opacity: 0; }
 
@@ -2792,7 +2792,7 @@ input[type="button"].btn-block {
     padding: 0.5em 1em;
     border: 1px solid transparent; }
     .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-      border-color: #dddddd #dddddd #ddd; }
+      border-color: #eceeef #eceeef #ddd; }
     .nav-tabs .nav-link.disabled, .nav-tabs .nav-link.disabled:focus, .nav-tabs .nav-link.disabled:hover {
       color: #818a91;
       background-color: transparent;
@@ -3165,7 +3165,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #dddddd; }
+  background-color: #eceeef; }
   .breadcrumb::after {
     content: "";
     display: table;
@@ -3220,7 +3220,7 @@ input[type="button"].btn-block {
   border: 1px solid #ddd; }
   .page-link:focus, .page-link:hover {
     color: #326181;
-    background-color: #dddddd;
+    background-color: #eceeef;
     border-color: #ddd; }
 
 .pagination-lg .page-link {
@@ -3290,13 +3290,13 @@ a.tag:focus, a.tag:hover {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #dddddd; }
+  background-color: #eceeef; }
   @media (min-width: 544px) {
     .jumbotron {
       padding: 4rem 2rem; } }
 
 .jumbotron-hr {
-  border-top-color: #c4c4c4; }
+  border-top-color: #d0d5d8; }
 
 .jumbotron-fluid {
   padding-right: 0;
@@ -3515,7 +3515,7 @@ base::-moz-progress-bar,
   .list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover {
     color: #818a91;
     cursor: not-allowed;
-    background-color: #dddddd; }
+    background-color: #eceeef; }
     .list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading {
       color: inherit; }
     .list-group-item.disabled .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text {
@@ -4149,7 +4149,7 @@ button.close {
   background-color: #373a3c; }
 
 .bg-faded {
-  background-color: #f6f6f6; }
+  background-color: #dddddd; }
 
 .bg-primary {
   color: #fff !important;
@@ -7251,7 +7251,7 @@ a.text-danger:focus, a.text-danger:hover {
  */
 [role=main] {
   flex: 1;
-  background-color: #dddddd; }
+  background-color: #eceeef; }
 
 /**
   * Left column in main content area
@@ -7294,9 +7294,8 @@ main[role=main] {
 @import "scss/components/forms";
 @import "scss/components/fields";
 @import "scss/components/logo";
+@import "scss/components/icons";
 @import "scss/components/lists";
-
-@import "scss/components/icons";.
 @import "scss/components/messaging";
 @import "scss/components/primary-nav";
 
@@ -7335,7 +7334,7 @@ main[role=main] {
  */
 .o-nav-secondary {
   padding: 15px;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #eceeef; }
 
 /* Custom bootstrap cards */
 .card-secondary {
@@ -7385,449 +7384,6 @@ main[role=main] {
 
 .filter-bar-search {
   flex: 1; }
-
-/*------------------------------------*\
-    #VARIABLES
-\*------------------------------------*/
-/*------------------------------------*\
-    #COLORS
-\*------------------------------------*/
-/*
- * 1) Color variables involve a two-tier system to keep colors in sync. The
- *    first tier defines the brand and neutral colors, and the second tier
- *    defines the application of those colors.
- */
-/*
- * Brand Colors
- * 1) Brand color variables use English names to define colors to make palettes easier to
- *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
- * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
- *    second-tier application colors.
- *
- */
-/*
- * Neutral Colors
- * 1) Neutral color variables use a numbered system to define variables for better maintainability.
- *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
- *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3
- */
-/**
- * Utility Colors
- * 1) Utility colors are colors used to provide feedback, such as alert messages,
- * form validation, etc.
- */
-/*
- * Text Colors
- * 1) These are non-linked text colors, such as body copy.
- */
-/*
- * Heading Colors
- * 1) These are non-linked heading colors, such as h2, h3, etc.
- */
-/*
- * Text Link Colors
- * 1) These are for linked text, such as a link found within an article,
- *    navigation link, footer link, etc.
- */
-/*
- * Border Colors
- * 1) Border colors are used as decoration or dividers, such as as a seperator
- *    for navigation items, block borders, etc.
- */
-/*------------------------------------*\
-    #TYPOGRAPHY
-\*------------------------------------*/
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/**
- * Spacing Defaults
- */
-/*------------------------------------*\
-    #BORDERS
-\*------------------------------------*/
-/**
- * Border Width
- */
-/**
- * Border Radius
- */
-/*------------------------------------*\
-    #ANIMATION
-\*------------------------------------*/
-/**
- * Animation Duration
- */
-/**
- * Animation Easing
- */
-/*------------------------------------*\
-    #BREAKPOINTS
-\*------------------------------------*/
-/**
- * Breakpoints
- */
-.input-group {
-  position: relative;
-  width: 100%;
-  display: flex; }
-  .input-group .form-control {
-    position: relative;
-    z-index: 2;
-    flex: 1;
-    margin-bottom: 0; }
-    .input-group .form-control:focus, .input-group .form-control:active, .input-group .form-control:hover {
-      z-index: 3; }
-
-.input-group-addon,
-.input-group-btn {
-  white-space: nowrap;
-  vertical-align: middle; }
-
-.input-group-addon {
-  padding: 0.5rem 0.75rem;
-  margin-bottom: 0;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.25;
-  color: #666666;
-  text-align: center;
-  background-color: #dddddd;
-  border: 1px solid rgba(0, 0, 0, 0.15); }
-  .input-group-addon.form-control-sm,
-  .input-group-sm > .input-group-addon,
-  .input-group-sm > .input-group-btn > .input-group-addon.btn {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem; }
-  .input-group-addon.form-control-lg,
-  .input-group-lg > .input-group-addon,
-  .input-group-lg > .input-group-btn > .input-group-addon.btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem; }
-  .input-group-addon input[type="radio"],
-  .input-group-addon input[type="checkbox"] {
-    margin-top: 0; }
-
-.input-group-addon:not(:last-child) {
-  border-right: 0; }
-
-.form-control + .input-group-addon:not(:first-child) {
-  border-left: 0; }
-
-.input-group-btn {
-  position: relative;
-  font-size: 0;
-  white-space: nowrap; }
-  .input-group-btn > .btn {
-    position: relative; }
-    .input-group-btn > .btn + .btn {
-      margin-left: -1px; }
-    .input-group-btn > .btn:focus, .input-group-btn > .btn:active, .input-group-btn > .btn:hover {
-      z-index: 3; }
-  .input-group-btn:not(:last-child) > .btn,
-  .input-group-btn:not(:last-child) > .btn-group {
-    margin-right: -1px; }
-  .input-group-btn:not(:first-child) > .btn,
-  .input-group-btn:not(:first-child) > .btn-group {
-    z-index: 2;
-    margin-left: -1px; }
-    .input-group-btn:not(:first-child) > .btn:focus, .input-group-btn:not(:first-child) > .btn:active, .input-group-btn:not(:first-child) > .btn:hover,
-    .input-group-btn:not(:first-child) > .btn-group:focus,
-    .input-group-btn:not(:first-child) > .btn-group:active,
-    .input-group-btn:not(:first-child) > .btn-group:hover {
-      z-index: 3; }
-
-.input-group {
-  align-items: center; }
-
-.input-group.has-icon i {
-  position: absolute;
-  left: 25px;
-  z-index: 4;
-  color: #818a91; }
-.input-group.has-icon input {
-  padding-left: 35px; }
-
-/*------------------------------------*\
-    #VARIABLES
-\*------------------------------------*/
-/*------------------------------------*\
-    #COLORS
-\*------------------------------------*/
-/*
- * 1) Color variables involve a two-tier system to keep colors in sync. The
- *    first tier defines the brand and neutral colors, and the second tier
- *    defines the application of those colors.
- */
-/*
- * Brand Colors
- * 1) Brand color variables use English names to define colors to make palettes easier to
- *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
- * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
- *    second-tier application colors.
- *
- */
-/*
- * Neutral Colors
- * 1) Neutral color variables use a numbered system to define variables for better maintainability.
- *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
- *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3
- */
-/**
- * Utility Colors
- * 1) Utility colors are colors used to provide feedback, such as alert messages,
- * form validation, etc.
- */
-/*
- * Text Colors
- * 1) These are non-linked text colors, such as body copy.
- */
-/*
- * Heading Colors
- * 1) These are non-linked heading colors, such as h2, h3, etc.
- */
-/*
- * Text Link Colors
- * 1) These are for linked text, such as a link found within an article,
- *    navigation link, footer link, etc.
- */
-/*
- * Border Colors
- * 1) Border colors are used as decoration or dividers, such as as a seperator
- *    for navigation items, block borders, etc.
- */
-/*------------------------------------*\
-    #TYPOGRAPHY
-\*------------------------------------*/
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/**
- * Spacing Defaults
- */
-/*------------------------------------*\
-    #BORDERS
-\*------------------------------------*/
-/**
- * Border Width
- */
-/**
- * Border Radius
- */
-/*------------------------------------*\
-    #ANIMATION
-\*------------------------------------*/
-/**
- * Animation Duration
- */
-/**
- * Animation Easing
- */
-/*------------------------------------*\
-    #BREAKPOINTS
-\*------------------------------------*/
-/**
- * Breakpoints
- */
-.modal-open {
-  overflow: hidden; }
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  display: none;
-  overflow: hidden;
-  outline: 0;
-  -webkit-overflow-scrolling: touch; }
-  .modal.fade .modal-dialog {
-    transition: transform .3s ease-out;
-    transform: translate(0, -25%); }
-  .modal.in .modal-dialog {
-    transform: translate(0, 0); }
-
-.modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto; }
-
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px; }
-
-.modal-content {
-  position: relative;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  outline: 0; }
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000; }
-  .modal-backdrop.fade {
-    opacity: 0; }
-  .modal-backdrop.in {
-    opacity: 0.5; }
-
-.modal-header {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5; }
-  .modal-header::after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.modal-header .close {
-  margin-top: -2px; }
-
-.modal-title {
-  margin: 0;
-  line-height: 1.5; }
-
-.modal-body {
-  position: relative;
-  padding: 15px; }
-
-.modal-footer {
-  padding: 15px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5; }
-  .modal-footer::after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.modal-scrollbar-measure {
-  position: absolute;
-  top: -9999px;
-  width: 50px;
-  height: 50px;
-  overflow: scroll; }
-
-@media (min-width: 544px) {
-  .modal-dialog {
-    max-width: 600px;
-    margin: 30px auto; }
-
-  .modal-content {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
-
-  .modal-sm {
-    max-width: 300px; } }
-@media (min-width: 992px) {
-  .modal-lg {
-    max-width: 900px; } }
-.modal-header, .modal-footer {
-  background-color: #f6f6f6; }
-
-.modal-header-filter {
-  margin: 0 1rem; }
-  .modal-header-filter input {
-    display: inline-block;
-    max-width: 150px; }
-
-.modal-body {
-  min-height: 200px; }
-
-/*------------------------------------*\
-    #VARIABLES
-\*------------------------------------*/
-/*------------------------------------*\
-    #COLORS
-\*------------------------------------*/
-/*
- * 1) Color variables involve a two-tier system to keep colors in sync. The
- *    first tier defines the brand and neutral colors, and the second tier
- *    defines the application of those colors.
- */
-/*
- * Brand Colors
- * 1) Brand color variables use English names to define colors to make palettes easier to
- *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
- * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
- *    second-tier application colors.
- *
- */
-/*
- * Neutral Colors
- * 1) Neutral color variables use a numbered system to define variables for better maintainability.
- *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
- *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3
- */
-/**
- * Utility Colors
- * 1) Utility colors are colors used to provide feedback, such as alert messages,
- * form validation, etc.
- */
-/*
- * Text Colors
- * 1) These are non-linked text colors, such as body copy.
- */
-/*
- * Heading Colors
- * 1) These are non-linked heading colors, such as h2, h3, etc.
- */
-/*
- * Text Link Colors
- * 1) These are for linked text, such as a link found within an article,
- *    navigation link, footer link, etc.
- */
-/*
- * Border Colors
- * 1) Border colors are used as decoration or dividers, such as as a seperator
- *    for navigation items, block borders, etc.
- */
-/*------------------------------------*\
-    #TYPOGRAPHY
-\*------------------------------------*/
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/**
- * Spacing Defaults
- */
-/*------------------------------------*\
-    #BORDERS
-\*------------------------------------*/
-/**
- * Border Width
- */
-/**
- * Border Radius
- */
-/*------------------------------------*\
-    #ANIMATION
-\*------------------------------------*/
-/**
- * Animation Duration
- */
-/**
- * Animation Easing
- */
-/*------------------------------------*\
-    #BREAKPOINTS
-\*------------------------------------*/
-/**
- * Breakpoints
- */
-.m-navbar-form.has-icon {
-  position: relative; }
-  .m-navbar-form.has-icon i {
-    position: absolute;
-    left: 10px;
-    top: 10px; }
-  .m-navbar-form.has-icon input {
-    padding-left: 30px; }
 
 /*------------------------------------*\
     #VARIABLES
@@ -7981,8 +7537,96 @@ main[role=main] {
 .progress-tracker-inverted .progress-tracker-step-active ~ .progress-tracker-step > a:after, .progress-tracker-inverted .progress-tracker-step-active ~ .progress-tracker-step > span:after {
   background-color: #fff; }
 
-.o-login .o-login-logo {
-  margin: 3rem 0; }
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+/*
+ * 1) Color variables involve a two-tier system to keep colors in sync. The
+ *    first tier defines the brand and neutral colors, and the second tier
+ *    defines the application of those colors.
+ */
+/*
+ * Brand Colors
+ * 1) Brand color variables use English names to define colors to make palettes easier to
+ *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
+ * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
+ *    second-tier application colors.
+ *
+ */
+/*
+ * Neutral Colors
+ * 1) Neutral color variables use a numbered system to define variables for better maintainability.
+ *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3
+ */
+/**
+ * Utility Colors
+ * 1) Utility colors are colors used to provide feedback, such as alert messages,
+ * form validation, etc.
+ */
+/*
+ * Text Colors
+ * 1) These are non-linked text colors, such as body copy.
+ */
+/*
+ * Heading Colors
+ * 1) These are non-linked heading colors, such as h2, h3, etc.
+ */
+/*
+ * Text Link Colors
+ * 1) These are for linked text, such as a link found within an article,
+ *    navigation link, footer link, etc.
+ */
+/*
+ * Border Colors
+ * 1) Border colors are used as decoration or dividers, such as as a seperator
+ *    for navigation items, block borders, etc.
+ */
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+/**
+ * Spacing Defaults
+ */
+/*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+/**
+ * Border Width
+ */
+/**
+ * Border Radius
+ */
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+/**
+ * Animation Duration
+ */
+/**
+ * Animation Easing
+ */
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+/**
+ * Breakpoints
+ */
+.m-navbar-form.has-icon {
+  position: relative; }
+  .m-navbar-form.has-icon i {
+    position: absolute;
+    left: 10px;
+    top: 10px; }
+  .m-navbar-form.has-icon input {
+    padding-left: 30px; }
+
 .o-login .o-login-logo img {
   max-width: 300px; }
 

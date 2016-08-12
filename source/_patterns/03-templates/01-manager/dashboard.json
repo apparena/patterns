@@ -1,0 +1,49 @@
+{
+  "cardsList": [
+    {
+      "header": false,
+      "image": false,
+      "content": false,
+      "footer": "<a class=\"btn btn-primary\">Erstelle eine App</a>",
+      "listGroup": {
+        "items": [
+          {
+            "status": "",
+            "header": "<i class=\"fa fa-star\"></i><br>Erstelle eine App",
+            "text": "Lege direkt los und teste eine unserer vielen Apps. <br><br>"
+          }
+        ]
+      }
+    },
+    {
+      "header": false,
+      "image": false,
+      "content": false,
+      "footer": "<a class=\"btn btn-primary\">Erstelle einen Kunden</a>",
+      "listGroup": {
+        "items": [
+          {
+            "status": "",
+            "header": "<i class=\"fa fa-user\"></i><br>Arbeiten für Kunden",
+            "text": "Du arbeitest für einen Kunden? App-Manager hilft dir deine App-Projekte zu strukturieren."
+          }
+        ]
+      }
+    },
+    {
+      "header": false,
+      "image": false,
+      "content": false,
+      "footer": "<a class=\"btn btn-primary\">Kollegen einladen</a>",
+      "listGroup": {
+        "items": [
+          {
+            "status": "",
+            "header": "<i class=\"fa fa-users\"></i><br>Lade deine Kollegen ein",
+            "text": "Gemeinsam macht ist man stärker. Vergebe Zugriffsrechte an deine Kollegen, um dir die Arbeit an der App zu erleichtern"
+          }
+        ]
+      }
+    }
+  ]
+}
