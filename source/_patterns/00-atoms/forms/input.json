@@ -2,6 +2,7 @@
   "input": {
     "class": "",
     "placeholder": "Enter your data here...",
-    "value": false
+    "value": false,
+    "message": "This is a help message"
   }
 }

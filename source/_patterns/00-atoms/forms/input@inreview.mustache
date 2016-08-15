@@ -1,1 +1,2 @@
-<input type="text" class="form-control {{ input.class }} {{ styleModifier }}" placeholder="{{ input.placeholder }}" value="{{ input.value }}">
+<input type="text" class="form-control {{ input.class }} {{ styleModifier }}" placeholder="{{ input.placeholder }}"
+       value="{{ input.value }}" {{#input.message}}data-toggle="tooltip" data-placement="right" title="{{ input.message }}"{{/input.message}}>

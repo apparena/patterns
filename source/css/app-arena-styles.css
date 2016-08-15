@@ -7019,7 +7019,7 @@ a.text-danger:focus, a.text-danger:hover {
 .input-group {
   align-items: center; }
 
-.input-group.has-icon i {
+.input-group.has-icon > i {
   position: absolute;
   left: 25px;
   z-index: 4;

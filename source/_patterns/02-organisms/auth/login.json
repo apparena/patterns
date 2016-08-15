@@ -30,7 +30,8 @@
         },
         "input": {
           "class": "form-control-danger",
-          "value": "1234"
+          "value": "1234",
+          "message": "Please use more than 8 characters"
         }
       }
     ]
