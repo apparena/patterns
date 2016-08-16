@@ -1,142 +1,113 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../../reactComponent";
-import Dropdown from "../../../01-molecules/dropdown/dropdown"
-import ButtonGroup from "../../../01-molecules/button-group/button-group"
- 
+import Dropdown from "../../../01-molecules/dropdown/dropdown";
+import ButtonGroup from "../../../01-molecules/button-group/button-group";
+import Icon from "../../../00-atoms/icons/icons";
+import Input from "../../../00-atoms/forms/input";
+import Button from "../../../00-atoms/button/button";
+
 export default class FilterBar extends ReactComponent {
-    static propTypes = {
-        filterBar: PropTypes.shape({
-            displayModeActivated: PropTypes.shape({
-                btnGroup: PropTypes.shape({
-                    items: PropTypes.arrayOf(PropTypes.shape({
-                        btnText: PropTypes.string,
-                        btnTitle: PropTypes.string,
-                        btnClass: PropTypes.string
-                    }))
-                })
-            }),
-            filtersActivated: PropTypes.shape({
-                items: PropTypes.arrayOf(
-                    PropTypes.shape({
-                        type: PropTypes.string,
-                        title: PropTypes.string,
-                        checkboxes: PropTypes.oneOfType([
-                            PropTypes.bool,
-                            PropTypes.shape({
-                                items: PropTypes.arrayOf(
-                                    PropTypes.shape({
-                                        isChecked: PropTypes.bool,
-                                        label: PropTypes.string,
-                                        name: PropTypes.string
-                                    })
-                                )
-                            })
-                        ]),
-                        radioButtons: PropTypes.oneOfType([
-                            PropTypes.bool,
-                            PropTypes.shape({
-                                items: PropTypes.arrayOf(
-                                    PropTypes.shape({
-                                        isChecked: PropTypes.bool,
-                                        label: PropTypes.string,
-                                        name: PropTypes.string
-                                    })
-                                )
-                            })
-                        ])
-                    })
-                )
-            }),
-            searchActivated: PropTypes.oneOfType([
-                PropTypes.bool,
-                PropTypes.shape({
-                    inputAddonBefore: PropTypes.string,
-                    placeholder: PropTypes.string
-                })
-            ]),
-            sortActivated: PropTypes.shape({
-                dropdown: PropTypes.shape({
-                    class: PropTypes.string,
-                    btnCaption: PropTypes.string,
-                    btnClass: PropTypes.string,
-                    header: PropTypes.oneOfType([
-                        PropTypes.string,
-                        PropTypes.bool
-                    ]),
-                    menuClass: PropTypes.string,
-                    items: PropTypes.arrayOf(
-                        PropTypes.shape({
-                            class: PropTypes.string,
-                            text: PropTypes.string,
-                            url: PropTypes.oneOfType([
-                                PropTypes.bool,
-                                PropTypes.string
-                            ])
-                        })
-                    )
-                })
-            })
-        })
+
+    static PropTypes = {
+        txtFilterButton: PropTypes.string,
+        txtSearchPlaceholder: PropTypes.string,
+        txtSearchAddon: PropTypes.string,
+        txtSortButton: PropTypes.string,
+        txtSortHeader: PropTypes.array,
+        menuClass: PropTypes.string,
+        onClickFilterButton: PropTypes.func.isRequired
     };
 
-    _renderFilterButton() {
-        if (this.props.filterBar.filtersActivated) {
-            return (
-                <div className="filter-bar-filter m-r-1">
-                    <button className="btn btn-secondary">
-                        <i className="fa fa-filter"/>
-                    </button>
-                </div>
-            )
-        }
-    }
+    static defaultProps = {
+        txtFilterButton: "Filter",
+        txtSearchPlaceholder: "Search for ...",
+        txtSearchAddon: "",
+        txtSortButton: "Sort list",
+        txtSortHeader: ["Category 1", "Category 2"],
+        menuClass: "dropdown-menu dropdown-menu-right"
+    };
 
-    _renderSearchBar() {
-        if (this.props.filterBar.searchActivated) {
-            return (
-                <div className="filter-bar-search m-r-1">
-                    <div className="input-group">
-                        <span className="input-group-addon"> <p dangerouslySetInnerHTML={{__html: this.props.filterBar.searchActivated.inputAddonBefore}}/> </span>
-                        <input type="text" className="form-control" placeholder={this.props.filterBar.searchActivated.placeholder}/>
-                    </div>
-                </div>
-            )
-        }
-    }
-
-    _renderDropDown() {
-         if (this.props.filterBar.sortActivated) {
-            return (
-                <div className="filter-bar-sort m-r-1">
-                    <Dropdown
-                        dropdown={this.props.filterBar.sortActivated.dropdown}
-                    />
-                </div>
-            )
-        }
-    }
-
-    _renderStyleButtons() {
-        if (this.props.filterBar.displayModeActivated) {
-            if (this.props.filterBar.displayModeActivated.btnGroup) {
-                return(
-                    <div className="filter-bar-display-mode">
-                        <ButtonGroup
-                            buttonGroup={this.props.filterBar.displayModeActivated.btnGroup}
-                        />
-                    </div>
-                )
+    createDropdownItems() {
+        var container =[];
+        var key;
+        {this.props.txtSortHeader.map((header, index) => {
+            var i;
+            for (i = 0; i < 4; i++) {
+                switch (i) {
+                    case 0:
+                        container.push(<h6 className="dropdown-header" key={this.getUniqueKey()}>{header}</h6>);
+                        break;
+                    case 1:
+                        container.push(
+                            <li className="dropdown-item" key={this.getUniqueKey()}>
+                                <a href="#" key={this.getUniqueKey()}>
+                                    <Icon class="fa fa-sort-amount-desc" key={key}/>absteigend
+                                </a>
+                            </li>
+                        );
+                        break;
+                    case 2:
+                        container.push(
+                            <li className="dropdown-item" key={this.getUniqueKey()}>
+                                <a href="#" key={this.getUniqueKey()}>
+                                    <Icon class="fa fa-sort-amount-asc" key={this.getUniqueKey()}/>aufsteigend
+                                </a>
+                            </li>
+                        );
+                        break;
+                    case 3:
+                        if(index != (this.props.txtSortHeader.length - 1))
+                        {
+                            container.push(
+                                <li className="dropdown-divider" key={this.getUniqueKey()}/>
+                            );
+                        }
+                        break;
+                }
             }
-        }
-    }
-    
+        })}
+        return (
+            <ul className={this.props.menuClass} key={this.getUniqueKey()}>
+                {container}
+            </ul>
+        )
+    };
+
     render() {
         return (
             <div className="filter-bar p-a-1">
-                {this._renderFilterButton()}
-                {this._renderSearchBar()}
-                {this._renderDropDown()}
-                {this._renderStyleButtons()}
+                <div className="filter-bar-filter m-r-1">
+                    <a className="btn btn-secondary" onClick={this.props.onClickFilterButton}>
+                        <Icon iconClass="fa fa-filter"/>
+                        {this.props.txtFilterButton}
+                    </a>
+                </div>
+                <div className="filter-bar-search m-r-1">
+                    <div className="input-group">
+                        <span className="input-group-addon">
+                            <Icon iconClass="fa fa-search"/>
+                        </span>
+                        <Input type="text" inputClass="form-control" placeholder={this.props.txtSearchPlaceholder}/>
+                        <span className="input-group-addon">
+                            {this.props.txtSearchAddon}
+                        </span>
+                    </div>
+                </div>
+                <div className="filter-bar-sort m-r-1">
+                    <Dropdown dropdownClass="dropdown dropdown" buttonClass="btn btn-secondary dropdown-toggle" buttonText={this.props.txtSortButton}>
+                        {this.createDropdownItems()}
+                    </Dropdown>
+                </div>
+                <div className="filter-bar-display-mode">
+                    <ButtonGroup>
+                        <Button buttonClass="btn  btn-secondary" title="Rasterdarstellung">
+                            <Icon iconClass="fa fa-th"/>
+                        </Button>
+                        <Button buttonClass="btn  btn-secondary" title="Listendarstellung">
+                            <Icon iconClass="fa fa-th-list"/>
+                        </Button>
+                    </ButtonGroup>
+                </div>
             </div>
         )
     }

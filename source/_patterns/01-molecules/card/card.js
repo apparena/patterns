@@ -3,6 +3,7 @@ import ReactComponent from "../../reactComponent";
 import cx from "classnames"
 
 export default class Card extends ReactComponent {
+    /*
     static propTypes = {
         card: PropTypes.shape({
             content: PropTypes.oneOfType([
@@ -47,19 +48,17 @@ export default class Card extends ReactComponent {
 
     _renderHeader() {
         return (
-            <h3 className="card-header">
+            <h5 className="card-header">
                 {this.props.card.header}
-            </h3>
+            </h5>
         )
     }
 
     _renderImage() {
         return (
-            <div>
-                <div className="card-img">
-                    <img className="card-img-top img-fluid" src={this.props.card.image.src} alt="App screenshot"/>
-                    {this._renderCardImageOverlay()}
-                </div>
+            <div className="card-img">
+                <img className="card-img-top img-fluid" src={this.props.card.image.src} alt="App screenshot"/>
+                {this._renderCardImageOverlay()}
             </div>
         )
     }
@@ -91,12 +90,14 @@ export default class Card extends ReactComponent {
                 <ul className="list-group">
                     {this._renderCardContent()}
                     {this.props.card.listGroup.items.map((item, index) => {
-                        return (
-                            <li className={cx("list-group-item", item.status)} key={index}>
-                                <h5 className="list-group-item-heading">{item.header}</h5>
-                                <div className="list-group-item-text"><p dangerouslySetInnerHTML={{__html: item.text}}/></div>
-                            </li>
-                        )}
+                            return (
+                                <li className={cx("list-group-item", item.status)} key={index}>
+                                    <h5 className="list-group-item-heading">{item.header}</h5>
+                                    <div className="list-group-item-text"><p dangerouslySetInnerHTML={{__html: item.text}}/>
+                                    </div>
+                                </li>
+                            )
+                        }
                     )}
                 </ul>
             )
@@ -111,15 +112,12 @@ export default class Card extends ReactComponent {
                 </div>
             )
         }
-    }
+    }*/
 
     render() {
         return (
-            <div className="card">
-                {this._renderHeader()}
-                {this._renderImage()}
-                {this._renderListGroup()}
-                {this._renderFooter()}
+            <div className="card" key={this.getUniqueKey()}>
+                {this.getChildrenArray(this.props.children)}
             </div>
         )
     }
