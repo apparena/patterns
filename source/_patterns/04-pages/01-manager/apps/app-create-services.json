@@ -1,0 +1,53 @@
+{
+  "navPrimary": {
+    "navList": [
+      {
+        "isActive": false
+      },
+      {
+        "isActive": true
+      }
+    ]
+  },
+  "navSecondary": false,
+  "content": "<h1>FORM</h1>",
+  "footer": {
+    "prev": {
+      "url": "link.pages-app-create",
+      "text": "Zurück"
+    },
+    "next": {
+      "url": "link.pages-app-create-license",
+      "text": "Lizenz wählen"
+    }
+  },
+  "header": "Neue App erstellen",
+  "progressTracker": {
+    "items": [
+      {
+        "text": "App aussuchen",
+        "href": "link.pages-app-create",
+        "id": "step1",
+        "style": "width:33%",
+        "class": "step1",
+        "isActive": false
+      },
+      {
+        "text": "Zusatzleistungen buchen",
+        "href": "link.pages-app-create-services",
+        "id": "step2",
+        "style": "width:33%",
+        "class": "step2",
+        "isActive": true
+      },
+      {
+        "text": "Lizenz wählen",
+        "href": "link.pages-app-create-license",
+        "id": "step3",
+        "style": "width:33%",
+        "class": "step3",
+        "isActive": false
+      }
+    ]
+  }
+}

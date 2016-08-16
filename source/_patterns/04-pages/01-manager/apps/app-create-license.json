@@ -12,9 +12,13 @@
   "navSecondary": false,
   "content": "<h1>FORM</h1>",
   "footer": {
-    "next": {
+    "prev": {
       "url": "link.pages-app-create-services",
-      "text": "Zusatzleistungen wählen"
+      "text": "Zurück"
+    },
+    "next": {
+      "url": "#",
+      "text": "Buchung abschließen"
     }
   },
   "header": "Neue App erstellen",
@@ -26,7 +30,7 @@
         "id": "step1",
         "style": "width:33%",
         "class": "step1",
-        "isActive": true
+        "isActive": false
       },
       {
         "text": "Zusatzleistungen buchen",
@@ -42,7 +46,7 @@
         "id": "step3",
         "style": "width:33%",
         "class": "step3",
-        "isActive": false
+        "isActive": true
       }
     ]
   },
@@ -86,8 +90,7 @@
         {"text":"Fotowettbewerb neutrale Vorlage", "selected": true },
         {"text":"Fotowettbewerb für Sparkassen", "selected": false},
         {"text":"Fotowettbewerb für Volkbanken", "selected": false}
-      ],
-      "message":"Hier werden alle Vorlagen angezeigt, die die gleiche Parent-Vorlage haben, wie die aktuell gewählte Vorlage."
+      ]
     }
   },
   "appName": {
