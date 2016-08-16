@@ -1,7 +1,17 @@
 <div class="form-group row {{ styleModifier }} {{ formGroup.class }}">
     {{#formGroup.label}}<label class="col-form-label text-sm-right col-sm-3 {{class}}" for="{{ inputGroup.id }}">{{text}}</label>{{/formGroup.label}}
 
-    {{> molecules-input-group }}
+    {{#formGroup.type.select }}
+        {{> molecules-select }}
+    {{/formGroup.type.select}}
+
+    {{#formGroup.type.input-group }}
+        {{> molecules-input-group }}
+    {{/formGroup.type.input-group }}
+
+    {{#formGroup.type.checkboxes }}
+        {{> molecules-input-group }}
+    {{/formGroup.type.checkboxes }}
 
     {{# formGroup.feedback }}
         <div class="form-control-feedback offset-sm-3 col-sm-9">{{ formGroup.feedback }}</div>

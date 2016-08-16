@@ -3,12 +3,25 @@
     "class": "has-danger",
     "feedback": "You entered to less characters",
     "label": {
-      "class": "col-sm-2",
       "text": "This my input label"
     },
-    "helpText": "Pro Tip: Use your browsers autocompletion to fill this form more quickly."
+    "helpText": "Pro Tip: Use your browsers autocompletion to fill this form more quickly.",
+    "type": {
+      "select": false,
+      "checkboxes": false,
+      "input-group": true
+    }
   },
   "input": {
     "class": "form-control-danger"
+  },
+  "input-group": {
+    "class": "col-sm-9"
+  },
+  "select": {
+    "class": "col-sm-9"
+  },
+  "checkboxes": {
+    "class": "col-sm-9"
   }
 }

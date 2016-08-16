@@ -1,0 +1,10 @@
+{{# select }}
+    <div class="{{ class }}">
+        <select class="form-control {{ styleModifier }} ">
+            {{# options }}
+                <option {{#selected}}selected="selected"{{/selected}} >{{text}}</option>
+            {{/options}}
+
+        </select>
+    </div>
+{{/select}}

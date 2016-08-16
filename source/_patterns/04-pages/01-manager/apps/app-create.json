@@ -45,35 +45,64 @@
     "formGroup": {
       "class": "has-success",
       "feedback": false,
-      "label": "App anlegen für:",
-      "helpText": false
+      "label": {
+        "text": "Besitzer wählen:"
+      },
+      "helpText": false,
+      "type": {
+        "select": true
+      }
     },
-    "inputGroup": {
-      "class": false,
-      "addonBefore": false,
-      "addonAfter": false
-    },
-    "input": {
-      "class": "form-control-success",
-      "placeholder": "Kunden durchsuchen...",
-      "value": "App-Arena GmbH"
+    "select": {
+      "class": "col-sm-9",
+      "options": [
+        {"text":"App-Arena GmbH", "selected": true},
+        {"text":"iConsultants GmbH", "selected": false},
+        {"text":"Marcapo GmbH"}
+      ]
     }
   },
-  "app": {
+  "template": {
+    "formGroup": {
+      "class": "has-success",
+      "feedback": false,
+      "label": {
+        "text": "Vorlage wählen:"
+      },
+      "helpText": false,
+      "type": {
+        "select": true
+      }
+    },
+    "select": {
+      "class": "col-sm-9",
+      "options": [
+        {"text":"Fotowettbewerb neutrale Vorlage", "selected": true },
+        {"text":"Fotowettbewerb für Sparkassen", "selected": false},
+        {"text":"Fotowettbewerb für Volkbanken", "selected": false}
+      ]
+    }
+  },
+  "appName": {
     "formGroup": {
       "class": false,
       "feedback": false,
-      "label": "App auswählen",
-      "helpText": false
+      "label": {
+        "text": "Kampagnen-Name eingeben:"
+      },
+      "helpText": "Der Kampagnen-Name hilft dir die App wiederzuerkennen.",
+      "type": {
+        "input-group": true
+      }
     },
     "inputGroup": {
-      "class": false,
+      "class": "col-sm-9",
+      "icon": false,
       "addonBefore": false,
       "addonAfter": false
     },
     "input": {
-      "class": "form-control-success",
-      "placeholder": "Vorlagen durchsuchen..."
+      "placeholder": "Hier Kampagnen-Name eingeben"
     }
   }
 }
