@@ -1,149 +1,200 @@
+// Inspired by https://github.com/airbnb/javascript but less opinionated.
+
+// We use eslint-loader so even warnings are very visibile.
+// This is why we only use "WARNING" level for potential errors,
+// and we don't use "ERROR" level at all.
+
+// In the future, we might create a separate list of rules for production.
+// It would probably be more strict.
+
+var WARNING = 1;
+
 module.exports = {
-    // So parent files don't get applied
     root: true,
+
+    parser: 'babel-eslint',
+
+    // import plugin is termporarily disabled, scroll below to see why
+    plugins: ['react'/*, 'import'*/, 'jsx-a11y'],
+
     env: {
         es6: true,
-        browser: true,
-        node: true,
+        commonjs: true,
+        browser: true
     },
-    extends: 'eslint:recommended',
-    parser: 'babel-eslint',
+
     parserOptions: {
-        ecmaVersion: 7,
+        ecmaVersion: 6,
         sourceType: 'module',
         ecmaFeatures: {
             jsx: true,
-            experimentalObjectRestSpread: true,
+            generators: true,
+            experimentalObjectRestSpread: true
         }
     },
-    plugins: [
-        'babel',
-        'react',
-        'mocha',
-    ],
-    rules: {
-        'array-bracket-spacing': ['error', 'never'],
-        'arrow-spacing': 'error',
-        'arrow-parens': 'error',
-        'block-spacing': ['error', 'always'],
-        'brace-style': 'error',
-        'comma-dangle': ['error', 'always-multiline'],
-        'comma-spacing': ['error', {before: false, after: true}],
-        'comma-style': ['error', 'last'],
-        'computed-property-spacing': ['error', 'never'],
-        'consistent-this': ['error', 'self'],
-        'consistent-return': 'off', // Wishlist, one day
-        'dot-notation': 'error',
-        'dot-location': ['error', 'property'],
-        'eqeqeq': ['error', 'smart'],
-        'eol-last': 'error',
-        'indent': ['error', 2, {SwitchCase: 1}],
-        'id-blacklist': ['error', 'e'],
-        'jsx-quotes': ['error', 'prefer-double'],
-        'keyword-spacing': 'error',
-        'key-spacing': 'error',
-        'max-len': ['error', 120, 4],
-        'new-cap': ['off', {capIsNew: true, newIsCap: true}], // Wishlist, one day
-        'no-unused-expressions': 'error',
-        'no-unused-vars': 'error',
-        'no-shadow': 'off', // Wishlist, one day
-        'no-spaced-func': 'error',
-        'no-multiple-empty-lines': 'error',
-        'no-multi-spaces': 'error',
-        'no-undef': 'error',
-        'no-empty-pattern': 'error',
-        'no-dupe-keys': 'error',
-        'no-dupe-args': 'error',
-        'no-duplicate-case': 'error',
-        'no-cond-assign': 'error',
-        'no-extra-semi': 'error',
-        'no-extra-boolean-cast': 'error',
-        'no-trailing-spaces': 'error',
-        'no-underscore-dangle': 'error',
-        'no-unneeded-ternary': 'error',
-        'no-unreachable': 'error',
-        'no-var': 'error',
-        'one-var': ['error', 'never'],
-        'operator-linebreak': ['error', 'after'],
-        'padded-blocks': ['error', 'never'],
-        'prefer-arrow-callback': 'off', // Wishlist, one day
-        'prefer-const': 'error',
-        'prefer-template': 'error',
-        'quotes': ['error', 'single', 'avoid-escape'],
-        'semi': ['error', 'always'],
-        'space-before-blocks': ['error', 'always'],
-        'space-before-function-paren': ['error', 'never'],
-        'space-infix-ops': 'error',
-        'space-unary-ops': ['error', { words: true, nonwords: false }],
-        'spaced-comment': 'error',
-        'yoda': 'error',
-        'babel/object-curly-spacing': ['error', 'never'],
-        'babel/generator-star-spacing': 'error',
-        'babel/array-bracket-spacing': 'error',
-        'babel/arrow-parens': 'error',
-        'babel/no-await-in-loop': 'error',
-        'babel/func-params-comma-dangle': 'error',
-        'babel/flow-object-type': 'error',
-        'react/display-name': 'error',
-        'react/jsx-boolean-value': ['error', 'always'],
-        'react/jsx-closing-bracket-location': 'error',
-        'react/jsx-curly-spacing': 'error',
-        'react/jsx-equals-spacing': 'error',
-        'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
-        'react/jsx-first-prop-new-line': ['error', 'multiline'],
-        'react/jsx-handler-names': 'error',
-        'react/jsx-indent': ['error', 2],
-        'react/jsx-indent-props': ['error', 2],
-        'react/jsx-max-props-per-line': ['error', {maximum: 3}],
-        'react/jsx-no-duplicate-props': 'error',
-        'react/jsx-no-undef': 'error',
-        'react/jsx-pascal-case': 'error',
-        'react/jsx-space-before-closing': 'error',
-        'react/jsx-uses-react': 'error',
-        'react/jsx-uses-vars': 'error',
-        'react/no-comment-textnodes': 'error',
-        'react/no-danger': 'error',
-        'react/no-deprecated': 'error',
-        'react/no-did-mount-set-state': 'error',
-        'react/no-did-update-set-state': 'error',
-        'react/no-direct-mutation-state': 'error',
-        'react/no-multi-comp': 'off', // Wishlist, one day
-        'react/no-render-return-value': 'error',
-        'react/no-is-mounted': 'error',
-        'react/no-unknown-property': 'error',
-        'react/prefer-arrow-callback': 'off', // Wishlist, one day
-        'react/prefer-es6-class': 'error',
-        'react/prop-types': 'error',
-        'react/react-in-jsx-scope': 'error',
-        'react/require-extension': 'error',
-        'react/require-render-return': 'error',
-        'react/self-closing-comp': 'error',
-        'react/sort-comp': 'error',
-        'react/sort-prop-types': 'error',
-        'react/wrap-multilines': 'error',
-        'mocha/handle-done-callback': 'error',
-        'mocha/no-exclusive-tests': 'error',
-        'mocha/no-global-tests': 'error',
-        'mocha/no-pending-tests': 'error',
-        'mocha/no-skipped-tests': 'error',
 
-        'react/no-string-refs': 'warn', // Whishlist, one day.
-
-        'strict': 'off',
-        'no-case-declarations': 'off',
-        'react/jsx-key': 'off',
-        'react/jsx-no-bind': 'off',
-        'react/jsx-no-literals': 'off',
-        'react/jsx-no-target-blank': 'off',
-        'react/jsx-sort-props': 'off',
-        'react/no-set-state': 'off',
-        'react/forbid-prop-types': 'off',
-        'react/prefer-stateless-function': 'off',
-        'react/require-optimization': 'off',
-        'mocha/no-synchronous-tests': 'off',
-        'mocha/valid-suite-description': 'off',
-        'mocha/valid-test-description': 'off',
-        'babel/object-shorthand': 'off',
-        'babel/new-cap': 'off',
+    settings: {
+        'import/ignore': [
+            'node_modules',
+            '\\.(json|css|jpg|png|gif|eot|svg|ttf|woff|woff2|mp4|webm)$',
+        ],
+        'import/extensions': ['.js'],
+        'import/resolver': {
+            node: {
+                extensions: ['.js', '.json']
+            }
+        }
     },
+
+    rules: {
+        // http://eslint.org/docs/rules/
+        // 'array-callback-return': WARNING,
+        'default-case': [WARNING, {commentPattern: '^no default$'}],
+        'dot-location': [WARNING, 'property'],
+        eqeqeq: [WARNING, 'allow-null'],
+        'guard-for-in': WARNING,
+        'new-cap': [WARNING, {newIsCap: true}],
+        'new-parens': WARNING,
+        'no-array-constructor': WARNING,
+        'no-caller': WARNING,
+        'no-cond-assign': [WARNING, 'always'],
+        'no-const-assign': WARNING,
+        'no-control-regex': WARNING,
+        'no-delete-var': WARNING,
+        'no-dupe-args': WARNING,
+        'no-dupe-class-members': WARNING,
+        'no-dupe-keys': WARNING,
+        'no-duplicate-case': WARNING,
+        'no-empty-character-class': WARNING,
+        'no-empty-pattern': WARNING,
+        'no-eval': WARNING,
+        'no-ex-assign': WARNING,
+        'no-extend-native': WARNING,
+        'no-extra-bind': WARNING,
+        'no-extra-label': WARNING,
+        'no-fallthrough': WARNING,
+        'no-func-assign': WARNING,
+        'no-implied-eval': WARNING,
+        'no-invalid-regexp': WARNING,
+        'no-iterator': WARNING,
+        'no-label-var': WARNING,
+        'no-labels': [WARNING, {allowLoop: false, allowSwitch: false}],
+        'no-lone-blocks': WARNING,
+        'no-loop-func': WARNING,
+        'no-mixed-operators': [WARNING, {
+            groups: [
+                ['+', '-', '*', '/', '%', '**'],
+                ['&', '|', '^', '~', '<<', '>>', '>>>'],
+                ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+                ['&&', '||'],
+                ['in', 'instanceof']
+            ],
+            allowSamePrecedence: false
+        }],
+        'no-multi-str': WARNING,
+        'no-native-reassign': WARNING,
+        'no-negated-in-lhs': WARNING,
+        'no-new-func': WARNING,
+        'no-new-object': WARNING,
+        'no-new-symbol': WARNING,
+        'no-new-wrappers': WARNING,
+        'no-obj-calls': WARNING,
+        'no-octal': WARNING,
+        'no-octal-escape': WARNING,
+        'no-redeclare': WARNING,
+        'no-regex-spaces': WARNING,
+        'no-restricted-syntax': [
+            WARNING,
+            'LabeledStatement',
+            'WithStatement',
+        ],
+        'no-return-assign': WARNING,
+        'no-script-url': WARNING,
+        'no-self-assign': WARNING,
+        'no-self-compare': WARNING,
+        'no-sequences': WARNING,
+        'no-shadow-restricted-names': WARNING,
+        'no-sparse-arrays': WARNING,
+        'no-this-before-super': WARNING,
+        'no-throw-literal': WARNING,
+        'no-undef': WARNING,
+        'no-unexpected-multiline': WARNING,
+        'no-unreachable': WARNING,
+        'no-unused-expressions': WARNING,
+        'no-unused-labels': WARNING,
+        'no-unused-vars': [WARNING, {vars: 'local', args: 'none'}],
+        'no-use-before-define': [WARNING, 'nofunc'],
+        'no-useless-computed-key': WARNING,
+        'no-useless-concat': WARNING,
+        'no-useless-constructor': WARNING,
+        'no-useless-escape': WARNING,
+        'no-useless-rename': [WARNING, {
+            ignoreDestructuring: false,
+            ignoreImport: false,
+            ignoreExport: false,
+        }],
+        'no-with': WARNING,
+        'no-whitespace-before-property': WARNING,
+        'operator-assignment': [WARNING, 'always'],
+        radix: WARNING,
+        'require-yield': WARNING,
+        'rest-spread-spacing': [WARNING, 'never'],
+        strict: [WARNING, 'never'],
+        'unicode-bom': [WARNING, 'never'],
+        'use-isnan': WARNING,
+        'valid-typeof': WARNING,
+
+        // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/
+
+        // TODO: import rules are temporarily disabled because they don't play well
+        // with how eslint-loader only checks the file you change. So if module A
+        // imports module B, and B is missing a default export, the linter will
+        // record this as an issue in module A. Now if you fix module B, the linter
+        // will not be aware that it needs to re-lint A as well, so the error
+        // will stay until the next restart, which is really confusing.
+
+        // This is probably fixable with a patch to eslint-loader.
+        // When file A is saved, we want to invalidate all files that import it
+        // *and* that currently have lint errors. This should fix the problem.
+
+        // 'import/default': WARNING,
+        // 'import/export': WARNING,
+        // 'import/named': WARNING,
+        // 'import/namespace': WARNING,
+        // 'import/no-amd': WARNING,
+        // 'import/no-duplicates': WARNING,
+        // 'import/no-extraneous-dependencies': WARNING,
+        // 'import/no-named-as-default': WARNING,
+        // 'import/no-named-as-default-member': WARNING,
+        // 'import/no-unresolved': [WARNING, { commonjs: true }],
+
+        'jsx-quotes': WARNING,
+        'jsx-a11y/img-has-alt': WARNING,
+        'jsx-a11y/img-redundant-alt': WARNING,
+        'jsx-a11y/aria-role': WARNING,
+        'jsx-a11y/no-access-key': WARNING,
+        // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
+        'react/jsx-equals-spacing': [WARNING, 'never'],
+        'react/jsx-handler-names': WARNING,
+        'react/sort-comp': WARNING,
+        'react/jsx-no-duplicate-props': [WARNING, {ignoreCase: true}],
+        'react/jsx-no-undef': WARNING,
+        'react/jsx-curly-spacing': WARNING,
+        'react/jsx-boolean-value': WARNING,
+        'react/self-closing-comp': WARNING,
+        'react/wrap-multilines': WARNING,
+        'react/no-multi-comp': WARNING,
+        'react/prefer-es6-class': WARNING,
+        'react/prefer-stateless-function': WARNING,
+        'react/no-string-refs': WARNING,
+        'react/jsx-closing-bracket-location': WARNING,
+        'react/jsx-pascal-case': WARNING,
+        'react/jsx-uses-react': WARNING,
+        'react/jsx-uses-vars': WARNING,
+        'react/no-deprecated': WARNING,
+        'react/no-direct-mutation-state': WARNING,
+        'react/no-is-mounted': WARNING,
+        'react/react-in-jsx-scope': WARNING,
+        'react/require-render-return': WARNING,
+    }
 };

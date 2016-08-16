@@ -1,4 +1,4 @@
-<div class="modal fade">
+<div class="modal {{modal.class}}" style="display: block;">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             {{#modal.header}}
@@ -6,7 +6,20 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title">{{{modal.header}}}</h4>
+                    <div class="pull-right">
+                        {{#link}}
+                            <span class="modal-header-link">
+                                <a href="{{url}}">{{text}}</a>
+                            </span>
+                        {{/link}}
+
+                        {{#filter}}
+                            <span class="modal-header-filter">
+                                {{> atoms-input }}
+                            </span>
+                        {{/filter}}
+                    </div>
+                    <h4 class="modal-title">{{{title}}}</h4>
                 </div>
             {{/modal.header}}
             <div class="modal-body">
@@ -14,7 +27,15 @@
             </div>
             {{#modal.footer}}
                 <div class="modal-footer">
-                    {{{modal.footer}}}
+                    {{#hint}}
+                        <span class="modal-hint-text text-muted pull-left">{{hint}}</span>
+                    {{/hint}}
+                    {{#btnProgress}}
+                        {{> atoms-button }}
+                    {{/btnProgress}}
+                    {{#btnCancel}}
+                        {{> atoms-button }}
+                    {{/btnCancel}}
                 </div>
             {{/modal.footer}}
         </div><!-- /.modal-content -->

@@ -5,14 +5,22 @@
 @import "~bootstrap/scss/modal";
 
 /*=========================================================================
-  Molecules Filter bar
+  Molecules Modal
  ========================================================================== */
-
-.filter-bar {
-	border: 1px solid $card-border-color;
-	display: flex;
-	justify-content: space-between;
+.modal-header, .modal-footer {
+  background-color: $gray-lightest;
 }
-.filter-bar-search {
-	flex: 1;
+
+.modal-header-filter {
+
+  margin: 0 $spacer-x;
+
+  input {
+    display: inline-block;
+    max-width: 150px;
+  }
+}
+
+.modal-body {
+  min-height: 200px;
 }

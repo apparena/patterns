@@ -2,17 +2,20 @@
  * Pattern Dependencies
  */
 @import "../../../css/scss/abstracts/variables";
-@import "~bootstrap/scss/modal";
 
 /*=========================================================================
-  Molecules Filter bar
+  Molecules Navbar
  ========================================================================== */
+.m-navbar-form.has-icon {
+  position: relative;
 
-.filter-bar {
-	border: 1px solid $card-border-color;
-	display: flex;
-	justify-content: space-between;
-}
-.filter-bar-search {
-	flex: 1;
+  i {
+    position: absolute;
+    left:10px;
+    top: 10px;
+  }
+
+  input {
+    padding-left: 30px;
+  }
 }

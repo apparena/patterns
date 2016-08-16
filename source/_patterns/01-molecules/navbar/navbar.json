@@ -1,0 +1,65 @@
+{
+  "navbar": {
+    "class": "navbar-light bg-faded",
+    "helpNavigation": {
+      "dropdown": {
+        "class": "nav-item",
+        "btnCaption": "<i class=\"fa fa-question-circle-o\" aria-hidden=\"true\"></i>",
+        "btnClass": "nav-link",
+        "id":"navbarHelp",
+        "items": [
+          {"class": "dropdown-item", "text": "Onlinehilfe", "url":"https://wiki.app-arena.com/display/SP/Service-Portal"},
+          {"class": "dropdown-item", "text": "Support Anfragen", "url":"#"},
+          {"class": "dropdown-item", "text": "Informationen zum App-Manager", "url":"#"},
+          {"class": "dropdown-item", "text": "Kontakt", "url":"#"}
+        ],
+        "header":"Hilfe & Support",
+        "menuClass": "dropdown-menu dropdown-menu-right"
+      }
+    },
+    "primaryNavigation": {
+      "navList": [
+        {
+          "text": "Dashboard",
+          "url": "link.pages-dashboard",
+          "isActive": true
+        },
+        {
+          "text": "Apps",
+          "url": "link.pages-apps"
+        },
+        {
+          "text": "Kunden",
+          "url": "link.pages-customers"
+        },
+        {
+          "text": "Entwickler",
+          "url": "link.pages-developers"
+        }
+      ]
+    },
+    "searchForm": {
+      "navbarForm": {
+        "icon":"<i class=\"fa fa-search text-muted\"></i>",
+        "placeholder": "Suchen..."
+      }
+    },
+    "userNavigation": {
+      "dropdown": {
+        "class": "nav-item",
+        "btnCaption": "<img src=\"../../images/sample/avatar2.jpg\" class=\"img-circle\" width=\"24\" >",
+        "btnClass": "nav-link",
+        "id":"navbarUser",
+        "items": [
+          {"class": "dropdown-item", "text": "Profil", "url":"https://wiki.app-arena.com/display/SP/Service-Portal"},
+          {"class": "dropdown-item", "text": "Unternehmen", "url":"#"},
+          {"class": "dropdown-item", "text": "Einstellungen", "url":"#"},
+          {"class": "dropdown-divider"},
+          {"class": "dropdown-item", "text": "Abmelden", "url":"#"}
+        ],
+        "header":false,
+        "menuClass": "dropdown-menu dropdown-menu-right"
+      }
+    }
+  }
+}

@@ -1,12 +1,14 @@
 {
   "login": {
-    "header": "Anmelden",
+    "header": "<span class=\"pull-right\">Noch kein Konto? <a href=\"#\">Hier registrieren</a></span><h5 class=\"m-b-0\">Anmeldung</h5>",
     "items": [
       {
         "formGroup": {
           "class": "has-success",
           "feedback": false,
-          "label": "E-Mail Adresse",
+          "label": {
+            "text": "E-Mail"
+          },
           "helpText": false
         },
         "input": {
@@ -18,13 +20,21 @@
         "formGroup": {
           "class": "has-danger",
           "feedback": "Das Passwort muss aus mind. 8 Zeichen bestehen.",
-          "label": "Passwort"
+          "label": {
+            "text": "Passwort"
+          },
+          "helpText": "<a href=\"#\">Passwort vergessen?</a>"
+        },
+        "inputGroup": {
+          "icon": "<i class=\"fa fa-key\"></i>"
         },
         "input": {
           "class": "form-control-danger",
-          "value": "1234"
+          "value": "1234",
+          "message": "Please use more than 8 characters"
         }
       }
     ]
-  }
+  },
+  "btnText": "Anmelden"
 }

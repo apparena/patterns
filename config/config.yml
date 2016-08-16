@@ -13,6 +13,7 @@ patternStates:
     - inprogress
     - inreview
     - complete
+    - reactpending
 styleGuideExcludes: ''
 cacheBusterOn: 'true'
 exportDir: export

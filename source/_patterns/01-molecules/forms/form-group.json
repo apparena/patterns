@@ -2,7 +2,10 @@
   "formGroup": {
     "class": "has-danger",
     "feedback": "You entered to less characters",
-    "label": "This my input label",
+    "label": {
+      "class": "col-sm-2",
+      "text": "This my input label"
+    },
     "helpText": "Pro Tip: Use your browsers autocompletion to fill this form more quickly."
   },
   "input": {

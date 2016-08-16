@@ -1,0 +1,25 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+@import "~bootstrap/scss/input-group";
+
+/*=========================================================================
+  Molecules Input group
+ ========================================================================== */
+.input-group {
+  align-items: center;
+}
+
+.input-group.has-icon {
+
+  > i {
+    position: absolute;
+    left: 25px;
+    z-index: 4;
+    color: $gray-light;
+  }
+  input {
+    padding-left: 35px;
+  }
+}
