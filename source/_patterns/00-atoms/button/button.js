@@ -3,15 +3,16 @@ import ReactComponent from "../../reactComponent";
 
 export default class Button extends ReactComponent {
     static propTypes = {
-        btnText: PropTypes.string,
-        btnTitle: PropTypes.string,
-        btnClass: PropTypes.string
+        text: PropTypes.string,
+        title: PropTypes.string,
+        buttonClass: PropTypes.string
     };
 
     render() {
         return (
-            <button type="button" className={this.props.btnClass} title={this.props.btnTitle}>
-                {this.props.btnText}
+            <button type="button" className={this.props.buttonClass} title={this.props.title}>
+                {this.props.text}
+                {this.getChildrenArray(this.props.children)}
             </button>
         )
     }
