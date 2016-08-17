@@ -1,0 +1,274 @@
+{{% BLOCKS }}
+{{< templates-focused-task }}
+
+{{$ contentBlock }}
+<link href="//refreshless.com/noUiSlider/distribute/nouislider.min.css" rel="stylesheet">
+<script src="//refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
+<script src="//refreshless.com/noUiSlider/distribute/nouislider.js"></script>
+<div class="card">
+    {{# header }}
+        <div class="card-header">
+            {{{ header }}}
+        </div>
+    {{/header}}
+
+    {{# content }}
+        {{#progressTracker}}
+            {{> molecules-progress-tracker }}
+        {{/progressTracker}}
+        <div class="card-block">
+
+            <div class="intro text-xs-center m-b-1">
+                <p class="lead">
+                    Wähle ein vordefiniertes Paket oder stelle deine Leistungen individuell zusammen
+                </p>
+                <div class="btn-group btn-group-lg" role="group" aria-label="Large button group" data-toggle="buttons">
+                    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-parent="#serviceConfigurator"
+                            href="#servicesIncluded" aria-expanded="false" aria-controls="servicesIncluded">
+                        <input type="radio" name="servicePackage" checked autocomplete="off"> Starter
+                    </button>
+                    <button type="button" class="btn btn-secondary active" data-toggle="collapse" data-parent="#serviceConfigurator"
+                            href="#servicesIncluded" aria-expanded="false" aria-controls="servicesIncluded">
+                        <input type="radio" name="servicePackage" autocomplete="off"> Standard
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-parent="#serviceConfigurator"
+                            href="#servicesIncluded" aria-expanded="false" aria-controls="servicesIncluded">
+                        <input type="radio" name="servicePackage" autocomplete="off"> Plus
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-parent="#serviceConfigurator"
+                            href="#servicesIncluded" aria-expanded="false" aria-controls="servicesIncluded">
+                        <input type="radio" name="servicePackage" autocomplete="off"> Enterprise
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-parent="#serviceConfigurator"
+                            href="#servicesCustom" aria-expanded="false" aria-controls="servicesCustom">
+                        <input type="radio" name="servicePackage" autocomplete="off"> Individuell
+                    </button>
+                </div>
+                <h4 class="m-y-2">1.129 € zzgl. MwSt</h4>
+            </div>
+            <div id="serviceConfigurator">
+                <div id="servicesIncluded" class="collapse in">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th scope="row">Service Anspruch</th>
+                            <td>
+                                <p><strong>4 Service Stunden</strong> für folgende Leistungen</p>
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-check text-success"></i>CSS Anpassungen</li>
+                                    <li><i class="fa-li fa fa-check text-success"></i>Grafik-Erstellung</li>
+                                    <li class="text-muted"><i class="fa-li fa fa-times"></i> Werbemanagement</li>
+                                    <li class="text-muted"><i class="fa-li fa fa-times"></i> Abschlussbericht</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Laufzeit</th>
+                            <td>
+                                <strong>2 Monate</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sprachen</th>
+                            <td>
+                                <p><strong>1 Sprache</strong></p>
+
+                                <ul class="fa-ul">
+                                    <li>
+                                        <i class="fa-li fa fa-check text-success"></i>
+                                        <img src="../../images/flags/24/de.png" alt=""> Deutsch
+                                        <a href="ä">Sprache ändern</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kanäle zur Veröffentlichung</th>
+                            <td>
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-check text-success"></i> <strong>Kampagnenseite</strong></li>
+                                    <li><i class="fa-li fa fa-check text-success"></i> <strong>1 Facebook Fanseite</strong></li>
+                                    <li class="text-muted"><i class="fa-li fa fa-times"></i> Webseiteneinbindung</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Domain der Kampagnenseite</th>
+                            <td>
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-check text-success"></i> Eigene Subdomain</li>
+                                    <li class="text-muted"><i class="fa-li fa fa-times"></i> Eigene Domain</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="servicesCustom" class="collapse" >
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th scope="row">Service Anspruch und Leistungen</th>
+                            <td>
+                                <p>Service-Stunden</p>
+                                <div class="slider m-b-3">
+                                    <div id="servicePackageSlider"></div>
+                                </div>
+
+                                <ul class="fa-ul">
+                                    <li>
+                                        <i class="fa-li fa fa-check text-success"></i>CSS Anpassungen <span
+                                            class="tag tag-default pull-right">ab 1 Service Stunde</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-check text-success"></i>Grafik-Erstellung <span
+                                            class="tag tag-default pull-right">ab 4 Service Stunden</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-times"></i>Werbemanagement <span class="tag tag-default pull-right">ab 10 Service Stunden</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-times"></i>Abschluss-Report <span class="tag tag-default pull-right">ab 10 Service Stunden</span>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Laufzeit in Monaten</th>
+                            <td>
+                                <div class="slider m-b-3">
+                                    <div id="licenseSlider"></div>
+                                </div>
+                                <!--<h3 id="licenseValue"></h3>-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sprachen</th>
+                            <td>
+                                <p>Sie haben <strong>2 Sprachen</strong> im Paket enthalten</p>
+
+                                <ul class="fa-ul">
+                                    <li>
+                                        <i class="fa-li fa fa-check text-success"></i>
+                                        <img src="../../images/flags/24/de.png" alt=""> Deutsch
+                                        <a href="ä">Sprache ändern</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-check text-success"></i>
+                                        <img src="../../images/flags/24/gb.png" alt=""> Englisch
+                                        <a href="ä">Sprache ändern</a>
+                                    </li>
+                                </ul>
+
+                                <p>
+                                    <a href="#">Weitere Sprache dazu buchen</a> (ab 99 €)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kanäle zur Veröffentlichung</th>
+                            <td>
+                                <p class="text-muted">Wähle über welche Kanäle die App veröffentlicht werden soll.</p>
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-check text-success"></i> Kampagnenseite</li>
+                                    <li><i class="fa-li fa fa-check text-success"></i> 1 Facebook Fanseite <a
+                                            href="#">Fanseiten
+                                        dazu buchen</a></li>
+                                    <li><i class="fa-li fa fa-times"></i> Einbindung in Webseite <a href="#">Webseiten dazu
+                                        buchen</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Domain der Kampagnenseite</th>
+                            <td>
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-check text-success"></i> Eigene Subdomain (z.B.
+                                        sparkasse.fotowettbewerb.de)
+                                    </li>
+                                    <li><i class="fa-li fa fa-times"></i> Eigene Domain (z.B.
+                                        www.sparkasse-fotowettbewerb.de)
+                                        <a href="#">Domain buchen (+199€)</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h4 class="m-y-2 text-xs-center">1.129 € zzgl. MwSt</h4>
+        </div>
+    {{/ content }}
+
+    {{# footer }}
+        <div class="card-footer text-xs-right">
+            {{#prev}}
+                <a href="{{url}}" class="btn btn-link pull-left">{{text}}</a>
+            {{/prev}}
+            {{#next}}
+                <a href="{{url}}" class="btn btn-primary">{{text}}</a>
+            {{/next}}
+        </div>
+    {{/footer}}
+</div>
+
+<script type="application/javascript">
+    var servicePackageSlider = document.getElementById('servicePackageSlider'),
+        servicePackageValue  = document.getElementById('servicePackageValue'),
+        licenseSlider        = document.getElementById('licenseSlider'),
+        licenseValue         = document.getElementById('licenseValue');
+
+    noUiSlider.create(licenseSlider, {
+        start : 1,
+        step  : 1,
+        format: wNumb({
+            decimals: 0
+        }),
+        range : {
+            'min': 1,
+            'max': 24
+        },
+        pips  : {
+            mode   : 'steps',
+            density: 24,
+            format : wNumb({
+                decimals: 0
+            })
+        }
+    });
+
+    // Note how these are 'string' values, not numbers.
+    licenseSlider.noUiSlider.on('update', function (values, handle) {
+        //licenseValue.innerHTML = values + ' Tage';
+    });
+
+    noUiSlider.create(servicePackageSlider, {
+        start : 0,
+        step  : 1,
+        format: wNumb({
+            decimals: 0
+        }),
+        range : {
+            'min': 0,
+            'max': 24
+        },
+        pips  : {
+            mode   : 'steps',
+            density: 24,
+            format : wNumb({
+                decimals: 0
+            })
+        }
+    });
+
+    // Note how these are 'string' values, not numbers.
+    servicePackageSlider.noUiSlider.on('update', function (values, handle) {
+        //servicePackageValue.innerHTML = values + ' Tage';
+    });
+
+</script>
+
+{{/ contentBlock }}
+
+{{/ templates-focused-task }}
+
