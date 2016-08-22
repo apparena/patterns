@@ -1,6 +1,7 @@
 {
   "modal": {
     "class": "fade in",
+    "id": "modalId",
     "body": "Content area",
     "footer": {
       "hint": "Help text",
@@ -28,6 +29,11 @@
         }
       },
       "title": "Dialog title"
+    },
+    "trigger": {
+      "class": "btn btn-primary",
+      "text": "Launch modal",
+      "target": "#modalId"
     }
   }
 }

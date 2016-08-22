@@ -11,12 +11,17 @@
   },
   "navSecondary": false,
   "content": "<h1>FORM</h1>",
-  "footer": "<a href=\"#\" class=\"btn btn-primary\">Zusatzleistungen auswählen</a>",
-  "header": "Neue App erstellen",
+  "footer": {
+    "next": {
+      "url": "link.pages-app-create-step2",
+      "text": "Weiter zur Paketauswahl"
+    }
+  },
+  "header": "Fotowettbewerb buchen",
   "progressTracker": {
     "items": [
       {
-        "text": "App aussuchen",
+        "text": "Basisinformationen",
         "href": "#step1",
         "id": "step1",
         "style": "width:33%",
@@ -24,7 +29,7 @@
         "isActive": true
       },
       {
-        "text": "Zusatzleistungen buchen",
+        "text": "Paket wählen",
         "href": "#step2",
         "id": "step2",
         "style": "width:33%",
@@ -32,7 +37,7 @@
         "isActive": false
       },
       {
-        "text": "Lizenz wählen",
+        "text": "Bestellung abschließen",
         "href": "#step3",
         "id": "step3",
         "style": "width:33%",
@@ -41,39 +46,49 @@
       }
     ]
   },
+  "appName": {
+    "formGroup": {
+      "class": false,
+      "feedback": false,
+      "label": {
+        "text": "Kampagnen-Name eingeben:"
+      },
+      "helpText": "Der Kampagnen-Name hilft dir die App wiederzuerkennen.",
+      "type": {
+        "input-group": true
+      }
+    },
+    "inputGroup": {
+      "class": "col-sm-9",
+      "icon": false,
+      "addonBefore": false,
+      "addonAfter": false
+    },
+    "input": {
+      "placeholder": "Hier Kampagnen-Name eingeben",
+      "value": "Fotowettbewerb 12.06.2016"
+    }
+  },
   "customer": {
     "formGroup": {
       "class": "has-success",
       "feedback": false,
-      "label": "App anlegen für:",
-      "helpText": false
+      "label": {
+        "text": "App anlegen für:"
+      },
+      "helpText": false,
+      "type": {
+        "select": true
+      }
     },
-    "inputGroup": {
-      "class": false,
-      "addonBefore": false,
-      "addonAfter": false
-    },
-    "input": {
-      "class": "form-control-success",
-      "placeholder": "Kunden durchsuchen...",
-      "value": "App-Arena GmbH"
-    }
-  },
-  "app": {
-    "formGroup": {
-      "class": false,
-      "feedback": false,
-      "label": "App auswählen",
-      "helpText": false
-    },
-    "inputGroup": {
-      "class": false,
-      "addonBefore": false,
-      "addonAfter": false
-    },
-    "input": {
-      "class": "form-control-success",
-      "placeholder": "Vorlagen durchsuchen..."
+    "select": {
+      "class": "col-sm-9",
+      "options": [
+        {"text":"App-Arena GmbH", "selected": true},
+        {"text":"iConsultants GmbH", "selected": false},
+        {"text":"Marcapo GmbH"}
+      ],
+      "message":"Dieses Feld wird nur angezeigt, wenn auch Kunden existieren."
     }
   }
 }

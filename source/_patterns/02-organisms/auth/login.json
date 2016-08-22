@@ -9,7 +9,10 @@
           "label": {
             "text": "E-Mail"
           },
-          "helpText": false
+          "helpText": false,
+          "type": {
+            "input-group": true
+          }
         },
         "input": {
           "value": "s.buckpesch@app-arena.com",
@@ -23,7 +26,10 @@
           "label": {
             "text": "Passwort"
           },
-          "helpText": "<a href=\"#\">Passwort vergessen?</a>"
+          "helpText": "<a href=\"#\">Passwort vergessen?</a>",
+          "type": {
+            "input-group": true
+          }
         },
         "inputGroup": {
           "icon": "<i class=\"fa fa-key\"></i>"

@@ -14,18 +14,23 @@
             {{> molecules-progress-tracker }}
         {{/progressTracker}}
         <div class="card-block">
+            {{#appName}}
+                {{> molecules-form-group }}
+            {{/appName}}
             {{#customer}}
                 {{> molecules-form-group }}
             {{/customer}}
-            {{#app}}
-                {{> molecules-form-group }}
-            {{/app}}
         </div>
     {{/ content }}
 
     {{# footer }}
         <div class="card-footer text-xs-right">
-            {{{ footer }}}
+            {{#prev}}
+                <a href="{{url}}" class="btn btn-link pull-left">{{text}}</a>
+            {{/prev}}
+            {{#next}}
+                <a href="{{url}}" class="btn btn-primary">{{text}}</a>
+            {{/next}}
         </div>
     {{/footer}}
 </div>

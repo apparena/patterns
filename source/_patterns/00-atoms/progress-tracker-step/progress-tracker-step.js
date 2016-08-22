@@ -2,7 +2,7 @@ import React, {PropTypes} from "react";
 import cx from "classnames";
 import ReactComponent from "../../reactComponent";
 
-import styles from "./_progress-tracker-step.scss"
+import styles from "./progress-tracker-step.scss"
 
 export default class Button extends ReactComponent {
     static propTypes = {

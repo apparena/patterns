@@ -1,0 +1,53 @@
+{
+  "navPrimary": {
+    "navList": [
+      {
+        "isActive": false
+      },
+      {
+        "isActive": true
+      }
+    ]
+  },
+  "navSecondary": false,
+  "content": "<h1>FORM</h1>",
+  "footer": {
+    "prev": {
+      "url": "link.pages-app-create",
+      "text": "Zurück"
+    },
+    "next": {
+      "url": "link.pages-app-create-step3",
+      "text": "Zur Bestellübersicht"
+    }
+  },
+  "header": "Fotowettbewerb buchen",
+  "progressTracker": {
+    "items": [
+      {
+        "text": "Basisinformationen",
+        "href": "#step1",
+        "id": "step1",
+        "style": "width:33%",
+        "class": "step1",
+        "isActive": false
+      },
+      {
+        "text": "Paket wählen",
+        "href": "#step2",
+        "id": "step2",
+        "style": "width:33%",
+        "class": "step2",
+        "isActive": true
+      },
+      {
+        "text": "Bestellung abschließen",
+        "href": "#step3",
+        "id": "step3",
+        "style": "width:33%",
+        "class": "step3",
+        "isActive": false
+      }
+    ]
+  }
+}
