@@ -5,6 +5,7 @@ import ButtonGroup from "../../../01-molecules/button-group/button-group";
 import Icon from "../../../00-atoms/icons/icons";
 import Input from "../../../00-atoms/forms/input";
 import Button from "../../../00-atoms/button/button";
+import cx from "classnames";
 
 export default class FilterBar extends ReactComponent {
 
@@ -15,7 +16,11 @@ export default class FilterBar extends ReactComponent {
         txtSortButton: PropTypes.string,
         txtSortHeader: PropTypes.array,
         menuClass: PropTypes.string,
-        onClickFilterButton: PropTypes.func.isRequired
+        onClickFilterButton: PropTypes.func.isRequired,
+        expanded: PropTypes.bool,
+        buttonClass: PropTypes.string,
+        collapseClass: PropTypes.string,
+        style: PropTypes.string,
     };
 
     static defaultProps = {
@@ -24,7 +29,11 @@ export default class FilterBar extends ReactComponent {
         txtSearchAddon: "",
         txtSortButton: "Sort list",
         txtSortHeader: ["Category 1", "Category 2"],
-        menuClass: "dropdown-menu dropdown-menu-right"
+        menuClass: "dropdown-menu dropdown-menu-right",
+        expanded: false,
+        buttonClass: "btn btn-primary collapsed",
+        collapseClass: "collapse",
+        style: "height: 0px;",
     };
 
     createDropdownItems() {
@@ -77,10 +86,15 @@ export default class FilterBar extends ReactComponent {
         return (
             <div className="filter-bar p-a-1">
                 <div className="filter-bar-filter m-r-1">
-                    <a className="btn btn-secondary" onClick={this.props.onClickFilterButton}>
+                    <a className={this.props.buttonClass} onClick={this.props.onClickFilterButton} data-toggle="collapse" href="#collapseFilter" aria-expanded={this.props.expanded} aria-controls="collapseFilter">
                         <Icon iconClass="fa fa-filter"/>
                         {this.props.txtFilterButton}
                     </a>
+                </div>
+                <div className={this.props.collapseClass} id="collapseFilter" style={this.props.style} aria-expanded={this.props.expanded}>
+                    <div className="card card-block">
+                        content
+                    </div>
                 </div>
                 <div className="filter-bar-search m-r-1">
                     <div className="input-group">
