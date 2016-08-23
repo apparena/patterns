@@ -1,7 +1,7 @@
 {{# slider }}
     <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
     <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
-    <div class="o-slider" id="{{id}}">
+    <div class="o-slider m-l-3 m-r-3" id="{{id}}">
         {{# items }}
             <div>{{{content}}}</div>
         {{/ items }}
@@ -10,11 +10,10 @@
     <script>
         $(document).ready(function () {
             $('#{{id}}').slick({
-                dots: true,
-                infinite: true,
-                speed: 500,
-                fade: true,
-                cssEase: 'linear'
+                {{#settings.dots}}dots: true,{{/settings.dots}}
+                {{#settings.slidesToScroll}}slidesToScroll: {{settings.slidesToScroll}},{{/settings.slidesToScroll}}
+                {{#settings.slidesToShow}}slidesToShow: {{settings.slidesToShow}},{{/settings.slidesToShow}}
+                infinite: true
             });
         });
     </script>

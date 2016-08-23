@@ -54,5 +54,27 @@
   "navSecondary": false,
   "btnText":  "Click me!",
   "btnTitle": "Click this button to submit an action",
-  "btnClass": "btn-primary"
+  "btnClass": "btn-primary",
+
+  "slider": {
+    "settings": {
+      "dots": false,
+      "slidesToScroll": 2,
+      "slidesToShow": 4
+    },
+    "items": [
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+      {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"}
+    ]
+  }
 }
