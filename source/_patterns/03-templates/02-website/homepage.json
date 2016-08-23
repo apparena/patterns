@@ -50,5 +50,9 @@
         "dropdown": false
       }
     }
-  }
+  },
+  "navSecondary": false,
+  "btnText":  "Click me!",
+  "btnTitle": "Click this button to submit an action",
+  "btnClass": "btn-primary"
 }
