@@ -45,6 +45,7 @@
       }
     },
     "userNavigation": {
+      "links": false,
       "dropdown": {
         "class": "nav-item",
         "btnCaption": "<img src=\"../../images/sample/avatar2.jpg\" class=\"img-circle\" width=\"24\" >",
