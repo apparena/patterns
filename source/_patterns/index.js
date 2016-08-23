@@ -6,6 +6,7 @@ export Button from "./00-atoms/button/button";
 export ProgressTrackerStep from "./00-atoms/progress-tracker-step/progress-tracker-step";
 export Icon from "./00-atoms/icons/icons";
 export Input from "./00-atoms/forms/input";
+export Spinner from "./00-atoms/spinner/spinner";
 
 //Molecules
 export Card from "./01-molecules/card/card";
