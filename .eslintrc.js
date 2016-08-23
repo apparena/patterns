@@ -38,10 +38,10 @@ module.exports = {
             'node_modules',
             '\\.(json|css|jpg|png|gif|eot|svg|ttf|woff|woff2|mp4|webm)$',
         ],
-        'import/extensions': ['.js'],
+        'import/extensions': ['.js', '.jsx'],
         'import/resolver': {
             node: {
-                extensions: ['.js', '.json']
+                extensions: ['.js', '.json', '.jsx']
             }
         }
     },
