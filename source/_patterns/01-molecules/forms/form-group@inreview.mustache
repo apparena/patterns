@@ -1,5 +1,10 @@
 <div class="form-group row {{ styleModifier }} {{ formGroup.class }}">
-    {{#formGroup.label}}<label class="col-form-label text-sm-right col-sm-3 {{class}}" for="{{ inputGroup.id }}">{{text}}</label>{{/formGroup.label}}
+    {{#formGroup.label}}
+        <label class="col-form-label text-sm-right col-sm-3 {{class}}" for="{{ inputGroup.id }}">
+            {{text}}
+            {{#formGroup.required}}<span class="is-required text-danger">*</span>{{/formGroup.required}}
+        </label>
+    {{/formGroup.label}}
 
     {{#formGroup.type.select }}
         {{> molecules-select }}

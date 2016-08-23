@@ -1,0 +1,15 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+@import "~bootstrap/scss/forms";
+
+/*=========================================================================
+  Molecules Form group
+ ========================================================================== */
+.form-group {
+  .col-form-label .is-required {
+    position: absolute;
+    right:5px;
+  }
+}

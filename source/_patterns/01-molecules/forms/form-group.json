@@ -6,6 +6,7 @@
       "text": "This my input label"
     },
     "helpText": "Pro Tip: Use your browsers autocompletion to fill this form more quickly.",
+    "required": true,
     "type": {
       "select": false,
       "checkboxes": false,

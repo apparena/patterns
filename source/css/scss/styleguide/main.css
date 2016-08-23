@@ -1,247 +1,66 @@
-/*------------------------------------*\
-    STYLEGUIDE
-    Styling of styleguide's top navbar
-\*------------------------------------*/
-/*------------------------------------*\
-    #VARIABLES
-\*------------------------------------*/
-/*------------------------------------*\
-    #COLORS
-\*------------------------------------*/
 /*
- * 1) Color variables involve a two-tier system to keep colors in sync. The
- *    first tier defines the brand and neutral colors, and the second tier
- *    defines the application of those colors.
- */
-/*
- * Brand Colors
- * 1) Brand color variables use English names to define colors to make palettes easier to
- *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
- * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
- *    second-tier application colors.
- *
- */
-/*
- * Neutral Colors
- * 1) Neutral color variables use a numbered system to define variables for better maintainability.
- *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
- *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3
- */
-/**
- * Utility Colors
- * 1) Utility colors are colors used to provide feedback, such as alert messages,
- * form validation, etc.
- */
-/*
- * Text Colors
- * 1) These are non-linked text colors, such as body copy.
- */
-/*
- * Heading Colors
- * 1) These are non-linked heading colors, such as h2, h3, etc.
- */
-/*
- * Text Link Colors
- * 1) These are for linked text, such as a link found within an article,
- *    navigation link, footer link, etc.
- */
-/*
- * Border Colors
- * 1) Border colors are used as decoration or dividers, such as as a seperator
- *    for navigation items, block borders, etc.
- */
-/*------------------------------------*\
-    #TYPOGRAPHY
-\*------------------------------------*/
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/**
- * Spacing Defaults
- */
-/*------------------------------------*\
-    #BORDERS
-\*------------------------------------*/
-/**
- * Border Width
- */
-/**
- * Border Radius
- */
-/*------------------------------------*\
-    #ANIMATION
-\*------------------------------------*/
-/**
- * Animation Duration
- */
-/**
- * Animation Easing
- */
-/*------------------------------------*\
-    #BREAKPOINTS
-\*------------------------------------*/
-/**
- * Breakpoints
- */
-.sg-nav a {
-  color: #ddd !important;
-  font-size: 90% !important; }
+Error: File to import not found or unreadable: ~bootstrap/scss/variables.
+       Load path: /mnt/c/Users/s.buckpesch/Projects/styleguide/source/css
+        on line 68 of source/css/scss/abstracts/_variables_bootstrap.scss
+        from line 6 of source/css/scss/styleguide/main.scss
 
-.sg-tools-toggle {
-  font-size: 90% !important;
-  background: #666 !important; }
-
-#sg-form {
-  color: #ddd !important; }
-
-.sg-input {
-  background: #666 !important;
-  color: #ddd !important; }
-
-.sg-current-size {
-  font-size: 90% !important; }
-
-.sg-header {
-  font-family: 'Ubuntu' !important;
-  background: #666 !important; }
-
-.sg-header a {
-  font-size: 90% !important;
-  color: #ddd !important; }
-
-input#sg-size-px, input.sg-input.sg-size-em {
-  color: #4299d4 !important; }
-
-@media (min-width: 42em) {
-  .sg-nav > li > ol {
-    top: auto !important; } }
-.sg-acc-handle:after {
-  color: #4299d4 !important; }
-
-.sg-acc-handle:hover:after {
-  color: #666 !important; }
-
-.sg-current-size {
-  padding: .90em .7em; }
-
-.sg-nav * > * > * a {
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color; }
-
-.sg-nav * > * > * a:hover {
-  background-color: #4299d4 !important;
-  color: #ddd !important; }
-
-#sg-patterns {
-  padding: 1em 0.5em !important; }
-
-.m-logo {
-  float: left;
-  width: 120px;
-  margin-right: 20px; }
-
-/*------------------------------------*\
-    STYLEGUIDE
-    Styling of styleguide's footer
-\*------------------------------------*/
-/*------------------------------------*\
-    #VARIABLES
-\*------------------------------------*/
-/*------------------------------------*\
-    #COLORS
-\*------------------------------------*/
-/*
- * 1) Color variables involve a two-tier system to keep colors in sync. The
- *    first tier defines the brand and neutral colors, and the second tier
- *    defines the application of those colors.
- */
-/*
- * Brand Colors
- * 1) Brand color variables use English names to define colors to make palettes easier to
- *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
- * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
- *    second-tier application colors.
- *
- */
-/*
- * Neutral Colors
- * 1) Neutral color variables use a numbered system to define variables for better maintainability.
- *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
- *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3
- */
-/**
- * Utility Colors
- * 1) Utility colors are colors used to provide feedback, such as alert messages,
- * form validation, etc.
- */
-/*
- * Text Colors
- * 1) These are non-linked text colors, such as body copy.
- */
-/*
- * Heading Colors
- * 1) These are non-linked heading colors, such as h2, h3, etc.
- */
-/*
- * Text Link Colors
- * 1) These are for linked text, such as a link found within an article,
- *    navigation link, footer link, etc.
- */
-/*
- * Border Colors
- * 1) Border colors are used as decoration or dividers, such as as a seperator
- *    for navigation items, block borders, etc.
- */
-/*------------------------------------*\
-    #TYPOGRAPHY
-\*------------------------------------*/
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/**
- * Spacing Defaults
- */
-/*------------------------------------*\
-    #BORDERS
-\*------------------------------------*/
-/**
- * Border Width
- */
-/**
- * Border Radius
- */
-/*------------------------------------*\
-    #ANIMATION
-\*------------------------------------*/
-/**
- * Animation Duration
- */
-/**
- * Animation Easing
- */
-/*------------------------------------*\
-    #BREAKPOINTS
-\*------------------------------------*/
-/**
- * Breakpoints
- */
-.footer-nav a.nav-link {
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-.footer-nav .nav-link:hover {
-  color: #4299d4; }
-
-.footer-nav .copyright {
-  color: #2d343d;
-  font-family: 'Ubuntu'; }
-
-#footer {
-  background: #666;
-  padding-left: 20px;
-  padding-bottom: 5px;
-  padding-top: 5px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+source/css/scss/abstracts/_variables_bootstrap.scss:68
+source/css/scss/styleguide/main.scss:6
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/variables.\A        Load path: /mnt/c/Users/s.buckpesch/Projects/styleguide/source/css\A         on line 68 of source/css/scss/abstracts/_variables_bootstrap.scss\A         from line 6 of source/css/scss/styleguide/main.scss"; }
