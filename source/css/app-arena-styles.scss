@@ -64,6 +64,9 @@
 \*------------------------------------*/
 
 // Molecules
+@import "../_patterns/00-atoms/spinner/spinner";
+
+// Molecules
 @import "../_patterns/01-molecules/input-group/input-group";
 @import "../_patterns/01-molecules/modal/modal";
 @import "../_patterns/01-molecules/navbar/navbar-form";

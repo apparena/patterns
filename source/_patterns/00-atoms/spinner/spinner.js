@@ -18,17 +18,17 @@ export default class Button extends ReactComponent {
 
     render() {
         var componentClass = cx(
-            styles['Spinner'],
-            styles['Spinner--' + this.props.type],
-            styles['Spinner--' + this.props.size],
+            styles['spinner'],
+            styles['spinner-' + this.props.type],
+            styles['spinner-' + this.props.size],
             this.props.className
         );
 
         return (
             <div className={componentClass}>
-                <span className={cx(styles["Spinner_dot"], styles["Spinner_dot--first"])}/>
-                <span className={cx(styles["Spinner_dot"], styles["Spinner_dot--second"])}/>
-                <span className={cx(styles["Spinner_dot"], styles["Spinner_dot--third"])}/>
+                <span className={cx(styles["spinner-dot"], styles["spinner-dot-first"])}/>
+                <span className={cx(styles["spinner-dot"], styles["spinner-dot-second"])}/>
+                <span className={cx(styles["spinner-dot"], styles["spinner-dot-third"])}/>
             </div>
         );
     }
