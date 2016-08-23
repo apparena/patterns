@@ -4,28 +4,19 @@ title: Spinner
 
 ### What problem does this solve?
 
-A progress tracker guides users through a number of steps across multiple screens in order to complete a task flow. It shows users where they are in the process, and also offers navigation within the process.
+Spinners are used for showing a system process of unknown length going on that ends with the system displaying results to the user.
 
 ### When and how to use this pattern?
 
-The multi-step progress tracker pattern can be used in combination with other patterns like Focused tasks.
-The progress tracker consists of a number of items, represented visually, that guide users through the flow. Each progress tracker has:
-- Multiple 'steps', represented by circles
-- Labels for each step: a good label would consist of one or two succinct words, describing the main purpose of the step in sufficient detail
-- Three types of labels:
-    - Currently active: this is the label of the screen users are currently on
-    - Still to come: labels of screens users have not visited yet. They are somewhat subdued, as users cannot access them yet
-    - Already visited: these labels are clickable links, so users can use them to navigate around a process
-- A line between each step: suggesting to users that they are moving forward in the process
+Spinners give users feedback that one of their actions has triggered a system response that might only become visible after a short period of time. However, the use of spinners should be kept to a minimum as it still means wait time for the user.
+The main decisions around spinners are about their trigger and their location on the screen:
+- If pressing a button triggers its appearance, place it next to the button, or the group of buttons. Disable the buttons while the spinner is visible
+- If by some user interaction a new content area appears or an already existing area gets updated, the spinner is usually shown in the respective area
+- For most other cases, place the spinner where you want the user's attention to be when the system process is finished
+- Only show a spinner if the expected wait time is more than a second
+- Spinner sizes: use 'small' to show next to buttons; use 'medium' for small content panels; use 'large' for updates of significant parts of the screen
+
 
 ### What happens if…
-**…there are more steps in a process than you can fit into the space provided:**
 
-Consider the following options:
-- Merge some of the screens: ask yourself whether it would really help users in their understanding of the process to move from one screen to the next, or whether it could simply be dealt with by a longer page
-- Associate several screens with one step: although not ideal, sometimes several screens can belong to one broader step, for example, a "Review" step could show a screen with product information and then a screen with payment information. If you opt for this solution, simply leave the same step active when users move forward. Try to vary the headline of each screen so that it shows that the step is the same, but not the screen
-
-**…choices earlier in the process can change later steps in the process:**
-
-In most cases, identifying the general theme of each step helps to find a new label that can work even when details in the process change. You might also have to combine this solution with connecting several screens to one step (above).
-Example: You have a check-out process, and depending on whether users want to buy a digital item or a physical item, they might or might not have to enter their shipping details but will always have to enter payment details. Looking forward in the process, the step could be called "Your details" which can then either only be connected to the payment screen, or the payment and the shipping details screen.
+- … it takes several seconds for the system to figure out how large the overall system process will be to show an accurate progress bar? Using exactly the same space that would be taken up by the animated progress bar, show an 'indeterminate progress bar' (see example below). Once there is enough information available to show an accurate progress bar, display it instead of the indeterminate progress bar. Never use the spinner in preparation of the progress bar.
