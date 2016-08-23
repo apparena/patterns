@@ -70,7 +70,7 @@ function createPackageFile() {
                 author,
                 version,
                 description,
-                main: './src/index.js',
+                main: './_patterns/index.js',
                 keywords,
                 repository,
                 license,
