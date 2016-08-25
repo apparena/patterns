@@ -32,3 +32,8 @@ $brand-danger-80: lighten($brand-danger, lightness($brand-danger) * 0.2);
 $brand-danger-60: lighten($brand-danger, lightness($brand-danger) * 0.4);
 $brand-danger-40: lighten($brand-danger, lightness($brand-danger) * 0.6);
 
+// Components
+$spinner-dot-bg:               $gray-light;
+$spinner-dot-size:             8px;
+$spinner-dot-size-sm:          $spinner-dot-size / 2;
+$spinner-dot-size-lg:          $spinner-dot-size * 2;

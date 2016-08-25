@@ -8,11 +8,17 @@
     {{/navbar.primaryNavigation}}
 
     {{# navbar.userNavigation }}
-        <ul class="nav navbar-nav pull-xs-right m-l-1">
-            <li class="nav-item">
-                {{> molecules-dropdown }}
-            </li>
-        </ul>
+        {{# links }}
+            {{> molecules-navs:navbar-nav pull-xs-right m-l-1 }}
+        {{/links}}
+        {{# dropdown}}
+            <ul class="nav navbar-nav pull-xs-right m-l-1">
+                <li class="nav-item">
+                    {{> molecules-dropdown }}
+                </li>
+            </ul>
+        {{/dropdown}}
+
     {{/navbar.userNavigation}}
 
     {{# navbar.helpNavigation }}

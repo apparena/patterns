@@ -1,0 +1,16 @@
+{
+  "slider": {
+    "id": "mySlider",
+    "settings": {
+      "dots": true,
+      "slidesToScroll": 3,
+      "slidesToShow": 3
+    },
+    "items": [
+      {"content":"<h1>SLIDE 1</h1>"},
+      {"content":"<h1>SLIDE 2</h1>"},
+      {"content":"<h1>SLIDE 3</h1>"},
+      {"content":"<h1>SLIDE 4</h1>"}
+    ]
+  }
+}
