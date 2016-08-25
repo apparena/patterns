@@ -63,7 +63,7 @@ export default class FilterBar extends ReactComponent {
                                 <li className="dropdown-item" key={this.getUniqueKey()}>
                                     <a href="#" key={this.getUniqueKey()}>
                                         <Icon class="fa fa-sort-amount-desc" key={key}/>absteigend
-                                        {this.props.selected<Icon class="fa check-square-o" key={key}/>
+                                        {this.props.selected && <Icon class="fa check-square-o" key={key}/>}
                                     </a>
                                 </li>
                             );
