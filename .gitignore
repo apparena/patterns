@@ -115,3 +115,4 @@ jspm_packages
 /source/css/.sass-cache/
 /build/apparena-patterns-react/
 /public/
+dist/
