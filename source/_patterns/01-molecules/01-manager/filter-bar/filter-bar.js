@@ -144,7 +144,7 @@ export default class FilterBar extends ReactComponent {
                         <span className="input-group-addon">
                             <Icon iconClass="fa fa-search"/>
                         </span>
-                            <Input type="text" inputClass="form-control" placeholder={this.props.txtSearchPlaceholder} onFilterInput={this.props.onFilterApply} inputValue={this.props.inputValue}/>
+                            <Input type="text" inputClass="form-control" placeholder={this.props.txtSearchPlaceholder} onFilterInput={this.props.onFilterInput} inputValue={this.props.inputValue}/>
                             {this.props.txtSearchAddon &&
                                 <span className="input-group-addon">
                                 {this.props.txtSearchAddon}
