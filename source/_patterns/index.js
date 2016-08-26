@@ -18,3 +18,4 @@ export ProgressTracker from "./01-molecules/progress-tracker/progress-tracker";
 
 //Organisms
 export CardsList from "./02-organisms/lists/cards-list";
+export TableList from "./02-organisms/lists/table-list";
