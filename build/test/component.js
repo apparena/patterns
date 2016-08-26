@@ -1,9 +1,9 @@
 import React from "react"
 import { render } from "react-dom"
-import Alert from "../_patterns/01-molecules/alert/alert"
-import Jumbotron from "../_patterns/01-molecules/jumbotron/jumbotron"
-import ProgressTrackerStep from "../_patterns/00-atoms/progress-tracker-step/progress-tracker-step"
-import ProgressTracker from "../_patterns/01-molecules/progress-tracker/progress-tracker"
+import Alert from "../../source/_patterns/01-molecules/alert/alert"
+import Jumbotron from "../../source/_patterns/01-molecules/jumbotron/jumbotron"
+import ProgressTrackerStep from "../../source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step"
+import ProgressTracker from "../../source/_patterns/01-molecules/progress-tracker/progress-tracker"
 
 const testComponents = (
     <div>

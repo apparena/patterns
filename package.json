@@ -24,7 +24,8 @@
     "test:karma": "karma start build/test/karma.conf.js --single-run",
     "test:unit": "cross-env NODE_ENV=test babel-node build/test/index.js unit",
     "test:unit:watch": "cross-env NODE_ENV=test babel-node build/test/watch.js unit",
-    "build:component": "webpack -w --config build/webpack/webpack.config.dev.js"
+    "build:component": "webpack -w --config build/webpack/webpack.config.dev.js",
+    "start": "node build/webpack/server.js & open http://localhost:3000/build/test/index.html"
   },
   "repository": {
     "type": "git",
@@ -114,6 +115,8 @@
     "simple-assign": "^0.1.0",
     "sinon": "^1.17.3",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-combine-loaders": "^2.0.0",
+    "webpack-dev-server": "^1.15.0"
   }
 }
