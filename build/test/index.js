@@ -4,6 +4,33 @@ import Mocha from 'mocha';
 import Glob from 'glob';
 import './utils/dom';
 
+var hook = require('css-modules-require-hook');
+var sass = require('node-sass');
+
+var path = require('path');
+
+hook({
+  extensions: ['.scss'],
+  preprocessCss: function (css, filepath) {
+    console.log(filepath);
+    var result =  sass.renderSync({
+      data: css,
+      importer: importer,
+      includePaths: [ path.resolve(filepath, '..') ]
+    });
+
+    return result.css;
+  }
+});
+
+function importer(url, prev, done) {
+  if (url[0] === '~') {
+    url = path.resolve('node_modules', url.substr(1));
+  }
+
+  return { file: url };
+}
+
 const argv = Minimist(process.argv.slice(2), {
   alias: {
     c: 'component',

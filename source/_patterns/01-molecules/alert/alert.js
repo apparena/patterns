@@ -9,7 +9,7 @@ var ALERT_TYPES = [
     "warning",
 ];
 
-export default class Alert extends ReactComponent{
+export default class Alert extends ReactComponent {
     static propTypes = {
         text: PropTypes.string.isRequired,
         type: PropTypes.oneOf(ALERT_TYPES).isRequired,
