@@ -25,7 +25,7 @@
     "test:unit": "cross-env NODE_ENV=test babel-node build/test/index.js unit",
     "test:unit:watch": "cross-env NODE_ENV=test babel-node build/test/watch.js unit",
     "build:component": "webpack -w --config build/webpack/webpack.config.dev.js",
-    "start": "node build/webpack/server.js & open http://localhost:3000/build/test/index.html"
+    "start": "node build/webpack/server.js"
   },
   "repository": {
     "type": "git",

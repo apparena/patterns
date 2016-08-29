@@ -29,8 +29,16 @@ describe('<ProgressTrackerStep />', () => {
         );
         expect(wrapper.html().includes('progress-tracker-step"')).to.equal(true);
         expect(wrapper.html().includes('progress-tracker-step-active"')).to.equal(true);
+    });
 
-        //expect(wrapper.find(`.${style["progress-tracker-step"]}`)).to.have.length(2);
-        //expect(wrapper.find(`.${style["progress-tracker-step-active"]}`)).to.have.length(1);
+    it('two active steps', () => {
+        const wrapper = shallow(
+            <div>
+                <ProgressTrackerStep active/>
+                <ProgressTrackerStep active/>
+            </div>
+        );
+        expect(wrapper.html().includes('progress-tracker-step"')).to.equal(false);
+        expect(wrapper.html().includes('progress-tracker-step-active"')).to.equal(true);
     });
 });
