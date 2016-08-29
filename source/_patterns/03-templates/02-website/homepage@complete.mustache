@@ -1,6 +1,6 @@
 {{> organisms-header }}
 <main role="main">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-12 m-t-2 text-xs-center headline">
                 <h1>HEADLINE </h1>
@@ -12,7 +12,9 @@
                 </p>
             </div>
             <div class="col-md-2 col-xs-12 text-xs-center">
-                {{> atoms-button }}
+                {{#buttons.btn_read-more}}
+                    {{> atoms-button }}
+                {{/buttons.btn_read-more}}
             </div>
         </div>
         <div class="row m-t-2 text-xs-center">
@@ -46,10 +48,10 @@
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                 </div>
-                <div class="col-md-6 text-center"><img class="img-fluid" src="../../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
             <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Web-Applikation</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -64,10 +66,10 @@
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                 </div>
-                <div class="col-md-6 text-center"><img class="img-fluid" src="../../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
             <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Experten- und Strategie-Beratung</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -86,7 +88,11 @@
                     </div>
                 </div>
                 <div class="button-container">
-                    {{> atoms-button }}
+                    <a href="https://v25-stage.app-arena.com/apps/create?templateId=299&templateName=Adventskalender%20Demo" target="_blank">
+                        {{#buttons.btn_demo}}
+                            {{> atoms-button }}
+                        {{/buttons.btn_demo}}
+                    </a>
                 </div>
                 <div class="image-pdm">
                     <img src="https://aa-ads.s3.amazonaws.com/App-Arena%20Startseite/laptop_wireframe.png" class="img-fluid m-x-auto" alt="Produkt des Monats XX">
@@ -99,7 +105,7 @@
             {{> organisms-slider }}
         {{/sliders.customerSlider}}
         <hr>
-        <img class="img-fluid m-x-auto m-b-2 m-t-2 d-block" src="../../../images/fpo_16x9.png" alt="">
+        <img class="img-fluid m-x-auto m-b-2 m-t-2 d-block" src="../../images/fpo_16x9.png" alt="">
         <h3 style="text-align:center">"Article Headline"</h3>
         <div class="col-xs-8 text-xs-center offset-xs-2">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -122,15 +128,17 @@
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
                 <div class="button-container m-b-2">
-                    {{> atoms-button }}
+                    {{#buttons.btn_signup_event}}
+                        {{> atoms-button }}
+                    {{/buttons.btn_signup_event}}
                 </div>
                 <div class="event-img m-b-2">
-                    <img class='img-fluid' src='../../../images/bootstrapthumb.jpg'>
+                    <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
                 </div>
             </div>
             <div class="col-md-6 event2 m-t-1">
                 <div class="event-img">
-                    <img class='img-fluid' src='../../../images/bootstrapthumb.jpg'>
+                    <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
                 </div>
                 <h4 clasS="m-t-2">Event 2 Headline</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -138,7 +146,9 @@
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
                 <div class="button-container">
-                    {{> atoms-button }}
+                    {{#buttons.btn_signup_event}}
+                        {{> atoms-button }}
+                    {{/buttons.btn_signup_event}}
                 </div>
             </div>
         </div>
@@ -173,7 +183,9 @@
                 </div>
             </div>
             <div class="col-md-4 nl-signup-btn text-xs-center pull-xs-none m-x-auto">
-                {{> atoms-button }}
+                {{#buttons.btn_signup_nl}}
+                    {{> atoms-button }}
+                {{/buttons.btn_signup_nl}}
             </div>
         </div>
 
