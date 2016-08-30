@@ -1,0 +1,28 @@
+{
+  "sliders": {
+    "customerSlider": {
+      "slider": {
+        "id": "customerSlider",
+        "settings": {
+          "dots": false,
+          "slidesToScroll": 2,
+          "slidesToShow": 3
+        },
+        "items": [
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"}
+        ]
+      }
+    }
+  }
+}
