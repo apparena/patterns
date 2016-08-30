@@ -1,0 +1,25 @@
+{
+  "buttons": {
+    "btn_demo":{
+        "btnText":  "Jetzt kostenlos testen!",
+        "btnTitle": "Mit dem Klick auf diesen Button erhalten Sie eine kostenlose Demo.",
+        "btnClass": "btn-success"
+    },
+    "btn_read-more":{
+      "btnText":  "Mehr lesen",
+      "btnTitle": "Mit dem Klick auf diesen Button erhalten Sie weitere Informationen.",
+      "btnClass": "btn-primary"
+    },
+    "btn_signup_event":{
+      "btnText":  "Jetzt anmelden",
+      "btnTitle": "Mit dem Klick auf diesen Button melden Sie sich zum Event an.",
+      "btnClass": "btn-success"
+    },
+    "btn_signup_nl":{
+      "btnText":  "Abonnieren",
+      "btnTitle": "Mit dem Klick auf diesen Button melden Sie sich zu unserem Newsletter an.",
+      "btnClass": "btn-success"
+    }
+  }
+}
+

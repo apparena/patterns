@@ -1,9 +1,9 @@
 {{> organisms-header }}
 <main role="main">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-12 m-t-2 text-xs-center headline">
-                <h1>HEADLINE</h1>
+                <h1>HEADLINE </h1>
             </div>
             <div class="col-md-8 col-xs-12 text-xs-center subline offset-md-2">
                 <p>Subline - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -12,7 +12,9 @@
                 </p>
             </div>
             <div class="col-md-2 col-xs-12 text-xs-center">
-                {{> atoms-button }}
+                {{#buttons.btn_read-more}}
+                    {{> atoms-button }}
+                {{/buttons.btn_read-more}}
             </div>
         </div>
         <div class="row m-t-2 text-xs-center">
@@ -86,7 +88,11 @@
                     </div>
                 </div>
                 <div class="button-container">
-                    {{> atoms-button }}
+                    <a href="https://v25-stage.app-arena.com/apps/create?templateId=299&templateName=Adventskalender%20Demo" target="_blank">
+                        {{#buttons.btn_demo}}
+                            {{> atoms-button }}
+                        {{/buttons.btn_demo}}
+                    </a>
                 </div>
                 <div class="image-pdm">
                     <img src="https://aa-ads.s3.amazonaws.com/App-Arena%20Startseite/laptop_wireframe.png" class="img-fluid m-x-auto" alt="Produkt des Monats XX">
@@ -122,7 +128,9 @@
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
                 <div class="button-container m-b-2">
-                    {{> atoms-button }}
+                    {{#buttons.btn_signup_event}}
+                        {{> atoms-button }}
+                    {{/buttons.btn_signup_event}}
                 </div>
                 <div class="event-img m-b-2">
                     <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
@@ -138,7 +146,9 @@
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
                 <div class="button-container">
-                    {{> atoms-button }}
+                    {{#buttons.btn_signup_event}}
+                        {{> atoms-button }}
+                    {{/buttons.btn_signup_event}}
                 </div>
             </div>
         </div>
@@ -173,7 +183,9 @@
                 </div>
             </div>
             <div class="col-md-4 nl-signup-btn text-xs-center pull-xs-none m-x-auto">
-                {{> atoms-button }}
+                {{#buttons.btn_signup_nl}}
+                    {{> atoms-button }}
+                {{/buttons.btn_signup_nl}}
             </div>
         </div>
 

@@ -4,7 +4,7 @@ import ReactComponent from "../../reactComponent";
 
 import styles from "./progress-tracker-step.scss"
 
-export default class Button extends ReactComponent {
+export default class ProgressTrackerStep extends ReactComponent {
     static propTypes = {
         className: PropTypes.string,
         active: PropTypes.bool,
@@ -19,10 +19,11 @@ export default class Button extends ReactComponent {
 
     render() {
         return (
-            <li className={cx(styles["progress-tracker-step"], this.props.className, (this.props.active) && styles["progress-tracker-step-active"])}
+            <li className={cx(styles["progress-tracker-step"], this.props.className, (this.props.active)?styles["progress-tracker-step-active"]:'')}
                 id={this.props.id}
                 href={this.props.href}
-                style={this.props.href}>
+                style={this.props.href}
+            >
                 <span>{this.props.text}</span>
             </li>
         )
