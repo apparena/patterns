@@ -24,6 +24,7 @@ export default class FilterBar extends ReactComponent {
         onFilterToggle: PropTypes.func.isRequired,
         onFilterSelect: PropTypes.func.isRequired,
         onFilterInput: PropTypes.func.isRequired,
+        onSetStyle: PropTypes.func.isRequired,
         //collapsible filter menu
         expanded: PropTypes.bool,
         buttonClass: PropTypes.string,
@@ -159,10 +160,10 @@ export default class FilterBar extends ReactComponent {
                     </div>
                     <div className="filter-bar-display-mode">
                         <ButtonGroup>
-                            <Button buttonClass="btn  btn-secondary" title="Rasterdarstellung">
+                            <Button buttonClass="btn  btn-secondary" title="Kartendarstellung" onClickMethod={this.props.onSetStyle} identifier="cards">
                                 <Icon iconClass="fa fa-th"/>
                             </Button>
-                            <Button buttonClass="btn  btn-secondary" title="Listendarstellung">
+                            <Button buttonClass="btn  btn-secondary" title="Tabellendarstellung" onClickMethod={this.props.onSetStyle} identifier="table">
                                 <Icon iconClass="fa fa-th-list"/>
                             </Button>
                         </ButtonGroup>
