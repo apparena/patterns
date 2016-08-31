@@ -19,6 +19,9 @@ export default class FilterBar extends ReactComponent {
         txtSortHeader: PropTypes.array,
         menuClass: PropTypes.string,
         selected: PropTypes.object,
+        loading: PropTypes.bool,
+        items: PropTypes.number,
+        currentPage: PropTypes.number,
         //functions
         onFilterApply: PropTypes.func.isRequired,
         onFilterToggle: PropTypes.func.isRequired,
@@ -45,25 +48,26 @@ export default class FilterBar extends ReactComponent {
         buttonClass: "btn btn-primary collapsed",
         collapseClass: "collapse",
         style: {height: 0},
-        filter: {}
+        filter: {},
+        loading: false,
     };
 
     createDropdownItems() {
         var container = [];
         var key;
         {
-            this.props.txtSortHeader.map((header, index) => {
+            this.props.txtSortHeader.map((item, index) => {
                 var i;
                 for (i = 0; i < 4; i++) {
                     switch (i) {
                         case 0:
-                            container.push(<h6 className="dropdown-header" key={this.getUniqueKey()}>{header}</h6>);
+                            container.push(<h6 className="dropdown-header" key={this.getUniqueKey()}>{item.text}</h6>);
                             break;
                         case 1:
                             container.push(
                                 <li className="dropdown-item" key={this.getUniqueKey()}>
                                     <a href="#" key={this.getUniqueKey()}>
-                                        <Icon class="fa fa-sort-amount-desc" key={key}/>absteigend
+                                        <Icon iconClass="fa fa-sort-amount-desc" key={key}/>absteigend
                                         {this.props.selected && <Icon class="fa check-square-o" key={key}/>}
                                     </a>
                                 </li>
@@ -73,7 +77,7 @@ export default class FilterBar extends ReactComponent {
                             container.push(
                                 <li className="dropdown-item" key={this.getUniqueKey()}>
                                     <a href="#" key={this.getUniqueKey()}>
-                                        <Icon class="fa fa-sort-amount-asc" key={this.getUniqueKey()}/>aufsteigend
+                                        <Icon iconClass="fa fa-sort-amount-asc" key={this.getUniqueKey()}/>aufsteigend
                                     </a>
                                 </li>
                             );
@@ -142,22 +146,30 @@ export default class FilterBar extends ReactComponent {
                     </div>
                     <div className="filter-bar-search m-r-1">
                         <div className="input-group">
-                        <span className="input-group-addon">
-                            <Icon iconClass="fa fa-search"/>
+                        <span className="input-group-addon" key="loading-icon">
+                            {this.props.loading ?
+                                <span className="filter-bar-search-spinner text-muted">
+                                    <Icon iconClass="fa fa-spin fa-refresh"/>
+                                </span> :
+                                <Icon iconClass="fa fa-search"/>
+                            }
                         </span>
                             <Input type="text" inputClass="form-control" placeholder={this.props.txtSearchPlaceholder} onFilterInput={this.props.onFilterInput} inputValue={this.props.inputValue}/>
                             {this.props.txtSearchAddon &&
-                                <span className="input-group-addon">
+                            <span className="input-group-addon">
                                 {this.props.txtSearchAddon}
                                 </span>
                             }
                         </div>
                     </div>
-                    <div className="filter-bar-sort m-r-1">
-                        <Dropdown dropdownClass="dropdown dropdown" buttonClass="btn btn-secondary dropdown-toggle" buttonText={this.props.txtSortButton}>
-                            {this.createDropdownItems()}
-                        </Dropdown>
-                    </div>
+                    {this.props.listStyle ?
+                        <div className="filter-bar-sort m-r-1">
+                            <Dropdown dropdownClass="dropdown dropdown" buttonClass="btn btn-secondary dropdown-toggle" buttonText={this.props.txtSortButton}>
+                                {this.createDropdownItems()}
+                            </Dropdown>
+                        </div> :
+                        null
+                    }
                     <div className="filter-bar-display-mode">
                         <ButtonGroup>
                             <Button buttonClass="btn  btn-secondary" title="Kartendarstellung" onClickMethod={this.props.onSetStyle} identifier="cards">
