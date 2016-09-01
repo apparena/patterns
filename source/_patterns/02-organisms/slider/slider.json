@@ -4,7 +4,8 @@
     "settings": {
       "dots": true,
       "slidesToScroll": 3,
-      "slidesToShow": 3
+      "slidesToShow": 3,
+      "autoplaySpeed": 2000
     },
     "items": [
       {"content":"<h1>SLIDE 1</h1>"},
