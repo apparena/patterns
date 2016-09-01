@@ -6,7 +6,7 @@ export default class Button extends ReactComponent {
         text: PropTypes.string,
         title: PropTypes.string,
         buttonClass: PropTypes.string,
-        onCLickMethod: PropTypes.func,
+        onClickMethod: PropTypes.func,
         identifier: PropTypes.string
     };
 

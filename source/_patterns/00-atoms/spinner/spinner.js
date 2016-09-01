@@ -3,7 +3,7 @@ import cx from "classnames";
 import ReactComponent from "../../reactComponent";
 import styles from "./spinner.scss";
 
-export default class Button extends ReactComponent {
+export default class Spinner extends ReactComponent {
     static displayName = 'Spinner';
     static propTypes = {
         className: PropTypes.string,
