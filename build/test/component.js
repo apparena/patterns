@@ -15,6 +15,8 @@ import Search from "../../source/_patterns/01-molecules/forms/search"
 import InputGroup from "../../source/_patterns/01-molecules/input-group/input-group"
 import ListGroup from "../../source/_patterns/01-molecules/list-group/list-group"
 import Media from "../../source/_patterns/01-molecules/media/media"
+import Nav from "../../source/_patterns/01-molecules/navs/nav"
+import Tooltip from "../../source/_patterns/01-molecules/tooltip/tooltip"
 
 const testComponents = (
     <div>
@@ -49,6 +51,12 @@ const testComponents = (
             mediaBody="Neat image to the left"
                mediaBodyHeader="Neat"
         />
+        <Nav listItems={{'Dashboard': ['#', '', 'the-class']}} />
+        <Tooltip>
+            <CheckBox text="select me" onFilterSelect={(e, t) => console.log(t)}/>
+            <CheckBox text="select me" onFilterSelect={(e, t) => console.log(t)}/>
+            <CheckBox text="select me" onFilterSelect={(e, t) => console.log(t)}/>
+        </Tooltip>
     </div>
 );
 
