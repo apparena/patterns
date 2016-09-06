@@ -115,6 +115,7 @@
     "simple-assign": "^0.1.0",
     "sinon": "^1.17.3",
     "style-loader": "^0.13.1",
+    "velocity-animate": "^1.2.3",
     "webpack": "^1.13.1",
     "webpack-combine-loaders": "^2.0.0",
     "webpack-dev-server": "^1.15.0"

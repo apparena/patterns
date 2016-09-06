@@ -17,6 +17,7 @@ import ListGroup from "../../source/_patterns/01-molecules/list-group/list-group
 import Media from "../../source/_patterns/01-molecules/media/media"
 import Nav from "../../source/_patterns/01-molecules/navs/nav"
 import Tooltip from "../../source/_patterns/01-molecules/tooltip/tooltip"
+import Auth from "../../source/_patterns/02-organisms/auth/auth"
 
 const testComponents = (
     <div>
@@ -52,11 +53,15 @@ const testComponents = (
                mediaBodyHeader="Neat"
         />
         <Nav listItems={{'Dashboard': ['#', '', 'the-class']}} />
-        <Tooltip>
-            <CheckBox text="select me" onFilterSelect={(e, t) => console.log(t)}/>
-            <CheckBox text="select me" onFilterSelect={(e, t) => console.log(t)}/>
+        <Tooltip label="Hello world" positioning="right bottom" >
             <CheckBox text="select me" onFilterSelect={(e, t) => console.log(t)}/>
         </Tooltip>
+        <Table tableData={[
+            { cols: ['Left', 'Right'] },
+            { rows: { 0: ['1', '1'], 1: ['class-names:table-success', '2', '1'] } }
+        ]} tableHeadClassNames="thead-inverse"
+        />
+
     </div>
 );
 
