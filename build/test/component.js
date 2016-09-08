@@ -33,7 +33,7 @@ class Test extends ReactComponent {
     render() {
         return (
             <div>
-                <Notification header="Core meltdown imminent" visible={this.state.visible} content="" type={this.state.type} duration="fast" dismissible/>
+                <Notification header="Core meltdown imminent" visible={this.state.visible} content="" type={this.state.type} duration="long"/>
                 <Btn text="Info" onClickMethod={() => {this.setState({visible: true, type: 'info'})}}/>
                 <Btn text="Danger" onClickMethod={() => {this.setState({visible: true, type: 'danger'})}}/>
                 <Btn text="Warning" onClickMethod={() => {this.setState({visible: true, type: 'warning'})}}/>
@@ -77,19 +77,24 @@ const testComponents = (
                mediaBodyHeader="Neat"
         />
         <Nav listItems={{'Dashboard': ['#', '', 'the-class']}} />
+
+
         <div style={{width: 100 + '%', textAlign: 'center'}}>
-            <Tooltip label="Hello world" positioning="right" >
+            <Tooltip label="Hello world" positioning="left" >
                 <button >Click me :)</button>
             </Tooltip>
         </div>
-        <PopOver header="Hello world" content="Hello and welcome!" positioning="top" >
-            <button style={{width: 100 + '%', marginLeft: 100}}>Click me :)</button>
-        </PopOver>
+
+        <div style={{marginLeft: 400}}>
+            <PopOver header="Hello world" content="Microsoft sometimes uses additional decimal sub-codes to provide more specific information." positioning="top" >
+                <button>Click me :)</button>
+            </PopOver>
+        </div>
+
         <Table tableData={[
-            { cols: ['Left', 'Right'] },
-            { rows: { 0: ['1', '1'], 1: ['class-names:table-success', '2', '1'] } }
-        ]} tableHeadClassNames="thead-inverse"
-        />
+            { cols: ['Left', 'Right', 'Middle'] },
+            { rows: { 0: ['1', '1', '2'], 1: ['class-names:table-success', '2', '1', '3'], 2: ['1', '2', '3'], 3: ['99%', '5%', '0.01%'] } }
+        ]} />
         <Test/>
     </div>
 );
