@@ -33,12 +33,25 @@
   }
 }
 
+@keyframes fadeInOutAnimation {
+  0% {
+    top: -65px;
+  }
+  30% {
+    top: 20px;
+  }
+  70% {
+    top: 20px;
+  }
+  100% {
+    top: -65px;
+  }
+}
+
+
 .visible {
   visibility: visible;
-  -webkit-animation-name: fadeAnimation;
-  -moz-animation-name: fadeAnimation;
-  -o-animation-name: fadeAnimation;
-  animation-name: fadeAnimation;
+
   -webkit-animation-timing-function: ease-in-out;
   -moz-animation-timing-function: ease-in-out;
   -o-animation-timing-function: ease-in-out;
@@ -61,7 +74,7 @@
 
 .animate-slow {
   -webkit-animation-duration: 2s;
-  -moz-animation-duration: 1s;
+  -moz-animation-duration: 2s;
   -o-animation-duration: 2s;
   animation-duration: 2s;
 }
@@ -97,7 +110,7 @@
   }
 }
 
-.dismissableIcon {
+.dismissibleIcon {
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -116,4 +129,23 @@
 
 .dangerCorrection {
   left: 17px;
+}
+
+.noAutoDismiss {
+  -webkit-animation-name: fadeAnimation;
+  -moz-animation-name: fadeAnimation;
+  -o-animation-name: fadeAnimation;
+  animation-name: fadeAnimation;
+}
+
+.autoDismiss {
+  -webkit-animation-name: fadeInOutAnimation;
+  -moz-animation-name: fadeInOutAnimation;
+  -o-animation-name: fadeInOutAnimation;
+  animation-name: fadeInOutAnimation;
+
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
 }

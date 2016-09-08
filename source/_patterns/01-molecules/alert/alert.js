@@ -14,16 +14,16 @@ export default class Alert extends ReactComponent {
         text: PropTypes.string.isRequired,
         type: PropTypes.oneOf(ALERT_TYPES).isRequired,
         classNames: PropTypes.string,
-        dismissable: PropTypes.bool,
+        dismissible: PropTypes.bool,
     };
 
     static defaultProps = {
-        dismissable: false,
+        dismissible: false,
         classNames: "",
     };
 
     renderButton() {
-        if (this.props.dismissable) {
+        if (this.props.dismissible) {
             return (
                 <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>

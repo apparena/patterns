@@ -162,6 +162,8 @@ export default class Stick extends ReactComponent {
                 break;
         }
 
+        position.left += this.props.horizontalOffset;
+
         /*switch (this.props.horizontalPosition) {
             case "left":
                 position.left = rect.left;

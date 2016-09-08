@@ -54,7 +54,6 @@ export default class PopOver extends ReactComponent {
             <div
                 className={className || styles.root}
                 onMouseEnter={::this.onMouseEnter}
-                onMouseLeave={::this.onMouseLeave}
                 ref={c => {this._handler = c}}
             >
                 {this.props.children}
@@ -75,7 +74,7 @@ export default class PopOver extends ReactComponent {
                         verticalOffset={150}
                     >
                         <div className="popover">
-                            <div className={cx("popover-arrow", styles[this.props.positioning.split(" ")[0]])}></div>
+                            <div className={cx(styles.popoverArrow, styles[this.props.positioning])}></div>
                             <h3 className="popover-title">
                                 {header}
                             </h3>

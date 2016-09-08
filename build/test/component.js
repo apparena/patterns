@@ -33,7 +33,7 @@ class Test extends ReactComponent {
     render() {
         return (
             <div>
-                <Notification header="Core meltdown imminent" visible={this.state.visible} content="" type={this.state.type} duration="fast"/>
+                <Notification header="Core meltdown imminent" visible={this.state.visible} content="" type={this.state.type} duration="fast" dismissible/>
                 <Btn text="Info" onClickMethod={() => {this.setState({visible: true, type: 'info'})}}/>
                 <Btn text="Danger" onClickMethod={() => {this.setState({visible: true, type: 'danger'})}}/>
                 <Btn text="Warning" onClickMethod={() => {this.setState({visible: true, type: 'warning'})}}/>
@@ -83,7 +83,7 @@ const testComponents = (
             </Tooltip>
         </div>
         <PopOver header="Hello world" content="Hello and welcome!" positioning="top" >
-            <button >Click me :)</button>
+            <button style={{width: 100 + '%', marginLeft: 100}}>Click me :)</button>
         </PopOver>
         <Table tableData={[
             { cols: ['Left', 'Right'] },
