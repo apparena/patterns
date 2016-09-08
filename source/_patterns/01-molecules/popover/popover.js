@@ -3,31 +3,20 @@ import ReactComponent from "../../reactComponent";
 import cx from "classnames";
 import Portal from "../../react-utils/portal";
 import Stick from "../../react-utils/stick";
-import styles from "./tooltip.scss";
+import styles from "./popover.scss";
 
-export default class Tooltip extends ReactComponent {
+export default class PopOver extends ReactComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
-        label: PropTypes.string.isRequired,
+        header: PropTypes.string.isRequired,
+        content: PropTypes.string.isRequired,
         className: PropTypes.string,
         fixed: PropTypes.bool,
         positioning: PropTypes.oneOf([
             'top',
             'bottom',
             'left',
-            'right',
-            'top left',
-            'top center',
-            'top right',
-            'right top',
-            'right middle',
-            'right bottom',
-            'bottom right',
-            'bottom center',
-            'bottom left',
-            'left top',
-            'left middle',
-            'left bottom'
+            'right'
         ]).isRequired,
     };
 
@@ -37,25 +26,25 @@ export default class Tooltip extends ReactComponent {
         };
     }
 
-    showTooltip() {
+    showPopOver() {
         this.setState({
             showing: true
         });
     }
 
-    hideTooltip() {
+    hidePopOver() {
         this.setState({
             showing: false
         });
     }
 
     onMouseEnter() {
-        this.timeout = setTimeout(::this.showTooltip, 500);
+        this.timeout = setTimeout(::this.showPopOver, 500);
     }
 
     onMouseLeave() {
         clearTimeout(this.timeout);
-        this.hideTooltip();
+        this.hidePopOver();
     }
 
     render() {
@@ -69,24 +58,30 @@ export default class Tooltip extends ReactComponent {
                 ref={c => {this._handler = c}}
             >
                 {this.props.children}
-                {this.renderTooltip()}
+                {this.renderPopOver()}
             </div>
         );
     }
 
-    renderTooltip() {
+    renderPopOver() {
         if (this.state.showing) {
-            const {label} = this.props;
+            const {header, content} = this.props;
 
             return (
                 <Portal>
                     <Stick
                         element={this._handler}
                         positioning={this.props.positioning}
-                        fixed={this.props.fixed}
+                        verticalOffset={150}
                     >
-                        <div className={cx(styles.tooltip, styles[this.props.positioning.split(" ")[0]])}>
-                            {label}
+                        <div className="popover">
+                            <div className={cx("popover-arrow", styles[this.props.positioning.split(" ")[0]])}></div>
+                            <h3 className="popover-title">
+                                {header}
+                            </h3>
+                            <div className="popover-content">
+                                {content}
+                            </div>
                         </div>
                     </Stick>
                 </Portal>

@@ -1,5 +1,6 @@
 import React from "react"
 import { render } from "react-dom"
+import ReactComponent from "../../source/_patterns/reactComponent";
 import Alert from "../../source/_patterns/01-molecules/alert/alert"
 import Jumbotron from "../../source/_patterns/01-molecules/jumbotron/jumbotron"
 import ProgressTrackerStep from "../../source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step"
@@ -17,7 +18,30 @@ import ListGroup from "../../source/_patterns/01-molecules/list-group/list-group
 import Media from "../../source/_patterns/01-molecules/media/media"
 import Nav from "../../source/_patterns/01-molecules/navs/nav"
 import Tooltip from "../../source/_patterns/01-molecules/tooltip/tooltip"
-import Auth from "../../source/_patterns/02-organisms/auth/auth"
+import PopOver from "../../source/_patterns/01-molecules/popover/popover"
+import Notification from "../../source/_patterns/01-molecules/notification/notification"
+import Btn from "../../source/_patterns/00-atoms/button/button"
+
+class Test extends ReactComponent {
+    getInitState() {
+        return {
+            visible: false,
+            type: 'info'
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <Notification header="Core meltdown imminent" visible={this.state.visible} content="" type={this.state.type} duration="fast"/>
+                <Btn text="Info" onClickMethod={() => {this.setState({visible: true, type: 'info'})}}/>
+                <Btn text="Danger" onClickMethod={() => {this.setState({visible: true, type: 'danger'})}}/>
+                <Btn text="Warning" onClickMethod={() => {this.setState({visible: true, type: 'warning'})}}/>
+                <Btn text="Success" onClickMethod={() => {this.setState({visible: true, type: 'success'})}}/>
+            </div>
+        );
+    }
+};
 
 const testComponents = (
     <div>
@@ -53,16 +77,23 @@ const testComponents = (
                mediaBodyHeader="Neat"
         />
         <Nav listItems={{'Dashboard': ['#', '', 'the-class']}} />
-        <Tooltip label="Hello world" positioning="right bottom" >
-            <CheckBox text="select me" onFilterSelect={(e, t) => console.log(t)}/>
-        </Tooltip>
+        <div style={{width: 100 + '%', textAlign: 'center'}}>
+            <Tooltip label="Hello world" positioning="right" >
+                <button >Click me :)</button>
+            </Tooltip>
+        </div>
+        <PopOver header="Hello world" content="Hello and welcome!" positioning="top" >
+            <button >Click me :)</button>
+        </PopOver>
         <Table tableData={[
             { cols: ['Left', 'Right'] },
             { rows: { 0: ['1', '1'], 1: ['class-names:table-success', '2', '1'] } }
         ]} tableHeadClassNames="thead-inverse"
         />
-
+        <Test/>
     </div>
 );
+
+
 
 render(testComponents, document.getElementById("component"));

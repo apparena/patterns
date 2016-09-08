@@ -114,17 +114,17 @@ export default class Stick extends ReactComponent {
             // LEFT
             case "left":
             case "left middle":
-                position.left = rect.left;
+                position.left = rect.left - rect.width;
                 position.top = (rect.top + (rect.height / 2)) - (thisRect.height / 2);
                 break;
             case "left top":
             case "top left":
-                position.left = rect.left;
+                position.left = rect.left - rect.width;
                 position.top = rect.top - thisRect.height - this.props.verticalOffset;
                 break;
             case "left bottom":
             case "bottom left":
-                position.left = rect.left;
+                position.left = rect.left - rect.width;
                 position.top = (rect.top + rect.height) - this.props.verticalOffset;
                 break;
 
@@ -143,17 +143,17 @@ export default class Stick extends ReactComponent {
             // RIGHT
             case "right":
             case "right middle":
-                position.left = (rect.left + rect.width) - thisRect.width;
+                position.left = rect.left + rect.width;
                 position.top = (rect.top + (rect.height / 2)) - (thisRect.height / 2);
                 break;
             case "right top":
             case "top right":
-                position.left = (rect.left + rect.width) - thisRect.width;
+                position.left = rect.left + rect.width;
                 position.top = rect.top - thisRect.height - this.props.verticalOffset;
                 break;
             case "right bottom":
             case "bottom right":
-                position.left = (rect.left + rect.width) - thisRect.width;
+                position.left = rect.left + rect.width;
                 position.top = (rect.top + rect.height) - this.props.verticalOffset;
                 break;
             default:
@@ -217,7 +217,7 @@ export default class Stick extends ReactComponent {
         };
 
         return (
-            <Animate transition={transition} duration={0}>
+            <Animate transition={transition} >
                 <div className={cx(styles.stick, className, this.props.fixed && styles.fixed)} style={style} ref={c=> (this.holder = c)}>
                     {this.props.children}
                 </div>
