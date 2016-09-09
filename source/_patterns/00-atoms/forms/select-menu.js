@@ -7,11 +7,12 @@ export default class SelectMenu extends ReactComponent {
         id: PropTypes.string.isRequired,
         label: PropTypes.string,
         onChangeFunction: PropTypes.func,
+        classNames: PropTypes.string,
     };
 
     render() {
         return (
-            <select id={this.props.id} onChange={this.props.onChangeFunction}>
+            <select className={this.props.classNames} id={this.props.id} onChange={this.props.onChangeFunction}>
                 <optgroup label={this.props.label}>
                     {this.props.options.map((option, i) => {
                         return <option value={option} key={i}>{option}</option>;

@@ -14,6 +14,7 @@ export default class Notification extends ReactComponent {
         type: PropTypes.oneOf(["info", "success", "warning", "danger"]).isRequired,
         duration: PropTypes.number,
         dismissible: PropTypes.bool,
+        classNames: PropTypes.string,
     };
 
     static defaultProps = {
@@ -74,7 +75,7 @@ export default class Notification extends ReactComponent {
 
         return (
             <Portal>
-                <div className={cx(styles.notif, styles[this.props.type])} ref={(c) => {this._notif = c}} >
+                <div className={cx(this.props.classNames, styles.notif, styles[this.props.type])} ref={(c) => {this._notif = c}} >
                     <span className={cx(iconClass, styles.typeIcon)} />
                     <strong>{this.props.header}</strong>
                     <p>{this.props.content}</p>
