@@ -6,11 +6,12 @@ export default class TextField extends ReactComponent {
         placeholder: PropTypes.string,
         id: PropTypes.string.isRequired,
         onChangeFunction: PropTypes.func,
+        classNames: PropTypes.string,
     };
 
     render() {
         return (
-            <input id={this.props.id} type="text" placeholder={this.props.placeholder} onChange={this.props.onChangeFunction}/>
+            <input className={this.props.classNames} id={this.props.id} type="text" placeholder={this.props.placeholder} onChange={this.props.onChangeFunction}/>
         );
     }
 }

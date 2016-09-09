@@ -18,7 +18,9 @@ export default class Animate extends ReactComponent {
     componentDidMount() {
         const dom = findDOMNode(this);
         const transition = this.props.transition;
-        velocity(dom, 'fadeIn', this.props.duration);
+        velocity(dom, transition, {
+            duration: this.props.duration,
+        });
     }
 
     render() {

@@ -47,19 +47,35 @@ export default class PopOver extends ReactComponent {
         this.hidePopOver();
     }
 
+    onMouseClick() {
+        this.setState({
+            showing: !this.state.showing
+        });
+    }
+
     render() {
         const {className} = this.props;
 
         return (
             <div
                 className={className || styles.root}
-                onMouseEnter={::this.onMouseEnter}
+                onClick={::this.onMouseClick}
                 ref={c => {this._handler = c}}
             >
                 {this.props.children}
                 {this.renderPopOver()}
             </div>
         );
+    }
+
+    calculateVerticalOffset() {
+        if (this.props.positioning === 'top') return 20;
+        else if (this.props.positioning === 'bottom') return -20;
+    }
+
+    calculateHorizontalOffset() {
+        if (this.props.positioning === 'left') return -130;
+        else if (this.props.positioning === 'right') return 20;
     }
 
     renderPopOver() {
@@ -71,14 +87,16 @@ export default class PopOver extends ReactComponent {
                     <Stick
                         element={this._handler}
                         positioning={this.props.positioning}
-                        verticalOffset={150}
+                        verticalOffset={this.calculateVerticalOffset()}
+                        horizontalOffset={this.calculateHorizontalOffset()}
                     >
-                        <div className="popover">
+                        <div className={styles.popover}>
+                            <div className={cx(styles.popoverShadowArrow, styles[this.props.positioning + '-shadow'])}></div>
                             <div className={cx(styles.popoverArrow, styles[this.props.positioning])}></div>
-                            <h3 className="popover-title">
+                            <h3 className={styles['popover-title']}>
                                 {header}
                             </h3>
-                            <div className="popover-content">
+                            <div className={styles['popover-content']}>
                                 {content}
                             </div>
                         </div>

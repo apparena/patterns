@@ -1,11 +1,13 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../reactComponent";
+import cx from "classnames";
 
 export default class CheckBox extends ReactComponent {
     static PropTypes = {
         text: PropTypes.string,
         onFilterSelect: PropTypes.func.isRequired,
-        checked: PropTypes.bool
+        checked: PropTypes.bool,
+        classNames: PropTypes.string,
     };
 
     static defaultProps = {
@@ -19,7 +21,7 @@ export default class CheckBox extends ReactComponent {
 
     render() {
         return (
-            <div className="form-check" key={this.getUniqueKey()}>
+            <div className={cx("form-check", this.props.classNames)} key={this.getUniqueKey()}>
                 <div className="checkbox">
                     <label className="form-check-label">
                         <input type="checkbox" onChange={::this.onClickingThis} checked={this.props.checked} />
