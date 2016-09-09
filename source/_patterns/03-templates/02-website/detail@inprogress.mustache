@@ -1,4 +1,7 @@
 {{> organisms-header }}
+<link href="//refreshless.com/noUiSlider/distribute/nouislider.min.css" rel="stylesheet">
+<script src="//refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
+<script src="//refreshless.com/noUiSlider/distribute/nouislider.js"></script>
 <main role="main">
     <div class="pds_header">
         <div class="col-md-12 text-xs-center m-t-2 m-b-1" id="page_title">
@@ -124,12 +127,35 @@
         {{/sliders.feedbackSlider}}
     </div>
     <hr>
-    <!--
     <div class="col-md-12 m-b-2 m-t-2">
-        {{! molecules-navs-variants}}
+        <div class="row">
+            <div class="offset-xs-3 col-xs-6">
+                <div class="card">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="link_01" href="#">Link 01 title</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="link_02">Link 02 title</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="link_03">Link 03 title</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="link_04">Link 04 title</a>
+                        </li>
+                    </ul>
+                    <ul class="m-a-3">
+                        <li> Facebook </li>
+                        <li> Google + </li>
+                        <li> ... </li>
+                        <li> ... </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <hr>
-    -->
     <div class="col-md-12 m-b-2 m-t-2 text-xs-center" id="branch_solutions_block">
         <h3>Branchsolutions-Slider title</h3>
         {{#sliders.branchsolutionsSlider}}
@@ -179,3 +205,4 @@
     <div class="push"></div>
 </main>
 {{> organisms-footer }}
+
