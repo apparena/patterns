@@ -33,7 +33,7 @@ class Test extends ReactComponent {
     render() {
         return (
             <div>
-                <Notification header="Core meltdown imminent" visible={this.state.visible} content="" type={this.state.type} duration="long"/>
+                <Notification header="Notification" visible={this.state.visible} content="Something happened that requires your attention" type={this.state.type} duration={2000} />
                 <Btn text="Info" onClickMethod={() => {this.setState({visible: true, type: 'info'})}}/>
                 <Btn text="Danger" onClickMethod={() => {this.setState({visible: true, type: 'danger'})}}/>
                 <Btn text="Warning" onClickMethod={() => {this.setState({visible: true, type: 'warning'})}}/>
@@ -41,7 +41,7 @@ class Test extends ReactComponent {
             </div>
         );
     }
-};
+}
 
 const testComponents = (
     <div>
