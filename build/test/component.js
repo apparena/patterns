@@ -20,6 +20,7 @@ import Nav from "../../source/_patterns/01-molecules/navs/nav"
 import Tooltip from "../../source/_patterns/01-molecules/tooltip/tooltip"
 import PopOver from "../../source/_patterns/01-molecules/popover/popover"
 import Notification from "../../source/_patterns/01-molecules/notification/notification"
+import Modal from "../../source/_patterns/01-molecules/modal/modal"
 import Btn from "../../source/_patterns/00-atoms/button/button"
 
 class Test extends ReactComponent {
@@ -38,6 +39,34 @@ class Test extends ReactComponent {
                 <Btn text="Danger" onClickMethod={() => {this.setState({visible: true, type: 'danger'})}}/>
                 <Btn text="Warning" onClickMethod={() => {this.setState({visible: true, type: 'warning'})}}/>
                 <Btn text="Success" onClickMethod={() => {this.setState({visible: true, type: 'success'})}}/>
+            </div>
+        );
+    }
+}
+
+class ModalLauncher extends ReactComponent {
+    getInitState() {
+        return {
+            visible: false,
+            type: 'info'
+        }
+    }
+
+    handleClick() {
+        this.setState({visible: true});
+    }
+
+    render() {
+        return (
+            <div>
+                <Modal size="xlarge" headerText="Well hello there" onSearch={(e) => console.log(e)} visible={this.state.visible}
+                    onSave={(e) => console.log(e)} hintText="The blue button can be pressed" linkText="Link" linkLocation="#"
+                >
+                    <h3>Big header</h3>
+                    <p>Allowing children to be here makes this element very customizable.</p>
+                </Modal>
+
+                <button onClick={::this.handleClick}>Launch modal</button>
             </div>
         );
     }
@@ -96,6 +125,8 @@ const testComponents = (
             { rows: { 0: ['1', '1', '2'], 1: ['class-names:table-success', '2', '1', '3'], 2: ['1', '2', '3'], 3: ['99%', '5%', '0.01%'] } }
         ]} />
         <Test/>
+
+        <ModalLauncher/>
     </div>
 );
 
