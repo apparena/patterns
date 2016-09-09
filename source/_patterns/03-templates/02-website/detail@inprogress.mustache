@@ -1,10 +1,181 @@
 {{> organisms-header }}
 <main role="main">
-
-    <!--{{> molecules-page-title }}-->
-
-
-
+    <div class="pds_header">
+        <div class="col-md-12 text-xs-center m-t-2 m-b-1" id="page_title">
+            <h1>App title</h1>
+            <!--{{!> molecules-page-title }}-->
+        </div>
+        <div class="text-xs-center" id="btn_live_demo">
+            {{#buttons.btn_live_demo}}
+                {{> atoms-button }}
+            {{/buttons.btn_live_demo}}
+            {{#buttons.btn_get_demo}}
+                {{> atoms-button }}
+            {{/buttons.btn_get_demo}}
+        </div>
+        <div id="product_img"><img class="img-fluid m-x-auto m-b-2 m-t-2 d-block" src="../../images/fpo_16x9.png" alt=""
+                                   style="width: 80%;">
+        </div>
+    </div>
+    <hr>
+    <div class="row" id="pds_advantages">
+        <div class="col-md-12 text-xs-center">
+            <h3>Advantages title</h3>
+        </div>
+        <div class="col-md-3">
+            <ul class="fa-ul">
+                <li><i class="fa fa-check" aria-hidden="true"></i> Advantage 1</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                    tincidunt, ut
+                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul class="fa-ul">
+                <li><i class="fa fa-check" aria-hidden="true"></i> Advantage 2</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                    tincidunt, ut
+                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul class="fa-ul">
+                <li><i class="fa fa-check" aria-hidden="true"></i> Advantage 3</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                    tincidunt, ut
+                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul class="fa-ul">
+                <li><i class="fa fa-check" aria-hidden="true"></i> Advantage 4</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                    tincidunt, ut
+                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="col-md-12 text-xs-center" id="feature_block">
+        <h3>Features-block title</h3>
+    </div>
+    {{> organisms-features}}
+    <hr>
+    <div class="col-md-12 text-xs-center" id="references_block">
+        <h3>References-block title</h3>
+    </div>
+    {{> organisms-references}}
+    <hr>
+    <div class="m-b-1" id="blog_article_block">
+        <div class="row">
+            <div class="col-md-3 col-xs-10 offset-xs-1 offset-md-2" id="left_column">
+                <img class="img-fluid m-x-auto m-b-2 m-t-2 d-block" src="../../images/fpo_16x9.png" alt="">
+            </div>
+            <div class="col-md-6 m-t-2 m-b-2" id="right_column">
+                <h3 style="text-align:center">"Article Headline"</h3>
+                <div class="col-xs-8 text-xs-center offset-xs-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                        tincidunt, ut
+                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
+                    </p>
+                </div>
+                <div class="col-xs-8 offset-xs-2">
+                    {{#buttons.btn_read-more}}
+                        {{> atoms-button }}
+                    {{/buttons.btn_read-more}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="col-md-12 m-b-2 m-t-2" id="webinar_block">
+        <div class="text-xs-center">
+            <h3>Webinar title</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-xs-center offset-xs-2">
+                <h3>Lorem ipsum dolor sit amet!
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <div class="m-b-1">
+                    {{> atoms-text-field }}
+                </div>
+                <div class="m-b-1">
+                    {{> atoms-text-field }}
+                </div>
+                <div>
+                    {{#buttons.btn_webinar-request}}
+                        {{> atoms-button }}
+                    {{/buttons.btn_webinar-request}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="col-md-12 m-b-2 m-t-2" id="feedback_block">
+        <h3 style="text-align:center">Feedback-Slider title</h3>
+        {{#sliders.feedbackSlider}}
+            {{> organisms-slider }}
+        {{/sliders.feedbackSlider}}
+    </div>
+    <hr>
+    <!--
+    <div class="col-md-12 m-b-2 m-t-2">
+        {{! molecules-navs-variants}}
+    </div>
+    <hr>
+    -->
+    <div class="col-md-12 m-b-2 m-t-2 text-xs-center" id="branch_solutions_block">
+        <h3>Branchsolutions-Slider title</h3>
+        {{#sliders.branchsolutionsSlider}}
+            {{> organisms-slider }}
+        {{/sliders.branchsolutionsSlider}}
+    </div>
+    <hr>
+    <div class="col-md-12 m-b-2 m-t-2 text-xs-center" id="pricing_block">
+        <h3>Pricing title</h3>
+    </div>
+    <hr>
+    <div class="row m-b-2 m-t-2" id="newsletter-block">
+        <div class="col-md-6 col-xs-11 text-xs-center p-l-3">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                    tincidunt, ut
+                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
+            </div>
+        </div>
+        <div class="col-md-6 text-md-left text-xs-center">
+            <div>
+                {{> atoms-text-field }}
+            </div>
+        </div>
+        <div class="col-md-12 text-xs-center">
+            <div class="m-b-1 m-t-1 row" id="nl_types">
+                <div class="col-md-2 offset-md-2 col-xs-6">
+                    {{> atoms-checkbox }} Lorem ipsum
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    {{> atoms-checkbox }} Lorem ipsum
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    {{> atoms-checkbox }} Lorem ipsum
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    {{> atoms-checkbox }} Lorem ipsum
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 nl-signup-btn text-xs-center pull-xs-none m-x-auto">
+            {{#buttons.btn_signup_nl}}
+                {{> atoms-button }}
+            {{/buttons.btn_signup_nl}}
+        </div>
+    </div>
     <div class="push"></div>
 </main>
 {{> organisms-footer }}

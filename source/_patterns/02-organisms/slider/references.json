@@ -6,7 +6,7 @@
         "settings": {
           "dots": true,
           "slidesToScroll": 2,
-          "slidesToShow": 3,
+          "slidesToShow": 4,
           "autoplay": true,
           "autoplaySpeed": 2000
         },
