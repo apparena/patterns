@@ -15,6 +15,7 @@ export default class Modal extends ReactComponent {
         headerText: PropTypes.string.isRequired,
         linkLocation: PropTypes.string,
         linkText: PropTypes.string,
+        searchPlaceholder: PropTypes.string,
         onSearch: PropTypes.func,
         onSave: PropTypes.func,
         hintText: PropTypes.string,
@@ -26,6 +27,7 @@ export default class Modal extends ReactComponent {
     static defaultProps = {
         saveText: "Save",
         closeText: "Cancel",
+        searchPlaceholder: " ",
     };
 
 
@@ -36,18 +38,14 @@ export default class Modal extends ReactComponent {
         };
     }
 
-    conditionalRender(condition, element) {
-        if (condition)
-            return element;
-    }
-
     handleChange(event) {
         this.setState({searchQuery: event.target.value});
         this._search(event.target.value);
     }
 
     componentWillMount() {
-        this._search = _.debounce(this.props.onSearch, 400);
+        if(this.props.onSearch !== undefined) this._search = _.debounce(this.props.onSearch, 400);
+        else this._search = {};
     }
 
     handleClose() {
@@ -68,9 +66,9 @@ export default class Modal extends ReactComponent {
                             <a href={this.props.linkLocation} className={styles['modal-header-link']}>{this.props.linkText}</a>
                         }
 
-                        {this.conditionalRender(this.props.onSearch,
-                            <Input inputClass={styles['modal-header-input']} inputValue={this.state.searchQuery} onFilterInput={::this.handleChange}  />
-                        )}
+                        {(this.props.onSearch !== undefined)&&
+                            <Input placeholder={this.props.searchPlaceholder} inputClass={styles['modal-header-input']} inputValue={this.state.searchQuery} onFilterInput={::this.handleChange}  />
+                        }
                         <span className={styles['modal-header-close-button']} onClick={::this.handleClose}>
                             <span className="fa fa-times" />
                         </span>
@@ -82,14 +80,14 @@ export default class Modal extends ReactComponent {
 
                     <footer className={styles['modal-footer']}>
                         <div className={styles['modal-footer-actions']}>
-                            {this.conditionalRender((this.props.onSave && this.props.saveText),
-                                <button className={styles['modal-button-primary']} onClick={::this.props.onSave()}>{this.props.saveText}</button>
-                            )}
+                            {(this.props.onSave && this.props.saveText)&&
+                                <button className={styles['modal-button-primary']} onClick={::this.props.onSave}>{this.props.saveText}</button>
+                            }
                             <button className={styles['modal-button-close']} onClick={::this.handleClose}>{this.props.closeText}</button>
                         </div>
-                        {this.conditionalRender(this.props.hintText,
+                        {(this.props.hintText)&&
                             <div className={styles['modal-footer-hint']}>{this.props.hintText}</div>
-                        )}
+                        }
                     </footer>
                 </div>
 

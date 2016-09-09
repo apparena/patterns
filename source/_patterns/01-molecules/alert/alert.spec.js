@@ -30,7 +30,7 @@ describe('<Alert />', () => {
 
     it('is dismissable at will', () => {
         const wrapper = shallow(
-            <Alert text="Hello World" type="danger" dismissable />
+            <Alert text="Hello World" type="danger" dismissible />
         );
         expect(wrapper.find('button')).to.have.length(1);
         expect(wrapper.find(".alert-danger")).to.have.length(1);
