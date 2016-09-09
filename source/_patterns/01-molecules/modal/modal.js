@@ -1,10 +1,7 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../reactComponent";
-import {findDOMNode} from "react-dom";
 import cx from "classnames";
-import Portal from "../../react-utils/portal";
 import styles from "./modal.scss"
-import velocity from "velocity-animate";
 import Input from "../../00-atoms/forms/input";
 import _ from "lodash";
 
