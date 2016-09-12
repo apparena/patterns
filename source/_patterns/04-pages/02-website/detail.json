@@ -141,6 +141,7 @@
 	},
 	"sliders": {
 		"feedbackSlider": {
+			"title": "Das sagen unsere Kunden",
 			"slider": {
 				"id": "feedbackSlider",
 				"settings": {
