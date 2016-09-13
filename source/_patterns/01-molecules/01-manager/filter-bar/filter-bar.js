@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../../reactComponent";
+import ReactComponent from "../../../react-utils/component";
 import Dropdown from "../../../01-molecules/dropdown/dropdown";
 import ButtonGroup from "../../../01-molecules/button-group/button-group";
 import Icon from "../../../00-atoms/icons/icons";

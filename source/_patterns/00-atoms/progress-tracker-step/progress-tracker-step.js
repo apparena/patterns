@@ -1,6 +1,6 @@
 import React, {PropTypes} from "react";
 import cx from "classnames";
-import ReactComponent from "../../reactComponent";
+import ReactComponent from "../../react-utils/component";
 
 import styles from "./progress-tracker-step.scss"
 

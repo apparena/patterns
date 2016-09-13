@@ -1,6 +1,6 @@
 import React from "react"
 import { render } from "react-dom"
-import ReactComponent from "../../source/_patterns/reactComponent";
+import ReactComponent from "../../source/_patterns/react-utils/component";
 import Alert from "../../source/_patterns/01-molecules/alert/alert"
 import Jumbotron from "../../source/_patterns/01-molecules/jumbotron/jumbotron"
 import ProgressTrackerStep from "../../source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step"

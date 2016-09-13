@@ -1,7 +1,7 @@
 import velocity from "velocity-animate";
 import {PropTypes} from "react";
 import {findDOMNode} from "react-dom";
-import ReactComponent from "../reactComponent";
+import ReactComponent from "./component";
 
 export default class Animate extends ReactComponent {
     static propTypes = {
