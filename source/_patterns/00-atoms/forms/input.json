@@ -1,6 +1,8 @@
 {
   "input": {
     "class": "",
+    "disabled": false,
+    "readonly": false,
     "placeholder": "Enter your data here...",
     "value": false,
     "message": "This is a help message"
