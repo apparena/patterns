@@ -32,7 +32,8 @@
           }
         },
         "inputGroup": {
-          "icon": "<i class=\"fa fa-key\"></i>"
+          "icon": "<i class=\"fa fa-key\"></i>",
+          "class": "col-sm-9"
         },
         "input": {
           "class": "form-control-danger",
