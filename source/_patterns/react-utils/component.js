@@ -7,6 +7,7 @@ export default class BaseComponent extends React.Component {
     constructor(props, children) {
         super(props, children);
         this.state = this.getInitState ? this.getInitState() : {};
+        this.init && this.init();
     }
 
     getUniqueKey() {
@@ -14,12 +15,11 @@ export default class BaseComponent extends React.Component {
     }
 
     getChildrenArray(children) {
-            return React.Children.map(children, (child) => {
-                if (React.isValidElement(child)){
-                    return React.cloneElement(child, child.props);
-                }
-            });
-
+        return React.Children.map(children, (child) => {
+            if (React.isValidElement(child)) {
+                return React.cloneElement(child, child.props);
+            }
+        });
     }
 
     t(id, data = false) {

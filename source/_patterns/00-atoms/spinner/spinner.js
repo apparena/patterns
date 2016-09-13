@@ -1,10 +1,9 @@
 import React, {PropTypes} from "react";
 import cx from "classnames";
-import ReactComponent from "../../reactComponent";
+import ReactComponent from "../../react-utils/component";
 import styles from "./spinner.scss";
 
 export default class Spinner extends ReactComponent {
-    static displayName = 'Spinner';
     static propTypes = {
         className: PropTypes.string,
         size: PropTypes.oneOf(['sm', 'md', 'lg']),

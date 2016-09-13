@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../reactComponent";
+import ReactComponent from "../../react-utils/component";
 
 export default class TextField extends ReactComponent {
     static propTypes = {

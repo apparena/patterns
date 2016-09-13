@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../reactComponent";
+import ReactComponent from "../../react-utils/component";
 import styles from "./progress-tracker.scss";
 
 export default class ProgressTracker extends ReactComponent {

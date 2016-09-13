@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../reactComponent";
+import ReactComponent from "../../react-utils/component";
 
 var Highcharts = require('highcharts');
 

@@ -27,29 +27,28 @@
   font-size: 14px;
   line-height: 1.42857142857143;
 
-  &.modal-small {
+  &.modal-xs {
     width: 500px;
     min-height: 131px;
   }
 
-  &.modal-medium {
+  &.modal-sm {
     width: 650px;
     min-height: 231px;
   }
 
-  &.modal-large {
+  &.modal-lg {
     width: 850px;
     min-height: 431px;
   }
 
-  &.modal-xlarge {
+  &.modal-xl {
     width: 1000px;
     min-height: 431px;
   }
 
   .modal-header {
     border-bottom: 1px solid #ccc;
-    border-radius: 5px 5px 0 0;
     box-sizing: border-box;
     color: #333;
     font-weight: normal;
@@ -85,19 +84,19 @@
   }
 
   .modal-content {
-    &.modal-content-small {
+    &.modal-content-xs {
       min-height: 80px;
     }
 
-    &.modal-content-medium {
+    &.modal-content-sm {
       min-height: 180px;
     }
 
-    &.modal-content-large {
+    &.modal-content-lg {
       min-height: 380px;
     }
 
-    &.modal-content-xlarge {
+    &.modal-content-xl {
       min-height: 480px;
     }
 
@@ -114,7 +113,6 @@
     overflow: hidden;
     padding: 10px 20px;
     width: 100%;
-    border-radius: 0 0 5px 5px;
     background-color: #f5f5f5;
 
     .modal-footer-actions {
@@ -131,7 +129,6 @@
   .modal-button-primary {
     box-sizing: border-box;
     border: 1px solid #ccc;
-    border-radius: 3.01px;
     cursor: pointer;
     display: inline-block;
     font-family: inherit;

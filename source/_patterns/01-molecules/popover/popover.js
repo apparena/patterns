@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../reactComponent";
+import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import Portal from "../../react-utils/portal";
 import Stick from "../../react-utils/stick";

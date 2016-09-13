@@ -1,16 +1,20 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../reactComponent";
+import ReactComponent from "../../react-utils/component";
 import {findDOMNode} from "react-dom";
 import cx from "classnames";
 import Portal from "../../react-utils/portal";
-import styles from "./notification.scss"
+import styles from "./notification.scss";
 import velocity from "velocity-animate";
 
 
 export default class Notification extends ReactComponent {
     static propTypes = {
         header: PropTypes.string.isRequired,
-        content: PropTypes.string.isRequired,
+        children: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.element,
+            PropTypes.arrayOf(PropTypes.element)
+        ]),
         type: PropTypes.oneOf(["info", "success", "warning", "danger"]).isRequired,
         duration: PropTypes.number,
         dismissible: PropTypes.bool,
@@ -30,7 +34,7 @@ export default class Notification extends ReactComponent {
     }
 
     componentWillReceiveProps(nextProps, nextContext) {
-        if (!this.props.dismissible && !this.state.visible){
+        if (!this.props.dismissible && !this.state.visible) {
             this.setState({visible: nextProps.visible});
             velocity(findDOMNode(this._notif), {top: 20}, {duration: 800});
             setTimeout(() => {
@@ -49,7 +53,7 @@ export default class Notification extends ReactComponent {
             <span className={cx("fa fa-times", styles.dismissibleIcon)} onClick={() => {
                 velocity(findDOMNode(this._notif), {top: -100}, {duration: 800});
                 this.setState({visible: false});
-            }} />
+            }}/>
         );
     }
 
@@ -75,10 +79,12 @@ export default class Notification extends ReactComponent {
 
         return (
             <Portal>
-                <div className={cx(this.props.classNames, styles.notif, styles[this.props.type])} ref={(c) => {this._notif = c}} >
-                    <span className={cx(iconClass, styles.typeIcon)} />
+                <div className={cx(this.props.classNames, styles.notif, styles[this.props.type])} ref={(c) => {
+                    this._notif = c
+                }}>
+                    <span className={cx(iconClass, styles.typeIcon)}/>
                     <strong>{this.props.header}</strong>
-                    <p>{this.props.content}</p>
+                    <div>{this.props.children}</div>
                     {this.renderDismissibleIcon()}
                 </div>
             </Portal>
