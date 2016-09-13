@@ -3,7 +3,6 @@ import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./modal.scss";
 import Input from "../../00-atoms/forms/input";
-import _ from "lodash";
 
 export default class Modal extends ReactComponent {
     static propTypes = {
@@ -17,6 +16,7 @@ export default class Modal extends ReactComponent {
         onSave: PropTypes.func,
         hintText: PropTypes.string,
         saveText: PropTypes.string,
+        onClose: PropTypes.func,
         closeText: PropTypes.string,
         children: PropTypes.node.isRequired,
     };
@@ -24,40 +24,21 @@ export default class Modal extends ReactComponent {
     static defaultProps = {
         saveText: "Save",
         closeText: "Cancel",
+        visible: true,
         searchPlaceholder: " ",
     };
-
 
     getInitState() {
         return {
             searchQuery: "",
-            visible: this.props.visible,
         };
-    }
-
-    handleChange(event) {
-        this.setState({searchQuery: event.target.value});
-        this._search(event.target.value);
-    }
-
-    componentWillMount() {
-        if (this.props.onSearch !== undefined) this._search = _.debounce(this.props.onSearch, 400);
-        else this._search = {};
-    }
-
-    handleClose() {
-        this.setState({visible: false});
-    }
-
-    componentWillReceiveProps(nextProps, nextContext) {
-        this.setState({visible: nextProps.visible});
     }
 
     render() {
         return (
             <div>
                 <div
-                    className={cx(styles.modal, styles['modal-' + this.props.size], (this.state.visible) ? styles.visible : styles.invisible, this.props.classNames)}
+                    className={cx(styles.modal, styles['modal-' + this.props.size], (this.props.visible) ? styles.visible : styles.invisible, this.props.classNames)}
                 >
                     <header className={styles['modal-header']}>
                         <h2 className={styles['modal-header-cell']}>{this.props.headerText}</h2>
@@ -68,9 +49,9 @@ export default class Modal extends ReactComponent {
 
                         {(this.props.onSearch !== undefined) &&
                         <Input placeholder={this.props.searchPlaceholder} inputClass={styles['modal-header-input']}
-                               inputValue={this.state.searchQuery} onFilterInput={::this.handleChange}/>
+                               inputValue={this.state.searchQuery} onFilterInput={this.props.onSearch}/>
                         }
-                        <span className={styles['modal-header-close-button']} onClick={::this.handleClose}>
+                        <span className={styles['modal-header-close-button']} onClick={this.props.onClose}>
                             <span className="fa fa-times"/>
                         </span>
                     </header>
@@ -81,10 +62,10 @@ export default class Modal extends ReactComponent {
                         <div className={styles['modal-footer-actions']}>
                             {(this.props.onSave && this.props.saveText) &&
                             <button className={styles['modal-button-primary']}
-                                    onClick={::this.props.onSave}>{this.props.saveText}</button>
+                                    onClick={this.props.onSave}>{this.props.saveText}</button>
                             }
                             <button className={styles['modal-button-close']}
-                                    onClick={::this.handleClose}>{this.props.closeText}</button>
+                                    onClick={this.props.onClose}>{this.props.closeText}</button>
                         </div>
                         {(this.props.hintText) &&
                         <div className={styles['modal-footer-hint']}>{this.props.hintText}</div>
@@ -92,7 +73,7 @@ export default class Modal extends ReactComponent {
                     </footer>
                 </div>
                 <div
-                    className={cx(styles['modal-shadow-bg'], (this.state.visible) ? styles.visible : styles.invisible)}
+                    className={cx(styles['modal-shadow-bg'], (this.props.visible) ? styles.visible : styles.invisible)}
                 />
             </div>
         );

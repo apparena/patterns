@@ -1,4 +1,4 @@
-import velocity from "velocity-animate";
+import velocity from 'velocity-animate';
 import {PropTypes} from "react";
 import {findDOMNode} from "react-dom";
 import ReactComponent from "./component";
@@ -7,23 +7,40 @@ export default class Animate extends ReactComponent {
     static propTypes = {
         transition: PropTypes.string,
         duration: PropTypes.number,
-        children: PropTypes.node
+        children: PropTypes.node,
+        options: PropTypes.object,
+        initial: PropTypes.bool
     };
 
     static defaultProps = {
-        transition: 'slideUp', // fadeIn, fadeOut, slideUp, slideDown
-        duration: 400
+        transition: 'slideUpIn',
+        duration: 400,
+        options: {},
+        initial: true
     };
 
-    componentDidMount() {
-        const dom = findDOMNode(this);
-        const transition = this.props.transition;
-        velocity(dom, transition, {
-            duration: this.props.duration,
-        });
+    componentDidMount () {
+        if (this.props.initial) {
+            this.makeTransition(this.props);
+        }
     }
 
-    render() {
+    componentWillReceiveProps (nextProps) {
+        if (this.props.transition !== nextProps.transition) {
+            this.makeTransition(nextProps);
+        }
+    }
+
+    makeTransition (props) {
+        const dom = findDOMNode(this);
+        const transition = props.transition;
+        velocity(dom, transition, Object.assign({
+            duration: props.duration,
+            display: null
+        }, props.options));
+    }
+
+    render () {
         return this.props.children;
     }
 }

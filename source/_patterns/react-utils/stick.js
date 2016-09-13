@@ -129,17 +129,17 @@ export default class Stick extends ReactComponent {
             // LEFT
             case "left":
             case "left middle":
-                position.left = left - rect.width;
+                position.left = left;
                 position.top = (top + (rect.height / 2)) - (thisRect.height / 2);
                 break;
             case "left top":
             case "top left":
-                position.left = left - rect.width;
+                position.left = left;
                 position.top = top - thisRect.height - this.props.verticalOffset;
                 break;
             case "left bottom":
             case "bottom left":
-                position.left = left - rect.width;
+                position.left = left;
                 position.top = (top + rect.height) - this.props.verticalOffset;
                 break;
 

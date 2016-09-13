@@ -1,7 +1,7 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
-import styles from "../../../css/app-arena-styles.scss"
+import styles from "../../../css/app-arena-styles.scss";
 
 const BUTTON_SIZES = ['lg', 'sm', 'xs'];
 
@@ -33,10 +33,13 @@ export default class Button extends ReactComponent {
     static propTypes = {
         block: PropTypes.bool,
         className: PropTypes.string,
-        children: PropTypes.string,
+        children: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.element
+        ]),
         href: PropTypes.string,
         isActive: PropTypes.bool,
-        onClick:PropTypes.func,
+        onClick: PropTypes.func,
         size: PropTypes.oneOf(BUTTON_SIZES),
         submit: PropTypes.bool,
         type: PropTypes.oneOf(BUTTON_TYPES),
@@ -65,7 +68,8 @@ export default class Button extends ReactComponent {
         }
 
         return (
-            <button onClick={this.props.onClick} className={componentClass} type={this.props.submit ? 'submit' : 'button'}>
+            <button onClick={this.props.onClick} className={componentClass}
+                    type={this.props.submit ? 'submit' : 'button'}>
                 {this.props.children}
             </button>
         );

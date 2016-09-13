@@ -1,35 +1,36 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 
-export default class Input extends ReactComponent {
-    static PropTypes = {
-        inputClass: PropTypes.string,
-        type: PropTypes.string,
+export default class TextElementComponent extends ReactComponent {
+    static propTypes = {
+        onChange: PropTypes.func.isRequired,
+        defaultValue: PropTypes.string,
         placeholder: PropTypes.string,
-        onFilterInput: PropTypes.func.isRequired,
-        inputValue: PropTypes.string,
-        autoFocus: PropTypes.bool
+        onKeyUp: PropTypes.func,
+        id: PropTypes.string,
+        type: PropTypes.string
     };
 
     static defaultProps = {
-        inputClass: "form-control",
+        className: "form-control",
         type: "text",
-        placeholder: "placeholder missing!",
-        inputValue: "",
-        autoFocus: true
+        autoFocus: false
     };
 
     render() {
         return (
             <input
                 autoFocus={this.props.autoFocus}
+                className={this.props.className}
+                value={this.props.defaultValue}
+                onChange={this.props.onChange}
+                ref={(this.props.id) ? this.props.id : "config"}
+                id={this.props.id}
                 type={this.props.type}
-                className={this.props.inputClass}
+                onKeyUp={this.props.onKeyUp}
+                onBlur={this.props.onBlur}
                 placeholder={this.props.placeholder}
-                onChange={this.props.onFilterInput}
-                value={this.props.inputValue}
-                key="filterBarInput"
             />
-        );
+        )
     }
 }

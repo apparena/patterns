@@ -1,10 +1,8 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
-import {findDOMNode} from "react-dom";
 import cx from "classnames";
-import Portal from "../../react-utils/portal";
 import styles from "./notification.scss";
-import velocity from "velocity-animate";
+import Animate from "../../react-utils/animate";
 
 
 export default class Notification extends ReactComponent {
@@ -17,47 +15,25 @@ export default class Notification extends ReactComponent {
         ]),
         type: PropTypes.oneOf(["info", "success", "warning", "danger"]).isRequired,
         duration: PropTypes.number,
-        dismissible: PropTypes.bool,
         classNames: PropTypes.string,
+        onClose: PropTypes.func
     };
 
     static defaultProps = {
-        duration: 5000,
+        transition: "fadeIn",
         dismissible: false,
     };
 
-
-    getInitState() {
-        return {
-            visible: this.props.visible,
-        };
-    }
-
-    componentWillReceiveProps(nextProps, nextContext) {
-        if (!this.props.dismissible && !this.state.visible) {
-            this.setState({visible: nextProps.visible});
-            velocity(findDOMNode(this._notif), {top: 20}, {duration: 800});
-            setTimeout(() => {
-                velocity(findDOMNode(this._notif), {top: -100}, {duration: 800});
-                this.setState({visible: false});
-            }, this.props.duration);
-        }
-        else if (this.props.dismissible && !this.state.visisble) {
-            this.setState({visible: nextProps.visible});
-            velocity(findDOMNode(this._notif), {top: 20}, {duration: 800});
-        }
-    }
-
     renderDismissibleIcon() {
-        if (this.props.dismissible) return (
-            <span className={cx("fa fa-times", styles.dismissibleIcon)} onClick={() => {
-                velocity(findDOMNode(this._notif), {top: -100}, {duration: 800});
-                this.setState({visible: false});
-            }}/>
-        );
+        if (this.props.onClose) {
+            return (
+                <span className={cx("fa fa-times", styles.dismissibleIcon)} onClick={this.props.onClose}/>
+            );
+        }
     }
 
     render() {
+        const {transition, classNames, type, header, children} = this.props;
         let iconClass = null;
 
         switch (this.props.type) {
@@ -78,16 +54,14 @@ export default class Notification extends ReactComponent {
         }
 
         return (
-            <Portal>
-                <div className={cx(this.props.classNames, styles.notif, styles[this.props.type])} ref={(c) => {
-                    this._notif = c
-                }}>
+            <Animate transition={transition}>
+                <div className={cx(classNames, styles.notif, styles[type])}>
                     <span className={cx(iconClass, styles.typeIcon)}/>
-                    <strong>{this.props.header}</strong>
-                    <div>{this.props.children}</div>
+                    <strong>{header}</strong>
+                    <div>{children}</div>
                     {this.renderDismissibleIcon()}
                 </div>
-            </Portal>
+            </Animate>
         );
     }
 }
