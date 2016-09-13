@@ -1,6 +1,6 @@
 {
   "inputGroup": {
-    "class": false,
+    "class": "col-sm-9",
     "icon": "<i class=\"fa fa-envelope\"></i>",
     "addonBefore": false,
     "addonAfter": false
