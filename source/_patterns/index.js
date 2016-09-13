@@ -10,6 +10,8 @@ export ProgressTrackerStep from "./00-atoms/progress-tracker-step/progress-track
 export Icon from "./00-atoms/icons/icons";
 export Input from "./00-atoms/forms/input";
 export Spinner from "./00-atoms/spinner/spinner";
+export Select from "./00-atoms/forms/select-menu";
+export Checkbox from "./00-atoms/forms/checkbox";
 
 //Molecules
 export Alert from "./01-molecules/alert/alert";

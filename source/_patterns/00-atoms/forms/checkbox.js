@@ -1,34 +1,39 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
+import Tooltip from "../../01-molecules/tooltip/tooltip";
 import cx from "classnames";
+import Toggle from "react-toggle";
+import styles from "./checkbox.scss";
 
-export default class CheckBox extends ReactComponent {
+export default class CheckboxComponent extends ReactComponent {
     static PropTypes = {
-        text: PropTypes.string,
-        onFilterSelect: PropTypes.func.isRequired,
+        className: PropTypes.string,
+        disabled: PropTypes.bool,
         checked: PropTypes.bool,
-        classNames: PropTypes.string,
+        onChange: PropTypes.func.isRequired,
+        id: PropTypes.string.isRequired
     };
 
     static defaultProps = {
-        text: "identifier missing!",
-        checked: false
+        id: ''
     };
-
-    onClickingThis(event){
-        this.props.onFilterSelect(event, this.props.text);
-    }
 
     render() {
+        var id = this.props.id.replace("_", "");
         return (
-            <div className={cx("form-check", this.props.classNames)} key={this.getUniqueKey()}>
-                <div className="checkbox">
-                    <label className="form-check-label">
-                        <input type="checkbox" onChange={::this.onClickingThis} checked={this.props.checked} />
-                        {this.props.text}
-                    </label>
-                </div>
+            <div className={cx(styles.checkbox, this.props.className)}>
+                <Tooltip
+                    positioning="top center"
+                    label={this.props.checked ? "Aktiviert" : "Deaktiviert"}
+                >
+                    <Toggle
+                        id={id}
+                        disabled={this.props.disabled}
+                        checked={this.props.checked}
+                        onChange={this.props.onChange}
+                    />
+                </Tooltip>
             </div>
         )
-    };
+    }
 }
