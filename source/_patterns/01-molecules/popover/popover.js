@@ -17,7 +17,11 @@ export default class PopOver extends ReactComponent {
             'bottom',
             'left',
             'right'
-        ]).isRequired,
+        ]),
+    };
+
+    static defaultProps = {
+        positioning: "top"
     };
 
     getInitState() {

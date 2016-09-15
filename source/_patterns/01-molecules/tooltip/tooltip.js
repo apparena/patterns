@@ -28,7 +28,12 @@ export default class Tooltip extends ReactComponent {
             'left top',
             'left middle',
             'left bottom'
-        ]).isRequired,
+        ]),
+        zIndex: PropTypes.number,
+    };
+
+    static defaultProps = {
+        positioning: 'top center'
     };
 
     getInitState() {
@@ -84,6 +89,7 @@ export default class Tooltip extends ReactComponent {
                         element={this._handler}
                         positioning={this.props.positioning}
                         fixed={this.props.fixed}
+                        zIndex={this.props.zIndex}
                     >
                         <div className={cx(styles.tooltip, styles[this.props.positioning.split(" ")[0]])}>
                             {label}

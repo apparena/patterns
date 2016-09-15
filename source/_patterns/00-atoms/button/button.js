@@ -3,30 +3,22 @@ import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "../../../css/app-arena-styles.scss";
 
-const BUTTON_SIZES = ['lg', 'sm', 'xs'];
+const BUTTON_SIZES = ["lg", "sm", "xs"];
 
 const BUTTON_TYPES = [
-    'default',
-    'default-primary',
-    'default-success',
-    'default-warning',
-    'default-danger',
-    'hollow-primary',
-    'hollow-success',
-    'hollow-warning',
-    'hollow-danger',
-    'primary',
-    'success',
-    'warning',
-    'danger',
-    'link',
-    'link-text',
-    'link-primary',
-    'link-success',
-    'link-warning',
-    'link-danger',
-    'link-cancel',
-    'link-delete',
+    "primary",
+    "secondary",
+    "success",
+    "info",
+    "warning",
+    "danger",
+    "link",
+    "outline-primary",
+    "outline-secondary",
+    "outline-success",
+    "outline-info",
+    "outline-warning",
+    "outline-danger",
 ];
 
 export default class Button extends ReactComponent {
@@ -39,13 +31,14 @@ export default class Button extends ReactComponent {
         ]),
         href: PropTypes.string,
         isActive: PropTypes.bool,
+        isDisabled: PropTypes.bool,
         onClick: PropTypes.func,
         size: PropTypes.oneOf(BUTTON_SIZES),
         submit: PropTypes.bool,
         type: PropTypes.oneOf(BUTTON_TYPES),
     };
     static defaultProps = {
-        type: 'default',
+        type: 'secondary',
     };
 
     render() {
@@ -56,7 +49,8 @@ export default class Button extends ReactComponent {
             this.props.size && styles['btn-' + this.props.size],
             {
                 'btn-block': this.props.block,
-                'is-active': this.props.isActive,
+                'active': this.props.isActive,
+                'disabled': this.props.isDisabled,
             },
             this.props.className
         );

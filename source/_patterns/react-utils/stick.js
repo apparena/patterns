@@ -32,6 +32,7 @@ export default class Stick extends ReactComponent {
         onClose: PropTypes.func,
         fixed: PropTypes.bool,
         overlay: PropTypes.bool,
+        zIndex: PropTypes.number,
     };
 
     static defaultProps = {
@@ -39,6 +40,7 @@ export default class Stick extends ReactComponent {
         positioning: "top center",
         verticalOffset: 0,
         horizontalOffset: 0,
+        zIndex: 2030,
         fixed: false,
         overlay: false
     };
@@ -207,12 +209,14 @@ export default class Stick extends ReactComponent {
         const {transition, className, overlay} = this.props;
         // const {vertical, horizontal} = this.state;
         let style = {
+            zIndex: this.props.zIndex,
             left: this.state.left,
             top: this.state.top,
         };
 
         if (overlay) {
             style = {
+                zIndex: this.props.zIndex,
                 left: this.state.left,
                 top: this.state.top,
                 height: this.state.height,

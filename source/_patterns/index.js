@@ -3,15 +3,18 @@ export ReactComponent from "./react-utils/component";
 export Animate from "./react-utils/animate";
 export Portal from "./react-utils/portal";
 export Stick from "./react-utils/stick";
+export Scrollable from "./react-utils/scrollable";
 
 //Atoms
 export Button from "./00-atoms/button/button";
+export Checkbox from "./00-atoms/forms/checkbox";
+export Col from "./00-atoms/grid/col";
 export ProgressTrackerStep from "./00-atoms/progress-tracker-step/progress-tracker-step";
 export Icon from "./00-atoms/icons/icons";
 export Input from "./00-atoms/forms/input";
+export Row from "./00-atoms/grid/row";
 export Spinner from "./00-atoms/spinner/spinner";
 export Select from "./00-atoms/forms/select-menu";
-export Checkbox from "./00-atoms/forms/checkbox";
 
 //Molecules
 export Alert from "./01-molecules/alert/alert";

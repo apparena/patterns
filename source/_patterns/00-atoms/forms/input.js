@@ -8,18 +8,21 @@ export default class TextElementComponent extends ReactComponent {
         placeholder: PropTypes.string,
         onKeyUp: PropTypes.func,
         id: PropTypes.string,
-        type: PropTypes.string
+        type: PropTypes.string,
+        disabled: PropTypes.bool
     };
 
     static defaultProps = {
         className: "form-control",
         type: "text",
-        autoFocus: false
+        autoFocus: false,
+        disabled: false
     };
 
     render() {
         return (
             <input
+                disabled={this.props.disabled}
                 autoFocus={this.props.autoFocus}
                 className={this.props.className}
                 value={this.props.defaultValue}

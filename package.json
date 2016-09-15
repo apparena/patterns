@@ -1,6 +1,6 @@
 {
   "name": "apparena-patterns",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "license": "MIT",
   "description": "Styleguide and patterns of App-Arena.com",
   "keywords": [
@@ -43,8 +43,10 @@
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
     "node-sass": "^3.8.0",
     "react": "^15.3.0",
+    "react-gemini-scrollbar": "^2.1.5",
     "react-select": "^1.0.0-rc.1",
-    "react-toggle": "^2.1.1"
+    "react-toggle": "^2.1.1",
+    "velocity-animate": "^1.2.3"
   },
   "devDependencies": {
     "app-module-path": "^1.0.6",
@@ -119,7 +121,6 @@
     "simple-assign": "^0.1.0",
     "sinon": "^1.17.3",
     "style-loader": "^0.13.1",
-    "velocity-animate": "^1.2.3",
     "webpack": "^1.13.1",
     "webpack-combine-loaders": "^2.0.0",
     "webpack-dev-server": "^1.15.0"
