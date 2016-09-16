@@ -35,7 +35,7 @@ export default class Button extends ReactComponent {
         onClick: PropTypes.func,
         size: PropTypes.oneOf(BUTTON_SIZES),
         submit: PropTypes.bool,
-        type: PropTypes.oneOf(BUTTON_TYPES),
+        type: PropTypes.oneOf(BUTTON_TYPES)
     };
     static defaultProps = {
         type: 'secondary',
