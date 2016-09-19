@@ -11,12 +11,15 @@ export default class CheckboxComponent extends ReactComponent {
         disabled: PropTypes.bool,
         checked: PropTypes.bool,
         onChange: PropTypes.func.isRequired,
-        id: PropTypes.string.isRequired
+        id: PropTypes.string,
+
     };
 
     static defaultProps = {
         id: ''
     };
+
+
 
     render() {
         var id = this.props.id.replace("_", "");
