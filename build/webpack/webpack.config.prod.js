@@ -8,15 +8,13 @@ var buildPath = path.resolve(__dirname, relativePath, 'build/apparena-patterns-r
 module.exports = {
     devtool: 'cheap-module-source-map',
     entry: [
-        'webpack-dev-server/client?http://localhost:3000',
-        'webpack/hot/only-dev-server',
         path.resolve(__dirname, relativePath + 'source/_patterns', 'index.js')
     ],
     output: {
         path: buildPath,
         publicPath: '/',
         pathinfo: true,
-        filename: '[name].js',
+        filename: '[name].min.js',
         library: 'apparena',
         libraryTarget: 'umd'
     },
@@ -58,15 +56,8 @@ module.exports = {
             },
             {
                 test: /\.(js|jsx)$/,
-                loader: combineLoaders([
-                    {
-                        loader: 'react-hot'
-                    },
-                    {
-                        loader: 'babel',
-                        query: require('./babel.dev')
-                    }
-                ]),
+                loader: 'babel',
+                query: require('./babel.prod'),
                 exclude: [nodeModulesPath],
             },
             {
@@ -88,10 +79,21 @@ module.exports = {
         useEslintrc: false
     },
     plugins: [
-        new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.DefinePlugin({'process.env.NODE_ENV': '"development"'}),
-        // new webpack.optimize.CommonsChunkPlugin('vendors', 'shared/vendors.js'),
-        // Note: only CSS is currently hot reloaded
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.DefinePlugin({'process.env.NODE_ENV': '"production"'}),
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compressor: {
+                screw_ie8: true,
+                warnings: false
+            },
+            mangle: {
+                screw_ie8: true
+            },
+            output: {
+                comments: false,
+                screw_ie8: true
+            }
+        })
     ]
 };

@@ -62,8 +62,11 @@ export default class Button extends ReactComponent {
         }
 
         return (
-            <button onClick={this.props.onClick} className={componentClass}
-                    type={this.props.submit ? 'submit' : 'button'}>
+            <button
+                onClick={this.props.onClick}
+                className={componentClass}
+                type={this.props.submit ? 'submit' : 'button'}
+            >
                 {this.props.children}
             </button>
         );
