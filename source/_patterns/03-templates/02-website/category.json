@@ -1,0 +1,67 @@
+{
+  "navPrimary": {
+    "navbar": {
+      "helpNavigation": false,
+      "primaryNavigation": {
+        "navList": [
+          {
+            "text": "Produkte & Tools",
+            "url": "link.pages-homepage",
+            "isActive": false
+          },
+          {
+            "text": "Marketing & Services",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Technologie",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Blog",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Support",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Kontakt",
+            "url": "link.pages-homepage"
+          }
+        ]
+      },
+      "searchForm": {
+        "navbarForm": {
+          "icon": "<i class=\"fa fa-search text-muted\"></i>",
+          "placeholder": "Suchen..."
+        }
+      },
+      "userNavigation": {
+        "links": {
+          "navList": [
+            {
+              "text": "Anmelden",
+              "url": "link.pages-login",
+              "isActive": false
+            }
+          ]
+        },
+        "dropdown": false
+      }
+    }
+  },
+  "navSecondary": false,
+  "buttons": {
+    "btn_more_info": {
+      "btnText": "Get more info",
+      "btnTitle": "",
+      "btnClass": "btn btn-success m-b-1"
+    },
+    "btn_signup_nl": {
+      "btnText": "Sign up",
+      "btnTitle": "",
+      "btnClass": "btn-primary btn-success pull-xs-center"
+    }
+  }
+}

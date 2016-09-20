@@ -43,13 +43,21 @@ export default class Modal extends ReactComponent {
                     <header className={styles['modal-header']}>
                         <h2 className={styles['modal-header-cell']}>{this.props.headerText}</h2>
                         {(this.props.linkLocation && this.props.linkText && this.props.size !== 'small') &&
-                        <a href={this.props.linkLocation}
-                           className={styles['modal-header-link']}>{this.props.linkText}</a>
+                        <a
+                            href={this.props.linkLocation}
+                            className={styles['modal-header-link']}
+                        >
+                            {this.props.linkText}
+                        </a>
                         }
 
                         {(this.props.onSearch !== undefined) &&
-                        <Input placeholder={this.props.searchPlaceholder} inputClass={styles['modal-header-input']}
-                               inputValue={this.state.searchQuery} onFilterInput={this.props.onSearch}/>
+                        <Input
+                            placeholder={this.props.searchPlaceholder}
+                            inputClass={styles['modal-header-input']}
+                            inputValue={this.state.searchQuery}
+                            onFilterInput={this.props.onSearch}
+                        />
                         }
                         <span className={styles['modal-header-close-button']} onClick={this.props.onClose}>
                             <span className="fa fa-times"/>
@@ -61,11 +69,19 @@ export default class Modal extends ReactComponent {
                     <footer className={styles['modal-footer']}>
                         <div className={styles['modal-footer-actions']}>
                             {(this.props.onSave && this.props.saveText) &&
-                            <button className={styles['modal-button-primary']}
-                                    onClick={this.props.onSave}>{this.props.saveText}</button>
+                            <button
+                                className={styles['modal-button-primary']}
+                                onClick={this.props.onSave}
+                            >
+                                {this.props.saveText}
+                            </button>
                             }
-                            <button className={styles['modal-button-close']}
-                                    onClick={this.props.onClose}>{this.props.closeText}</button>
+                            <button
+                                className={styles['modal-button-close']}
+                                onClick={this.props.onClose}
+                            >
+                                {this.props.closeText}
+                            </button>
                         </div>
                         {(this.props.hintText) &&
                         <div className={styles['modal-footer-hint']}>{this.props.hintText}</div>

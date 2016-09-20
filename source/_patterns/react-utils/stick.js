@@ -226,8 +226,10 @@ export default class Stick extends ReactComponent {
 
         return (
             <Animate transition={transition}>
-                <div className={cx(styles.stick, className, this.props.fixed && styles.fixed)} style={style}
-                     ref={c=> (this.holder = c)}>
+                <div className={cx(styles.stick, className, this.props.fixed && styles.fixed)}
+                     style={style}
+                     ref={c=> (this.holder = c)}
+                >
                     {this.props.children}
                 </div>
             </Animate>
