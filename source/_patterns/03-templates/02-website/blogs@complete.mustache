@@ -1,0 +1,151 @@
+{{> organisms-header }}
+<main role="main">
+    <div class="col-md-12 text-xs-center m-t-2 m-b-1" id="page_title">
+        <h1>Blogs title</h1>
+        <div id="blogs_img"><img class="img-fluid m-x-auto m-b-2 m-t-2 d-block" src="../../images/fpo_16x9.png" alt=""
+                                 style="width: 40%;">
+        </div>
+    </div>
+    <hr>
+    <div class="col-md-12 text-xs-center m-t-2 m-b-1">
+        <h2>Blog product advantages</h2>
+        <div class="row m-t-2 text-xs-center">
+            <div class="col-md-3 col-xs-6 usp-1">
+                <ul class="fa-ul">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> advantage 1</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                        tincidunt, ut
+                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-6 usp-2 ">
+                <ul class="fa-ul">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> advantage 2</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                        tincidunt, ut
+                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-6 usp-3">
+                <ul class="fa-ul">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> advantage 3</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                        tincidunt, ut
+                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-6 usp-4">
+                <ul class="fa-ul">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> advantage 4</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                        tincidunt, ut
+                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h2 class="m-t-1">Blog produt steps</h2>
+        <div class="row">
+            <div class="col-md-12 text-xs-center">
+                <img class="img-fluid m-x-auto m-b-2 m-t-2 d-block"
+                     src="https://aa-ads.s3.amazonaws.com/temp/blogs/blogs_image.jpg">
+                <h4>XXXXX €</h4>
+                <div class="appointment-signup-btn text-xs-center pull-xs-none m-x-auto">
+                    {{#buttons.btn_signup_appointment}}
+                        {{> atoms-button }}
+                    {{/buttons.btn_signup_appointment}}
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row m-b-2 m-t-2" id="additional-packages-block">
+            <div class="col-md-12">
+                <h3>Title</h3>
+            </div>
+            <div class="col-md-4 offset-md-2 m-t-2">
+                <h4>Pacakge 1 title</h4>
+                <h4>XXXXX €</h4>
+            </div>
+            <div class="col-md-3 m-t-2 add-package-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                    tincidunt, ut
+                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
+            </div>
+            <div class="col-md-4 offset-md-2 m-t-2">
+                <h4>Pacakge 2 title</h4>
+                <h4>XXXXX €</h4>
+            </div>
+            <div class="col-md-3 m-t-2 add-package-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                    tincidunt, ut
+                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
+            </div>
+            <div class="col-md-4 offset-md-2 m-t-2">
+                <h4>Pacakge 3 title</h4>
+                <h4>XXXXX €</h4>
+            </div>
+            <div class="col-md-3 m-t-2 add-package-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                    tincidunt, ut
+                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="col-md-12 text-xs-center m-t-3" id="references_block">
+            <h2>References-block title</h2>
+            {{#sliders.referenceSlider}}
+                {{> organisms-slider}}
+            {{/sliders.referenceSlider}}
+        </div>
+        <hr>
+        <div class="col-md-12 text-xs-center m-t-3" id="crossselling_block">
+            <h2>Crossselling-block title</h2>
+            {{#sliders.crosssellingSlider}}
+                {{> organisms-slider}}
+            {{/sliders.crosssellingSlider}}
+        </div>
+        <hr>
+        <div class="row m-b-2 m-t-2" id="newsletter-block">
+            <div class="col-md-6 col-xs-11 text-xs-center p-l-3">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
+                        tincidunt, ut
+                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-left text-xs-center">
+                <div>
+                    {{> atoms-text-field }}
+                </div>
+            </div>
+            <div class="col-md-12 text-xs-center">
+                <div class="m-b-1 m-t-1 row" id="nl_types">
+                    <div class="col-md-2 offset-md-2 col-xs-6">
+                        {{> atoms-checkbox }} Lorem ipsum
+                    </div>
+                    <div class="col-md-2 col-xs-6">
+                        {{> atoms-checkbox }} Lorem ipsum
+                    </div>
+                    <div class="col-md-2 col-xs-6">
+                        {{> atoms-checkbox }} Lorem ipsum
+                    </div>
+                    <div class="col-md-2 col-xs-6">
+                        {{> atoms-checkbox }} Lorem ipsum
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 nl-signup-btn text-xs-center pull-xs-none m-x-auto">
+                {{#buttons.btn_signup_nl}}
+                    {{> atoms-button }}
+                {{/buttons.btn_signup_nl}}
+            </div>
+        </div>
+        <div class="push"></div>
+    </div>
+</main>
+{{> organisms-footer }}
+<style>
+    .add-package-desc {
+        text-align: justify;
+    }
+</style>
