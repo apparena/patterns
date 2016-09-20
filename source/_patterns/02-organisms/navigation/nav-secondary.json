@@ -1,5 +1,8 @@
 {
   "navSecondary": {
+    "btnList": [
+      { "btnText": "Call to action", "btnClass": "btn-primary"}
+    ],
     "navList": [
       {
         "text": "Subnav 1",
