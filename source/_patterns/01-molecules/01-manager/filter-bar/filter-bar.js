@@ -31,7 +31,9 @@ export default class FilterBar extends ReactComponent {
             }).isRequired,
             onInput: PropTypes.func.isRequired,
             placeholder: PropTypes.string.isRequired,
-            debounce: PropTypes.number
+            debounce: PropTypes.number,
+            loading: PropTypes.bool,
+            autoFocus: PropTypes.bool
         }),
         listStyle: PropTypes.shape({
             onStyle: PropTypes.func.isRequired,
@@ -165,9 +167,10 @@ export default class FilterBar extends ReactComponent {
         this.props.listStyle.onSort(identifier, event);
     }
 
+    /*
     onInputChangeHandler(event){
         this.props.input.onInput(event);
-    }
+    }*/
 
     onStyleChangeHandler(identifier, event) {
         this.props.listStyle.onStyle(identifier, event);
@@ -177,7 +180,7 @@ export default class FilterBar extends ReactComponent {
         var container = [];
         this.props.filter.groups.map((item) => {
             switch (item.type) {
-                case 'checkBox':
+                case 'checkbox':
                     let checkboxes = [];
                     item.options.map((element) => {
                         checkboxes.push(
@@ -195,7 +198,7 @@ export default class FilterBar extends ReactComponent {
                         </div>
                     );
                     break;
-                case 'radioButton':
+                case 'radiobutton':
                     let radiobuttons = [];
                     item.options.map((element) => {
                         radiobuttons.push(
@@ -223,10 +226,10 @@ export default class FilterBar extends ReactComponent {
             return (
                 <div className="filter-bar-display-mode">
                     <ButtonGroup>
-                        <Button className="btn  btn-secondary" title={this.props.listStyle.cards.text} onClick={this.onStyleChangeHandler.bind(this, "cards")} active={this.props.listStyle.status.listStyle}>
+                        <Button className="btn  btn-secondary" title={this.props.listStyle.cards.text} onClick={this.onStyleChangeHandler.bind(this, "cards")} active={this.props.listStyle.status.type}>
                             <Icon name="th"/>
                         </Button>
-                        <Button className="btn  btn-secondary" title={this.props.listStyle.table.text} onClick={this.onStyleChangeHandler.bind(this, "table")} active={!this.props.listStyle.status.listStyle}>
+                        <Button className="btn  btn-secondary" title={this.props.listStyle.table.text} onClick={this.onStyleChangeHandler.bind(this, "table")} active={!this.props.listStyle.status.type}>
                             <Icon name="th-list"/>
                         </Button>
                     </ButtonGroup>
@@ -246,16 +249,16 @@ export default class FilterBar extends ReactComponent {
                         </a>
                     </div>
                     <div className="filter-bar-search m-r-1">
-                        <div className="input-group">
+                        <div className="input-group" key={this.getUniqueKey()}>
                         <span className="input-group-addon" key="loading-icon">
-                            {this.props.loading ?
+                            {this.props.input.loading ?
                                 <span className="filter-bar-search-spinner text-muted" key="loader-span">
                                     <Icon name="refresh" spin key="currently-loading"/>
                                 </span> :
                                 <Icon name="search" key="not-loading"/>
                             }
                         </span>
-                            <Input type="text" inputClass="form-control" placeholder={this.props.input.placeholder} onChange={this.onInputChangeHandler.bind(this)} inputValue={this.props.input.inputValue}/>
+                            <Input type="text" inputClass="form-control" placeholder={this.props.input.placeholder} onChange={this.props.input.onInput} defaultValue={this.props.input.status.inputValue} autoFocus={this.props.input.autoFocus}/>
                             {this.props.txtSearchAddon &&
                             <span className="input-group-addon">
                                 {this.props.txtSearchAddon}
@@ -263,8 +266,8 @@ export default class FilterBar extends ReactComponent {
                             }
                         </div>
                     </div>
-                    {this.props.listStyle.status.listStyle ?
-                        <div className="filter-bar-sort m-r-1">
+                    {this.props.listStyle.status.type ?
+                        <div className="filter-bar-sort m-r-1" key={this.getUniqueKey()}>
                             <Dropdown dropdownClass="dropdown dropdown" buttonClass="btn btn-secondary dropdown-toggle" buttonText={this.props.listStyle.cards.buttonText ? this.props.listStyle.cards.buttonText : "Sortierung"}>
                                 {this.createDropdownItems()}
                             </Dropdown>
