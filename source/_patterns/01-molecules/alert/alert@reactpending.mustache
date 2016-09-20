@@ -1,0 +1,9 @@
+<div class="alert {{ alert.class }}" role="alert">
+    {{# alert.heading }}
+        <h4 class="alert-heading">{{{ alert.heading }}}</h4>
+    {{/ alert.heading }}
+	{{ alert.text }}
+	{{# alert.isDismissable }}
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	{{/ alert.isDismissable }}
+</div>

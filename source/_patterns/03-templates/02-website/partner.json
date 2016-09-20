@@ -1,0 +1,109 @@
+{
+  "navPrimary": {
+    "navbar": {
+      "helpNavigation": false,
+      "primaryNavigation": {
+        "navList": [
+          {
+            "text": "Produkte & Tools",
+            "url": "link.pages-homepage",
+            "isActive": false
+          },
+          {
+            "text": "Marketing & Services",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Technologie",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Blog",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Support",
+            "url": "link.templates-service"
+          },
+          {
+            "text": "Kontakt",
+            "url": "link.pages-homepage"
+          }
+        ]
+      },
+      "searchForm": {
+        "navbarForm": {
+          "icon": "<i class=\"fa fa-search text-muted\"></i>",
+          "placeholder": "Suchen..."
+        }
+      },
+      "userNavigation": {
+        "links": {
+          "navList": [
+            {
+              "text": "Anmelden",
+              "url": "link.pages-login",
+              "isActive": false
+            }
+          ]
+        },
+        "dropdown": false
+      }
+    }
+  },
+  "navSecondary": false,
+  "sliders": {
+    "referenceSlider": {
+      "slider": {
+        "id": "referenceSlider",
+        "settings": {
+          "dots": false,
+          "slidesToScroll":3,
+          "slidesToShow": 3
+        },
+        "items": [
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"}
+        ]
+      }
+    }
+  },
+  "progressTracker": {
+    "items": [
+      {
+        "text": "1",
+        "href": "#step1",
+        "id": "step1",
+        "style": "width:15%",
+        "class": "step1",
+        "isActive": false
+      },
+      {
+        "text": "2",
+        "href": "#step2",
+        "id": "step2",
+        "style": "width:15%",
+        "class": "step2",
+        "isActive": false
+      },
+      {
+        "text": "3",
+        "href": "#step3",
+        "id": "step3",
+        "style": "width:15%",
+        "class": "step3",
+        "isActive": true
+      }
+    ]
+  }
+}
