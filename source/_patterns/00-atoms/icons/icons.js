@@ -1,7 +1,7 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
-import styles from "../../../css/app-arena-styles.scss"
+import styles from "./icons.scss"
 
 
 export default class Icon extends ReactComponent {
@@ -33,7 +33,7 @@ export default class Icon extends ReactComponent {
             {
                 'fa-border': this.props.border,
                 'fa-pulse': this.props.pulse,
-                'fa-spinner': this.props.spin,
+                'fa-spin': this.props.spin,
             },
             this.props.className
         );
