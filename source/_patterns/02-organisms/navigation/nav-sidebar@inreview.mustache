@@ -8,5 +8,12 @@
         <hr />
 
         {{> molecules-navs:nav-pills nav-stacked }}
+
+        {{# secondaryGroup }}
+            <hr />
+            <p>{{title}}</p>
+            {{> molecules-navs:nav-pills nav-stacked }}
+        {{/secondaryGroup}}
+
     </nav>
 {{/ navSidebar }}
