@@ -1,6 +1,6 @@
 {
   "name": "apparena-patterns",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "license": "MIT",
   "description": "Styleguide and patterns of App-Arena.com",
   "keywords": [
@@ -12,6 +12,7 @@
     "react"
   ],
   "scripts": {
+    "build:dev": "npm run build:babel && npm run build:copy-files",
     "build": "npm run build:babel && npm run build:copy-files && npm run build:umd",
     "build:babel": "babel ./source/_patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./build/apparena-patterns-react/_patterns --copy-files",
     "build:copy-files": "babel-node ./build/scripts/copy-files.js",

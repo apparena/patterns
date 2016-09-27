@@ -40,7 +40,7 @@ export default class Stick extends ReactComponent {
         positioning: "top center",
         verticalOffset: 0,
         horizontalOffset: 0,
-        zIndex: 2030,
+        zIndex: 1030,
         fixed: false,
         overlay: false
     };

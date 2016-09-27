@@ -98,12 +98,14 @@ export default class Modal extends ReactComponent {
                                     {this.props.saveText}
                                 </Button>
                                 }
+                                {(this.props.onClose && this.props.closeText) &&
                                 <Button
                                     type="link"
                                     onClick={this.props.onClose}
                                 >
                                     {this.props.closeText}
                                 </Button>
+                                }
                             </div>
                             {(this.props.hintText) &&
                             <div className={styles["modal-footer-hint"]}>{this.props.hintText}</div>
