@@ -13,7 +13,7 @@
         }
       ]
     },
-    "metadata": "<img src=\"public/images/sample/avatar1.jpg\"/> <a href=\"#\">Company name</a> has 123 Apps",
+    "metadata": "<img height=\"16\" src=\"/images/sample/avatar1.jpg\"/> <a href=\"#\">Company name</a> has 123 Apps",
     "title": "Page Title"
   }
 }
