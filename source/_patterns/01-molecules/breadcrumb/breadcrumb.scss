@@ -1,0 +1,17 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+//@import "~bootstrap/scss/breadcrumb";
+
+/*=========================================================================
+  Molecules Breadcrumb
+ ========================================================================== */
+
+.breadcrumb {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  font-size: 0.9rem;
+}

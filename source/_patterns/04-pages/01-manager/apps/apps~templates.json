@@ -204,7 +204,7 @@
       }
     ]
   },
-  "pageTitle": {
+  "pageHeader": {
     "title": "Vorlagen Übersicht",
     "cta": {
       "btnText": "Vorlage erstellen"
