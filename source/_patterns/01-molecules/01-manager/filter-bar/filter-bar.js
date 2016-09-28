@@ -62,48 +62,7 @@ export default class FilterBar extends ReactComponent {
                     default: PropTypes.oneOf(['ASC', 'DESC'])
                 })),
             })
-        }).isRequired,
-        //filter bar surface
-        /*
-         txtFilterButton: PropTypes.string,
-         txtSearchPlaceholder: PropTypes.string,
-         txtSearchAddon: PropTypes.string,
-         txtSortButton: PropTypes.string,
-         txtSortHeader: PropTypes.array,
-         menuClass: PropTypes.string,
-         selected: PropTypes.object,
-         loading: PropTypes.bool,
-         items: PropTypes.number,
-         currentPage: PropTypes.number,
-         //functions
-         onFilterApply: PropTypes.func.isRequired,
-         onFilterToggle: PropTypes.func.isRequired,
-         onFilterSelect: PropTypes.func.isRequired,
-         onFilterInput: PropTypes.func.isRequired,
-         onSetStyle: PropTypes.func.isRequired,
-         //collapsible filter menu
-         expanded: PropTypes.bool,
-         buttonClass: PropTypes.string,
-         collapseClass: PropTypes.string,
-         style: PropTypes.object,
-         //filter: PropTypes.object,
-         inputValue: PropTypes.string*/
-    };
-
-    static defaultProps = {
-        //filter: "Filter",
-        txtSearchPlaceholder: "Search for ...",
-        txtSearchAddon: "",
-        txtSortButton: "Sort list",
-        txtSortHeader: ["Category 1", "Category 2"],
-        menuClass: "dropdown-menu dropdown-menu-right",
-        expanded: false,
-        buttonClass: "btn btn-primary collapsed",
-        collapseClass: "collapse",
-        style: {height: 0},
-        filter: {},
-        loading: false,
-
+        }).isRequired
     };
 
     createDropdownItems() {
@@ -245,7 +204,7 @@ export default class FilterBar extends ReactComponent {
                     <div className="filter-bar-filter m-r-1">
                         <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"} onClick={this.onFilterChangeHandler.bind(this, "toggle")} data-toggle="collapse" href="#collapseFilter" aria-expanded={this.props.filter.status.expanded} aria-controls="collapseFilter">
                             <Icon name="filter"/>
-                            {this.props.filter.buttonText ? this.props.filter.buttonText : "Filter"}
+                            {this.props.filter.buttonText ? this.props.filter.buttonText : " Filter"}
                         </a>
                     </div>
                     <div className="filter-bar-search m-r-1">

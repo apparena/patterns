@@ -33,7 +33,7 @@ export default class Icon extends ReactComponent {
             {
                 'fa-border': this.props.border,
                 'fa-pulse': this.props.pulse,
-                'fa-spinner': this.props.spin,
+                'fa-spin': this.props.spin,
             },
             this.props.className
         );
