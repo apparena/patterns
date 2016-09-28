@@ -29,7 +29,7 @@ export default class PopOver extends ReactComponent {
 
     getInitState() {
         return {
-            showing: this.props.open
+            open: this.props.open
         };
     }
 
