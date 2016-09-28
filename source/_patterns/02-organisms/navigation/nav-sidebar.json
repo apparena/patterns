@@ -11,6 +11,18 @@
       {
         "text": "Sidebar Nav 2"
       }
-    ]
+    ],
+    "secondaryGroup": {
+      "title": "Secondary Sidebar Nav",
+      "navList": [
+        {
+          "text": "Secondary Nav 1",
+          "isActive": true
+        },
+        {
+          "text": "Secondary Nav 2"
+        }
+      ]
+    }
   }
 }

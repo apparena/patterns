@@ -1,0 +1,19 @@
+{
+  "pageHeader": {
+    "btnGroup": {
+      "ariaLabel": "App erstellen",
+      "items": [
+        {
+          "btnText": "Action 2",
+          "btnClass": "btn-secondary"
+        },
+        {
+          "btnText": "App erstellen",
+          "btnClass": "btn-primary"
+        }
+      ]
+    },
+    "metadata": "<img height=\"16\" src=\"/images/sample/avatar1.jpg\"/> <a href=\"#\">Company name</a> has 123 Apps",
+    "title": "Page Title"
+  }
+}

@@ -2,14 +2,16 @@
  * Pattern Dependencies
  */
 @import "../../../css/scss/abstracts/variables";
-@import "../../../css/scss/abstracts/mixins";
-@import "~bootstrap/scss/modal";
-@import "~bootstrap/scss/close";
+//@import "~bootstrap/scss/breadcrumb";
 
 /*=========================================================================
-  Molecules Modal
+  Molecules Breadcrumb
  ========================================================================== */
 
-.show {
-  display: block;
+.breadcrumb {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  font-size: 0.9rem;
 }

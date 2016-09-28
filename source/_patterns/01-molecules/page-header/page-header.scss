@@ -2,14 +2,11 @@
  * Pattern Dependencies
  */
 @import "../../../css/scss/abstracts/variables";
-@import "../../../css/scss/abstracts/mixins";
-@import "~bootstrap/scss/modal";
-@import "~bootstrap/scss/close";
 
 /*=========================================================================
-  Molecules Modal
+  Molecules Page Header
  ========================================================================== */
 
-.show {
-  display: block;
+.page-header-metadata {
+    font-size: 0.9rem;
 }

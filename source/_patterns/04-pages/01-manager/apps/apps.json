@@ -265,7 +265,7 @@
       }
     ]
   },
-  "pageTitle": {
+  "pageHeader": {
     "title": "App Übersicht",
     "cta": {
       "btnText": "App erstellen"

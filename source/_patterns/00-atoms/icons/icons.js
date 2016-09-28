@@ -1,7 +1,7 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
-import styles from "../../../css/app-arena-styles.scss"
+import styles from "./icons.scss"
 
 
 export default class Icon extends ReactComponent {
