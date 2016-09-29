@@ -10,7 +10,7 @@ export default class PopOver extends ReactComponent {
         children: PropTypes.element.isRequired,
         className: PropTypes.string,
         title: PropTypes.string,
-        content: PropTypes.element.isRequired,
+        content: PropTypes.element,
         open: PropTypes.bool,
         positioning: PropTypes.oneOf([
             'top',
@@ -50,11 +50,13 @@ export default class PopOver extends ReactComponent {
     calculateVerticalOffset() {
         if (this.props.positioning === 'top') return 20;
         else if (this.props.positioning === 'bottom') return -20;
+        else return 0;
     }
 
     calculateHorizontalOffset() {
         if (this.props.positioning === 'left') return -130;
         else if (this.props.positioning === 'right') return 20;
+        else return 0;
     }
 
     renderPopOver() {
