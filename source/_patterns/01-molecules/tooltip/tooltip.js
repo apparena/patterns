@@ -10,7 +10,6 @@ export default class Tooltip extends ReactComponent {
         children: PropTypes.node.isRequired,
         label: PropTypes.string.isRequired,
         className: PropTypes.string,
-        fixed: PropTypes.bool,
         positioning: PropTypes.oneOf([
             'top',
             'bottom',

@@ -1,5 +1,6 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
+import Draggable from "../../react-utils/draggable";
 import cx from "classnames";
 import styles from "./modal.scss";
 import Input from "../../00-atoms/forms/input";
@@ -22,12 +23,14 @@ export default class Modal extends ReactComponent {
         closeText: PropTypes.string,
         visible: PropTypes.bool,
         children: PropTypes.node.isRequired,
+        draggable: PropTypes.bool
     };
 
     static defaultProps = {
         saveText: "Save",
         closeText: "Cancel",
         visible: true,
+        draggable: false,
         searchPlaceholder: " ",
         size: "sm",
     };
@@ -56,64 +59,80 @@ export default class Modal extends ReactComponent {
         }
     }
 
+    renderModalContent() {
+        const {size, headerText, linkLocation, linkText, searchPlaceholder, onSearch, children, saveText, onSave, onClose, closeText, hintText} = this.props;
+        return (
+            <div className={cx(styles["modal-dialog"], styles["modal-" + size])}>
+                <div className={cx(styles["modal-content"], styles["modal-content-" + size])}>
+                    <div className={cx(styles["modal-header"])}>
+                        <button type="button" className={styles.close} onClick={onClose}>
+                            <Icon name="times"/>
+                        </button>
+                        <h4 className={styles["modal-title"]}>{headerText}</h4>
+                        {(linkLocation && linkText && size !== "small") &&
+                        <a
+                            href={linkLocation}
+                            className={styles["modal-header-link"]}
+                        >
+                            {linkText}
+                        </a>
+                        }
+                        {(onSearch !== undefined) &&
+                        <Input
+                            placeholder={searchPlaceholder}
+                            inputClass={styles["modal-header-input"]}
+                            inputValue={this.state.searchQuery}
+                            onFilterInput={onSearch}
+                        />
+                        }
+                    </div>
+                    <div className={styles["modal-body"]}>
+                        {children}
+                    </div>
+                    <div className={styles["modal-footer"]}>
+                        {(onSave && saveText) &&
+                        <Button
+                            type="primary"
+                            onClick={onSave}
+                        >
+                            {saveText}
+                        </Button>
+                        }
+                        {(onClose && closeText) &&
+                        <Button
+                            type="link"
+                            onClick={onClose}
+                        >
+                            {closeText}
+                        </Button>
+                        }
+                    </div>
+                    {(hintText) &&
+                    <div className={styles["modal-footer-hint"]}>{hintText}</div>
+                    }
+                </div>
+            </div>
+        )
+    }
+
     render() {
+        const {visible, classNames, draggable} = this.props;
         return (
             <div>
                 <div
-                    className={cx(styles.modal, (this.props.visible) && styles.show, this.props.classNames)}
+                    className={cx(styles.modal, (visible) && styles.show, classNames)}
                 >
-                    <div className={cx(styles["modal-dialog"], styles["modal-" + this.props.size])}>
-                        <div className={cx(styles["modal-content"], styles["modal-content-" + this.props.size])}>
-                            <div className={styles["modal-header"]}>
-                                <button type="button" className={styles.close} onClick={this.props.onClose}>
-                                    <Icon name="times"/>
-                                </button>
-                                <h4 className={styles["modal-title"]}>{this.props.headerText}</h4>
-                                {(this.props.linkLocation && this.props.linkText && this.props.size !== "small") &&
-                                <a
-                                    href={this.props.linkLocation}
-                                    className={styles["modal-header-link"]}
-                                >
-                                    {this.props.linkText}
-                                </a>
-                                }
-                                {(this.props.onSearch !== undefined) &&
-                                <Input
-                                    placeholder={this.props.searchPlaceholder}
-                                    inputClass={styles["modal-header-input"]}
-                                    inputValue={this.state.searchQuery}
-                                    onFilterInput={this.props.onSearch}
-                                />
-                                }
-                            </div>
-                            <div className={styles["modal-body"]}>
-                                {this.props.children}
-                            </div>
-                            <div className={styles["modal-footer"]}>
-                                {(this.props.onSave && this.props.saveText) &&
-                                <Button
-                                    type="primary"
-                                    onClick={this.props.onSave}
-                                >
-                                    {this.props.saveText}
-                                </Button>
-                                }
-                                {(this.props.onClose && this.props.closeText) &&
-                                <Button
-                                    type="link"
-                                    onClick={this.props.onClose}
-                                >
-                                    {this.props.closeText}
-                                </Button>
-                                }
-                            </div>
-                            {(this.props.hintText) &&
-                            <div className={styles["modal-footer-hint"]}>{this.props.hintText}</div>
-                            }
-                        </div>
-                    </div>
+                    {draggable ?
+                        <Draggable
+                            enabled={draggable}
+                            handle={styles["modal-header"]}
+                        >
+                            {this.renderModalContent()}
+                        </Draggable>
+                        :
+                        this.renderModalContent()}
                 </div>
-                <div className={cx(this.props.visible && styles["modal-backdrop"])}></div>
+                {!draggable && <div className={cx(visible && styles["modal-backdrop"])}></div>}
             </div>
         );
     }

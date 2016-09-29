@@ -13,3 +13,10 @@
 .show {
   display: block;
 }
+
+.draggable {
+  position: absolute;
+  .modal-header {
+    cursor: move;
+  }
+}

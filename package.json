@@ -44,6 +44,7 @@
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
     "node-sass": "^3.8.0",
     "react": "^15.3.0",
+    "react-draggable": "^2.2.2",
     "react-gemini-scrollbar": "^2.1.5",
     "react-select": "^1.0.0-rc.1",
     "react-toggle": "^2.1.1",
