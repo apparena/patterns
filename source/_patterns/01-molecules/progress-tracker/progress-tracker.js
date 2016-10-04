@@ -16,9 +16,11 @@ export default class ProgressTracker extends ReactComponent {
 
     render() {
         const {children} = this.props;
+        const numberSteps = React.Children.count(children);
+        const style = {width: (100 / numberSteps) + "%"};
 
         const steps = React.Children.map(children, (step, index) => {
-            return React.cloneElement(step, step.props);
+            return React.cloneElement(step, {...step.props, style});
         });
 
         return (
