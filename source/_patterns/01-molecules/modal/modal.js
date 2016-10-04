@@ -1,5 +1,6 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
+import Animate from "../../react-utils/animate";
 import Draggable from "../../react-utils/draggable";
 import cx from "classnames";
 import styles from "./modal.scss";
@@ -23,10 +24,12 @@ export default class Modal extends ReactComponent {
         closeText: PropTypes.string,
         visible: PropTypes.bool,
         children: PropTypes.node.isRequired,
-        draggable: PropTypes.bool
+        draggable: PropTypes.bool,
+        transition: PropTypes.string,
     };
 
     static defaultProps = {
+        transition: "expandIn",
         saveText: "Save",
         closeText: "Cancel",
         visible: true,
@@ -116,22 +119,24 @@ export default class Modal extends ReactComponent {
     }
 
     render() {
-        const {visible, classNames, draggable} = this.props;
+        const {visible, classNames, draggable, transition} = this.props;
         return (
             <div>
-                <div
-                    className={cx(styles.modal, (visible) && styles.show, classNames)}
-                >
-                    {draggable ?
-                        <Draggable
-                            enabled={draggable}
-                            handle={styles["modal-header"]}
-                        >
-                            {this.renderModalContent()}
-                        </Draggable>
-                        :
-                        this.renderModalContent()}
-                </div>
+                <Animate transition={transition}>
+                    <div
+                        className={cx(styles.modal, (visible) && styles.show, classNames)}
+                    >
+                        {draggable ?
+                            <Draggable
+                                enabled={draggable}
+                                handle={styles["modal-header"]}
+                            >
+                                {this.renderModalContent()}
+                            </Draggable>
+                            :
+                            this.renderModalContent()}
+                    </div>
+                </Animate>
                 {!draggable && <div className={cx(visible && styles["modal-backdrop"])}></div>}
             </div>
         );

@@ -9,6 +9,7 @@ export default class Tooltip extends ReactComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
         label: PropTypes.string.isRequired,
+        transition: PropTypes.string,
         className: PropTypes.string,
         positioning: PropTypes.oneOf([
             'top',
@@ -32,6 +33,7 @@ export default class Tooltip extends ReactComponent {
     };
 
     static defaultProps = {
+        transition: "fadeIn",
         positioning: 'top center'
     };
 
@@ -89,6 +91,7 @@ export default class Tooltip extends ReactComponent {
                         positioning={this.props.positioning}
                         fixed={this.props.fixed}
                         zIndex={this.props.zIndex}
+                        transition={this.props.transition}
                     >
                         <div className={cx(styles.tooltip, styles[this.props.positioning.split(" ")[0]])}>
                             {label}

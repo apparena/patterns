@@ -1,4 +1,5 @@
-import velocity from 'velocity-animate';
+import velocity from "velocity-animate/velocity";
+import "velocity-animate/velocity.ui";
 import {PropTypes} from "react";
 import {findDOMNode} from "react-dom";
 import ReactComponent from "./component";
@@ -19,28 +20,28 @@ export default class Animate extends ReactComponent {
         initial: true
     };
 
-    componentDidMount () {
+    componentDidMount() {
         if (this.props.initial) {
             this.makeTransition(this.props);
         }
     }
 
-    componentWillReceiveProps (nextProps) {
+    componentWillReceiveProps(nextProps) {
         if (this.props.transition !== nextProps.transition) {
             this.makeTransition(nextProps);
         }
     }
 
-    makeTransition (props) {
+    makeTransition(props) {
         const dom = findDOMNode(this);
-        const transition = props.transition;
+        const transition = `transition.${props.transition}`;
         velocity(dom, transition, Object.assign({
             duration: props.duration,
             display: null
         }, props.options));
     }
 
-    render () {
+    render() {
         return this.props.children;
     }
 }
