@@ -20,7 +20,7 @@ export default class Notification extends ReactComponent {
     };
 
     static defaultProps = {
-        transition: "fadeIn",
+        transition: "slideDownIn",
         dismissible: false,
     };
 

@@ -9,7 +9,8 @@ export default class TextElementComponent extends ReactComponent {
         onKeyUp: PropTypes.func,
         id: PropTypes.string,
         type: PropTypes.string,
-        disabled: PropTypes.bool
+        disabled: PropTypes.bool,
+        autoFocus: PropTypes.bool,
     };
 
     static defaultProps = {

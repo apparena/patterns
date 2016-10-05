@@ -2,6 +2,12 @@ import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 
 export default class TableList extends ReactComponent {
+    static propTypes = {
+        children: PropTypes.oneOfType([
+            PropTypes.element,
+            PropTypes.arrayOf(PropTypes.element)
+        ]).isRequired
+    };
 
     render() {
         return (

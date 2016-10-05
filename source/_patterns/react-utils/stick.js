@@ -30,7 +30,6 @@ export default class Stick extends ReactComponent {
         verticalOffset: PropTypes.number,
         horizontalOffset: PropTypes.number,
         onClose: PropTypes.func,
-        fixed: PropTypes.bool,
         overlay: PropTypes.bool,
         zIndex: PropTypes.number,
     };
@@ -41,7 +40,6 @@ export default class Stick extends ReactComponent {
         verticalOffset: 0,
         horizontalOffset: 0,
         zIndex: 1030,
-        fixed: false,
         overlay: false
     };
 
@@ -55,15 +53,13 @@ export default class Stick extends ReactComponent {
     }
 
     componentDidMount() {
-        if (this.props.fixed) {
-            this.mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel";
-            this.scrollBind = ::this.onScroll;
-            this.resizeBind = ::this.onResize;
-            this.onCloseBind = ::this.onClose;
-            document.body.addEventListener(this.mousewheelevt, this.scrollBind, false);
-            window.addEventListener("resize", this.resizeBind, false);
-            this.props.onClose && document.body.addEventListener("mousedown", this.onCloseBind, false); // eslint-disable-line
-        }
+        this.mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel";
+        // this.scrollBind = ::this.onScroll;
+        this.resizeBind = ::this.onResize;
+        this.onCloseBind = ::this.onClose;
+        // document.body.addEventListener(this.mousewheelevt, this.scrollBind, false);
+        window.addEventListener("resize", this.resizeBind, false);
+        this.props.onClose && document.body.addEventListener("mousedown", this.onCloseBind, false); // eslint-disable-line
         this.updatePosition();
     }
 
@@ -75,7 +71,7 @@ export default class Stick extends ReactComponent {
 
     componentWillUnmount() {
         if (this.props.fixed) {
-            document.body.removeEventListener(this.mousewheelevt, this.scrollBind);
+            // document.body.removeEventListener(this.mousewheelevt, this.scrollBind);
             window.removeEventListener("resize", this.resizeBind);
             this.props.onClose && document.body.removeEventListener("mousedown", this.onCloseBind); // eslint-disable-line
         }
@@ -97,16 +93,16 @@ export default class Stick extends ReactComponent {
 
     onScroll() {
         this.updatePosition();
-        this.updateTimeout = setTimeout(::this.updatePosition, 0);
     }
 
     onResize() {
         this.updatePosition();
-        this.updateTimeout = setTimeout(::this.updatePosition, 10);
     }
 
     updatePosition() {
-        this.setState(this.getPosition());
+        if (this.holder) {
+            this.setState(this.getPosition());
+        }
     }
 
     getPosition() {
@@ -116,16 +112,13 @@ export default class Stick extends ReactComponent {
             positioning: this.props.positioning
         };
         const rect = this.props.element.getBoundingClientRect();
-        let {top, left} = rect;
         const {overlay} = this.props;
         const thisRect = this.holder.getBoundingClientRect();
         const windowHeight = window.innerHeight;
         const windowWidth = window.innerWidth;
 
-        if (!this.props.fixed) {
-            top = rect.top + document.body.scrollTop;
-            left = rect.left + document.body.scrollLeft;
-        }
+        let top = rect.top + document.body.scrollTop;
+        let left = rect.left + document.body.scrollLeft;
 
         switch (this.props.positioning) {
             // LEFT
@@ -226,7 +219,7 @@ export default class Stick extends ReactComponent {
 
         return (
             <Animate transition={transition}>
-                <div className={cx(styles.stick, className, this.props.fixed && styles.fixed)}
+                <div className={cx(styles.stick, className)}
                      style={style}
                      ref={c=> (this.holder = c)}
                 >

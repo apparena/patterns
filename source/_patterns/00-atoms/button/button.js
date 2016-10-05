@@ -27,7 +27,8 @@ export default class Button extends ReactComponent {
         className: PropTypes.string,
         children: PropTypes.oneOfType([
             PropTypes.string,
-            PropTypes.element
+            PropTypes.element,
+            PropTypes.arrayOf(PropTypes.element)
         ]),
         href: PropTypes.string,
         isActive: PropTypes.bool,
