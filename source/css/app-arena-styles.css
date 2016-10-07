@@ -7289,6 +7289,15 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 /**
  * Pattern Dependencies
  */
+/*=========================================================================
+  Molecules Select
+ ========================================================================== */
+select.form-control {
+  overflow-y: auto; }
+
+/**
+ * Pattern Dependencies
+ */
 /**
  * Pattern Dependencies
  */
