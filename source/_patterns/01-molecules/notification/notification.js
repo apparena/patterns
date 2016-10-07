@@ -4,7 +4,6 @@ import cx from "classnames";
 import styles from "./notification.scss";
 import Animate from "../../react-utils/animate";
 
-
 export default class Notification extends ReactComponent {
     static propTypes = {
         header: PropTypes.string.isRequired,
@@ -20,7 +19,7 @@ export default class Notification extends ReactComponent {
     };
 
     static defaultProps = {
-        transition: "fadeIn",
+        transition: "slideDownIn",
         dismissible: false,
     };
 

@@ -25,10 +25,6 @@ export default class Button extends ReactComponent {
     static propTypes = {
         block: PropTypes.bool,
         className: PropTypes.string,
-        children: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.element
-        ]),
         href: PropTypes.string,
         isActive: PropTypes.bool,
         isDisabled: PropTypes.bool,

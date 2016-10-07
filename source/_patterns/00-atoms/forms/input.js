@@ -1,5 +1,6 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
+import styles from "./forms.scss"
 
 export default class TextElementComponent extends ReactComponent {
     static propTypes = {
@@ -14,7 +15,7 @@ export default class TextElementComponent extends ReactComponent {
     };
 
     static defaultProps = {
-        className: "form-control",
+        className: styles["form-control"],
         type: "text",
         autoFocus: false,
         disabled: false

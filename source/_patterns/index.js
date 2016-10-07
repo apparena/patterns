@@ -1,11 +1,8 @@
-//Main Component
 import ReactComponent from "./react-utils/component";
 import Animate from "./react-utils/animate";
 import Portal from "./react-utils/portal";
 import Stick from "./react-utils/stick";
 import Scrollable from "./react-utils/scrollable";
-
-//Atoms
 import Button from "./00-atoms/button/button";
 import Checkbox from "./00-atoms/forms/checkbox";
 import Col from "./00-atoms/grid/col";
@@ -15,8 +12,6 @@ import Input from "./00-atoms/forms/input";
 import Row from "./00-atoms/grid/row";
 import Spinner from "./00-atoms/spinner/spinner";
 import Select from "./00-atoms/forms/select-menu";
-
-//Molecules
 import Alert from "./01-molecules/alert/alert";
 import BreadCrumb from "./01-molecules/breadcrumb/breadcrumb";
 import ButtonGroup from "./01-molecules/button-group/button-group";
@@ -27,6 +22,7 @@ import FilterBar from "./01-molecules/01-manager/filter-bar/filter-bar";
 import InputGroup from "./01-molecules/input-group/input-group";
 import Jumbotron from "./01-molecules/jumbotron/jumbotron";
 import Modal from "./01-molecules/modal/modal";
+import Navbar from "./01-molecules/navbar/navbar";
 import Notification from "./01-molecules/notification/notification";
 import Popover from "./01-molecules/popover/popover";
 import Tooltip from "./01-molecules/tooltip/tooltip";
@@ -36,7 +32,8 @@ import ListGroup from "./01-molecules/list-group/list-group";
 //Organisms
 import CardsList from "./02-organisms/lists/cards-list";
 import TableList from "./02-organisms/lists/table-list";
-
+import Table from "./00-atoms/table/table";
+import Tag from "./00-atoms/tag/tag";
 
 export {
     ReactComponent,
@@ -63,6 +60,7 @@ export {
     InputGroup,
     Jumbotron,
     Modal,
+    Navbar,
     Notification,
     Popover,
     Tooltip,
@@ -70,4 +68,6 @@ export {
     ListGroup,
     CardsList,
     TableList,
+    Table,
+    Tag,
 }
