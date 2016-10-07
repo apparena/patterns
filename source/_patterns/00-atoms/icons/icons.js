@@ -14,7 +14,7 @@ export default class Icon extends ReactComponent {
         name: PropTypes.string.isRequired,
         pulse: PropTypes.bool,
         rotate: PropTypes.oneOf([90, 180, 270]),
-        size: PropTypes.oneOf(['lg', '2x', '3x', '4x', '5x']),c
+        size: PropTypes.oneOf(['lg', '2x', '3x', '4x', '5x']),
         spin: PropTypes.bool,
         stack: PropTypes.oneOf(['1x', '2x']),
     };
