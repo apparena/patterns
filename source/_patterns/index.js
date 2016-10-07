@@ -31,6 +31,7 @@ import Notification from "./01-molecules/notification/notification";
 import Popover from "./01-molecules/popover/popover";
 import Tooltip from "./01-molecules/tooltip/tooltip";
 import ProgressTracker from "./01-molecules/progress-tracker/progress-tracker";
+import ListGroup from "./01-molecules/list-group/list-group";
 
 //Organisms
 import CardsList from "./02-organisms/lists/cards-list";
@@ -66,6 +67,7 @@ export {
     Popover,
     Tooltip,
     ProgressTracker,
+    ListGroup,
     CardsList,
     TableList,
 }

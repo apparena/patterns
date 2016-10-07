@@ -16,8 +16,18 @@ export default class PopOver extends ReactComponent {
             'top',
             'bottom',
             'left',
-            'right'
-        ]),
+            'right',
+            'top left',
+            'top center',
+            'top right',            'right top',
+            'right middle',
+            'right bottom',
+            'bottom right',
+            'bottom center',
+            'bottom left',
+            'left top',
+            'left middle',
+            'left bottom']),
         zIndex: PropTypes.number
     };
 
