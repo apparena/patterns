@@ -3,7 +3,7 @@ import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./tag.scss";
 
-const BUTTON_TYPES = [
+const TAG_TYPES = [
     "default",
     "primary",
     "success",
@@ -15,7 +15,7 @@ const BUTTON_TYPES = [
 export default class Button extends ReactComponent {
     static propTypes = {
         className: PropTypes.string,
-        type: PropTypes.oneOf(BUTTON_TYPES),
+        type: PropTypes.oneOf(TAG_TYPES),
         pill: PropTypes.bool
     };
     static defaultProps = {
