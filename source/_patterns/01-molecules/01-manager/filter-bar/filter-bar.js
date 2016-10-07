@@ -126,11 +126,6 @@ export default class FilterBar extends ReactComponent {
         this.props.listStyle.onSort(identifier, event);
     }
 
-    /*
-    onInputChangeHandler(event){
-        this.props.input.onInput(event);
-    }*/
-
     onStyleChangeHandler(identifier, event) {
         this.props.listStyle.onStyle(identifier, event);
     }
@@ -201,12 +196,13 @@ export default class FilterBar extends ReactComponent {
         return (
             <div key={this.getUniqueKey()}>
                 <div className="filter-bar p-a-1">
+                    {this.props.filter.groups.length &&
                     <div className="filter-bar-filter m-r-1">
                         <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"} onClick={this.onFilterChangeHandler.bind(this, "toggle")} data-toggle="collapse" href="#collapseFilter" aria-expanded={this.props.filter.status.expanded} aria-controls="collapseFilter">
                             <Icon name="filter"/>
                             {this.props.filter.buttonText ? this.props.filter.buttonText : " Filter"}
                         </a>
-                    </div>
+                    </div>}
                     <div className="filter-bar-search m-r-1">
                         <div className="input-group" key={this.getUniqueKey()}>
                         <span className="input-group-addon" key="loading-icon">
@@ -235,13 +231,14 @@ export default class FilterBar extends ReactComponent {
                     }
                     {this.createStyleButtons()}
                 </div>
+                {this.props.filter &&
                 <div className={cx("collapse", this.props.filter.status.expanded ? "in" : "")} id="collapseFilter" style={this.props.filter.status.expanded ? {} : {height: 0}} aria-expanded={this.props.filter.status.expanded} key={this.getUniqueKey()}>
                     <div className="card card-block">
                         <div className="row">
                             {this.createFilterElements()}
                         </div>
                     </div>
-                </div>
+                </div>}
             </div>
         )
     }
