@@ -29,6 +29,8 @@ import Tooltip from "./01-molecules/tooltip/tooltip";
 import ProgressTracker from "./01-molecules/progress-tracker/progress-tracker";
 import CardsList from "./02-organisms/lists/cards-list";
 import TableList from "./02-organisms/lists/table-list";
+import Table from "./00-atoms/table/table";
+import Tag from "./00-atoms/tag/tag";
 
 export {
     ReactComponent,
@@ -62,4 +64,6 @@ export {
     ProgressTracker,
     CardsList,
     TableList,
+    Table,
+    Tag,
 }

@@ -69,7 +69,7 @@ export default class Modal extends ReactComponent {
                 <div className={cx(styles["modal-content"], styles["modal-content-" + size])}>
                     <div className={cx(styles["modal-header"])}>
                         <button type="button" className={styles.close} onClick={onClose}>
-                            <Icon name="times"/>
+                            <Icon name="times-circle"/>
                         </button>
                         <h4 className={styles["modal-title"]}>{headerText}</h4>
                         {(linkLocation && linkText && size !== "small") &&
@@ -93,20 +93,20 @@ export default class Modal extends ReactComponent {
                         {children}
                     </div>
                     <div className={styles["modal-footer"]}>
-                        {(onSave && saveText) &&
-                        <Button
-                            type="primary"
-                            onClick={onSave}
-                        >
-                            {saveText}
-                        </Button>
-                        }
                         {(onClose && closeText) &&
                         <Button
                             type="link"
                             onClick={onClose}
                         >
                             {closeText}
+                        </Button>
+                        }
+                        {(onSave && saveText) &&
+                        <Button
+                            type="primary"
+                            onClick={onSave}
+                        >
+                            {saveText}
                         </Button>
                         }
                     </div>
