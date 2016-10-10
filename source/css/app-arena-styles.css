@@ -7710,6 +7710,43 @@ button.close {
 .o-nav-secondary-btnList {
   margin-top: -7px; }
 
+/**
+ * Pattern Dependencies
+ */
+/**
+ * Pattern Dependencies
+ */
+/*=========================================================================
+  Variable definitions
+ ========================================================================== */
+/*=========================================================================
+  Organism Navigation Sidebar
+ ========================================================================== */
+#o-nav-sidebar .o-nav-sidebar-header .media-object {
+  max-width: 48px; }
+
+#o-nav-sidebar .o-nav-sidebar-header .media-body {
+  align-items: center;
+  display: flex; }
+
+#o-nav-sidebar .o-nav-sidebar-header > hr {
+  margin: 1rem -1rem; }
+
+#o-nav-sidebar .nav-pills .nav-link.active, #o-nav-sidebar .nav-pills .nav-link.active:focus, #o-nav-sidebar .nav-pills .nav-link.active:hover,
+#o-nav-sidebar .nav-pills .nav-item.open .nav-link,
+#o-nav-sidebar .nav-pills .nav-item.open .nav-link:focus,
+#o-nav-sidebar .nav-pills .nav-item.open .nav-link:hover {
+  color: inherit;
+  cursor: default;
+  background-color: #f6f6f6;
+  border-left: 5px solid #478AB8;
+  margin-left: -15px;
+  padding-left: 25px;
+  font-weight: bold; }
+
+#o-nav-sidebar .o-nav-sidebar-scondaryGroup .title {
+  color: #818a91; }
+
 /*------------------------------------*    $ABSTRACTS
 \*------------------------------------*/
 /*------------------------------------*    #MIXINS
@@ -7803,7 +7840,7 @@ button.close {
   * Left column in main content area
   */
 .t-col-left {
-  background-color: #666666; }
+  background-color: #f6f6f6; }
 
 /**
   * Main column

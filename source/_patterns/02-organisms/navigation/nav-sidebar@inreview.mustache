@@ -1,6 +1,22 @@
 {{# navSidebar }}
     <nav id="o-nav-sidebar">
 
+        {{# header }}
+            <div class="o-nav-sidebar-header">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-circle img-fluid" src="{{ image.src }}" title="{{ image.title }}" alt="{{ image.title }}">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <a class="media-heading" href="#">{{{ title }}}</a>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        {{/header}}
+
         {{# btnList }}
             {{> atoms-button }}
         {{/btnList}}

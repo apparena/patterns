@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width"/>
     <meta about="App-Arena.com">
 
-    <!--<link rel="stylesheet" href="../../css/style.css?1474964044" media="all"/>-->
-    <link rel="stylesheet" href="../../css/app-arena-styles.css?1474964044" media="all"/>
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1474964044" media="all"/>
+    <!--<link rel="stylesheet" href="../../css/style.css?1476086856" media="all"/>-->
+    <link rel="stylesheet" href="../../css/app-arena-styles.css?1476086856" media="all"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1476086856" media="all"/>
 
-    <!--<link rel="stylesheet" href="../../css/bootstrap.css?1474964044" media="all"/>
-    <link rel="stylesheet" href="../../css/bootstrap-theme.css?1474964044" media="all"/>-->
+    <!--<link rel="stylesheet" href="../../css/bootstrap.css?1476086856" media="all"/>
+    <link rel="stylesheet" href="../../css/bootstrap-theme.css?1476086856" media="all"/>-->
 
     <script src="../../js/vendor/jquery/dist/jquery.min.js"></script>
     <script src="../../js/vendor/tether/dist/js/tether.min.js"></script>
@@ -25,8 +25,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1474964044" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1474964044" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1476086856" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1476086856" media="all" />
 
     <!-- End Pattern Lab -->
 
@@ -507,8 +507,9 @@
             
           </div>
           <div class="sg-pattern-example">
-            <textarea placeholder="Text area"></textarea>
-
+            <textarea class="form-control   " placeholder="Enter your data here..."
+       value="" data-toggle="tooltip" data-placement="right" title="This is a help message" 
+    ></textarea>
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-text-area" class="sg-pattern-data">
             {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"forms"},"patternDesc":"<p>[Insert description here]<\/p>","patternExtension":"mustache","patternName":"Text Area","patternPartial":"atoms-text-area","patternState":"inprogress"}
@@ -1221,77 +1222,79 @@
             <div class="row">
                     <div class="col-md-4">
                         <legend class="filter-title col-form-legend">Filter Title 1</legend>
-                                    <div class="form-check">
-                                        <div class="radio ">
-                                            <label class="form-check-label">
-                                                <input type="radio" name="filter1"  checked="checked"  
-                                                         />
-                                                Filter Option 1
-                                            </label>
+                                <div class="radioButtons ">
+                                        <div class="form-check">
+                                            <div class="radio ">
+                                                <label class="form-check-label">
+                                                    <input type="radio" name="filter1"  checked="checked"  
+                                                             />
+                                                    Filter Option 1
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-check">
-                                        <div class="radio ">
-                                            <label class="form-check-label">
-                                                <input type="radio" name="filter1"  
-                                                         />
-                                                Filter option 2
-                                            </label>
+                                        <div class="form-check">
+                                            <div class="radio ">
+                                                <label class="form-check-label">
+                                                    <input type="radio" name="filter1"  
+                                                             />
+                                                    Filter option 2
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
+                                </div>
                     </div>
                     <div class="col-md-4">
                         <legend class="filter-title col-form-legend">Filter Title 2</legend>
                                 <div class="checkboxes ">
-                                    <div class="form-check">
-                                        <div class="checkbox ">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                     checked="checked" 
-                                                    
-                                                     />                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Filter Option 1</span>
-                                            </label>
+                                        <div class="form-check">
+                                            <div class="checkbox ">
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                         checked="checked" 
+                                                        
+                                                         />                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">Filter Option 1</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-check">
-                                        <div class="checkbox ">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                    
-                                                    
-                                                     />                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Filter option 2</span>
-                                            </label>
+                                        <div class="form-check">
+                                            <div class="checkbox ">
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                        
+                                                        
+                                                         />                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">Filter option 2</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
                                 </div>
                     </div>
                     <div class="col-md-4">
                         <legend class="filter-title col-form-legend">Filter Title 3</legend>
                                 <div class="checkboxes ">
-                                    <div class="form-check">
-                                        <div class="checkbox ">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                     checked="checked" 
-                                                    
-                                                     />                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Filter Option 1</span>
-                                            </label>
+                                        <div class="form-check">
+                                            <div class="checkbox ">
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                         checked="checked" 
+                                                        
+                                                         />                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">Filter Option 1</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-check">
-                                        <div class="checkbox ">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                    
-                                                    
-                                                     />                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Filter option 2</span>
-                                            </label>
+                                        <div class="form-check">
+                                            <div class="checkbox ">
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                        
+                                                        
+                                                         />                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">Filter option 2</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
                                 </div>
                     </div>
             </div>
@@ -1549,28 +1552,28 @@
           </div>
           <div class="sg-pattern-example">
                 <div class="checkboxes ">
-        <div class="form-check">
-            <div class="checkbox ">
-                <label class="custom-control custom-checkbox">
-                    <input type="checkbox" name="checkboxes" class="custom-control-input"
-                         checked="checked" 
-                         id="myCheckbox" 
-                         value="123"  />                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Checkbox 1</span>
-                </label>
+            <div class="form-check">
+                <div class="checkbox ">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" name="checkboxes" class="custom-control-input"
+                             checked="checked" 
+                             id="myCheckbox" 
+                             value="123"  />                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Checkbox 1</span>
+                    </label>
+                </div>
             </div>
-        </div>
-        <div class="form-check">
-            <div class="checkbox ">
-                <label class="custom-control custom-checkbox">
-                    <input type="checkbox" name="checkboxes" class="custom-control-input"
-                         checked="checked" 
-                         id="myCheckbox" 
-                         value="123"  />                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Checkbox 2</span>
-                </label>
+            <div class="form-check">
+                <div class="checkbox ">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" name="checkboxes" class="custom-control-input"
+                             checked="checked" 
+                             id="myCheckbox" 
+                             value="123"  />                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Checkbox 2</span>
+                    </label>
+                </div>
             </div>
-        </div>
     </div>
 
           </div>
@@ -1635,24 +1638,26 @@
             
           </div>
           <div class="sg-pattern-example">
-                    <div class="form-check">
-            <div class="radio ">
-                <label class="form-check-label">
-                    <input type="radio" name="radio-buttons"  checked="checked"   id="myCheckbox" 
-                            value="123"   class="form-check-input myCheckbox"  />
-                    Radio button 1
-                </label>
+                <div class="radioButtons myCheckbox">
+            <div class="form-check">
+                <div class="radio ">
+                    <label class="form-check-label">
+                        <input type="radio" name="radio-buttons"  checked="checked"   id="myCheckbox" 
+                                value="123"   class="form-check-input myCheckbox"  />
+                        Radio button 1
+                    </label>
+                </div>
             </div>
-        </div>
-        <div class="form-check">
-            <div class="radio ">
-                <label class="form-check-label">
-                    <input type="radio" name="radio-buttons"  checked="checked"   id="myCheckbox" 
-                            value="123"   class="form-check-input myCheckbox"  />
-                    Radio button 2
-                </label>
+            <div class="form-check">
+                <div class="radio ">
+                    <label class="form-check-label">
+                        <input type="radio" name="radio-buttons"  checked="checked"   id="myCheckbox" 
+                                value="123"   class="form-check-input myCheckbox"  />
+                        Radio button 2
+                    </label>
+                </div>
             </div>
-        </div>
+    </div>
 
           </div>
           <script type="text/json" id="sg-pattern-data-molecules-radio-buttons" class="sg-pattern-data">
@@ -1700,7 +1705,7 @@
           </div>
           <div class="sg-pattern-example">
                 <div class="">
-        <select class="form-control  " >
+        <select class="form-control  "  >
                 <option  >Option 1</option>
                 <option selected="selected" >Option 2</option>
 
@@ -2736,6 +2741,35 @@
           </div><!--end sg-pattern-category-body-->
           
         </div><!--end sg-pattern-category-->
+        <div id="molecules-notification" class="sg-pattern">
+          <div class="sg-pattern-head">
+            <h3 class="sg-pattern-title">
+              <a href="../../patterns/01-molecules-notification-notification@inprogress/01-molecules-notification-notification@inprogress.html" class="patternLink" data-patternpartial="molecules-notification" title="Link to Pattern">
+                  notification
+                    <span class="sg-pattern-state inprogress">inprogress</span>
+              </a>
+            </h3>
+            <div class="sg-pattern-breadcrumb"></div>
+            <a href="#" data-patternpartial="molecules-notification" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-notification" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+          </div>
+          <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-notification">
+            
+          </div>
+          <div class="sg-pattern-example">
+            <div class="m-notification slideDownIn">
+    <div class="">
+        <span class=""></span>
+        <strong></strong>
+        <div></div>
+        <i class="fa fa-times"></i>
+    </div>
+</div>
+
+          </div>
+          <script type="text/json" id="sg-pattern-data-molecules-notification" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"molecules","patternSubtype":"notification"},"patternDesc":"","patternExtension":"mustache","patternName":"notification","patternPartial":"molecules-notification","patternState":"inprogress"}
+          </script>
+        </div><!--end .sg-pattern-->
         <div id="viewall-molecules-page-header" class="sg-pattern-category">
           <h2 class="sg-pattern-category-title"><a href="../../patterns/01-molecules-page-header/index.html" class="patternLink" data-patternpartial="viewall-molecules-page-header">page header</a></h2>
         
@@ -2748,7 +2782,7 @@
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
               <a href="../../patterns/01-molecules-page-header-page-header@inprogress/01-molecules-page-header-page-header@inprogress.html" class="patternLink" data-patternpartial="molecules-page-header" title="Link to Pattern">
-                  Page title
+                  Page Header
                     <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
@@ -2773,14 +2807,14 @@
     <h1 class="page-header-title m-b-0">Page Title</h1>
 
         <div class="page-header-metadata">
-            <img src="public/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
+            <img height="16" src="/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
         </div>
 
 </div>
 
           </div>
           <script type="text/json" id="sg-pattern-data-molecules-page-header" class="sg-pattern-data">
-            {"lineage":[{"lineagePattern":"molecules-button-group","lineagePath":"..\/..\/patterns\/01-molecules-page-header-page-header@inprogress\/01-molecules-page-header-page-header@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"molecules-breadcrumb","lineagePath":"..\/..\/patterns\/01-molecules-page-header-page-header@inprogress\/01-molecules-page-header-page-header@inprogress.html","lineageState":"inprogress"}],"lineageR":[{"lineagePattern":"templates-collection-grid","lineagePath":"..\/..\/patterns\/03-templates-01-manager-collection-grid@inreview\/03-templates-01-manager-collection-grid@inreview.html","lineageState":"inprogress"},{"lineagePattern":"templates-collection-list","lineagePath":"..\/..\/patterns\/03-templates-01-manager-collection-list@inprogress\/03-templates-01-manager-collection-list@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"templates-collection-table","lineagePath":"..\/..\/patterns\/03-templates-01-manager-collection-table@inprogress\/03-templates-01-manager-collection-table@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"templates-blog-index","lineagePath":"..\/..\/patterns\/03-templates-02-website-blog-index@inprogress\/03-templates-02-website-blog-index@inprogress.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"molecules","patternSubtype":"page header"},"patternDesc":"<p>The page title line is included as first element of the content area to give orientation to the user of his current\nposition in the navigation tree. As well it provides on the right a set of <strong>data filtering options<\/strong> for the current \npages content.<\/p>","patternExtension":"mustache","patternName":"Page title","patternPartial":"molecules-page-header","patternState":"inprogress"}
+            {"lineage":[{"lineagePattern":"molecules-button-group","lineagePath":"..\/..\/patterns\/01-molecules-page-header-page-header@inprogress\/01-molecules-page-header-page-header@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"molecules-breadcrumb","lineagePath":"..\/..\/patterns\/01-molecules-page-header-page-header@inprogress\/01-molecules-page-header-page-header@inprogress.html","lineageState":"inprogress"}],"lineageR":[{"lineagePattern":"templates-collection-grid","lineagePath":"..\/..\/patterns\/03-templates-01-manager-collection-grid@inreview\/03-templates-01-manager-collection-grid@inreview.html","lineageState":"inprogress"},{"lineagePattern":"templates-collection-list","lineagePath":"..\/..\/patterns\/03-templates-01-manager-collection-list@inprogress\/03-templates-01-manager-collection-list@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"templates-collection-table","lineagePath":"..\/..\/patterns\/03-templates-01-manager-collection-table@inprogress\/03-templates-01-manager-collection-table@inprogress.html","lineageState":"inprogress"},{"lineagePattern":"templates-blog-index","lineagePath":"..\/..\/patterns\/03-templates-02-website-blog-index@inprogress\/03-templates-02-website-blog-index@inprogress.html","lineageState":"inprogress"}],"patternBreadcrumb":{"patternType":"molecules","patternSubtype":"page header"},"patternDesc":"<p>The page header gives a title and context to the content within a page. It may contain additional navigation, metadata \nand actions relating to the page content.<\/p>\n\n<p><strong>Title:<\/strong> The title of the page (e.g. 'Dashboard') or the name of the object in a collection \n(e.g. the 'DEV-210: New actions bar' branch in a repository). This is the only required element.<\/p>\n\n<p><strong>Breadcrumbs:<\/strong> The full path to the content is show as breadcrumbs. The middle steps of a breadcrumb may be truncated\n if the path is long.<\/p>\n\n<p><strong>Metadata:<\/strong> Any additional information about the content (e.g. date created, author) that is not part of the content \nitself.<\/p>\n\n<p><strong>Actions:<\/strong> Use this for actions that apply to the object or entire content on a page. Actions that are specific to one \nsection of the page should be placed in that section and not in the page header.<\/p>","patternExtension":"mustache","patternName":"Page Header","patternPartial":"molecules-page-header","patternState":"inprogress"}
           </script>
         </div><!--end .sg-pattern-->
         <div id="viewall-molecules-pagination" class="sg-pattern-category">
@@ -3856,6 +3890,20 @@
           <div class="sg-pattern-example">
                 <nav id="o-nav-sidebar">
 
+            <div class="o-nav-sidebar-header">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-circle img-fluid" src="" title="" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <a class="media-heading" href="#">Container name</a>
+                    </div>
+                </div>
+                <hr />
+            </div>
+
             <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">Call to action</button>
         <hr />
 
@@ -4165,6 +4213,20 @@
             <div class="col-md-2 t-col-left p-t-1">
                     <nav id="o-nav-sidebar">
                 
+                            <div class="o-nav-sidebar-header">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle img-fluid" src="../../images/fpo_square.png" title="" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <a class="media-heading" href="#">Container name</a>
+                                    </div>
+                                </div>
+                                <hr />
+                            </div>
+                
                             <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">Call to action</button>                
                         <hr />
                 
@@ -4220,7 +4282,7 @@
                     <h1 class="page-header-title m-b-0">Page Title</h1>
                 
                         <div class="page-header-metadata">
-                            <img src="public/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
+                            <img height="16" src="/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
                         </div>
                 
                 </div>
@@ -4287,77 +4349,79 @@
                             <div class="row">
                                     <div class="col-md-4">
                                         <legend class="filter-title col-form-legend">Filter Title 1</legend>
-                                                    <div class="form-check">
-                                                        <div class="radio ">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" name="filter1"  checked="checked"  
-                                                                         />
-                                                                Filter Option 1
-                                                            </label>
+                                                <div class="radioButtons ">
+                                                        <div class="form-check">
+                                                            <div class="radio ">
+                                                                <label class="form-check-label">
+                                                                    <input type="radio" name="filter1"  checked="checked"  
+                                                                             />
+                                                                    Filter Option 1
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <div class="radio ">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" name="filter1"  
-                                                                         />
-                                                                Filter option 2
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="radio ">
+                                                                <label class="form-check-label">
+                                                                    <input type="radio" name="filter1"  
+                                                                             />
+                                                                    Filter option 2
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                </div>
                                     </div>
                                     <div class="col-md-4">
                                         <legend class="filter-title col-form-legend">Filter Title 2</legend>
                                                 <div class="checkboxes ">
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                     checked="checked" 
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter Option 1</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                         checked="checked" 
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter Option 1</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                    
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter option 2</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                        
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter option 2</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                 </div>
                                     </div>
                                     <div class="col-md-4">
                                         <legend class="filter-title col-form-legend">Filter Title 3</legend>
                                                 <div class="checkboxes ">
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                     checked="checked" 
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter Option 1</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                         checked="checked" 
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter Option 1</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                    
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter option 2</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                        
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter option 2</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                 </div>
                                     </div>
                             </div>
@@ -4580,6 +4644,20 @@
             <div class="col-md-2 t-col-left p-t-1">
                     <nav id="o-nav-sidebar">
                 
+                            <div class="o-nav-sidebar-header">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle img-fluid" src="../../images/fpo_square.png" title="" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <a class="media-heading" href="#">Container name</a>
+                                    </div>
+                                </div>
+                                <hr />
+                            </div>
+                
                             <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">Call to action</button>                
                         <hr />
                 
@@ -4635,7 +4713,7 @@
                     <h1 class="page-header-title m-b-0">Page Title</h1>
                 
                         <div class="page-header-metadata">
-                            <img src="public/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
+                            <img height="16" src="/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
                         </div>
                 
                 </div>
@@ -4702,77 +4780,79 @@
                             <div class="row">
                                     <div class="col-md-4">
                                         <legend class="filter-title col-form-legend">Filter Title 1</legend>
-                                                    <div class="form-check">
-                                                        <div class="radio ">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" name="filter1"  checked="checked"  
-                                                                         />
-                                                                Filter Option 1
-                                                            </label>
+                                                <div class="radioButtons ">
+                                                        <div class="form-check">
+                                                            <div class="radio ">
+                                                                <label class="form-check-label">
+                                                                    <input type="radio" name="filter1"  checked="checked"  
+                                                                             />
+                                                                    Filter Option 1
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <div class="radio ">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" name="filter1"  
-                                                                         />
-                                                                Filter option 2
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="radio ">
+                                                                <label class="form-check-label">
+                                                                    <input type="radio" name="filter1"  
+                                                                             />
+                                                                    Filter option 2
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                </div>
                                     </div>
                                     <div class="col-md-4">
                                         <legend class="filter-title col-form-legend">Filter Title 2</legend>
                                                 <div class="checkboxes ">
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                     checked="checked" 
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter Option 1</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                         checked="checked" 
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter Option 1</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                    
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter option 2</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                        
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter option 2</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                 </div>
                                     </div>
                                     <div class="col-md-4">
                                         <legend class="filter-title col-form-legend">Filter Title 3</legend>
                                                 <div class="checkboxes ">
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                     checked="checked" 
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter Option 1</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                         checked="checked" 
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter Option 1</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                    
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter option 2</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                        
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter option 2</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                 </div>
                                     </div>
                             </div>
@@ -4994,6 +5074,20 @@
             <div class="col-md-2 t-col-left p-t-1">
                     <nav id="o-nav-sidebar">
                 
+                            <div class="o-nav-sidebar-header">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle img-fluid" src="" title="" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <a class="media-heading" href="#">Container name</a>
+                                    </div>
+                                </div>
+                                <hr />
+                            </div>
+                
                             <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">Call to action</button>                
                         <hr />
                 
@@ -5049,7 +5143,7 @@
                     <h1 class="page-header-title m-b-0">Page Title</h1>
                 
                         <div class="page-header-metadata">
-                            <img src="public/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
+                            <img height="16" src="/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
                         </div>
                 
                 </div>
@@ -5116,77 +5210,79 @@
                             <div class="row">
                                     <div class="col-md-4">
                                         <legend class="filter-title col-form-legend">Filter Title 1</legend>
-                                                    <div class="form-check">
-                                                        <div class="radio ">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" name="filter1"  checked="checked"  
-                                                                         />
-                                                                Filter Option 1
-                                                            </label>
+                                                <div class="radioButtons ">
+                                                        <div class="form-check">
+                                                            <div class="radio ">
+                                                                <label class="form-check-label">
+                                                                    <input type="radio" name="filter1"  checked="checked"  
+                                                                             />
+                                                                    Filter Option 1
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <div class="radio ">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" name="filter1"  
-                                                                         />
-                                                                Filter option 2
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="radio ">
+                                                                <label class="form-check-label">
+                                                                    <input type="radio" name="filter1"  
+                                                                             />
+                                                                    Filter option 2
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                </div>
                                     </div>
                                     <div class="col-md-4">
                                         <legend class="filter-title col-form-legend">Filter Title 2</legend>
                                                 <div class="checkboxes ">
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                     checked="checked" 
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter Option 1</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                         checked="checked" 
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter Option 1</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                    
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter option 2</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                        
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter option 2</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                 </div>
                                     </div>
                                     <div class="col-md-4">
                                         <legend class="filter-title col-form-legend">Filter Title 3</legend>
                                                 <div class="checkboxes ">
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                     checked="checked" 
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter Option 1</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                         checked="checked" 
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter Option 1</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <div class="checkbox ">
-                                                            <label class="custom-control custom-checkbox">
-                                                                <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                    
-                                                                    
-                                                                     />                                                                <span class="custom-control-indicator"></span>
-                                                                <span class="custom-control-description">Filter option 2</span>
-                                                            </label>
+                                                        <div class="form-check">
+                                                            <div class="checkbox ">
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                        
+                                                                        
+                                                                         />                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span class="custom-control-description">Filter option 2</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                 </div>
                                     </div>
                             </div>
@@ -5962,7 +6058,7 @@
         <h1 class="page-header-title m-b-0">Page Title</h1>
     
             <div class="page-header-metadata">
-                <img src="public/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
+                <img height="16" src="/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
             </div>
     
     </div>
@@ -6465,23 +6561,30 @@
             <h1>Category (eg. Web Apps)</h1>
         </div>
         <div id="header_img"><img class="img-fluid m-x-auto m-b-2 m-t-2 d-block" src="../../images/fpo_16x9.png" alt=""
-                                   style="width: 40%;">
+                                  style="width: 40%;">
         </div>
     </div>
     <hr>
     <div class="col-md-12 text-xs-center m-t-2 m-b-1" id="pages_category">
         <div class="container">
             <div class="row m-b-3">
+                <div class="col-md-6 text-center hidden-md-up m-b-1"><img class="img-fluid"
+                                                                          src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Web-App 1</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                         <button type="button" class="btn  btn btn-success m-b-1" title="">Get more info</button>                </div>
-                <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 text-center hidden-sm-down"><img class="img-fluid" src="../../images/fpo_16x9.png"
+                                                                      alt=""></div>
             </div>
             <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center hidden-sm-down"><img class="img-fluid"
+                                                                            src="../../images/fpo_16x9.png" alt="">
+                </div>
+                <div class="col-md-6 m-b-1 text-center hidden-md-up"><img class="img-fluid"
+                                                                          src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Web-App 2</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -6490,16 +6593,23 @@
                         <button type="button" class="btn  btn btn-success m-b-1" title="">Get more info</button>                </div>
             </div>
             <div class="row m-b-3">
+                <div class="col-md-6 text-center hidden-md-up m-b-1"><img class="img-fluid"
+                                                                          src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Web-App 3</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                         <button type="button" class="btn  btn btn-success m-b-1" title="">Get more info</button>                </div>
-                <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 text-center hidden-sm-down"><img class="img-fluid" src="../../images/fpo_16x9.png"
+                                                                      alt=""></div>
             </div>
             <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center hidden-sm-down"><img class="img-fluid"
+                                                                            src="../../images/fpo_16x9.png" alt="">
+                </div>
+                <div class="col-md-6 text-center hidden-md-up m-b-1"><img class="img-fluid"
+                                                                          src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Web-App 4</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -6508,16 +6618,21 @@
                         <button type="button" class="btn  btn btn-success m-b-1" title="">Get more info</button>                </div>
             </div>
             <div class="row m-b-3">
+                <div class="col-md-6 text-center hidden-md-up m-b-1"><img class="img-fluid"
+                                                                          src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Web-App 5</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                         <button type="button" class="btn  btn btn-success m-b-1" title="">Get more info</button>                </div>
-                <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center hidden-sm-down"><img class="img-fluid"
+                                                                            src="../../images/fpo_16x9.png" alt="">
+                </div>
             </div>
             <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt="">
+                </div>
                 <div class="col-md-6">
                     <h2>Web-App 6</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -7490,27 +7605,15 @@
                 </p>
             </div>
             <div class="col-md-2 col-xs-12 text-xs-center">
-            </div>
+                    <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>            </div>
         </div>
         <div class="row m-t-2 text-xs-center">
-            <div class="col-md-3 col-xs-6 usp-1">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 1</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 usp-2 ">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 2</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 usp-3">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 3</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 usp-4">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 4</li>
+            <div class="col-xs-12">
+                <ul class="fa-ul row">
+                    <li class="col-md-3 col-xs-6" id="usp-1"><i class="fa fa-check" aria-hidden="true"></i> USP 1</li>
+                    <li class="col-md-3 col-xs-6" id="usp-2"><i class="fa fa-check" aria-hidden="true"></i> USP 2</li>
+                    <li class="col-md-3 col-xs-6" id="usp-3"><i class="fa fa-check" aria-hidden="true"></i> USP 3</li>
+                    <li class="col-md-3 col-xs-6" id="usp-4"><i class="fa fa-check" aria-hidden="true"></i> USP 4</li>
                 </ul>
             </div>
         </div>
@@ -7526,13 +7629,14 @@
                 <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
             <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center hidden-sm-down"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Web-Applikation</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                 </div>
+                <div class="col-md-6 m-b-1 text-center hidden-md-up"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
             <div class="row m-b-3">
                 <div class="col-md-6">
@@ -7544,13 +7648,14 @@
                 <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
             <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center hidden-sm-down"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Experten- und Strategie-Beratung</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                 </div>
+                <div class="col-md-6 m-b-1 text-center hidden-md-up"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
         </div>
         <hr>
@@ -7564,7 +7669,7 @@
                 </div>
                 <div class="button-container">
                     <a href="https://v25-stage.app-arena.com/apps/create?templateId=299&templateName=Adventskalender%20Demo" target="_blank">
-                    </a>
+                            <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>                    </a>
                 </div>
                 <div class="image-pdm">
                     <img src="https://aa-ads.s3.amazonaws.com/App-Arena%20Startseite/laptop_wireframe.png" class="img-fluid m-x-auto" alt="Produkt des Monats XX">
@@ -7656,13 +7761,13 @@
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
                 <div class="button-container m-b-2">
-                </div>
+                        <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>                </div>
                 <div class="event-img m-b-2">
                     <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
                 </div>
             </div>
             <div class="col-md-6 event2 m-t-1">
-                <div class="event-img">
+                <div class="event-img hidden-sm-down">
                     <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
                 </div>
                 <h4 clasS="m-t-2">Event 2 Headline</h4>
@@ -7670,8 +7775,11 @@
                     tincidunt, ut
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
-                <div class="button-container">
+                <div class="event-img hidden-md-up m-b-1">
+                    <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
                 </div>
+                <div class="button-container">
+                        <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>                </div>
             </div>
         </div>
         <hr>
@@ -7717,7 +7825,7 @@
                 </div>
             </div>
             <div class="col-md-4 nl-signup-btn text-xs-center pull-xs-none m-x-auto">
-            </div>
+                    <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>            </div>
         </div>
         <div class="push">
         </div>
@@ -7898,7 +8006,7 @@
         </div>
         <p class="font-weight-bold m-t-1">Partner program steps</p>
         <div class="row">
-            <div class="progress-tracker col-md-3 offset-xs-1" style="-ms-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);">
+            <div class="progress-tracker col-md-3 offset-xs-1 hidden-sm-down" style="-ms-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);">
                     <div class="progress-tracker">
                         <ol class="list-inline">
                                 <li class="progress-tracker-step step1 "
@@ -8925,7 +9033,7 @@
                         </label>
                 
                             <div class="col-sm-9">
-                                <select class="form-control  " data-toggle="tooltip" data-placement="right" title="Dieses Feld wird nur angezeigt, wenn auch Kunden existieren.">
+                                <select class="form-control  "  data-toggle="tooltip" data-placement="right" title="Dieses Feld wird nur angezeigt, wenn auch Kunden existieren.">
                                         <option selected="selected" >App-Arena GmbH</option>
                                         <option  >iConsultants GmbH</option>
                                         <option  >Marcapo GmbH</option>
@@ -9094,6 +9202,20 @@
                 <div class="col-md-2 t-col-left p-t-1">
                         <nav id="o-nav-sidebar">
                     
+                                <div class="o-nav-sidebar-header">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object img-circle img-fluid" src="../../images/fpo_square.png" title="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="media-heading" href="#">Container name</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                    
                                 <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">App erstellen</button>                    
                             <hr />
                     
@@ -9149,7 +9271,7 @@
                         <h1 class="page-header-title m-b-0">App Übersicht</h1>
                     
                             <div class="page-header-metadata">
-                                <img src="public/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
+                                <img height="16" src="/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
                             </div>
                     
                     </div>
@@ -9225,99 +9347,101 @@
                                 <div class="row">
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filtern nach Lizenzstatus</legend>
-                                                        <div class="form-check">
-                                                            <div class="radio ">
-                                                                <label class="form-check-label">
-                                                                    <input type="radio" name="filter1"  checked="checked"  
-                                                                             />
-                                                                    Alle Apps
-                                                                </label>
+                                                    <div class="radioButtons ">
+                                                            <div class="form-check">
+                                                                <div class="radio ">
+                                                                    <label class="form-check-label">
+                                                                        <input type="radio" name="filter1"  checked="checked"  
+                                                                                 />
+                                                                        Alle Apps
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="radio ">
-                                                                <label class="form-check-label">
-                                                                    <input type="radio" name="filter1"  
-                                                                             />
-                                                                    Apps mit aktiver Lizenz
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="radio ">
+                                                                    <label class="form-check-label">
+                                                                        <input type="radio" name="filter1"  
+                                                                                 />
+                                                                        Apps mit aktiver Lizenz
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                    </div>
                                         </div>
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filtern nach Kunden</legend>
                                                     <div class="checkboxes ">
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="customer-filter" class="custom-control-input"
-                                                                         checked="checked" 
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">App-Arena.com</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="customer-filter" class="custom-control-input"
+                                                                             checked="checked" 
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">App-Arena.com</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="customer-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">iConsultants GmbH</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="customer-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">iConsultants GmbH</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="customer-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Marcapo GmbH</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="customer-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Marcapo GmbH</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                         </div>
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filtern nach Vorlage</legend>
                                                     <div class="checkboxes ">
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="template-filter" class="custom-control-input"
-                                                                         checked="checked" 
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Adventskalender für Sparkassen</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="template-filter" class="custom-control-input"
+                                                                             checked="checked" 
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Adventskalender für Sparkassen</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="template-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">EM Tippspiel</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="template-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">EM Tippspiel</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="template-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Fotowettbewerb für VR-Banken</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="template-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Fotowettbewerb für VR-Banken</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                         </div>
                                 </div>
@@ -9669,6 +9793,20 @@
                 <div class="col-md-2 t-col-left p-t-1">
                         <nav id="o-nav-sidebar">
                     
+                                <div class="o-nav-sidebar-header">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object img-circle img-fluid" src="../../images/fpo_square.png" title="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="media-heading" href="#">Container name</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                    
                                 <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">App erstellen</button>                    
                             <hr />
                     
@@ -9724,7 +9862,7 @@
                         <h1 class="page-header-title m-b-0">App Übersicht</h1>
                     
                             <div class="page-header-metadata">
-                                <img src="public/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
+                                <img height="16" src="/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
                             </div>
                     
                     </div>
@@ -9800,99 +9938,101 @@
                                 <div class="row">
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filtern nach Lizenzstatus</legend>
-                                                        <div class="form-check">
-                                                            <div class="radio ">
-                                                                <label class="form-check-label">
-                                                                    <input type="radio" name="filter1"  checked="checked"  
-                                                                             />
-                                                                    Alle Apps
-                                                                </label>
+                                                    <div class="radioButtons ">
+                                                            <div class="form-check">
+                                                                <div class="radio ">
+                                                                    <label class="form-check-label">
+                                                                        <input type="radio" name="filter1"  checked="checked"  
+                                                                                 />
+                                                                        Alle Apps
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="radio ">
-                                                                <label class="form-check-label">
-                                                                    <input type="radio" name="filter1"  
-                                                                             />
-                                                                    Apps mit aktiver Lizenz
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="radio ">
+                                                                    <label class="form-check-label">
+                                                                        <input type="radio" name="filter1"  
+                                                                                 />
+                                                                        Apps mit aktiver Lizenz
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                    </div>
                                         </div>
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filtern nach Kunden</legend>
                                                     <div class="checkboxes ">
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="customer-filter" class="custom-control-input"
-                                                                         checked="checked" 
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">App-Arena.com</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="customer-filter" class="custom-control-input"
+                                                                             checked="checked" 
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">App-Arena.com</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="customer-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">iConsultants GmbH</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="customer-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">iConsultants GmbH</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="customer-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Marcapo GmbH</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="customer-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Marcapo GmbH</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                         </div>
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filtern nach Vorlage</legend>
                                                     <div class="checkboxes ">
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="template-filter" class="custom-control-input"
-                                                                         checked="checked" 
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Adventskalender für Sparkassen</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="template-filter" class="custom-control-input"
+                                                                             checked="checked" 
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Adventskalender für Sparkassen</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="template-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">EM Tippspiel</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="template-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">EM Tippspiel</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="template-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Fotowettbewerb für VR-Banken</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="template-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Fotowettbewerb für VR-Banken</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                         </div>
                                 </div>
@@ -10243,6 +10383,20 @@
                 <div class="col-md-2 t-col-left p-t-1">
                         <nav id="o-nav-sidebar">
                     
+                                <div class="o-nav-sidebar-header">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object img-circle img-fluid" src="../../images/fpo_square.png" title="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="media-heading" href="#">Container name</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                    
                                 <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">App erstellen</button>                    
                             <hr />
                     
@@ -10298,7 +10452,7 @@
                         <h1 class="page-header-title m-b-0">App Übersicht</h1>
                     
                             <div class="page-header-metadata">
-                                <img src="public/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
+                                <img height="16" src="/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
                             </div>
                     
                     </div>
@@ -10575,6 +10729,20 @@
                 <div class="col-md-2 t-col-left p-t-1">
                         <nav id="o-nav-sidebar">
                     
+                                <div class="o-nav-sidebar-header">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object img-circle img-fluid" src="../../images/fpo_square.png" title="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="media-heading" href="#">Container name</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                    
                                 <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">App erstellen</button>                    
                             <hr />
                     
@@ -10630,7 +10798,7 @@
                         <h1 class="page-header-title m-b-0">Vorlagen Übersicht</h1>
                     
                             <div class="page-header-metadata">
-                                <img src="public/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
+                                <img height="16" src="/images/sample/avatar1.jpg"/> <a href="#">Company name</a> has 123 Apps
                             </div>
                     
                     </div>
@@ -10707,50 +10875,50 @@
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filtern nach Lizenzstatus</legend>
                                                     <div class="checkboxes ">
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="project-filter" class="custom-control-input"
-                                                                         checked="checked" 
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Fotowettbewerb</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="project-filter" class="custom-control-input"
+                                                                             checked="checked" 
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Fotowettbewerb</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="project-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Tippspiel</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="project-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Tippspiel</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="project-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Adventskalender</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="project-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Adventskalender</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="project-filter" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Pairs</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="project-filter" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Pairs</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                         </div>
                                         <div class="col-md-4">
@@ -11382,6 +11550,20 @@
                 <div class="col-md-2 t-col-left p-t-1">
                         <nav id="o-nav-sidebar">
                     
+                                <div class="o-nav-sidebar-header">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object img-circle img-fluid" src="../../images/fpo_square.png" title="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="media-heading" href="#">Container name</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                    
                                 <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">Kunde erstellen</button>                    
                             <hr />
                     
@@ -11500,77 +11682,79 @@
                                 <div class="row">
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filter Title 1</legend>
-                                                        <div class="form-check">
-                                                            <div class="radio ">
-                                                                <label class="form-check-label">
-                                                                    <input type="radio" name="filter1"  checked="checked"  
-                                                                             />
-                                                                    Filter Option 1
-                                                                </label>
+                                                    <div class="radioButtons ">
+                                                            <div class="form-check">
+                                                                <div class="radio ">
+                                                                    <label class="form-check-label">
+                                                                        <input type="radio" name="filter1"  checked="checked"  
+                                                                                 />
+                                                                        Filter Option 1
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="radio ">
-                                                                <label class="form-check-label">
-                                                                    <input type="radio" name="filter1"  
-                                                                             />
-                                                                    Filter option 2
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="radio ">
+                                                                    <label class="form-check-label">
+                                                                        <input type="radio" name="filter1"  
+                                                                                 />
+                                                                        Filter option 2
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                    </div>
                                         </div>
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filter Title 2</legend>
                                                     <div class="checkboxes ">
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                         checked="checked" 
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Filter Option 1</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                             checked="checked" 
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Filter Option 1</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Filter option 2</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Filter option 2</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                         </div>
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filter Title 3</legend>
                                                     <div class="checkboxes ">
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                         checked="checked" 
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Filter Option 1</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                             checked="checked" 
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Filter Option 1</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Filter option 2</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Filter option 2</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                         </div>
                                 </div>
@@ -13237,6 +13421,20 @@
                 <div class="col-md-2 t-col-left p-t-1">
                         <nav id="o-nav-sidebar">
                     
+                                <div class="o-nav-sidebar-header">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object img-circle img-fluid" src="../../images/fpo_square.png" title="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="media-heading" href="#">Container name</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                    
                                 <button type="button" class="btn  btn-primary btn-block" title="Click this button to submit an action">Projekt erstellen</button>                    
                             <hr />
                     
@@ -13355,77 +13553,79 @@
                                 <div class="row">
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filter Title 1</legend>
-                                                        <div class="form-check">
-                                                            <div class="radio ">
-                                                                <label class="form-check-label">
-                                                                    <input type="radio" name="filter1"  checked="checked"  
-                                                                             />
-                                                                    Filter Option 1
-                                                                </label>
+                                                    <div class="radioButtons ">
+                                                            <div class="form-check">
+                                                                <div class="radio ">
+                                                                    <label class="form-check-label">
+                                                                        <input type="radio" name="filter1"  checked="checked"  
+                                                                                 />
+                                                                        Filter Option 1
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="radio ">
-                                                                <label class="form-check-label">
-                                                                    <input type="radio" name="filter1"  
-                                                                             />
-                                                                    Filter option 2
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="radio ">
+                                                                    <label class="form-check-label">
+                                                                        <input type="radio" name="filter1"  
+                                                                                 />
+                                                                        Filter option 2
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                    </div>
                                         </div>
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filter Title 2</legend>
                                                     <div class="checkboxes ">
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                         checked="checked" 
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Filter Option 1</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                             checked="checked" 
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Filter Option 1</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Filter option 2</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Filter option 2</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                         </div>
                                         <div class="col-md-4">
                                             <legend class="filter-title col-form-legend">Filter Title 3</legend>
                                                     <div class="checkboxes ">
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                         checked="checked" 
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Filter Option 1</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                             checked="checked" 
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Filter Option 1</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <div class="checkbox ">
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" name="filter2" class="custom-control-input"
-                                                                        
-                                                                        
-                                                                         />                                                                    <span class="custom-control-indicator"></span>
-                                                                    <span class="custom-control-description">Filter option 2</span>
-                                                                </label>
+                                                            <div class="form-check">
+                                                                <div class="checkbox ">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" name="filter2" class="custom-control-input"
+                                                                            
+                                                                            
+                                                                             />                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Filter option 2</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                         </div>
                                 </div>
@@ -16196,27 +16396,15 @@
                 </p>
             </div>
             <div class="col-md-2 col-xs-12 text-xs-center">
-                    <button type="button" class="btn  btn-primary" title="Mit dem Klick auf diesen Button erhalten Sie weitere Informationen.">Mehr lesen</button>            </div>
+                    <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>            </div>
         </div>
         <div class="row m-t-2 text-xs-center">
-            <div class="col-md-3 col-xs-6 usp-1">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 1</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 usp-2 ">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 2</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 usp-3">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 3</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 usp-4">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 4</li>
+            <div class="col-xs-12">
+                <ul class="fa-ul row">
+                    <li class="col-md-3 col-xs-6" id="usp-1"><i class="fa fa-check" aria-hidden="true"></i> USP 1</li>
+                    <li class="col-md-3 col-xs-6" id="usp-2"><i class="fa fa-check" aria-hidden="true"></i> USP 2</li>
+                    <li class="col-md-3 col-xs-6" id="usp-3"><i class="fa fa-check" aria-hidden="true"></i> USP 3</li>
+                    <li class="col-md-3 col-xs-6" id="usp-4"><i class="fa fa-check" aria-hidden="true"></i> USP 4</li>
                 </ul>
             </div>
         </div>
@@ -16232,13 +16420,14 @@
                 <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
             <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center hidden-sm-down"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Web-Applikation</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                 </div>
+                <div class="col-md-6 m-b-1 text-center hidden-md-up"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
             <div class="row m-b-3">
                 <div class="col-md-6">
@@ -16250,13 +16439,14 @@
                 <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
             <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+                <div class="col-md-6 m-b-1 text-center hidden-sm-down"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Experten- und Strategie-Beratung</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                 </div>
+                <div class="col-md-6 m-b-1 text-center hidden-md-up"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
         </div>
         <hr>
@@ -16270,7 +16460,7 @@
                 </div>
                 <div class="button-container">
                     <a href="https://v25-stage.app-arena.com/apps/create?templateId=299&templateName=Adventskalender%20Demo" target="_blank">
-                            <button type="button" class="btn  btn-success" title="Mit dem Klick auf diesen Button erhalten Sie eine kostenlose Demo.">Jetzt kostenlos testen!</button>                    </a>
+                            <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>                    </a>
                 </div>
                 <div class="image-pdm">
                     <img src="https://aa-ads.s3.amazonaws.com/App-Arena%20Startseite/laptop_wireframe.png" class="img-fluid m-x-auto" alt="Produkt des Monats XX">
@@ -16362,13 +16552,13 @@
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
                 <div class="button-container m-b-2">
-                        <button type="button" class="btn  btn-success" title="Mit dem Klick auf diesen Button melden Sie sich zum Event an.">Jetzt anmelden</button>                </div>
+                        <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>                </div>
                 <div class="event-img m-b-2">
                     <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
                 </div>
             </div>
             <div class="col-md-6 event2 m-t-1">
-                <div class="event-img">
+                <div class="event-img hidden-sm-down">
                     <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
                 </div>
                 <h4 clasS="m-t-2">Event 2 Headline</h4>
@@ -16376,8 +16566,11 @@
                     tincidunt, ut
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
+                <div class="event-img hidden-md-up m-b-1">
+                    <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
+                </div>
                 <div class="button-container">
-                        <button type="button" class="btn  btn-success" title="Mit dem Klick auf diesen Button melden Sie sich zum Event an.">Jetzt anmelden</button>                </div>
+                        <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>                </div>
             </div>
         </div>
         <hr>
@@ -16423,7 +16616,7 @@
                 </div>
             </div>
             <div class="col-md-4 nl-signup-btn text-xs-center pull-xs-none m-x-auto">
-                    <button type="button" class="btn  btn-success" title="Mit dem Klick auf diesen Button melden Sie sich zu unserem Newsletter an.">Abonnieren</button>            </div>
+                    <button type="button" class="btn  btn-primary" title="Click this button to submit an action">Click me!</button>            </div>
         </div>
         <div class="push">
         </div>
@@ -16556,10 +16749,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1474964044">
+<script id="pl-js-polyfill-insert-1476086856">
   (function() {
     if (self != top) {
-      var cb = '1474964044';
+      var cb = '1476086856';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -16569,10 +16762,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1474964044">
+<script id="pl-js-insert-1476086856">
   (function() {
     if (self != top) {
-      var cb = '1474964044';
+      var cb = '1476086856';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
