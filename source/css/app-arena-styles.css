@@ -7542,6 +7542,9 @@ button.close {
   .draggable .modal-header {
     cursor: move; }
 
+.modal-xl {
+  max-width: 1250px; }
+
 /**
  * Pattern Dependencies
  */

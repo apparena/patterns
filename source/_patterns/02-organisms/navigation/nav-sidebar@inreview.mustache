@@ -4,13 +4,15 @@
         {{# header }}
             <div class="o-nav-sidebar-header">
                 <div class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img class="media-object img-circle img-fluid" src="{{ image.src }}" title="{{ image.title }}" alt="{{ image.title }}">
-                        </a>
-                    </div>
+                    {{#img }}
+                        <div class="media-left">
+                            <a href="{{link}}">
+                                <img class="media-object img-circle img-fluid" src="{{ src }}" title="{{ title }}" alt="{{ title }}">
+                            </a>
+                        </div>
+                    {{/img}}
                     <div class="media-body">
-                        <a class="media-heading" href="#">{{{ title }}}</a>
+                        <a class="media-heading" href="{{link}}">{{{ title }}}</a>
                     </div>
                 </div>
                 <hr />
