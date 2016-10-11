@@ -1,8 +1,28 @@
-<div class="m-notification slideDownIn">
-    <div class="">
-        <span class=""></span>
-        <strong>{{{header}}}</strong>
-        <div>{{{header}}}</div>
-        <i class="fa fa-times"></i>
+{{# notification }}
+    <div class="m-notification alert slideDownIn" role="alert">
+        <div class="content {{type}} {{class}}">
+            {{# isDismissable }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            {{/ isDismissable }}
+            <span class="icon">
+                <span class="success"><i class="fa fa-check"></i></span>
+                <span class="info"><i class="fa fa-info-circle"></i></span>
+                <span class="warning"><i class="fa fa-exclamation-triangle"></i></span>
+                <span class="danger"><i class="fa fa-exclamation-circle"></i></span>
+            </span>
+            <div class="title-message">
+                <p>
+                    <strong>{{{title}}}</strong> {{{message}}}
+                </p>
+            </div>
+
+            {{#actions}}
+                <div class="actions">
+                    {{> molecules-navs:nav-inline }}
+                </div>
+            {{/actions}}
+
+        </div>
     </div>
-</div>
+{{/notification}}

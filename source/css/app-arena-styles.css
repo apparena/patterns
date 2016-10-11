@@ -10360,6 +10360,90 @@ button.close {
   Variable definitions
  ========================================================================== */
 /*=========================================================================
+  Organism Navigation Sidebar
+ ========================================================================== */
+.m-notification .content {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #67C6EB;
+  overflow-wrap: break-word;
+  padding: 10px 40px 10px 60px;
+  visibility: visible;
+  z-index: 2050; }
+  .m-notification .content:before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 40px;
+    position: absolute; }
+  .m-notification .content .close {
+    margin-right: -25px; }
+  .m-notification .content .icon {
+    position: absolute;
+    left: 12px;
+    top: 28%;
+    color: #fff; }
+    .m-notification .content .icon > span {
+      display: none; }
+
+.m-notification .info:before {
+  background-color: #67C6EB; }
+
+.m-notification .info .icon .info {
+  display: block; }
+
+.m-notification .success {
+  border-color: #ACC825; }
+  .m-notification .success:before {
+    background-color: #ACC825; }
+  .m-notification .success .icon .success {
+    display: block; }
+
+.m-notification .warning {
+  border-color: #DB6B3A; }
+  .m-notification .warning:before {
+    background-color: #DB6B3A; }
+  .m-notification .warning .icon .warning {
+    display: block; }
+
+.m-notification .danger {
+  border-color: #CF3D30; }
+  .m-notification .danger:before {
+    background-color: #CF3D30; }
+  .m-notification .danger .icon .danger {
+    display: block; }
+
+.m-notification .dismissibleIcon {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -7px; }
+
+.m-notification .typeIcon {
+  left: 12px;
+  top: 50%;
+  position: absolute;
+  margin-top: -8px;
+  line-height: 1;
+  color: white; }
+
+/**
+ * Pattern Dependencies
+ */
+/**
+ * Pattern Dependencies
+ */
+/*=========================================================================
+  Variable definitions
+ ========================================================================== */
+/*=========================================================================
   Molecules Page Header
  ========================================================================== */
 .page-header-metadata {

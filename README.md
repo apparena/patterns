@@ -6,7 +6,7 @@ This package contains patterns (UI, ReactJS) for UI development in App-Arena.com
 
 ## Demo
 
-You can play with a demo of all patterns [styleguide.app-arena.com](styleguide.app-arena.com).
+You can play with a demo of all patterns [styleguide.app-arena.com](https://styleguide.app-arena.com/).
 
 ## Requirements
 
