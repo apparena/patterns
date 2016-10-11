@@ -7607,6 +7607,8 @@ button.close {
     color: #fff; }
     .m-notification .content .icon > span {
       display: none; }
+  .m-notification .content .title-message p {
+    margin-bottom: 0; }
 
 .m-notification .info:before {
   background-color: #67C6EB; }
