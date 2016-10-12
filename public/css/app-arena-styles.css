@@ -7929,7 +7929,8 @@ button.close {
   * Left column in main content area
   */
 .t-col-left {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  min-height: 800px; }
 
 /**
   * Main column
