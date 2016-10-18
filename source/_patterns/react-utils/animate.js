@@ -6,9 +6,9 @@ import ReactComponent from "./component";
 
 export default class Animate extends ReactComponent {
     static propTypes = {
+        children: PropTypes.node.isRequired,
         transition: PropTypes.string,
         duration: PropTypes.number,
-        children: PropTypes.node,
         options: PropTypes.object,
         initial: PropTypes.bool
     };

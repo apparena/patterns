@@ -27,7 +27,7 @@ export default class Button extends ReactComponent {
         const componentClass = cx(
             styles.tag,
             styles['tag-' + this.props.type],
-            this.props.pill && styles['tag-' + this.props.pill],
+            this.props.pill && styles['tag-pill'],
             this.props.className
         );
 
