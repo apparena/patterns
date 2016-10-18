@@ -3,62 +3,55 @@ import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./notification.scss";
 import Animate from "../../react-utils/animate";
+import Icon from "../../00-atoms/icons/icons";
+
+const typeIcons = {
+    "info": "info-circle",
+    "success": "check",
+    "warning": "exclamation-triangle",
+    "danger": "exclamation-circle"
+};
 
 export default class Notification extends ReactComponent {
     static propTypes = {
         header: PropTypes.string.isRequired,
-        children: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.element,
-            PropTypes.arrayOf(PropTypes.element)
-        ]),
+        children: PropTypes.node,
         type: PropTypes.oneOf(["info", "success", "warning", "danger"]).isRequired,
         duration: PropTypes.number,
-        classNames: PropTypes.string,
-        onClose: PropTypes.func
+        className: PropTypes.string,
+        onClose: PropTypes.func,
+        fixed: PropTypes.bool,
+        dismissible: PropTypes.bool
     };
 
     static defaultProps = {
         transition: "slideDownIn",
         dismissible: false,
+        fixed: true,
     };
 
     renderDismissibleIcon() {
         if (this.props.onClose) {
             return (
-                <span className={cx("fa fa-times", styles.dismissibleIcon)} onClick={this.props.onClose}/>
+                <Icon name={"times"} className={styles.close} onClick={this.props.onClose}/>
             );
         }
     }
 
     render() {
-        const {transition, classNames, type, header, children} = this.props;
-        let iconClass = null;
-
-        switch (this.props.type) {
-            case 'info':
-                iconClass = 'fa fa-info-circle';
-                break;
-            case 'success':
-                iconClass = 'fa fa-check';
-                break;
-            case 'warning':
-                iconClass = 'fa fa-exclamation-triangle';
-                break;
-            case 'danger':
-                iconClass = 'fa fa-exclamation-circle';
-                break;
-            default:
-                break;
-        }
+        const {transition, className, type, header, children, fixed} = this.props;
+        let iconName = typeIcons[type];
 
         return (
             <Animate transition={transition}>
-                <div className={cx(classNames, styles.notif, styles[type])}>
-                    <span className={cx(iconClass, styles.typeIcon)}/>
-                    <strong>{header}</strong>
-                    <div>{children}</div>
-                    {this.renderDismissibleIcon()}
+                <div className={cx(styles["m-notification"], fixed && styles.fixed, className)}>
+                    <div className={cx(styles.content, styles[type])}>
+                        {this.renderDismissibleIcon()}
+                        <Icon name={iconName} className={styles.icon}/>
+                        <div className={cx(styles["title-messages"])}>
+                            <strong>{header}</strong> {children}
+                        </div>
+                    </div>
                 </div>
             </Animate>
         );

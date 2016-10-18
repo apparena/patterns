@@ -1,13 +1,12 @@
 import React, {PropTypes} from "react";
-import {ReactComponent} from "apparena-patterns-react";
+import ReactComponent from "../../react-utils/component";
+import cx from "classnames";
+import styles from "./nav-secondary.scss";
 
 export default class SecondNavComponent extends ReactComponent {
     static propTypes = {
-        children: PropTypes.oneOfType([
-            PropTypes.element,
-            PropTypes.arrayOf(PropTypes.element)
-        ]).isRequired
-    }
+        children: PropTypes.node.isRequired
+    };
 
     render() {
         const {children} = this.props;
@@ -17,10 +16,8 @@ export default class SecondNavComponent extends ReactComponent {
             }
         });
         return (
-            <div className="o-nav o-nav-secondary" style={{backgroundColor: "white"}}>
-                <ul className="nav nav-inline">
-                    {steps}
-                </ul>
+            <div className={cx(styles["o-nav"], styles["o-nav-secondary"])}>
+                {children}
             </div>
         );
     }

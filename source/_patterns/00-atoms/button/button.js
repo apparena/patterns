@@ -35,6 +35,7 @@ export default class Button extends ReactComponent {
     };
     static defaultProps = {
         type: 'secondary',
+        isDisabled: false
     };
 
     render() {
@@ -58,6 +59,7 @@ export default class Button extends ReactComponent {
         return (
             <button
                 onClick={this.props.onClick}
+                disabled={this.props.isDisabled}
                 className={componentClass}
                 type={this.props.submit ? 'submit' : 'button'}
             >
