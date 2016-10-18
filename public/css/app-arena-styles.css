@@ -7542,6 +7542,9 @@ button.close {
   .draggable .modal-header {
     cursor: move; }
 
+.modal-xl {
+  max-width: 1250px; }
+
 /**
  * Pattern Dependencies
  */
@@ -7562,6 +7565,92 @@ button.close {
     top: 10px; }
   .m-navbar-form.has-icon input {
     padding-left: 30px; }
+
+/**
+ * Pattern Dependencies
+ */
+/**
+ * Pattern Dependencies
+ */
+/*=========================================================================
+  Variable definitions
+ ========================================================================== */
+/*=========================================================================
+  Organism Navigation Sidebar
+ ========================================================================== */
+.m-notification .content {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #67C6EB;
+  overflow-wrap: break-word;
+  padding: 10px 40px 10px 60px;
+  visibility: visible;
+  z-index: 2050; }
+  .m-notification .content:before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 40px;
+    position: absolute; }
+  .m-notification .content .close {
+    margin-right: -25px; }
+  .m-notification .content .icon {
+    position: absolute;
+    left: 12px;
+    top: 28%;
+    color: #fff; }
+    .m-notification .content .icon > span {
+      display: none; }
+  .m-notification .content .title-message p {
+    margin-bottom: 0; }
+
+.m-notification .info:before {
+  background-color: #67C6EB; }
+
+.m-notification .info .icon .info {
+  display: block; }
+
+.m-notification .success {
+  border-color: #ACC825; }
+  .m-notification .success:before {
+    background-color: #ACC825; }
+  .m-notification .success .icon .success {
+    display: block; }
+
+.m-notification .warning {
+  border-color: #DB6B3A; }
+  .m-notification .warning:before {
+    background-color: #DB6B3A; }
+  .m-notification .warning .icon .warning {
+    display: block; }
+
+.m-notification .danger {
+  border-color: #CF3D30; }
+  .m-notification .danger:before {
+    background-color: #CF3D30; }
+  .m-notification .danger .icon .danger {
+    display: block; }
+
+.m-notification .dismissibleIcon {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -7px; }
+
+.m-notification .typeIcon {
+  left: 12px;
+  top: 50%;
+  position: absolute;
+  margin-top: -8px;
+  line-height: 1;
+  color: white; }
 
 /**
  * Pattern Dependencies
@@ -7710,6 +7799,43 @@ button.close {
 .o-nav-secondary-btnList {
   margin-top: -7px; }
 
+/**
+ * Pattern Dependencies
+ */
+/**
+ * Pattern Dependencies
+ */
+/*=========================================================================
+  Variable definitions
+ ========================================================================== */
+/*=========================================================================
+  Organism Navigation Sidebar
+ ========================================================================== */
+#o-nav-sidebar .o-nav-sidebar-header .media-object {
+  max-width: 48px; }
+
+#o-nav-sidebar .o-nav-sidebar-header .media-body {
+  align-items: center;
+  display: flex; }
+
+#o-nav-sidebar .o-nav-sidebar-header > hr {
+  margin: 1rem -1rem; }
+
+#o-nav-sidebar .nav-pills .nav-link.active, #o-nav-sidebar .nav-pills .nav-link.active:focus, #o-nav-sidebar .nav-pills .nav-link.active:hover,
+#o-nav-sidebar .nav-pills .nav-item.open .nav-link,
+#o-nav-sidebar .nav-pills .nav-item.open .nav-link:focus,
+#o-nav-sidebar .nav-pills .nav-item.open .nav-link:hover {
+  color: inherit;
+  cursor: default;
+  background-color: #f6f6f6;
+  border-left: 5px solid #478AB8;
+  margin-left: -15px;
+  padding-left: 25px;
+  font-weight: bold; }
+
+#o-nav-sidebar .o-nav-sidebar-scondaryGroup .title {
+  color: #818a91; }
+
 /*------------------------------------*    $ABSTRACTS
 \*------------------------------------*/
 /*------------------------------------*    #MIXINS
@@ -7803,7 +7929,8 @@ button.close {
   * Left column in main content area
   */
 .t-col-left {
-  background-color: #666666; }
+  background-color: #f6f6f6;
+  min-height: 800px; }
 
 /**
   * Main column

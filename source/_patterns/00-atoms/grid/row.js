@@ -6,10 +6,7 @@ import styles from "./grid.scss";
 
 export default class Row extends ReactComponent {
     static propTypes = {
-        children: PropTypes.oneOfType([
-            PropTypes.element,
-            PropTypes.arrayOf(PropTypes.element)
-        ]).isRequired,
+        children: PropTypes.node.isRequired,
         className: PropTypes.string,
     };
 

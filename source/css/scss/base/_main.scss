@@ -14,7 +14,8 @@
   * Left column in main content area
   */
 .t-col-left {
-  background-color: $gray;
+  background-color: $gray-lightest;
+  min-height: 800px;
 }
 
 /**

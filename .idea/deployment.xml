@@ -9,7 +9,28 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="FRA-AM (Live)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="FRA-AM (Stage)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="FRA-AM2 (Live)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="FRA-AM2 (Stage)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

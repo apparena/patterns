@@ -1,8 +1,20 @@
 {
   "navSidebar": {
     "btnList": [
-      { "btnText": "Call to action", "btnClass": "btn-primary btn-block"}
+      {
+        "btnText": "Call to action",
+        "btnClass": "btn-primary btn-block"
+      }
     ],
+    "header": {
+      "img": {
+        "src": "/images/fpo_square.png",
+        "title": "Container Avatar",
+        "link": "#"
+      },
+      "link": "#",
+      "title": "Container name"
+    },
     "navList": [
       {
         "text": "Sidebar Nav 1",
