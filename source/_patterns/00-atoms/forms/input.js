@@ -29,7 +29,6 @@ export default class TextElementComponent extends ReactComponent {
                 className={this.props.className}
                 value={this.props.defaultValue}
                 onChange={this.props.onChange}
-                ref={(this.props.id) ? this.props.id : "config"}
                 id={this.props.id}
                 type={this.props.type}
                 onKeyUp={this.props.onKeyUp}

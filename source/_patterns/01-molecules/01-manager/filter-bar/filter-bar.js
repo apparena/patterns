@@ -7,7 +7,7 @@ import Input from "../../../00-atoms/forms/input";
 import Button from "../../../00-atoms/button/button";
 import CheckBox from "../../../00-atoms/forms/checkbox";
 import RadioButton from "../../../00-atoms/forms/radio-button";
-import cx from 'classnames';
+import cx from "classnames";
 
 export default class FilterBar extends ReactComponent {
 
@@ -82,7 +82,8 @@ export default class FilterBar extends ReactComponent {
                             else classNameString = cx("dropdown-item", this.props.listStyle.status.sort[item.identifier] ? '' : "active");
                             container.push(
                                 <li className={classNameString} key={this.getUniqueKey()}>
-                                    <a href="#" key={this.getUniqueKey()} onClick={this.onSortChangeHandler.bind(this, item.identifier)}>
+                                    <a href="#" key={this.getUniqueKey()}
+                                       onClick={this.onSortChangeHandler.bind(this, item.identifier)}>
                                         <Icon name="sort-amount-desc" key={key}/>absteigend
                                         {this.props.selected && <Icon class="fa check-square-o" key={key}/>}
                                     </a>
@@ -94,7 +95,8 @@ export default class FilterBar extends ReactComponent {
                             else classNameString = cx("dropdown-item", this.props.listStyle.status.sort[item.identifier] ? "active" : '');
                             container.push(
                                 <li className="dropdown-item" key={this.getUniqueKey()}>
-                                    <a href="#" key={this.getUniqueKey()} onClick={this.onSortChangeHandler.bind(this, item.identifier)}>
+                                    <a href="#" key={this.getUniqueKey()}
+                                       onClick={this.onSortChangeHandler.bind(this, item.identifier)}>
                                         <Icon name="sort-amount-asc" key={this.getUniqueKey()}/>aufsteigend
                                     </a>
                                 </li>
@@ -112,7 +114,8 @@ export default class FilterBar extends ReactComponent {
             })
         }
         return (
-            <ul className={this.props.listStyle.cards.menuClass ? this.props.listStyle.cards.menuClass : "dropdown-menu dropdown-menu-right"} key={this.getUniqueKey()}>
+            <ul className={this.props.listStyle.cards.menuClass ? this.props.listStyle.cards.menuClass : "dropdown-menu dropdown-menu-right"}
+                key={this.getUniqueKey()}>
                 {container}
             </ul>
         )
@@ -139,7 +142,9 @@ export default class FilterBar extends ReactComponent {
                     item.options.map((element) => {
                         checkboxes.push(
                             <div>
-                                <CheckBox key={this.getUniqueKey()} onChange={this.onFilterChangeHandler.bind(this, element.identifier)} checked={this.props.filter.status[element.identifier]}/>
+                                <CheckBox key={this.getUniqueKey()}
+                                          onChange={this.onFilterChangeHandler.bind(this, element.identifier)}
+                                          checked={this.props.filter.status[element.identifier]}/>
                                 <label>{element.text}</label>
                             </div>
                         );
@@ -156,7 +161,9 @@ export default class FilterBar extends ReactComponent {
                     let radiobuttons = [];
                     item.options.map((element) => {
                         radiobuttons.push(
-                            <RadioButton text={element.text} key={this.getUniqueKey()} onClick={this.onFilterChangeHandler.bind(this, element.identifier)} checked={this.props.filter.status[element.identifier]}/>
+                            <RadioButton text={element.text} key={this.getUniqueKey()}
+                                         onClick={this.onFilterChangeHandler.bind(this, element.identifier)}
+                                         checked={this.props.filter.status[element.identifier]}/>
                         );
                     });
                     container.push(
@@ -180,10 +187,14 @@ export default class FilterBar extends ReactComponent {
             return (
                 <div className="filter-bar-display-mode">
                     <ButtonGroup>
-                        <Button className="btn  btn-secondary" title={this.props.listStyle.cards.text} onClick={this.onStyleChangeHandler.bind(this, "cards")} active={this.props.listStyle.status.type}>
+                        <Button className="btn  btn-secondary" title={this.props.listStyle.cards.text}
+                                onClick={this.onStyleChangeHandler.bind(this, "cards")}
+                                active={this.props.listStyle.status.type}>
                             <Icon name="th"/>
                         </Button>
-                        <Button className="btn  btn-secondary" title={this.props.listStyle.table.text} onClick={this.onStyleChangeHandler.bind(this, "table")} active={!this.props.listStyle.status.type}>
+                        <Button className="btn  btn-secondary" title={this.props.listStyle.table.text}
+                                onClick={this.onStyleChangeHandler.bind(this, "table")}
+                                active={!this.props.listStyle.status.type}>
                             <Icon name="th-list"/>
                         </Button>
                     </ButtonGroup>
@@ -196,9 +207,12 @@ export default class FilterBar extends ReactComponent {
         return (
             <div key={this.getUniqueKey()}>
                 <div className="filter-bar p-a-1">
-                    {this.props.filter.groups.length &&
+                    {(this.props.filter.groups.length >= 1) &&
                     <div className="filter-bar-filter m-r-1">
-                        <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"} onClick={this.onFilterChangeHandler.bind(this, "toggle")} data-toggle="collapse" href="#collapseFilter" aria-expanded={this.props.filter.status.expanded} aria-controls="collapseFilter">
+                        <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"}
+                           onClick={this.onFilterChangeHandler.bind(this, "toggle")}
+                           href="#collapseFilter"
+                        >
                             <Icon name="filter"/>
                             {this.props.filter.buttonText ? this.props.filter.buttonText : " Filter"}
                         </a>
@@ -213,7 +227,9 @@ export default class FilterBar extends ReactComponent {
                                 <Icon name="search" key="not-loading"/>
                             }
                         </span>
-                            <Input type="text" inputClass="form-control" placeholder={this.props.input.placeholder} onChange={this.props.input.onInput} defaultValue={this.props.input.status.inputValue} autoFocus={this.props.input.autoFocus}/>
+                            <Input type="text" inputClass="form-control" placeholder={this.props.input.placeholder}
+                                   onChange={this.props.input.onInput} defaultValue={this.props.input.status.inputValue}
+                                   autoFocus={this.props.input.autoFocus}/>
                             {this.props.txtSearchAddon &&
                             <span className="input-group-addon">
                                 {this.props.txtSearchAddon}
@@ -223,7 +239,8 @@ export default class FilterBar extends ReactComponent {
                     </div>
                     {this.props.listStyle.status.type ?
                         <div className="filter-bar-sort m-r-1" key={this.getUniqueKey()}>
-                            <Dropdown dropdownClass="dropdown dropdown" buttonClass="btn btn-secondary dropdown-toggle" buttonText={this.props.listStyle.cards.buttonText ? this.props.listStyle.cards.buttonText : "Sortierung"}>
+                            <Dropdown dropdownClass="dropdown dropdown" buttonClass="btn btn-secondary dropdown-toggle"
+                                      buttonText={this.props.listStyle.cards.buttonText ? this.props.listStyle.cards.buttonText : "Sortierung"}>
                                 {this.createDropdownItems()}
                             </Dropdown>
                         </div> :
@@ -232,7 +249,9 @@ export default class FilterBar extends ReactComponent {
                     {this.createStyleButtons()}
                 </div>
                 {this.props.filter &&
-                <div className={cx("collapse", this.props.filter.status.expanded ? "in" : "")} id="collapseFilter" style={this.props.filter.status.expanded ? {} : {height: 0}} aria-expanded={this.props.filter.status.expanded} key={this.getUniqueKey()}>
+                <div className={cx("collapse", this.props.filter.status.expanded ? "in" : "")} id="collapseFilter"
+                     style={this.props.filter.status.expanded ? {} : {height: 0}}
+                     key={this.getUniqueKey()}>
                     <div className="card card-block">
                         <div className="row">
                             {this.createFilterElements()}
