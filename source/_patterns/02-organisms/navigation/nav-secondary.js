@@ -10,11 +10,6 @@ export default class SecondNavComponent extends ReactComponent {
 
     render() {
         const {children} = this.props;
-        const steps = React.Children.map(children, (child, index) => {
-            if (React.isValidElement(child)) {
-                return React.cloneElement(child, child.props);
-            }
-        });
         return (
             <div className={cx(styles["o-nav"], styles["o-nav-secondary"])}>
                 {children}
