@@ -196,7 +196,7 @@ export default class FilterBar extends ReactComponent {
         return (
             <div key={this.getUniqueKey()}>
                 <div className="filter-bar p-a-1">
-                    {this.props.filter.groups.length &&
+                    {this.props.filter && this.props.filter.groups.length &&
                     <div className="filter-bar-filter m-r-1">
                         <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"} onClick={this.onFilterChangeHandler.bind(this, "toggle")} data-toggle="collapse" href="#collapseFilter" aria-expanded={this.props.filter.status.expanded} aria-controls="collapseFilter">
                             <Icon name="filter"/>
