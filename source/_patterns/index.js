@@ -23,17 +23,18 @@ import InputGroup from "./01-molecules/input-group/input-group";
 import Jumbotron from "./01-molecules/jumbotron/jumbotron";
 import Modal from "./01-molecules/modal/modal";
 import Navbar from "./01-molecules/navbar/navbar";
+import Nav from "./01-molecules/navs/nav";
+import NavItem from "./01-molecules/navs/nav-item";
 import Notification from "./01-molecules/notification/notification";
 import Popover from "./01-molecules/popover/popover";
 import Tooltip from "./01-molecules/tooltip/tooltip";
 import ProgressTracker from "./01-molecules/progress-tracker/progress-tracker";
 import ListGroup from "./01-molecules/list-group/list-group";
-
-//Organisms
 import CardsList from "./02-organisms/lists/cards-list";
 import TableList from "./02-organisms/lists/table-list";
 import Table from "./00-atoms/table/table";
 import Tag from "./00-atoms/tag/tag";
+
 
 export {
     ReactComponent,
@@ -61,6 +62,8 @@ export {
     Jumbotron,
     Modal,
     Navbar,
+    Nav,
+    NavItem,
     Notification,
     Popover,
     Tooltip,

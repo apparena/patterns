@@ -30,8 +30,8 @@ export default class Modal extends ReactComponent {
 
     static defaultProps = {
         transition: "expandIn",
-        saveText: "Save",
-        closeText: "Cancel",
+        saveText: "Speichern",
+        closeText: "Abbrechen",
         visible: true,
         draggable: false,
         searchPlaceholder: " ",

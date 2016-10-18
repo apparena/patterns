@@ -5,40 +5,38 @@ import styles from "./navs.scss";
 
 export default class Nav extends ReactComponent {
     static propTypes = {
+        className: PropTypes.string,
         children: PropTypes.node.isRequired,
-        inline: PropTypes.bool,
-        tabs: PropTypes.bool,
-        pills: PropTypes.bool,
-        stacked: PropTypes.bool,
+        dropdown: PropTypes.bool,
+        active: PropTypes.bool,
     };
 
     static defaultProps = {
-        inline: false,
-        tabs: false,
-        pills: false,
-        stacked: false
+        dropdown: false,
     };
 
     render() {
         const {children} = this.props;
         // classes
         const componentClass = cx(
-            styles.nav,
-            this.props.inline && styles["nav-inline"],
-            this.props.tabs && styles["nav-tabs"],
-            this.props.pills && styles["nav-pills"],
-            this.props.stacked && styles["nav-stacked"],
+            styles["nav-item"],
+            this.props.dropdown && styles["dropdown"],
             this.props.className
         );
         const child = React.Children.map(children, (child) => {
             if (React.isValidElement(child)) {
-                return React.cloneElement(child, child.props);
+                const className = cx(
+                    styles["nav-link"],
+                    this.props.active && styles.active,
+                    child.props.className
+                );
+                return React.cloneElement(child, {...child.props, className});
             }
         });
         return (
-            <ul className={componentClass}>
+            <li className={componentClass}>
                 {child}
-            </ul>
+            </li>
         );
     }
 };

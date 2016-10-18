@@ -7,7 +7,7 @@ import Input from "../../../00-atoms/forms/input";
 import Button from "../../../00-atoms/button/button";
 import CheckBox from "../../../00-atoms/forms/checkbox";
 import RadioButton from "../../../00-atoms/forms/radio-button";
-import cx from 'classnames';
+import cx from "classnames";
 
 export default class FilterBar extends ReactComponent {
 
@@ -196,7 +196,7 @@ export default class FilterBar extends ReactComponent {
         return (
             <div key={this.getUniqueKey()}>
                 <div className="filter-bar p-a-1">
-                    {this.props.filter && this.props.filter.groups.length &&
+                    {(this.props.filter.groups.length >= 1) &&
                     <div className="filter-bar-filter m-r-1">
                         <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"} onClick={this.onFilterChangeHandler.bind(this, "toggle")} data-toggle="collapse" href="#collapseFilter" aria-expanded={this.props.filter.status.expanded} aria-controls="collapseFilter">
                             <Icon name="filter"/>
