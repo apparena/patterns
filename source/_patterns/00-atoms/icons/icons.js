@@ -3,7 +3,6 @@ import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./icons.scss"
 
-
 export default class Icon extends ReactComponent {
     static   PropTypes = {
         border: PropTypes.bool,

@@ -25,6 +25,7 @@ import Modal from "./01-molecules/modal/modal";
 import Navbar from "./01-molecules/navbar/navbar";
 import Nav from "./01-molecules/navs/nav";
 import NavItem from "./01-molecules/navs/nav-item";
+import NavSecondary from "./02-organisms/navigation/nav-secondary";
 import Notification from "./01-molecules/notification/notification";
 import Popover from "./01-molecules/popover/popover";
 import Tooltip from "./01-molecules/tooltip/tooltip";
@@ -64,6 +65,7 @@ export {
     Navbar,
     Nav,
     NavItem,
+    NavSecondary,
     Notification,
     Popover,
     Tooltip,

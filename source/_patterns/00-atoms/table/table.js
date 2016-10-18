@@ -12,6 +12,7 @@ export default class Table extends ReactComponent {
         condensed: PropTypes.bool,
         hover: PropTypes.bool,
         responsive: PropTypes.bool,
+        inverse: PropTypes.bool,
     };
 
     static defaultProps = {
@@ -20,6 +21,7 @@ export default class Table extends ReactComponent {
         hover: false,
         responsive: false,
         striped: false,
+        inverse: false,
     };
 
     render() {
@@ -30,6 +32,7 @@ export default class Table extends ReactComponent {
             this.props.condensed && styles['table-condensed'],
             this.props.hover && styles['table-hover'],
             this.props.striped && styles['table-striped'],
+            this.props.inverse && styles['table-inverse'],
             this.props.className
         );
 

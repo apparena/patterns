@@ -10,6 +10,15 @@
 
 .m-notification {
 
+  &.fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+  }
+
   .content {
     position: fixed;
     top: 20px;
@@ -23,6 +32,7 @@
     padding: 10px 40px 10px 60px;
     visibility: visible;
     z-index: 2050;
+    pointer-events: auto;
     &:before {
       content: '';
       bottom: 0;
@@ -92,23 +102,5 @@
       display: block;
     }
   }
-
-  .dismissibleIcon {
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    margin-top: -7px;
-  }
-
-  .typeIcon {
-    left: 12px;
-    top: 50%;
-    position: absolute;
-    margin-top: -8px;
-    line-height: 1;
-    color: white;
-  }
-
 }
 
