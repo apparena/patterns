@@ -26,6 +26,7 @@ import Navbar from "./01-molecules/navbar/navbar";
 import Nav from "./01-molecules/navs/nav";
 import NavItem from "./01-molecules/navs/nav-item";
 import NavSecondary from "./02-organisms/navigation/nav-secondary";
+import NavSecondaryGroup from "./02-organisms/navigation/nav-secondary-group";
 import Notification from "./01-molecules/notification/notification";
 import Popover from "./01-molecules/popover/popover";
 import Tooltip from "./01-molecules/tooltip/tooltip";
@@ -66,6 +67,7 @@ export {
     Nav,
     NavItem,
     NavSecondary,
+    NavSecondaryGroup,
     Notification,
     Popover,
     Tooltip,

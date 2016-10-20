@@ -7,7 +7,7 @@
 /*=========================================================================
   Organism Navigation Sidebar
  ========================================================================== */
-#o-nav-sidebar {
+//#o-nav-sidebar, .o-nav-sidebar {
 
   .o-nav-sidebar-header {
     .media-object {
@@ -39,10 +39,11 @@
     }
   }
 
-  .o-nav-sidebar-scondaryGroup {
+  .o-nav-sidebar-secondaryGroup {
     .title {
       color: $gray-light;
+      border-top: 1px solid #ccc;
+      padding: 10px 10px 4px 10px;
     }
-
   }
-}
+//}

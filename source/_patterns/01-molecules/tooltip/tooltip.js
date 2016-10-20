@@ -92,6 +92,7 @@ export default class Tooltip extends ReactComponent {
                         fixed={this.props.fixed}
                         zIndex={this.props.zIndex}
                         transition={this.props.transition}
+                        verticalOffset={10}
                     >
                         <div className={cx(styles.tooltip, styles[this.props.positioning.split(" ")[0]])}>
                             {label}

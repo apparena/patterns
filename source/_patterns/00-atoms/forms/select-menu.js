@@ -4,7 +4,7 @@ import ReactComponent from "../../react-utils/component";
 import Select from "react-select";
 import styles from "./select-menu.scss";
 
-export default class SelectElementComponent extends ReactComponent {
+export default class SelectMenu extends ReactComponent {
     static propTypes = {
         id: PropTypes.string,
         defaultValue: PropTypes.oneOfType([
@@ -17,12 +17,24 @@ export default class SelectElementComponent extends ReactComponent {
         multi: PropTypes.bool,
         clearable: PropTypes.bool,
         disabled: PropTypes.bool,
+        clearAllText: PropTypes.string,
+        clearValueText: PropTypes.string,
+        placeholder: PropTypes.string,
+        searchingText: PropTypes.string,
+        noResultsText: PropTypes.string,
+        backspaceToRemoveMessage: PropTypes.string,
     };
 
     static defaultProps = {
         multi: false,
         clearable: false,
         disabled: false,
+        clearAllText: "",
+        clearValueText: "",
+        placeholder: "Auswählen",
+        searchingText: "Suchen...",
+        noResultsText: "Keine Ergebnisse",
+        backspaceToRemoveMessage: ""
     };
 
     render() {
@@ -37,11 +49,12 @@ export default class SelectElementComponent extends ReactComponent {
                     multi={this.props.multi}
                     clearable={this.props.clearable}
                     autoBlur
-                    clearAllText={"Test"}
-                    clearValueText={"Test"}
-                    placeholder={"Auswählen"}
-                    searchingText={"Suchen..."}
-                    noResultsText={"Keine Ergebnisse"}
+                    clearAllText={this.props.clearAllText}
+                    clearValueText={this.props.clearValueText}
+                    placeholder={this.props.placeholder}
+                    searchingText={this.props.searchingText}
+                    backspaceToRemoveMessage={this.props.backspaceToRemoveMessage}
+                    noResultsText={this.props.noResultsText}
                     disabled={this.props.disabled}
                 />
             </div>

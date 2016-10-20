@@ -24,16 +24,14 @@ export default class Icon extends ReactComponent {
             styles.fa,
             styles['fa-' + this.props.name],
             this.props.size && styles['fa-' + this.props.size],
-            this.props.fixedWidth && styles['fa-' + this.props.fixedWidth],
-            this.props.inverse && styles['fa-' + this.props.inverse],
+            this.props.inverse && styles['fa-inverse'],
             this.props.flip && styles['fa-flip' + this.props.flip],
             this.props.rotate && styles['fa-rotate-' + this.props.rotate],
             this.props.stack && styles['fa-' + this.props.stack],
-            {
-                'fa-border': this.props.border,
-                'fa-pulse': this.props.pulse,
-                'fa-spin': this.props.spin,
-            },
+            this.props.border && styles['fa-border'],
+            this.props.pulse && styles['fa-pulse'],
+            this.props.spin && styles['fa-spin'],
+            this.props.fixedWidth && styles['fa-fw'],
             this.props.className
         );
 

@@ -1,8 +1,9 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import styles from "./forms.scss"
+import cx from "classnames";
 
-export default class TextElementComponent extends ReactComponent {
+export default class Input extends ReactComponent {
     static propTypes = {
         onChange: PropTypes.func.isRequired,
         defaultValue: PropTypes.string,
@@ -12,21 +13,29 @@ export default class TextElementComponent extends ReactComponent {
         type: PropTypes.string,
         disabled: PropTypes.bool,
         autoFocus: PropTypes.bool,
+        style: PropTypes.oneOf(["dotted"])
     };
 
     static defaultProps = {
-        className: styles["form-control"],
         type: "text",
         autoFocus: false,
         disabled: false
     };
 
     render() {
+        // classes
+        const componentClass = cx(
+            styles["form-control"],
+            this.props.style && styles['form-' + this.props.style],
+            this.props.className
+        );
+
+
         return (
             <input
                 disabled={this.props.disabled}
                 autoFocus={this.props.autoFocus}
-                className={this.props.className}
+                className={componentClass}
                 value={this.props.defaultValue}
                 onChange={this.props.onChange}
                 id={this.props.id}

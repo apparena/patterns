@@ -21,19 +21,17 @@ export default class Notification extends ReactComponent {
         className: PropTypes.string,
         onClose: PropTypes.func,
         fixed: PropTypes.bool,
-        dismissible: PropTypes.bool
     };
 
     static defaultProps = {
         transition: "slideDownIn",
-        dismissible: false,
         fixed: true,
     };
 
     renderDismissibleIcon() {
         if (this.props.onClose) {
             return (
-                <Icon name={"times"} className={styles.close} onClick={this.props.onClose}/>
+                <div onClick={this.props.onClose}><Icon name={"times"} className={styles.close}/></div>
             );
         }
     }
