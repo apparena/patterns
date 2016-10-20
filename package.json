@@ -1,6 +1,6 @@
 {
   "name": "apparena-patterns",
-  "version": "1.0.32",
+  "version": "1.0.34",
   "license": "MIT",
   "description": "Styleguide and patterns of App-Arena.com",
   "keywords": [
@@ -26,8 +26,9 @@
     "test:karma": "karma start build/test/karma.conf.js --single-run",
     "test:unit": "cross-env NODE_ENV=test babel-node build/test/index.js unit",
     "test:unit:watch": "cross-env NODE_ENV=test babel-node build/test/watch.js unit",
-    "build:umd": "webpack --config build/webpack/webpack.config.dev.js && webpack -p --config build/webpack/webpack.config.prod.js",
-    "start": "node build/webpack/server.js"
+    "build:umd": "webpack -p --config build/webpack/webpack.config.prod.js",
+    "start": "node build/webpack/server.js",
+    "publish": "cd build/apparena-patterns-react && npm publish"
   },
   "repository": {
     "type": "git",

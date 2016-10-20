@@ -5,9 +5,10 @@ import cx from "classnames";
 import Toggle from "react-toggle";
 import styles from "./checkbox.scss";
 
-export default class CheckboxComponent extends ReactComponent {
+export default class Checkbox extends ReactComponent {
     static PropTypes = {
         className: PropTypes.string,
+        zIndex: PropTypes.number,
         disabled: PropTypes.bool,
         checked: PropTypes.bool,
         onChange: PropTypes.func.isRequired,
@@ -38,11 +39,12 @@ export default class CheckboxComponent extends ReactComponent {
     };
 
     render() {
-        const {id, className, positioning, checked, disabled, onChange} = this.props;
+        const {id, className, positioning, checked, disabled, onChange, zIndex} = this.props;
         var cId = id.replace("_", "");
         return (
             <div className={cx(styles.checkbox, className)}>
                 <Tooltip
+                    zIndex={zIndex}
                     positioning={positioning}
                     label={checked ? "Aktiviert" : "Deaktiviert"}
                 >
