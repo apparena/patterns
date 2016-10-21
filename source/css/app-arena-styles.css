@@ -7971,16 +7971,6 @@ button.close {
   Variable definitions
  ========================================================================== */
 /**
- * Navbar
- */
-.navbar-brand {
-  height: 40px;
-  padding: 10px 0;
-  margin-right: 2rem; }
-  .navbar-brand > img {
-    height: 20px; }
-
-/**
   * Top navigations
   */
 /**
@@ -8167,16 +8157,6 @@ main[role=main] {
 /**
  * Header
  */
-/**
- * Navbar
- */
-.navbar-brand {
-  height: 40px;
-  padding: 10px 0;
-  margin-right: 2rem; }
-  .navbar-brand > img {
-    height: 20px; }
-
 /**
   * Top navigations
   */
