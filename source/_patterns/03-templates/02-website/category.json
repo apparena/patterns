@@ -56,7 +56,7 @@
     "btn_more_info": {
       "btnText": "Get more info",
       "btnTitle": "",
-      "btnClass": "btn btn-success m-b-1"
+      "btnClass": "btn btn-success mb-1"
     },
     "btn_signup_nl": {
       "btnText": "Sign up",
