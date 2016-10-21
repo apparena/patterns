@@ -3,24 +3,8 @@
  */
 @import "../../../css/scss/abstracts/variables";
 @import "../../../css/scss/abstracts/mixins";
-@import "~bootstrap/scss/modal";
-@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/dropdown";
 
 /*=========================================================================
-  Molecules Modal
+  Molecules Dropdown
  ========================================================================== */
-
-.show {
-  display: block;
-}
-
-.draggable {
-  position: absolute;
-  .modal-header {
-    cursor: move;
-  }
-}
-
-.modal-xl {
-  max-width: 90%;
-}
