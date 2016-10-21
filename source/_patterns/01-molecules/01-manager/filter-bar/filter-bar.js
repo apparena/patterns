@@ -206,9 +206,9 @@ export default class FilterBar extends ReactComponent {
     render() {
         return (
             <div key={this.getUniqueKey()}>
-                <div className="filter-bar p-a-1">
+                <div className="filter-bar pa-1">
                     {(this.props.filter.groups.length >= 1) &&
-                    <div className="filter-bar-filter m-r-1">
+                    <div className="filter-bar-filter mr-1">
                         <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"}
                            onClick={this.onFilterChangeHandler.bind(this, "toggle")}
                            href="#collapseFilter"
@@ -217,7 +217,7 @@ export default class FilterBar extends ReactComponent {
                             {this.props.filter.buttonText ? this.props.filter.buttonText : " Filter"}
                         </a>
                     </div>}
-                    <div className="filter-bar-search m-r-1">
+                    <div className="filter-bar-search mr-1">
                         <div className="input-group" key={this.getUniqueKey()}>
                         <span className="input-group-addon" key="loading-icon">
                             {this.props.input.loading ?
@@ -238,7 +238,7 @@ export default class FilterBar extends ReactComponent {
                         </div>
                     </div>
                     {this.props.listStyle.status.type ?
-                        <div className="filter-bar-sort m-r-1" key={this.getUniqueKey()}>
+                        <div className="filter-bar-sort mr-1" key={this.getUniqueKey()}>
                             <Dropdown dropdownClass="dropdown dropdown" buttonClass="btn btn-secondary dropdown-toggle"
                                       buttonText={this.props.listStyle.cards.buttonText ? this.props.listStyle.cards.buttonText : "Sortierung"}>
                                 {this.createDropdownItems()}

@@ -1,8 +1,8 @@
-<div class="filter-bar p-a-1">
+<div class="filter-bar pa-1">
 
     <!-- data filter functionality -->
     {{# filterBar.filtersActivated }}
-        <div class="filter-bar-filter m-r-1">
+        <div class="filter-bar-filter mr-1">
             <a class="btn btn-secondary" data-toggle="collapse" href="#filterBarSelection" aria-expanded="false"
                aria-controls="collapseExample">
                 <i class="fa fa-filter"></i> Filter
@@ -13,14 +13,14 @@
 
     <!-- Search functionality -->
     {{# filterBar.searchActivated }}
-        <div class="filter-bar-search m-r-1">
+        <div class="filter-bar-search mr-1">
             {{> molecules-input-group }}
         </div>
     {{/ filterBar.searchActivated }}
 
     <!-- sort functionality -->
     {{# filterBar.sortActivated }}
-        <div class="filter-bar-sort m-r-1">
+        <div class="filter-bar-sort mr-1">
             {{> molecules-dropdown }}
         </div>
     {{/ filterBar.sortActivated }}

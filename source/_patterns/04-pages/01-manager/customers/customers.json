@@ -15,7 +15,7 @@
             {
               "status": "list-group-item-info",
               "header": false,
-              "text": "Die App wurde noch nicht veröffentlicht.<a href=\"#\" class=\"btn btn-primary btn-block btn-sm m-t-1 \">Jetzt veröffentlichen</a>"
+              "text": "Die App wurde noch nicht veröffentlicht.<a href=\"#\" class=\"btn btn-primary btn-block btn-sm mt-1 \">Jetzt veröffentlichen</a>"
             },
             {
               "status": false,
@@ -69,7 +69,7 @@
             {
               "status": "list-group-item-danger",
               "header": false,
-              "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz läuft in 5 Tagen ab!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm m-t-1 \">Jetzt verlängern</a>"
+              "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz läuft in 5 Tagen ab!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm mt-1 \">Jetzt verlängern</a>"
             },
             {
               "status": false,
@@ -101,7 +101,7 @@
             {
               "status": "list-group-item-warning",
               "header": false,
-              "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz ist abgelaufen!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm m-t-1 \">Jetzt verlängern</a>"
+              "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz ist abgelaufen!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm mt-1 \">Jetzt verlängern</a>"
             },
             {
               "status": false,
