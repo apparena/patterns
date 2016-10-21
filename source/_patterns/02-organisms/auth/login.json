@@ -1,6 +1,6 @@
 {
   "login": {
-    "header": "<span class=\"pull-right\">Noch kein Konto? <a href=\"#\">Hier registrieren</a></span><h5 class=\"m-b-0\">Anmeldung</h5>",
+    "header": "<span class=\"float-right\">Noch kein Konto? <a href=\"#\">Hier registrieren</a></span><h5 class=\"mb-0\">Anmeldung</h5>",
     "items": [
       {
         "formGroup": {

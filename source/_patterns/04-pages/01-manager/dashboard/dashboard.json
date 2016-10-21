@@ -3,7 +3,7 @@
   "appList": {
     "content": false,
     "footer": "<a href=\"#\" class=\"btn btn-link\">App hinzufügen</a>",
-    "header": "<span class=\"text-muted pull-right\"><a href=\"/apps\">Alle anzeigen</a></span><h5>Apps</h5><p>11314 aktive Apps</p>",
+    "header": "<span class=\"text-muted float-right\"><a href=\"/apps\">Alle anzeigen</a></span><h5>Apps</h5><p>11314 aktive Apps</p>",
     "image": false,
     "listGroup": {
       "items": [

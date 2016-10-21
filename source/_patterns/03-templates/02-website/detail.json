@@ -66,12 +66,12 @@
     "btn_read-more": {
       "btnText": "Mehr lesen",
       "btnTitle": "Mit dem Klick auf diesen Button erhalten Sie weitere Informationen.",
-      "btnClass": "btn-primary pull-xs-right"
+      "btnClass": "btn-primary float-xs-right"
     },
     "btn_webinar-request": {
       "btnText": "Jetzt Termin anfragen",
       "btnTitle": "Mit dem Klick auf diesen Button können Sie einen Termin für ein kostenloses Webinar vereinbaren.",
-      "btnClass": "btn-primary btn-success pull-md-left btn-lg"
+      "btnClass": "btn-primary btn-success float-md-left btn-lg"
     }
   },
   "sliders": {
