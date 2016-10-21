@@ -56,12 +56,12 @@
     "btn_more_info": {
       "btnText": "Get more info",
       "btnTitle": "",
-      "btnClass": "btn btn-success m-b-1"
+      "btnClass": "btn btn-success mb-1"
     },
     "btn_signup_nl": {
       "btnText": "Sign up",
       "btnTitle": "",
-      "btnClass": "btn-primary btn-success pull-xs-center"
+      "btnClass": "btn-primary btn-success float-xs-center"
     }
   }
 }

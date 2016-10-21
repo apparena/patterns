@@ -1,0 +1,9 @@
+{
+    "progressBar": {
+        "class": "custom-class",
+        "value": 20,
+        "maxValue": 100,
+        "text": "20% completed - A lot to do yet :-)",
+        "type": "success"
+    }
+}

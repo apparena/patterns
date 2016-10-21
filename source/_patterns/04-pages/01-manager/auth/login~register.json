@@ -1,6 +1,6 @@
 {
   "login": {
-    "header": "<span class=\"pull-right\">Bereits registriert? <a href=\"#\">Hier anmelden</a></span><h5 class=\"m-b-0\">Registrierung</h5>",
+    "header": "<span class=\"float-right\">Bereits registriert? <a href=\"#\">Hier anmelden</a></span><h5 class=\"mb-0\">Registrierung</h5>",
     "items": [
       {
         "formGroup": {

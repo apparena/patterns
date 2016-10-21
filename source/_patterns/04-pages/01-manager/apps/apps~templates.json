@@ -2,7 +2,7 @@
   "btnGroupList": false,
   "cardsList": [
     {
-      "header": "EM Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "header": "EM Tippspiel <div class=\"float-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
       "image": {
         "src": "https://www.app-arena.com/media/catalog/product/cache/1/small_image/286x169/040ec09b1e35df139433887a97daa66f/e/m/em-tippspiel-v2_1_laptop.png"
       },
@@ -29,7 +29,7 @@
       }
     },
     {
-      "header": "Fotowettbewerb <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "header": "Fotowettbewerb <div class=\"float-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
       "image": {
         "src": "https://www.app-arena.com/media/catalog/product/cache/1/small_image/286x169/040ec09b1e35df139433887a97daa66f/f/o/fotowettbewerb_slider01_2.png"
       },
@@ -56,7 +56,7 @@
       }
     },
     {
-      "header": "Adventskalender für Sparkassen <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "header": "Adventskalender für Sparkassen <div class=\"float-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
       "image": {
         "src": "https://www.app-arena.com/media/catalog/product/cache/1/small_image/286x169/040ec09b1e35df139433887a97daa66f/a/d/adventskalender_slider01_sk.png"
       },
@@ -194,12 +194,12 @@
     ],
     "navList": [
       {
-        "text": "Apps <span class=\"pull-right label label-success\">12</span>",
+        "text": "Apps <span class=\"float-right label label-success\">12</span>",
         "url": "link.pages-apps",
         "isActive": false
       },
       {
-        "text": "Vorlagen <span class=\"pull-right label label-success\">3</span>",
+        "text": "Vorlagen <span class=\"float-right label label-success\">3</span>",
         "isActive": true
       }
     ]

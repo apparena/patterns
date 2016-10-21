@@ -36,6 +36,7 @@ import CardsList from "./02-organisms/lists/cards-list";
 import TableList from "./02-organisms/lists/table-list";
 import Table from "./00-atoms/table/table";
 import Tag from "./00-atoms/tag/tag";
+import ProgressBar from "./01-molecules/progress-bar/progress-bar.js";
 
 
 export {
@@ -71,6 +72,7 @@ export {
     Notification,
     Popover,
     Tooltip,
+    ProgressBar,
     ProgressTracker,
     ListGroup,
     CardsList,
