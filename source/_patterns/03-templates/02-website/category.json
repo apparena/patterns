@@ -61,7 +61,7 @@
     "btn_signup_nl": {
       "btnText": "Sign up",
       "btnTitle": "",
-      "btnClass": "btn-primary btn-success pull-xs-center"
+      "btnClass": "btn-primary btn-success float-xs-center"
     }
   }
 }

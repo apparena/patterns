@@ -100,12 +100,12 @@
     "btn_signup_nl": {
       "btnText": "Sign up",
       "btnTitle": "",
-      "btnClass": "btn-primary btn-success pull-xs-center"
+      "btnClass": "btn-primary btn-success float-xs-center"
     },
     "btn_signup_appointment": {
       "btnText": "Arrange appointment",
       "btnTitle": "",
-      "btnClass": "btn-primary btn-success btn-lg pull-xs-center"
+      "btnClass": "btn-primary btn-success btn-lg float-xs-center"
     }
   }
 }
