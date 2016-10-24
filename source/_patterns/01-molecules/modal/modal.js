@@ -11,7 +11,7 @@ import Button from "../../00-atoms/button/button";
 export default class Modal extends ReactComponent {
     static propTypes = {
         classNames: PropTypes.string,
-        size: PropTypes.oneOf(["lg", "sm", "xs", "xl"]),
+        size: PropTypes.oneOf(["lg", "sm", "md", "xs", "xl",]),
         headerText: PropTypes.string.isRequired,
         linkLocation: PropTypes.string,
         linkText: PropTypes.string,
