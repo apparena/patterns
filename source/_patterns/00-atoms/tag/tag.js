@@ -12,7 +12,7 @@ const TAG_TYPES = [
     "danger",
 ];
 
-export default class Button extends ReactComponent {
+export default class Tag extends ReactComponent {
     static propTypes = {
         className: PropTypes.string,
         type: PropTypes.oneOf(TAG_TYPES),

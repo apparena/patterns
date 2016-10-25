@@ -1,5 +1,12 @@
 <div class="btn-group" role="group" aria-label="{{ ariaLabel }}">
     {{# items }}
-        {{> atoms-button }}
+        {{^btnText}}
+            <div class="btn-group" role="group">
+                {{> molecules-dropdown }}
+            </div>
+        {{/btnText}}
+        {{#btnText}}
+            {{> atoms-button }}
+        {{/btnText}}
     {{/ items }}
 </div>
