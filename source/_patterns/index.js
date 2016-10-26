@@ -1,4 +1,4 @@
-import Alert from "./01-molecules/alert/alert";
+import Alert from "./01-molecules/messages/alert/alert";
 import Animate from "./react-utils/animate";
 import BreadCrumb from "./01-molecules/breadcrumb/breadcrumb";
 import Button from "./00-atoms/button/button";
@@ -21,7 +21,7 @@ import Navbar from "./01-molecules/navbar/navbar";
 import NavItem from "./01-molecules/navs/nav-item";
 import NavSecondary from "./02-organisms/navigation/nav-secondary";
 import NavSecondaryGroup from "./02-organisms/navigation/nav-secondary-group";
-import Notification from "./01-molecules/notification/notification";
+import Notification from "./01-molecules/messages/notification/notification";
 import Popover from "./01-molecules/popover/popover";
 import Portal from "./react-utils/portal";
 import ProgressBar from "./01-molecules/progress-bar/progress-bar";

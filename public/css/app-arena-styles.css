@@ -2779,7 +2779,7 @@ code {
   font-size: 90%;
   color: #bd4147;
   background-color: #f7f7f9;
-  border-radius: 5px; }
+  border-radius: 0.25rem; }
 
 kbd {
   padding: 0.2rem 0.4rem;
@@ -3684,7 +3684,7 @@ pre {
     border: 0; }
   .form-control:focus {
     color: #666666;
-    background-color: #fff;
+    background-color: #EEF2F8;
     border-color: #66afe9;
     outline: none;
     box-shadow: none; }
@@ -4449,7 +4449,7 @@ tbody.collapse.in {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  border-radius: 0.25rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175); }
 
 .dropdown-divider {
@@ -4883,7 +4883,7 @@ tbody.collapse.in {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='#333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-image: none \9;
   background-size: 8px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 0 solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   -moz-appearance: none;
   -webkit-appearance: none; }
@@ -5628,7 +5628,7 @@ tbody.collapse.in {
   margin-bottom: 1rem;
   list-style: none;
   background-color: #dddddd;
-  border-radius: 5px; }
+  border-radius: 0.25rem; }
   .breadcrumb::after {
     content: "";
     display: table;
@@ -5654,17 +5654,17 @@ tbody.collapse.in {
   padding-left: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: 5px; }
+  border-radius: 0.25rem; }
 
 .page-item {
   display: inline; }
   .page-item:first-child .page-link {
     margin-left: 0;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px; }
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem; }
   .page-item:last-child .page-link {
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px; }
+    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem; }
   .page-item.active .page-link, .page-item.active .page-link:focus {
     z-index: 2;
     color: #fff;
@@ -5742,7 +5742,7 @@ tbody.collapse.in {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 5px; }
+  border-radius: 0.25rem; }
   .tag:empty {
     display: none; }
 
@@ -6491,7 +6491,7 @@ button.close {
   color: #fff;
   text-align: center;
   background-color: #000;
-  border-radius: 5px; }
+  border-radius: 0.25rem; }
   .tooltip-inner::before {
     position: absolute;
     width: 0;
@@ -6858,23 +6858,23 @@ a.bg-inverse:hover {
   background-color: #1f2021 !important; }
 
 .rounded {
-  border-radius: 5px; }
+  border-radius: 0.25rem; }
 
 .rounded-top {
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px; }
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem; }
 
 .rounded-right {
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px; }
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem; }
 
 .rounded-bottom {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px; }
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem; }
 
 .rounded-left {
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px; }
+  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem; }
 
 .rounded-circle {
   border-radius: 50%; }
@@ -7700,7 +7700,7 @@ a.text-gray-dark:hover {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  border-radius: 0.25rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175); }
 
 .dropdown-divider {
@@ -7831,7 +7831,7 @@ a.text-gray-dark:hover {
     border: 0; }
   .form-control:focus {
     color: #666666;
-    background-color: #fff;
+    background-color: #EEF2F8;
     border-color: #66afe9;
     outline: none;
     box-shadow: none; }
