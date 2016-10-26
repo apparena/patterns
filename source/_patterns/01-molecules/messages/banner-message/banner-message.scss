@@ -1,0 +1,38 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../../css/scss/abstracts/variables";
+@import "../../../../css/scss/abstracts/mixins";
+@import "~bootstrap/scss/popover";
+
+/*=========================================================================
+  Molecules Banner Message
+ ========================================================================== */
+
+.m-banner-message {
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $spacer-y;
+  border: $alert-border-width solid transparent;
+  @include border-radius(0);
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.m-banner-message-success {
+  a {color: $alert-success-bg; text-decoration: underline;}
+  @include alert-variant($brand-success, $brand-success, #fff);
+}
+.m-banner-message-info {
+  a {color: $alert-info-bg; text-decoration: underline;}
+  @include alert-variant($brand-info, $brand-info, #fff);
+}
+.m-banner-message-warning {
+  a {color: $alert-warning-bg; text-decoration: underline;}
+  @include alert-variant($brand-warning, $brand-warning, #fff);
+}
+.m-banner-message-danger {
+  a {color: $alert-danger-bg; text-decoration: underline;}
+  @include alert-variant($brand-danger, $brand-danger, #fff);
+}
