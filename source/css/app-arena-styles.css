@@ -5043,7 +5043,7 @@ tbody.collapse.in {
 .nav-pills .nav-link {
   display: block;
   padding: 0.5em 1em;
-  border-radius: 0.25rem; }
+  border-radius: 0; }
 
 .nav-pills .nav-link.active, .nav-pills .nav-link.active:focus,
 .nav-pills .nav-item.open .nav-link,
@@ -5080,7 +5080,7 @@ tbody.collapse.in {
     clear: both; }
   @media (min-width: 576px) {
     .navbar {
-      border-radius: 0.25rem; } }
+      border-radius: 0; } }
 
 .navbar-full {
   z-index: 1000; }

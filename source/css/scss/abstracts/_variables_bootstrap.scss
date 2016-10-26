@@ -2,7 +2,6 @@
 //
 // Bootstrap variable overwrites
 
-
 // Table of Contents
 //
 // Colors
@@ -20,49 +19,51 @@
 //
 // Variable format should follow the `$component-modifier-state-property` order.
 
-
 // Colors
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 #373a3c !default;
-$gray:                      #666666 !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #dddddd !default;
-$gray-lightest:             #f6f6f6 !default;
+$gray-dark: #373a3c !default;
+$gray: #666666 !default;
+$gray-light: #818a91 !default;
+$gray-lighter: #dddddd !default;
+$gray-lightest: #f6f6f6 !default;
 
-$brand-primary:             #478AB8 !default;
-$brand-secondary:           #2d3d4a !default;
-$brand-focus:               #2c82c9 !default;
-$brand-success:             #2dcc56 !default;
-$brand-info:                #67C6EB !default;
-$brand-warning:             #DB6B3A !default;
-$brand-danger:              #CF3D30 !default;
-$brand-grey-light:          #f6f8fa !default;
-$brand-grey-dark:           #666666 !default;
-
-
+$brand-primary: #478AB8 !default;
+$brand-secondary: #2d3d4a !default;
+$brand-focus: #2c82c9 !default;
+$brand-success: #2dcc56 !default;
+$brand-info: #67C6EB !default;
+$brand-warning: #DB6B3A !default;
+$brand-danger: #CF3D30 !default;
+$brand-grey-light: #f6f8fa !default;
+$brand-grey-dark: #666666 !default;
 
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-flex:               true !default;
-$enable-rounded:            true !default;
-$enable-shadows:            true !default;
-$enable-gradients:          true !default;
-$enable-transitions:        true !default;
-$enable-hover-media-query:  true !default;
-$enable-grid-classes:       true !default;
-
+$enable-flex: true !default;
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: true !default;
+$enable-grid-classes: true !default;
 
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     'Open Sans', Arial, sans-serif !default;
-$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:           $font-family-sans-serif !default;
+$font-family-sans-serif: 'Open Sans', Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+// Navbar
+$navbar-border-radius: 0 !default;
+
+// Navs
+$nav-pills-border-radius: 0 !default;
 
 @import "~bootstrap/scss/variables";
