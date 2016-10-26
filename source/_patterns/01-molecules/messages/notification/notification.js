@@ -1,9 +1,9 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../react-utils/component";
+import ReactComponent from "../../../react-utils/component";
 import cx from "classnames";
 import styles from "./notification.scss";
-import Animate from "../../react-utils/animate";
-import Icon from "../../00-atoms/icons/icons";
+import Animate from "../../../react-utils/animate";
+import Icon from "../../../00-atoms/icons/icons";
 
 const typeIcons = {
     "info": "info-circle",
