@@ -4,19 +4,14 @@ import Animate from "../../react-utils/animate";
 import Draggable from "../../react-utils/draggable";
 import cx from "classnames";
 import styles from "./modal.scss";
-import Input from "../../00-atoms/forms/input";
 import Icon from "../../00-atoms/icons/icons";
 import Button from "../../00-atoms/button/button";
 
 export default class Modal extends ReactComponent {
     static propTypes = {
         classNames: PropTypes.string,
-        size: PropTypes.oneOf(["lg", "sm", "xs", "xl"]),
+        size: PropTypes.oneOf(["lg", "sm", "md", "xs", "xl",]),
         headerText: PropTypes.string.isRequired,
-        linkLocation: PropTypes.string,
-        linkText: PropTypes.string,
-        searchPlaceholder: PropTypes.string,
-        onSearch: PropTypes.func,
         onSave: PropTypes.func,
         hintText: PropTypes.string,
         saveText: PropTypes.string,
@@ -25,6 +20,7 @@ export default class Modal extends ReactComponent {
         visible: PropTypes.bool,
         children: PropTypes.node.isRequired,
         draggable: PropTypes.bool,
+        scrollable: PropTypes.bool,
         transition: PropTypes.string,
     };
 
@@ -34,7 +30,7 @@ export default class Modal extends ReactComponent {
         closeText: "Abbrechen",
         visible: true,
         draggable: false,
-        searchPlaceholder: " ",
+        scrollable: false,
         size: "sm",
     };
 
@@ -63,33 +59,18 @@ export default class Modal extends ReactComponent {
     }
 
     renderModalContent() {
-        const {size, headerText, linkLocation, linkText, searchPlaceholder, onSearch, children, saveText, onSave, onClose, closeText, hintText} = this.props;
+        const {size, headerText, children, saveText, onSave, onClose, closeText, hintText, draggable, scrollable} = this.props;
         return (
-            <div className={cx(styles["modal-dialog"], styles["modal-" + size])}>
+            <div
+                className={cx(styles["modal-dialog"], styles["modal-" + size], draggable && styles["modal-draggable"], scrollable && styles["modal-scrollable"])}>
                 <div className={cx(styles["modal-content"], styles["modal-content-" + size])}>
                     <div className={cx(styles["modal-header"])}>
                         <button type="button" className={styles.close} onClick={onClose}>
                             <Icon name="times-circle"/>
                         </button>
                         <h4 className={styles["modal-title"]}>{headerText}</h4>
-                        {(linkLocation && linkText && size !== "small") &&
-                        <a
-                            href={linkLocation}
-                            className={styles["modal-header-link"]}
-                        >
-                            {linkText}
-                        </a>
-                        }
-                        {(onSearch !== undefined) &&
-                        <Input
-                            placeholder={searchPlaceholder}
-                            inputClass={styles["modal-header-input"]}
-                            inputValue={this.state.searchQuery}
-                            onFilterInput={onSearch}
-                        />
-                        }
                     </div>
-                    <div className={styles["modal-body"]}>
+                    <div className={cx(styles["modal-body"])}>
                         {children}
                     </div>
                     <div className={styles["modal-footer"]}>

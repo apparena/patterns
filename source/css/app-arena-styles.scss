@@ -68,12 +68,15 @@
 
 // Molecules
 @import "../_patterns/01-molecules/breadcrumb/breadcrumb";
+@import "../_patterns/01-molecules/dropdown/dropdown";
 @import "../_patterns/01-molecules/forms/form-group";
 @import "../_patterns/01-molecules/forms/select";
 @import "../_patterns/01-molecules/input-group/input-group";
 @import "../_patterns/01-molecules/modal/modal";
+@import "../_patterns/01-molecules/navbar/navbar";
 @import "../_patterns/01-molecules/navbar/navbar-form";
-@import "../_patterns/01-molecules/notification/notification";
+@import "../_patterns/01-molecules/messages/notification/notification";
+@import "../_patterns/01-molecules/messages/banner-message/banner-message";
 @import "../_patterns/01-molecules/page-header/page-header";
 @import "../_patterns/01-molecules/progress-tracker/progress-tracker";
 

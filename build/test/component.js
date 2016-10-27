@@ -1,7 +1,7 @@
 import React from "react";
 import {render} from "react-dom";
 import ReactComponent from "../../source/_patterns/react-utils/component";
-import Alert from "../../source/_patterns/01-molecules/alert/alert";
+import Alert from "../../source/_patterns/01-molecules/messages/alert/alert";
 import Jumbotron from "../../source/_patterns/01-molecules/jumbotron/jumbotron";
 import ProgressTrackerStep from "../../source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step";
 import ProgressTracker from "../../source/_patterns/01-molecules/progress-tracker/progress-tracker";
@@ -19,7 +19,7 @@ import Media from "../../source/_patterns/01-molecules/media/media";
 import Nav from "../../source/_patterns/01-molecules/navs/nav";
 import Tooltip from "../../source/_patterns/01-molecules/tooltip/tooltip";
 import PopOver from "../../source/_patterns/01-molecules/popover/popover";
-import Notification from "../../source/_patterns/01-molecules/notification/notification";
+import Notification from "../../source/_patterns/01-molecules/messages/notification/notification";
 import Modal from "../../source/_patterns/01-molecules/modal/modal";
 import Chart from "../../source/_patterns/01-molecules/chart/chart";
 import Btn from "../../source/_patterns/00-atoms/button/button";

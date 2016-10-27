@@ -9,6 +9,7 @@ export default class Input extends ReactComponent {
         defaultValue: PropTypes.string,
         placeholder: PropTypes.string,
         onKeyUp: PropTypes.func,
+        refCallback: PropTypes.func,
         id: PropTypes.string,
         type: PropTypes.string,
         tabIndex: PropTypes.number,
@@ -25,7 +26,7 @@ export default class Input extends ReactComponent {
     };
 
     render() {
-        const {style, className, disabled, autoFocus, defaultValue, onChange, id, type, onKeyUp, onBlur, placeholder, tabIndex} = this.props;
+        const {style, className, disabled, autoFocus, defaultValue, onChange, id, type, onKeyUp, onBlur, placeholder, tabIndex, refCallback} = this.props;
         // classes
         const componentClass = cx(
             styles["form-control"],
@@ -38,6 +39,7 @@ export default class Input extends ReactComponent {
                 tabIndex={tabIndex}
                 disabled={disabled}
                 autoFocus={autoFocus}
+                ref={refCallback}
                 className={componentClass}
                 value={defaultValue}
                 onChange={onChange}

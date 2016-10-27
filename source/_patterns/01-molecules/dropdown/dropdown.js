@@ -4,7 +4,6 @@ import cx from "classnames";
 import Button from "../../00-atoms/button/button";
 import styles from "./dropdown.scss";
 
-
 const ESC_KEYCODE = 27;
 const NO_OP = () => undefined;
 

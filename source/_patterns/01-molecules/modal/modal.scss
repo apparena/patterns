@@ -14,13 +14,20 @@
   display: block;
 }
 
-.draggable {
-  position: absolute;
+.modal-xl {
+  max-width: 90%;
+}
+
+.modal-draggable {
   .modal-header {
     cursor: move;
   }
 }
 
-.modal-xl {
-  max-width: 90%;
+.modal-scrollable {
+  .modal-body{
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: calc(80vh - 15px);
+  }
 }

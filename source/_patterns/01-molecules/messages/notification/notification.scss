@@ -1,8 +1,7 @@
 /**
  * Pattern Dependencies
  */
-@import "../../../css/scss/abstracts/variables";
-@import "~font-awesome/scss/variables";
+@import "../../../../css/scss/abstracts/variables";
 
 /*=========================================================================
   Organism Navigation Sidebar
@@ -44,6 +43,8 @@
 
     .close {
       margin-right: -25px;
+      float: right;
+      cursor: pointer;
     }
 
     .icon {
