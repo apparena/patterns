@@ -1,13 +1,13 @@
 {
   "focusedTaskSize": "col-xs-12",
-  "contextInfo": {
+  "context": {
     "title": "Noch ein Schritt zum Fotowettbewerb",
     "usps": [
-      {"text": "Umfassende Sicherheit dank fortgeschrittener Verschlüsselung und deutschen Servern"},
-      {"text": "Höchste Datensicherheit nach dem Bundesdatenschutzgesetz (BDSG)"},
-      {"text": "Mit Live-Vorschau und passenden Vorlagen in wenigen Schritten zum Projektlaunch"},
-      {"text": "Buche eine unserer professionellen Dienstleistungen und erhalte sofort Hilfe"},
-      {"text": "Flexible Erweiterung des Kampagnenumfangs"}
+      {"icon": "fa-check", "text": "Umfassende Sicherheit dank fortgeschrittener Verschlüsselung und deutschen Servern"},
+      {"icon": "fa-check", "text": "Höchste Datensicherheit nach dem Bundesdatenschutzgesetz (BDSG)"},
+      {"icon": "fa-check", "text": "Mit Live-Vorschau und passenden Vorlagen in wenigen Schritten zum Projektlaunch"},
+      {"icon": "fa-check", "text": "Buche eine unserer professionellen Dienstleistungen und erhalte sofort Hilfe"},
+      {"icon": "fa-check", "text": "Flexible Erweiterung des Kampagnenumfangs"}
     ]
   },
   "btnText": "Anmelden und zum Fotowettbewerb"
