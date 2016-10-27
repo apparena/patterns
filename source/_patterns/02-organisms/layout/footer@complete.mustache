@@ -2,7 +2,7 @@
 
     <div class="container">
         {{# footer.logo }}
-            <a class="o-footer-logo o-footer-logo mt-1 mb-3" href="#">
+            <a class="o-footer-logo mt-1 mb-3" href="#">
                 {{> atoms-logo(logoSrc:"../../images/logo-inverse.svg") }}
             </a>
         {{/footer.logo}}
@@ -14,7 +14,7 @@
                 <ul class="list-inline">
                     {{#items}}
                         <li class="list-inline-item">
-                            <a href="{{url}}">
+                            <a href="{{url}}" target="_blank" alt="{{title}}">
                                 <i class="fa {{icon}}" aria-hidden="true"></i>
                             </a>
                         </li>
