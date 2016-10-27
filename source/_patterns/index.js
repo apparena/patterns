@@ -37,6 +37,8 @@ import Table from "./00-atoms/table/table";
 import TableList from "./02-organisms/lists/table-list";
 import Tag from "./00-atoms/tag/tag";
 import Tooltip from "./01-molecules/tooltip/tooltip";
+import Form from "./02-organisms/forms/form";
+import FormGroup from "./01-molecules/forms/form-group";
 
 
 export {
@@ -79,4 +81,6 @@ export {
     TableList,
     Tag,
     Tooltip,
+    Form,
+    FormGroup
 }
