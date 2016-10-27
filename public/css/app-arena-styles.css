@@ -9513,13 +9513,31 @@ a.bg-inverse:hover {
   line-height: 1.2;
   padding: 2rem;
   font-size: 90%; }
+  .o-footer hr {
+    border-color: #fff; }
   .o-footer .nav-link {
     color: #ffffff; }
   .o-footer .nav-link:hover {
     color: #478AB8; }
 
-.o-footer-logo > img {
-  max-width: 120px; }
+.o-footer-social-media {
+  margin-top: -10px; }
+  .o-footer-social-media a {
+    color: #818a91;
+    font-size: 2rem; }
+  .o-footer-social-media a:hover {
+    color: #9ca3a9; }
+
+.o-footer-nav-secondary a.nav-link {
+  color: #818a91; }
+
+.o-footer-nav-secondary a.nav-link:hover {
+  color: #9ca3a9; }
+
+.o-footer-logo {
+  display: block; }
+  .o-footer-logo > img {
+    max-width: 160px; }
 
 /**
  * Pattern Dependencies
@@ -9717,7 +9735,7 @@ main[role=main] {
   /* the bottom margin is the negative value of the footer's height */ }
 
 .o-footer, .push {
-  height: 180px;
+  height: 300px;
   /* .push must be the same height as .footer */ }
 
 /*------------------------------------*    $COMPONENTS

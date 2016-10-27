@@ -1,6 +1,29 @@
 {
-  "footerSettings": {
+  "footer": {
     "copyright": true,
-    "logo": true
+    "logo": true,
+    "socialMedia": {
+      "items": [
+        {"icon":"fa-facebook-square", "url":"https://www.facebook.com"},
+        {"icon":"fa-youtube-square", "url":"https://www.youtube.com"},
+        {"icon":"fa-twitter-square", "url":"https://www.twitter.com"}
+      ]
+    },
+    "navSecondary":{
+      "navFooter": {
+        "navList": [
+          {
+            "text": "Impressum",
+            "url": ""
+          },
+          {
+            "text": "Datenschutz"
+          },
+          {
+            "text": "AGB"
+          }
+        ]
+      }
+    }
   }
 }
