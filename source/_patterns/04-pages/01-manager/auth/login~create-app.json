@@ -1,7 +1,13 @@
 {
+  "focusedTaskSize": "col-xs-12",
   "contextInfo": {
     "title": "Noch ein Schritt zum Fotowettbewerb",
-    "text": "Melden Sie sich an, um zu Ihrem Fotowettbewerb zu gelangen"
+    "usps": [
+      {"text": "Das ist so was von großeartig"},
+      {"text": "Das ist so was von großeartig 2"},
+      {"text": "Das ist so was von großeartig 3"},
+      {"text": "Das ist so was von großeartig 4"}
+    ]
   },
   "btnText": "Anmelden und zum Fotowettbewerb"
 }
