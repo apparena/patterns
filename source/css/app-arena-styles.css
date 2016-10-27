@@ -8082,6 +8082,20 @@ a.text-gray-dark:hover {
 /*=========================================================================
   Variable definitions
  ========================================================================== */
+/*------------------------------------*    #MIXINS
+\*------------------------------------*/
+@-webkit-keyframes pulse {
+  0%, 80%, 100% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+
+@keyframes pulse {
+  0%, 80%, 100% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+
 .form-control {
   display: block;
   width: 100%;
@@ -9470,6 +9484,14 @@ a.bg-inverse:hover {
 
 .o-login .o-login-logo img {
   max-width: 300px; }
+
+.o-login .o-login-context-usps {
+  margin-left: 2.5em; }
+  .o-login .o-login-context-usps li {
+    margin: 1rem 0; }
+  .o-login .o-login-context-usps i {
+    font-size: 1.5rem;
+    top: 10%; }
 
 /**
  * Pattern Dependencies
