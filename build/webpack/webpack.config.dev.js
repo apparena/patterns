@@ -6,7 +6,7 @@ var nodeModulesPath = path.resolve(__dirname, relativePath, 'node_modules');
 var buildPath = path.resolve(__dirname, relativePath, 'build/apparena-patterns-react/dist');
 
 module.exports = {
-    devtool: 'cheap-module-source-map',
+    devtool: 'source-map',
     entry: [
         'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',

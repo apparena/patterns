@@ -24,10 +24,10 @@
 // Grayscale and brand colors for use across Bootstrap.
 
 $gray-dark: #373a3c !default;
-$gray: #666666 !default;
+$gray: #777582 !default;
 $gray-light: #818a91 !default;
-$gray-lighter: #dddddd !default;
-$gray-lightest: #f6f6f6 !default;
+$gray-lighter: #ccc !default;
+$gray-lightest: #f6f8fa !default;
 
 $brand-primary: #478AB8 !default;
 $brand-secondary: #2d3d4a !default;
@@ -59,8 +59,10 @@ $font-family-sans-serif: 'Open Sans', Arial, sans-serif !default;
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
+$body-color: $gray !default;
 
 //Buttons
+$btn-primary-bg: $brand-focus !default;
 $btn-secondary-color: #7A838D !default;
 $btn-secondary-bg: #EEF2F8 !default;
 $btn-secondary-border: #EEF2F8 !default;
@@ -68,8 +70,15 @@ $btn-secondary-border: #EEF2F8 !default;
 //Cards
 $card-bg: #fff !default;
 $card-cap-bg: #fff !default;
+$card-border-width: 0 !default;
+$card-border-color: $gray-lighter !default;
+$card-spacer-x: 1.25rem !default;
+$card-spacer-y: 1.5rem !default;
 
-//Input
+$card-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08) !default;
+
+// Forms
+$input-line-height: 2 !default;
 $input-bg: #EEF2F8 !default;
 $input-line-height: 1.6 !default;
 $input-box-shadow: none !default;

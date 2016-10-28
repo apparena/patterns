@@ -9,6 +9,11 @@
   Molecules Form group
  ========================================================================== */
 .form-group {
+
+  label {
+    text-transform: uppercase;
+  }
+
   .col-form-label .is-required {
     position: absolute;
     right:5px;

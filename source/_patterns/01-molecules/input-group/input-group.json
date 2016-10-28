@@ -1,11 +1,11 @@
 {
   "inputGroup": {
-    "class": "col-sm-9",
-    "icon": "<i class=\"fa fa-envelope\"></i>",
+    "class": "",
+    "icon": false,
     "addonBefore": false,
     "addonAfter": false
   },
   "input": {
-    "placeholder": "Enter your email here..."
+    "placeholder": false
   }
 }

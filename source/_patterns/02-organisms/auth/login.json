@@ -1,6 +1,6 @@
 {
   "login": {
-    "header": "<span class=\"float-right\">Noch kein Konto? <a href=\"#\">Hier registrieren</a></span><h5 class=\"mb-0\">Anmeldung</h5>",
+    "header": "<h5 class=\"mb-0\">Anmeldung</h5>",
     "items": [
       {
         "formGroup": {
@@ -32,8 +32,8 @@
           }
         },
         "inputGroup": {
-          "icon": "<i class=\"fa fa-key\"></i>",
-          "class": "col-sm-9"
+          "icon": "",
+          "class": ""
         },
         "input": {
           "class": "form-control-danger",
@@ -41,7 +41,8 @@
           "message": "Please use more than 8 characters"
         }
       }
-    ]
+    ],
+    "footer": "<span class=\"float-right\">Noch kein Konto? <a href=\"#\">Hier registrieren</a></span>"
   },
   "btnText": "Anmelden"
 }

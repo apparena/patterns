@@ -8,3 +8,23 @@
 /*=========================================================================
   Molecules Card
  ========================================================================== */
+
+.card {
+
+  padding: 0.5rem 1rem;
+  @include box-shadow($card-box-shadow);
+
+  .card-header {
+    border-bottom:1px solid $gray-lighter;
+    font-size: 1.5rem;
+
+    h3, h4, h5 {
+      font-size: 1.5rem;
+      margin-bottom:0;
+    }
+  }
+
+  .card-footer {
+      padding: 0 1.25rem 1.5rem;
+  }
+}

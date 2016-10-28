@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="https://unpkg.com/apparena-patterns-react@1.0.21/css/app-arena-styles.css">
 </head>
 <body>
-<div id="root"></div>
+<div style="width: 500px; height: 500px; margin: 14% auto;">
+    <div id="root"></div>
+</div>
 <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
 <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
@@ -14,9 +16,9 @@
 <script type="text/babel">
     ReactDOM.render(
             <div id="page">
-                <apparena.Modal draggable headerText="Test" size="lg">
-                    <div>test</div>
-                </apparena.Modal>
+                <apparena.Tooltip zIndex={2050} label="Add Config Item" verticalPosition="center" horizontalPosition="right">
+                    <span>Test</span>
+                </apparena.Tooltip>
             </div>
             , document.getElementById('root'));
 </script>

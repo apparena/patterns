@@ -17,12 +17,12 @@
     "class": "form-control-danger"
   },
   "input-group": {
-    "class": "col-sm-9"
+    "class": ""
   },
   "select": {
-    "class": "col-sm-9"
+    "class": ""
   },
   "checkboxes": {
-    "class": "col-sm-9"
+    "class": ""
   }
 }

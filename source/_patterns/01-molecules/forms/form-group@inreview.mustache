@@ -1,6 +1,6 @@
-<div class="form-group row {{ styleModifier }} {{ formGroup.class }}">
+<div class="form-group {{ styleModifier }} {{ formGroup.class }}">
     {{#formGroup.label}}
-        <label class="col-form-label text-sm-right col-sm-3 {{class}}" for="{{ inputGroup.id }}">
+        <label class="{{class}}" for="{{ inputGroup.id }}">
             {{text}}
             {{#formGroup.required}}<span class="is-required text-danger">*</span>{{/formGroup.required}}
         </label>
@@ -19,10 +19,10 @@
     {{/formGroup.type.checkboxes }}
 
     {{# formGroup.feedback }}
-        <div class="form-control-feedback offset-sm-3 col-sm-9">{{ formGroup.feedback }}</div>
+        <div class="form-control-feedback">{{ formGroup.feedback }}</div>
     {{/ formGroup.feedback}}
 
     {{# formGroup.helpText }}
-        <div class="form-text text-muted offset-sm-3 col-sm-9">{{{ formGroup.helpText }}}</div>
+        <div class="form-text text-muted">{{{ formGroup.helpText }}}</div>
     {{/ formGroup.helpText }}
 </div>
