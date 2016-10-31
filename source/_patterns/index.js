@@ -1,5 +1,6 @@
 import Alert from "./01-molecules/messages/alert/alert";
 import Animate from "./react-utils/animate";
+import BannerMessage from "./01-molecules/messages/banner-message/banner-message";
 import BreadCrumb from "./01-molecules/breadcrumb/breadcrumb";
 import Button from "./00-atoms/button/button";
 import ButtonGroup from "./01-molecules/button-group/button-group";
@@ -10,6 +11,8 @@ import Checkbox from "./00-atoms/forms/checkbox";
 import Col from "./00-atoms/grid/col";
 import Dropdown from "./01-molecules/dropdown/dropdown";
 import FilterBar from "./01-molecules/01-manager/filter-bar/filter-bar";
+import Form from "./02-organisms/forms/form";
+import FormGroup from "./01-molecules/forms/form-group";
 import Icon from "./00-atoms/icons/icons";
 import Input from "./00-atoms/forms/input";
 import InputGroup from "./01-molecules/input-group/input-group";
@@ -37,13 +40,12 @@ import Table from "./00-atoms/table/table";
 import TableList from "./02-organisms/lists/table-list";
 import Tag from "./00-atoms/tag/tag";
 import Tooltip from "./01-molecules/tooltip/tooltip";
-import Form from "./02-organisms/forms/form";
-import FormGroup from "./01-molecules/forms/form-group";
 
 
 export {
     Alert,
     Animate,
+    BannerMessage,
     BreadCrumb,
     Button,
     ButtonGroup,
@@ -54,6 +56,8 @@ export {
     Col,
     Dropdown,
     FilterBar,
+    Form,
+    FormGroup,
     Icon,
     Input,
     InputGroup,
@@ -81,6 +85,4 @@ export {
     TableList,
     Tag,
     Tooltip,
-    Form,
-    FormGroup
 }

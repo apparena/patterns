@@ -15,4 +15,4 @@ Form.defaultProps = {
     type: 'basic',
 };
 
-module.exports = Form;
+export default Form;

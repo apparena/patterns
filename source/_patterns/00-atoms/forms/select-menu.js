@@ -17,6 +17,7 @@ export default class SelectMenu extends ReactComponent {
         multi: PropTypes.bool,
         clearable: PropTypes.bool,
         disabled: PropTypes.bool,
+        autofocus: PropTypes.bool,
         clearAllText: PropTypes.string,
         clearValueText: PropTypes.string,
         placeholder: PropTypes.string,
@@ -28,6 +29,8 @@ export default class SelectMenu extends ReactComponent {
     static defaultProps = {
         multi: false,
         clearable: false,
+        autofocus: false,
+        autoBlur: true,
         disabled: false,
         clearAllText: "",
         clearValueText: "",
@@ -47,8 +50,9 @@ export default class SelectMenu extends ReactComponent {
                     options={this.props.options}
                     onChange={this.props.onChange}
                     multi={this.props.multi}
+                    autofocus={this.props.autofocus}
                     clearable={this.props.clearable}
-                    autoBlur
+                    autoBlur={this.props.autoBlur}
                     clearAllText={this.props.clearAllText}
                     clearValueText={this.props.clearValueText}
                     placeholder={this.props.placeholder}

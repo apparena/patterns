@@ -15,7 +15,7 @@ export default class Input extends ReactComponent {
         tabIndex: PropTypes.number,
         disabled: PropTypes.bool,
         autoFocus: PropTypes.bool,
-        style: PropTypes.oneOf(["dotted"])
+        style: PropTypes.oneOf(["dotted", "inline"])
     };
 
     static defaultProps = {
