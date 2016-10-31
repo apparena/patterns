@@ -21,4 +21,4 @@ FormGroup.propTypes = {
     label: React.PropTypes.string,
 };
 
-exports.default = FormGroup;
+export default FormGroup;

@@ -9,6 +9,23 @@
   Atoms Forms
  ========================================================================== */
 
+.form-inline {
+  box-shadow: initial;
+  border: initial;
+  padding: initial;
+  color: initial;
+  background: initial;
+  font-size: inherit;
+  border-radius: initial;
+  transition: width .5s ease, background-color .5s ease;
+  &:focus {
+    color: initial;
+    background: initial;
+    box-shadow: initial;
+    border-color: $brand-primary;
+  }
+}
+
 .form-dotted {
   border: none;
   box-shadow: none;
