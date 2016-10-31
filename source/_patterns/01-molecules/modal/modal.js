@@ -7,10 +7,28 @@ import styles from "./modal.scss";
 import Icon from "../../00-atoms/icons/icons";
 import Button from "../../00-atoms/button/button";
 
+const MODAL_TYPES = [
+    "primary",
+    "secondary",
+    "danger",
+    "info",
+    "success",
+    "warning",
+    "default",
+];
+const MODAL_SIZES = [
+    "lg",
+    "sm",
+    "md",
+    "xs",
+    "xl"
+];
+
 export default class Modal extends ReactComponent {
     static propTypes = {
         classNames: PropTypes.string,
-        size: PropTypes.oneOf(["lg", "sm", "md", "xs", "xl",]),
+        size: PropTypes.oneOf(MODAL_SIZES),
+        type: PropTypes.oneOf(MODAL_TYPES),
         headerText: PropTypes.string.isRequired,
         onSave: PropTypes.func,
         hintText: PropTypes.string,
@@ -25,6 +43,7 @@ export default class Modal extends ReactComponent {
     };
 
     static defaultProps = {
+        type: "default",
         transition: "expandIn",
         saveText: "Speichern",
         closeText: "Abbrechen",
@@ -59,10 +78,10 @@ export default class Modal extends ReactComponent {
     }
 
     renderModalContent() {
-        const {size, headerText, children, saveText, onSave, onClose, closeText, hintText, draggable, scrollable} = this.props;
+        const {size, headerText, children, saveText, onSave, onClose, closeText, hintText, draggable, scrollable, type} = this.props;
         return (
             <div
-                className={cx(styles["modal-dialog"], styles["modal-" + size], draggable && styles["modal-draggable"], scrollable && styles["modal-scrollable"])}>
+                className={cx(styles["modal-dialog"], styles["modal-" + size], styles["modal-" + type], draggable && styles["modal-draggable"], scrollable && styles["modal-scrollable"])}>
                 <div className={cx(styles["modal-content"], styles["modal-content-" + size])}>
                     <div className={cx(styles["modal-header"])}>
                         <button type="button" className={styles.close} onClick={onClose}>
@@ -84,7 +103,7 @@ export default class Modal extends ReactComponent {
                         }
                         {(onSave && saveText) &&
                         <Button
-                            type="primary"
+                            type={(type === "default") ? "primary" : type}
                             onClick={onSave}
                         >
                             {saveText}

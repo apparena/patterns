@@ -14,6 +14,58 @@
   display: block;
 }
 
+.model-content {
+  overflow: hidden;
+}
+
+// Modal Types
+.modal-primary,
+.modal-secondary,
+.modal-danger,
+.modal-info,
+.modal-success,
+.modal-warning {
+  .modal-header {
+    color: #fff;
+  }
+}
+
+.modal-primary {
+  .modal-header {
+    background: $brand-primary;
+  }
+}
+
+.modal-secondary {
+  .modal-header {
+    background: $brand-secondary;
+  }
+}
+
+.modal-danger {
+  .modal-header {
+    background: $brand-danger;
+  }
+}
+
+.modal-info {
+  .modal-header {
+    background: $brand-info;
+  }
+}
+
+.modal-success {
+  .modal-header {
+    background: $brand-success;
+  }
+}
+
+.modal-warning {
+  .modal-header {
+    background: $brand-warning;
+  }
+}
+
 .modal-xl {
   max-width: 90%;
 }
@@ -25,7 +77,7 @@
 }
 
 .modal-scrollable {
-  .modal-body{
+  .modal-body {
     box-sizing: border-box;
     overflow-y: auto;
     height: calc(80vh - 15px);
