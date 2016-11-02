@@ -40,6 +40,7 @@ export default class Modal extends ReactComponent {
         draggable: PropTypes.bool,
         scrollable: PropTypes.bool,
         transition: PropTypes.string,
+        buttonDisabled: PropTypes.bool
     };
 
     static defaultProps = {
@@ -51,6 +52,7 @@ export default class Modal extends ReactComponent {
         draggable: false,
         scrollable: false,
         size: "sm",
+        buttonDisabled: false
     };
 
     getInitState() {
@@ -78,7 +80,7 @@ export default class Modal extends ReactComponent {
     }
 
     renderModalContent() {
-        const {size, headerText, children, saveText, onSave, onClose, closeText, hintText, draggable, scrollable, type} = this.props;
+        const {size, headerText, children, saveText, onSave, onClose, closeText, hintText, draggable, scrollable, type, buttonDisabled} = this.props;
         return (
             <div
                 className={cx(styles["modal-dialog"], styles["modal-" + size], styles["modal-" + type], draggable && styles["modal-draggable"], scrollable && styles["modal-scrollable"])}>
@@ -105,6 +107,7 @@ export default class Modal extends ReactComponent {
                         <Button
                             type={(type === "default") ? "primary" : type}
                             onClick={onSave}
+                            isDisabled={buttonDisabled}
                         >
                             {saveText}
                         </Button>
