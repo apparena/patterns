@@ -1,3 +1,13 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+@import "../../../css/scss/abstracts/mixins";
+
+/*=========================================================================
+  Molecules Modal
+ ========================================================================== */
+
 .checkbox {
   :global {
     .react-toggle {
@@ -10,12 +20,10 @@
 
       -webkit-touch-callout: none;
       -webkit-user-select: none;
-      -khtml-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
 
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       -webkit-tap-highlight-color: transparent;
     }
 
@@ -31,74 +39,37 @@
     }
 
     .react-toggle--disabled {
+      cursor: not-allowed;
       opacity: 0.5;
       -webkit-transition: opacity 0.25s;
       transition: opacity 0.25s;
     }
 
     .react-toggle-track {
-      width: 50px;
-      height: 24px;
+      width: 60px;
+      height: 34px;
       padding: 0;
-      background-color: #4D4D4D;
+      border-radius: 30px;
+      background-color: $input-bg;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       transition: all 0.2s ease;
     }
 
-    .react-toggle:hover .react-toggle-track {
-      background-color: #000000;
+    .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+      background-color: darken($input-bg, 30%);
     }
 
     .react-toggle--checked .react-toggle-track {
-      background-color: #19AB27;
+      background-color: $brand-success;
     }
 
-    .react-toggle.react-toggle--checked:hover .react-toggle-track {
-      background-color: #128D15;
+    .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+      background-color: darken($brand-success, 30%);
     }
 
-    .react-toggle-track-check {
-      position: absolute;
-      width: 14px;
-      height: 10px;
-      top: 0px;
-      bottom: 0px;
-      margin-top: auto;
-      margin-bottom: auto;
-      line-height: 0;
-      left: 8px;
-      opacity: 0;
-      -webkit-transition: opacity 0.25s ease;
-      -moz-transition: opacity 0.25s ease;
-      transition: opacity 0.25s ease;
-    }
-
-    .react-toggle--checked .react-toggle-track-check {
-      opacity: 1;
-      -webkit-transition: opacity 0.25s ease;
-      -moz-transition: opacity 0.25s ease;
-      transition: opacity 0.25s ease;
-    }
-
-    .react-toggle-track-x {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      top: 0px;
-      bottom: 0px;
-      margin-top: auto;
-      margin-bottom: auto;
-      line-height: 0;
-      right: 10px;
-      opacity: 1;
-      -webkit-transition: opacity 0.25s ease;
-      -moz-transition: opacity 0.25s ease;
-      transition: opacity 0.25s ease;
-    }
-
-    .react-toggle--checked .react-toggle-track-x {
-      opacity: 0;
+    .react-toggle-track-x, .react-toggle-track-check {
+      display: none;
     }
 
     .react-toggle-thumb {
@@ -106,26 +77,30 @@
       position: absolute;
       top: 1px;
       left: 1px;
-      width: 22px;
-      height: 22px;
-      border: 1px solid #4D4D4D;
+      width: 32px;
+      height: 32px;
+      border: 1px solid $input-bg;
+      border-radius: 50%;
       background-color: #FAFAFA;
 
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
 
-      -webkit-transition: all 0.25s ease;
-      -moz-transition: all 0.25s ease;
-      transition: all 0.25s ease;
-      &:focus {
-        outline: none;
-      }
+      @include transition(all 0.25s ease);
     }
 
     .react-toggle--checked .react-toggle-thumb {
       left: 27px;
-      border-color: #19AB27;
+      border-color: $brand-success;
+    }
+
+    .react-toggle--focus .react-toggle-thumb {
+      @include box-shadow(0px 0px 3px 2px $brand-primary);
+    }
+
+    .react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
+      @include box-shadow(0px 0px 5px 5px $brand-primary);
     }
   }
 }
