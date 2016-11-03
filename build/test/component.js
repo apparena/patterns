@@ -60,7 +60,7 @@ class ModalLauncher extends ReactComponent {
     render() {
         return (
             <div>
-                <Modal size="xlarge" headerText="Well hello there" onSearch={(e) => console.log(e)} visible={this.state.visible}
+                <Modal size="xl" headerText="Well hello there" onSearch={(e) => console.log(e)} visible={this.state.visible}
                     onSave={(e) => console.log(e)} hintText="The blue button can be pressed" linkText="Link" linkLocation="#"
                 >
                     <h3>Big header</h3>
@@ -130,68 +130,49 @@ const testComponents = (
         <ModalLauncher/>
 
         <Chart config={{
-            chart: {
-                type: 'arearange',
-                zoomType: 'x'
-            },
-
             title: {
-                text: 'Temperature variation by day'
+                text: 'Monthly Average Temperature',
+                x: -20 //center
             },
-
+            subtitle: {
+                text: 'Source: WorldClimate.com',
+                x: -20
+            },
             xAxis: {
-                type: 'datetime'
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
             },
-
             yAxis: {
                 title: {
-                    text: null
-                }
+                    text: 'Temperature (°C)'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
             },
-
             tooltip: {
-                crosshairs: true,
-                shared: true,
                 valueSuffix: '°C'
             },
-
             legend: {
-                enabled: false
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
             },
-
             series: [{
-                name: 'Temperatures',
-                data: [[1388538000000, 1.1, 4.7],
-                    [1388624400000, 1.8, 6.4],
-                    [1388710800000, 1.7, 6.9],
-                    [1388797200000, 2.6, 7.4],
-                    [1388883600000, 3.3, 9.3],
-                    [1388970000000, 3.0, 7.9],
-                    [1389056400000, 3.9, 6.0],
-                    [1389142800000, 3.9, 5.5],
-                    [1389229200000, -0.6, 4.5],
-                    [1389315600000, -0.5, 5.3],
-                    [1389402000000, -0.3, 2.4],
-                    [1389488400000, -6.5, -0.4],
-                    [1389574800000, -7.3, -3.4],
-                    [1389661200000, -7.3, -2.3],
-                    [1389747600000, -7.9, -4.2],
-                    [1389834000000, -4.7, 0.9],
-                    [1389920400000, -1.2, 0.4],
-                    [1390006800000, -2.3, -0.1],
-                    [1390093200000, -2.0, 0.3],
-                    [1390179600000, -5.1, -2.0],
-                    [1390266000000, -4.4, -0.5],
-                    [1390352400000, -6.4, -2.7],
-                    [1390438800000, -3.2, -0.5],
-                    [1390525200000, -5.5, -0.8],
-                    [1390611600000, -4.4, 2.4],
-                    [1390698000000, -4.0, 1.1],
-                    [1390784400000, -3.4, 0.8],
-                    [1390870800000, -1.7, 2.6],
-                    [1390957200000, -3.1, 3.9],
-                    [1391043600000, -4.8, -1.9],
-                    [1391130000000, -7.0, -2.8],]
+                name: 'Tokyo',
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            }, {
+                name: 'New York',
+                data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+            }, {
+                name: 'Berlin',
+                data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+            }, {
+                name: 'London',
+                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
             }]
         }}/>
     </div>
