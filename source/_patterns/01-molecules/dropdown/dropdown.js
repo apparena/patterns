@@ -89,8 +89,10 @@ export default class Dropdown extends ReactComponent {
                 {React.Children.map(this.props.items, (child, index) => {
                     if (React.isValidElement(child)) {
                         return (
-                            <li key={'item-' + index} className={styles["dropdown-item"]}
-                                onClick={this.onClick.bind(this, child.props.value)}>
+                            <li key={'item-' + index}
+                                className={styles["dropdown-item"]}
+                                onClick={this.onClick.bind(this, child.props.value)}
+                            >
                                 {React.cloneElement(child, {...child.props})}
                             </li>
                         )

@@ -16,9 +16,14 @@
 <script type="text/babel">
     ReactDOM.render(
             <div id="page">
-                <apparena.Tooltip zIndex={2050} label="Add Config Item" verticalPosition="center" horizontalPosition="right">
-                    <span>Test</span>
+                <apparena.Tooltip zIndex={2050} label="Add Config Item" positioning="overlay">
+                    <span>Tooltip Left Top</span>
                 </apparena.Tooltip>
+                <br/>
+                <apparena.Popover zIndex={2050} content="Add Config Item" positioning="overlay">
+                    <span>Popover Bottom</span>
+                </apparena.Popover>
+                <br/>
             </div>
             , document.getElementById('root'));
 </script>
