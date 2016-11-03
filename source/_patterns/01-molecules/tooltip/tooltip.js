@@ -5,30 +5,35 @@ import Portal from "../../react-utils/portal";
 import Stick from "../../react-utils/stick";
 import styles from "./tooltip.scss";
 
+const POSITIONING = [
+    'top',
+    'top left',
+    'top right',
+    'bottom',
+    'bottom left',
+    'bottom right',
+    'left',
+    'left top',
+    'left bottom',
+    'right',
+    'right top',
+    'right bottom',
+    'overlay'
+];
+
 export default class Tooltip extends ReactComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
         label: PropTypes.string.isRequired,
+        transition: PropTypes.string,
         className: PropTypes.string,
-        fixed: PropTypes.bool,
-        positioning: PropTypes.oneOf([
-            'top',
-            'bottom',
-            'left',
-            'right',
-            'top left',
-            'top center',
-            'top right',
-            'right top',
-            'right middle',
-            'right bottom',
-            'bottom right',
-            'bottom center',
-            'bottom left',
-            'left top',
-            'left middle',
-            'left bottom'
-        ]).isRequired,
+        positioning: PropTypes.oneOf(POSITIONING),
+        zIndex: PropTypes.number,
+    };
+
+    static defaultProps = {
+        transition: "fadeIn",
+        positioning: "top"
     };
 
     getInitState() {
@@ -50,28 +55,12 @@ export default class Tooltip extends ReactComponent {
     }
 
     onMouseEnter() {
-        this.timeout = setTimeout(::this.showTooltip, 500);
+        this.timeout = setTimeout(::this.showTooltip, 0);
     }
 
     onMouseLeave() {
         clearTimeout(this.timeout);
         this.hideTooltip();
-    }
-
-    render() {
-        const {className} = this.props;
-
-        return (
-            <div
-                className={className || styles.root}
-                onMouseEnter={::this.onMouseEnter}
-                onMouseLeave={::this.onMouseLeave}
-                ref={c => {this._handler = c}}
-            >
-                {this.props.children}
-                {this.renderTooltip()}
-            </div>
-        );
     }
 
     renderTooltip() {
@@ -84,6 +73,9 @@ export default class Tooltip extends ReactComponent {
                         element={this._handler}
                         positioning={this.props.positioning}
                         fixed={this.props.fixed}
+                        zIndex={this.props.zIndex}
+                        transition={this.props.transition}
+                        offset={10}
                     >
                         <div className={cx(styles.tooltip, styles[this.props.positioning.split(" ")[0]])}>
                             {label}
@@ -92,5 +84,23 @@ export default class Tooltip extends ReactComponent {
                 </Portal>
             );
         }
+    }
+
+    render() {
+        const {className} = this.props;
+
+        return (
+            <div
+                className={className || styles.root}
+                onMouseEnter={::this.onMouseEnter}
+                onMouseLeave={::this.onMouseLeave}
+                ref={c => {
+                    this._handler = c
+                }}
+            >
+                {this.props.children}
+                {this.renderTooltip()}
+            </div>
+        );
     }
 }

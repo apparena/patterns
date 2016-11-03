@@ -7,122 +7,179 @@ import Input from "../../../00-atoms/forms/input";
 import Button from "../../../00-atoms/button/button";
 import CheckBox from "../../../00-atoms/forms/checkbox";
 import RadioButton from "../../../00-atoms/forms/radio-button";
+import cx from "classnames";
 
 export default class FilterBar extends ReactComponent {
-
     static PropTypes = {
-        //filter bar surface
-        txtFilterButton: PropTypes.string,
-        txtSearchPlaceholder: PropTypes.string,
-        txtSearchAddon: PropTypes.string,
-        txtSortButton: PropTypes.string,
-        txtSortHeader: PropTypes.array,
-        menuClass: PropTypes.string,
-        selected: PropTypes.object,
-        loading: PropTypes.bool,
-        items: PropTypes.number,
-        currentPage: PropTypes.number,
-        //functions
-        onFilterApply: PropTypes.func.isRequired,
-        onFilterToggle: PropTypes.func.isRequired,
-        onFilterSelect: PropTypes.func.isRequired,
-        onFilterInput: PropTypes.func.isRequired,
-        onSetStyle: PropTypes.func.isRequired,
-        //collapsible filter menu
-        expanded: PropTypes.bool,
-        buttonClass: PropTypes.string,
-        collapseClass: PropTypes.string,
-        style: PropTypes.object,
-        filter: PropTypes.object,
-        inputValue: PropTypes.string
-    };
-
-    static defaultProps = {
-        txtFilterButton: "Filter",
-        txtSearchPlaceholder: "Search for ...",
-        txtSearchAddon: "",
-        txtSortButton: "Sort list",
-        txtSortHeader: ["Category 1", "Category 2"],
-        menuClass: "dropdown-menu dropdown-menu-right",
-        expanded: false,
-        buttonClass: "btn btn-primary collapsed",
-        collapseClass: "collapse",
-        style: {height: 0},
-        filter: {},
-        loading: false,
+        filter: PropTypes.shape({
+            onFilter: PropTypes.func.isRequired,
+            buttonText: PropTypes.string,
+            status: PropTypes.object,
+            groups: PropTypes.arrayOf(PropTypes.shape({
+                type: PropTypes.oneOf(['radiobutton', 'checkbox' /*,'custom'*/]).isRequired,
+                options: PropTypes.arrayOf(PropTypes.shape({
+                    text: PropTypes.string.isRequired,
+                    identifier: PropTypes.string.isRequired,
+                    default: PropTypes.bool
+                })).isRequired
+            }).isRequired).isRequired
+        }),
+        input: PropTypes.shape({
+            status: PropTypes.shape({
+                inputValue: PropTypes.string.isRequired
+            }).isRequired,
+            onInput: PropTypes.func.isRequired,
+            placeholder: PropTypes.string.isRequired,
+            debounce: PropTypes.number,
+            loading: PropTypes.bool,
+            autoFocus: PropTypes.bool
+        }),
+        listStyle: PropTypes.shape({
+            onStyle: PropTypes.func.isRequired,
+            onSort: PropTypes.func.isRequired,
+            default: PropTypes.oneOf(['cards', 'table']),
+            status: PropTypes.shape({
+                listStyle: PropTypes.bool.isRequired,
+                sort: PropTypes.object,
+            }).isRequired,
+            table: PropTypes.shape({
+                text: PropTypes.string.isRequired,
+                identifier: PropTypes.string.isRequired,
+                column: PropTypes.arrayOf(PropTypes.shape({
+                    text: PropTypes.string.isRequired,
+                    sortable: PropTypes.bool.isRequired,
+                    identifier: PropTypes.string,
+                    default: PropTypes.oneOf(['ASC', 'DESC'])
+                })).isRequired,
+            }),
+            cards: PropTypes.shape({
+                text: PropTypes.string.isRequired,
+                identifier: PropTypes.string.isRequired,
+                sort: PropTypes.arrayOf(PropTypes.shape({
+                    text: PropTypes.string.isRequired,
+                    identifier: PropTypes.string.isRequired,
+                    default: PropTypes.oneOf(['ASC', 'DESC'])
+                })),
+            })
+        }).isRequired
     };
 
     createDropdownItems() {
         var container = [];
         var key;
-        {
-            this.props.txtSortHeader.map((item, index) => {
-                var i;
-                for (i = 0; i < 4; i++) {
-                    switch (i) {
-                        case 0:
-                            container.push(<h6 className="dropdown-header" key={this.getUniqueKey()}>{item.text}</h6>);
-                            break;
-                        case 1:
+        this.props.listStyle.cards.sort.map((item, index) => {
+            var i;
+            for (i = 0; i < 4; i++) {
+                let classNameString = '';
+                switch (i) {
+                    case 0:
+                        container.push(<h6 className="dropdown-header" key={this.getUniqueKey()}>{item.text}</h6>);
+                        break;
+                    case 1:
+                        if (this.props.listStyle.status.sort[item.identifier] === null) classNameString = "dropdown-item";
+                        else classNameString = cx("dropdown-item", this.props.listStyle.status.sort[item.identifier] ? '' : "active");
+                        container.push(
+                            <li className={classNameString} key={this.getUniqueKey()}>
+                                <a href="#"
+                                   key={this.getUniqueKey()}
+                                   onClick={this.onSortChangeHandler.bind(this, item.identifier)}
+                                >
+                                    <Icon name="sort-amount-desc" key={key}/>absteigend
+                                    {this.props.selected && <Icon class="fa check-square-o" key={key}/>}
+                                </a>
+                            </li>
+                        );
+                        break;
+                    case 2:
+                        if (this.props.listStyle.status.sort[item.identifier] === null) classNameString = "dropdown-item";
+                        else classNameString = cx("dropdown-item", this.props.listStyle.status.sort[item.identifier] ? "active" : '');
+                        container.push(
+                            <li className="dropdown-item" key={this.getUniqueKey()}>
+                                <a href="#"
+                                   key={this.getUniqueKey()}
+                                   onClick={this.onSortChangeHandler.bind(this, item.identifier)}
+                                >
+                                    <Icon name="sort-amount-asc" key={this.getUniqueKey()}/>aufsteigend
+                                </a>
+                            </li>
+                        );
+                        break;
+                    case 3:
+                        if (index !== (this.props.listStyle.cards.sort.length - 1)) {
                             container.push(
-                                <li className="dropdown-item" key={this.getUniqueKey()}>
-                                    <a href="#" key={this.getUniqueKey()}>
-                                        <Icon iconClass="fa fa-sort-amount-desc" key={key}/>absteigend
-                                        {this.props.selected && <Icon class="fa check-square-o" key={key}/>}
-                                    </a>
-                                </li>
+                                <li className="dropdown-divider" key={this.getUniqueKey()}/>
                             );
-                            break;
-                        case 2:
-                            container.push(
-                                <li className="dropdown-item" key={this.getUniqueKey()}>
-                                    <a href="#" key={this.getUniqueKey()}>
-                                        <Icon iconClass="fa fa-sort-amount-asc" key={this.getUniqueKey()}/>aufsteigend
-                                    </a>
-                                </li>
-                            );
-                            break;
-                        case 3:
-                            if (index != (this.props.txtSortHeader.length - 1)) {
-                                container.push(
-                                    <li className="dropdown-divider" key={this.getUniqueKey()}/>
-                                );
-                            }
-                            break;
-                    }
+                        }
+                        break;
+                    default:
+                        break;
                 }
-            })
-        }
+            }
+        });
         return (
-            <ul className={this.props.menuClass} key={this.getUniqueKey()}>
+            <ul className={this.props.listStyle.cards.menuClass ? this.props.listStyle.cards.menuClass : "dropdown-menu dropdown-menu-right"}
+                key={this.getUniqueKey()}
+            >
                 {container}
             </ul>
         )
     };
 
+    onFilterChangeHandler(identifier, event) {
+        this.props.filter.onFilter(identifier, event);
+    }
+
+    onSortChangeHandler(identifier, event) {
+        this.props.listStyle.onSort(identifier, event);
+    }
+
+    onStyleChangeHandler(identifier, event) {
+        this.props.listStyle.onStyle(identifier, event);
+    }
+
     createFilterElements() {
         var container = [];
-        Object.keys(this.props.filter).map((key) => {
-            switch (key) {
-                case 'checkBox':
-                    Object.keys(this.props.filter[key]).map((title) => {
-                        container.push(
-                            <div className="col-md-4" key={this.getUniqueKey()}>
-                                <div className="checkboxes">
-                                    <CheckBox text={title} key={this.getUniqueKey()} onFilterSelect={this.props.onFilterApply} checked={this.props.filter[key][title]}/>
-                                </div>
+        this.props.filter.groups.map((item) => {
+            switch (item.type) {
+                case 'checkbox':
+                    let checkboxes = [];
+                    item.options.map((element) => {
+                        checkboxes.push(
+                            <div>
+                                <CheckBox
+                                    key={this.getUniqueKey()}
+                                    onChange={this.onFilterChangeHandler.bind(this, element.identifier)}
+                                    checked={this.props.filter.status[element.identifier]}
+                                />
+                                <label>{element.text}</label>
                             </div>
                         );
                     });
+                    container.push(
+                        <div className="col-md-4" key={this.getUniqueKey()}>
+                            <div className="checkboxes">
+                                {checkboxes}
+                            </div>
+                        </div>
+                    );
                     break;
-                case 'radioButton':
-                    Object.keys(this.props.filter[key]).map((title) => {
-                        container.push(
-                            <div className="col-md-4" key={this.getUniqueKey()}>
-                                <RadioButton text={title} key={this.getUniqueKey()} onFilterSelect={this.props.onFilterApply} checked={this.props.filter[key][title]}/>
-                            </div>
+                case 'radiobutton':
+                    let radiobuttons = [];
+                    item.options.map((element) => {
+                        radiobuttons.push(
+                            <RadioButton
+                                text={element.text}
+                                key={this.getUniqueKey()}
+                                onClick={this.onFilterChangeHandler.bind(this, element.identifier)}
+                                checked={this.props.filter.status[element.identifier]}
+                            />
                         );
                     });
+                    container.push(
+                        <div className="col-md-4" key={this.getUniqueKey()}>
+                            {radiobuttons}
+                        </div>
+                    );
                     break;
                 default:
                     break;
@@ -134,27 +191,61 @@ export default class FilterBar extends ReactComponent {
         )
     }
 
+    createStyleButtons() {
+        if (this.props.listStyle.table && this.props.listStyle.cards) {
+            return (
+                <div className="filter-bar-display-mode">
+                    <ButtonGroup>
+                        <Button
+                            type="secondary"
+                            onClick={this.onStyleChangeHandler.bind(this, "cards")}
+                            active={this.props.listStyle.status.type}
+                        >
+                            <Icon name="th"/>
+                        </Button>
+                        <Button
+                            type="secondary"
+                            onClick={this.onStyleChangeHandler.bind(this, "table")}
+                            active={!this.props.listStyle.status.type}
+                        >
+                            <Icon name="th-list"/>
+                        </Button>
+                    </ButtonGroup>
+                </div>
+            );
+        }
+    }
+
     render() {
         return (
             <div key={this.getUniqueKey()}>
-                <div className="filter-bar p-a-1">
-                    <div className="filter-bar-filter m-r-1">
-                        <a className={this.props.buttonClass} onClick={this.props.onFilterToggle} data-toggle="collapse" href="#collapseFilter" aria-expanded={this.props.expanded} aria-controls="collapseFilter">
-                            <Icon iconClass="fa fa-filter"/>
-                            {this.props.txtFilterButton}
+                <div className="filter-bar pa-1">
+                    {(this.props.filter.groups.length >= 1) &&
+                    <div className="filter-bar-filter mr-1">
+                        <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"}
+                           onClick={this.onFilterChangeHandler.bind(this, "toggle")}
+                           href="#collapseFilter"
+                        >
+                            <Icon name="filter"/>
+                            {this.props.filter.buttonText ? this.props.filter.buttonText : " Filter"}
                         </a>
-                    </div>
-                    <div className="filter-bar-search m-r-1">
-                        <div className="input-group">
+                    </div>}
+                    <div className="filter-bar-search mr-1">
+                        <div className="input-group" key={this.getUniqueKey()}>
                         <span className="input-group-addon" key="loading-icon">
-                            {this.props.loading ?
-                                <span className="filter-bar-search-spinner text-muted">
-                                    <Icon iconClass="fa fa-spin fa-refresh"/>
+                            {this.props.input.loading ?
+                                <span className="filter-bar-search-spinner text-muted" key="loader-span">
+                                    <Icon name="refresh" spin key="currently-loading"/>
                                 </span> :
-                                <Icon iconClass="fa fa-search"/>
+                                <Icon name="search" key="not-loading"/>
                             }
                         </span>
-                            <Input type="text" inputClass="form-control" placeholder={this.props.txtSearchPlaceholder} onFilterInput={this.props.onFilterInput} inputValue={this.props.inputValue}/>
+                            <Input
+                                placeholder={this.props.input.placeholder}
+                                onChange={this.props.input.onInput}
+                                defaultValue={this.props.input.status.inputValue}
+                                autoFocus={this.props.input.autoFocus}
+                            />
                             {this.props.txtSearchAddon &&
                             <span className="input-group-addon">
                                 {this.props.txtSearchAddon}
@@ -162,32 +253,31 @@ export default class FilterBar extends ReactComponent {
                             }
                         </div>
                     </div>
-                    {this.props.listStyle ?
-                        <div className="filter-bar-sort m-r-1">
-                            <Dropdown dropdownClass="dropdown dropdown" buttonClass="btn btn-secondary dropdown-toggle" buttonText={this.props.txtSortButton}>
+                    {this.props.listStyle.status.type ?
+                        <div className="filter-bar-sort mr-1" key={this.getUniqueKey()}>
+                            <Dropdown
+                                dropdownClass="dropdown dropdown"
+                                buttonClass="btn btn-secondary dropdown-toggle"
+                                buttonText={this.props.listStyle.cards.buttonText ? this.props.listStyle.cards.buttonText : "Sortierung"}
+                            >
                                 {this.createDropdownItems()}
                             </Dropdown>
                         </div> :
                         null
                     }
-                    <div className="filter-bar-display-mode">
-                        <ButtonGroup>
-                            <Button buttonClass="btn  btn-secondary" title="Kartendarstellung" onClickMethod={this.props.onSetStyle} identifier="cards">
-                                <Icon iconClass="fa fa-th"/>
-                            </Button>
-                            <Button buttonClass="btn  btn-secondary" title="Tabellendarstellung" onClickMethod={this.props.onSetStyle} identifier="table">
-                                <Icon iconClass="fa fa-th-list"/>
-                            </Button>
-                        </ButtonGroup>
-                    </div>
+                    {this.createStyleButtons()}
                 </div>
-                <div className={this.props.collapseClass} id="collapseFilter" style={this.props.style} aria-expanded={this.props.expanded} key={this.getUniqueKey()}>
+                {this.props.filter &&
+                <div className={cx("collapse", this.props.filter.status.expanded ? "in" : "")} id="collapseFilter"
+                     style={this.props.filter.status.expanded ? {} : {height: 0}}
+                     key={this.getUniqueKey()}
+                >
                     <div className="card card-block">
                         <div className="row">
                             {this.createFilterElements()}
                         </div>
                     </div>
-                </div>
+                </div>}
             </div>
         )
     }

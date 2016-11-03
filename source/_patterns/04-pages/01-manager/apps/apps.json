@@ -2,7 +2,7 @@
   "btnGroupList": false,
   "cardsList": [
     {
-      "header": "EM Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "header": "EM Tippspiel <div class=\"float-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
       "image": {
         "src": "../../images/sample/apps/app-screenshot1.jpg"
       },
@@ -13,12 +13,12 @@
           {
             "status": "list-group-item-info",
             "header": false,
-            "text": "Die App wurde noch nicht veröffentlicht.<a href=\"#\" class=\"btn btn-primary btn-block btn-sm m-t-1 \">Jetzt veröffentlichen</a>"
+            "text": "Die App wurde noch nicht veröffentlicht.<a href=\"#\" class=\"btn btn-primary btn-block btn-sm mt-1 \">Jetzt veröffentlichen</a>"
           },
           {
             "status": false,
             "header": false,
-            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: EM Tippspiel für Mode-Marken<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: EM Tippspiel für Mode-Marken<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"float-right\" href=\"#\">Verlängern</a></small>"
           },
           {
             "status": false,
@@ -29,7 +29,7 @@
       }
     },
     {
-      "header": "Sommer Fotowettbewerb <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "header": "Sommer Fotowettbewerb <div class=\"float-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/fr.png\" alt=\"Französisch\" /><img src=\"../../images/flags/24/nl.png\" alt=\"Niederländisch\" /><img src=\"../../images/flags/24/es.png\" alt=\"Spanisch\" /><img src=\"../../images/flags/24/pt.png\" alt=\"Portugiesisch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
       "image": {
         "src": "../../images/sample/apps/app-screenshot3.jpg"
       },
@@ -45,7 +45,7 @@
           {
             "status": false,
             "header": false,
-            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Fotowettbewerb<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Fotowettbewerb<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"float-right\" href=\"#\">Verlängern</a></small>"
           },
           {
             "status": false,
@@ -56,7 +56,7 @@
       }
     },
     {
-      "header": "Buli 2017 Tippspiel <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "header": "Buli 2017 Tippspiel <div class=\"float-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
       "image": {
         "src": "../../images/sample/apps/app-screenshot4.jpg"
       },
@@ -67,7 +67,7 @@
           {
             "status": "list-group-item-danger",
             "header": false,
-            "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz läuft in 5 Tagen ab!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm m-t-1 \">Jetzt verlängern</a>"
+            "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz läuft in 5 Tagen ab!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm mt-1 \">Jetzt verlängern</a>"
           },
           {
             "status": false,
@@ -77,7 +77,7 @@
           {
             "status": false,
             "header": false,
-            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Bundesliga Tippspiel<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Bundesliga Tippspiel<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"float-right\" href=\"#\">Verlängern</a></small>"
           },
           {
             "status": false,
@@ -88,7 +88,7 @@
       }
     },
     {
-      "header": "Adventskalender 2015 <div class=\"pull-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
+      "header": "Adventskalender 2015 <div class=\"float-right\"><img src=\"../../images/flags/24/de.png\" alt=\"Deutsch\" /><img src=\"../../images/flags/24/us.png\" alt=\"Englisch\" /></div>",
       "image": {
         "src": "../../images/sample/apps/app-screenshot2.jpg"
       },
@@ -99,7 +99,7 @@
           {
             "status": "list-group-item-warning",
             "header": false,
-            "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz ist abgelaufen!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm m-t-1 \">Jetzt verlängern</a>"
+            "text": "<i class=\"fa fa-exclamation-triangle\"></i> Ihre Lizenz ist abgelaufen!<a href=\"#\" class=\"btn btn-primary btn-block btn-sm mt-1 \">Jetzt verlängern</a>"
           },
           {
             "status": false,
@@ -109,7 +109,7 @@
           {
             "status": false,
             "header": false,
-            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Adventskalender 2016<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"pull-right\" href=\"#\">Verlängern</a></small>"
+            "text": "<small class=\"text-muted\"><i class=\"fa fa-building\"></i> App-Arena.com <br> <i class=\"fa fa-info\"></i> App-ID: 12345 <br> <i class=\"fa fa-star\"></i> Erstellt aus Vorlage: Adventskalender 2016<br> <i class=\"fa fa-edit\"></i> Zuletzt bearbeitet: 04. Januar 2016 <br> <i class=\"fa fa-calendar\"></i> Lizenz bis 12. Dezember 2016 <a class=\"float-right\" href=\"#\">Verlängern</a></small>"
           },
           {
             "status": false,
@@ -256,16 +256,16 @@
     ],
     "navList": [
       {
-        "text": "Apps <span class=\"pull-right label label-success\">12</span>",
+        "text": "Apps <span class=\"float-right label label-success\">12</span>",
         "isActive": true
       },
       {
-        "text": "Vorlagen <span class=\"pull-right label label-success\">3</span>",
+        "text": "Vorlagen <span class=\"float-right label label-success\">3</span>",
         "url": "link.pages-apps-templates"
       }
     ]
   },
-  "pageTitle": {
+  "pageHeader": {
     "title": "App Übersicht",
     "cta": {
       "btnText": "App erstellen"

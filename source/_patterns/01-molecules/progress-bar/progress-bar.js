@@ -12,9 +12,9 @@ var PROGRESS_TYPES = [
 export default class ProgressBar extends ReactComponent {
     static propTypes = {
         classNames: PropTypes.string,
-        value: PropTypes.string.isRequired,
-        maxValue: PropTypes.string.isRequired,
-        minWidth: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+        maxValue: PropTypes.number.isRequired,
+        minWidth: PropTypes.number.isRequired,
         text: PropTypes.string,
         type: PropTypes.oneOf(PROGRESS_TYPES).isRequired,
         captionID: PropTypes.string,
@@ -29,14 +29,14 @@ export default class ProgressBar extends ReactComponent {
     renderRemovableText(text) {
         if (text !== '') {
             return (
-                <div className="text-xs-center" id={this.props.captionID}>{text}</div>
+                <div className="text-xs-center text-muted" id={this.props.captionID}><small>{text}</small></div>
             );
         }
         return null;
     }
 
     render() {
-        const classNames = cx('progress-bar', 'progress-' + this.props.type, this.props.classNames);
+        const classNames = cx('progress', 'progress-' + this.props.type, this.props.classNames);
 
 
         return (

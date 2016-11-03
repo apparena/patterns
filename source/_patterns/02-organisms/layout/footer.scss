@@ -10,11 +10,15 @@
 .o-footer {
   clear: both;
   overflow: hidden;
-  background: $brand-inverse;
+  background: $brand-secondary;
   color: #ffffff;
   line-height: 1.2;
   padding: ($spacer-y * 2);
   font-size: 90%;
+  
+  hr {
+    border-color: #fff;
+  }
 
   .nav-link {
     color: #ffffff;
@@ -24,8 +28,38 @@
   }
 }
 
-.o-footer-logo > img {
-  max-width: 120px;
+.o-footer-social-media {
 
+  margin-top:-10px;
+
+  a {
+    color: $gray-light;
+    font-size:2rem;
+  }
+  a:hover {
+    color: lighten($gray-light, 10%);
+  }
+
+}
+
+.o-footer-nav-secondary {
+
+  a.nav-link {
+    color: $gray-light;
+  }
+  a.nav-link:hover {
+    color: lighten($gray-light, 10%);
+  }
+
+}
+
+.o-footer-logo {
+
+  display: block;
+
+  > img {
+    max-width: 160px;
+
+  }
 }
 

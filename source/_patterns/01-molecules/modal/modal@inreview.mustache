@@ -13,7 +13,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <div class="pull-right">
+                    <div class="float-right">
                         {{#link}}
                             <span class="modal-header-link">
                                 <a href="{{url}}">{{text}}</a>
@@ -35,7 +35,7 @@
             {{#modal.footer}}
                 <div class="modal-footer">
                     {{#hint}}
-                        <span class="modal-hint-text text-muted pull-left">{{hint}}</span>
+                        <span class="modal-hint-text text-muted float-left">{{hint}}</span>
                     {{/hint}}
                     {{#btnProgress}}
                         {{> atoms-button }}

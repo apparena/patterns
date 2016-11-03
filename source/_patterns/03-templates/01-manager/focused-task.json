@@ -1,5 +1,6 @@
 {
     "navSecondary": false,
+    "focusedTaskSize": "col-sm-8 offset-sm-2",
     "content": "<h1>FORM</h1>",
     "footer": "<a href=\"#\" class=\"btn btn-primary\">Call to action</a>",
     "header": "Title of the task",

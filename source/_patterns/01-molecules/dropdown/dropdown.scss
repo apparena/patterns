@@ -1,0 +1,13 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+@import "../../../css/scss/abstracts/mixins";
+@import "~bootstrap/scss/dropdown";
+
+/*=========================================================================
+  Molecules Dropdown
+ ========================================================================== */
+.dropdown-toggle.no-icon:after {
+  content: initial;
+}

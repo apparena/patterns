@@ -1,6 +1,24 @@
 {{# navSidebar }}
     <nav id="o-nav-sidebar">
 
+        {{# header }}
+            <div class="o-nav-sidebar-header">
+                <div class="media">
+                    {{#img }}
+                        <div class="media-left">
+                            <a href="{{link}}">
+                                <img class="media-object img-circle img-fluid" src="{{ src }}" title="{{ title }}" alt="{{ title }}">
+                            </a>
+                        </div>
+                    {{/img}}
+                    <div class="media-body">
+                        <a class="media-heading" href="{{link}}">{{{ title }}}</a>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        {{/header}}
+
         {{# btnList }}
             {{> atoms-button }}
         {{/btnList}}
@@ -8,5 +26,17 @@
         <hr />
 
         {{> molecules-navs:nav-pills nav-stacked }}
+
+        {{# secondaryGroup }}
+            <hr />
+
+            <div class="o-nav-sidebar-secondaryGroup">
+                <p class="title">{{title}}</p>
+
+                {{> molecules-navs:nav-pills nav-stacked }}
+            </div>
+
+        {{/secondaryGroup}}
+
     </nav>
 {{/ navSidebar }}

@@ -1,0 +1,7 @@
+{
+    "bannerMessage": {
+        "class": "m-banner-message-danger",
+        "icon": "fa-exclamation-circle",
+        "text": "Your 'Fotowettbewerb' <strong>license is about to expire</strong>. There are 2 days left to <a href='#'>renew your license</a>"
+    }
+}

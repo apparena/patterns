@@ -8,6 +8,21 @@
     {
       "btnText": "Button 2",
       "btnClass": "btn-secondary"
+    },
+    {
+      "btnText": false,
+      "dropdown": {
+        "btnCaption": "Dropdown Menu 1",
+        "btnClass": "btn btn-secondary",
+        "id": "myDropdown",
+        "items": [
+          {"class": "dropdown-item", "text": "Option 1", "url":"link.molecules-dropdown"},
+          {"class": "dropdown-divider"},
+          {"class": "dropdown-item", "text": "Option 2", "url":"link.molecules-dropdown"}
+        ],
+        "header":"Dropdown header",
+        "menuClass": "dropdown-menu"
+      }
     }
   ]
 }

@@ -2,7 +2,6 @@
 //
 // Bootstrap variable overwrites
 
-
 // Table of Contents
 //
 // Colors
@@ -20,49 +19,76 @@
 //
 // Variable format should follow the `$component-modifier-state-property` order.
 
-
 // Colors
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 #373a3c !default;
-$gray:                      #666666 !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #dddddd !default;
-$gray-lightest:             #f6f6f6 !default;
+$gray-dark: #373a3c !default;
+$gray: #777582 !default;
+$gray-light: #818a91 !default;
+$gray-lighter: #ccc !default;
+$gray-lightest: #f6f8fa !default;
 
-$brand-primary:             #478AB8 !default;
-$brand-secondary:           #2D343D !default;
-$brand-focus:               #2E9EEB !default;
-$brand-success:             #ACC825 !default;
-$brand-info:                #67C6EB !default;
-$brand-warning:             #DB6B3A !default;
-$brand-danger:              #CF3D30 !default;
-$brand-grey-light:          #DDDDDD !default;
-$brand-grey-dark:           #666666 !default;
-
-
+$brand-primary: #478AB8 !default;
+$brand-secondary: #2d3d4a !default;
+$brand-focus: #2c82c9 !default;
+$brand-success: #2dcc56 !default;
+$brand-info: #67C6EB !default;
+$brand-warning: #DB6B3A !default;
+$brand-danger: #CF3D30 !default;
+$brand-grey-light: #f6f8fa !default;
+$brand-grey-dark: #666666 !default;
 
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-flex:               true !default;
-$enable-rounded:            false !default;
-$enable-shadows:            true !default;
-$enable-gradients:          true !default;
-$enable-transitions:        true !default;
-$enable-hover-media-query:  false !default;
-$enable-grid-classes:       true !default;
-
+$enable-flex: true !default;
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: true !default;
+$enable-grid-classes: true !default;
 
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     'Ubuntu', Arial, sans-serif !default;
-$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:           $font-family-sans-serif !default;
+$font-family-sans-serif: 'Open Sans', Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+$body-color: $gray !default;
+
+//Buttons
+$btn-primary-bg: $brand-focus !default;
+$btn-secondary-color: #7A838D !default;
+$btn-secondary-bg: #EEF2F8 !default;
+$btn-secondary-border: #EEF2F8 !default;
+
+//Cards
+$card-bg: #fff !default;
+$card-cap-bg: #fff !default;
+$card-border-width: 0 !default;
+$card-border-color: $gray-lighter !default;
+$card-spacer-x: 1.25rem !default;
+$card-spacer-y: 1.5rem !default;
+
+$card-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08) !default;
+
+// Forms
+$input-line-height: 2 !default;
+$input-bg: #EEF2F8 !default;
+$input-line-height: 1.6 !default;
+$input-box-shadow: none !default;
+$input-box-shadow-focus: none !default;
+$input-btn-border-width: 0 !default;
+
+// Navbar
+$navbar-border-radius: 0 !default;
+
+// Navs
+$nav-pills-border-radius: 0 !default;
 
 @import "~bootstrap/scss/variables";

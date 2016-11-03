@@ -1,51 +1,41 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
-import styles from "../../../css/app-arena-styles.scss";
+import styles from "./button.scss";
 
-const BUTTON_SIZES = ['lg', 'sm', 'xs'];
+const BUTTON_SIZES = ["lg", "sm", "xs"];
 
 const BUTTON_TYPES = [
-    'default',
-    'default-primary',
-    'default-success',
-    'default-warning',
-    'default-danger',
-    'hollow-primary',
-    'hollow-success',
-    'hollow-warning',
-    'hollow-danger',
-    'primary',
-    'success',
-    'warning',
-    'danger',
-    'link',
-    'link-text',
-    'link-primary',
-    'link-success',
-    'link-warning',
-    'link-danger',
-    'link-cancel',
-    'link-delete',
+    "primary",
+    "secondary",
+    "success",
+    "info",
+    "warning",
+    "danger",
+    "link",
+    "outline-primary",
+    "outline-secondary",
+    "outline-success",
+    "outline-info",
+    "outline-warning",
+    "outline-danger",
 ];
 
 export default class Button extends ReactComponent {
     static propTypes = {
         block: PropTypes.bool,
         className: PropTypes.string,
-        children: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.element
-        ]),
         href: PropTypes.string,
         isActive: PropTypes.bool,
+        isDisabled: PropTypes.bool,
         onClick: PropTypes.func,
         size: PropTypes.oneOf(BUTTON_SIZES),
         submit: PropTypes.bool,
-        type: PropTypes.oneOf(BUTTON_TYPES),
+        type: PropTypes.oneOf(BUTTON_TYPES)
     };
     static defaultProps = {
-        type: 'default',
+        type: 'secondary',
+        isDisabled: false
     };
 
     render() {
@@ -54,10 +44,9 @@ export default class Button extends ReactComponent {
             styles.btn,
             styles['btn-' + this.props.type],
             this.props.size && styles['btn-' + this.props.size],
-            {
-                'btn-block': this.props.block,
-                'is-active': this.props.isActive,
-            },
+            this.props.block && styles['btn-block'],
+            this.props.isActive && styles['active'],
+            this.props.isDisabled && styles['disabled'],
             this.props.className
         );
 
@@ -68,8 +57,12 @@ export default class Button extends ReactComponent {
         }
 
         return (
-            <button onClick={this.props.onClick} className={componentClass}
-                    type={this.props.submit ? 'submit' : 'button'}>
+            <button
+                onClick={this.props.onClick}
+                disabled={this.props.isDisabled}
+                className={componentClass}
+                type={this.props.submit ? 'submit' : 'button'}
+            >
                 {this.props.children}
             </button>
         );

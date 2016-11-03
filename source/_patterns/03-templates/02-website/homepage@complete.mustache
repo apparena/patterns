@@ -2,7 +2,7 @@
 <main role="main">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 m-t-2 text-xs-center headline">
+            <div class="col-md-12 mt-2 text-xs-center headline">
                 <h1>HEADLINE </h1>
             </div>
             <div class="col-md-8 col-xs-12 text-xs-center subline offset-md-2">
@@ -12,36 +12,22 @@
                 </p>
             </div>
             <div class="col-md-2 col-xs-12 text-xs-center">
-                {{#buttons.btn_read-more}}
                     {{> atoms-button }}
-                {{/buttons.btn_read-more}}
             </div>
         </div>
-        <div class="row m-t-2 text-xs-center">
-            <div class="col-md-3 col-xs-6 usp-1">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 1</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 usp-2 ">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 2</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 usp-3">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 3</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 usp-4">
-                <ul class="fa-ul">
-                    <li><i class="fa fa-check" aria-hidden="true"></i> USP 4</li>
+        <div class="row mt-2 text-xs-center">
+            <div class="col-xs-12">
+                <ul class="fa-ul row">
+                    <li class="col-md-3 col-xs-6" id="usp-1"><i class="fa fa-check" aria-hidden="true"></i> USP 1</li>
+                    <li class="col-md-3 col-xs-6" id="usp-2"><i class="fa fa-check" aria-hidden="true"></i> USP 2</li>
+                    <li class="col-md-3 col-xs-6" id="usp-3"><i class="fa fa-check" aria-hidden="true"></i> USP 3</li>
+                    <li class="col-md-3 col-xs-6" id="usp-4"><i class="fa fa-check" aria-hidden="true"></i> USP 4</li>
                 </ul>
             </div>
         </div>
         <hr>
         <div class="container">
-            <div class="row m-b-3">
+            <div class="row mb-3">
                 <div class="col-md-6">
                     <h2>Das Performance Team</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -50,16 +36,17 @@
                 </div>
                 <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
-            <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+            <div class="row mb-3">
+                <div class="col-md-6 mb-1 text-center hidden-sm-down"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Web-Applikation</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                 </div>
+                <div class="col-md-6 mb-1 text-center hidden-md-up"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
-            <div class="row m-b-3">
+            <div class="row mb-3">
                 <div class="col-md-6">
                     <h2>Von DIY bis Full-Service Enterprise</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -68,14 +55,15 @@
                 </div>
                 <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
-            <div class="row m-b-3">
-                <div class="col-md-6 m-b-1 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
+            <div class="row mb-3">
+                <div class="col-md-6 mb-1 text-center hidden-sm-down"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
                 <div class="col-md-6">
                     <h2>Experten- und Strategie-Beratung</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                 </div>
+                <div class="col-md-6 mb-1 text-center hidden-md-up"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
             </div>
         </div>
         <hr>
@@ -89,13 +77,11 @@
                 </div>
                 <div class="button-container">
                     <a href="https://v25-stage.app-arena.com/apps/create?templateId=299&templateName=Adventskalender%20Demo" target="_blank">
-                        {{#buttons.btn_demo}}
                             {{> atoms-button }}
-                        {{/buttons.btn_demo}}
                     </a>
                 </div>
                 <div class="image-pdm">
-                    <img src="https://aa-ads.s3.amazonaws.com/App-Arena%20Startseite/laptop_wireframe.png" class="img-fluid m-x-auto" alt="Produkt des Monats XX">
+                    <img src="https://aa-ads.s3.amazonaws.com/App-Arena%20Startseite/laptop_wireframe.png" class="img-fluid mx-auto" alt="Produkt des Monats XX">
                 </div>
             </div>
         </div>
@@ -105,7 +91,7 @@
             {{> organisms-slider }}
         {{/sliders.customerSlider}}
         <hr>
-        <img class="img-fluid m-x-auto m-b-2 m-t-2 d-block" src="../../images/fpo_16x9.png" alt="">
+        <img class="img-fluid mx-auto mb-2 mt-2 d-block" src="../../images/fpo_16x9.png" alt="">
         <h3 style="text-align:center">"Article Headline"</h3>
         <div class="col-xs-8 text-xs-center offset-xs-2">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
@@ -120,41 +106,40 @@
         {{/sliders.feedbackSlider}}
         <hr>
         <h3 style="text-align:center">Next-Events Headline</h3>
-        <div class="row m-l-3 m-r-3">
-            <div class="col-md-6 event1 m-t-1">
+        <div class="row ml-3 mr-3">
+            <div class="col-md-6 event1 mt-1">
                 <h4>Event 1 Headline</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                     tincidunt, ut
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
-                <div class="button-container m-b-2">
-                    {{#buttons.btn_signup_event}}
+                <div class="button-container mb-2">
                         {{> atoms-button }}
-                    {{/buttons.btn_signup_event}}
                 </div>
-                <div class="event-img m-b-2">
+                <div class="event-img mb-2">
                     <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
                 </div>
             </div>
-            <div class="col-md-6 event2 m-t-1">
-                <div class="event-img">
+            <div class="col-md-6 event2 mt-1">
+                <div class="event-img hidden-sm-down">
                     <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
                 </div>
-                <h4 clasS="m-t-2">Event 2 Headline</h4>
+                <h4 clasS="mt-2">Event 2 Headline</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                     tincidunt, ut
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
+                <div class="event-img hidden-md-up mb-1">
+                    <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
+                </div>
                 <div class="button-container">
-                    {{#buttons.btn_signup_event}}
                         {{> atoms-button }}
-                    {{/buttons.btn_signup_event}}
                 </div>
             </div>
         </div>
         <hr>
-        <div class="row m-b-2 m-t-2" id="newsletter-widget">
-            <div class="col-md-6 col-xs-11 text-xs-center p-l-3">
+        <div class="row mb-2 mt-2" id="newsletter-widget">
+            <div class="col-md-6 col-xs-11 text-xs-center pl-3">
                 <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
@@ -167,7 +152,7 @@
                 </div>
             </div>
             <div class="col-md-12 text-xs-center">
-                <div class="m-b-1 m-t-1 row" id="nl_types">
+                <div class="mb-1 mt-1 row" id="nl_types">
                     <div class="col-md-2 offset-md-2 col-xs-6">
                         {{> atoms-checkbox }} Lorem ipsum
                     </div>
@@ -182,10 +167,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 nl-signup-btn text-xs-center pull-xs-none m-x-auto">
-                {{#buttons.btn_signup_nl}}
+            <div class="col-md-4 nl-signup-btn text-xs-center float-xs-none mx-auto">
                     {{> atoms-button }}
-                {{/buttons.btn_signup_nl}}
             </div>
         </div>
         <div class="push">

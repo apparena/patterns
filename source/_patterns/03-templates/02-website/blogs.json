@@ -1,0 +1,111 @@
+{
+  "navPrimary": {
+    "navbar": {
+      "helpNavigation": false,
+      "primaryNavigation": {
+        "navList": [
+          {
+            "text": "Produkte & Tools",
+            "url": "link.pages-homepage",
+            "isActive": false
+          },
+          {
+            "text": "Marketing & Services",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Technologie",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Blog",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Support",
+            "url": "link.templates-service"
+          },
+          {
+            "text": "Kontakt",
+            "url": "link.pages-homepage"
+          }
+        ]
+      },
+      "searchForm": {
+        "navbarForm": {
+          "icon": "<i class=\"fa fa-search text-muted\"></i>",
+          "placeholder": "Suchen..."
+        }
+      },
+      "userNavigation": {
+        "links": {
+          "navList": [
+            {
+              "text": "Anmelden",
+              "url": "link.pages-login",
+              "isActive": false
+            }
+          ]
+        },
+        "dropdown": false
+      }
+    }
+  },
+  "navSecondary": false,
+  "sliders": {
+    "referenceSlider": {
+      "slider": {
+        "id": "referenceSlider",
+        "settings": {
+          "dots": false,
+          "slidesToScroll":3,
+          "slidesToShow": 3
+        },
+        "items": [
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"}
+        ]
+      }
+    },
+    "crosssellingSlider": {
+      "slider": {
+        "id": "crosssellingSlider",
+        "settings": {
+          "dots": false,
+          "slidesToScroll":1,
+          "slidesToShow": 3
+        },
+        "items": [
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
+          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"}
+        ]
+      }
+    }
+  },
+  "buttons": {
+    "btn_signup_nl": {
+      "btnText": "Sign up",
+      "btnTitle": "",
+      "btnClass": "btn-primary btn-success float-xs-center"
+    },
+    "btn_signup_appointment": {
+      "btnText": "Arrange appointment",
+      "btnTitle": "",
+      "btnClass": "btn-primary btn-success btn-lg float-xs-center"
+    }
+  }
+}

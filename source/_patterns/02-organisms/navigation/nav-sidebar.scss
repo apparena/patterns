@@ -1,0 +1,49 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+@import "~bootstrap/scss/mixins/hover";
+
+/*=========================================================================
+  Organism Navigation Sidebar
+ ========================================================================== */
+//#o-nav-sidebar, .o-nav-sidebar {
+
+  .o-nav-sidebar-header {
+    .media-object {
+      max-width: 48px;
+    }
+
+    .media-body {
+      align-items: center;
+      display: flex;
+    }
+
+    > hr {
+      margin: 1rem -1rem;
+    }
+  }
+
+  .nav-pills {
+    .nav-link.active,
+    .nav-item.open .nav-link {
+      @include plain-hover-focus {
+        color: inherit;
+        cursor: default;
+        background-color: $gray-lightest;
+        border-left: 5px solid $brand-primary;
+        margin-left: -15px;
+        padding-left: 25px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .o-nav-sidebar-secondaryGroup {
+    .title {
+      color: $gray-light;
+      border-top: 1px solid #ccc;
+      padding: 10px 10px 4px 10px;
+    }
+  }
+//}

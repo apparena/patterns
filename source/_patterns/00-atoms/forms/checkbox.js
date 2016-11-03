@@ -5,32 +5,54 @@ import cx from "classnames";
 import Toggle from "react-toggle";
 import styles from "./checkbox.scss";
 
-export default class CheckboxComponent extends ReactComponent {
+export default class Checkbox extends ReactComponent {
     static PropTypes = {
         className: PropTypes.string,
+        zIndex: PropTypes.number,
         disabled: PropTypes.bool,
         checked: PropTypes.bool,
         onChange: PropTypes.func.isRequired,
-        id: PropTypes.string.isRequired
+        id: PropTypes.string,
+        positioning: PropTypes.oneOf([
+            'top',
+            'bottom',
+            'left',
+            'right',
+            'top left',
+            'top center',
+            'top right',
+            'right top',
+            'right middle',
+            'right bottom',
+            'bottom right',
+            'bottom center',
+            'bottom left',
+            'left top',
+            'left middle',
+            'left bottom'
+        ]),
     };
 
     static defaultProps = {
-        id: ''
+        id: '',
+        positioning: "top"
     };
 
     render() {
-        var id = this.props.id.replace("_", "");
+        const {id, className, positioning, checked, disabled, onChange, zIndex} = this.props;
+        var cId = id.replace("_", "");
         return (
-            <div className={cx(styles.checkbox, this.props.className)}>
+            <div className={cx(styles.checkbox, className)}>
                 <Tooltip
-                    positioning="top center"
-                    label={this.props.checked ? "Aktiviert" : "Deaktiviert"}
+                    zIndex={zIndex}
+                    positioning={positioning}
+                    label={checked ? "Aktiviert" : "Deaktiviert"}
                 >
                     <Toggle
-                        id={id}
-                        disabled={this.props.disabled}
-                        checked={this.props.checked}
-                        onChange={this.props.onChange}
+                        id={cId}
+                        disabled={disabled}
+                        checked={checked}
+                        onChange={onChange}
                     />
                 </Tooltip>
             </div>

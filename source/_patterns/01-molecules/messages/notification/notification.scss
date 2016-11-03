@@ -1,0 +1,107 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../../css/scss/abstracts/variables";
+
+/*=========================================================================
+  Organism Navigation Sidebar
+ ========================================================================== */
+
+.m-notification {
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+  }
+
+  .content {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid $brand-info;
+    overflow-wrap: break-word;
+    padding: 10px 40px 10px 60px;
+    visibility: visible;
+    z-index: 2050;
+    pointer-events: auto;
+    &:before {
+      content: '';
+      bottom: 0;
+      left: 0;
+      top: 0;
+      width: 40px;
+      position: absolute;
+    }
+
+    .close {
+      margin-right: -25px;
+      float: right;
+      cursor: pointer;
+    }
+
+    .icon {
+      position: absolute;
+      left: 12px;
+      top: 28%;
+      color: #fff;
+
+      > span {
+        display: none;
+      }
+    }
+
+    .title-message p {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .info {
+    &:before {
+      background-color: $brand-info;
+    }
+    .icon .info {
+      display: block;
+    }
+  }
+
+  .success {
+    border-color: $brand-success;
+    &:before {
+      background-color: $brand-success;
+    }
+    .icon .success {
+      display: block;
+    }
+
+  }
+
+  .warning {
+    border-color: $brand-warning;
+    &:before {
+      background-color: $brand-warning;
+    }
+    .icon .warning {
+      display: block;
+    }
+  }
+
+  .danger {
+    border-color: $brand-danger;
+    &:before {
+      background-color: $brand-danger;
+    }
+    .icon .danger {
+      display: block;
+    }
+  }
+}
+

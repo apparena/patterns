@@ -1,4 +1,9 @@
 {
+  "bannerMessage": {
+    "class": "m-banner-message-danger",
+    "icon": "fa-exclamation-circle",
+    "text": "Your 'Fotowettbewerb' <strong>license is about to expire</strong>. There are 2 days left to <a href='#'>renew your license</a>"
+  },
   "filterBar": {
     "filtersActivated": false,
     "sortActivated": false
@@ -6,6 +11,15 @@
   "gridView": false,
   "tableView": true,
   "listView": false,
+  "pagination": {
+    "class": "",
+    "items": [
+      {"url":"#", "text": "1", "isActive": true},
+      {"url":"#", "text": "2"},
+      {"url":"#", "text": "3"},
+      {"url":"#", "text": "4"}
+    ]
+  },
   "table": {
     "thead": {
       "th": [

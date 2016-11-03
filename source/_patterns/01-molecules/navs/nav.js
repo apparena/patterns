@@ -1,28 +1,44 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
+import styles from "./navs.scss";
 
 export default class Nav extends ReactComponent {
     static propTypes = {
-        classNames: PropTypes.string,
-        listItems: PropTypes.object.isRequired,
+        children: PropTypes.node.isRequired,
+        inline: PropTypes.bool,
+        tabs: PropTypes.bool,
+        pills: PropTypes.bool,
+        stacked: PropTypes.bool,
+    };
+
+    static defaultProps = {
+        inline: false,
+        tabs: false,
+        pills: false,
+        stacked: false
     };
 
     render() {
+        const {children} = this.props;
+        // classes
+        const componentClass = cx(
+            styles.nav,
+            this.props.inline && styles["nav-inline"],
+            this.props.tabs && styles["nav-tabs"],
+            this.props.pills && styles["nav-pills"],
+            this.props.stacked && styles["nav-stacked"],
+            this.props.className
+        );
+        const child = React.Children.map(children, (child) => {
+            if (React.isValidElement(child)) {
+                return React.cloneElement(child, child.props);
+            }
+        });
         return (
-            <ul className={cx("nav", this.props.classNames)}>
-                {Object.keys(this.props.listItems).map((text) => {
-                    return (
-                        <li key={this.getUniqueKey()} className={cx("nav-item", this.props.listItems[text][2])}>
-                            <a className={cx("nav-link", this.props.listItems[text][1])}
-                               href={this.props.listItems[text][0]}
-                            >
-                                {text}
-                            </a>
-                        </li>
-                    );
-                })}
+            <ul className={componentClass}>
+                {child}
             </ul>
         );
     }
-}
+};

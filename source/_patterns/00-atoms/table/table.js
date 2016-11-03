@@ -1,59 +1,51 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
+import styles from "./table.scss";
 
 export default class Table extends ReactComponent {
-    /*
-        The tableData might seem overwhelming so here's an example that creates two columns with 3 rows:
-        tableData={[
-            { cols: ['Left', 'Right'] },
-            { rows: { 0: ['25%', '75%'],
-                      1: ['class-names:table-danger', '50%', '50%'],
-                      2: ['66%', '33%']
-                    }
-            }
-        ]}
-
-        Columns need to come first and the indices for rows need to be zero-based and sequential.
-        Prepend another element into a row and insert 'class-names: ...' into it to put the defined class names into the class attribute of that row
-     */
     static propTypes = {
+        children: PropTypes.node.isRequired,
         classNames: PropTypes.string,
-        tableHeadClassNames: PropTypes.string,
-        tableData: PropTypes.array.isRequired,
+        striped: PropTypes.bool,
+        bordered: PropTypes.bool,
+        condensed: PropTypes.bool,
+        hover: PropTypes.bool,
+        responsive: PropTypes.bool,
+        inverse: PropTypes.bool,
     };
 
-    getClassNameForRow(row) {
-        let tmp = this.props.tableData[1]['rows'][row][0];
-        if (tmp.includes('class-names:') === true) {
-            return tmp.replace('class-names:', '');
-        }
-    }
+    static defaultProps = {
+        bordered: false,
+        condensed: false,
+        hover: false,
+        responsive: false,
+        striped: false,
+        inverse: false,
+    };
 
     render() {
-        let offset = 1;
+        // classes
+        const componentClass = cx(
+            styles.table,
+            this.props.bordered && styles['table-bordered'],
+            this.props.condensed && styles['table-condensed'],
+            this.props.hover && styles['table-hover'],
+            this.props.striped && styles['table-striped'],
+            this.props.inverse && styles['table-inverse'],
+            this.props.className
+        );
+
+        if (this.props.responsive) {
+            return (
+                <div className={styles['table-responsive']}>
+                    <table children={this.props.children} className={componentClass}/>
+                </div>
+            )
+        }
+
         return (
-            <table className={cx('table', this.props.classNames)}>
-                <thead className={this.props.tableHeadClassNames}>
-                    <tr key="table-header">
-                        {this.props.tableData[0]['cols'].map((col, i) => {
-                            return <th key={++offset^2}>{col}</th>;
-                        })}
-                    </tr>
-                </thead>
-                <tbody>
-                    {Object.keys(this.props.tableData[1]['rows']).map((row, i) => {
-                        return (
-                            <tr key={"table-row-" + (offset + i)} className={this.getClassNameForRow(i)}>
-                                {this.props.tableData[1]['rows'][i].map((rowData, n) => {
-                                    if (!rowData.includes('class-names:'))
-                                        return <td key={++offset^2 * n}>{rowData}</td>;
-                                })}
-                            </tr>
-                        );
-                    })}
-                </tbody>
-            </table>
+            <table children={this.props.children} className={componentClass}/>
         );
     }
 }

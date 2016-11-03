@@ -1,6 +1,7 @@
 {
   "select": {
     "class" : false,
+    "multiple": false,
     "options": [
       { "text": "Option 1" },
       { "text": "Option 2", "selected": true }

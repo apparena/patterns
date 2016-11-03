@@ -3,24 +3,25 @@ var combineLoaders = require('webpack-combine-loaders');
 var path = require('path');
 var relativePath = '../../';
 var nodeModulesPath = path.resolve(__dirname, relativePath, 'node_modules');
-var buildPath = path.resolve(__dirname, relativePath, 'dist');
+var buildPath = path.resolve(__dirname, relativePath, 'build/apparena-patterns-react/dist');
 
 module.exports = {
     devtool: 'source-map',
     entry: [
         'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',
-        path.resolve(__dirname, relativePath + 'build/test', 'component.js')
+        path.resolve(__dirname, relativePath + 'source/_patterns', 'index.js')
     ],
-
     output: {
         path: buildPath,
-        publicPath: '/static/',
+        publicPath: '/',
         pathinfo: true,
         filename: '[name].js',
+        library: 'apparena',
+        libraryTarget: 'umd'
     },
     resolve: {
-        modulesDirectories: ['shared', 'inline', 'node_modules'],
+        modulesDirectories: ['node_modules'],
         extensions: ['', '.js', '.jsx'],
         fallback: path.join(nodeModulesPath)
     },
@@ -92,9 +93,5 @@ module.exports = {
         // new webpack.optimize.CommonsChunkPlugin('vendors', 'shared/vendors.js'),
         // Note: only CSS is currently hot reloaded
         new webpack.HotModuleReplacementPlugin()
-    ],
-    // to keep webpack able to check for file-changes on VMs (Vagrant)
-    watchOptions: {
-        poll: true
-    }
+    ]
 };

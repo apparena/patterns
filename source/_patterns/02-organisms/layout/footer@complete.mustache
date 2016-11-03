@@ -1,17 +1,41 @@
 <footer class="o-footer text-xs-center" role="contentinfo">
 
-{{> organisms-nav-footer }}
+    <div class="container">
+        {{# footer.logo }}
+            <a class="o-footer-logo mt-1 mb-3" href="#">
+                {{> atoms-logo(logoSrc:"../../images/logo-inverse.svg") }}
+            </a>
+        {{/footer.logo}}
 
-{{#footerSettings.copyright}}
-    <p>
-        <small class="o-footer-copyright">Copyright &copy; {{ year }} {{ company.name }}</small>
-    </p>
-{{/footerSettings.copyright}}
+        <hr/>
 
-{{# footerSettings.logo }}
-    <a class="o-footer-logo" href="#">
-        {{> atoms-logo(logoSrc:"../../images/logo-inverse.svg") }}
-    </a>
-{{/footerSettings.logo}}
+        {{#footer.socialMedia}}
+            <div class="o-footer-social-media float-xs-right">
+                <ul class="list-inline">
+                    {{#items}}
+                        <li class="list-inline-item">
+                            <a href="{{url}}" target="_blank" alt="{{title}}">
+                                <i class="fa {{icon}}" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    {{/items}}
+                </ul>
+            </div>
+        {{/footer.socialMedia}}
+
+        {{> organisms-nav-footer:mb-3 text-xs-left }}
+
+        {{#footer.navSecondary}}
+            <div class="o-footer-nav-secondary">
+                {{> organisms-nav-footer:mb-1 }}
+            </div>
+        {{/footer.navSecondary}}
+
+        {{#footer.copyright}}
+            <div class="o-footer-copyright text-muted">
+               Copyright &copy; {{ year }} {{ company.name }}
+            </div>
+        {{/footer.copyright}}
+    </div>
 
 </footer><!-- end o-footer -->
