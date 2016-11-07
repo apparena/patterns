@@ -1,0 +1,59 @@
+// Variables
+//
+// Bootstrap variable overwrites
+
+// Table of Contents
+//
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+
+// General variable structure
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark: #373a3c !default;
+$gray: #777582 !default;
+$gray-light: #818a91 !default;
+$gray-lighter: #ccc !default;
+$gray-lightest: #f6f8fa !default;
+
+$brand-primary: #59a0d1 !default;
+$brand-secondary: #2d3d4a !default;
+$brand-focus: #59a0d1 !default;
+$brand-success: #2dcc56 !default;
+$brand-info: #67C6EB !default;
+$brand-warning: #DB6B3A !default;
+$brand-danger: #CF3D30 !default;
+$brand-grey-light: #f6f8fa !default;
+$brand-grey-dark: #666666 !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-flex: true !default;
+$enable-rounded: false !default;
+$enable-shadows: false !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: true !default;
+$enable-grid-classes: true !default;
+
+
+//Buttons
+$btn-primary-bg: $brand-focus !default;
+$btn-secondary-color: #7A838D !default;
+$btn-secondary-bg: #EEF2F8 !default;
+$btn-secondary-border: #EEF2F8 !default;
