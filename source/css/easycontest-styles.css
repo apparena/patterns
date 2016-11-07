@@ -9834,4 +9834,9 @@ main[role=main] {
 .filter-bar-search {
   flex: 1; }
 
+/* Basic style overwrites */
+header img.logo {
+  height: 35px !important;
+  max-height: 35px !important; }
+
 /*# sourceMappingURL=easycontest-styles.css.map */
