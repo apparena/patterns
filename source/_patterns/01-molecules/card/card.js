@@ -43,7 +43,20 @@ export default class Card extends ReactComponent {
 
         return (
             <div className={componentClass}>
-                {this.getChildrenArray(this.props.children)}
+                {React.Children.map(this.props.children, (child) => {
+                    if (React.isValidElement(child)) {
+                        const {type, className, ...props} = child.props;
+                        switch (type) {
+                            case "card-header":
+                            case "card-block":
+                            case "card-footer":
+                                const newClassName = cx(styles[child.props.type], className);
+                                return React.cloneElement(child, {...props, className: newClassName});
+                            default:
+                                return React.cloneElement(child, {...props});
+                        }
+                    }
+                })}
             </div>
         )
     }
