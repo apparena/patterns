@@ -29,31 +29,20 @@ $gray-light: #818a91 !default;
 $gray-lighter: #ccc !default;
 $gray-lightest: #f6f8fa !default;
 
-$brand-primary: #59a0d1 !default;
-$brand-secondary: #2d3d4a !default;
-$brand-focus: #59a0d1 !default;
-$brand-success: #2dcc56 !default;
+$brand-primary: #40f4b5 !default;
+$brand-focus: #ffbb01 !default;
+$brand-secondary: #434343 !default;
+$brand-grey-light: #fafafa !default;
+$brand-success: #06f7bf !default;
+
 $brand-info: #67C6EB !default;
 $brand-warning: #DB6B3A !default;
 $brand-danger: #CF3D30 !default;
-$brand-grey-light: #f6f8fa !default;
 $brand-grey-dark: #666666 !default;
 
-// Options
+// Typography
 //
-// Quickly modify global styling by enabling or disabling optional features.
+// Font, line-height, and color for body text, headings, and more.
 
-$enable-flex: true !default;
-$enable-rounded: false !default;
-$enable-shadows: false !default;
-$enable-gradients: true !default;
-$enable-transitions: true !default;
-$enable-hover-media-query: true !default;
-$enable-grid-classes: true !default;
-
-
-//Buttons
-$btn-primary-bg: $brand-focus !default;
-$btn-secondary-color: #7A838D !default;
-$btn-secondary-bg: #EEF2F8 !default;
-$btn-secondary-border: #EEF2F8 !default;
+$font-family-sans-serif: 'Source Sans Pro', Arial, sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
