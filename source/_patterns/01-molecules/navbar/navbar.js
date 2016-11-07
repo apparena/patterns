@@ -18,7 +18,6 @@ export default class Navbar extends ReactComponent {
     };
 
     static defaultProps = {
-        fixed: "",
         colorScheme: "light",
         bg: "faded",
     };

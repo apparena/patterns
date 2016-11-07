@@ -26,7 +26,7 @@ const MODAL_SIZES = [
 
 export default class Modal extends ReactComponent {
     static propTypes = {
-        classNames: PropTypes.string,
+        className: PropTypes.string,
         size: PropTypes.oneOf(MODAL_SIZES),
         type: PropTypes.oneOf(MODAL_TYPES),
         headerText: PropTypes.string.isRequired,
@@ -80,10 +80,30 @@ export default class Modal extends ReactComponent {
     }
 
     renderModalContent() {
-        const {size, headerText, children, saveText, onSave, onClose, closeText, hintText, draggable, scrollable, type, buttonDisabled} = this.props;
+        const {
+            size,
+            headerText,
+            children,
+            saveText,
+            onSave,
+            onClose,
+            closeText,
+            hintText,
+            draggable,
+            scrollable,
+            type,
+            className
+        } = this.props;
+        const componentClass = cx(
+            styles["modal-dialog"],
+            styles["modal-" + size],
+            styles["modal-" + type],
+            draggable && styles["modal-draggable"],
+            scrollable && styles["modal-scrollable"],
+            className
+        );
         return (
-            <div
-                className={cx(styles["modal-dialog"], styles["modal-" + size], styles["modal-" + type], draggable && styles["modal-draggable"], scrollable && styles["modal-scrollable"])}>
+            <div className={componentClass}>
                 <div className={cx(styles["modal-content"], styles["modal-content-" + size])}>
                     <div className={cx(styles["modal-header"])}>
                         <button type="button" className={styles.close} onClick={onClose}>
@@ -122,12 +142,12 @@ export default class Modal extends ReactComponent {
     }
 
     render() {
-        const {visible, classNames, draggable, transition} = this.props;
+        const {visible, draggable, transition} = this.props;
         return (
             <div>
                 <Animate transition={transition}>
                     <div
-                        className={cx(styles.modal, (visible) && styles.show, classNames)}
+                        className={cx(styles.modal, (visible) && styles.show)}
                     >
                         {draggable ?
                             <Draggable
