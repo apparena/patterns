@@ -206,7 +206,7 @@ export default class FilterBar extends ReactComponent {
     render() {
         return (
             <div key={this.getUniqueKey()}>
-                <div className="filter-bar pa-1">
+                <div className="filter-bar p-1">
                     {(this.props.filter.groups.length >= 1) &&
                     <div className="filter-bar-filter mr-1">
                         <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"}
