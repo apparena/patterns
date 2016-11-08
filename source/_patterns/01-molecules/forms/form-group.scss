@@ -10,7 +10,7 @@
  ========================================================================== */
 .form-group {
 
-  label {
+  label:not(.custom-control) {
     text-transform: uppercase;
   }
 
