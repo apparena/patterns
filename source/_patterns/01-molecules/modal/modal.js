@@ -40,7 +40,8 @@ export default class Modal extends ReactComponent {
         draggable: PropTypes.bool,
         scrollable: PropTypes.bool,
         transition: PropTypes.string,
-        buttonDisabled: PropTypes.bool
+        buttonDisabled: PropTypes.bool,
+        processRequest: PropTypes.bool
     };
 
     static defaultProps = {
@@ -92,7 +93,9 @@ export default class Modal extends ReactComponent {
             draggable,
             scrollable,
             type,
-            className
+            className,
+            buttonDisabled,
+            processRequest
         } = this.props;
         const componentClass = cx(
             styles["modal-dialog"],
@@ -119,6 +122,7 @@ export default class Modal extends ReactComponent {
                         <Button
                             type="link"
                             onClick={onClose}
+                            isDisabled={processRequest}
                         >
                             {closeText}
                         </Button>
@@ -128,6 +132,7 @@ export default class Modal extends ReactComponent {
                             type={(type === "default") ? "primary" : type}
                             onClick={onSave}
                             isDisabled={buttonDisabled}
+                            processRequest={processRequest}
                         >
                             {saveText}
                         </Button>

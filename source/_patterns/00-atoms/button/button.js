@@ -2,6 +2,7 @@ import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./button.scss";
+import Icon from "../icons/icons";
 
 const BUTTON_SIZES = ["lg", "sm", "xs"];
 
@@ -31,12 +32,19 @@ export default class Button extends ReactComponent {
         onClick: PropTypes.func,
         size: PropTypes.oneOf(BUTTON_SIZES),
         submit: PropTypes.bool,
-        type: PropTypes.oneOf(BUTTON_TYPES)
+        type: PropTypes.oneOf(BUTTON_TYPES),
+        processRequest: PropTypes.bool,
     };
     static defaultProps = {
         type: 'secondary',
         isDisabled: false
     };
+
+    getInitState(){
+        return({
+
+        })
+    }
 
     render() {
         // classes
@@ -58,12 +66,12 @@ export default class Button extends ReactComponent {
 
         return (
             <button
-                onClick={this.props.onClick}
-                disabled={this.props.isDisabled}
+                onClick={::this.props.onClick}
+                disabled={this.props.isDisabled || this.props.processRequest}
                 className={componentClass}
                 type={this.props.submit ? 'submit' : 'button'}
             >
-                {this.props.children}
+                {this.props.processRequest ? <Icon name="cog" spin/> : this.props.children}
             </button>
         );
     }
