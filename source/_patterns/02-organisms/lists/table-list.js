@@ -25,7 +25,7 @@ export default class TableList extends ReactComponent {
             this.props.className
         );
         return (
-            <div className="t-col-main-content pa-1">
+            <div className="t-col-main-content p-1">
                 <div className="t-entity-list">
                     <table className={componentClass}>
                         {this.getChildrenArray(this.props.children)}

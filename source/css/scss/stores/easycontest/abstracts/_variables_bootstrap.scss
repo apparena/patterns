@@ -1,0 +1,48 @@
+// Variables
+//
+// Bootstrap variable overwrites
+
+// Table of Contents
+//
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+
+// General variable structure
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark: #373a3c !default;
+$gray: #777582 !default;
+$gray-light: #818a91 !default;
+$gray-lighter: #ccc !default;
+$gray-lightest: #f6f8fa !default;
+
+$brand-primary: #2f94bc !default;
+$brand-focus: #ffbb01 !default;
+$brand-secondary: #434343 !default;
+$brand-grey-light: #fafafa !default;
+$brand-success: #06f7bf !default;
+
+$brand-info: #67C6EB !default;
+$brand-warning: #DB6B3A !default;
+$brand-danger: #CF3D30 !default;
+$brand-grey-dark: #666666 !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: 'Source Sans Pro', Arial, sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
