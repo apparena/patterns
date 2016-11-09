@@ -2,9 +2,12 @@ import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./button.scss";
+import Spinner from "../spinner/spinner";
 import Icon from "../icons/icons";
 
 const BUTTON_SIZES = ["lg", "sm", "xs"];
+
+const BUTTON_STATES = ["default", "loading", "success", "error", "warning"];
 
 const BUTTON_TYPES = [
     "primary",
@@ -24,54 +27,84 @@ const BUTTON_TYPES = [
 
 export default class Button extends ReactComponent {
     static propTypes = {
-        block: PropTypes.bool,
         className: PropTypes.string,
+        type: PropTypes.oneOf(BUTTON_TYPES),
+        size: PropTypes.oneOf(BUTTON_SIZES),
+        block: PropTypes.bool,
         href: PropTypes.string,
         isActive: PropTypes.bool,
         isDisabled: PropTypes.bool,
         onClick: PropTypes.func,
-        size: PropTypes.oneOf(BUTTON_SIZES),
         submit: PropTypes.bool,
-        type: PropTypes.oneOf(BUTTON_TYPES),
-        processRequest: PropTypes.bool,
+        state: PropTypes.oneOf(BUTTON_STATES),
     };
     static defaultProps = {
-        type: 'secondary',
+        type: "secondary",
+        state: "default",
         isDisabled: false
     };
 
-    getInitState(){
-        return({
-
-        })
+    renderState() {
+        const {state, children, size} = this.props;
+        switch (state) {
+            case "loading":
+                return (
+                    <Spinner size={size} type="inverted"/>
+                );
+            case "success":
+                return (
+                    <Icon type="success" name="check"/>
+                );
+            case "error":
+                return (
+                    <Icon type="error" name="times"/>
+                );
+            default:
+                return children;
+        }
     }
 
     render() {
+        const {
+            type,
+            state,
+            size,
+            block,
+            isActive,
+            className,
+            href,
+            children,
+            onClick,
+            isDisabled,
+            submit,
+        } = this.props;
         // classes
         const componentClass = cx(
             styles.btn,
-            styles['btn-' + this.props.type],
-            this.props.size && styles['btn-' + this.props.size],
-            this.props.block && styles['btn-block'],
-            this.props.isActive && styles['active'],
-            this.props.isDisabled && styles['disabled'],
-            this.props.className
+            styles["btn-" + type],
+            size && styles["btn-" + size],
+            block && styles["btn-block"],
+            isActive && styles["active"],
+            isDisabled && styles["disabled"],
+            className
         );
 
-        if (this.props.href) {
+        if (href) {
             return (
-                <a href={this.props.href} className={componentClass}>{this.props.children}</a>
+                <a href={href} className={componentClass}>
+                    {(state === "default") ? children : this.renderState()}
+                </a>
             );
         }
 
         return (
             <button
-                onClick={::this.props.onClick}
-                disabled={this.props.isDisabled || this.props.processRequest}
+                onClick={onClick}
+                disabled={isDisabled || (state !== "default")}
                 className={componentClass}
-                type={this.props.submit ? 'submit' : 'button'}
+                type={submit ? "submit" : "button"}
             >
-                {this.props.processRequest ? <Icon name="cog" spin/> : this.props.children}
+                {(state === "default") ? children : this.renderState()}
             </button>
         );
     }

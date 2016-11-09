@@ -1,10 +1,21 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
-import styles from "./icons.scss"
+import styles from "./icons.scss";
+
+const ICON_TYPES = [
+    "default",
+    "primary",
+    "secondary",
+    "success",
+    "info",
+    "warning",
+    "danger",
+];
 
 export default class Icon extends ReactComponent {
     static   PropTypes = {
+        type: PropTypes.oneOf(ICON_TYPES),
         border: PropTypes.bool,
         className: PropTypes.string,
         fixedWidth: PropTypes.bool,
@@ -23,6 +34,7 @@ export default class Icon extends ReactComponent {
         const componentClass = cx(
             styles.fa,
             styles['fa-' + this.props.name],
+            styles['icon-' + this.props.type],
             this.props.size && styles['fa-' + this.props.size],
             this.props.inverse && styles['fa-inverse'],
             this.props.flip && styles['fa-flip' + this.props.flip],
