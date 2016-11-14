@@ -19,6 +19,9 @@ import InputGroup from "./01-molecules/input-group/input-group";
 import Jumbotron from "./01-molecules/jumbotron/jumbotron";
 import ListGroup from "./01-molecules/list-group/list-group";
 import Modal from "./01-molecules/modal/modal";
+import ModalBody from "./01-molecules/modal/modal-body";
+import ModalFooter from "./01-molecules/modal/modal-footer";
+import ModalHeader from "./01-molecules/modal/modal-header";
 import Nav from "./01-molecules/navs/nav";
 import Navbar from "./01-molecules/navbar/navbar";
 import NavItem from "./01-molecules/navs/nav-item";
@@ -64,6 +67,9 @@ export {
     Jumbotron,
     ListGroup,
     Modal,
+    ModalBody,
+    ModalFooter,
+    ModalHeader,
     Nav,
     Navbar,
     NavItem,
