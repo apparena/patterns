@@ -10,6 +10,7 @@ const BUTTON_SIZES = ["lg", "sm", "xs"];
 const BUTTON_STATES = ["default", "loading", "success", "error", "warning"];
 
 const BUTTON_TYPES = [
+    "default",
     "primary",
     "secondary",
     "success",

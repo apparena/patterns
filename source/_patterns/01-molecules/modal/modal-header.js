@@ -9,7 +9,7 @@ function ModalHeader({className, headerText, onClose, ...props}) {
         <div {...props}>
             {onClose &&
             <button type="button" className={styles.close} onClick={onClose}>
-                <Icon name="times-circle"/>
+                <Icon name="times"/>
             </button>
             }
             <h5 className={styles["modal-title"]}>{headerText}</h5>
