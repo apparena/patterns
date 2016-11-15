@@ -30,25 +30,41 @@ export default class Icon extends ReactComponent {
     };
 
     render() {
+        const {
+            name,
+            type,
+            size,
+            inverse,
+            flip,
+            rotate,
+            stack,
+            border,
+            pulse,
+            spin,
+            fixedWidth,
+            className,
+            ...props
+        } = this.props;
         // classes
         const componentClass = cx(
             styles.fa,
-            styles['fa-' + this.props.name],
-            styles['icon-' + this.props.type],
-            this.props.size && styles['fa-' + this.props.size],
-            this.props.inverse && styles['fa-inverse'],
-            this.props.flip && styles['fa-flip' + this.props.flip],
-            this.props.rotate && styles['fa-rotate-' + this.props.rotate],
-            this.props.stack && styles['fa-' + this.props.stack],
-            this.props.border && styles['fa-border'],
-            this.props.pulse && styles['fa-pulse'],
-            this.props.spin && styles['fa-spin'],
-            this.props.fixedWidth && styles['fa-fw'],
-            this.props.className
+            styles['fa-' + name],
+            styles['icon-' + type],
+            size && styles['fa-' + size],
+            inverse && styles['fa-inverse'],
+            flip && styles['fa-flip' + flip],
+            rotate && styles['fa-rotate-' + rotate],
+            stack && styles['fa-' + stack],
+            border && styles['fa-border'],
+            pulse && styles['fa-pulse'],
+            spin && styles['fa-spin'],
+            fixedWidth && styles['fa-fw'],
+            className
         );
 
         return (
             <i
+                {...props}
                 className={componentClass}
             />
         )
