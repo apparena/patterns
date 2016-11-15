@@ -8364,7 +8364,7 @@ input[type="button"].btn-block {
 .card {
   padding: 1rem;
   border: 1px solid;
-  border-color: #f6f8fa #e6ebf1 #d5dfe8;
+  border-color: #e6ebf1 #e6ebf1 #d5dfe8;
   border-radius: 3px; }
   .card .card-header {
     color: #777582;
@@ -9148,6 +9148,13 @@ button.close {
 .modal-success .modal-header,
 .modal-warning .modal-header {
   color: #fff; }
+  .modal-primary .modal-header .close,
+  .modal-secondary .modal-header .close,
+  .modal-danger .modal-header .close,
+  .modal-info .modal-header .close,
+  .modal-success .modal-header .close,
+  .modal-warning .modal-header .close {
+    color: #fff; }
 
 .modal-primary .modal-header {
   background: #478AB8; }
