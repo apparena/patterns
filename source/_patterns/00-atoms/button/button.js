@@ -31,6 +31,7 @@ export default class Button extends ReactComponent {
         className: PropTypes.string,
         type: PropTypes.oneOf(BUTTON_TYPES),
         size: PropTypes.oneOf(BUTTON_SIZES),
+        target: PropTypes.oneOf(["blank", "top", "self"]),
         block: PropTypes.bool,
         href: PropTypes.string,
         isActive: PropTypes.bool,
@@ -46,11 +47,11 @@ export default class Button extends ReactComponent {
     };
 
     renderState() {
-        const {state, children, size} = this.props;
+        const {state, children, size, type} = this.props;
         switch (state) {
             case "loading":
                 return (
-                    <Spinner size={size} type="inverted"/>
+                    <Spinner size={size} type={(type === "default") ? "primary" : "inverted"}/>
                 );
             case "success":
                 return (
@@ -77,6 +78,7 @@ export default class Button extends ReactComponent {
             children,
             onClick,
             isDisabled,
+            target,
             submit,
         } = this.props;
         // classes
@@ -92,7 +94,7 @@ export default class Button extends ReactComponent {
 
         if (href) {
             return (
-                <a href={href} className={componentClass}>
+                <a href={href} className={componentClass} target={`_${target}`}>
                     {(state === "default") ? children : this.renderState()}
                 </a>
             );

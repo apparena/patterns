@@ -11,6 +11,7 @@ export default class Input extends ReactComponent {
         onKeyUp: PropTypes.func,
         refCallback: PropTypes.func,
         id: PropTypes.string,
+        name: PropTypes.string,
         type: PropTypes.string,
         tabIndex: PropTypes.number,
         disabled: PropTypes.bool,
@@ -26,7 +27,7 @@ export default class Input extends ReactComponent {
     };
 
     render() {
-        const {style, className, disabled, autoFocus, defaultValue, onChange, id, type, onKeyUp, onBlur, placeholder, tabIndex, refCallback} = this.props;
+        const {style, className, disabled, autoFocus, defaultValue, onChange, id, type, onKeyUp, onBlur, placeholder, tabIndex, refCallback, name} = this.props;
         // classes
         const componentClass = cx(
             styles["form-control"],
@@ -44,6 +45,7 @@ export default class Input extends ReactComponent {
                 value={defaultValue}
                 onChange={onChange}
                 id={id}
+                name={name}
                 type={type}
                 onKeyUp={onKeyUp}
                 onBlur={onBlur}

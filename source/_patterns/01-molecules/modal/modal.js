@@ -119,7 +119,7 @@ export default class Modal extends ReactComponent {
                         {draggable ? this.renderDragableWrapper() : this.renderModalContent()}
                     </div>
                 </Animate>
-                {(!draggable && modalBackdrop) && <div className={cx(visible && styles["modal-backdrop"])}></div>}
+                {(!draggable && modalBackdrop) && <Animate transition={"fadeIn"}><div className={cx(visible && styles["modal-backdrop"])}></div></Animate>}
             </div>
         );
     }
