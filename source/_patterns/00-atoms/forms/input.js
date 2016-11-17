@@ -13,7 +13,7 @@ function Input({className, style, refCallback, defaultValue, ...props}) {
         className
     );
 
-    return <input {...props} />;
+    return <input {...props} />
 }
 
 Input.propTypes = {
