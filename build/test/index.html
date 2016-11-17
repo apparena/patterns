@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://unpkg.com/apparena-patterns-react@1.0.21/css/app-arena-styles.css">
 </head>
 <body>
-<div style="width: 500px; height: 500px; margin: 14% auto;">
+<div style="width: 100%; height: 500px; margin: 14% auto;">
     <div id="root"></div>
 </div>
 <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
@@ -16,9 +16,16 @@
 <script type="text/babel">
     ReactDOM.render(
             <div id="page">
-                <apparena.Button type="primary" onClick={()=>{}} state="success">
-                    Button
-                </apparena.Button>
+                <apparena.Pill type="primary" label="ADD" />
+                <apparena.Pill type="default" label="test" onClear={()=> {
+                }}/>
+                <apparena.Pill type="default" label="test" onClear={()=> {
+                }}/>
+                <div style={{textAlign: "right"}}>
+                    <apparena.Tooltip label="test">
+                        <div>Test</div>
+                    </apparena.Tooltip>
+                </div>
             </div>
             , document.getElementById('root'));
 </script>

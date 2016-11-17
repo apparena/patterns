@@ -1,56 +1,41 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../react-utils/component";
 import styles from "./forms.scss";
 import cx from "classnames";
 
-export default class Input extends ReactComponent {
-    static propTypes = {
-        onChange: PropTypes.func.isRequired,
-        defaultValue: PropTypes.string,
-        placeholder: PropTypes.string,
-        onKeyUp: PropTypes.func,
-        refCallback: PropTypes.func,
-        id: PropTypes.string,
-        name: PropTypes.string,
-        type: PropTypes.string,
-        tabIndex: PropTypes.number,
-        disabled: PropTypes.bool,
-        autoFocus: PropTypes.bool,
-        style: PropTypes.oneOf(["dotted", "inline"])
-    };
-
-    static defaultProps = {
-        tabIndex: 0,
-        type: "text",
-        autoFocus: false,
-        disabled: false
-    };
-
-    render() {
-        const {style, className, disabled, autoFocus, defaultValue, onChange, id, type, onKeyUp, onBlur, placeholder, tabIndex, refCallback, name} = this.props;
-        // classes
-        const componentClass = cx(
-            styles["form-control"],
-            style && styles['form-' + style],
-            className
-        );
-
-        return (
-            <input
-                tabIndex={tabIndex}
-                disabled={disabled}
-                autoFocus={autoFocus}
-                ref={refCallback}
-                className={componentClass}
-                value={defaultValue}
-                onChange={onChange}
-                id={id}
-                name={name}
-                type={type}
-                onKeyUp={onKeyUp}
-                onBlur={onBlur}
-                placeholder={placeholder}
-            />
-        )
+function Input({className, style, refCallback, defaultValue, ...props}) {
+    if (refCallback) {
+        props.ref = refCallback;
     }
+    props.value = defaultValue;
+    props.className = cx(
+        styles["form-control"],
+        style && styles['form-' + style],
+        className
+    );
+
+    return <input {...props} />;
 }
+
+Input.propTypes = {
+    onChange: PropTypes.func.isRequired,
+    defaultValue: PropTypes.string,
+    placeholder: PropTypes.string,
+    onKeyUp: PropTypes.func,
+    refCallback: PropTypes.func,
+    id: PropTypes.string,
+    name: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    type: PropTypes.string,
+    tabIndex: PropTypes.number,
+    disabled: PropTypes.bool,
+    autoFocus: PropTypes.bool,
+    style: PropTypes.oneOf(["dotted", "inline"])
+};
+
+Input.defaultProps = {
+    tabIndex: 0,
+    type: "text",
+    autoFocus: false,
+    disabled: false
+};
+
+export default Input;

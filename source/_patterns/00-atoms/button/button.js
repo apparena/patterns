@@ -51,7 +51,7 @@ export default class Button extends ReactComponent {
         switch (state) {
             case "loading":
                 return (
-                    <Spinner size={size} type={(type === "default") ? "primary" : "inverted"}/>
+                    <Spinner size="sm" type={(type === "default") ? "primary" : "inverted"}/>
                 );
             case "success":
                 return (
