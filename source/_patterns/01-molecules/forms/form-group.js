@@ -19,7 +19,7 @@ function FormGroup({className, htmlFor, label, children, validationState, valida
         <div {...props} >
             <label className={styles["form-control-label"]} htmlFor={htmlFor}>{label}</label>
             {children}
-            {(validationState && validationFeedback) &&
+            {(validationState && validationState !== "default" && validationFeedback) &&
             <div className={styles["form-control-feedback"]}>{validationFeedback}</div>
             }
         </div>
@@ -33,7 +33,7 @@ FormGroup.propTypes = {
     id: PropTypes.string,
     label: PropTypes.string,
     validationFeedback: PropTypes.string,
-    validationState: PropTypes.oneOf(["danger", "success", "warning"]),
+    validationState: PropTypes.oneOf(["default", "danger", "success", "warning"]),
 };
 
 export default FormGroup;
