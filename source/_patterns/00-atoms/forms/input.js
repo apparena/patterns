@@ -2,9 +2,12 @@ import React, {PropTypes} from "react";
 import styles from "./forms.scss";
 import cx from "classnames";
 
-function Input({className, style, refCallback, defaultValue, ...props}) {
+function Input({className, style, refCallback, defaultValue, isDisabled, ...props}) {
     if (refCallback) {
         props.ref = refCallback;
+    }
+    if (isDisabled) {
+        props.disabled = isDisabled;
     }
     props.value = defaultValue;
     props.className = cx(
@@ -32,6 +35,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+    defaultValue: "",
     tabIndex: 0,
     type: "text",
     autoFocus: false,

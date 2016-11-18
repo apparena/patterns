@@ -46,8 +46,24 @@ export default class Button extends ReactComponent {
         isDisabled: false
     };
 
+    componentDidMount() {
+        this.setButtonWidth(this.props.state)
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.state !== this.props.state) {
+            this.setButtonWidth(nextProps.state)
+        }
+    }
+
+    setButtonWidth(state) {
+        if (state === "default") {
+            this.btnWidth = this.button.getBoundingClientRect().width;
+        }
+    }
+
     renderState() {
-        const {state, children, size, type} = this.props;
+        const {state, children, type} = this.props;
         switch (state) {
             case "loading":
                 return (
@@ -99,9 +115,11 @@ export default class Button extends ReactComponent {
                 </a>
             );
         }
-
+        const style = (state !== "default" && this.btnWidth) ? {width: `${this.btnWidth}px`} : {};
         return (
             <button
+                ref={node => this.button = node}
+                style={style}
                 onClick={onClick}
                 disabled={isDisabled || (state !== "default")}
                 className={componentClass}
