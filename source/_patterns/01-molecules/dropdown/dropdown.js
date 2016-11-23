@@ -16,12 +16,15 @@ export default class Dropdown extends ReactComponent {
         children: PropTypes.node,
         className: PropTypes.string,
         isOpen: PropTypes.bool,
+        arrow: PropTypes.bool,
         items: PropTypes.node.isRequired,
         onSelect: PropTypes.func,
     };
 
     static defaultProps = {
         onSelect: NO_OP,
+        arrow: true,
+        isOpen: false,
     };
 
     getInitState() {
@@ -112,6 +115,7 @@ export default class Dropdown extends ReactComponent {
         var componentClass = cx(styles["dropdown"],
             this.state.isOpen && styles["open"],
             this.props.align && styles["dropdown-menu-" + this.props.align],
+            !this.props.arrow && styles["no-icon"],
             this.props.className
         );
 

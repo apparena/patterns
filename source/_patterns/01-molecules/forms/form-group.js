@@ -16,7 +16,7 @@ function FormGroup({className, htmlFor, label, children, validationState, valida
     });
 
     return (
-        <div {...props} >
+        <div {...props}>
             <label className={styles["form-control-label"]} htmlFor={htmlFor}>{label}</label>
             {children}
             {(validationState && validationState !== "default" && validationFeedback) &&

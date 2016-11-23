@@ -6,7 +6,6 @@ import Button from "./00-atoms/button/button";
 import ButtonGroup from "./01-molecules/button-group/button-group";
 import Card from "./01-molecules/card/card";
 import CardsList from "./02-organisms/lists/cards-list";
-import Chart from "./01-molecules/chart/chart";
 import Checkbox from "./00-atoms/forms/checkbox";
 import Col from "./00-atoms/grid/col";
 import Dropdown from "./01-molecules/dropdown/dropdown";
@@ -55,7 +54,6 @@ export {
     ButtonGroup,
     Card,
     CardsList,
-    Chart,
     Checkbox,
     Col,
     Dropdown,

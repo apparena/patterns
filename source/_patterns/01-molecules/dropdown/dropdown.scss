@@ -8,10 +8,12 @@
 /*=========================================================================
   Molecules Dropdown
  ========================================================================== */
-.dropdown-toggle.no-icon:after {
+.no-icon:after {
   content: initial;
+  border: none;
 }
 
 .dropdown-item {
   cursor: pointer;;
 }
+
