@@ -16,7 +16,8 @@
 .t-col-left {
   background-color: #fff;
   min-height: 800px;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+  border-right: 1px solid darken($card-border-color, 10%);
+  //box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
 }
 
 /**
@@ -24,5 +25,5 @@
   */
 .t-col-main-content {
   background-color: #fff;
-  border: 1px solid $card-border-color;
+  border: 1px solid darken($card-border-color, 10%);
 }

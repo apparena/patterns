@@ -10,6 +10,7 @@ const BUTTON_SIZES = ["lg", "sm", "xs"];
 const BUTTON_STATES = ["default", "loading", "success", "error", "warning"];
 
 const BUTTON_TYPES = [
+    "default",
     "primary",
     "secondary",
     "success",
@@ -30,6 +31,7 @@ export default class Button extends ReactComponent {
         className: PropTypes.string,
         type: PropTypes.oneOf(BUTTON_TYPES),
         size: PropTypes.oneOf(BUTTON_SIZES),
+        target: PropTypes.oneOf(["blank", "top", "self"]),
         block: PropTypes.bool,
         href: PropTypes.string,
         isActive: PropTypes.bool,
@@ -44,12 +46,28 @@ export default class Button extends ReactComponent {
         isDisabled: false
     };
 
+    componentDidMount() {
+        this.setButtonWidth(this.props.state)
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.state !== this.props.state) {
+            this.setButtonWidth(nextProps.state)
+        }
+    }
+
+    setButtonWidth(state) {
+        if (state === "default") {
+            this.btnWidth = this.button.getBoundingClientRect().width;
+        }
+    }
+
     renderState() {
-        const {state, children, size} = this.props;
+        const {state, children, type} = this.props;
         switch (state) {
             case "loading":
                 return (
-                    <Spinner size={size} type="inverted"/>
+                    <Spinner size="sm" type={(type === "default") ? "primary" : "inverted"}/>
                 );
             case "success":
                 return (
@@ -76,6 +94,7 @@ export default class Button extends ReactComponent {
             children,
             onClick,
             isDisabled,
+            target,
             submit,
         } = this.props;
         // classes
@@ -91,14 +110,16 @@ export default class Button extends ReactComponent {
 
         if (href) {
             return (
-                <a href={href} className={componentClass}>
+                <a href={href} className={componentClass} target={`_${target}`}>
                     {(state === "default") ? children : this.renderState()}
                 </a>
             );
         }
-
+        const style = (state !== "default" && this.btnWidth) ? {width: `${this.btnWidth}px`} : {};
         return (
             <button
+                ref={node => this.button = node}
+                style={style}
                 onClick={onClick}
                 disabled={isDisabled || (state !== "default")}
                 className={componentClass}

@@ -6,7 +6,6 @@ import Button from "./00-atoms/button/button";
 import ButtonGroup from "./01-molecules/button-group/button-group";
 import Card from "./01-molecules/card/card";
 import CardsList from "./02-organisms/lists/cards-list";
-import Chart from "./01-molecules/chart/chart";
 import Checkbox from "./00-atoms/forms/checkbox";
 import Col from "./00-atoms/grid/col";
 import Dropdown from "./01-molecules/dropdown/dropdown";
@@ -19,12 +18,16 @@ import InputGroup from "./01-molecules/input-group/input-group";
 import Jumbotron from "./01-molecules/jumbotron/jumbotron";
 import ListGroup from "./01-molecules/list-group/list-group";
 import Modal from "./01-molecules/modal/modal";
+import ModalBody from "./01-molecules/modal/modal-body";
+import ModalFooter from "./01-molecules/modal/modal-footer";
+import ModalHeader from "./01-molecules/modal/modal-header";
 import Nav from "./01-molecules/navs/nav";
 import Navbar from "./01-molecules/navbar/navbar";
 import NavItem from "./01-molecules/navs/nav-item";
 import NavSecondary from "./02-organisms/navigation/nav-secondary";
 import NavSecondaryGroup from "./02-organisms/navigation/nav-secondary-group";
 import Notification from "./01-molecules/messages/notification/notification";
+import Pill from "./00-atoms/pill/pill";
 import Popover from "./01-molecules/popover/popover";
 import Portal from "./react-utils/portal";
 import ProgressBar from "./01-molecules/progress-bar/progress-bar";
@@ -51,7 +54,6 @@ export {
     ButtonGroup,
     Card,
     CardsList,
-    Chart,
     Checkbox,
     Col,
     Dropdown,
@@ -64,12 +66,16 @@ export {
     Jumbotron,
     ListGroup,
     Modal,
+    ModalBody,
+    ModalFooter,
+    ModalHeader,
     Nav,
     Navbar,
     NavItem,
     NavSecondary,
     NavSecondaryGroup,
     Notification,
+    Pill,
     Popover,
     Portal,
     ProgressBar,

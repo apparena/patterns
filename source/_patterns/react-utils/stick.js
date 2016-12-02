@@ -197,18 +197,15 @@ export default class Stick extends ReactComponent {
                 break;
         }
 
-        // Overflows
+        /** Overflows */
         if (position.top + thisRect.height > windowHeight) {
             position.top = top - thisRect.height - this.props.offset;
-            position.vertical = "top";
         }
         if (position.left + thisRect.width > windowWidth) {
-            position.left = (left + rect.width) - thisRect.width - this.props.horizontalOffset;
-            position.horizontal = "right";
+            position.left = (left + rect.width) - thisRect.width;
         }
-        if (position.top < 0 && position.vertical !== "bottom") {
+        if (position.top < 0) {
             position.top = top + rect.height + this.props.offset;
-            position.vertical = "bottom";
         }
 
         return position;

@@ -1,41 +1,23 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
+import styles from "./input-group.scss";
 
-export default class InputGroup extends ReactComponent {
-    static propTypes = {
-        classNames: PropTypes.string,
-        addonPosition: PropTypes.oneOf(['left', 'right']),
-        addon: PropTypes.node.isRequired,
-        input: PropTypes.node.isRequired,
-    };
+function InputGroup({className, children, addon, id, ...props}) {
+    props.className = cx(styles["input-group"], className);
 
-    static defaultProps = {
-        addonPosition: 'left',
-    };
-
-
-    render() {
-        if (this.props.addonPosition === 'left'){
-            return (
-                <div className={cx('input-group', this.props.classNames)}>
-                    <span className="input-group-addon">
-                        {this.props.addon}
-                    </span>
-                    {this.props.input}
-                </div>
-            );
-
-        } else {
-            return (
-                <div className={cx('input-group', this.props.classNames)}>
-                    {this.props.input}
-                    <span className="input-group-addon">
-                        {this.props.addon}
-                    </span>
-                </div>
-            );
-
-        }
-    }
+    return (
+        <div {...props} >
+            <span className={styles["input-group-addon"]} id={id}>{addon}</span>
+            {children}
+        </div>
+    );
 }
+
+InputGroup.propTypes = {
+    children: PropTypes.node,
+    className: PropTypes.string,
+    addon: PropTypes.node,
+    id: PropTypes.string
+};
+
+export default InputGroup;
