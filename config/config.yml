@@ -19,7 +19,7 @@ cacheBusterOn: 'true'
 exportDir: export
 publicDir: public
 sourceDir: source
-defaultPattern: all
+defaultPattern: corporate-identity-index
 defaultShowPatternInfo: false
 plugins:
     reload:

@@ -1,0 +1,23 @@
+{
+  "word": {
+    "image": {
+      "src": "../../images/icons/word.png"
+    },
+    "url": "link.corporate-identity-word"
+  },
+  "powerpoint": {
+    "image": {
+      "src": "../../images/icons/powerpoint.png"
+    },
+    "url": "link.corporate-identity-powerpoint"
+  },
+  "logos": {
+    "url": "link.corporate-identity-logos"
+  },
+  "fonts": {
+    "url": "link.corporate-identity-fonts"
+  },
+  "colors": {
+    "url": "link.corporate-identity-colors"
+  }
+}
