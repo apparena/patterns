@@ -27,7 +27,6 @@ import NavItem from "./01-molecules/navs/nav-item";
 import NavSecondary from "./02-organisms/navigation/nav-secondary";
 import NavSecondaryGroup from "./02-organisms/navigation/nav-secondary-group";
 import Notification from "./01-molecules/messages/notification/notification";
-import Pill from "./00-atoms/pill/pill";
 import Popover from "./01-molecules/popover/popover";
 import Portal from "./react-utils/portal";
 import ProgressBar from "./01-molecules/progress-bar/progress-bar";
@@ -42,6 +41,7 @@ import Stick from "./react-utils/stick";
 import Table from "./00-atoms/table/table";
 import TableList from "./02-organisms/lists/table-list";
 import Tag from "./00-atoms/tag/tag";
+import TagInput from "./00-atoms/forms/tag-input";
 import Tooltip from "./01-molecules/tooltip/tooltip";
 
 
@@ -75,7 +75,6 @@ export {
     NavSecondary,
     NavSecondaryGroup,
     Notification,
-    Pill,
     Popover,
     Portal,
     ProgressBar,
@@ -90,5 +89,6 @@ export {
     Table,
     TableList,
     Tag,
+    TagInput,
     Tooltip,
 }

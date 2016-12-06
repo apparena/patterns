@@ -46,6 +46,10 @@ export default class Button extends ReactComponent {
         isDisabled: false
     };
 
+    getInitState() {
+        this.refBind = ::this.ref;
+    }
+
     componentDidMount() {
         this.setButtonWidth(this.props.state)
     }
@@ -60,6 +64,10 @@ export default class Button extends ReactComponent {
         if (state === "default") {
             this.btnWidth = this.button.getBoundingClientRect().width;
         }
+    }
+
+    ref(node) {
+        this.button = node
     }
 
     renderState() {
@@ -118,7 +126,7 @@ export default class Button extends ReactComponent {
         const style = (state !== "default" && this.btnWidth) ? {width: `${this.btnWidth}px`} : {};
         return (
             <button
-                ref={node => this.button = node}
+                ref={this.refBind}
                 style={style}
                 onClick={onClick}
                 disabled={isDisabled || (state !== "default")}

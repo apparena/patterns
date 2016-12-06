@@ -26,46 +26,12 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="PHP">
+      <library name="PHP Runtime" type="php">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/alchemy/zippy" />
-          <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/collections" />
-          <root url="file://$MODULE_DIR$/vendor/kevinlebrun/colors.php" />
-          <root url="file://$MODULE_DIR$/vendor/michelf/php-markdown" />
-          <root url="file://$MODULE_DIR$/vendor/mustache/mustache" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/core" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/patternengine-mustache" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/plugin-data-inheritance" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/styleguidekit-assets-default" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/styleguidekit-mustache-default" />
-          <root url="file://$MODULE_DIR$/vendor/seld/jsonlint" />
-          <root url="file://$MODULE_DIR$/vendor/shudrum/array-finder" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/finder" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/process" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/alchemy/zippy" />
-          <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/collections" />
-          <root url="file://$MODULE_DIR$/vendor/kevinlebrun/colors.php" />
-          <root url="file://$MODULE_DIR$/vendor/michelf/php-markdown" />
-          <root url="file://$MODULE_DIR$/vendor/mustache/mustache" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/core" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/patternengine-mustache" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/plugin-data-inheritance" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/styleguidekit-assets-default" />
-          <root url="file://$MODULE_DIR$/vendor/pattern-lab/styleguidekit-mustache-default" />
-          <root url="file://$MODULE_DIR$/vendor/seld/jsonlint" />
-          <root url="file://$MODULE_DIR$/vendor/shudrum/array-finder" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/finder" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/process" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
         </SOURCES>
       </library>
     </orderEntry>
