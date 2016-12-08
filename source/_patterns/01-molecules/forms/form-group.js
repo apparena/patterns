@@ -1,15 +1,32 @@
 import React, {PropTypes} from "react";
 import cx from "classnames";
 import styles from "./form-group.scss";
+import Tooltip from "../tooltip/tooltip";
+
+function renderChildren(validationState, validationFeedback, children) {
+    if (validationState && validationState !== "default" && validationFeedback) {
+        return (
+            <Tooltip
+                label={validationFeedback}
+                zIndex={2050}
+                className={styles.tooltip}
+            >
+                {children}
+            </Tooltip>
+        )
+    }
+    return children;
+}
 
 function FormGroup({className, htmlFor, label, children, validationState, validationFeedback, ...props}) {
     props.className = cx(styles["form-group"], validationState && styles[`has-${validationState}`], className);
 
     children = React.Children.map(children, (child) => {
         if (child.type.name === "Input") {
-            return React.cloneElement(child, {
+            const input =  React.cloneElement(child, {
                 className: validationState ? cx(child.props.className, styles[`form-control-${validationState}`]) : cx(child.props.className)
             });
+            return renderChildren(validationState, validationFeedback, input)
         } else {
             return React.cloneElement(child);
         }
@@ -19,9 +36,6 @@ function FormGroup({className, htmlFor, label, children, validationState, valida
         <div {...props}>
             <label className={styles["form-control-label"]} htmlFor={htmlFor}>{label}</label>
             {children}
-            {(validationState && validationState !== "default" && validationFeedback) &&
-            <div className={styles["form-control-feedback"]}>{validationFeedback}</div>
-            }
         </div>
     );
 }
