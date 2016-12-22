@@ -1,0 +1,207 @@
+/* Basic style overwrites */
+// Table of Contents
+//
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+
+// Body
+[role=main] {
+  background-color: #fff;
+}
+
+// Typography
+h1 {
+  font-weight: 300;
+  &.strong, strong, b {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $brand-primary;
+    text-decoration: underline
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400; //regular
+}
+.font-weight-light {
+  font-weight: 300;
+}
+.font-weight-regular {
+  font-weight: 400;
+}
+.font-weight-bold {
+  font-weight: 600;
+}
+
+// Pages
+main#page-homepage {
+  section#section-homepage-header {
+    .header-background-row {
+      position: absolute;
+      bottom: 60px;
+      right: 15px;
+      left: 15px;
+    }
+    .header-heading-row {
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
+    .header-objects-row {
+      //transform: translateY(20px);
+    }
+  }
+  section#section-homepage-about {
+    padding-top: 0%;
+  }
+}
+
+// USPs
+.usp-icon {
+  color: $brand-primary;
+  font-size: 4rem;
+}
+.usp-more-link {
+  margin-top: -0.8rem;
+}
+.usp-title {
+  padding-top: 1rem;
+}
+
+// Sections
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  &#section-homepage-header {
+    margin-bottom: -20px;
+  }
+  &.section-dark {
+    background-color: $gray-lightest;
+  }
+  &.section-divider-bottom {
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-size: 100px 100px;
+      width: 100px;
+      height: 100px;
+      /*bottom: 0; // with position relative */
+      left: 50%;
+      transform: translateX(-50%);
+      /* png fallback, see http://pauginer.com/post/36614680636/invisible-gradient-technique */
+      $divider-path: "images/logo_ringe_bg_section_divider";/*
+      background-image: url(#{$cdn-base-url}#{$divider-path}.png);
+      background-image: linear-gradient(transparent, transparent), url(#{$cdn-base-url}#{$divider-path}.svg);*/
+      background-image: url(#{$cdn-base-url}images/logo_ringe_bg_section_divider.png);
+      background-image: linear-gradient(transparent, transparent), url(#{$cdn-base-url}images/logo_ringe_bg_section_divider.svg);
+
+    }
+  }
+}
+
+hr {
+  max-width: 110px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  border-top: solid 5px $brand-primary;
+  &.left {
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  &.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &.right {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+/*
+svg#header-background #background #dynamic #row1 {
+  animation: headerBackgroundAnimationRow1 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+svg#header-background #background #dynamic #row2 {
+  animation: headerBackgroundAnimationRow2 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+svg#header-background #background #dynamic #row3 {
+  animation: headerBackgroundAnimationRow3 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+svg#header-background #background #dynamic #row4 {
+  animation: headerBackgroundAnimationRow4 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+@keyframes headerBackgroundAnimationRow1 {
+  from {
+    transform: translateX(-9%);
+  }
+  to {
+    transform: translateX(13%);
+  }
+}
+@keyframes headerBackgroundAnimationRow2 {
+  from {
+    transform: translateX(-9%);
+  }
+  to {
+    transform: translateX(5%);
+  }
+}
+@keyframes headerBackgroundAnimationRow3 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(4%);
+  }
+}
+@keyframes headerBackgroundAnimationRow4 {
+  from {
+    transform: translateX(-11%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+*/
+
+// Grid Columns
+@media(min-width: 992px){
+  .col5{
+    width: 20%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

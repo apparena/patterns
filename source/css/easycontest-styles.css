@@ -17,6 +17,7 @@
  ========================================================================== */
 /*------------------------------------*    #MIXINS
 \*------------------------------------*/
+@import url(../../../iconsets/app-arena-website/icomoon-font/style.css);
 @-webkit-keyframes pulse {
   0%, 80%, 100% {
     opacity: 0; }
@@ -8698,6 +8699,9 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   position: absolute;
   right: 5px; }
 
+.tooltip {
+  display: block; }
+
 /**
  * Pattern Dependencies
  */
@@ -9043,10 +9047,8 @@ button.close {
 .modal-warning .modal-header {
   background: #DB6B3A; }
 
-.modal-xl {
-  max-width: 90%; }
-  .modal-xl .modal-body {
-    padding: 0; }
+.modal-xl .modal-body {
+  padding: 0; }
 
 .modal-draggable .modal-header {
   cursor: move; }
