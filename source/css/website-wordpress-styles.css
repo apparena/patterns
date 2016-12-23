@@ -10201,17 +10201,6 @@ main[role=main] {
 [role=main] {
   background-color: #fff; }
 
-h1 {
-  font-weight: 300; }
-  h1.strong, h1 strong, h1 b {
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #2c82c9;
-    text-decoration: underline; }
-
-h1, h2, h3, h4, h5, h6, p {
-  font-weight: 400; }
-
 .font-weight-light {
   font-weight: 300; }
 
@@ -10220,6 +10209,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 .font-weight-bold {
   font-weight: 600; }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400; }
+
+h1 .strong, h1 strong, h1 b {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2c82c9;
+  text-decoration: underline; }
 
 main#page-homepage section#section-homepage-header .header-background-row {
   position: absolute;
@@ -10244,12 +10242,28 @@ main#page-homepage section#section-homepage-about {
 .usp-title {
   padding-top: 1rem; }
 
+.section-counter output {
+  color: #2c82c9;
+  font-size: 2.842rem;
+  font-weight: 600; }
+
+.section-counter hr {
+  border-top: solid 2px #ccc;
+  max-width: inherit;
+  text-align: inherit;
+  margin-left: inherit;
+  margin-right: inherit; }
+
+.section-counter label {
+  font-size: 1.105rem; }
+
 section {
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 50px; }
   section#section-homepage-header {
-    margin-bottom: -20px; }
+    margin-bottom: -20px;
+    padding-bottom: 0; }
   section.section-dark {
     background-color: #f6f8fa; }
   section.section-divider-bottom:after {
@@ -10263,9 +10277,6 @@ section {
     left: 50%;
     transform: translateX(-50%);
     /* png fallback, see http://pauginer.com/post/36614680636/invisible-gradient-technique */
-    /*
-      background-image: url(//patterns.local/images/logo_ringe_bg_section_divider.png);
-      background-image: linear-gradient(transparent, transparent), url(//patterns.local/images/logo_ringe_bg_section_divider.svg);*/
     background-image: url(//patterns.local/images/logo_ringe_bg_section_divider.png);
     background-image: linear-gradient(transparent, transparent), url(//patterns.local/images/logo_ringe_bg_section_divider.svg); }
 
@@ -10273,7 +10284,8 @@ hr {
   max-width: 110px;
   text-align: left;
   margin-left: 0;
-  padding-top: solid 5px #2c82c9; }
+  margin-right: auto;
+  border-top: solid 5px #2c82c9; }
   hr.left {
     text-align: left;
     margin-left: 0;
@@ -10349,5 +10361,67 @@ svg#header-background #background #dynamic #row4 {
   }
 }
 */
+/*
+@media(min-width: 992px){
+  .col5{
+    width: 20%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+*/
+.row.gutter-80 {
+  margin-right: -40px;
+  margin-left: -40px; }
+  .row.gutter-80::after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 576px) {
+    .row.gutter-80 {
+      margin-right: -40px;
+      margin-left: -40px; } }
+  @media (min-width: 768px) {
+    .row.gutter-80 {
+      margin-right: -40px;
+      margin-left: -40px; } }
+  @media (min-width: 992px) {
+    .row.gutter-80 {
+      margin-right: -40px;
+      margin-left: -40px; } }
+  @media (min-width: 1200px) {
+    .row.gutter-80 {
+      margin-right: -40px;
+      margin-left: -40px; } }
+  .row.gutter-80 .col3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 40px;
+    padding-left: 40px;
+    float: left;
+    width: 100%; }
+    @media (min-width: 576px) {
+      .row.gutter-80 .col3 {
+        padding-right: 40px;
+        padding-left: 40px; } }
+    @media (min-width: 768px) {
+      .row.gutter-80 .col3 {
+        padding-right: 40px;
+        padding-left: 40px; } }
+    @media (min-width: 992px) {
+      .row.gutter-80 .col3 {
+        padding-right: 40px;
+        padding-left: 40px; } }
+    @media (min-width: 1200px) {
+      .row.gutter-80 .col3 {
+        padding-right: 40px;
+        padding-left: 40px; } }
+    @media (min-width: 992px) {
+      .row.gutter-80 .col3 {
+        float: left;
+        width: 33.3333333333%; } }
 
 /*# sourceMappingURL=website-wordpress-styles.css.map */

@@ -18,27 +18,29 @@
 }
 
 // Typography
-h1 {
-  font-weight: 300;
-  &.strong, strong, b {
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $brand-primary;
-    text-decoration: underline
+$font-weights: (
+        light: 300,
+        regular: 400,
+        bold: 600
+);
+@each $weight, $value in $font-weights {
+  .font-weight-#{$weight} {
+    font-weight: $value;
   }
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-weight: 400; //regular
+  font-weight: map_get($font-weights, 'regular'); //regular
 }
-.font-weight-light {
-  font-weight: 300;
-}
-.font-weight-regular {
-  font-weight: 400;
-}
-.font-weight-bold {
-  font-weight: 600;
+
+&.strong, strong, b {
+  h1 & {
+    font-weight: map_get($font-weights, 'bold');
+    text-transform: uppercase;
+    color: $brand-primary;
+    text-decoration: underline
+  }
+
 }
 
 // Pages
@@ -75,6 +77,25 @@ main#page-homepage {
   padding-top: 1rem;
 }
 
+// Counter
+.section-counter {
+  output {
+    color: $brand-primary;
+    font-size: 2.842rem;
+    font-weight: map_get($font-weights, 'bold');
+  }
+  hr {
+    border-top: solid 2px $gray-lighter;
+    max-width: inherit;
+    text-align: inherit;
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+  label {
+    font-size: 1.105rem;
+  }
+}
+
 // Sections
 section {
   padding-top: 50px;
@@ -82,6 +103,7 @@ section {
   margin-bottom: 50px;
   &#section-homepage-header {
     margin-bottom: -20px;
+    padding-bottom: 0;
   }
   &.section-dark {
     background-color: $gray-lightest;
@@ -98,12 +120,9 @@ section {
       left: 50%;
       transform: translateX(-50%);
       /* png fallback, see http://pauginer.com/post/36614680636/invisible-gradient-technique */
-      $divider-path: "images/logo_ringe_bg_section_divider";/*
-      background-image: url(#{$cdn-base-url}#{$divider-path}.png);
-      background-image: linear-gradient(transparent, transparent), url(#{$cdn-base-url}#{$divider-path}.svg);*/
+      $divider-path: "images/logo_ringe_bg_section_divider";
       background-image: url(#{$cdn-base-url}images/logo_ringe_bg_section_divider.png);
       background-image: linear-gradient(transparent, transparent), url(#{$cdn-base-url}images/logo_ringe_bg_section_divider.svg);
-
     }
   }
 }
@@ -195,6 +214,7 @@ svg#header-background #background #dynamic #row4 {
 */
 
 // Grid Columns
+/*
 @media(min-width: 992px){
   .col5{
     width: 20%;
@@ -203,5 +223,27 @@ svg#header-background #background #dynamic #row4 {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+  }
+}
+*/
+
+.row.gutter-80 {
+  $grid-columns: 3;
+  $grid-gutter-width-base: 80px;
+  $grid-gutter-widths: (
+          xs: $grid-gutter-width-base,
+          sm: $grid-gutter-width-base,
+          md: $grid-gutter-width-base,
+          lg: $grid-gutter-width-base,
+          xl: $grid-gutter-width-base
+  );
+
+  @include make-row($grid-gutter-widths);
+  .col3 {
+    @include make-col-ready($grid-gutter-widths);
+    @include make-col(3, $grid-columns);
+    @media (min-width: map_get($grid-breakpoints, 'lg')) {
+      @include make-col(1, $grid-columns);
+    }
   }
 }
