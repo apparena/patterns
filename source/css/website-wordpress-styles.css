@@ -34,15 +34,15 @@
 /*------------------------------------*    Vendor
 \*------------------------------------*/
 /*!
- *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1860,6 +1860,7 @@
   content: ""; }
 
 .fa-battery-4:before,
+.fa-battery:before,
 .fa-battery-full:before {
   content: ""; }
 
@@ -2205,6 +2206,143 @@
 .fa-fa:before,
 .fa-font-awesome:before {
   content: ""; }
+
+.fa-handshake-o:before {
+  content: ""; }
+
+.fa-envelope-open:before {
+  content: ""; }
+
+.fa-envelope-open-o:before {
+  content: ""; }
+
+.fa-linode:before {
+  content: ""; }
+
+.fa-address-book:before {
+  content: ""; }
+
+.fa-address-book-o:before {
+  content: ""; }
+
+.fa-vcard:before,
+.fa-address-card:before {
+  content: ""; }
+
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: ""; }
+
+.fa-user-circle:before {
+  content: ""; }
+
+.fa-user-circle-o:before {
+  content: ""; }
+
+.fa-user-o:before {
+  content: ""; }
+
+.fa-id-badge:before {
+  content: ""; }
+
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: ""; }
+
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: ""; }
+
+.fa-quora:before {
+  content: ""; }
+
+.fa-free-code-camp:before {
+  content: ""; }
+
+.fa-telegram:before {
+  content: ""; }
+
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: ""; }
+
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: ""; }
+
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: ""; }
+
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: ""; }
+
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: ""; }
+
+.fa-shower:before {
+  content: ""; }
+
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: ""; }
+
+.fa-podcast:before {
+  content: ""; }
+
+.fa-window-maximize:before {
+  content: ""; }
+
+.fa-window-minimize:before {
+  content: ""; }
+
+.fa-window-restore:before {
+  content: ""; }
+
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: ""; }
+
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: ""; }
+
+.fa-bandcamp:before {
+  content: ""; }
+
+.fa-grav:before {
+  content: ""; }
+
+.fa-etsy:before {
+  content: ""; }
+
+.fa-imdb:before {
+  content: ""; }
+
+.fa-ravelry:before {
+  content: ""; }
+
+.fa-eercast:before {
+  content: ""; }
+
+.fa-microchip:before {
+  content: ""; }
+
+.fa-snowflake-o:before {
+  content: ""; }
+
+.fa-superpowers:before {
+  content: ""; }
+
+.fa-wpexplorer:before {
+  content: ""; }
+
+.fa-meetup:before {
+  content: ""; }
 
 .sr-only {
   position: absolute;
@@ -10201,6 +10339,12 @@ main[role=main] {
 [role=main] {
   background-color: #fff; }
 
+.no-margin-bottom {
+  margin-bottom: 0; }
+
+/* :focus {
+  outline: none;
+} */
 .font-weight-light {
   font-weight: 300; }
 
@@ -10210,14 +10354,24 @@ main[role=main] {
 .font-weight-bold {
   font-weight: 600; }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
+p {
+  font-weight: 300; }
+
 h1 .strong, h1 strong, h1 b {
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   color: #2c82c9;
   text-decoration: underline; }
+
+.btn.btn-round {
+  padding: 0;
+  text-align: center; }
+  .btn.btn-round.btn-round-md {
+    width: 7rem;
+    height: 7rem; }
 
 main#page-homepage section#section-homepage-header .header-background-row {
   position: absolute;
@@ -10232,15 +10386,23 @@ main#page-homepage section#section-homepage-header .header-heading-row {
 main#page-homepage section#section-homepage-about {
   padding-top: 0%; }
 
-.usp-icon {
+.usp-icon, .service-icon {
   color: #2c82c9;
-  font-size: 4rem; }
+  font-size: 3.6rem; }
 
 .usp-more-link {
   margin-top: -0.8rem; }
 
 .usp-title {
   padding-top: 1rem; }
+
+.services-row {
+  margin-top: 2rem; }
+
+.services-col {
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  padding: 1rem; }
 
 .section-counter output {
   color: #2c82c9;
@@ -10260,25 +10422,53 @@ main#page-homepage section#section-homepage-about {
 section {
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden; }
+  section#section-homepage-productofthemonth {
+    min-height: 34rem;
+    margin-bottom: 0; }
   section#section-homepage-header {
     margin-bottom: -20px;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    overflow: visible; }
   section.section-dark {
     background-color: #f6f8fa; }
-  section.section-divider-bottom:after {
-    content: '';
-    display: block;
+  section.section-divider-bottom {
+    overflow: visible; }
+    section.section-divider-bottom:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-size: 100px 100px;
+      width: 100px;
+      height: 100px;
+      /*bottom: 0; // with position relative */
+      left: 50%;
+      transform: translateX(-50%);
+      /* png fallback, see http://pauginer.com/post/36614680636/invisible-gradient-technique */
+      background-image: url(//pattern.dev/images/logo_ringe_bg_section_divider.png);
+      background-image: linear-gradient(transparent, transparent), url(//pattern.dev/images/logo_ringe_bg_section_divider.svg); }
+
+.product-screen-wrapper {
+  position: relative;
+  height: 29rem; }
+  .product-screen-wrapper .btn.btn-cta-topleft {
     position: absolute;
-    background-size: 100px 100px;
-    width: 100px;
-    height: 100px;
-    /*bottom: 0; // with position relative */
-    left: 50%;
-    transform: translateX(-50%);
-    /* png fallback, see http://pauginer.com/post/36614680636/invisible-gradient-technique */
-    background-image: url(//patterns.local/images/logo_ringe_bg_section_divider.png);
-    background-image: linear-gradient(transparent, transparent), url(//patterns.local/images/logo_ringe_bg_section_divider.svg); }
+    text-transform: uppercase;
+    top: 2.5rem;
+    left: 7rem;
+    z-index: 3; }
+  .product-screen-wrapper img {
+    position: absolute; }
+    .product-screen-wrapper img.screen-browser {
+      z-index: 1;
+      top: 0;
+      left: 8rem; }
+    .product-screen-wrapper img.screen-mobile {
+      z-index: 2;
+      top: 9rem;
+      left: 1rem; }
 
 hr {
   max-width: 110px;
@@ -10423,5 +10613,67 @@ svg#header-background #background #dynamic #row4 {
       .row.gutter-80 .col3 {
         float: left;
         width: 33.3333333333%; } }
+
+.row.gutter-70 {
+  margin-right: -30px;
+  margin-left: -30px; }
+  .row.gutter-70::after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 576px) {
+    .row.gutter-70 {
+      margin-right: -30px;
+      margin-left: -30px; } }
+  @media (min-width: 768px) {
+    .row.gutter-70 {
+      margin-right: -30px;
+      margin-left: -30px; } }
+  @media (min-width: 992px) {
+    .row.gutter-70 {
+      margin-right: -30px;
+      margin-left: -30px; } }
+  @media (min-width: 1200px) {
+    .row.gutter-70 {
+      margin-right: -30px;
+      margin-left: -30px; } }
+  .row.gutter-70 .col5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 30px;
+    padding-left: 30px;
+    float: left;
+    width: 100%; }
+    @media (min-width: 576px) {
+      .row.gutter-70 .col5 {
+        padding-right: 30px;
+        padding-left: 30px; } }
+    @media (min-width: 768px) {
+      .row.gutter-70 .col5 {
+        padding-right: 30px;
+        padding-left: 30px; } }
+    @media (min-width: 992px) {
+      .row.gutter-70 .col5 {
+        padding-right: 30px;
+        padding-left: 30px; } }
+    @media (min-width: 1200px) {
+      .row.gutter-70 .col5 {
+        padding-right: 30px;
+        padding-left: 30px; } }
+    @media (min-width: 576px) {
+      .row.gutter-70 .col5 {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .row.gutter-70 .col5 {
+        float: left;
+        width: 25%; } }
+    @media (min-width: 1200px) {
+      .row.gutter-70 .col5 {
+        float: left;
+        width: 20%; } }
+
+.container-fluid.container-fluid-90 {
+  padding: 0 5%; }
 
 /*# sourceMappingURL=website-wordpress-styles.css.map */
