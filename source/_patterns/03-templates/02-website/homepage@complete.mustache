@@ -1,7 +1,7 @@
 {{> organisms-header }}
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <main role="main" id="page-homepage">
-    <section id="section-homepage-header" class="text-xs-center">
+    <section id="section-homepage-header" class="text-center">
         <div class="container-fluid" style="position: relative;">
             <div class="row header-background-row">
                 <div class="col-md-10 offset-md-1 col-xs-12">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </section>
-    <section id="section-homepage-usps" class="section-dark section-divider-bottom text-xs-center">
+    <section id="section-homepage-usps" class="section-dark section-divider-bottom text-center">
         <div class="container">
             <div class="row homepage-usps-row">
                 <div class="col-md-6 col-lg-3">
@@ -96,7 +96,7 @@
             <!-- end editor-content -->
         </div>
     </section>
-    <section id="section-homepage-counter" class="section-counter section-dark section-divider-bottom text-xs-center">
+    <section id="section-homepage-counter" class="section-counter section-dark section-divider-bottom text-center">
         <div class="container">
             <div class="row gutter-80">
                 <div class="col3">
@@ -145,7 +145,7 @@
             </div>
         </div>
     </section>
-    <section id="section-homepage-services" class="section-dark section-divider-bottom text-xs-center">
+    <section id="section-homepage-services" class="section-dark section-divider-bottom text-center">
         <div class="container-fluid container-fluid-90">
             <div class="row">
                 <div class="col-xs-12">
@@ -260,69 +260,72 @@
             </div>
         </div>
     </section>
-    <section id="section-homepage-testemonials">
-        <div class="container-fluid">
-            <style>
-                .testemonial-slider, .testemonial {
-                    width: 100%;
-                    height: 16rem;
-                    overflow: hidden;
-                }
-            </style>
-            <script>
-                $(document).ready(function() {
-                    $('.testemonial-slider').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: true,
-                        fade: true
-                    });
+    <section id="section-homepage-testemonials" class="no-margin-bottom">
+        <script>
+            $(document).ready(function() {
+                $('.testemonial-slider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    fade: true,
+                    asNavFor: '.testemonial-clients-slider',
+                    useCSS: true,
+                    cssEase: 'ease',
+                    infinite: true,
+                    lazyLoad: 'ondemand',
+                    cssTransitions: true
                 });
-            </script>
-            <div class="testemonial-slider">
-                <div class="testemonial">
-                    <div>
-                        <img src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
-                        <img src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
-                        <button type="button" class="btn btn-success">Jetzt testen</button>
-                    </div>
-                    <div class="text-xs-center">
-                        <blockquote>
-                            <p>“ Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit. ”</p>
-                            <hr class="center">
-                            <footer>
-                                <p>Thorsten Klages</p>
-                                <p>Senior Manager</p>
-                            </footer>
-                        </blockquote>
-                    </div>
+                $('.testemonial-clients-slider').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    fade: false,
+                    infinite: true,
+                    asNavFor: '.testemonial-slider',
+                    dots: false,
+                    centerMode: false,
+                    focusOnSelect: true,
+                    useCSS: true,
+                    initialSlide: 0,
+                    draggable: false,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    responsive: [
+                        {
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 5
+                            }
+                        },
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 4
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 3
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 2
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+        <div class="testemonial-slider">
+            <div class="testemonial">
+                <div class="testemonial-screens">
+                    <img class="testemonial-screen-browser" src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
+                    <img class="testemonial-screen-mobile" src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
                 </div>
-                <div class="testemonial">
-                    <div>
-                        <img src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
-                        <img src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
-                        <button type="button" class="btn btn-success">Jetzt testen</button>
-                    </div>
-                    <div class="text-xs-center">
-                        <blockquote>
-                            <p>“ Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit. ”</p>
-                            <hr class="center">
-                            <footer>
-                                <p>Thorsten Klages</p>
-                                <p>Senior Manager</p>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-            <!--
-            <div class="row testemonial">
-                <div class="col-md-8 push-md-4">
-                    <img src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
-                    <img src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
-                    <button type="button" class="btn btn-success">Jetzt testen</button>
-                </div>
-                <div class="col-md-4 pull-md-8 text-xs-center">
+                <div class="testemonial-quote text-center">
                     <blockquote>
                         <p>“ Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit. ”</p>
                         <hr class="center">
@@ -333,8 +336,82 @@
                     </blockquote>
                 </div>
             </div>
-            -->
+            <div class="testemonial">
+                <div class="testemonial-screens">
+                    <img class="testemonial-screen-browser" src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
+                    <img class="testemonial-screen-mobile" src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
+                </div>
+                <div class="testemonial-quote text-center">
+                    <blockquote>
+                        <p>“ 2Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit. ”</p>
+                        <hr class="center">
+                        <footer>
+                            <p>Thorsten Klages</p>
+                            <p>Senior Manager</p>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="testemonial">
+                <div class="testemonial-screens">
+                    <img class="testemonial-screen-browser" src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
+                    <img class="testemonial-screen-mobile" src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
+                </div>
+                <div class="testemonial-quote text-center">
+                    <blockquote>
+                        <p>“ 3Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit. ”</p>
+                        <hr class="center">
+                        <footer>
+                            <p>Thorsten Klages</p>
+                            <p>Senior Manager</p>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
         </div>
+        <div class="testemonial-slider-divider"><div class="testemonial-slider-divider-arrow"></div></div>
+        <div class="testemonial-clients-slider">
+            <div class="testemonial-client">
+                <img src="/images/sample/aa-website/universal-music-group-logo.png">
+            </div>
+            <div class="testemonial-client">
+                <img src="/images/sample/aa-website/ergo-logo.png">
+            </div>
+            <div class="testemonial-client">
+                <img src="/images/sample/aa-website/eventim-logo.png">
+            </div>
+            <div class="testemonial-client">
+                <img src="/images/sample/aa-website/m2beaute-logo.png">
+            </div>
+            <div class="testemonial-client">
+                <img src="/images/sample/aa-website/m2beaute-logo.png">
+            </div>
+            <div class="testemonial-client">
+                <img src="/images/sample/aa-website/m2beaute-logo.png">
+            </div>
+            <div class="testemonial-client">
+                <img src="/images/sample/aa-website/m2beaute-logo.png">
+            </div>
+        </div>
+        <!--
+        <div class="row testemonial">
+            <div class="col-md-8 push-md-4">
+                <img src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
+                <img src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
+                <button type="button" class="btn btn-success">Jetzt testen</button>
+            </div>
+            <div class="col-md-4 pull-md-8 text-center">
+                <blockquote>
+                    <p>“ Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit. ”</p>
+                    <hr class="center">
+                    <footer>
+                        <p>Thorsten Klages</p>
+                        <p>Senior Manager</p>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        -->
     </section>
     <script>
         /* show more services */
@@ -380,20 +457,20 @@
     <!-- old stuff -->
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mt-2 text-xs-center headline">
+            <div class="col-md-12 mt-2 text-center headline">
                 <h1>HEADLINE </h1>
             </div>
-            <div class="col-md-8 col-xs-12 text-xs-center subline offset-md-2">
+            <div class="col-md-8 col-xs-12 text-center subline offset-md-2">
                 <p>Subline - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                     tincidunt, ut
                     varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
                 </p>
             </div>
-            <div class="col-md-2 col-xs-12 text-xs-center">
+            <div class="col-md-2 col-xs-12 text-center">
                 {{> atoms-button }}
             </div>
         </div>
-        <div class="row mt-2 text-xs-center">
+        <div class="row mt-2 text-center">
             <div class="col-xs-12">
                 <ul class="fa-ul row">
                     <li class="col-md-3 col-xs-6" id="usp-1"><i class="fa fa-check" aria-hidden="true"></i> USP 1</li>
@@ -450,7 +527,7 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-12 text-xs-center">
+            <div class="col-md-12 text-center">
                 <h1 class="title">Produkt des Monats im X: XXX</h1>
                 <div class="row hidden-xs">
                     <div class="col-md-12">
@@ -477,7 +554,7 @@
         <hr>
         <img class="img-fluid mx-auto mb-2 mt-2 d-block" src="../../images/fpo_16x9.png" alt="">
         <h3 style="text-align:center">"Article Headline"</h3>
-        <div class="col-xs-8 text-xs-center offset-xs-2">
+        <div class="col-xs-8 text-center offset-xs-2">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                 tincidunt, ut
                 varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
@@ -523,19 +600,19 @@
         </div>
         <hr>
         <div class="row mb-2 mt-2" id="newsletter-widget">
-            <div class="col-md-6 col-xs-11 text-xs-center pl-3">
+            <div class="col-md-6 col-xs-11 text-center pl-3">
                 <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
                         tincidunt, ut
                         varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
                 </div>
             </div>
-            <div class="col-md-6 text-md-left text-xs-center">
+            <div class="col-md-6 text-md-left text-center">
                 <div>
                     {{> atoms-text-field }}
                 </div>
             </div>
-            <div class="col-md-12 text-xs-center">
+            <div class="col-md-12 text-center">
                 <div class="mb-1 mt-1 row" id="nl_types">
                     <div class="col-md-2 offset-md-2 col-xs-6">
                         {{> atoms-checkbox }} Lorem ipsum
@@ -551,7 +628,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 nl-signup-btn text-xs-center float-xs-none mx-auto">
+            <div class="col-md-4 nl-signup-btn text-center float-xs-none mx-auto">
                 {{> atoms-button }}
             </div>
         </div>

@@ -25,9 +25,9 @@ export default class Tag extends ReactComponent {
     render() {
         // classes
         const componentClass = cx(
-            styles.tag,
-            styles['tag-' + this.props.type],
-            this.props.pill && styles['tag-pill'],
+            styles.badge,
+            styles['badge-' + this.props.type],
+            this.props.pill && styles['badge-pill'],
             this.props.className
         );
 

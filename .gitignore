@@ -3,6 +3,7 @@ export/*
 # public/*
 source/styleguide/*
 /public/patterns/
+/public/js/vendor/
 /public/css/
 /public/fonts/
 /public/images/
