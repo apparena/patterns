@@ -43,7 +43,7 @@ $brand-grey-dark: #666666 !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-flex: true !default;
+$enable-flex: false !default;
 $enable-rounded: true !default;
 $enable-shadows: true !default;
 $enable-gradients: true !default;
@@ -71,7 +71,7 @@ $btn-secondary-border: #EEF2F8 !default;
 $card-bg: #fff !default;
 $card-cap-bg: #fff !default;
 $card-border-width: 0 !default;
-$card-border-color: $gray-lighter !default;
+$card-border-color: $gray-lightest !default;
 $card-spacer-x: 1.25rem !default;
 $card-spacer-y: 1.5rem !default;
 
@@ -90,5 +90,8 @@ $navbar-border-radius: 0 !default;
 
 // Navs
 $nav-pills-border-radius: 0 !default;
+
+// Modals
+$modal-backdrop-bg: transparentize($brand-secondary, 0.2);
 
 @import "~bootstrap/scss/variables";

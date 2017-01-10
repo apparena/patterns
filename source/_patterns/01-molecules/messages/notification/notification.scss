@@ -16,6 +16,7 @@
     left: 0;
     right: 0;
     pointer-events: none;
+    z-index: 2050;
   }
 
   .content {
@@ -30,7 +31,6 @@
     overflow-wrap: break-word;
     padding: 10px 40px 10px 60px;
     visibility: visible;
-    z-index: 2050;
     pointer-events: auto;
     &:before {
       content: '';

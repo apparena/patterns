@@ -2,30 +2,13 @@
 <html>
 <head>
     <title>Sample App</title>
-    <link rel="stylesheet" href="https://unpkg.com/apparena-patterns-react@1.0.21/css/app-arena-styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.6/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/source/css/app-arena-styles.css">
 </head>
 <body>
-<div style="width: 500px; height: 500px; margin: 14% auto;">
-    <div id="root"></div>
-</div>
-<script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
-<script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<div id="component"></div>
 <script src="/main.js"></script>
-
-<script type="text/babel">
-    ReactDOM.render(
-            <div id="page">
-                <apparena.Tooltip zIndex={2050} label="Add Config Item" positioning="overlay">
-                    <span>Tooltip Left Top</span>
-                </apparena.Tooltip>
-                <br/>
-                <apparena.Popover zIndex={2050} content="Add Config Item" positioning="overlay">
-                    <span>Popover Bottom</span>
-                </apparena.Popover>
-                <br/>
-            </div>
-            , document.getElementById('root'));
-</script>
 </body>
 </html>

@@ -6,7 +6,6 @@ import Button from "./00-atoms/button/button";
 import ButtonGroup from "./01-molecules/button-group/button-group";
 import Card from "./01-molecules/card/card";
 import CardsList from "./02-organisms/lists/cards-list";
-import Chart from "./01-molecules/chart/chart";
 import Checkbox from "./00-atoms/forms/checkbox";
 import Col from "./00-atoms/grid/col";
 import Dropdown from "./01-molecules/dropdown/dropdown";
@@ -19,6 +18,9 @@ import InputGroup from "./01-molecules/input-group/input-group";
 import Jumbotron from "./01-molecules/jumbotron/jumbotron";
 import ListGroup from "./01-molecules/list-group/list-group";
 import Modal from "./01-molecules/modal/modal";
+import ModalBody from "./01-molecules/modal/modal-body";
+import ModalFooter from "./01-molecules/modal/modal-footer";
+import ModalHeader from "./01-molecules/modal/modal-header";
 import Nav from "./01-molecules/navs/nav";
 import Navbar from "./01-molecules/navbar/navbar";
 import NavItem from "./01-molecules/navs/nav-item";
@@ -39,6 +41,7 @@ import Stick from "./react-utils/stick";
 import Table from "./00-atoms/table/table";
 import TableList from "./02-organisms/lists/table-list";
 import Tag from "./00-atoms/tag/tag";
+import TagInput from "./00-atoms/forms/tag-input";
 import Tooltip from "./01-molecules/tooltip/tooltip";
 
 
@@ -51,7 +54,6 @@ export {
     ButtonGroup,
     Card,
     CardsList,
-    Chart,
     Checkbox,
     Col,
     Dropdown,
@@ -64,6 +66,9 @@ export {
     Jumbotron,
     ListGroup,
     Modal,
+    ModalBody,
+    ModalFooter,
+    ModalHeader,
     Nav,
     Navbar,
     NavItem,
@@ -84,5 +89,6 @@ export {
     Table,
     TableList,
     Tag,
+    TagInput,
     Tooltip,
 }

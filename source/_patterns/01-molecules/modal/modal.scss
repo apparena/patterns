@@ -14,10 +14,6 @@
   display: block;
 }
 
-.model-content {
-  overflow: hidden;
-}
-
 // Modal Types
 .modal-primary,
 .modal-secondary,
@@ -27,6 +23,10 @@
 .modal-warning {
   .modal-header {
     color: #fff;
+    border-radius: 0.2rem 0.2rem 0 0;
+    .close {
+      color: #fff;
+    }
   }
 }
 
@@ -67,7 +67,6 @@
 }
 
 .modal-xl {
-  max-width: 90%;
   .modal-body {
     padding: 0;
   }

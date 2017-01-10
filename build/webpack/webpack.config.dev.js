@@ -8,17 +8,17 @@ var buildPath = path.resolve(__dirname, relativePath, 'build/apparena-patterns-r
 module.exports = {
     devtool: 'source-map',
     entry: [
-        'webpack-dev-server/client?http://localhost:3000',
+        'webpack-dev-server/client?http://localhost:3001',
         'webpack/hot/only-dev-server',
-        path.resolve(__dirname, relativePath + 'source/_patterns', 'index.js')
+        path.resolve(__dirname, relativePath + 'build/test/', 'component.js')
     ],
     output: {
         path: buildPath,
         publicPath: '/',
         pathinfo: true,
         filename: '[name].js',
-        library: 'apparena',
-        libraryTarget: 'umd'
+        // library: 'apparena',
+        // libraryTarget: 'umd'
     },
     resolve: {
         modulesDirectories: ['node_modules'],

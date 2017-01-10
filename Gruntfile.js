@@ -9,6 +9,10 @@ module.exports = function (grunt) {
                 files: {
                     'public/css/app-arena-styles.css': 'source/css/app-arena-styles.scss',
                     'source/css/app-arena-styles.css': 'source/css/app-arena-styles.scss',
+                    'public/css/easycontest-styles.css': 'source/css/easycontest-styles.scss',
+                    'source/css/easycontest-styles.css': 'source/css/easycontest-styles.scss',
+                    'public/css/bwgv-styles.css': 'source/css/bwgv-styles.scss',
+                    'source/css/bwgv-styles.css': 'source/css/bwgv-styles.scss',
                 }
             }
         }

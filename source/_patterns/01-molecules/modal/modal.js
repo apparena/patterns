@@ -4,8 +4,6 @@ import Animate from "../../react-utils/animate";
 import Draggable from "../../react-utils/draggable";
 import cx from "classnames";
 import styles from "./modal.scss";
-import Icon from "../../00-atoms/icons/icons";
-import Button from "../../00-atoms/button/button";
 
 const MODAL_TYPES = [
     "primary",
@@ -29,13 +27,8 @@ export default class Modal extends ReactComponent {
         className: PropTypes.string,
         size: PropTypes.oneOf(MODAL_SIZES),
         type: PropTypes.oneOf(MODAL_TYPES),
-        headerText: PropTypes.string.isRequired,
-        onSave: PropTypes.func,
-        hintText: PropTypes.string,
-        saveText: PropTypes.string,
-        onClose: PropTypes.func,
-        closeText: PropTypes.string,
         visible: PropTypes.bool,
+        modalBackdrop: PropTypes.bool,
         children: PropTypes.node.isRequired,
         draggable: PropTypes.bool,
         scrollable: PropTypes.bool,
@@ -48,6 +41,7 @@ export default class Modal extends ReactComponent {
         saveText: "Speichern",
         closeText: "Abbrechen",
         visible: true,
+        modalBackdrop: true,
         draggable: false,
         scrollable: false,
         size: "sm",
@@ -80,17 +74,11 @@ export default class Modal extends ReactComponent {
     renderModalContent() {
         const {
             size,
-            headerText,
             children,
-            saveText,
-            onSave,
-            onClose,
-            closeText,
-            hintText,
             draggable,
             scrollable,
             type,
-            className
+            className,
         } = this.props;
         const componentClass = cx(
             styles["modal-dialog"],
@@ -103,61 +91,35 @@ export default class Modal extends ReactComponent {
         return (
             <div className={componentClass}>
                 <div className={cx(styles["modal-content"], styles["modal-content-" + size])}>
-                    <div className={cx(styles["modal-header"])}>
-                        <button type="button" className={styles.close} onClick={onClose}>
-                            <Icon name="times-circle"/>
-                        </button>
-                        <h4 className={styles["modal-title"]}>{headerText}</h4>
-                    </div>
-                    <div className={cx(styles["modal-body"])}>
-                        {children}
-                    </div>
-                    <div className={styles["modal-footer"]}>
-                        {(onClose && closeText) &&
-                        <Button
-                            type="link"
-                            onClick={onClose}
-                        >
-                            {closeText}
-                        </Button>
-                        }
-                        {(onSave && saveText) &&
-                        <Button
-                            type={(type === "default") ? "primary" : type}
-                            onClick={onSave}
-                        >
-                            {saveText}
-                        </Button>
-                        }
-                    </div>
-                    {(hintText) &&
-                    <div className={styles["modal-footer-hint"]}>{hintText}</div>
-                    }
+                    {children}
                 </div>
             </div>
         )
     }
 
+    renderDragableWrapper() {
+        return (
+            <Draggable
+                enabled
+                handle={styles["modal-header"]}
+            >
+                {this.renderModalContent()}
+            </Draggable>
+        )
+    }
+
     render() {
-        const {visible, draggable, transition} = this.props;
+        const {visible, draggable, transition, modalBackdrop} = this.props;
         return (
             <div>
                 <Animate transition={transition}>
                     <div
                         className={cx(styles.modal, (visible) && styles.show)}
                     >
-                        {draggable ?
-                            <Draggable
-                                enabled={draggable}
-                                handle={styles["modal-header"]}
-                            >
-                                {this.renderModalContent()}
-                            </Draggable>
-                            :
-                            this.renderModalContent()}
+                        {draggable ? this.renderDragableWrapper() : this.renderModalContent()}
                     </div>
                 </Animate>
-                {!draggable && <div className={cx(visible && styles["modal-backdrop"])}></div>}
+                {(!draggable && modalBackdrop) && <Animate transition={"fadeIn"}><div className={cx(visible && styles["modal-backdrop"])}></div></Animate>}
             </div>
         );
     }

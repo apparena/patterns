@@ -143,7 +143,7 @@ export default class Stick extends ReactComponent {
                 break;
             case "left bottom":
                 position.left = left - thisRect.width - this.props.offset;
-                position.top = top + rect.height  - (thisRect.height / 2);
+                position.top = (top + rect.height) - (thisRect.height / 2);
                 break;
             // RIGHT
             case "right":
@@ -156,7 +156,7 @@ export default class Stick extends ReactComponent {
                 break;
             case "right bottom":
                 position.left = left + rect.width + this.props.offset;
-                position.top = top + rect.height  - (thisRect.height / 2);
+                position.top = (top + rect.height) - (thisRect.height / 2);
                 break;
             // Top
             case "top":
@@ -168,7 +168,7 @@ export default class Stick extends ReactComponent {
                 position.top = top - thisRect.height - this.props.offset;
                 break;
             case "top right":
-                position.left = left + rect.width - (thisRect.width / 2);
+                position.left = (left + rect.width) - (thisRect.width / 2);
                 position.top = top - thisRect.height - this.props.offset;
                 break;
             //Bottom
@@ -181,7 +181,7 @@ export default class Stick extends ReactComponent {
                 position.top = top + rect.height + this.props.offset;
                 break;
             case "bottom right":
-                position.left = left + rect.width - (thisRect.width / 2);
+                position.left = (left + rect.width) - (thisRect.width / 2);
                 position.top = top + rect.height + this.props.offset;
                 break;
             //Overlay
@@ -197,18 +197,15 @@ export default class Stick extends ReactComponent {
                 break;
         }
 
-        // Overflows
+        /** Overflows */
         if (position.top + thisRect.height > windowHeight) {
             position.top = top - thisRect.height - this.props.offset;
-            position.vertical = "top";
         }
         if (position.left + thisRect.width > windowWidth) {
-            position.left = (left + rect.width) - thisRect.width - this.props.horizontalOffset;
-            position.horizontal = "right";
+            position.left = (left + rect.width) - thisRect.width;
         }
-        if (position.top < 0 && position.vertical !== "bottom") {
+        if (position.top < 0) {
             position.top = top + rect.height + this.props.offset;
-            position.vertical = "bottom";
         }
 
         return position;
@@ -236,7 +233,7 @@ export default class Stick extends ReactComponent {
             <Animate transition={transition}>
                 <div className={cx(styles.stick, className)}
                      style={style}
-                     ref={c=> (this.holder = c)}
+                     ref={c => (this.holder = c)}
                 >
                     {this.props.children}
                 </div>

@@ -2,10 +2,15 @@ import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./button.scss";
+import Spinner from "../spinner/spinner";
+import Icon from "../icons/icons";
 
 const BUTTON_SIZES = ["lg", "sm", "xs"];
 
+const BUTTON_STATES = ["default", "loading", "success", "error", "warning"];
+
 const BUTTON_TYPES = [
+    "default",
     "primary",
     "secondary",
     "success",
@@ -23,47 +28,112 @@ const BUTTON_TYPES = [
 
 export default class Button extends ReactComponent {
     static propTypes = {
-        block: PropTypes.bool,
         className: PropTypes.string,
+        type: PropTypes.oneOf(BUTTON_TYPES),
+        size: PropTypes.oneOf(BUTTON_SIZES),
+        target: PropTypes.oneOf(["blank", "top", "self"]),
+        block: PropTypes.bool,
         href: PropTypes.string,
         isActive: PropTypes.bool,
         isDisabled: PropTypes.bool,
         onClick: PropTypes.func,
-        size: PropTypes.oneOf(BUTTON_SIZES),
         submit: PropTypes.bool,
-        type: PropTypes.oneOf(BUTTON_TYPES)
+        state: PropTypes.oneOf(BUTTON_STATES),
     };
     static defaultProps = {
-        type: 'secondary',
+        type: "secondary",
+        state: "default",
         isDisabled: false
     };
 
+    getInitState() {
+        this.refBind = ::this.ref;
+    }
+
+    componentDidMount() {
+        this.setButtonWidth(this.props.state)
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.state !== this.props.state) {
+            this.setButtonWidth(nextProps.state)
+        }
+    }
+
+    setButtonWidth(state) {
+        if (state === "default") {
+            this.btnWidth = this.button.getBoundingClientRect().width;
+        }
+    }
+
+    ref(node) {
+        this.button = node
+    }
+
+    renderState() {
+        const {state, children, type} = this.props;
+        switch (state) {
+            case "loading":
+                return (
+                    <Spinner size="sm" type={(type === "default") ? "primary" : "inverted"}/>
+                );
+            case "success":
+                return (
+                    <Icon type="success" name="check"/>
+                );
+            case "error":
+                return (
+                    <Icon type="error" name="times"/>
+                );
+            default:
+                return children;
+        }
+    }
+
     render() {
+        const {
+            type,
+            state,
+            size,
+            block,
+            isActive,
+            className,
+            href,
+            children,
+            onClick,
+            isDisabled,
+            target,
+            submit,
+        } = this.props;
         // classes
         const componentClass = cx(
             styles.btn,
-            styles['btn-' + this.props.type],
-            this.props.size && styles['btn-' + this.props.size],
-            this.props.block && styles['btn-block'],
-            this.props.isActive && styles['active'],
-            this.props.isDisabled && styles['disabled'],
-            this.props.className
+            styles["btn-" + type],
+            size && styles["btn-" + size],
+            block && styles["btn-block"],
+            isActive && styles["active"],
+            isDisabled && styles["disabled"],
+            className
         );
 
-        if (this.props.href) {
+        if (href) {
             return (
-                <a href={this.props.href} className={componentClass}>{this.props.children}</a>
+                <a href={href} className={componentClass} target={`_${target}`}>
+                    {(state === "default") ? children : this.renderState()}
+                </a>
             );
         }
-
+        const style = (state !== "default" && this.btnWidth) ? {width: `${this.btnWidth}px`} : {};
         return (
             <button
-                onClick={this.props.onClick}
-                disabled={this.props.isDisabled}
+                ref={this.refBind}
+                style={style}
+                onClick={onClick}
+                disabled={isDisabled || (state !== "default")}
                 className={componentClass}
-                type={this.props.submit ? 'submit' : 'button'}
+                type={submit ? "submit" : "button"}
             >
-                {this.props.children}
+                {(state === "default") ? children : this.renderState()}
             </button>
         );
     }

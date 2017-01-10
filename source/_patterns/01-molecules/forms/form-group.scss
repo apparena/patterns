@@ -10,7 +10,7 @@
  ========================================================================== */
 .form-group {
 
-  label {
+  label:not(.custom-control) {
     text-transform: uppercase;
   }
 
@@ -18,4 +18,8 @@
     position: absolute;
     right:5px;
   }
+}
+
+.tooltip {
+  display: block;
 }
