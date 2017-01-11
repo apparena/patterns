@@ -273,7 +273,15 @@
                     cssEase: 'ease',
                     infinite: true,
                     lazyLoad: 'ondemand',
-                    cssTransitions: true
+                    cssTransitions: true,
+                    responsive: [
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                arrows: false
+                            }
+                        }
+                    ]
                 });
                 $('.testemonial-clients-slider').slick({
                     slidesToShow: 5,
@@ -290,6 +298,7 @@
                     draggable: false,
                     autoplay: true,
                     autoplaySpeed: 4000,
+                    /*variableWidths: false,*/
                     responsive: [
                         {
                             breakpoint: 1200,

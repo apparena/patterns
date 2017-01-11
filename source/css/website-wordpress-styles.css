@@ -11256,7 +11256,7 @@ main[role=main] {
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  padding: 1rem;
+  padding: 2rem;
   border: none;
   outline: none; }
   .slick-prev:hover, .slick-prev:focus,
@@ -11399,15 +11399,16 @@ h1 .strong, h1 strong, h1 b {
     width: 7rem;
     height: 7rem; }
 
-main#page-homepage section#section-homepage-header .header-background-row {
-  position: absolute;
-  bottom: 60px;
-  right: 15px;
-  left: 15px; }
-
-main#page-homepage section#section-homepage-header .header-heading-row {
-  padding-top: 60px;
-  padding-bottom: 50px; }
+main#page-homepage section#section-homepage-header {
+  z-index: 1; }
+  main#page-homepage section#section-homepage-header .header-background-row {
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    left: 15px; }
+  main#page-homepage section#section-homepage-header .header-heading-row {
+    padding-top: 60px;
+    padding-bottom: 50px; }
 
 main#page-homepage section#section-homepage-about {
   padding-top: 0%; }
@@ -11524,6 +11525,12 @@ section {
 .btn.btn-outline-danger, .btn.btn-outline-info, .btn.btn-outline-primary, .btn.btn-outline-secondary, .btn.btn-outline-success, .btn.btn-outline-warning {
   border: 1px solid; }
 
+.testemonial-slider .slick-prev, .testemonial-slider .slick-next {
+  top: 300px; }
+  @media (min-width: 992px) {
+    .testemonial-slider .slick-prev, .testemonial-slider .slick-next {
+      top: 50%; } }
+
 .testemonial-slider .testemonial .testemonial-screens {
   position: relative;
   width: 100%; }
@@ -11543,6 +11550,7 @@ section {
   .testemonial-slider .testemonial .testemonial-screens .testemonial-screen-mobile {
     position: relative;
     display: block;
+    max-width: 100%;
     top: 0;
     left: 50%;
     transform: translateX(-50%); }
@@ -11593,16 +11601,12 @@ section {
 .testemonial-clients-slider {
   width: 100%;
   background-color: #f6f8fa;
-  padding: 0 10%;
-  display: table; }
+  padding: 0 10%; }
   .testemonial-clients-slider.slick-slider {
     margin-bottom: 0; }
   .testemonial-clients-slider .testemonial-client {
     padding: 1rem;
     height: 90px;
-    width: 100%;
-    display: table-cell;
-    vertical-align: middle;
     text-align: center; }
     .testemonial-clients-slider .testemonial-client img {
       max-height: 100%;
