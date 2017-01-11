@@ -1,0 +1,12 @@
+{
+    "product": {
+        "name": "Adventskalender",
+        "screens": {
+            "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+            "mobile": "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+        }
+    },
+    "h2": "Produkt des Monats: Adventskalender",
+    "h3": "15% Rabatt auf den Adventskalender.",
+    "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>"
+}

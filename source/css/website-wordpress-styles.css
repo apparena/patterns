@@ -11399,84 +11399,9 @@ h1 .strong, h1 strong, h1 b {
     width: 7rem;
     height: 7rem; }
 
-main#page-homepage section.section-homepage-header {
-  z-index: 1; }
-  main#page-homepage section.section-homepage-header .header-background-row {
-    position: absolute;
-    bottom: 60px;
-    right: 15px;
-    left: 15px; }
-  main#page-homepage section.section-homepage-header .header-heading-row {
-    padding-top: 60px;
-    padding-bottom: 50px; }
-
-main#page-homepage section.section-about {
-  padding-top: 0%; }
-
 .usp-icon, .service-icon {
   color: #2c82c9;
   font-size: 3.6rem; }
-
-.usp-more-link {
-  margin-top: -0.8rem; }
-
-.usp-title {
-  padding-top: 1rem; }
-
-.services-row {
-  margin-top: 2rem; }
-
-.services-col {
-  background-color: #ffffff;
-  margin-bottom: 2rem;
-  padding: 1rem; }
-
-.section-counter output {
-  color: #2c82c9;
-  font-size: 2.842rem;
-  font-weight: 600; }
-
-.section-counter hr {
-  border-top: solid 2px #ccc;
-  width: 100%;
-  max-width: 100%;
-  text-align: inherit;
-  margin-left: 0;
-  margin-right: 0; }
-
-.section-counter label {
-  font-size: 1.105rem; }
-
-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-  position: relative;
-  overflow: hidden; }
-  section.section-productofthemonth {
-    min-height: 34rem;
-    margin-bottom: 0; }
-  section.section-homepage-header {
-    margin-bottom: -20px;
-    padding-bottom: 0;
-    overflow: visible; }
-  section.section-dark {
-    background-color: #f6f8fa; }
-  section.section-divider-bottom {
-    overflow: visible; }
-    section.section-divider-bottom:after {
-      content: '';
-      display: block;
-      position: absolute;
-      background-size: 100px 100px;
-      width: 100px;
-      height: 100px;
-      /*bottom: 0; // with position relative */
-      left: 50%;
-      transform: translateX(-50%);
-      /* png fallback, see http://pauginer.com/post/36614680636/invisible-gradient-technique */
-      background-image: url(//patterns.local/images/logo_ringe_bg_section_divider.png);
-      background-image: linear-gradient(transparent, transparent), url(//patterns.local/images/logo_ringe_bg_section_divider.svg); }
 
 .bg-blue {
   background-color: #2c82c9;
@@ -11525,122 +11450,6 @@ section {
 .btn.btn-outline-danger, .btn.btn-outline-info, .btn.btn-outline-primary, .btn.btn-outline-secondary, .btn.btn-outline-success, .btn.btn-outline-warning {
   border: 1px solid; }
 
-.testemonial-slider .slick-prev, .testemonial-slider .slick-next {
-  top: 300px; }
-  @media (min-width: 992px) {
-    .testemonial-slider .slick-prev, .testemonial-slider .slick-next {
-      top: 50%; } }
-
-.testemonial-slider .testemonial .testemonial-screens {
-  position: relative;
-  width: 100%; }
-  @media (min-width: 992px) {
-    .testemonial-slider .testemonial .testemonial-screens {
-      height: 34rem;
-      width: 60%;
-      float: right; } }
-  .testemonial-slider .testemonial .testemonial-screens .testemonial-screen-browser {
-    display: none;
-    top: 0; }
-    @media (min-width: 992px) {
-      .testemonial-slider .testemonial .testemonial-screens .testemonial-screen-browser {
-        display: block;
-        position: absolute;
-        left: 250px; } }
-  .testemonial-slider .testemonial .testemonial-screens .testemonial-screen-mobile {
-    position: relative;
-    display: block;
-    max-width: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); }
-    @media (min-width: 992px) {
-      .testemonial-slider .testemonial .testemonial-screens .testemonial-screen-mobile {
-        position: absolute;
-        left: 0;
-        top: 60px;
-        transform: translateX(0); } }
-
-.testemonial-slider .testemonial .testemonial-quote {
-  width: 100%;
-  display: table; }
-  @media (min-width: 992px) {
-    .testemonial-slider .testemonial .testemonial-quote {
-      height: 34rem;
-      width: 40%;
-      float: left; } }
-  .testemonial-slider .testemonial .testemonial-quote blockquote {
-    padding: 2rem;
-    display: table-cell;
-    vertical-align: middle; }
-
-.testemonial-slider .testemonial .testemonial-product-cta {
-  background-color: #fff;
-  padding: 1rem; }
-  .testemonial-slider .testemonial .testemonial-product-cta h3 {
-    font-size: 1.368rem; }
-  @media (min-width: 992px) {
-    .testemonial-slider .testemonial .testemonial-product-cta {
-      position: absolute;
-      bottom: 0;
-      right: 1rem;
-      border-radius: 1rem 1rem 0 0; } }
-
-.testemonial-slider-divider {
-  width: 100%;
-  background-color: #f6f8fa; }
-  .testemonial-slider-divider .testemonial-slider-divider-arrow {
-    margin-left: 20%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 25px 25px 0 25px;
-    border-color: #ffffff transparent transparent transparent; }
-
-.testemonial-clients-slider {
-  width: 100%;
-  background-color: #f6f8fa;
-  padding: 0 10%; }
-  .testemonial-clients-slider.slick-slider {
-    margin-bottom: 0; }
-  .testemonial-clients-slider .testemonial-client {
-    padding: 1rem;
-    height: 90px;
-    text-align: center; }
-    .testemonial-clients-slider .testemonial-client img {
-      max-height: 100%;
-      max-width: 100%;
-      margin: auto;
-      transition: filter 1s, opacity 1s;
-      filter: grayscale(100%);
-      opacity: 0.5; }
-    .testemonial-clients-slider .testemonial-client:hover img {
-      opacity: 1; }
-    .testemonial-clients-slider .testemonial-client.slick-current img {
-      filter: grayscale(0%);
-      opacity: 1; }
-
-.product-screen-wrapper {
-  position: relative;
-  height: 29rem; }
-  .product-screen-wrapper .btn.btn-cta-topleft {
-    position: absolute;
-    text-transform: uppercase;
-    top: 2.5rem;
-    left: 7rem;
-    z-index: 3; }
-  .product-screen-wrapper img {
-    position: absolute; }
-    .product-screen-wrapper img.screen-browser {
-      z-index: 1;
-      top: 0;
-      left: 8rem; }
-    .product-screen-wrapper img.screen-mobile {
-      z-index: 2;
-      top: 9rem;
-      left: 1rem; }
-
 hr {
   max-width: 110px;
   text-align: left;
@@ -11660,80 +11469,6 @@ hr {
     margin-left: auto;
     margin-right: 0; }
 
-/*
-svg#header-background #background #dynamic #row1 {
-  animation: headerBackgroundAnimationRow1 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-delay: 3s;
-}
-svg#header-background #background #dynamic #row2 {
-  animation: headerBackgroundAnimationRow2 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-delay: 3s;
-}
-svg#header-background #background #dynamic #row3 {
-  animation: headerBackgroundAnimationRow3 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-delay: 3s;
-}
-svg#header-background #background #dynamic #row4 {
-  animation: headerBackgroundAnimationRow4 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-delay: 3s;
-}
-@keyframes headerBackgroundAnimationRow1 {
-  from {
-    transform: translateX(-9%);
-  }
-  to {
-    transform: translateX(13%);
-  }
-}
-@keyframes headerBackgroundAnimationRow2 {
-  from {
-    transform: translateX(-9%);
-  }
-  to {
-    transform: translateX(5%);
-  }
-}
-@keyframes headerBackgroundAnimationRow3 {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(4%);
-  }
-}
-@keyframes headerBackgroundAnimationRow4 {
-  from {
-    transform: translateX(-11%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-*/
-/*
-@media(min-width: 992px){
-  .col5{
-    width: 20%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-*/
 .row.gutter-80 {
   display: flex;
   flex-wrap: wrap;
@@ -11844,5 +11579,269 @@ svg#header-background #background #dynamic #row4 {
 
 .container-fluid.container-fluid-90 {
   padding: 0 5%; }
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden; }
+  section.section-dark {
+    background-color: #f6f8fa; }
+  section.section-divider-bottom {
+    overflow: visible; }
+    section.section-divider-bottom:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-size: 100px 100px;
+      width: 100px;
+      height: 100px;
+      /*bottom: 0; // with position relative */
+      left: 50%;
+      transform: translateX(-50%);
+      /* png fallback, see http://pauginer.com/post/36614680636/invisible-gradient-technique */
+      background-image: url(//patterns.local/images/logo_ringe_bg_section_divider.png);
+      background-image: linear-gradient(transparent, transparent), url(//patterns.local/images/logo_ringe_bg_section_divider.svg); }
+
+section.section-about {
+  padding-top: 0%; }
+
+section.section-counter output {
+  color: #2c82c9;
+  font-size: 2.842rem;
+  font-weight: 600; }
+
+section.section-counter hr {
+  border-top: solid 2px #ccc;
+  width: 100%;
+  max-width: 100%;
+  text-align: inherit;
+  margin-left: 0;
+  margin-right: 0; }
+
+section.section-counter label {
+  font-size: 1.105rem; }
+
+section.section-homepage-header {
+  margin-bottom: -20px;
+  padding-bottom: 0;
+  overflow: visible;
+  z-index: 1; }
+  section.section-homepage-header .header-background-row {
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    left: 15px; }
+  section.section-homepage-header .header-heading-row {
+    padding-top: 60px;
+    padding-bottom: 50px; }
+
+/*
+svg#header-background #background #dynamic #row1 {
+  animation: headerBackgroundAnimationRow1 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+svg#header-background #background #dynamic #row2 {
+  animation: headerBackgroundAnimationRow2 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+svg#header-background #background #dynamic #row3 {
+  animation: headerBackgroundAnimationRow3 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+svg#header-background #background #dynamic #row4 {
+  animation: headerBackgroundAnimationRow4 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+@keyframes headerBackgroundAnimationRow1 {
+  from {
+    transform: translateX(-9%);
+  }
+  to {
+    transform: translateX(13%);
+  }
+}
+@keyframes headerBackgroundAnimationRow2 {
+  from {
+    transform: translateX(-9%);
+  }
+  to {
+    transform: translateX(5%);
+  }
+}
+@keyframes headerBackgroundAnimationRow3 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(4%);
+  }
+}
+@keyframes headerBackgroundAnimationRow4 {
+  from {
+    transform: translateX(-11%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+*/
+/*
+@media(min-width: 992px){
+  .col5{
+    width: 20%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+*/
+section.section-productofthemonth {
+  min-height: 34rem;
+  margin-bottom: 0; }
+  section.section-productofthemonth .product-screen-wrapper {
+    position: relative;
+    height: 29rem; }
+    section.section-productofthemonth .product-screen-wrapper .btn.btn-cta-topleft {
+      position: absolute;
+      text-transform: uppercase;
+      top: 2.5rem;
+      left: 7rem;
+      z-index: 3; }
+    section.section-productofthemonth .product-screen-wrapper img {
+      position: absolute; }
+      section.section-productofthemonth .product-screen-wrapper img.screen-browser {
+        z-index: 1;
+        top: 0;
+        left: 8rem; }
+      section.section-productofthemonth .product-screen-wrapper img.screen-mobile {
+        z-index: 2;
+        top: 9rem;
+        left: 1rem; }
+
+section.section-services-list .services-row {
+  margin-top: 2rem; }
+
+section.section-services-list .services-col {
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  padding: 1rem; }
+
+section.section-testemonial-slider .testemonial-slider .slick-prev, section.section-testemonial-slider .testemonial-slider .slick-next {
+  top: 300px; }
+  @media (min-width: 992px) {
+    section.section-testemonial-slider .testemonial-slider .slick-prev, section.section-testemonial-slider .testemonial-slider .slick-next {
+      top: 50%; } }
+
+section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-screens {
+  position: relative;
+  width: 100%; }
+  @media (min-width: 992px) {
+    section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-screens {
+      height: 34rem;
+      width: 60%;
+      float: right; } }
+  section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-screens .testemonial-screen-browser {
+    display: none;
+    top: 0; }
+    @media (min-width: 992px) {
+      section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-screens .testemonial-screen-browser {
+        display: block;
+        position: absolute;
+        left: 250px; } }
+  section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-screens .testemonial-screen-mobile {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media (min-width: 992px) {
+      section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-screens .testemonial-screen-mobile {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        transform: translateX(0); } }
+
+section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-quote {
+  width: 100%;
+  display: table; }
+  @media (min-width: 992px) {
+    section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-quote {
+      height: 34rem;
+      width: 40%;
+      float: left; } }
+  section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-quote blockquote {
+    padding: 2rem;
+    display: table-cell;
+    vertical-align: middle; }
+
+section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-product-cta {
+  background-color: #fff;
+  padding: 1rem; }
+  section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-product-cta h3 {
+    font-size: 1.368rem; }
+  @media (min-width: 992px) {
+    section.section-testemonial-slider .testemonial-slider .testemonial .testemonial-product-cta {
+      position: absolute;
+      bottom: 0;
+      right: 1rem;
+      border-radius: 1rem 1rem 0 0; } }
+
+section.section-testemonial-slider .testemonial-slider-divider {
+  width: 100%;
+  background-color: #f6f8fa; }
+  section.section-testemonial-slider .testemonial-slider-divider .testemonial-slider-divider-arrow {
+    margin-left: 20%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 25px;
+    border-color: #ffffff transparent transparent transparent; }
+
+section.section-testemonial-slider .testemonial-clients-slider {
+  width: 100%;
+  background-color: #f6f8fa;
+  padding: 0 10%; }
+  section.section-testemonial-slider .testemonial-clients-slider.slick-slider {
+    margin-bottom: 0; }
+  section.section-testemonial-slider .testemonial-clients-slider .testemonial-client {
+    padding: 1rem;
+    height: 90px;
+    text-align: center; }
+    section.section-testemonial-slider .testemonial-clients-slider .testemonial-client img {
+      max-height: 100%;
+      max-width: 100%;
+      margin: auto;
+      transition: filter 1s, opacity 1s;
+      filter: grayscale(100%);
+      opacity: 0.5; }
+    section.section-testemonial-slider .testemonial-clients-slider .testemonial-client:hover img {
+      opacity: 1; }
+    section.section-testemonial-slider .testemonial-clients-slider .testemonial-client.slick-current img {
+      filter: grayscale(0%);
+      opacity: 1; }
+
+section.section-usp-list .usp-more-link {
+  margin-top: -0.8rem; }
+
+section.section-usp-list .usp-title {
+  padding-top: 1rem; }
 
 /*# sourceMappingURL=website-wordpress-styles.css.map */

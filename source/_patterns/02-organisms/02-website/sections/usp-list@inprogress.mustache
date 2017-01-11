@@ -1,0 +1,20 @@
+<section class="section-dark section-usp-list section-divider-bottom text-center">
+    <div class="container"> <!-- TODO: correct container -->
+        <div class="row homepage-usps-row">
+            {{#usp-list.items }}
+                <div class="col-md-6 col-lg-3">
+                    {{> molecules-usp }}
+                </div>
+            {{/usp-list.items}}
+            <script src="/js/vendor/matchHeight/jquery.matchHeight-min.js"></script>
+            <script>
+                $(function () {
+                    var $uspsRow = $('#section-homepage-usps');
+                    $uspsRow.find('.usp-icon').matchHeight();
+                    $uspsRow.find('.usp-title').matchHeight();
+                    $uspsRow.find('.usp-description').matchHeight();
+                });
+            </script>
+        </div>
+    </div>
+</section>

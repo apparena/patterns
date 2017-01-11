@@ -1,0 +1,48 @@
+{
+    "testemonial-slider": {
+        "items": [
+            {
+                "author": {
+                    "name:": "name1",
+                    "description": "desc1"
+                },
+                "logo": "/images/sample/aa-website/universal-music-group-logo.png"
+            },
+            {
+                "author": {
+                    "name:": "name2",
+                    "description": "desc2"
+                },
+                "logo": "/images/sample/aa-website/ergo-logo.png"
+            },
+            {
+                "author": {
+                    "name:": "name3",
+                    "description": "desc3"
+                },
+                "logo": "/images/sample/aa-website/eventim-logo.png"
+            },
+            {
+                "author": {
+                    "name:": "Thorsten Klages",
+                    "description": "Senior Manager"
+                },
+                "logo": "/images/sample/aa-website/m2beaute-logo.png"
+            },
+            {
+                "author": {
+                    "name:": "Thorsten Klages",
+                    "description": "Senior Manager"
+                },
+                "logo": "/images/sample/aa-website/ergo-logo.png"
+            },
+            {
+                "author": {
+                    "name:": "Thorsten Klages",
+                    "description": "Senior Manager"
+                },
+                "logo": "/images/sample/aa-website/ergo-logo.png"
+            }
+        ]
+    }
+}
