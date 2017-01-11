@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'app-arena-website';
-  src:  url('#{$icomoon-font-path}/app-arena-website.eot?e4uh9c');
-  src:  url('#{$icomoon-font-path}/app-arena-website.eot?e4uh9c#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/app-arena-website.ttf?e4uh9c') format('truetype'),
-    url('#{$icomoon-font-path}/app-arena-website.woff?e4uh9c') format('woff'),
-    url('#{$icomoon-font-path}/app-arena-website.svg?e4uh9c#app-arena-website') format('svg');
+  src:  url('#{$icomoon-font-path}/app-arena-website.eot?5s50kw');
+  src:  url('#{$icomoon-font-path}/app-arena-website.eot?5s50kw#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/app-arena-website.ttf?5s50kw') format('truetype'),
+    url('#{$icomoon-font-path}/app-arena-website.woff?5s50kw') format('woff'),
+    url('#{$icomoon-font-path}/app-arena-website.svg?5s50kw#app-arena-website') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.aa-icon-slider-arrow-left {
+  &:before {
+    content: $aa-icon-slider-arrow-left;
+  }
+}
+.aa-icon-slider-arrow-right {
+  &:before {
+    content: $aa-icon-slider-arrow-right;
+  }
+}
 .aa-icon-arrow-right {
   &:before {
     content: $aa-icon-arrow-right;

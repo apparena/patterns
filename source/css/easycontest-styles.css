@@ -17,7 +17,6 @@
  ========================================================================== */
 /*------------------------------------*    #MIXINS
 \*------------------------------------*/
-@import url(../../../iconsets/app-arena-website/icomoon-font/style.css);
 @-webkit-keyframes pulse {
   0%, 80%, 100% {
     opacity: 0; }
@@ -8962,6 +8961,44 @@ input[type="button"].btn-block {
   color: #7A838D;
   background-color: #fff;
   border-color: #fff; }
+
+@font-face {
+  font-family: 'app-arena-website';
+  src: url("../iconsets/app-arena-website/icomoon-font/fonts/app-arena-website.eot?5s50kw");
+  src: url("../iconsets/app-arena-website/icomoon-font/fonts/app-arena-website.eot?5s50kw#iefix") format("embedded-opentype"), url("../iconsets/app-arena-website/icomoon-font/fonts/app-arena-website.ttf?5s50kw") format("truetype"), url("../iconsets/app-arena-website/icomoon-font/fonts/app-arena-website.woff?5s50kw") format("woff"), url("../iconsets/app-arena-website/icomoon-font/fonts/app-arena-website.svg?5s50kw#app-arena-website") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.aa-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app-arena-website' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.aa-icon-slider-arrow-left:before {
+  content: "⮜"; }
+
+.aa-icon-slider-arrow-right:before {
+  content: "⮞"; }
+
+.aa-icon-arrow-right:before {
+  content: "→"; }
+
+.aa-icon-arrow-right-circle:before {
+  content: "⇢"; }
+
+.aa-icon-Neue_Nutzerdaten_generieren_fill:before {
+  content: "📊"; }
+
+.aa-icon-aa-analytics:before {
+  content: "📈"; }
 
 /**
  * Pattern Dependencies

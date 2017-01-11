@@ -1,2 +1,4 @@
 
-@import "../../../iconsets/app-arena-website/icomoon-font/style.css";
+//@import "../../../iconsets/app-arena-website/icomoon-font/variables.scss";
+$icomoon-font-path: "../iconsets/app-arena-website/icomoon-font/fonts";
+@import "../../../iconsets/app-arena-website/icomoon-font/style.scss";

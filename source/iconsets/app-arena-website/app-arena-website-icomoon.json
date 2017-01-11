@@ -1,19 +1,35 @@
 {
   "metadata": {
     "name": "app-arena-website-icomoon",
-    "lastOpened": 1482012589988,
-    "created": 1482012548713
+    "lastOpened": 1484054644098,
+    "created": 1484054642461
   },
   "iconSets": [
     {
       "selection": [
+        {
+          "order": 21,
+          "id": 7,
+          "name": "slider-arrow-left",
+          "prevSize": 32,
+          "code": 11164,
+          "tempChar": ""
+        },
+        {
+          "order": 20,
+          "id": 6,
+          "name": "slider-arrow-right",
+          "prevSize": 32,
+          "code": 11166,
+          "tempChar": ""
+        },
         {
           "order": 19,
           "id": 5,
           "name": "arrow-right",
           "prevSize": 32,
           "code": 8594,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -29,7 +45,7 @@
           "name": "arrow-right-circle",
           "prevSize": 32,
           "code": 8674,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 15,
@@ -37,7 +53,7 @@
           "name": "Neue_Nutzerdaten_generieren_fill",
           "prevSize": 32,
           "code": 128202,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 5,
@@ -45,7 +61,7 @@
           "name": "aa-analytics",
           "prevSize": 32,
           "code": 128200,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": ""
         }
       ],
@@ -53,8 +69,8 @@
       "metadata": {
         "name": "App-Arena",
         "importSize": {
-          "width": 48,
-          "height": 48
+          "width": 33,
+          "height": 65
         },
         "designer": "Darius Brückers <d.brueckers@app-arena.com>",
         "license": "Copyright (C) App-Arena GmbH - All Rights Reserved",
@@ -63,6 +79,56 @@
       "height": 1024,
       "prevSize": 32,
       "icons": [
+        {
+          "id": 7,
+          "paths": [
+            "M4.763 501.681l496.918-496.918c6.35-6.35 15.876-6.35 22.226 0s6.35 15.876 0 22.226l-485.805 485.805 485.805 484.217c6.35 6.35 6.35 15.876 0 22.226-3.175 3.175-7.938 4.763-11.113 4.763s-7.938-1.588-11.113-4.763l-496.918-495.33c-6.35-6.35-6.35-15.876 0-22.226z"
+          ],
+          "attrs": [
+            {
+              "fill": "rgb(119, 117, 130)"
+            }
+          ],
+          "width": 529,
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 0,
+          "tags": [
+            "arrow-left"
+          ],
+          "colorPermutations": {
+            "10410410411191171301": [
+              {
+                "f": 1
+              }
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "paths": [
+            "M523.907 501.681l-496.918-496.918c-6.35-6.35-15.876-6.35-22.226 0s-6.35 15.876 0 22.226l485.805 485.805-485.805 484.217c-6.35 6.35-6.35 15.876 0 22.226 3.175 3.175 7.938 4.763 11.113 4.763s7.938-1.588 11.113-4.763l496.918-495.33c6.35-6.35 6.35-15.876 0-22.226z"
+          ],
+          "attrs": [
+            {
+              "fill": "rgb(119, 117, 130)"
+            }
+          ],
+          "width": 529,
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 0,
+          "tags": [
+            "arrow-right"
+          ],
+          "colorPermutations": {
+            "10410410411191171301": [
+              {
+                "f": 1
+              }
+            ]
+          }
+        },
         {
           "id": 5,
           "paths": [
@@ -13915,7 +13981,6 @@
       "invisible": true
     }
   ],
-  "uid": -1,
   "preferences": {
     "showGlyphs": true,
     "showCodes": true,
@@ -13972,5 +14037,5 @@
     "showGrid": false,
     "showLiga": true
   },
-  "time": 1482420882657
+  "uid": -1
 }

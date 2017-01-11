@@ -125,10 +125,11 @@ main#page-homepage {
   }
   hr {
     border-top: solid 2px $gray-lighter;
-    max-width: inherit;
+    width: 100%;
+    max-width: 100%;
     text-align: inherit;
-    margin-left: inherit;
-    margin-right: inherit;
+    margin-left: 0;
+    margin-right: 0;
   }
   label {
     font-size: 1.105rem;
@@ -173,15 +174,28 @@ section {
     }
   }
 }
+.bg-blue {
+  background-color: $brand-primary;
+  color: #ffffff;
+  .btn {
+    &.btn-primary {
+      @include button-variant($brand-primary, #ffffff, transparent);
+    }
+    &.btn-outline-primary {
+      @include button-outline-variant(#ffffff, $brand-primary);
+    }
+  }
+}
+.btn {
+  &.btn-outline-danger, &.btn-outline-info, &.btn-outline-primary, &.btn-outline-secondary, &.btn-outline-success, &.btn-outline-warning {
+    border: 1px solid;
+  }
+}
 
 // Testemonial Sliders
-
 $testemonial-height: 34rem;
 $testemonial-quote-width: 40/100;
 .testemonial-slider {
-  &.slick-slider {
-    margin-bottom: 0;
-  }
   .testemonial {
     .testemonial-screens {
       position: relative;
@@ -228,14 +242,24 @@ $testemonial-quote-width: 40/100;
         vertical-align: middle;
       }
     }
+    .testemonial-product-cta {
+      background-color: #fff;
+      padding: 1rem;
+      h3 {
+        font-size: 1.368rem;
+      }
+      @media (min-width: map_get($grid-breakpoints, 'lg')) {
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        border-radius: 1rem 1rem 0 0;
+      }
+    }
   }
 }
 .testemonial-slider-divider {
   width: 100%;
   background-color: $gray-lightest;
-  &.slick-slider {
-    margin-bottom: 0;
-  }
   .testemonial-slider-divider-arrow {
     margin-left: percentage($testemonial-quote-width) / 2;
     transform: translateX(-50%);
@@ -247,6 +271,9 @@ $testemonial-quote-width: 40/100;
   }
 }
 .testemonial-clients-slider {
+  &.slick-slider {
+    margin-bottom: 0;
+  }
   width: 100%;
   background-color: $gray-lightest;
   padding: 0 10%;
@@ -265,6 +292,9 @@ $testemonial-quote-width: 40/100;
       transition: filter 1s, opacity 1s;
       filter: grayscale(100%);
       opacity: 0.5;
+    }
+    &:hover img {
+      opacity: 1;
     }
     &.slick-current {
       img {

@@ -1,10 +1,9 @@
 {{> organisms-header }}
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <main role="main" id="page-homepage">
     <section id="section-homepage-header" class="text-center">
         <div class="container-fluid" style="position: relative;">
             <div class="row header-background-row">
-                <div class="col-md-10 offset-md-1 col-xs-12">
+                <div class="col-md-10 offset-md-1 col-12">
                     {{> atoms-header-background-svg }}
                 </div>
             </div>
@@ -15,12 +14,12 @@
                 </div>
             </div>
             <div class="row header-cta-row">
-                <div class="col-xs-12">
+                <div class="col-12">
                     <button type="button" class="btn btn-lg btn-primary">Jetzt starten</button>
                 </div>
             </div>
             <div class="row header-objects-row">
-                <div class="col-md-8 offset-md-2 col-xs-12">
+                <div class="col-md-8 offset-md-2 col-12">
                     {{> atoms-header-objects-svg }}
                 </div>
             </div>
@@ -59,6 +58,7 @@
                     </p>
                 </div>
                 <script src="/js/vendor/matchHeight/jquery.matchHeight-min.js"></script>
+                <script src="/js/vendor/slick-carousel/slick/slick.js"></script>
                 <script>
                     $(function () {
                         var $uspsRow = $('#section-homepage-usps');
@@ -148,7 +148,7 @@
     <section id="section-homepage-services" class="section-dark section-divider-bottom text-center">
         <div class="container-fluid container-fluid-90">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-12">
                     <hr class="center">
                     <h2>Unsere Services.</h2>
                 </div>
@@ -254,13 +254,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-12">
                     <button type="button" class="btn btn-primary js-more-services"><span class="aa-icon aa-icon-arrow-right"></span> Nicht genug?</button>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section-homepage-testemonials" class="no-margin-bottom">
+    <section id="section-homepage-testemonials" class="no-margin-bottom no-padding-bottom">
         <script>
             $(document).ready(function() {
                 $('.testemonial-slider').slick({
@@ -278,7 +278,7 @@
                 $('.testemonial-clients-slider').slick({
                     slidesToShow: 5,
                     slidesToScroll: 1,
-                    arrows: true,
+                    arrows: false,
                     fade: false,
                     infinite: true,
                     asNavFor: '.testemonial-slider',
@@ -335,6 +335,10 @@
                         </footer>
                     </blockquote>
                 </div>
+                <div class="testemonial-product-cta text-center">
+                    <h3>App-Arena Adventskalender</h3>
+                    <button type="button" class="btn btn-lg btn-success">Jetzt testen!</button>
+                </div>
             </div>
             <div class="testemonial">
                 <div class="testemonial-screens">
@@ -351,6 +355,10 @@
                         </footer>
                     </blockquote>
                 </div>
+                <div class="testemonial-product-cta text-center">
+                    <h3>2App-Arena Adventskalender</h3>
+                    <button type="button" class="btn btn-lg btn-success">Jetzt testen!</button>
+                </div>
             </div>
             <div class="testemonial">
                 <div class="testemonial-screens">
@@ -366,6 +374,51 @@
                             <p>Senior Manager</p>
                         </footer>
                     </blockquote>
+                </div>
+                <div class="testemonial-product-cta text-center">
+                    <h3>3App-Arena Adventskalender</h3>
+                    <button type="button" class="btn btn-lg btn-success">Jetzt testen!</button>
+                </div>
+            </div>
+            <div class="testemonial">
+                <div class="testemonial-screens">
+                    <img class="testemonial-screen-browser" src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
+                    <img class="testemonial-screen-mobile" src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
+                </div>
+                <div class="testemonial-quote text-center">
+                    <blockquote>
+                        <p>“ 4Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit. ”</p>
+                        <hr class="center">
+                        <footer>
+                            <p>Thorsten Klages</p>
+                            <p>Senior Manager</p>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="testemonial-product-cta text-center">
+                    <h3>4App-Arena Adventskalender</h3>
+                    <button type="button" class="btn btn-lg btn-success">Jetzt testen!</button>
+                </div>
+            </div>
+            <div class="testemonial">
+                <div class="testemonial-screens">
+                    <img class="testemonial-screen-browser" src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
+                    <img class="testemonial-screen-mobile" src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
+                </div>
+                <div class="testemonial-quote text-center">
+                    <blockquote>
+                        <p>“ 5Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit. ”</p>
+                        <hr class="center">
+                        <footer>
+                            <p>Thorsten Klages</p>
+                            <p>Senior Manager</p>
+                            <button type="button" class="btn btn btn-outline-primary">Mehr erfahren</button>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="testemonial-product-cta text-center">
+                    <h3>5App-Arena Adventskalender</h3>
+                    <button type="button" class="btn btn-lg btn-success">Jetzt testen!</button>
                 </div>
             </div>
         </div>
@@ -393,25 +446,16 @@
                 <img src="/images/sample/aa-website/m2beaute-logo.png">
             </div>
         </div>
-        <!--
-        <div class="row testemonial">
-            <div class="col-md-8 push-md-4">
-                <img src="/images/sample/aa-website/browser-template_adventskalender-2016.png">
-                <img src="/images/sample/aa-website/mobile-template_adventskalender-2016.png">
-                <button type="button" class="btn btn-success">Jetzt testen</button>
-            </div>
-            <div class="col-md-4 pull-md-8 text-center">
-                <blockquote>
-                    <p>“ Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit. ”</p>
-                    <hr class="center">
-                    <footer>
-                        <p>Thorsten Klages</p>
-                        <p>Senior Manager</p>
-                    </footer>
-                </blockquote>
+    </section>
+    <section id="section-homepage-footer-cto" class="section-footer-cto bg-blue text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Interresse geweckt?</h2>
+                    <button type="button" class="btn btn-lg btn-outline-primary"><span class="aa-icon aa-icon-arrow-right"></span> Jetzt registrieren</button>
+                </div>
             </div>
         </div>
-        -->
     </section>
     <script>
         /* show more services */
@@ -432,209 +476,8 @@
     </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- old stuff -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 mt-2 text-center headline">
-                <h1>HEADLINE </h1>
-            </div>
-            <div class="col-md-8 col-xs-12 text-center subline offset-md-2">
-                <p>Subline - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
-                    tincidunt, ut
-                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
-                </p>
-            </div>
-            <div class="col-md-2 col-xs-12 text-center">
-                {{> atoms-button }}
-            </div>
-        </div>
-        <div class="row mt-2 text-center">
-            <div class="col-xs-12">
-                <ul class="fa-ul row">
-                    <li class="col-md-3 col-xs-6" id="usp-1"><i class="fa fa-check" aria-hidden="true"></i> USP 1</li>
-                    <li class="col-md-3 col-xs-6" id="usp-2"><i class="fa fa-check" aria-hidden="true"></i> USP 2</li>
-                    <li class="col-md-3 col-xs-6" id="usp-3"><i class="fa fa-check" aria-hidden="true"></i> USP 3</li>
-                    <li class="col-md-3 col-xs-6" id="usp-4"><i class="fa fa-check" aria-hidden="true"></i> USP 4</li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <h2>Das Performance Team</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
-                        tincidunt, ut
-                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
-                </div>
-                <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-6 mb-1 text-center hidden-sm-down"><img class="img-fluid"
-                                                                           src="../../images/fpo_16x9.png" alt=""></div>
-                <div class="col-md-6">
-                    <h2>Web-Applikation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
-                        tincidunt, ut
-                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
-                </div>
-                <div class="col-md-6 mb-1 text-center hidden-md-up"><img class="img-fluid"
-                                                                         src="../../images/fpo_16x9.png" alt=""></div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <h2>Von DIY bis Full-Service Enterprise</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
-                        tincidunt, ut
-                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
-                </div>
-                <div class="col-md-6 text-center"><img class="img-fluid" src="../../images/fpo_16x9.png" alt=""></div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-6 mb-1 text-center hidden-sm-down"><img class="img-fluid"
-                                                                           src="../../images/fpo_16x9.png" alt=""></div>
-                <div class="col-md-6">
-                    <h2>Experten- und Strategie-Beratung</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
-                        tincidunt, ut
-                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
-                </div>
-                <div class="col-md-6 mb-1 text-center hidden-md-up"><img class="img-fluid"
-                                                                         src="../../images/fpo_16x9.png" alt=""></div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1 class="title">Produkt des Monats im X: XXX</h1>
-                <div class="row hidden-xs">
-                    <div class="col-md-12">
-                        <p class="desc">15% ...</p>
-                    </div>
-                </div>
-                <div class="button-container">
-                    <a href="https://v25-stage.app-arena.com/apps/create?templateId=299&templateName=Adventskalender%20Demo"
-                       target="_blank">
-                        {{> atoms-button }}
-                    </a>
-                </div>
-                <div class="image-pdm">
-                    <img src="https://aa-ads.s3.amazonaws.com/App-Arena%20Startseite/laptop_wireframe.png"
-                         class="img-fluid mx-auto" alt="Produkt des Monats XX">
-                </div>
-            </div>
-        </div>
-        <hr>
-        <h3 style="text-align:center">Kunden-Slider</h3>
-        {{#sliders.customerSlider}}
-            {{> organisms-slider }}
-        {{/sliders.customerSlider}}
-        <hr>
-        <img class="img-fluid mx-auto mb-2 mt-2 d-block" src="../../images/fpo_16x9.png" alt="">
-        <h3 style="text-align:center">"Article Headline"</h3>
-        <div class="col-xs-8 text-center offset-xs-2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
-                tincidunt, ut
-                varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
-            </p>
-        </div>
-        <hr>
-        <h3 style="text-align:center">Feedback-Slider</h3>
-        {{#sliders.feedbackSlider}}
-            {{> organisms-slider }}
-        {{/sliders.feedbackSlider}}
-        <hr>
-        <h3 style="text-align:center">Next-Events Headline</h3>
-        <div class="row ml-3 mr-3">
-            <div class="col-md-6 event1 mt-1">
-                <h4>Event 1 Headline</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
-                    tincidunt, ut
-                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
-                </p>
-                <div class="button-container mb-2">
-                    {{> atoms-button }}
-                </div>
-                <div class="event-img mb-2">
-                    <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
-                </div>
-            </div>
-            <div class="col-md-6 event2 mt-1">
-                <div class="event-img hidden-sm-down">
-                    <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
-                </div>
-                <h4 clasS="mt-2">Event 2 Headline</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
-                    tincidunt, ut
-                    varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.
-                </p>
-                <div class="event-img hidden-md-up mb-1">
-                    <img class='img-fluid' src='../../images/bootstrapthumb.jpg'>
-                </div>
-                <div class="button-container">
-                    {{> atoms-button }}
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row mb-2 mt-2" id="newsletter-widget">
-            <div class="col-md-6 col-xs-11 text-center pl-3">
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas orci et nulla
-                        tincidunt, ut
-                        varius velit molestie.Ut dui urna, fringilla eu egestas vitae, consectetur non eros.</p>
-                </div>
-            </div>
-            <div class="col-md-6 text-md-left text-center">
-                <div>
-                    {{> atoms-text-field }}
-                </div>
-            </div>
-            <div class="col-md-12 text-center">
-                <div class="mb-1 mt-1 row" id="nl_types">
-                    <div class="col-md-2 offset-md-2 col-xs-6">
-                        {{> atoms-checkbox }} Lorem ipsum
-                    </div>
-                    <div class="col-md-2 col-xs-6">
-                        {{> atoms-checkbox }} Lorem ipsum
-                    </div>
-                    <div class="col-md-2 col-xs-6">
-                        {{> atoms-checkbox }} Lorem ipsum
-                    </div>
-                    <div class="col-md-2 col-xs-6">
-                        {{> atoms-checkbox }} Lorem ipsum
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 nl-signup-btn text-center float-xs-none mx-auto">
-                {{> atoms-button }}
-            </div>
-        </div>
-        <div class="push">
-        </div>
-    </div>
+    <!-- old stuff -->
+    <!--<link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">-->
 </main>
 {{> organisms-footer }}
-

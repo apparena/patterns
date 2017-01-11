@@ -13,6 +13,8 @@
 		el.innerHTML = '<span style="font-family: \'app-arena-website\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'aa-icon-slider-arrow-left': '&#x2b9c;',
+		'aa-icon-slider-arrow-right': '&#x2b9e;',
 		'aa-icon-arrow-right': '&#x2192;',
 		'aa-icon-arrow-right-circle': '&#x21e2;',
 		'aa-icon-Neue_Nutzerdaten_generieren_fill': '&#x1f4ca;',

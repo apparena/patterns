@@ -15,4 +15,6 @@ $cdn-base-url: "//patterns.local/"; // with trailing slash
 @import "scss/stores/website-wordpress/abstracts/variables_bootstrap";
 @import "app-arena-styles.scss";
 
+@import "scss/stores/website-wordpress/slick";
+@import "scss/stores/website-wordpress/slick-theme";
 @import "scss/stores/website-wordpress/overwrites";
