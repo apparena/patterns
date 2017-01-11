@@ -72,7 +72,7 @@ p {
 
 // Pages
 main#page-homepage {
-  section#section-homepage-header {
+  section.section-homepage-header {
     z-index: 1; // for SVG overlaying the next section
     .header-background-row {
       position: absolute;
@@ -88,7 +88,7 @@ main#page-homepage {
       //transform: translateY(20px);
     }
   }
-  section#section-homepage-about {
+  section.section-about {
     padding-top: 0%;
   }
 }
@@ -144,11 +144,11 @@ section {
   margin-bottom: 50px;
   position: relative;
   overflow: hidden;
-  &#section-homepage-productofthemonth {
+  &.section-productofthemonth {
     min-height: 34rem;
     margin-bottom: 0;
   }
-  &#section-homepage-header {
+  &.section-homepage-header {
     margin-bottom: -20px;
     padding-bottom: 0;
     overflow: visible;

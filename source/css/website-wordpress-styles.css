@@ -11399,18 +11399,18 @@ h1 .strong, h1 strong, h1 b {
     width: 7rem;
     height: 7rem; }
 
-main#page-homepage section#section-homepage-header {
+main#page-homepage section.section-homepage-header {
   z-index: 1; }
-  main#page-homepage section#section-homepage-header .header-background-row {
+  main#page-homepage section.section-homepage-header .header-background-row {
     position: absolute;
     bottom: 60px;
     right: 15px;
     left: 15px; }
-  main#page-homepage section#section-homepage-header .header-heading-row {
+  main#page-homepage section.section-homepage-header .header-heading-row {
     padding-top: 60px;
     padding-bottom: 50px; }
 
-main#page-homepage section#section-homepage-about {
+main#page-homepage section.section-about {
   padding-top: 0%; }
 
 .usp-icon, .service-icon {
@@ -11453,10 +11453,10 @@ section {
   margin-bottom: 50px;
   position: relative;
   overflow: hidden; }
-  section#section-homepage-productofthemonth {
+  section.section-productofthemonth {
     min-height: 34rem;
     margin-bottom: 0; }
-  section#section-homepage-header {
+  section.section-homepage-header {
     margin-bottom: -20px;
     padding-bottom: 0;
     overflow: visible; }
