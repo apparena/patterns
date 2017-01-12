@@ -1,7 +1,5 @@
 {
-  "usp": {
-    "title": "Flexible Laufzeitverlängerung",
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
-    "href": "#"
-  }
+  "title": "Flexible Laufzeitverlängerung",
+  "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+  "href": "#"
 }

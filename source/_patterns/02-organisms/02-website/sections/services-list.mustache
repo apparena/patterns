@@ -8,13 +8,15 @@
             </div>
         </div>
         <div class="row services-row">
-            {{#items}}
-                <div class="col-md-6 col-xl-3">
-                    <div class="services-col">
-                        {{> service}}
+            {{#services-list.items}}
+                {{#service}}
+                    <div class="col-md-6 col-xl-3">
+                        <div class="services-col">
+                            {{> 01-molecules/02-website/service}}
+                        </div>
                     </div>
-                </div>
-            {{/items}}
+                {{/service}}
+            {{/services-list.items}}
             <div class="col-md-6 col-xl-3">
                 <div class="services-col">
                     <span class="service-icon aa-icon aa-icon-aa-analytics"></span>

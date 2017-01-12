@@ -1,11 +1,12 @@
+{{#usp-list }}
 <section class="section-dark section-usp-list section-divider-bottom text-center">
     <div class="container"> <!-- TODO: correct container -->
         <div class="row homepage-usps-row">
-            {{#usp-list.items }}
+            {{#items }}
                 <div class="col-md-6 col-lg-3">
-                    {{> molecules-usp }}
+                    {{> 01-molecules/02-website/usp }}
                 </div>
-            {{/usp-list.items}}
+            {{/items}}
             <script src="/js/vendor/matchHeight/jquery.matchHeight-min.js"></script>
             <script>
                 $(function () {
@@ -18,3 +19,4 @@
         </div>
     </div>
 </section>
+#{{/usp-list}}
