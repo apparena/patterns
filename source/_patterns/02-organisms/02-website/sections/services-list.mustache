@@ -1,142 +1,50 @@
-
-<section class="section-services-list section-dark section-divider-bottom text-center">
-    <div class="container-fluid container-fluid-90">
-        <div class="row">
-            <div class="col-12">
-                <hr class="center">
-                <h2>Unsere Services.</h2>
+{{#services-list}}
+    <section class="section-services-list section-dark section-divider-bottom text-center">
+        <div class="container-fluid container-fluid-90">
+            <div class="row">
+                <div class="col-12">
+                    <hr class="center">
+                    <h2>{{headline}}</h2>
+                </div>
             </div>
-        </div>
-        <div class="row services-row">
-            {{#services-list.items}}
-                {{#service}}
-                    <div class="col-md-6 col-xl-3">
-                        <div class="services-col">
-                            {{> 01-molecules/02-website/service}}
-                        </div>
+            <div class="row services-row">
+                {{#items}}
+                    {{> 01-molecules/02-website/service}}
+                {{/items}}
+            </div>
+            <div class="row services-row services-row-more">
+                {{#items-more}}
+                    {{> 01-molecules/02-website/service}}
+                {{/items-more}}
+            </div>
+            {{#more-btn-text}}
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary js-more-services"><span
+                                class="aa-icon aa-icon-arrow-right"></span> {{more-btn-text}}
+                        </button>
                     </div>
-                {{/service}}
-            {{/services-list.items}}
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
                 </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
+            {{/more-btn-text}}
         </div>
-        <div class="row services-more-row" style="display: none;">
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="services-col">
-                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
-                    <h4 class="text-uppercase">Leadgenerierung</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                    <p class="no-margin-bottom">Mehr erfahren</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-primary js-more-services"><span class="aa-icon aa-icon-arrow-right"></span> Nicht genug?</button>
-            </div>
-        </div>
-    </div>
-</section>
-<script>
-    /* show more services */
-    /* untested */
-    $(function () {
-        var $$moreServicesBtns = $('section.js-more-services');
-        $$moreServicesBtns.each(function() {
-            var $btn = $(this);
-            $btn.on('click', function() {
-                $btn.parent('section').find('.services-more-row').slideDown({
-                    complete: function() {
-                        $btn.fadeOut();
-                    }
+    </section>
+    {{#more-btn-text}}
+        <script>
+            /* show more services */
+            /* untested */
+            $(function () {
+                var $$serviceLists = $('section.section-services-list');
+                $$serviceLists.each(function() {
+                    var $serviceList = $(this);
+                    var $moreServicesBtn = $serviceList.find('.js-more-services');
+                    var $moreServiceRow = $serviceList.find('.services-row-more');
+                    $moreServiceRow.hide();
+                    $moreServicesBtn.on('click', function(e) {
+                        $moreServiceRow.slideDown();
+                        $moreServicesBtn.fadeOut();
+                    });
                 });
             });
-        });
-    });
-</script>
+        </script>
+    {{/more-btn-text}}
+{{/services-list}}

@@ -1,3 +1,17 @@
 {
-    "logo": "/images/sample/aa-website/universal-music-group-logo.png"
+    "testemonial": {
+        "screens": {
+            "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+            "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+        },
+        "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+        "author": {
+            "name:": "Thorsten Klages",
+            "description": "Senior Manager"
+        },
+        "product": {
+            "name": "App-Arena Adventskalender"
+        },
+        "logo": "/images/sample/aa-website/universal-music-group-logo.png"
+    }
 }

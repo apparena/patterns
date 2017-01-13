@@ -2,46 +2,140 @@
     "testemonial-slider": {
         "items": [
             {
-                "author": {
-                    "name:": "name1",
-                    "description": "desc1"
-                },
-                "logo": "/images/sample/aa-website/universal-music-group-logo.png"
+                "testemonial": {
+                    "screens": {
+                        "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                        "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                    },
+                    "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                    "author": {
+                        "name": "Stephanie S. Walsh",
+                        "description": "Senior Manager"
+                    },
+                    "product": {
+                        "name": "App-Arena Adventskalender"
+                    },
+                    "logo": "/images/sample/aa-website/ergo-logo.png"
+                }
             },
             {
-                "author": {
-                    "name:": "name2",
-                    "description": "desc2"
-                },
-                "logo": "/images/sample/aa-website/ergo-logo.png"
+                "testemonial": {
+                    "screens": {
+                        "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                        "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                    },
+                    "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                    "author": {
+                        "name": "Gunda Zellweger",
+                        "description": "Senior Manager"
+                    },
+                    "product": {
+                        "name": "App-Arena Adventskalender"
+                    },
+                    "logo": "/images/sample/aa-website/eventim-logo.png"
+                }
             },
             {
-                "author": {
-                    "name:": "name3",
-                    "description": "desc3"
-                },
-                "logo": "/images/sample/aa-website/eventim-logo.png"
+                "testemonial": {
+                    "screens": {
+                        "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                        "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                    },
+                    "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                    "author": {
+                        "name": "Tilo Holtzer",
+                        "description": "Senior Manager"
+                    },
+                    "product": {
+                        "name": "App-Arena Adventskalender"
+                    },
+                    "logo": "/images/sample/aa-website/m2beaute-logo.png"
+                }
             },
             {
-                "author": {
-                    "name:": "Thorsten Klages",
-                    "description": "Senior Manager"
-                },
-                "logo": "/images/sample/aa-website/m2beaute-logo.png"
+                "testemonial": {
+                    "screens": {
+                        "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                        "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                    },
+                    "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                    "author": {
+                        "name": "Brünhild Papke",
+                        "description": "Senior Manager"
+                    },
+                    "product": {
+                        "name": "App-Arena Adventskalender"
+                    },
+                    "logo": "/images/sample/aa-website/universal-music-group-logo.png"
+                }
             },
             {
-                "author": {
-                    "name:": "Thorsten Klages",
-                    "description": "Senior Manager"
-                },
-                "logo": "/images/sample/aa-website/ergo-logo.png"
+                "testemonial": {
+                    "screens": {
+                        "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                        "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                    },
+                    "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                    "author": {
+                        "name": "Marcella Oliver",
+                        "description": "Senior Manager"
+                    },
+                    "product": {
+                        "name": "App-Arena Adventskalender"
+                    },
+                    "logo": "/images/sample/aa-website/ergo-logo.png"
+                }
             },
             {
-                "author": {
-                    "name:": "Thorsten Klages",
-                    "description": "Senior Manager"
-                },
-                "logo": "/images/sample/aa-website/ergo-logo.png"
+                "testemonial": {
+                    "screens": {
+                        "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                        "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                    },
+                    "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                    "author": {
+                        "name": "Kilian Hirsch",
+                        "description": "Senior Manager"
+                    },
+                    "product": {
+                        "name": "App-Arena Adventskalender"
+                    },
+                    "logo": "/images/sample/aa-website/eventim-logo.png"
+                }
+            },
+            {
+                "testemonial": {
+                    "screens": {
+                        "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                        "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                    },
+                    "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                    "author": {
+                        "name": "Thorsten Klages",
+                        "description": "Senior Manager"
+                    },
+                    "product": {
+                        "name": "App-Arena Adventskalender"
+                    },
+                    "logo": "/images/sample/aa-website/m2beaute-logo.png"
+                }
+            },
+            {
+                "testemonial": {
+                    "screens": {
+                        "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                        "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                    },
+                    "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                    "author": {
+                        "name": "Annett Eilerts",
+                        "description": "Senior Manager"
+                    },
+                    "product": {
+                        "name": "App-Arena Adventskalender"
+                    },
+                    "logo": "/images/sample/aa-website/universal-music-group-logo.png"
+                }
             }
         ]
     }

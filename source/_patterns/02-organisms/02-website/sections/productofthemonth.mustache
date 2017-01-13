@@ -1,24 +1,23 @@
-<section class="section-productofthemonth">
-    <div class="container">
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="font-weight-regular">{{h2}}</h2>
-                <h3 class="font-weight-light">{{h3}}</h3>
-                <!-- begin editor-content -->
-                {{content}}
-                <!-- end editor-content -->
-                <button type="button" class="btn btn-lg btn-success">Jetzt testen!</button>
-            </div>
-            <div class="col-md-6">
-                <div class="product-screen-wrapper">
-                    <button type="button" class="btn btn-success btn-round btn-round-md btn-cta-topleft">Jetzt <br>kostenlos
-                        <br>testen
-                    </button>
-                    <img class="screen-browser" src="{{product.screens.browser}}">
-                    <img class="screen-mobile" src="{{product.screens.mobile}}">
+{{#productofthemonth}}
+    <section class="section-productofthemonth">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="font-weight-regular">{{headline}}</h2>
+                    <h3 class="font-weight-light">{{subheadline}}</h3>
+                    {{{description-html}}}
+                    <button type="button" class="btn btn-lg btn-success">{{btn-text}}</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-screen-wrapper">
+                        <button type="button"
+                                class="btn btn-success btn-round btn-round-md btn-cta-topleft">{{btn-cta-topleft-text}}</button>
+                        <img class="screen-browser" src="{{cdn-base-url}}{{product.screens.browser}}">
+                        <img class="screen-mobile" src="{{cdn-base-url}}{{product.screens.mobile}}">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+{{/productofthemonth}}
