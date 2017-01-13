@@ -1,0 +1,97 @@
+section.section-homepage-header {
+    margin-bottom: -20px;
+    padding-bottom: 0;
+    overflow: visible;
+    z-index: 1; // for SVG overlaying the next section
+    .header-background-row {
+        position: absolute;
+        bottom: 60px;
+        right: 15px;
+        left: 15px;
+    }
+    .header-heading-row {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .header-objects-row {
+        //transform: translateY(20px);
+    }
+}
+
+
+/*
+svg#header-background #background #dynamic #row1 {
+  animation: headerBackgroundAnimationRow1 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+svg#header-background #background #dynamic #row2 {
+  animation: headerBackgroundAnimationRow2 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+svg#header-background #background #dynamic #row3 {
+  animation: headerBackgroundAnimationRow3 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+svg#header-background #background #dynamic #row4 {
+  animation: headerBackgroundAnimationRow4 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+@keyframes headerBackgroundAnimationRow1 {
+  from {
+    transform: translateX(-9%);
+  }
+  to {
+    transform: translateX(13%);
+  }
+}
+@keyframes headerBackgroundAnimationRow2 {
+  from {
+    transform: translateX(-9%);
+  }
+  to {
+    transform: translateX(5%);
+  }
+}
+@keyframes headerBackgroundAnimationRow3 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(4%);
+  }
+}
+@keyframes headerBackgroundAnimationRow4 {
+  from {
+    transform: translateX(-11%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+*/
+
+// Grid Columns
+/*
+@media(min-width: 992px){
+  .col5{
+    width: 20%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+*/

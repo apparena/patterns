@@ -1,25 +1,35 @@
 {
-  "buttons": {
-    "btn_demo":{
-        "btnText":  "Jetzt kostenlos testen!",
-        "btnTitle": "Mit dem Klick auf diesen Button erhalten Sie eine kostenlose Demo.",
-        "btnClass": "btn-success"
-    },
-    "btn_read-more":{
-      "btnText":  "Mehr lesen",
-      "btnTitle": "Mit dem Klick auf diesen Button erhalten Sie weitere Informationen.",
-      "btnClass": "btn-primary"
-    },
-    "btn_signup_event":{
-      "btnText":  "Jetzt anmelden",
-      "btnTitle": "Mit dem Klick auf diesen Button melden Sie sich zum Event an.",
-      "btnClass": "btn-success"
-    },
-    "btn_signup_nl":{
-      "btnText":  "Abonnieren",
-      "btnTitle": "Mit dem Klick auf diesen Button melden Sie sich zu unserem Newsletter an.",
-      "btnClass": "btn-success"
-    }
+  "cdn-base-url": "//styleguide.app-arena.com",
+  "usp-list": {
+    "items": [
+      {
+        "title": "Flexible Laufzeitverlängerung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+        "href": "#",
+        "aa-icon": "aa-icon-aa-analytics",
+        "__read-more": "Mehr erfahren"
+      },
+      {
+        "title": "Stark serviceorientiert",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+        "href": "#",
+        "aa-icon": "aa-icon-aa-analytics",
+        "__read-more": "Mehr erfahren"
+      },
+      {
+        "title": "Flexible Laufzeitverlängerung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+        "href": "#",
+        "aa-icon": "aa-icon-aa-analytics",
+        "__read-more": "Mehr erfahren"
+      },
+      {
+        "title": "Stark serviceorientiert",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+        "href": "#",
+        "aa-icon": "aa-icon-aa-analytics",
+        "__read-more": "Mehr erfahren"
+      }
+    ]
   }
 }
-

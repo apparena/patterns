@@ -1,0 +1,28 @@
+section.section-productofthemonth {
+  min-height: 34rem;
+  margin-bottom: 0;
+  .product-screen-wrapper {
+    position: relative;
+    height: 29rem;
+    .btn.btn-cta-topleft {
+      position: absolute;
+      text-transform: uppercase;
+      top: 2.5rem;
+      left: 7rem;
+      z-index: 3;
+    }
+    img {
+      position: absolute;
+      &.screen-browser {
+        z-index: 1;
+        top: 0;
+        left: 8rem;
+      }
+      &.screen-mobile {
+        z-index: 2;
+        top: 9rem;
+        left: 1rem;
+      }
+    }
+  }
+}

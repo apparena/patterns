@@ -1,5 +1,5 @@
 {
-  "name": "App-Arena Patterns",
+  "name": "app-arena-patterns",
   "version": "1.0.0",
   "authors": [
     "Sebastian Buckpesch <s.buckpesch@app-arena.com>"
@@ -26,6 +26,8 @@
     "bootstrap": "^4.0",
     "font-awesome": "^4.0",
     "jquery": "^2.0.0",
-    "tether": "^1.3.3"
+    "tether": "^1.3.3",
+    "slick-carousel": "^1.6.0",
+    "jquery-match-height": "^0"
   }
 }

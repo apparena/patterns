@@ -8,6 +8,7 @@ import Card from "./01-molecules/card/card";
 import CardsList from "./02-organisms/lists/cards-list";
 import Checkbox from "./00-atoms/forms/checkbox";
 import Col from "./00-atoms/grid/col";
+import Container from "./00-atoms/grid/container";
 import Dropdown from "./01-molecules/dropdown/dropdown";
 import FilterBar from "./01-molecules/01-manager/filter-bar/filter-bar";
 import Form from "./02-organisms/forms/form";
@@ -56,6 +57,7 @@ export {
     CardsList,
     Checkbox,
     Col,
+    Container,
     Dropdown,
     FilterBar,
     Form,

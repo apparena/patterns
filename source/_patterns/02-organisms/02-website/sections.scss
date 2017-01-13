@@ -1,0 +1,28 @@
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  &.section-dark {
+    background-color: $gray-lightest;
+  }
+  &.section-divider-bottom {
+    overflow: visible;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-size: 100px 100px;
+      width: 100px;
+      height: 100px;
+      /*bottom: 0; // with position relative */
+      left: 50%;
+      transform: translateX(-50%);
+      /* png fallback, see http://pauginer.com/post/36614680636/invisible-gradient-technique */
+      $divider-path: "images/logo_ringe_bg_section_divider";
+      background-image: url(#{$cdn-base-url}/#{$divider-path}.png);
+      background-image: linear-gradient(transparent, transparent), url(#{$cdn-base-url}/#{$divider-path}.svg);
+    }
+  }
+}

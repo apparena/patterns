@@ -1,0 +1,85 @@
+{{#testemonial-slider}}
+    <section class="section-testemonial-slider no-margin-bottom no-padding-bottom">
+        <div class="testemonial-slider">
+            {{#items}}
+                {{> 01-molecules/02-website/testemonial }}
+            {{/items}}
+        </div>
+        <div class="testemonial-slider-divider">
+            <div class="testemonial-slider-divider-arrow"></div>
+        </div>
+        <div class="testemonial-clients-slider">
+            {{#items}}
+                {{> 00-atoms/02-website/testemonial-client }}
+            {{/items}}
+        </div>
+    </section>
+    <script src="{{cdn-base-url}}/js/vendor/slick-carousel/slick/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.testemonial-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: '.testemonial-clients-slider',
+                useCSS: true,
+                cssEase: 'ease',
+                infinite: true,
+                lazyLoad: 'ondemand',
+                cssTransitions: true,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                ]
+            });
+            $('.testemonial-clients-slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: false,
+                infinite: true,
+                asNavFor: '.testemonial-slider',
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true,
+                useCSS: true,
+                initialSlide: 0,
+                draggable: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                /*variableWidths: false,*/
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 5
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+{{/testemonial-slider}}

@@ -1,0 +1,19 @@
+.aa-icon-slider-arrow-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2b9c;');
+}
+.aa-icon-slider-arrow-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2b9e;');
+}
+.aa-icon-arrow-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2192;');
+}
+.aa-icon-arrow-right-circle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x21e2;');
+}
+.aa-icon-Neue_Nutzerdaten_generieren_fill {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f4ca;');
+}
+.aa-icon-aa-analytics {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f4c8;');
+}
+
