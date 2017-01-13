@@ -1,0 +1,189 @@
+.checkBoxFix {
+  > div {
+    display: block !important;
+
+    div[class="react-toggle-track"] {
+      background-color: #dee2e8 !important;
+    }
+
+    div[class="react-toggle-thumb"] {
+      border-color: #8b9497 !important;
+    }
+  }
+}
+
+.price_table {
+  background-color: #f6f8fa;
+  width: 100%;
+  height: 480px;
+  display: table;
+
+  .selectorTable {
+    display: table;
+    width: 100%;
+
+    .selectorTableRow {
+      display: table-row;
+
+      .selectorTableCellSelected {
+        color: #2c82c9;
+      }
+
+      .selectorTableCellLeft {
+        display: table-cell;
+        width: 50%;
+        text-align: right;
+        vertical-align: middle;
+        padding: 0 1rem;
+      }
+
+      .selectorTableCellMiddle {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .selectorTableCellRight {
+        display: table-cell;
+        width: 50%;
+        text-align: left;
+        vertical-align: middle;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  .priceTableHeader {
+    text-align: center;
+    font-size: 19pt;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    hr.blueDivider {
+      border: 2px solid #2c82c9;
+      width: 25%
+    }
+  }
+
+  .price_container {
+    width: 90%;
+    margin: 40px auto;
+
+    .price_table_element {
+      background-color: #fff;
+      text-align: center;
+      height: 600px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      font-size: 11pt;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+      }
+
+      @media (min-width: 1200px) {
+        .tag {
+          float: right;
+          margin: 15px 30px 0 0;
+          font-size: 90%;
+        }
+        .pseudotag {
+          float: right;
+          margin: 15px 30px 0 0;
+          font-size: 90%;
+          visibility: hidden;
+        }
+      }
+
+      .infoContainer {
+        width: 90%;
+        margin: auto;
+      }
+
+      .horizontalDividerShort {
+        width: 33%;
+        border-color: #f4f2f0;
+      }
+
+      .horizontalDividerLong {
+        width: 95%;
+        border-color: #f4f2f0;
+      }
+
+      p {
+        margin-bottom: 0.6rem;
+      }
+
+      .purchase_button {
+        font-size: 14pt;
+        background-color: #2c82c9;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        width: 60%;
+        color: #fff;
+        border: none;
+        height: 33px;
+        position: absolute;
+        left: 20%;
+        bottom: -10px;
+        cursor: pointer;
+        -webkit-box-shadow: 0 0 10px 1px rgba(44,130,201,0.5);
+        -moz-box-shadow:    0 0 10px 1px rgba(44,130,201,0.5);
+        box-shadow:         0 0 10px 1px rgba(44,130,201,0.5);
+
+        &:focus {
+          outline: none;
+        }
+
+        &:active {
+          background-color: darken(#2c82c9, 15%);
+          -webkit-box-shadow: inset -5px 5px 8px -2px rgba(6,18,28,0.5);
+          -moz-box-shadow: inset -5px 5px 8px -2px rgba(6,18,28,0.5);
+          box-shadow: inset -5px 5px 8px -2px rgba(6,18,28,0.5);
+        }
+      }
+    }
+  }
+
+  .customPackage {
+    text-align: center;
+    margin-bottom: 50px;
+
+    button {
+      font-size: 14pt;
+      background-color: #2c82c9;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      width: 60%;
+      color: #fff;
+      border: none;
+      height: 33px;
+      cursor: pointer;
+      -webkit-box-shadow: 0 0 10px 1px rgba(44,130,201,0.5);
+      -moz-box-shadow:    0 0 10px 1px rgba(44,130,201,0.5);
+      box-shadow:         0 0 10px 1px rgba(44,130,201,0.5);
+
+      &:focus {
+        outline: none;
+      }
+
+      &:active {
+        background-color: darken(#2c82c9, 15%);
+        -webkit-box-shadow: inset -5px 5px 8px -2px rgba(6,18,28,0.5);
+        -moz-box-shadow: inset -5px 5px 8px -2px rgba(6,18,28,0.5);
+        box-shadow: inset -5px 5px 8px -2px rgba(6,18,28,0.5);
+      }
+    }
+  }
+
+}

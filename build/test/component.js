@@ -1,6 +1,6 @@
 import React from "react";
 import {render} from "react-dom";
-import {ReactComponent, TagInput} from "../../source/_patterns/index";
+import {ReactComponent, TagInput, PriceTable} from "../../source/_patterns/index";
 
 class Test extends ReactComponent {
     getInitState() {
@@ -15,12 +15,9 @@ class Test extends ReactComponent {
 
     render() {
         return (
-            <TagInput
-                multi
-                options={[]}
-                value={this.state.value}
-                onChange={::this.handleOnChange}
-            />
+            <div>
+                <PriceTable />
+            </div>
         );
     }
 }

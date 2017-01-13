@@ -29,6 +29,7 @@ import NavSecondaryGroup from "./02-organisms/navigation/nav-secondary-group";
 import Notification from "./01-molecules/messages/notification/notification";
 import Popover from "./01-molecules/popover/popover";
 import Portal from "./react-utils/portal";
+import PriceTable from "./02-organisms/price-table/price-table";
 import ProgressBar from "./01-molecules/progress-bar/progress-bar";
 import ProgressTracker from "./01-molecules/progress-tracker/progress-tracker";
 import ProgressTrackerStep from "./00-atoms/progress-tracker-step/progress-tracker-step";
@@ -43,7 +44,6 @@ import TableList from "./02-organisms/lists/table-list";
 import Tag from "./00-atoms/tag/tag";
 import TagInput from "./00-atoms/forms/tag-input";
 import Tooltip from "./01-molecules/tooltip/tooltip";
-
 
 export {
     Alert,
@@ -77,6 +77,7 @@ export {
     Notification,
     Popover,
     Portal,
+    PriceTable,
     ProgressBar,
     ProgressTracker,
     ProgressTrackerStep,
