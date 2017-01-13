@@ -3,6 +3,8 @@ import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./price-table.scss";
 import Tag from "../../00-atoms/tag/tag";
+import Col from "../../00-atoms/grid/col";
+import Row from "../../00-atoms/grid/row";
 
 export default class PriceTableElement extends ReactComponent {
     static propTypes = {
@@ -47,9 +49,9 @@ export default class PriceTableElement extends ReactComponent {
      */
     renderPopularTag() {
         return (
-            <div className="row">
-                <Tag type="success" className={styles.tag}>Beliebt</Tag>
-            </div>
+            <Row>
+                <Tag type="success" className={styles.tag}>BELIEBT</Tag>
+            </Row>
         );
     }
 
@@ -60,20 +62,20 @@ export default class PriceTableElement extends ReactComponent {
      */
     renderPseudoTag() {
         return (
-            <div className="row">
-                <Tag type="success" className={styles.pseudotag}>Beliebt</Tag>
-            </div>
+            <Row>
+                <Tag type="success" className={styles.pseudotag}>BELIEBT</Tag>
+            </Row>
         );
     }
 
     render() {
         return (
-            <div className="col-md-3">
+            <Col md="3">
                 <div className={cx(styles.price_table_element)}>
                     {this.props.isPopular ? this.renderPopularTag() : this.renderPseudoTag()}
                     <img src={this.props.imgSrc} alt={this.props.imgAlt}/>
                     <h3>{this.props.title}</h3>
-                    <h3><sup>€</sup>{this.props.price}{this.props.isFlatrate && <sub>/mtl</sub>}</h3>
+                    <h3><sup>€</sup>{this.props.price}{this.props.isFlatrate && <span>/mtl</span>}</h3>
                     <hr className={styles.horizontalDividerLong} />
                     <div className={styles.infoContainer}>
                         {this.prepared_information}
@@ -86,7 +88,7 @@ export default class PriceTableElement extends ReactComponent {
                         {this.props.buttonPrompt}
                     </button>
                 </div>
-            </div>
+            </Col>
         );
     }
 }

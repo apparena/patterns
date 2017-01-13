@@ -1,12 +1,22 @@
-import React, {PropTypes} from "react";
+import React from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./price-table.scss";
 import data from "./price-table.json";
 import Element from "./price-table-element";
 import Checkbox from "../../00-atoms/forms/checkbox";
+import CustomPackageCreator from "./custom-package-creator";
+import Col from "../../00-atoms/grid/col";
+import Row from "../../00-atoms/grid/row";
 
 export default class PriceTable extends ReactComponent {
+
+    getInitState() {
+        return {
+            isChecked: false,
+            showCustomPackageCreator: false
+        };
+    }
 
     /**
      * Every Button will have an ID in the format of "<package><index" ex. "flatrate4" thus two
@@ -41,7 +51,9 @@ export default class PriceTable extends ReactComponent {
     }
 
     handleCustomPackageButton(e) {
-        console.log("Vielen Dank für Ihr interesse!");
+        this.setState({
+            showCustomPackageCreator: true
+        });
     }
 
     /**
@@ -56,37 +68,40 @@ export default class PriceTable extends ReactComponent {
         else if (selection === "flatrate") selectedPackage = data.flatrate;
 
         return (
-            <div className={cx(styles.price_container, "row")}>
+            <Row className={styles.price_container}>
                 {selectedPackage.elements.map((e, i) => {
                     return (
                         <Element id={`${selection}${i}`} key={`${selection}-element${i}`} price={e.price}
                                  imgSrc={e.img} imgAlt={e.imgAlt} title={e.title} information={e.info}
                                  subinformation={e.info2} isPopular={e.popular === 1}
-                                 isFlatrate={selection === "flatrate"} buttonPrompt="Kaufen"
+                                 isFlatrate={selection === "flatrate"} buttonPrompt={e.prompt}
                                  onClick={::this.handleButtonClick}
                         />
                     );
                 })}
-            </div>
+            </Row>
         );
     }
 
     render() {
         return (
-            <div className={cx(styles.price_table, "container-fluid")}>
-                <div className={cx(styles.priceTableHeader, "col-md-4", "offset-md-4")}>
+            <div className={styles.price_table}>
+                <Col md="4" mdOffset={4} className={styles.priceTableHeader}>
                     <hr className={styles.blueDivider} />
-                    Preise.
-                </div>
+                    {this.t("priceTable.header")}
+                    <p>Preise.</p>
+                </Col>
                 <div className={styles.selectorTable}>
                     <div className={styles.selectorTableRow}>
                         <div className={cx(styles.selectorTableCellLeft, !this.state.isChecked && styles.selectorTableCellSelected)}>
+                            {this.t("priceTable.leftText")}
                             Einzelpakete
                         </div>
                         <div className={styles.selectorTableCellMiddle}>
                             <Checkbox className={styles.checkBoxFix} onChange={::this.handleCheckbox} checked={this.state.isChecked} />
                         </div>
                         <div className={cx(styles.selectorTableCellRight, this.state.isChecked && styles.selectorTableCellSelected)}>
+                            {this.t("priceTable.rightText")}
                             Flatratepakete
                         </div>
                     </div>
@@ -94,15 +109,20 @@ export default class PriceTable extends ReactComponent {
 
                 {(this.state.isChecked === true) ? this.renderPackage("flatrate") : this.renderPackage("single")}
 
-                <div className={cx(styles.customPackage, "col-md-4", "offset-md-4")}>
-                    Nichts passendes dabei?<br/>
-                    Kein Problem, stellen Sie hier Ihr eigenes Paket zusammen!<br />
+                <Col md="4" mdOffset={4} className={cx(styles.customPackage,
+                                                    this.state.showCustomPackageCreator && styles.invisible)}>
+                    <p>{this.t("customPackage.info")}</p>
+                    <p>Nichts passendes dabei?<br/>
+                    Kein Problem, stellen Sie hier Ihr eigenes Paket zusammen!<br /></p>
                     <button id="customPackage" className={styles.customPackageButton}
                             onClick={::this.handleCustomPackageButton}
                     >
+                        {this.t("customPackage.buttomPrompt")}
                         Eigenes Paket erstellen
                     </button>
-                </div>
+                </Col>
+
+                <CustomPackageCreator visible={this.state.showCustomPackageCreator} />
             </div>
         );
     }

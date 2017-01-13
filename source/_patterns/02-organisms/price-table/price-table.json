@@ -3,7 +3,7 @@
     "elements": [
       {
         "price": 2,
-        "img": "",
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
         "prompt": "Kaufen",
         "title": "Starter",
         "info": [
@@ -16,7 +16,7 @@
       },
       {
         "price": 128,
-        "img": "",
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
         "prompt": "Kaufen",
         "title": "Premium",
         "info": [
@@ -29,7 +29,7 @@
       },
       {
         "price": 266,
-        "img": "",
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
         "prompt": "Kaufen",
         "title": "Deluxe",
         "popular": 1,
@@ -44,7 +44,7 @@
       },
       {
         "price": 1299,
-        "img": "",
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
         "prompt": "Kaufen",
         "title": "Ultra Deluxe",
         "info": [
@@ -63,7 +63,7 @@
     "elements": [
       {
         "price": 1,
-        "img": "",
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
         "prompt": "Kaufen",
         "title": "Starter",
         "info": [
@@ -77,7 +77,7 @@
       },
       {
         "price": 4,
-        "img": "",
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
         "prompt": "Kaufen",
         "title": "Premium",
         "info": [
@@ -91,7 +91,7 @@
       },
       {
         "price": 9,
-        "img": "",
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
         "prompt": "Kaufen",
         "title": "Deluxe",
         "info": [
@@ -105,7 +105,7 @@
       },
       {
         "price": 27,
-        "img": "",
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
         "prompt": "Kaufen",
         "title": "Ultra Deluxe",
         "popular": 1,
@@ -119,6 +119,40 @@
           "Google Analytics und Load Balancer",
           "1 Probemonat Amazon Prime enthalten"
         ]
+      }
+    ]
+  },
+  "custom": {
+    "dropdown1": [
+      {
+        "label": "1 Monat Laufzeit",
+        "value": 1
+      },
+      {
+        "label": "2 Monate Laufzeit",
+        "value": 2
+      }
+    ],
+    "dropdown2": [
+      {
+        "label": "1000 Teilnehmer exportierbar",
+        "value": 1
+      },
+      {
+        "label": "2000 Teilnehmer exportierbar",
+        "value": 2
+      },
+      {
+        "label": "3000 Teilnehmer exportierbar",
+        "value": 3
+      },
+      {
+        "label": "4000 Teilnehmer exportierbar",
+        "value": 4
+      },
+      {
+        "label": "5000 Teilnehmer exportierbar",
+        "value": 5
       }
     ]
   }

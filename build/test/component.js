@@ -1,6 +1,6 @@
 import React from "react";
 import {render} from "react-dom";
-import {ReactComponent, TagInput, PriceTable} from "../../source/_patterns/index";
+import {ReactComponent, PriceTable} from "../../source/_patterns/index";
 
 class Test extends ReactComponent {
     getInitState() {
