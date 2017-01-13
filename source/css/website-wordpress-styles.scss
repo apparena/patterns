@@ -10,11 +10,22 @@
 
 // TODO: move to env.scss
 // CDN
-$cdn-base-url: "//patterns.local/"; // with trailing slash
+$cdn-base-url: "//styleguide.app-arena.com"; // without trailing slash
 
 @import "scss/stores/website-wordpress/abstracts/variables_bootstrap";
+
 @import "app-arena-styles.scss";
 
 @import "scss/stores/website-wordpress/slick";
 @import "scss/stores/website-wordpress/slick-theme";
 @import "scss/stores/website-wordpress/overwrites";
+
+@import "../_patterns/02-organisms/02-website/sections";
+@import "../_patterns/02-organisms/02-website/sections/about";
+@import "../_patterns/02-organisms/02-website/sections/counter-list";
+@import "../_patterns/02-organisms/02-website/sections/footer-cto";
+@import "../_patterns/02-organisms/02-website/sections/hompage-header";
+@import "../_patterns/02-organisms/02-website/sections/productofthemonth";
+@import "../_patterns/02-organisms/02-website/sections/services-list";
+@import "../_patterns/02-organisms/02-website/sections/testemonial-slider";
+@import "../_patterns/02-organisms/02-website/sections/usp-list";
