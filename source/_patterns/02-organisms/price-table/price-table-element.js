@@ -26,8 +26,12 @@ export default class PriceTableElement extends ReactComponent {
      * Will only be executed on mount (i.e. on page load)
      */
     componentWillMount() {
-        this.prepared_information = this.props.information.map((x, i) => {return <p key={i}>{x}</p>});
-        this.prepared_subinformation = this.props.subinformation.map((x, i) => {return <p key={i}>{x}</p>});
+        this.prepared_information = this.props.information.map((x, i) => {
+            return <p key={i}>{x}</p>
+        });
+        this.prepared_subinformation = this.props.subinformation.map((x, i) => {
+            return <p key={i}>{x}</p>
+        });
     }
 
     /**
@@ -37,8 +41,12 @@ export default class PriceTableElement extends ReactComponent {
      * old information.
      */
     componentWillUpdate(nextProps, nextState, nextContext) {
-        this.prepared_information = nextProps.information.map((x, i) => {return <p key={i}>{x}</p>});
-        this.prepared_subinformation = nextProps.subinformation.map((x, i) => {return <p key={i}>{x}</p>});
+        this.prepared_information = nextProps.information.map((x, i) => {
+            return <p key={i}>{x}</p>
+        });
+        this.prepared_subinformation = nextProps.subinformation.map((x, i) => {
+            return <p key={i}>{x}</p>
+        });
     }
 
 
@@ -76,11 +84,11 @@ export default class PriceTableElement extends ReactComponent {
                     <img src={this.props.imgSrc} alt={this.props.imgAlt}/>
                     <h3>{this.props.title}</h3>
                     <h3><sup>€</sup>{this.props.price}{this.props.isFlatrate && <span>/mtl</span>}</h3>
-                    <hr className={styles.horizontalDividerLong} />
+                    <hr className={styles.horizontalDividerLong}/>
                     <div className={styles.infoContainer}>
                         {this.prepared_information}
                     </div>
-                    <hr className={styles.horizontalDividerShort} />
+                    <hr className={styles.horizontalDividerShort}/>
                     <div className={styles.infoContainer}>
                         {this.prepared_subinformation}
                     </div>
