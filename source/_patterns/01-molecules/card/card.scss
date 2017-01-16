@@ -11,6 +11,7 @@
 
 .card {
   padding: 1rem;
+  margin: 0.2rem 0;
   //@include box-shadow($card-box-shadow);
   border: 1px solid;
   border-color: darken($card-border-color, 5%) darken($card-border-color, 5%) darken($card-border-color, 10%);

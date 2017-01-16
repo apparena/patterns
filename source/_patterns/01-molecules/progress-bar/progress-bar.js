@@ -29,7 +29,7 @@ export default class ProgressBar extends ReactComponent {
     renderRemovableText(text) {
         if (text !== '') {
             return (
-                <div className="text-xs-center text-muted" id={this.props.captionID}><small>{text}</small></div>
+                <div className="text-center text-muted" id={this.props.captionID}><small>{text}</small></div>
             );
         }
         return null;

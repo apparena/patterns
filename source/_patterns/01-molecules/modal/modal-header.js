@@ -7,12 +7,12 @@ function ModalHeader({className, headerText, onClose, ...props}) {
     props.className = cx(styles["modal-header"], className);
     return (
         <div {...props}>
+            <h5 className={styles["modal-title"]}>{headerText}</h5>
             {onClose &&
             <button type="button" className={styles.close} onClick={onClose}>
                 <Icon name="times"/>
             </button>
             }
-            <h5 className={styles["modal-title"]}>{headerText}</h5>
         </div>
     );
 }

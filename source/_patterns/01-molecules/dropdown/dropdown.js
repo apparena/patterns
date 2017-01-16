@@ -17,6 +17,7 @@ export default class Dropdown extends ReactComponent {
         className: PropTypes.string,
         isOpen: PropTypes.bool,
         arrow: PropTypes.bool,
+        dropup: PropTypes.bool,
         items: PropTypes.node.isRequired,
         onSelect: PropTypes.func,
     };
@@ -25,6 +26,7 @@ export default class Dropdown extends ReactComponent {
         onSelect: NO_OP,
         arrow: true,
         isOpen: false,
+        dropup: false,
     };
 
     getInitState() {
@@ -113,18 +115,29 @@ export default class Dropdown extends ReactComponent {
     render() {
         // classes
         var componentClass = cx(styles["dropdown"],
-            this.state.isOpen && styles["open"],
+            this.state.isOpen && styles["show"],
             this.props.align && styles["dropdown-menu-" + this.props.align],
             !this.props.arrow && styles["no-icon"],
             this.props.className
         );
-
-        return (
-            <span className={componentClass}>
-				{React.Children.count(this.props.children) ? this.renderChildren() : this.renderButton()}
-                {this.renderDropdownMenu()}
-                {this.renderDropdownMenuBackground()}
-			</span>
-        );
+        if (!this.props.dropup) {
+            return (
+                <span className={componentClass}>
+                    {React.Children.count(this.props.children) ? this.renderChildren() : this.renderButton()}
+                    {this.renderDropdownMenu()}
+                    {this.renderDropdownMenuBackground()}
+                </span>
+            );
+        } else {
+            return (
+                <span className={styles["dropup"]}>
+                    <span className={componentClass}>
+                        {React.Children.count(this.props.children) ? this.renderChildren() : this.renderButton()}
+                        {this.renderDropdownMenu()}
+                        {this.renderDropdownMenuBackground()}
+                    </span>
+                </span>
+            );
+        }
     }
 }

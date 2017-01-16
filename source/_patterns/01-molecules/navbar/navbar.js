@@ -13,7 +13,7 @@ export default class Navbar extends ReactComponent {
             )
         ]).isRequired,
         fixed: PropTypes.oneOf(["top", "bottom"]),
-        colorScheme: PropTypes.oneOf(["light", "dark"]),
+        colorScheme: PropTypes.oneOf(["light", "inverse"]),
         bg: PropTypes.oneOf(["primary", "success", "info", "warning", "danger", "inverse", "faded"])
     };
 
