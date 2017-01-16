@@ -63,6 +63,7 @@ p {
   &.btn-round {
     padding: 0;
     text-align: center;
+    white-space: normal;
     &.btn-round-md {
       width: 7rem;
       height: 7rem;
@@ -70,28 +71,6 @@ p {
   }
 }
 
-// Pages
-main#page-homepage {
-  section.section-homepage-header {
-    z-index: 1; // for SVG overlaying the next section
-    .header-background-row {
-      position: absolute;
-      bottom: 60px;
-      right: 15px;
-      left: 15px;
-    }
-    .header-heading-row {
-      padding-top: 60px;
-      padding-bottom: 50px;
-    }
-    .header-objects-row {
-      //transform: translateY(20px);
-    }
-  }
-  section.section-about {
-    padding-top: 0%;
-  }
-}
 
 // Icons
 .usp-icon, .service-icon {
@@ -99,82 +78,6 @@ main#page-homepage {
   font-size: 3.6rem;
 }
 
-// USPs
-.usp-more-link {
-  margin-top: -0.8rem;
-}
-.usp-title {
-  padding-top: 1rem;
-}
-
-// Services
-.services-row {
-  margin-top: 2rem;
-}
-.services-col {
-  background-color: #ffffff;
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
-
-// Counter
-.section-counter {
-  output {
-    color: $brand-primary;
-    font-size: 2.842rem;
-    font-weight: map_get($font-weights, 'bold');
-  }
-  hr {
-    border-top: solid 2px $gray-lighter;
-    width: 100%;
-    max-width: 100%;
-    text-align: inherit;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  label {
-    font-size: 1.105rem;
-  }
-}
-
-// Sections
-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-  position: relative;
-  overflow: hidden;
-  &.section-productofthemonth {
-    min-height: 34rem;
-    margin-bottom: 0;
-  }
-  &.section-homepage-header {
-    margin-bottom: -20px;
-    padding-bottom: 0;
-    overflow: visible;
-  }
-  &.section-dark {
-    background-color: $gray-lightest;
-  }
-  &.section-divider-bottom {
-    overflow: visible;
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      background-size: 100px 100px;
-      width: 100px;
-      height: 100px;
-      /*bottom: 0; // with position relative */
-      left: 50%;
-      transform: translateX(-50%);
-      /* png fallback, see http://pauginer.com/post/36614680636/invisible-gradient-technique */
-      $divider-path: "images/logo_ringe_bg_section_divider";
-      background-image: url(#{$cdn-base-url}images/logo_ringe_bg_section_divider.png);
-      background-image: linear-gradient(transparent, transparent), url(#{$cdn-base-url}images/logo_ringe_bg_section_divider.svg);
-    }
-  }
-}
 .bg-blue {
   background-color: $brand-primary;
   color: #ffffff;
@@ -190,151 +93,6 @@ section {
 .btn {
   &.btn-outline-danger, &.btn-outline-info, &.btn-outline-primary, &.btn-outline-secondary, &.btn-outline-success, &.btn-outline-warning {
     border: 1px solid;
-  }
-}
-
-// Testemonial Sliders
-$testemonial-height: 34rem;
-$testemonial-quote-width: 40/100;
-.testemonial-slider {
-  .slick-prev, .slick-next {
-    // position arrows in the middle of relevant image
-    top: 300px; // half of mobile image height
-    @media (min-width: map_get($grid-breakpoints, 'lg')) {
-      top: 50%;
-    }
-  }
-  .testemonial {
-    .testemonial-screens {
-      position: relative;
-      width: 100%;
-      @media (min-width: map_get($grid-breakpoints, 'lg')) {
-        height: $testemonial-height;
-        width: 100% - percentage($testemonial-quote-width);
-        float: right;
-      }
-      .testemonial-screen-browser {
-        display: none;
-        top: 0;
-        @media (min-width: map_get($grid-breakpoints, 'lg')) {
-          display: block;
-          position: absolute;
-          left: 250px;
-        }
-      }
-      .testemonial-screen-mobile {
-        position: relative;
-        display: block;
-        max-width: 100%;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        @media (min-width: map_get($grid-breakpoints, 'lg')) {
-          position: absolute;
-          left: 0;
-          top: 60px;
-          transform: translateX(0);
-        }
-      }
-    }
-    .testemonial-quote {
-      width: 100%;
-      display: table;
-      @media (min-width: map_get($grid-breakpoints, 'lg')) {
-        height: $testemonial-height;
-        width: percentage($testemonial-quote-width);
-        float: left;
-      }
-      blockquote {
-        padding: 2rem;
-        display: table-cell;
-        vertical-align: middle;
-      }
-    }
-    .testemonial-product-cta {
-      background-color: #fff;
-      padding: 1rem;
-      h3 {
-        font-size: 1.368rem;
-      }
-      @media (min-width: map_get($grid-breakpoints, 'lg')) {
-        position: absolute;
-        bottom: 0;
-        right: 1rem;
-        border-radius: 1rem 1rem 0 0;
-      }
-    }
-  }
-}
-.testemonial-slider-divider {
-  width: 100%;
-  background-color: $gray-lightest;
-  .testemonial-slider-divider-arrow {
-    margin-left: percentage($testemonial-quote-width) / 2;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 25px 25px 0 25px;
-    border-color: #ffffff transparent transparent transparent;
-  }
-}
-.testemonial-clients-slider {
-  &.slick-slider {
-    margin-bottom: 0;
-  }
-  width: 100%;
-  background-color: $gray-lightest;
-  padding: 0 10%;
-  //display: table; // center vertical-alignment of client logos - doesn't work though
-  .testemonial-client {
-    padding: 1rem;
-    height: 90px;
-    //display: table-cell;
-    //vertical-align: middle;
-    text-align: center;
-    img {
-      max-height: 100%;
-      max-width: 100%;
-      margin: auto;
-      transition: filter 1s, opacity 1s;
-      filter: grayscale(100%);
-      opacity: 0.5;
-    }
-    &:hover img {
-      opacity: 1;
-    }
-    &.slick-current {
-      img {
-        filter: grayscale(0%);
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.product-screen-wrapper {
-  position: relative;
-  height: 29rem;
-  .btn.btn-cta-topleft {
-    position: absolute;
-    text-transform: uppercase;
-    top: 2.5rem;
-    left: 7rem;
-    z-index: 3;
-  }
-  img {
-    position: absolute;
-    &.screen-browser {
-      z-index: 1;
-      top: 0;
-      left: 8rem;
-    }
-    &.screen-mobile {
-      z-index: 2;
-      top: 9rem;
-      left: 1rem;
-    }
   }
 }
 
@@ -360,83 +118,6 @@ hr {
     margin-right: 0;
   }
 }
-
-/*
-svg#header-background #background #dynamic #row1 {
-  animation: headerBackgroundAnimationRow1 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-delay: 3s;
-}
-svg#header-background #background #dynamic #row2 {
-  animation: headerBackgroundAnimationRow2 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-delay: 3s;
-}
-svg#header-background #background #dynamic #row3 {
-  animation: headerBackgroundAnimationRow3 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-delay: 3s;
-}
-svg#header-background #background #dynamic #row4 {
-  animation: headerBackgroundAnimationRow4 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-delay: 3s;
-}
-@keyframes headerBackgroundAnimationRow1 {
-  from {
-    transform: translateX(-9%);
-  }
-  to {
-    transform: translateX(13%);
-  }
-}
-@keyframes headerBackgroundAnimationRow2 {
-  from {
-    transform: translateX(-9%);
-  }
-  to {
-    transform: translateX(5%);
-  }
-}
-@keyframes headerBackgroundAnimationRow3 {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(4%);
-  }
-}
-@keyframes headerBackgroundAnimationRow4 {
-  from {
-    transform: translateX(-11%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-*/
-
-// Grid Columns
-/*
-@media(min-width: 992px){
-  .col5{
-    width: 20%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-*/
 
 .row.gutter-80 {
   $grid-columns: 3;

@@ -1,0 +1,50 @@
+{{#services-list}}
+    <section class="section-services-list section-dark section-divider-bottom text-center">
+        <div class="container-fluid container-fluid-90">
+            <div class="row">
+                <div class="col-12">
+                    <hr class="center">
+                    <h2>{{headline}}</h2>
+                </div>
+            </div>
+            <div class="row services-row">
+                {{#items}}
+                    {{> 01-molecules/02-website/service}}
+                {{/items}}
+            </div>
+            <div class="row services-row services-row-more">
+                {{#items-more}}
+                    {{> 01-molecules/02-website/service}}
+                {{/items-more}}
+            </div>
+            {{#more-btn-text}}
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary js-more-services"><span
+                                class="aa-icon aa-icon-arrow-right"></span> {{more-btn-text}}
+                        </button>
+                    </div>
+                </div>
+            {{/more-btn-text}}
+        </div>
+    </section>
+    {{#more-btn-text}}
+        <script>
+            /* show more services */
+            /* untested */
+            $(function () {
+                var $$serviceLists = $('section.section-services-list');
+                $$serviceLists.each(function() {
+                    var $serviceList = $(this);
+                    var $moreServicesBtn = $serviceList.find('.js-more-services');
+                    var $moreServiceRow = $serviceList.find('.services-row-more');
+                    $moreServiceRow.hide();
+                    $moreServicesBtn.on('click', function(e) {
+                        $moreServiceRow.slideDown();
+                        $moreServicesBtn.fadeOut();
+                    });
+                });
+            });
+        </script>
+    {{/more-btn-text}}
+{{/services-list}}

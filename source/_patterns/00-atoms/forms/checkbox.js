@@ -13,6 +13,7 @@ export default class Checkbox extends ReactComponent {
         checked: PropTypes.bool,
         onChange: PropTypes.func.isRequired,
         id: PropTypes.string,
+        renderTooltip: PropTypes.bool,
         positioning: PropTypes.oneOf([
             'top',
             'bottom',
@@ -38,23 +39,54 @@ export default class Checkbox extends ReactComponent {
         positioning: "top"
     };
 
-    render() {
-        const {id, className, positioning, checked, disabled, onChange, zIndex} = this.props;
+    /**
+     * Render the checkbox with a tooltip on hover.
+     *
+     * @returns {XML}
+     */
+    renderWithTooltip() {
+        const {id, positioning, checked, disabled, onChange, zIndex} = this.props;
         var cId = id.replace("_", "");
         return (
+            <Tooltip
+                zIndex={zIndex}
+                positioning={positioning}
+                label={checked ? "Aktiviert" : "Deaktiviert"}
+            >
+                <Toggle
+                    id={cId}
+                    disabled={disabled}
+                    checked={checked}
+                    onChange={onChange}
+                />
+            </Tooltip>
+        );
+    }
+
+    /**
+     * Render the checkbox without a tooltip on hover.
+     * @returns {XML}
+     */
+    renderWithoutTooltip() {
+        const {id, checked, disabled, onChange} = this.props;
+        var cId = id.replace("_", "");
+        return (
+            <Toggle
+                id={cId}
+                disabled={disabled}
+                checked={checked}
+                onChange={onChange}
+            />
+        );
+    }
+
+    render() {
+        const {className} = this.props;
+        return (
             <div className={cx(styles.checkbox, className)}>
-                <Tooltip
-                    zIndex={zIndex}
-                    positioning={positioning}
-                    label={checked ? "Aktiviert" : "Deaktiviert"}
-                >
-                    <Toggle
-                        id={cId}
-                        disabled={disabled}
-                        checked={checked}
-                        onChange={onChange}
-                    />
-                </Tooltip>
+                {this.props.renderTooltip && this.renderWithTooltip()}
+
+                {!this.props.renderTooltip && this.renderWithoutTooltip()}
             </div>
         )
     }
