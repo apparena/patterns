@@ -154,6 +154,77 @@
         "label": "5000 Teilnehmer exportierbar",
         "value": 5
       }
+    ],
+    "checkboxes": [
+      {
+        "label": "Einführungswebinar",
+        "price": 12
+      },
+      {
+        "label": "Support via Email",
+        "price": 16
+      },
+      {
+        "label": "Support via Telefon",
+        "price": 16
+      },
+      {
+        "label": "Abnahme durch PM",
+        "price": 5
+      },
+      {
+        "label": "Beratung durch PM",
+        "price": 2
+      },
+      {
+        "label": "Konzeption durch PM",
+        "price": 20
+      },
+      {
+        "label": "Kreation von Grafiken",
+        "price": 100
+      },
+      {
+        "label": "Umsetzung der Designs",
+        "price": 140
+      },
+      {
+        "label": "Einrichtung der App",
+        "price": 120
+      },
+      {
+        "label": "Werbemanagement",
+        "price": 150
+      },
+      {
+        "label": "Auswertung und Analyse",
+        "price": 75
+      }
+    ],
+    "topRightCheckboxes": [
+      {
+        "label": "Kampagnenseite",
+        "price": 400
+      },
+      {
+        "label": "Facebook Fanseite",
+        "labelPlural": "Facebook Fanseiten",
+        "price": 99
+      },
+      {
+        "label": "Einbindung auf Webseite",
+        "price": 250
+      }
+    ],
+    "bottomRightCheckboxes": [
+      {
+        "label": "Subdomain (z.B. sk.adventskalender.co)",
+        "price": 55
+      },
+      {
+        "label": "Eigene Domain buchen (ab 199€)",
+        "price": 199
+      }
     ]
   }
 }
