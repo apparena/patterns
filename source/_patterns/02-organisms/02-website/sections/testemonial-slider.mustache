@@ -1,22 +1,7 @@
-{{#testemonial-slider}}
-    <section class="section-testemonial-slider no-margin-bottom no-padding-bottom">
-        <div class="testemonial-slider">
-            {{#items}}
-                {{> 01-molecules/02-website/testemonial }}
-            {{/items}}
-        </div>
-        <div class="testemonial-slider-divider">
-            <div class="testemonial-slider-divider-arrow"></div>
-        </div>
-        <div class="testemonial-clients-slider">
-            {{#items}}
-                {{> 00-atoms/02-website/testemonial-client }}
-            {{/items}}
-        </div>
-    </section>
-    <script src="{{cdn-base-url}}/js/vendor/slick-carousel/slick/slick.js"></script>
+<section class="section-testemonial-slider no-margin-bottom no-padding-bottom">
+    <script src="/js/vendor/slick-carousel/slick/slick.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.testemonial-slider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -82,4 +67,18 @@
             });
         });
     </script>
-{{/testemonial-slider}}
+    {{#testemonial-slider.headline}}
+    <h3>{{testemonial-slider.headline}}</h3>
+    {{/testemonial-slider.headline}}
+    <div class="testemonial-slider">
+        {{#testemonial-slider.items}}
+            {{> molecules-testemonial }}
+        {{/testemonial-slider.items}}
+    </div>
+    <div class="testemonial-slider-divider"><div class="testemonial-slider-divider-arrow"></div></div>
+    <div class="testemonial-clients-slider">
+        {{#testemonial-slider.items}}
+            {{> atoms-testemonial-client }}
+        {{/testemonial-slider.items}}
+    </div>
+</section>

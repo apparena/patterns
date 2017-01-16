@@ -1,0 +1,140 @@
+
+<section class="section-services-list section-dark section-divider-bottom text-center">
+    <div class="container-fluid container-fluid-90">
+        <div class="row">
+            <div class="col-12">
+                <hr class="center">
+                <h2>Unsere Services.</h2>
+            </div>
+        </div>
+        <div class="row services-row">
+            {{#items}}
+                <div class="col-md-6 col-xl-3">
+                    <div class="services-col">
+                        {{> services}}
+                    </div>
+                </div>
+            {{/items}}
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+        </div>
+        <div class="row services-more-row" style="display: none;">
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="services-col">
+                    <span class="service-icon aa-icon aa-icon-aa-analytics"></span>
+                    <h4 class="text-uppercase">Leadgenerierung</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="no-margin-bottom">Mehr erfahren</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary js-more-services"><span class="aa-icon aa-icon-arrow-right"></span> Nicht genug?</button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    /* show more services */
+    /* untested */
+    $(function () {
+        var $$moreServicesBtns = $('section.js-more-services');
+        $$moreServicesBtns.each(function() {
+            var $btn = $(this);
+            $btn.on('click', function() {
+                $btn.parent('section').find('.services-more-row').slideDown({
+                    complete: function() {
+                        $btn.fadeOut();
+                    }
+                });
+            });
+        });
+    });
+</script>
