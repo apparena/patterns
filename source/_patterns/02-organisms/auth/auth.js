@@ -29,7 +29,7 @@ export default class Auth extends ReactComponent {
     render() {
         return (
             <div className="o-login">
-                <div className="o-login-logo text-xs-center">
+                <div className="o-login-logo text-center">
                     <img src={this.props.logoURI} className="logo" alt="App-Arena.com" />
                 </div>
 
@@ -44,7 +44,7 @@ export default class Auth extends ReactComponent {
                         {this.props.children}
                     </div>
 
-                    <div className="card-footer text-xs-right">
+                    <div className="card-footer text-right">
                         <Button buttonClass="btn btn-primary" onClickMethod={this.props.onAuthClick} >
                             <p>{this.props.authButtonText}</p>
                         </Button>

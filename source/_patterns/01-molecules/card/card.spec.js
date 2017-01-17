@@ -1,7 +1,6 @@
 /* eslint-env mocha */
 import React from "react";
 import {shallow} from "enzyme";
-import {assert} from "chai";
 import Card from "./card";
 
 describe('<Card />', () => {
@@ -10,6 +9,6 @@ describe('<Card />', () => {
         const wrapper = shallow(
             <Card />
         );
-        assert.ok(wrapper.is('div'));
+        expect(wrapper.is('div')).toBeTruthy();
     });
 });

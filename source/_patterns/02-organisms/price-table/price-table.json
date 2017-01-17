@@ -1,0 +1,230 @@
+{
+  "single": {
+    "elements": [
+      {
+        "price": 2,
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "prompt": "Kaufen",
+        "title": "Starter",
+        "info": [
+          "Die Starter edition enthält keinen Service",
+          "Einige Funktionen sind nicht verfügbar"
+        ],
+        "info2": [
+          "Einführungswebinar"
+        ]
+      },
+      {
+        "price": 128,
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "prompt": "Kaufen",
+        "title": "Premium",
+        "info": [
+          "Die Premium edition enthält keinen Service",
+          "Einige Funktionen sind nicht verfügbar"
+        ],
+        "info2": [
+          "Limitierter Quellcode Zugriff"
+        ]
+      },
+      {
+        "price": 266,
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "prompt": "Kaufen",
+        "title": "Deluxe",
+        "popular": 1,
+        "info": [
+          "Die Deluxe edition enthält 1 Stunde Service",
+          "Einige Funktionen sind nicht verfügbar"
+        ],
+        "info2": [
+          "Subdomain",
+          "15% bessere Performance"
+        ]
+      },
+      {
+        "price": 1299,
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "prompt": "Kaufen",
+        "title": "Ultra Deluxe",
+        "info": [
+          "Die Ultra Deluxe edition enthält 5 Stunden Service",
+          "Alle Funktionen sind verfügbar",
+          "Sie erhalten als VIP vorrang im Support"
+        ],
+        "info2": [
+          "Voller Quellcode Zugriff",
+          "Load balancing"
+        ]
+      }
+    ]
+  },
+  "flatrate": {
+    "elements": [
+      {
+        "price": 1,
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "prompt": "Kaufen",
+        "title": "Starter",
+        "info": [
+          "Die Starter edition enthält keinen Service",
+          "Einige Funktionen sind nicht verfügbar",
+          "Für nur einen Euro im Monat erhalten sie dieses exklusive Paket"
+        ],
+        "info2": [
+          "Einführungswebinar"
+        ]
+      },
+      {
+        "price": 4,
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "prompt": "Kaufen",
+        "title": "Premium",
+        "info": [
+          "Die Premium edition enthält keinen Service",
+          "Einige Funktionen sind nicht verfügbar",
+          "Das Premium Paket ist mit 4€/mtl unschlagbar"
+        ],
+        "info2": [
+          "Webinar zur Qualitätsverbesserung"
+        ]
+      },
+      {
+        "price": 9,
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "prompt": "Kaufen",
+        "title": "Deluxe",
+        "info": [
+          "Die Deluxe edition enthält 1 Stunde Service",
+          "Einige Funktionen sind nicht verfügbar",
+          "Das Deluxe Paket ist mit 9€/mtl nicht zu übertreffen"
+        ],
+        "info2": [
+          "Zugriff per SSH und SFTP"
+        ]
+      },
+      {
+        "price": 27,
+        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "prompt": "Kaufen",
+        "title": "Ultra Deluxe",
+        "popular": 1,
+        "info": [
+          "Die Ultra Deluxe edition enthält 5 Stunden Service",
+          "Alle Funktionen sind verfügbar",
+          "Sie erhalten als VIP vorrang im Support",
+          "27€/mtl für perfektion"
+        ],
+        "info2": [
+          "Google Analytics und Load Balancer",
+          "1 Probemonat Amazon Prime enthalten"
+        ]
+      }
+    ]
+  },
+  "custom": {
+    "dropdown1": [
+      {
+        "label": "1 Monat Laufzeit",
+        "value": 1
+      },
+      {
+        "label": "2 Monate Laufzeit",
+        "value": 2
+      }
+    ],
+    "dropdown2": [
+      {
+        "label": "1000 Teilnehmer exportierbar",
+        "value": 1
+      },
+      {
+        "label": "2000 Teilnehmer exportierbar",
+        "value": 2
+      },
+      {
+        "label": "3000 Teilnehmer exportierbar",
+        "value": 3
+      },
+      {
+        "label": "4000 Teilnehmer exportierbar",
+        "value": 4
+      },
+      {
+        "label": "5000 Teilnehmer exportierbar",
+        "value": 5
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "Einführungswebinar",
+        "price": 12
+      },
+      {
+        "label": "Support via Email",
+        "price": 16
+      },
+      {
+        "label": "Support via Telefon",
+        "price": 16
+      },
+      {
+        "label": "Abnahme durch PM",
+        "price": 5
+      },
+      {
+        "label": "Beratung durch PM",
+        "price": 2
+      },
+      {
+        "label": "Konzeption durch PM",
+        "price": 20
+      },
+      {
+        "label": "Kreation von Grafiken",
+        "price": 100
+      },
+      {
+        "label": "Umsetzung der Designs",
+        "price": 140
+      },
+      {
+        "label": "Einrichtung der App",
+        "price": 120
+      },
+      {
+        "label": "Werbemanagement",
+        "price": 150
+      },
+      {
+        "label": "Auswertung und Analyse",
+        "price": 75
+      }
+    ],
+    "topRightCheckboxes": [
+      {
+        "label": "Kampagnenseite",
+        "price": 400
+      },
+      {
+        "label": "Facebook Fanseite",
+        "labelPlural": "Facebook Fanseiten",
+        "price": 99
+      },
+      {
+        "label": "Einbindung auf Webseite",
+        "price": 250
+      }
+    ],
+    "bottomRightCheckboxes": [
+      {
+        "label": "Subdomain (z.B. sk.adventskalender.co)",
+        "price": 55
+      },
+      {
+        "label": "Eigene Domain buchen (ab 199€)",
+        "price": 199
+      }
+    ]
+  }
+}

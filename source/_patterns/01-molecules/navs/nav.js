@@ -10,13 +10,15 @@ export default class Nav extends ReactComponent {
         tabs: PropTypes.bool,
         pills: PropTypes.bool,
         stacked: PropTypes.bool,
+        vertical: PropTypes.bool,
     };
 
     static defaultProps = {
         inline: false,
         tabs: false,
         pills: false,
-        stacked: false
+        stacked: false,
+        vertical: false
     };
 
     render() {
@@ -28,6 +30,8 @@ export default class Nav extends ReactComponent {
             this.props.tabs && styles["nav-tabs"],
             this.props.pills && styles["nav-pills"],
             this.props.stacked && styles["nav-stacked"],
+            this.props.stacked && styles["nav-stacked"],
+            this.props.vertical && styles["flex-column"],
             this.props.className
         );
         const child = React.Children.map(children, (child) => {

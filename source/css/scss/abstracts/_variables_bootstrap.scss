@@ -93,5 +93,8 @@ $nav-pills-border-radius: 0 !default;
 
 // Modals
 $modal-backdrop-bg: transparentize($brand-secondary, 0.2);
+$modal-lg:                    1000px !default;
+$modal-md:                    500px !default;
+$modal-sm:                    300px !default;
 
 @import "~bootstrap/scss/variables";

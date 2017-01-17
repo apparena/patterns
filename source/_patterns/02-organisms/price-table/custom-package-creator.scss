@@ -1,0 +1,62 @@
+.packageCreator {
+  width: 85%;
+  background-color: #fff;
+  margin: 0 auto 50px auto;
+
+  .titleLeft {
+    float: left;
+  }
+
+  .sumContainer {
+    float: right;
+  }
+
+  .dropdown {
+    margin-top: 20px;
+  }
+
+  .dropdownContainer {
+    > div {
+      margin-bottom: 20px;
+    }
+  }
+
+  .headerRow {
+    padding: 10px;
+  }
+
+  .checkboxes {
+    li {
+      list-style: none;
+    }
+
+    label {
+      margin-left: 5px;
+    }
+
+    span {
+      font-size: 20pt;
+      vertical-align: middle;
+
+      &.cbUnchecked {
+
+      }
+
+      &.cbChecked:before {
+        color: #2dcc56;
+      }
+    }
+
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px;
+    }
+
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      position: relative;
+      cursor: pointer;
+    }
+  }
+}
