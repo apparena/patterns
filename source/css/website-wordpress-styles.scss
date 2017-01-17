@@ -20,12 +20,12 @@ $cdn-base-url: "//styleguide.app-arena.com"; // without trailing slash
 @import "scss/stores/website-wordpress/slick-theme";
 @import "scss/stores/website-wordpress/overwrites";
 
-@import "../_patterns/02-organisms/02-website/sections";
-@import "../_patterns/02-organisms/02-website/sections/about";
-@import "../_patterns/02-organisms/02-website/sections/counter-list";
-@import "../_patterns/02-organisms/02-website/sections/footer-cto";
-@import "../_patterns/02-organisms/02-website/sections/hompage-header";
-@import "../_patterns/02-organisms/02-website/sections/productofthemonth";
-@import "../_patterns/02-organisms/02-website/sections/services-list";
-@import "../_patterns/02-organisms/02-website/sections/testemonial-slider";
-@import "../_patterns/02-organisms/02-website/sections/usp-list";
+@import "../_patterns/02-organisms/sections/sections";
+@import "../_patterns/02-organisms/sections/about";
+@import "../_patterns/02-organisms/sections/counter-list";
+@import "../_patterns/02-organisms/sections/footer-cto";
+@import "../_patterns/02-organisms/sections/hompage-header";
+@import "../_patterns/02-organisms/sections/productofthemonth";
+@import "../_patterns/02-organisms/sections/services-list";
+@import "../_patterns/02-organisms/sections/testemonial-slider";
+@import "../_patterns/02-organisms/sections/usp-list";

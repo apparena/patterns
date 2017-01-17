@@ -1,23 +1,18 @@
 {
-  "name":             "pattern-lab/edition-mustache-standard",
-  "description":      "The Standard Edition of Pattern Lab for Mustache. Installs all Mustache-related dependencies.",
-  "keywords":         ["pattern lab", "mustache"],
-  "homepage":         "http://patternlab.io",
+  "name":             "app-arena/patterns",
+  "description":      "App-Arena Styleguide and pattern library based on patternlab.io",
+  "keywords":         ["app-arena", "styleguide"],
+  "homepage":         "https://design.app-arena.com",
   "license":          "MIT",
   "type":             "project",
   "authors": [
     {
-      "name":         "Dave Olsen",
-      "email":        "dmolsen@gmail.com",
-      "homepage":     "http://dmolsen.com",
-      "role":         "Lead Developer"
+      "name":         "Sebastian Buckpesch",
+      "email":        "s.buckpesch@app-arena.com",
+      "homepage":     "https://www.app-arena.com",
+      "role":         "CTO"
     }
   ],
-  "support": {
-    "issues":         "https://github.com/pattern-lab/patternlab-php/issues",
-    "wiki":           "http://patternlab.io/docs/",
-    "source":         "https://github.com/pattern-lab/patternlab-php/releases"
-  },
   "autoload": {
     "psr-0": {
       "PatternLab":   "core/src/"
