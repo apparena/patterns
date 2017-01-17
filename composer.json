@@ -19,7 +19,9 @@
     }
   },
   "require": {
-    "php": ">=5.4",
+    "php": ">=5.4"
+  },
+  "require-dev": {
     "pattern-lab/core": "^2.0.0",
     "pattern-lab/patternengine-mustache": "^2.0.0",
     "pattern-lab/styleguidekit-mustache-default": "^3.0.0",
