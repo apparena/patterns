@@ -14,7 +14,7 @@ export default class PriceTable extends ReactComponent {
     getInitState() {
         return {
             isChecked: false,
-            showCustomPackageCreator: false
+            showCustomPackageCreator: true
         };
     }
 

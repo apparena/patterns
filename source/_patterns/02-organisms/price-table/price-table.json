@@ -126,33 +126,40 @@
     "dropdown1": [
       {
         "label": "1 Monat Laufzeit",
-        "value": 1
+        "price": 600,
+        "value": 0
       },
       {
         "label": "2 Monate Laufzeit",
-        "value": 2
+        "price": 1100,
+        "value": 1
       }
     ],
     "dropdown2": [
       {
         "label": "1000 Teilnehmer exportierbar",
-        "value": 1
+        "price": 45,
+        "value": 0
       },
       {
         "label": "2000 Teilnehmer exportierbar",
-        "value": 2
+        "price": 100,
+        "value": 1
       },
       {
         "label": "3000 Teilnehmer exportierbar",
-        "value": 3
+        "price": 220,
+        "value": 2
       },
       {
         "label": "4000 Teilnehmer exportierbar",
-        "value": 4
+        "price": 350,
+        "value": 3
       },
       {
         "label": "5000 Teilnehmer exportierbar",
-        "value": 5
+        "price": 500,
+        "value": 4
       }
     ],
     "checkboxes": [
@@ -209,7 +216,7 @@
       {
         "label": "Facebook Fanseite",
         "labelPlural": "Facebook Fanseiten",
-        "price": 99
+        "price": 50
       },
       {
         "label": "Einbindung auf Webseite",
