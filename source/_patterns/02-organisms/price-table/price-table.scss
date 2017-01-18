@@ -77,10 +77,11 @@
     .price_table_element {
       background-color: #fff;
       text-align: center;
-      height: 600px;
+      height: 100%;
+      padding-bottom: 40px;
       -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
-      border-radius: 8px;
+      border-radius: 5px;
       font-size: 11pt;
 
       h3 {

@@ -225,35 +225,37 @@ export default class CustomPackageCreator extends ReactComponent {
                     return (
                         <li key={i}>
                             {!this.state.tickedCheckboxes.includes(idPrefix + i) &&
-                            <Icon name="times-circle-o" className={styles.cbUnchecked}/>
+                                <Icon name="times-circle-o"/>
                             }
                             {this.state.tickedCheckboxes.includes(idPrefix + i) &&
-                            <Icon name="check-circle-o" className={styles.cbChecked}/>
+                                <Icon name="check-circle-o" className={styles.cbChecked}/>
                             }
                             {e.labelPlural &&
-                            <div className={styles.counter}>
-                                {this.state.counters[i]}
-                            </div>
+                                <div className={styles.counter}>
+                                    {this.state.counters[i]}
+                                </div>
                             }
                             <input id={`${idPrefix}${i}`} type="checkbox" value={e.price}
                                    onChange={e.labelPlural ? (ev) => this.handleCountedCBChange(ev, i, e.price) : onChange}
                             />
-                            <label htmlFor={`${idPrefix}${i}`}>
+                            <label htmlFor={`${idPrefix}${i}`}
+                                   className={!this.state.tickedCheckboxes.includes(idPrefix + i) && styles.cbUncheckedLabel}
+                            >
                                 {e.labelPlural && this.state.counters[i] > 1 ? e.labelPlural : e.label}
                             </label>
                             {e.labelPlural &&
-                            <div className={styles.buttonRow}>
-                                <button className={styles.checkboxButton}
-                                        onClick={(ev) => this.handleCounterClick(ev, i, e.price, true, this.state.tickedCheckboxes.includes(idPrefix + i))}
-                                >
-                                    <Icon name="plus"/>
-                                </button>
-                                <button className={styles.checkboxButton}
-                                        onClick={(ev) => this.handleCounterClick(ev, i, e.price, false, this.state.tickedCheckboxes.includes(idPrefix + i))}
-                                >
-                                    <Icon name="minus"/>
-                                </button>
-                            </div>
+                                <div className={styles.buttonRow}>
+                                    <button className={styles.checkboxButton}
+                                            onClick={(ev) => this.handleCounterClick(ev, i, e.price, true, this.state.tickedCheckboxes.includes(idPrefix + i))}
+                                    >
+                                        <Icon name="plus"/>
+                                    </button>
+                                    <button className={styles.checkboxButton}
+                                            onClick={(ev) => this.handleCounterClick(ev, i, e.price, false, this.state.tickedCheckboxes.includes(idPrefix + i))}
+                                    >
+                                        <Icon name="minus"/>
+                                    </button>
+                                </div>
                             }
                         </li>
                     );
@@ -327,64 +329,66 @@ export default class CustomPackageCreator extends ReactComponent {
             <div>
                 {this.props.visible && (
                     <div className={styles.packageCreator}>
-                        <Row className={styles.headerRow}>
-                            <Col md="6" className={styles.titleLeft}>
-                                <img src={data.custom.logo} alt="Logo"
-                                     className={!data.custom.logo && styles.invisible}
-                                />
-                                <p>{this.t("customPackage.header")}</p>
-                            </Col>
-                            <Col md="4" mdOffset={2} className={styles.sumContainer}>
-                                <span id="sum" className={styles.sumDisplay}>
-                                    <sup>€</sup>{this.state.price}
-                                </span>
-                            </Col>
-                        </Row>
-                        <Row className={styles.contentRow}>
-                            <Col md="4" className={styles.dropdownContainer}>
-                                <p>{this.t("customPackage.step1Hint")}</p>
-                                {this.state.dd1ErrorState ?
-                                    <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
-                                <div className={this.state.dd1ErrorState && styles.selectError}>
-                                    <SelectMenu defaultValue={this.state.dropdown1Value}
-                                                options={data.custom.dropdown1}
-                                                onChange={(ev) => this.handleDDChange(ev, this.state.dropdown1Value, data.custom.dropdown1, 1)}
+                        <div className={styles.borderRadiusFix}>
+                            <Row className={styles.headerRow}>
+                                <Col md="6" className={styles.titleLeft}>
+                                    <img src={data.custom.logo} alt="Logo"
+                                         className={!data.custom.logo && styles.invisible}
                                     />
-                                </div>
+                                    <p>{this.t("customPackage.header")}</p>
+                                </Col>
+                                <Col md="4" mdOffset={2} className={styles.sumContainer}>
+                                    <span id="sum" className={styles.sumDisplay}>
+                                        <sup>€</sup>{this.state.price}
+                                    </span>
+                                </Col>
+                            </Row>
+                            <Row className={styles.contentRow}>
+                                <Col md="4" className={styles.dropdownContainer}>
+                                    <p>{this.t("customPackage.step1Hint")}</p>
+                                    {this.state.dd1ErrorState ?
+                                        <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
+                                    <div className={this.state.dd1ErrorState && styles.selectError}>
+                                        <SelectMenu defaultValue={this.state.dropdown1Value}
+                                                    options={data.custom.dropdown1}
+                                                    onChange={(ev) => this.handleDDChange(ev, this.state.dropdown1Value, data.custom.dropdown1, 1)}
+                                        />
+                                    </div>
 
-                                {this.state.dd2ErrorState ?
-                                    <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
-                                <div className={this.state.dd2ErrorState && styles.selectError}>
-                                    <SelectMenu defaultValue={this.state.dropdown2Value}
-                                                options={data.custom.dropdown2}
-                                                onChange={(ev) => this.handleDDChange(ev, this.state.dropdown2Value, data.custom.dropdown2, 2)}
-                                    />
-                                </div>
+                                    {this.state.dd2ErrorState ?
+                                        <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
+                                    <div className={this.state.dd2ErrorState && styles.selectError}>
+                                        <SelectMenu defaultValue={this.state.dropdown2Value}
+                                                    options={data.custom.dropdown2}
+                                                    onChange={(ev) => this.handleDDChange(ev, this.state.dropdown2Value, data.custom.dropdown2, 2)}
+                                        />
+                                    </div>
 
-                                {this.renderLanguageSelector()}
-                            </Col>
-                            <Col md="4">
-                                <p className={styles.advisorText}>
-                                    {this.t("customPackage.step2Hint")}
-                                </p>
-                                {this.renderCheckboxList(data.custom.checkboxes, ::this.handleCBChange, 'middle')}
-                            </Col>
-                            <Col md="4">
-                                <p className={styles.advisorText}>
-                                    {this.t("customPackage.step3Hint")}
-                                </p>
-                                {this.renderCheckboxList(data.custom.topRightCheckboxes, ::this.handleCBChange, 'topRight')}
-                                <div className={styles.rightMiddleHeader}>
-                                    <h5>{this.t("customPackage.rightCenterHeader")}</h5>
-                                </div>
-                                {this.renderCheckboxList(data.custom.bottomRightCheckboxes, ::this.handleCBChange, 'bottomRight')}
-                                <div className={styles.purchaseButtonContainer}>
-                                    <button className={styles.purchaseButton} onClick={::this.handlePurchase}>
-                                        {this.t("customPackage.purchasePrompt")}
-                                    </button>
-                                </div>
-                            </Col>
-                        </Row>
+                                    {this.renderLanguageSelector()}
+                                </Col>
+                                <Col md="4">
+                                    <p className={styles.advisorText}>
+                                        {this.t("customPackage.step2Hint")}
+                                    </p>
+                                    {this.renderCheckboxList(data.custom.checkboxes, ::this.handleCBChange, 'middle')}
+                                </Col>
+                                <Col md="4">
+                                    <p className={styles.advisorText}>
+                                        {this.t("customPackage.step3Hint")}
+                                    </p>
+                                    {this.renderCheckboxList(data.custom.topRightCheckboxes, ::this.handleCBChange, 'topRight')}
+                                    <div className={styles.rightMiddleHeader}>
+                                        <h5>{this.t("customPackage.rightCenterHeader")}</h5>
+                                    </div>
+                                    {this.renderCheckboxList(data.custom.bottomRightCheckboxes, ::this.handleCBChange, 'bottomRight')}
+                                    <div className={styles.purchaseButtonContainer}>
+                                        <button className={styles.purchaseButton} onClick={::this.handlePurchase}>
+                                            {this.t("customPackage.purchasePrompt")}
+                                        </button>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
                     </div>
                 )}
             </div>
