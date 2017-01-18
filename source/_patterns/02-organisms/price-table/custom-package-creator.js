@@ -282,7 +282,7 @@ export default class CustomPackageCreator extends ReactComponent {
                                 <button className={styles.removeLanguageButton}
                                         onClick={() => this.handleRemoveLanguage(e.label)}
                                 >
-                                    Entfernen
+                                    {this.t("customPackage.removeLanguage")}
                                 </button>
                                 }
                             </li>
@@ -294,7 +294,7 @@ export default class CustomPackageCreator extends ReactComponent {
                             showLanguageSelector: !this.state.showLanguageSelector
                         });}}
                     >
-                        weitere Sprache buchen (ab 99€)
+                        {this.t("customPackage.addLanguagePrompt")}
                     </li>
                 </ul>
 
@@ -332,7 +332,7 @@ export default class CustomPackageCreator extends ReactComponent {
                                 <img src={data.custom.logo} alt="Logo"
                                      className={!data.custom.logo && styles.invisible}
                                 />
-                                <p>IHR INDIVIDUELLES PAKET</p>
+                                <p>{this.t("customPackage.header")}</p>
                             </Col>
                             <Col md="4" mdOffset={2} className={styles.sumContainer}>
                                 <span id="sum" className={styles.sumDisplay}>
@@ -342,12 +342,9 @@ export default class CustomPackageCreator extends ReactComponent {
                         </Row>
                         <Row className={styles.contentRow}>
                             <Col md="4" className={styles.dropdownContainer}>
-                                <p>
-                                    Im ersten Schritt stellen Sie hier die
-                                    allgemeinen Daten Ihres Paketes zusammen.
-                                </p>
+                                <p>{this.t("customPackage.step1Hint")}</p>
                                 {this.state.dd1ErrorState ?
-                                    <p className={styles.errorText}>Bitte wählen Sie eine Option aus</p> : ""}
+                                    <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
                                 <div className={this.state.dd1ErrorState && styles.selectError}>
                                     <SelectMenu defaultValue={this.state.dropdown1Value}
                                                 options={data.custom.dropdown1}
@@ -356,7 +353,7 @@ export default class CustomPackageCreator extends ReactComponent {
                                 </div>
 
                                 {this.state.dd2ErrorState ?
-                                    <p className={styles.errorText}>Bitte wählen Sie eine Option aus</p> : ""}
+                                    <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
                                 <div className={this.state.dd2ErrorState && styles.selectError}>
                                     <SelectMenu defaultValue={this.state.dropdown2Value}
                                                 options={data.custom.dropdown2}
@@ -368,23 +365,22 @@ export default class CustomPackageCreator extends ReactComponent {
                             </Col>
                             <Col md="4">
                                 <p className={styles.advisorText}>
-                                    Im nächsten Schritt könnenSie angeben, wie
-                                    viele Servicestunden Sie benötigen.
+                                    {this.t("customPackage.step2Hint")}
                                 </p>
                                 {this.renderCheckboxList(data.custom.checkboxes, ::this.handleCBChange, 'middle')}
                             </Col>
                             <Col md="4">
                                 <p className={styles.advisorText}>
-                                    Wähle über welche Kanäle die App veröffentlicht werden soll.
+                                    {this.t("customPackage.step3Hint")}
                                 </p>
                                 {this.renderCheckboxList(data.custom.topRightCheckboxes, ::this.handleCBChange, 'topRight')}
                                 <div className={styles.rightMiddleHeader}>
-                                    <h5>Domain der Kampagnenseite</h5>
+                                    <h5>{this.t("customPackage.rightCenterHeader")}</h5>
                                 </div>
                                 {this.renderCheckboxList(data.custom.bottomRightCheckboxes, ::this.handleCBChange, 'bottomRight')}
                                 <div className={styles.purchaseButtonContainer}>
                                     <button className={styles.purchaseButton} onClick={::this.handlePurchase}>
-                                        Kaufen
+                                        {this.t("customPackage.purchasePrompt")}
                                     </button>
                                 </div>
                             </Col>

@@ -59,7 +59,7 @@ export default class PriceTableElement extends ReactComponent {
         return (
             <Row>
                 <div className={styles.tagContainer}>
-                    <Tag type="success" className={styles.tag}>BELIEBT</Tag>
+                    <Tag type="success" className={styles.tag}>{this.t("priceTableElement.popular")}</Tag>
                 </div>
             </Row>
         );
@@ -74,7 +74,7 @@ export default class PriceTableElement extends ReactComponent {
         return (
             <Row>
                 <div className={styles.tagContainer}>
-                    <Tag type="success" className={styles.pseudotag}>BELIEBT</Tag>
+                    <Tag type="success" className={styles.pseudotag}>{this.t("priceTableElement.popular")}</Tag>
                 </div>
             </Row>
         );
