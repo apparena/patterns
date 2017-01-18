@@ -1,16 +1,10 @@
 import React from "react";
 import i18n from "i18n-js";
 
-var uniqueKey = 0;
-
 export default class BaseComponent extends React.Component {
     constructor(props, children) {
         super(props, children);
         this.state = this.getInitState ? this.getInitState() : {};
-    }
-
-    getUniqueKey() {
-        return uniqueKey++;
     }
 
     getChildrenArray(children) {
@@ -27,5 +21,4 @@ export default class BaseComponent extends React.Component {
         }
         return i18n.t(id);
     }
-
 }

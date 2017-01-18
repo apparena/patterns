@@ -46,7 +46,7 @@ export default class Checkbox extends ReactComponent {
      */
     renderWithTooltip() {
         const {id, positioning, checked, disabled, onChange, zIndex} = this.props;
-        var cId = id.replace("_", "");
+        const cId = id.replace("_", "");
         return (
             <Tooltip
                 zIndex={zIndex}
@@ -69,7 +69,7 @@ export default class Checkbox extends ReactComponent {
      */
     renderWithoutTooltip() {
         const {id, checked, disabled, onChange} = this.props;
-        var cId = id.replace("_", "");
+        const cId = id.replace("_", "");
         return (
             <Toggle
                 id={cId}
@@ -84,9 +84,7 @@ export default class Checkbox extends ReactComponent {
         const {className} = this.props;
         return (
             <div className={cx(styles.checkbox, className)}>
-                {this.props.renderTooltip && this.renderWithTooltip()}
-
-                {!this.props.renderTooltip && this.renderWithoutTooltip()}
+                {this.props.renderTooltip ? this.renderWithTooltip() : this.renderWithoutTooltip()}
             </div>
         )
     }

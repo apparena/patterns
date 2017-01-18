@@ -27,9 +27,9 @@ export default class Navbar extends ReactComponent {
         // classes
         const componentClass = cx(
             styles.navbar,
-            this.props.fixed && styles["navbar-fixed-" + this.props.fixed],
-            this.props.colorScheme && styles["navbar-" + this.props.colorScheme],
-            this.props.bg && styles["bg-" + this.props.bg],
+            this.props.fixed && styles[`navbar-fixed-${this.props.fixed}`],
+            this.props.colorScheme && styles[`navbar-${this.props.colorScheme}`],
+            this.props.bg && styles[`bg-${this.props.bg}`],
             this.props.className
         );
         const child = React.Children.map(children, (child) => {

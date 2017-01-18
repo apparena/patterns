@@ -6,10 +6,10 @@ import Animate from "../../../react-utils/animate";
 import Icon from "../../../00-atoms/icons/icons";
 
 const typeIcons = {
-    "info": "info-circle",
-    "success": "check",
-    "warning": "exclamation-triangle",
-    "danger": "exclamation-circle"
+    info: "info-circle",
+    success: "check",
+    warning: "exclamation-triangle",
+    danger: "exclamation-circle"
 };
 
 export default class Notification extends ReactComponent {

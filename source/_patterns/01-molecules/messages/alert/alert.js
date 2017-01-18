@@ -2,7 +2,7 @@ import React, {PropTypes} from "react";
 import ReactComponent from "../../../react-utils/component";
 import cx from "classnames";
 
-var ALERT_TYPES = [
+const ALERT_TYPES = [
     "danger",
     "info",
     "success",
@@ -25,8 +25,8 @@ export default class Alert extends ReactComponent {
     renderButton() {
         if (this.props.dismissible) {
             return (
-                <button type="button" className="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <button type="button" className="close">
+                    <span>&times;</span>
                 </button>
             );
         }
@@ -35,7 +35,7 @@ export default class Alert extends ReactComponent {
     render() {
         const classes = cx(
             'alert',
-            'alert-' + this.props.type,
+            `alert-${this.props.type}`,
             this.props.classNames
         );
 

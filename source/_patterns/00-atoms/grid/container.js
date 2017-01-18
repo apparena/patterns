@@ -13,6 +13,8 @@ function Container({className, fluid, children, ...props}) {
 }
 
 Container.propTypes = {
+    className: PropTypes.string,
+    children: PropTypes.node,
     fluid: PropTypes.bool,
 };
 Container.defaultProps = {

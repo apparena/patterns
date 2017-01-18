@@ -16,7 +16,10 @@ export default class Jumbotron extends ReactComponent {
     };
 
     render() {
-        let classes = "jumbotron " + cx(this.props.classNames);
+        let classes = cx(
+            "jumbotron",
+            this.props.classNames
+        );
         return (
             <div className={classes}>
                 {this.props.children}
