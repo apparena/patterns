@@ -286,7 +286,7 @@ export default class CustomPackageCreator extends ReactComponent {
                     <li className={cx(styles.addLanguageButton, !this.state.moreLanguagesBookable && styles.invisible)}
                         onClick={(e) => {
                         this.setState({
-                            showLanguageSelector: true
+                            showLanguageSelector: !this.state.showLanguageSelector
                         });}}
                     >
                         weitere Sprache buchen (ab 99€)

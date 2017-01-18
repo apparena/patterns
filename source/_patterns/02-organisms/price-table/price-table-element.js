@@ -58,7 +58,9 @@ export default class PriceTableElement extends ReactComponent {
     renderPopularTag() {
         return (
             <Row>
-                <Tag type="success" className={styles.tag}>BELIEBT</Tag>
+                <div className={styles.tagContainer}>
+                    <Tag type="success" className={styles.tag}>BELIEBT</Tag>
+                </div>
             </Row>
         );
     }
@@ -71,7 +73,9 @@ export default class PriceTableElement extends ReactComponent {
     renderPseudoTag() {
         return (
             <Row>
-                <Tag type="success" className={styles.pseudotag}>BELIEBT</Tag>
+                <div className={styles.tagContainer}>
+                    <Tag type="success" className={styles.pseudotag}>BELIEBT</Tag>
+                </div>
             </Row>
         );
     }

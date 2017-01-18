@@ -97,17 +97,21 @@
         box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
       }
 
-      @media (min-width: 1200px) {
-        .tag {
-          float: right;
-          margin: 15px 30px 0 0;
-          font-size: 90%;
-        }
-        .pseudotag {
-          float: right;
-          margin: 15px 30px 0 0;
-          font-size: 90%;
-          visibility: hidden;
+      .tagContainer {
+        width: 100%;
+
+        @media (min-width: 1200px) {
+          .tag {
+            float: right;
+            margin: 15px 30px 0 0;
+            font-size: 90%;
+          }
+          .pseudotag {
+            float: right;
+            margin: 15px 30px 0 0;
+            font-size: 90%;
+            visibility: hidden;
+          }
         }
       }
 
