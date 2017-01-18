@@ -22,7 +22,7 @@ export default class CustomPackageCreator extends ReactComponent {
             tickedCheckboxes: [],
             counters: [],
             price: 265,
-            selectedLanguages: [{}],
+            selectedLanguages: [],
             showLanguageSelector: false,
             moreLanguagesBookable: false
         };
@@ -225,15 +225,15 @@ export default class CustomPackageCreator extends ReactComponent {
                     return (
                         <li key={i}>
                             {!this.state.tickedCheckboxes.includes(idPrefix + i) &&
-                                <Icon name="times-circle-o" className={styles.cbUnchecked} />
+                            <Icon name="times-circle-o" className={styles.cbUnchecked}/>
                             }
                             {this.state.tickedCheckboxes.includes(idPrefix + i) &&
-                                <Icon name="check-circle-o" className={styles.cbChecked} />
+                            <Icon name="check-circle-o" className={styles.cbChecked}/>
                             }
                             {e.labelPlural &&
-                                <div className={styles.counter}>
-                                    {this.state.counters[i]}
-                                </div>
+                            <div className={styles.counter}>
+                                {this.state.counters[i]}
+                            </div>
                             }
                             <input id={`${idPrefix}${i}`} type="checkbox" value={e.price}
                                    onChange={e.labelPlural ? (ev) => this.handleCountedCBChange(ev, i, e.price) : onChange}
@@ -242,14 +242,18 @@ export default class CustomPackageCreator extends ReactComponent {
                                 {e.labelPlural && this.state.counters[i] > 1 ? e.labelPlural : e.label}
                             </label>
                             {e.labelPlural &&
-                                <div className={styles.buttonRow}>
-                                    <button className={styles.checkboxButton} onClick={(ev) => this.handleCounterClick(ev, i, e.price, true, this.state.tickedCheckboxes.includes(idPrefix + i))}>
-                                        <Icon name="plus" />
-                                    </button>
-                                    <button className={styles.checkboxButton} onClick={(ev) => this.handleCounterClick(ev, i, e.price, false, this.state.tickedCheckboxes.includes(idPrefix + i))}>
-                                        <Icon name="minus" />
-                                    </button>
-                                </div>
+                            <div className={styles.buttonRow}>
+                                <button className={styles.checkboxButton}
+                                        onClick={(ev) => this.handleCounterClick(ev, i, e.price, true, this.state.tickedCheckboxes.includes(idPrefix + i))}
+                                >
+                                    <Icon name="plus"/>
+                                </button>
+                                <button className={styles.checkboxButton}
+                                        onClick={(ev) => this.handleCounterClick(ev, i, e.price, false, this.state.tickedCheckboxes.includes(idPrefix + i))}
+                                >
+                                    <Icon name="minus"/>
+                                </button>
+                            </div>
                             }
                         </li>
                     );
@@ -269,16 +273,17 @@ export default class CustomPackageCreator extends ReactComponent {
                     {this.state.selectedLanguages.map((e, i) => {
                         return (
                             <li key={i}>
-                                <img src="http://data.websitebox.com/data/applications/01/images/gadgets/translator/images/32x32/plain/flag_germany.png"
-                                     alt="flag"
+                                <img
+                                    src="http://data.websitebox.com/data/applications/01/images/gadgets/translator/images/32x32/plain/flag_germany.png"
+                                    alt="flag"
                                 />
                                 {e.label}
                                 {e.label !== data.custom.defaultLanguage &&
-                                    <button className={styles.removeLanguageButton}
-                                            onClick={() => this.handleRemoveLanguage(e.label)}
-                                    >
-                                        Entfernen
-                                    </button>
+                                <button className={styles.removeLanguageButton}
+                                        onClick={() => this.handleRemoveLanguage(e.label)}
+                                >
+                                    Entfernen
+                                </button>
                                 }
                             </li>
                         );
@@ -300,8 +305,9 @@ export default class CustomPackageCreator extends ReactComponent {
                             <li key={i} className={styles.addLanguageButton}
                                 onClick={() => this.handleAddLanguage(e.label, e.price)}
                             >
-                                <img src="http://data.websitebox.com/data/applications/01/images/gadgets/translator/images/32x32/plain/flag_germany.png"
-                                     alt="flag"
+                                <img
+                                    src="http://data.websitebox.com/data/applications/01/images/gadgets/translator/images/32x32/plain/flag_germany.png"
+                                    alt="flag"
                                 />
                                 {e.label} - {e.price}€
                             </li>
@@ -316,14 +322,16 @@ export default class CustomPackageCreator extends ReactComponent {
      * Main render method.
      * @returns {XML}
      */
-    render(){
+    render() {
         return (
             <div>
                 {this.props.visible && (
                     <div className={styles.packageCreator}>
                         <Row className={styles.headerRow}>
                             <Col md="6" className={styles.titleLeft}>
-                                <img src={data.custom.logo} alt="Logo" className={!data.custom.logo && styles.invisible}/>
+                                <img src={data.custom.logo} alt="Logo"
+                                     className={!data.custom.logo && styles.invisible}
+                                />
                                 <p>IHR INDIVIDUELLES PAKET</p>
                             </Col>
                             <Col md="4" mdOffset={2} className={styles.sumContainer}>
@@ -338,7 +346,8 @@ export default class CustomPackageCreator extends ReactComponent {
                                     Im ersten Schritt stellen Sie hier die
                                     allgemeinen Daten Ihres Paketes zusammen.
                                 </p>
-                                {this.state.dd1ErrorState ? <p className={styles.errorText}>Bitte wählen Sie eine Option aus</p> : ""}
+                                {this.state.dd1ErrorState ?
+                                    <p className={styles.errorText}>Bitte wählen Sie eine Option aus</p> : ""}
                                 <div className={this.state.dd1ErrorState && styles.selectError}>
                                     <SelectMenu defaultValue={this.state.dropdown1Value}
                                                 options={data.custom.dropdown1}
@@ -346,7 +355,8 @@ export default class CustomPackageCreator extends ReactComponent {
                                     />
                                 </div>
 
-                                {this.state.dd2ErrorState ? <p className={styles.errorText}>Bitte wählen Sie eine Option aus</p> : ""}
+                                {this.state.dd2ErrorState ?
+                                    <p className={styles.errorText}>Bitte wählen Sie eine Option aus</p> : ""}
                                 <div className={this.state.dd2ErrorState && styles.selectError}>
                                     <SelectMenu defaultValue={this.state.dropdown2Value}
                                                 options={data.custom.dropdown2}
