@@ -2,4 +2,8 @@
 title: Slider
 ---
 
-Slider component usign slick slider so far. Maybe later replaced by a react component.
+Slider component using slick slider so far. Maybe later replaced by a react component.
+
+## Dependencies
+
+- http://kenwheeler.github.io/slick/
