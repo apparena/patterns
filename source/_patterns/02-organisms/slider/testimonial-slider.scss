@@ -3,15 +3,17 @@
  */
 @import "../../../css/scss/abstracts/variables";
 @import "../../../css/scss/abstracts/mixins";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
 
 /*=========================================================================
   Organism Form
  ========================================================================== */
 
-section.section-testemonial-slider {
-  $testemonial-height: 34rem;
-  $testemonial-quote-width: 40/100;
-  .testemonial-slider {
+section.section-testimonial-slider {
+  $testimonial-height: 34rem;
+  $testimonial-quote-width: 40/100;
+  .testimonial-slider {
     .slick-prev, .slick-next {
       // position arrows in the middle of relevant image
       top: 300px; // half of mobile image height
@@ -19,16 +21,16 @@ section.section-testemonial-slider {
         top: 50%;
       }
     }
-    .testemonial {
-      .testemonial-screens {
+    .testimonial {
+      .testimonial-screens {
         position: relative;
         width: 100%;
         @media (min-width: map_get($grid-breakpoints, 'lg')) {
-          height: $testemonial-height;
-          width: 100% - percentage($testemonial-quote-width);
+          height: $testimonial-height;
+          width: 100% - percentage($testimonial-quote-width);
           float: right;
         }
-        .testemonial-screen-browser {
+        .testimonial-screen-browser {
           display: none;
           top: 0;
           @media (min-width: map_get($grid-breakpoints, 'lg')) {
@@ -37,7 +39,7 @@ section.section-testemonial-slider {
             left: 250px;
           }
         }
-        .testemonial-screen-mobile {
+        .testimonial-screen-mobile {
           position: relative;
           display: block;
           max-width: 100%;
@@ -52,12 +54,12 @@ section.section-testemonial-slider {
           }
         }
       }
-      .testemonial-quote {
+      .testimonial-quote {
         width: 100%;
         display: table;
         @media (min-width: map_get($grid-breakpoints, 'lg')) {
-          height: $testemonial-height;
-          width: percentage($testemonial-quote-width);
+          height: $testimonial-height;
+          width: percentage($testimonial-quote-width);
           float: left;
         }
         blockquote {
@@ -66,7 +68,7 @@ section.section-testemonial-slider {
           vertical-align: middle;
         }
       }
-      .testemonial-product-cta {
+      .testimonial-product-cta {
         background-color: #fff;
         padding: 1rem;
         h3 {
@@ -81,11 +83,11 @@ section.section-testemonial-slider {
       }
     }
   }
-  .testemonial-slider-divider {
+  .testimonial-slider-divider {
     width: 100%;
     background-color: $gray-lightest;
-    .testemonial-slider-divider-arrow {
-      margin-left: percentage($testemonial-quote-width) / 2;
+    .testimonial-slider-divider-arrow {
+      margin-left: percentage($testimonial-quote-width) / 2;
       transform: translateX(-50%);
       width: 0;
       height: 0;
@@ -94,7 +96,7 @@ section.section-testemonial-slider {
       border-color: #ffffff transparent transparent transparent;
     }
   }
-  .testemonial-clients-slider {
+  .testimonial-clients-slider {
     &.slick-slider {
       margin-bottom: 0;
     }
@@ -102,7 +104,7 @@ section.section-testemonial-slider {
     background-color: $gray-lightest;
     padding: 0 10%;
     //display: table; // center vertical-alignment of client logos - doesn't work though
-    .testemonial-client {
+    .testimonial-client {
       padding: 1rem;
       height: 90px;
       //display: table-cell;

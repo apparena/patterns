@@ -1,12 +1,9 @@
 {{# slider }}
-    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
-    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
     <div class="o-slider ml-3 mr-3" id="{{id}}">
         {{# items }}
             <div>{{{content}}}</div>
         {{/ items }}
     </div>
-    <script type="application/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
     <script>
         $(document).ready(function () {
             $('#{{id}}').slick({

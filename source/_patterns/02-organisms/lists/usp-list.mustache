@@ -1,0 +1,22 @@
+{{#usp-list}}
+<section class="section-dark section-usp-list section-divider-bottom text-center">
+    <div class="container"> {{! TODO: correct container }}
+        <div class="row homepage-usps-row">
+            {{#items}}
+                <div class="col-md-6 col-lg-3">
+                    {{> 01-molecules/02-website/usp }}
+                </div>
+            {{/items}}
+        </div>
+    </div>
+</section>
+<script type="application/javascript">
+    $(function () {
+        $('.section-usp-list').each(function(){
+            $(this).find('.usp-icon').matchHeight();
+            $(this).find('.usp-title').matchHeight();
+            $(this).find('.usp-description').matchHeight();
+        });
+    });
+</script>
+{{/usp-list}}

@@ -122,6 +122,7 @@
     "sass-loader": "^4.0.0",
     "simple-assign": "^0.1.0",
     "sinon": "^1.17.3",
+    "slick-carousel": "^1.6",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-combine-loaders": "^2.0.0",

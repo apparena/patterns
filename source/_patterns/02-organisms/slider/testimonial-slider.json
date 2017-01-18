@@ -1,8 +1,8 @@
 {
-    "testemonial-slider": {
+    "testimonial-slider": {
         "items": [
             {
-                "testemonial": {
+                "testimonial": {
                     "screens": {
                         "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
                         "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
@@ -19,7 +19,7 @@
                 }
             },
             {
-                "testemonial": {
+                "testimonial": {
                     "screens": {
                         "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
                         "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
@@ -36,7 +36,7 @@
                 }
             },
             {
-                "testemonial": {
+                "testimonial": {
                     "screens": {
                         "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
                         "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
@@ -53,7 +53,7 @@
                 }
             },
             {
-                "testemonial": {
+                "testimonial": {
                     "screens": {
                         "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
                         "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
@@ -70,7 +70,7 @@
                 }
             },
             {
-                "testemonial": {
+                "testimonial": {
                     "screens": {
                         "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
                         "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
@@ -87,7 +87,7 @@
                 }
             },
             {
-                "testemonial": {
+                "testimonial": {
                     "screens": {
                         "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
                         "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
@@ -104,7 +104,7 @@
                 }
             },
             {
-                "testemonial": {
+                "testimonial": {
                     "screens": {
                         "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
                         "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
@@ -121,7 +121,7 @@
                 }
             },
             {
-                "testemonial": {
+                "testimonial": {
                     "screens": {
                         "browser": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
                         "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
