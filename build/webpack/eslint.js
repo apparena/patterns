@@ -7,7 +7,7 @@
 // In the future, we might create a separate list of rules for production.
 // It would probably be more strict.
 
-var WARNING = 1;
+const WARNING = 1;
 
 module.exports = {
     root: true,
@@ -48,7 +48,9 @@ module.exports = {
 
     rules: {
         // http://eslint.org/docs/rules/
-        // 'array-callback-return': WARNING,
+        'array-callback-return': WARNING,
+        'arrow-parens': WARNING,
+        'arrow-spacing': WARNING,
         'default-case': [WARNING, {commentPattern: '^no default$'}],
         'dot-location': [WARNING, 'property'],
         eqeqeq: [WARNING, 'allow-null'],
@@ -59,6 +61,7 @@ module.exports = {
         'no-caller': WARNING,
         'no-cond-assign': [WARNING, 'always'],
         'no-const-assign': WARNING,
+        'no-confusing-arrow': WARNING,
         'no-control-regex': WARNING,
         'no-delete-var': WARNING,
         'no-dupe-args': WARNING,
@@ -101,6 +104,7 @@ module.exports = {
         'no-obj-calls': WARNING,
         'no-octal': WARNING,
         'no-octal-escape': WARNING,
+        'no-param-reassign': WARNING,
         'no-redeclare': WARNING,
         'no-regex-spaces': WARNING,
         'no-restricted-syntax': [
@@ -119,6 +123,7 @@ module.exports = {
         'no-throw-literal': WARNING,
         'no-undef': WARNING,
         'no-unexpected-multiline': WARNING,
+        'no-unneeded-ternary': WARNING,
         'no-unreachable': WARNING,
         'no-unused-expressions': WARNING,
         'no-unused-labels': WARNING,
@@ -133,15 +138,23 @@ module.exports = {
             ignoreImport: false,
             ignoreExport: false,
         }],
+        'no-var': WARNING,
         'no-with': WARNING,
         'no-whitespace-before-property': WARNING,
+        'object-shorthand': WARNING,
         'operator-assignment': [WARNING, 'always'],
         radix: WARNING,
+        'prefer-arrow-callback': WARNING,
+        'prefer-const': WARNING,
+        'prefer-spread': WARNING,
+        'prefer-template': WARNING,
+        'quote-props': [WARNING, "as-needed"],
         'require-yield': WARNING,
         'rest-spread-spacing': [WARNING, 'never'],
         strict: [WARNING, 'never'],
         'unicode-bom': [WARNING, 'never'],
         'use-isnan': WARNING,
+        'template-curly-spacing': WARNING,
         'valid-typeof': WARNING,
 
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/
@@ -175,24 +188,27 @@ module.exports = {
         'jsx-a11y/no-access-key': WARNING,
         // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
         'react/jsx-equals-spacing': [WARNING, 'never'],
-        'react/jsx-handler-names': WARNING,
+        //'react/jsx-handler-names': WARNING,
         'react/sort-comp': WARNING,
         'react/jsx-no-duplicate-props': [WARNING, {ignoreCase: true}],
         'react/jsx-no-undef': WARNING,
+        //'react/jsx-no-bind': [WARNING, {ignoreRefs: true, allowArrowFunctions: false, allowBind: false}],
         'react/jsx-curly-spacing': WARNING,
         'react/jsx-boolean-value': WARNING,
         'react/self-closing-comp': WARNING,
         'react/wrap-multilines': WARNING,
+        'react/no-direct-mutation-state': WARNING,
         'react/no-multi-comp': WARNING,
+        'react/no-unknown-property': WARNING,
         'react/prefer-es6-class': WARNING,
         'react/prefer-stateless-function': WARNING,
+        'react/prop-types': WARNING,
         'react/no-string-refs': WARNING,
         'react/jsx-closing-bracket-location': WARNING,
         'react/jsx-pascal-case': WARNING,
         'react/jsx-uses-react': WARNING,
         'react/jsx-uses-vars': WARNING,
         'react/no-deprecated': WARNING,
-        'react/no-direct-mutation-state': WARNING,
         'react/no-is-mounted': WARNING,
         'react/react-in-jsx-scope': WARNING,
         'react/require-render-return': WARNING,
