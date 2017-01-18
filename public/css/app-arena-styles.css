@@ -6131,7 +6131,7 @@ button.close {
 
 @media (min-width: 992px) {
   .modal-lg {
-    max-width: 800px; } }
+    max-width: 1000px; } }
 
 .tooltip {
   position: absolute;
@@ -9258,6 +9258,7 @@ input[type="button"].btn-block {
  ========================================================================== */
 .card {
   padding: 1rem;
+  margin: 0.2rem 0;
   border: 1px solid;
   border-color: #e6ebf1 #e6ebf1 #d5dfe8;
   border-radius: 3px; }
@@ -9996,7 +9997,7 @@ select.form-control {
 
 @media (min-width: 992px) {
   .modal-lg {
-    max-width: 800px; } }
+    max-width: 1000px; } }
 
 .close {
   float: right;
@@ -11145,7 +11146,7 @@ main[role=main] {
 
 @media (min-width: 992px) {
   .modal-lg {
-    max-width: 800px; } }
+    max-width: 1000px; } }
 
 /*=========================================================================
   Molecules Filter bar
