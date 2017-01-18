@@ -108,8 +108,8 @@ export default class Button extends ReactComponent {
         // classes
         const componentClass = cx(
             styles.btn,
-            styles["btn-" + type],
-            size && styles["btn-" + size],
+            styles[`btn-${type}`],
+            size && styles[`btn-${size}`],
             block && styles["btn-block"],
             isActive && styles["active"],
             isDisabled && styles["disabled"],

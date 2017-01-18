@@ -1,28 +1,27 @@
-{{#testemonial-slider}}
-    <section class="section-testemonial-slider no-margin-bottom no-padding-bottom">
-        <div class="testemonial-slider">
+{{#testimonial-slider}}
+    <section class="section-testimonial-slider no-margin-bottom no-padding-bottom">
+        <div class="testimonial-slider">
             {{#items}}
-                {{> 01-molecules/02-website/testemonial }}
+                {{> 01-molecules/02-website/testimonial }}
             {{/items}}
         </div>
-        <div class="testemonial-slider-divider">
-            <div class="testemonial-slider-divider-arrow"></div>
+        <div class="testimonial-slider-divider">
+            <div class="testimonial-slider-divider-arrow"></div>
         </div>
-        <div class="testemonial-clients-slider">
+        <div class="testimonial-clients-slider">
             {{#items}}
-                {{> 00-atoms/02-website/testemonial-client }}
+                {{> 00-atoms/02-website/testimonial-client }}
             {{/items}}
         </div>
     </section>
-    <script src="{{cdn-base-url}}/js/vendor/slick-carousel/slick/slick.js"></script>
     <script>
         $(document).ready(function () {
-            $('.testemonial-slider').slick({
+            $('.testimonial-slider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,
                 fade: true,
-                asNavFor: '.testemonial-clients-slider',
+                asNavFor: '.testimonial-clients-slider',
                 useCSS: true,
                 cssEase: 'ease',
                 infinite: true,
@@ -37,13 +36,13 @@
                     }
                 ]
             });
-            $('.testemonial-clients-slider').slick({
+            $('.testimonial-clients-slider').slick({
                 slidesToShow: 5,
                 slidesToScroll: 1,
                 arrows: false,
                 fade: false,
                 infinite: true,
-                asNavFor: '.testemonial-slider',
+                asNavFor: '.testimonial-slider',
                 dots: false,
                 centerMode: false,
                 focusOnSelect: true,
@@ -82,4 +81,4 @@
             });
         });
     </script>
-{{/testemonial-slider}}
+{{/testimonial-slider}}

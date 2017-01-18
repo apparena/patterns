@@ -15,7 +15,7 @@ export default class Draggable extends ReactComponent {
         const {handle, children} = this.props;
         return (
             <ReactDraggable
-                handle={"." + handle}
+                handle={`.${handle}`}
             >
                 {children}
             </ReactDraggable>

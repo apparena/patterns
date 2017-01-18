@@ -3,30 +3,26 @@ import cx from "classnames";
 import styles from "./form-group.scss";
 import Tooltip from "../tooltip/tooltip";
 
-function renderChildren(validationState, validationFeedback, children) {
-    if (validationState && validationState !== "default" && validationFeedback) {
-        return (
-            <Tooltip
-                label={validationFeedback}
-                zIndex={2050}
-                className={styles.tooltip}
-            >
-                {children}
-            </Tooltip>
-        )
-    }
-    return children;
-}
-
 function FormGroup({className, htmlFor, label, children, validationState, validationFeedback, ...props}) {
     props.className = cx(styles["form-group"], validationState && styles[`has-${validationState}`], className);
 
-    children = React.Children.map(children, (child) => {
+    const elements = React.Children.map(children, (child) => {
         if (child.type.name === "Input") {
-            const input =  React.cloneElement(child, {
+            const input = React.cloneElement(child, {
                 className: validationState ? cx(child.props.className, styles[`form-control-${validationState}`]) : cx(child.props.className)
             });
-            return renderChildren(validationState, validationFeedback, input)
+            if (validationState && validationState !== "default" && validationFeedback) {
+                return (
+                    <Tooltip
+                        label={validationFeedback}
+                        zIndex={2050}
+                        className={styles.tooltip}
+                    >
+                        {input}
+                    </Tooltip>
+                )
+            }
+            return input;
         } else {
             return React.cloneElement(child);
         }
@@ -35,7 +31,7 @@ function FormGroup({className, htmlFor, label, children, validationState, valida
     return (
         <div {...props}>
             <label className={styles["form-control-label"]} htmlFor={htmlFor}>{label}</label>
-            {children}
+            {elements}
         </div>
     );
 }
