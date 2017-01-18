@@ -123,6 +123,26 @@
     ]
   },
   "custom": {
+    "logo": "",
+    "availableLanguages": [
+      {
+        "label": "de_CH",
+        "price": 99
+      },
+      {
+        "label": "en_US",
+        "price": 125
+      },
+      {
+        "label": "dk_DK",
+        "price": 99
+      },
+      {
+        "label": "de_AT",
+        "price": 99
+      }
+    ],
+    "defaultLanguage": "de_DE",
     "dropdown1": [
       {
         "label": "1 Monat Laufzeit",
