@@ -244,11 +244,13 @@ export default class CustomPackageCreator extends ReactComponent {
                             {e.labelPlural &&
                             <div className={styles.buttonRow}>
                                 <button className={styles.checkboxButton}
-                                        onClick={(ev) => this.handleCounterClick(ev, i, e.price, true, this.state.tickedCheckboxes.includes(idPrefix + i))}>
+                                        onClick={(ev) => this.handleCounterClick(ev, i, e.price, true, this.state.tickedCheckboxes.includes(idPrefix + i))}
+                                >
                                     <Icon name="plus"/>
                                 </button>
                                 <button className={styles.checkboxButton}
-                                        onClick={(ev) => this.handleCounterClick(ev, i, e.price, false, this.state.tickedCheckboxes.includes(idPrefix + i))}>
+                                        onClick={(ev) => this.handleCounterClick(ev, i, e.price, false, this.state.tickedCheckboxes.includes(idPrefix + i))}
+                                >
                                     <Icon name="minus"/>
                                 </button>
                             </div>
@@ -329,7 +331,8 @@ export default class CustomPackageCreator extends ReactComponent {
                         <Row className={styles.headerRow}>
                             <Col md="6" className={styles.titleLeft}>
                                 <img src={data.custom.logo} alt="Logo"
-                                     className={!data.custom.logo && styles.invisible}/>
+                                     className={!data.custom.logo && styles.invisible}
+                                />
                                 <p>IHR INDIVIDUELLES PAKET</p>
                             </Col>
                             <Col md="4" mdOffset={2} className={styles.sumContainer}>
