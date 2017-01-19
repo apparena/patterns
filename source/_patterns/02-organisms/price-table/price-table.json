@@ -9,11 +9,11 @@
         "info": [
           {
             "text": "Die Starter edition enthält keinen Service",
-            "options": []
+            "options": ["bold"]
           },
           {
             "text": "Einige Funktionen sind nicht verfügbar",
-            "options": []
+            "options": ["bold", "italic"]
           }
         ],
         "info2": [
@@ -29,11 +29,20 @@
         "prompt": "Kaufen",
         "title": "Premium",
         "info": [
-          "Die Premium edition enthält keinen Service",
-          "Einige Funktionen sind nicht verfügbar"
+          {
+            "text": "Die Premium edition enthält keinen Service",
+            "options": []
+          },
+          {
+            "text": "Einige Funktionen sind nicht verfügbar",
+            "options": []
+          }
         ],
         "info2": [
-          "Limitierter Quellcode Zugriff"
+          {
+            "text": "Limitierter Quellcode Zugriff",
+            "options": ["italic"]
+          }
         ]
       },
       {
@@ -43,12 +52,24 @@
         "title": "Deluxe",
         "popular": 1,
         "info": [
-          "Die Deluxe edition enthält 1 Stunde Service",
-          "Einige Funktionen sind nicht verfügbar"
+          {
+            "text": "Die Deluxe edition enthält 1 Stunde Service",
+            "options": []
+          },
+          {
+            "text": "Einige Funktionen sind nicht verfügbar",
+            "options": []
+          }
         ],
         "info2": [
-          "Subdomain",
-          "15% bessere Performance"
+          {
+            "text": "Subdomain",
+            "options": []
+          },
+          {
+            "text": "15% bessere Performance",
+            "options": []
+          }
         ]
       },
       {
@@ -57,13 +78,28 @@
         "prompt": "Kaufen",
         "title": "Ultra Deluxe",
         "info": [
-          "Die Ultra Deluxe edition enthält 5 Stunden Service",
-          "Alle Funktionen sind verfügbar",
-          "Sie erhalten als VIP vorrang im Support"
+          {
+            "text": "Die Ultra Deluxe edition enthält 5 Stunden Service",
+            "options": []
+          },
+          {
+            "text": "Alle Funktionen sind verfügbar",
+            "options": []
+          },
+          {
+            "text": "Sie erhalten als VIP vorrang im Support",
+            "options": []
+          }
         ],
         "info2": [
-          "Voller Quellcode Zugriff",
-          "Load balancing"
+          {
+            "text": "Voller Quellcode Zugriff",
+            "options": []
+          },
+          {
+            "text": "Load balancing",
+            "options": []
+          }
         ]
       }
     ]
@@ -103,12 +139,24 @@
         "prompt": "Kaufen",
         "title": "Premium",
         "info": [
-          "Die Premium edition enthält keinen Service",
-          "Einige Funktionen sind nicht verfügbar",
-          "Das Premium Paket ist mit 4€/mtl unschlagbar"
+          {
+            "text": "Die Premium edition enthält keinen Service",
+            "options": []
+          },
+          {
+            "text": "Einige Funktionen sind nicht verfügbar",
+            "options": []
+          },
+          {
+            "text": "Das Premium Paket ist mit 4€/mtl unschlagbar",
+            "options": []
+          }
         ],
         "info2": [
-          "Webinar zur Qualitätsverbesserung"
+          {
+            "text": "Webinar zur Qualitätsverbesserung",
+            "options": []
+          }
         ]
       },
       {
@@ -117,12 +165,24 @@
         "prompt": "Kaufen",
         "title": "Deluxe",
         "info": [
-          "Die Deluxe edition enthält 1 Stunde Service",
-          "Einige Funktionen sind nicht verfügbar",
-          "Das Deluxe Paket ist mit 9€/mtl nicht zu übertreffen"
+          {
+            "text": "Die Deluxe edition enthält 1 Stunde Service",
+            "options": []
+          },
+          {
+            "text": "Einige Funktionen sind nicht verfügbar",
+            "options": []
+          },
+          {
+            "text": "Das Deluxe Paket ist mit 9€/mtl nicht zu übertreffen",
+            "options": []
+          }
         ],
         "info2": [
-          "Zugriff per SSH und SFTP"
+          {
+            "text": "Zugriff per SSH und SFTP",
+            "options": []
+          }
         ]
       },
       {
@@ -132,14 +192,32 @@
         "title": "Ultra Deluxe",
         "popular": 1,
         "info": [
-          "Die Ultra Deluxe edition enthält 5 Stunden Service",
-          "Alle Funktionen sind verfügbar",
-          "Sie erhalten als VIP vorrang im Support",
-          "27€/mtl für perfektion"
+          {
+            "text": "Die Ultra Deluxe edition enthält 5 Stunden Service",
+            "options": []
+          },
+          {
+            "text": "Alle Funktionen sind verfügbar",
+            "options": []
+          },
+          {
+            "text": "Sie erhalten als VIP vorrang im Support",
+            "options": []
+          },
+          {
+            "text": "27€/mtl für perfektion",
+            "options": []
+          }
         ],
         "info2": [
-          "Google Analytics und Load Balancer",
-          "1 Probemonat Amazon Prime enthalten"
+          {
+            "text": "Google Analytics und Load Balancer",
+            "options": []
+          },
+          {
+            "text": "1 Probemonat Amazon Prime enthalten",
+            "options": []
+          }
         ]
       }
     ]
