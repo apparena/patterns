@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "7aecdc79d4ccceffa3f4704948c5b2d7",
     "content-hash": "20976d076c260623558ee4fa617e8e96",
     "packages": [],
     "packages-dev": [
@@ -67,7 +68,7 @@
                 "tar",
                 "zip"
             ],
-            "time": "2016-02-15T22:46:40+00:00"
+            "time": "2016-02-15 22:46:40"
         },
         {
             "name": "doctrine/collections",
@@ -133,7 +134,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2015-04-14T22:21:58+00:00"
+            "time": "2015-04-14 22:21:58"
         },
         {
             "name": "kevinlebrun/colors.php",
@@ -184,7 +185,7 @@
                 "console",
                 "shell"
             ],
-            "time": "2016-04-12T20:58:34+00:00"
+            "time": "2016-04-12 20:58:34"
         },
         {
             "name": "michelf/php-markdown",
@@ -235,7 +236,7 @@
             "keywords": [
                 "markdown"
             ],
-            "time": "2016-10-29T18:58:20+00:00"
+            "time": "2016-10-29 18:58:20"
         },
         {
             "name": "mustache/mustache",
@@ -281,7 +282,7 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2016-07-31T06:18:27+00:00"
+            "time": "2016-07-31 06:18:27"
         },
         {
             "name": "pattern-lab/core",
@@ -342,7 +343,7 @@
                 "style guide",
                 "styleguide"
             ],
-            "time": "2016-07-22T03:00:05+00:00"
+            "time": "2016-07-22 03:00:05"
         },
         {
             "name": "pattern-lab/patternengine-mustache",
@@ -397,7 +398,7 @@
                 "pattern engine",
                 "pattern lab"
             ],
-            "time": "2016-06-21T01:51:20+00:00"
+            "time": "2016-06-21 01:51:20"
         },
         {
             "name": "pattern-lab/plugin-data-inheritance",
@@ -454,7 +455,7 @@
                 "lineage",
                 "pattern lab"
             ],
-            "time": "2016-07-03T00:17:04+00:00"
+            "time": "2016-07-03 00:17:04"
         },
         {
             "name": "pattern-lab/styleguidekit-assets-default",
@@ -513,7 +514,7 @@
                 "pattern lab",
                 "styleguide"
             ],
-            "time": "2016-12-22T15:55:50+00:00"
+            "time": "2016-12-22 15:55:50"
         },
         {
             "name": "pattern-lab/styleguidekit-mustache-default",
@@ -559,7 +560,7 @@
                 "pattern lab",
                 "styleguide"
             ],
-            "time": "2016-07-13T02:42:24+00:00"
+            "time": "2016-07-13 02:42:24"
         },
         {
             "name": "seld/jsonlint",
@@ -605,7 +606,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2016-11-14T17:59:58+00:00"
+            "time": "2016-11-14 17:59:58"
         },
         {
             "name": "shudrum/array-finder",
@@ -645,7 +646,7 @@
             ],
             "description": "ArrayFinder component",
             "homepage": "https://github.com/Shudrum/ArrayFinder",
-            "time": "2016-02-01T12:23:32+00:00"
+            "time": "2016-02-01 12:23:32"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -705,7 +706,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02T20:32:22+00:00"
+            "time": "2017-01-02 20:32:22"
         },
         {
             "name": "symfony/filesystem",
@@ -754,7 +755,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-08T20:47:33+00:00"
+            "time": "2017-01-08 20:47:33"
         },
         {
             "name": "symfony/finder",
@@ -803,7 +804,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02T20:32:22+00:00"
+            "time": "2017-01-02 20:32:22"
         },
         {
             "name": "symfony/process",
@@ -852,7 +853,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02T20:32:22+00:00"
+            "time": "2017-01-02 20:32:22"
         },
         {
             "name": "symfony/yaml",
@@ -907,7 +908,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-03T13:51:32+00:00"
+            "time": "2017-01-03 13:51:32"
         }
     ],
     "aliases": [],
