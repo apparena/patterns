@@ -76,7 +76,7 @@ export default class PriceTable extends ReactComponent {
                                  imgSrc={e.img} imgAlt={e.imgAlt} title={e.title} information={e.info}
                                  subinformation={e.info2} isPopular={e.popular === 1}
                                  isFlatrate={selection === "flatrate"} buttonPrompt={e.prompt}
-                                 onClick={this.handleButtonClick}
+                                 onClick={this.handleButtonClick} discount={data.flatrate.discount}
                         />
                     );
                 })}
@@ -115,7 +115,11 @@ export default class PriceTable extends ReactComponent {
 
                 <Col md="4" mdOffset={4} className={cx(styles.customPackage,
                     this.state.showCustomPackageCreator && styles.invisible)}>
-                    <p dangerouslySetInnerHTML={{__html: this.t("customPackage.info")}} />
+                    <p>
+                        {this.t("customPackage.info1")}
+                        <br />
+                        {this.t("customPackage.info2")}
+                    </p>
                     <button id="customPackage" className={styles.customPackageButton}
                             onClick={this.handleCustomPackageButton}
                     >

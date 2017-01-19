@@ -19,6 +19,7 @@ export default class PriceTableElement extends ReactComponent {
         onClick: PropTypes.func,
         isPopular: PropTypes.bool,
         isFlatrate: PropTypes.bool,
+        discount: PropTypes.number,
     };
 
     /**
@@ -83,11 +84,13 @@ export default class PriceTableElement extends ReactComponent {
     render() {
         return (
             <Col md="3">
-                <div className={cx(styles.price_table_element)}>
+                <div className={cx(styles.price_table_element, this.props.isPopular && styles.popularElement)}>
                     {this.props.isPopular ? this.renderPopularTag() : this.renderPseudoTag()}
                     <img src={this.props.imgSrc} alt={this.props.imgAlt}/>
                     <h3>{this.props.title}</h3>
-                    <h3><sup>€</sup>{this.props.price}{this.props.isFlatrate && <span>/mtl</span>}</h3>
+                    <h3><sup>€</sup>{this.props.price}{this.props.isFlatrate && <span>/mtl.*</span>}</h3>
+                    <p className={styles.discountText}><sub>{this.props.isFlatrate &&
+                             this.t("priceTableElement.discount", {discount: this.props.discount})}</sub></p>
                     <hr className={styles.horizontalDividerLong}/>
                     <div className={styles.infoContainer}>
                         {this.prepared_information}

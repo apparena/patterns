@@ -7,9 +7,11 @@ export default {
         },
         priceTableElement: {
             popular: "BELIEBT",
+            discount: "*{{discount}}% Rabatt bei Jahreszahlung"
         },
         customPackage: {
-            info: "Nichts passendes dabei?<br />Kein Problem, stellen Sie hier Ihr eigenes Paket zusammen!",
+            info1: "Nichts passendes dabei?",
+            info2: "Kein Problem, stellen Sie hier Ihr eigenes Paket zusammen!",
             buttonPrompt: "Eigenes Paket erstellen",
             removeLanguage: "Entfernen",
             addLanguagePrompt: "weitere Sprache buchen (ab 99€)",

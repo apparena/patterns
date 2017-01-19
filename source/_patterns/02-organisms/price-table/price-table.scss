@@ -71,7 +71,13 @@
   }
 
   .price_container {
-    width: 90%;
+    @media (max-width: 1440px) {
+      width: 90%;
+    }
+    @media (min-width: 1441px) {
+      width: 70%;
+    }
+
     margin: 40px auto;
 
     .price_table_element {
@@ -84,6 +90,10 @@
       border-radius: 5px;
       font-size: 11pt;
 
+      .discountText {
+        color: #2dcc56;
+      }
+
       h3 {
         font-size: 1.5rem;
 
@@ -92,10 +102,11 @@
         }
       }
 
-      &:hover {
-        -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
-        -moz-box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
-        box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+      &.popularElement {
+        -webkit-box-shadow: 0  0  30px  -1px rgba(200,200,200,0.5);
+        -moz-box-shadow:    0  0  30px  -1px rgba(200,200,200,0.5);
+        box-shadow:         0  0  30px  -1px rgba(200,200,200,0.5);
+        border: 1px solid #e3e1e5;
       }
 
       .tagContainer {
@@ -105,6 +116,7 @@
           .tag {
             float: right;
             margin: 15px 30px 0 0;
+            padding: 3px 10px;
             font-size: 90%;
           }
           .pseudotag {
@@ -144,10 +156,10 @@
         width: 50%;
         color: #fff;
         border: none;
-        height: 33px;
+        height: 40px;
         position: absolute;
         left: 25%;
-        bottom: -10px;
+        bottom: -20px;
         cursor: pointer;
         -webkit-box-shadow: 0 0 10px 0 rgba(44,130,201,0.5);
         -moz-box-shadow:    0 0 10px 0 rgba(44,130,201,0.5);
@@ -170,6 +182,7 @@
   .customPackage {
     text-align: center;
     margin-bottom: 50px;
+    padding-top: 15px;
 
     button {
       font-size: 14pt;
