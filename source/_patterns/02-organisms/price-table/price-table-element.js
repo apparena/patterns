@@ -23,15 +23,33 @@ export default class PriceTableElement extends ReactComponent {
     };
 
     /**
+     * process the information arrays and apply bold or italic font modifiers.
+     * @param element
+     * @param i
+     * @returns {XML}
+     */
+    processInformation(element, i) {
+        let text = element.text;
+        if (element.options.includes("bold"))   text = <b>{text}</b>;
+        if (element.options.includes("italic")) text = <i>{text}</i>;
+
+        return (
+            <p key={i}>
+                {text}
+            </p>
+        );
+    }
+
+    /**
      * Process information and convert it so that it can be rendered easily.
      * Will only be executed on mount (i.e. on page load)
      */
     componentWillMount() {
         this.prepared_information = this.props.information.map((x, i) => {
-            return <p key={i}>{x}</p>
+            return this.processInformation(x, i);
         });
         this.prepared_subinformation = this.props.subinformation.map((x, i) => {
-            return <p key={i}>{x}</p>
+            return this.processInformation(x, i);
         });
     }
 
@@ -43,10 +61,10 @@ export default class PriceTableElement extends ReactComponent {
      */
     componentWillUpdate(nextProps, nextState, nextContext) {
         this.prepared_information = nextProps.information.map((x, i) => {
-            return <p key={i}>{x}</p>
+            return this.processInformation(x, i);
         });
         this.prepared_subinformation = nextProps.subinformation.map((x, i) => {
-            return <p key={i}>{x}</p>
+            return this.processInformation(x, i);
         });
     }
 
