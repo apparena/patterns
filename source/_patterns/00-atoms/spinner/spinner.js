@@ -16,10 +16,10 @@ export default class Spinner extends ReactComponent {
     };
 
     render() {
-        var componentClass = cx(
+        const componentClass = cx(
             styles['spinner'],
-            styles['spinner-' + this.props.type],
-            styles['spinner-' + this.props.size],
+            styles[`spinner-${this.props.type}`],
+            styles[`spinner-${this.props.size}`],
             this.props.className
         );
 

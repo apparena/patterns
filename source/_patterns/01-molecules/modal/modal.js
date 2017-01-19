@@ -82,15 +82,15 @@ export default class Modal extends ReactComponent {
         } = this.props;
         const componentClass = cx(
             styles["modal-dialog"],
-            styles["modal-" + size],
-            styles["modal-" + type],
+            styles[`modal-${size}`],
+            styles[`modal-${type}`],
             draggable && styles["modal-draggable"],
             scrollable && styles["modal-scrollable"],
             className
         );
         return (
             <div className={componentClass}>
-                <div className={cx(styles["modal-content"], styles["modal-content-" + size])}>
+                <div className={cx(styles["modal-content"], styles[`modal-content-${size}`])}>
                     {children}
                 </div>
             </div>

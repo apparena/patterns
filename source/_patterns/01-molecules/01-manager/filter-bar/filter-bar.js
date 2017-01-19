@@ -65,10 +65,10 @@ export default class FilterBar extends ReactComponent {
     };
 
     createDropdownItems() {
-        var container = [];
-        var key;
-        this.props.listStyle.cards.sort.map((item, index) => {
-            var i;
+        let container = [];
+        let key;
+        this.props.listStyle.cards.sort.forEach((item, index) => {
+            let i;
             for (i = 0; i < 4; i++) {
                 let classNameString = '';
                 switch (i) {
@@ -138,12 +138,12 @@ export default class FilterBar extends ReactComponent {
     }
 
     createFilterElements() {
-        var container = [];
-        this.props.filter.groups.map((item) => {
+        const container = [];
+        this.props.filter.groups.forEach((item) => {
             switch (item.type) {
                 case 'checkbox':
                     let checkboxes = [];
-                    item.options.map((element) => {
+                    item.options.forEach((element) => {
                         checkboxes.push(
                             <div>
                                 <CheckBox
@@ -165,7 +165,7 @@ export default class FilterBar extends ReactComponent {
                     break;
                 case 'radiobutton':
                     let radiobuttons = [];
-                    item.options.map((element) => {
+                    item.options.forEach((element) => {
                         radiobuttons.push(
                             <RadioButton
                                 text={element.text}

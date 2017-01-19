@@ -78,7 +78,7 @@ export default class TagInput extends ReactComponent {
                     options={options}
                     onChange={onChange}
                     multi={multi}
-                    autofocus={autofocus}
+                    autoFocus={autofocus}
                     clearable={clearable}
                     autoBlur={autoBlur}
                     clearAllText={clearAllText}

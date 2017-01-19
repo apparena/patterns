@@ -59,7 +59,7 @@ export default class Scrollable extends ReactComponent {
                 <GeminiScrollbar
                     autoshow={this.props.autoshow}
                     forceGemini
-                    ref={c => {this.gemini = c}}
+                    ref={(c) => {this.gemini = c}}
                 >
                     {this.props.children}
                 </GeminiScrollbar>

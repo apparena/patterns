@@ -4,7 +4,7 @@ import Icon from "../../../00-atoms/icons/icons";
 import cx from "classnames";
 import styles from "./banner-message.scss"
 
-var ALERT_TYPES = [
+const ALERT_TYPES = [
     "danger",
     "info",
     "success",
@@ -28,7 +28,7 @@ export default class Alert extends ReactComponent {
         const {type, className, icon, children} = this.props;
         const classes = cx(
             styles['m-banner-message'],
-            styles['m-banner-message-' + type],
+            styles[`m-banner-message-${type}`],
             className
         );
 

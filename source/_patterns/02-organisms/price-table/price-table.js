@@ -11,9 +11,13 @@ import Row from "../../00-atoms/grid/row";
 
 export default class PriceTable extends ReactComponent {
     getInitState() {
+        this.handleButtonClick = ::this.onButtonClick;
+        this.handleCheckbox = ::this.onCheckbox;
+        this.handleCustomPackageButton = ::this.onCustomPackageButton;
+
         return {
             isChecked: false,
-            showCustomPackageCreator: true
+            showCustomPackageCreator: false
         };
     }
 
@@ -21,16 +25,16 @@ export default class PriceTable extends ReactComponent {
      * Every Button will have an ID in the format of "<package><index" ex. "flatrate4" thus two
      * regexes are used to extract these and retrieve the proper information.
      */
-    handleButtonClick(e) {
-        let regex = /(single|flatrate)/g;
-        let match = regex.exec(e.target.id);
+    onButtonClick(e) {
+        const regex = /(single|flatrate)/g;
+        const match = regex.exec(e.target.id);
         let foundPackage = "";
         if (match !== null)
             foundPackage = match[0];
 
         if (foundPackage === "single") foundPackage = data.single;
         else if (foundPackage === "flatrate") foundPackage = data.flatrate;
-        else return;
+        /*else return;
 
         regex = /\d+/g;
         match = regex.exec(e.target.id);
@@ -38,18 +42,16 @@ export default class PriceTable extends ReactComponent {
         if (match !== null)
             index = match[0];
 
-        let price = this.state.isChecked ? foundPackage.elements[index].price : foundPackage.elements[index].price;
-        let message = `Sie haben ein Paket für ${price}€${(this.state.isChecked) ? " pro Monat" : ""} gekauft`;
-        console.log(message);
+        const price = foundPackage.elements[index].price;*/
     }
 
-    handleCheckbox(e) {
+    onCheckbox(e) {
         this.setState({
             isChecked: e.target.checked === true
         });
     }
 
-    handleCustomPackageButton(e) {
+    onCustomPackageButton(e) {
         this.setState({
             showCustomPackageCreator: true
         });
@@ -74,7 +76,7 @@ export default class PriceTable extends ReactComponent {
                                  imgSrc={e.img} imgAlt={e.imgAlt} title={e.title} information={e.info}
                                  subinformation={e.info2} isPopular={e.popular === 1}
                                  isFlatrate={selection === "flatrate"} buttonPrompt={e.prompt}
-                                 onClick={::this.handleButtonClick}
+                                 onClick={this.handleButtonClick} discount={data.flatrate.discount}
                         />
                     );
                 })}
@@ -87,24 +89,24 @@ export default class PriceTable extends ReactComponent {
             <div className={styles.price_table}>
                 <Col md="4" mdOffset={4} className={styles.priceTableHeader}>
                     <hr className={styles.blueDivider}/>
-                    {this.t("priceTable.header")}
-                    <p>Preise.</p>
+                    <p>{this.t("priceTable.header")}.</p>
                 </Col>
                 <div className={styles.selectorTable}>
                     <div className={styles.selectorTableRow}>
                         <div
-                            className={cx(styles.selectorTableCellLeft, !this.state.isChecked && styles.selectorTableCellSelected)}>
+                            className={cx(styles.selectorTableCellLeft, !this.state.isChecked && styles.selectorTableCellSelected)}
+                        >
                             {this.t("priceTable.leftText")}
-                            Einzelpakete
                         </div>
                         <div className={styles.selectorTableCellMiddle}>
-                            <Checkbox className={styles.checkBoxFix} onChange={::this.handleCheckbox}
-                                      checked={this.state.isChecked}/>
+                            <Checkbox className={styles.checkBoxFix} onChange={this.handleCheckbox}
+                                      checked={this.state.isChecked}
+                            />
                         </div>
                         <div
-                            className={cx(styles.selectorTableCellRight, this.state.isChecked && styles.selectorTableCellSelected)}>
+                            className={cx(styles.selectorTableCellRight, this.state.isChecked && styles.selectorTableCellSelected)}
+                        >
                             {this.t("priceTable.rightText")}
-                            Flatratepakete
                         </div>
                     </div>
                 </div>
@@ -113,14 +115,15 @@ export default class PriceTable extends ReactComponent {
 
                 <Col md="4" mdOffset={4} className={cx(styles.customPackage,
                     this.state.showCustomPackageCreator && styles.invisible)}>
-                    <p>{this.t("customPackage.info")}</p>
-                    <p>Nichts passendes dabei?<br/>
-                        Kein Problem, stellen Sie hier Ihr eigenes Paket zusammen!<br /></p>
+                    <p>
+                        {this.t("customPackage.info1")}
+                        <br />
+                        {this.t("customPackage.info2")}
+                    </p>
                     <button id="customPackage" className={styles.customPackageButton}
-                            onClick={::this.handleCustomPackageButton}
+                            onClick={this.handleCustomPackageButton}
                     >
-                        {this.t("customPackage.buttomPrompt")}
-                        Eigenes Paket erstellen
+                        {this.t("customPackage.buttonPrompt")}
                     </button>
                 </Col>
 

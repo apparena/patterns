@@ -103,11 +103,11 @@ export default class Stick extends ReactComponent {
     }
 
     getActualBoundingClientRect(node) {
-        let rect = node.getBoundingClientRect();
+        const rect = node.getBoundingClientRect();
         if (node.ownerDocument !== document) {
-            let frameElement = node.ownerDocument.defaultView.frameElement;
+            const frameElement = node.ownerDocument.defaultView.frameElement;
             if (frameElement) {
-                let frameRect = this.getActualBoundingClientRect(frameElement);
+                const frameRect = this.getActualBoundingClientRect(frameElement);
                 rect.top += frameRect.top;
                 rect.bottom += frameRect.top;
                 rect.left += frameRect.left;
@@ -128,8 +128,8 @@ export default class Stick extends ReactComponent {
         const windowHeight = window.innerHeight;
         const windowWidth = window.innerWidth;
 
-        let top = rect.top + document.body.scrollTop;
-        let left = rect.left + document.body.scrollLeft;
+        const top = rect.top + document.body.scrollTop;
+        const left = rect.left + document.body.scrollLeft;
 
         switch (this.props.positioning) {
             // LEFT
@@ -233,7 +233,7 @@ export default class Stick extends ReactComponent {
             <Animate transition={transition}>
                 <div className={cx(styles.stick, className)}
                      style={style}
-                     ref={c => (this.holder = c)}
+                     ref={(c) => (this.holder = c)}
                 >
                     {this.props.children}
                 </div>

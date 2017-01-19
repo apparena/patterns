@@ -36,7 +36,7 @@ export default class Card extends ReactComponent {
         // classes
         const componentClass = cx(
             styles.card,
-            styles['card-' + this.props.type],
+            styles[`card-${this.props.type}`],
             this.props.inverse && styles['card-inverse'],
             this.props.className
         );

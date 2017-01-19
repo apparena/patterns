@@ -7,11 +7,20 @@
         "prompt": "Kaufen",
         "title": "Starter",
         "info": [
-          "Die Starter edition enthält keinen Service",
-          "Einige Funktionen sind nicht verfügbar"
+          {
+            "text": "Die Starter edition enthält keinen Service",
+            "options": []
+          },
+          {
+            "text": "Einige Funktionen sind nicht verfügbar",
+            "options": []
+          }
         ],
         "info2": [
-          "Einführungswebinar"
+          {
+            "text": "Einführungswebinar",
+            "options": []
+          }
         ]
       },
       {
@@ -60,6 +69,7 @@
     ]
   },
   "flatrate": {
+    "discount": 3.1415,
     "elements": [
       {
         "price": 1,
@@ -67,12 +77,24 @@
         "prompt": "Kaufen",
         "title": "Starter",
         "info": [
-          "Die Starter edition enthält keinen Service",
-          "Einige Funktionen sind nicht verfügbar",
-          "Für nur einen Euro im Monat erhalten sie dieses exklusive Paket"
+          {
+            "text": "Die Starter edition enthält keinen Service",
+            "options": []
+          },
+          {
+            "text": "Einige Funktionen sind nicht verfügbar",
+            "options": []
+          },
+          {
+            "text": "Für nur einen Euro im Monat erhalten sie dieses exklusive Paket",
+            "options": ["bold"]
+          }
         ],
         "info2": [
-          "Einführungswebinar"
+          {
+            "text": "Einführungswebinar",
+            "options": []
+          }
         ]
       },
       {

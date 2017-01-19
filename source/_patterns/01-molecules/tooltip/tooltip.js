@@ -94,7 +94,7 @@ export default class Tooltip extends ReactComponent {
                 className={className || styles.root}
                 onMouseEnter={::this.onMouseEnter}
                 onMouseLeave={::this.onMouseLeave}
-                ref={c => {
+                ref={(c) => {
                     this._handler = c
                 }}
             >

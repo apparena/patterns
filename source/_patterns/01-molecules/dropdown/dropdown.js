@@ -94,7 +94,7 @@ export default class Dropdown extends ReactComponent {
                 {React.Children.map(this.props.items, (child, index) => {
                     if (React.isValidElement(child)) {
                         return (
-                            <li key={'item-' + index}
+                            <li key={`item-${index}`}
                                 className={styles["dropdown-item"]}
                                 onClick={this.onClick.bind(this, child.props.value)}
                             >
@@ -114,9 +114,9 @@ export default class Dropdown extends ReactComponent {
 
     render() {
         // classes
-        var componentClass = cx(styles["dropdown"],
+        const componentClass = cx(styles["dropdown"],
             this.state.isOpen && styles["show"],
-            this.props.align && styles["dropdown-menu-" + this.props.align],
+            this.props.align && styles[`dropdown-menu-${this.props.align}`],
             !this.props.arrow && styles["no-icon"],
             this.props.className
         );

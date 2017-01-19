@@ -1,8 +1,8 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
-import cx from 'classnames';
+import cx from "classnames";
 
-var PROGRESS_TYPES = [
+const PROGRESS_TYPES = [
     "success",
     "info",
     "warning",
@@ -29,23 +29,29 @@ export default class ProgressBar extends ReactComponent {
     renderRemovableText(text) {
         if (text !== '') {
             return (
-                <div className="text-center text-muted" id={this.props.captionID}><small>{text}</small></div>
+                <div className="text-center text-muted" id={this.props.captionID}>
+                    <small>{text}</small>
+                </div>
             );
         }
         return null;
     }
 
     render() {
-        const classNames = cx('progress', 'progress-' + this.props.type, this.props.classNames);
-
-
+        const classNames = cx(
+            'progress',
+            `progress-${this.props.type}`,
+            this.props.classNames
+        );
         return (
             <div>
                 {this.renderRemovableText(this.props.text)}
 
-                <progress className={classNames} value={this.props.value} max={this.props.maxValue}
-                          aria-describedby={this.props.captionID}
-                          style={{width: '100%', minWidth: this.props.minWidth + 'em'}}
+                <progress
+                    className={classNames}
+                    value={this.props.value}
+                    max={this.props.maxValue}
+                    style={{width: '100%', minWidth: `${this.props.minWidth}em`}}
                 />
             </div>
         );
