@@ -1,0 +1,43 @@
+{
+  "vertical-tabs": {
+    "cta": {
+      "text": "Kostenlos testen!!",
+      "class": "btn-success btn-lg",
+      "url": "https://www.app-arena.com"
+    },
+    "navigation": {
+      "positionLeft": true
+    },
+    "items": [
+      {
+        "isActive": true,
+        "id": "stats",
+        "icon": "<i class='fa fa-line-chart'></i>",
+        "title": "Statistiken und Tracking Infos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
+        "content": "<img src=\"https://aa-ads.s3.amazonaws.com/patterns/organisms/o-vertical-tabs-content-1.png\" />"
+      },
+      {
+        "id": "tab2",
+        "icon": "<i class='fa fa-cart-plus'></i>",
+        "title": "Tab 2 Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
+        "content": "<img src=\"https://aa-ads.s3.amazonaws.com/patterns/organisms/o-vertical-tabs-content-1.png\" />"
+      },
+      {
+        "id": "tab3",
+        "icon": "<i class='fa fa-check'></i>",
+        "title": "Tab 3 Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
+        "content": "<img src=\"https://aa-ads.s3.amazonaws.com/patterns/organisms/o-vertical-tabs-content-1.png\" />"
+      },
+      {
+        "id": "tab4",
+        "icon": "<i class='fa fa-user'></i>",
+        "title": "Tab 4 Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
+        "content": "<img src=\"https://aa-ads.s3.amazonaws.com/patterns/organisms/o-vertical-tabs-content-1.png\" />"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{{#vertical-tabs}}
+    <div class="o-vertical-tabs">
+
+        <div class="row">
+            {{# navigation.positionLeft }}
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="offset-md-1 col-md-11">
+                            <ul class="list-unstyled">
+                                {{#items}}
+                                    <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab" href="#{{id}}" role="tab">
+                                        <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
+                                        <div class="icon">
+                                            {{{ icon }}}
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1">{{{title}}}</h5>
+                                            {{{description}}}
+                                        </div>
+                                    </li>
+                                {{/items}}
+
+                                {{#cta}}
+                                    <li>
+                                        <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
+                                    </li>
+                                {{/cta}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-11">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                {{#items}}
+                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
+                                        {{{content}}}
+                                    </div>
+                                {{/items}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/navigation.positionLeft}}
+            {{^ navigation.positionLeft }}
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="offset-md-1 col-md-11">
+                            In mattis ultricies luctus. Sed non sapien dolor. Donec
+                            elementum, felis et fermentum aliquet, magna magna efficitur risus, id mattis ligula libero vel augue. Nulla
+                            vestibulum velit est, at rutrum nunc consectetur sit amet. Donec pulvinar leo ac mi pellentesque, non porta
+                            lectus congue. Proin laoreet accumsan urna, at scelerisque libero pharetra vitae. Interdum et malesuada
+                            fames ac ante ipsum primis in faucibus. Morbi id rhoncus nisi. Nunc felis nisl, auctor condimentum accumsan
+                            nec, cursus eu ante. Proin pellentesque felis eget metus porta, eu auctor sem faucibus. Suspendisse vitae
+                            ligula at augue imperdiet interdum sit amet vel sapien. Interdum et malesuada fames ac ante ipsum primis in
+                            faucibus. Maecenas turpis lectus, ultricies vitae ipsum quis, convallis auctor sapien. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent varius, est eu tincidunt
+                            blandit, leo tortor vehicula turpis, ut lobortis est libero in risus.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-11">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs flex-column" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {{/navigation.positionLeft}}
+
+        </div>
+    </div>
+{{/vertical-tabs}}
