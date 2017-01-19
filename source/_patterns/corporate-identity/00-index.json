@@ -19,5 +19,11 @@
   },
   "colors": {
     "url": "link.corporate-identity-colors"
+  },
+  "alert": {
+    "class": "alert-info",
+    "heading": "There is a place to keep the static assets!",
+    "isDismissable": false,
+    "text": "Keep all static assets like images in a central place. Upload them to the <strong>S3 Bucket 'aa-ads' folder '/patterns'!</strong>"
   }
 }
