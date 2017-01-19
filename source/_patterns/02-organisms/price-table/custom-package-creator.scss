@@ -125,6 +125,26 @@
     background-color: #fff;
     padding-top: 20px;
 
+    .serviceHours {
+      margin: auto;
+      width: 50%;
+
+      .serviceHourNumber {
+        background-color: #2dcc56;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin-top: -5px;
+        margin-right: 5px;
+        float: left;
+        text-align: center;
+        color: white;
+        -webkit-border-radius:  16px;
+        -moz-border-radius:     16px;
+        border-radius:          16px;
+      }
+    }
+
     .rightBorder {
       border-right: 1px solid #f4f2f0;
       position: absolute;

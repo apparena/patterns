@@ -8,6 +8,7 @@ import SelectMenu from "../../00-atoms/forms/select-menu";
 import data from "./price-table.json";
 import Icon from "../../00-atoms/icons/icons";
 import AnimatedNumber from "react-animated-number";
+import MaterialSlider from "../../00-atoms/slider/slider";
 
 export default class CustomPackageCreator extends ReactComponent {
     static propTypes = {
@@ -17,6 +18,7 @@ export default class CustomPackageCreator extends ReactComponent {
     getInitState() {
         this.handleCBChange = ::this.onCBChange;
         this.handlePurchase = ::this.onPurchase;
+        this.handleSliderChange = ::this.onSliderChange;
 
         return {
             dropdown1Value: "",
@@ -25,12 +27,25 @@ export default class CustomPackageCreator extends ReactComponent {
             dd2ErrorState: 0,
             tickedCheckboxes: [],
             counters: [],
-            price: 265,
+            price: 0,
             selectedLanguages: [],
             showLanguageSelector: false,
-            moreLanguagesBookable: false
+            moreLanguagesBookable: false,
+            serviceHours: 0,
+            previousServiceHours: 0,
         };
     }
+
+    /**
+     * Allow changing the max service hours for the slider dynamically
+     * @param nextProps
+     * @param nextState
+     * @param nextContext
+     */
+    componentWillUpdate(nextProps, nextState, nextContext) {
+        this.maxServiceHours = data.flatrate.serviceHourMax;
+    }
+
 
     /**
      * Initialize variables and the this.state.counters array with 10 items set to 1.
@@ -44,6 +59,7 @@ export default class CustomPackageCreator extends ReactComponent {
         for (let i = 0; i < 10; ++i)
             tmp[i] = 1;
 
+        this.maxServiceHours = data.flatrate.serviceHourMax;
         this.setState({
             counters: tmp,
             selectedLanguages: [{label: data.custom.defaultLanguage, price: 0}],
@@ -214,6 +230,21 @@ export default class CustomPackageCreator extends ReactComponent {
     }
 
     /**
+     * Keep track of slider state and update price accordingly
+     * @param e React Event
+     * @param v Slider Value
+     */
+    onSliderChange(e, v) {
+        const newValue = Math.round(v * this.maxServiceHours);
+        const diff = newValue - this.state.previousServiceHours;
+        this.setState({
+            serviceHours: newValue,
+            price: this.state.price + (data.flatrate.serviceHourPrice * diff),
+            previousServiceHours: newValue,
+        });
+    }
+
+    /**
      * Creates nice-looking checkboxes that alter the state price.
      * Automatically recognized checkboxes which need a counter
      *
@@ -324,6 +355,15 @@ export default class CustomPackageCreator extends ReactComponent {
         );
     }
 
+    renderSlider() {
+        return (
+            <MaterialSlider step={1/this.maxServiceHours} value={this.state.serviceHours/this.maxServiceHours}
+                            onChange={this.handleSliderChange}
+                            style={{width: "80%", margin: "auto"}}
+            />
+        );
+    }
+
     /**
      * Main render method.
      * @returns {XML}
@@ -384,6 +424,13 @@ export default class CustomPackageCreator extends ReactComponent {
                                     <p className={styles.advisorText}>
                                         {this.t("customPackage.step2Hint")}
                                     </p>
+                                    <h5 className={styles.serviceHours}>
+                                        <span className={styles.serviceHourNumber}>
+                                            {this.state.serviceHours}
+                                        </span>
+                                        Service Stunden
+                                    </h5>
+                                    {this.renderSlider()}
                                     {this.renderCheckboxList(data.custom.checkboxes, this.handleCBChange, 'middle')}
                                     <div className={styles.rightBorder}></div>
                                 </Col>

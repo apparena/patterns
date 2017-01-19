@@ -1,0 +1,95 @@
+@import "../../../css/scss/abstracts/variables";
+@import "../../../css/scss/abstracts/mixins";
+
+.slider {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  height: 18px;
+  width: 100%;
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.track {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.filledAndRemainingFill {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: $brand-success;
+}
+
+.filledAndRemainingRemain {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.handle {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  cursor: pointer;
+  pointer-events: inherit;
+  top: 0;
+  z-index: 1;
+  margin: 1px 0 0 0;
+  width: 12px;
+  height: 12px;
+  background-color: $brand-success;
+  background-clip: padding-box;
+  border: 0 solid transparent;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: visible;
+  outline: none;
+}
+
+.handleWhenDisabled {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: not-allowed;
+  background-color: #ccc;
+  width: 8px;
+  height: 8px;
+  border: none;
+}
+
+.handleWhenPercentZero {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.handleWhenPercentZeroAndDisabled {
+  cursor: not-allowed;
+  width: 8px;
+  height: 8px;
+}
+
+.handleWhenPercentZeroAndFocused {
+  border: 2px solid #ccc;
+}
+
+.handleWhenActive {
+  width: 18px;
+  height: 18px;
+}
