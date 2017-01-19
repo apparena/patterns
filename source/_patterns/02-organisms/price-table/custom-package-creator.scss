@@ -110,12 +110,22 @@
   }
 
   .headerRow {
-    padding: 10px;
+    padding: 10px 10px 0;
     background-color: #fff;
+    border-bottom: 1px solid #f4f2f0;
   }
 
   .contentRow {
     background-color: #fff;
+    padding-top: 20px;
+
+    .rightBorder {
+      border-right: 1px solid #f4f2f0;
+      position: absolute;
+      right: -20px;
+      top: 20px;
+      bottom: 0;
+    }
 
     .advisorText {
       margin-left: 40px;
@@ -141,7 +151,7 @@
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
       border-radius: 20px;
-      width: 35%;
+      width: 40%;
       font-size: 19pt;
       -webkit-box-shadow: 0 0 10px 0 rgba(44,130,201,0.5);
       -moz-box-shadow:    0 0 10px 0 rgba(44,130,201,0.5);

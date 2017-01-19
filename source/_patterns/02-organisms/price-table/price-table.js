@@ -11,6 +11,10 @@ import Row from "../../00-atoms/grid/row";
 
 export default class PriceTable extends ReactComponent {
     getInitState() {
+        this.handleButtonClick = ::this.onButtonClick;
+        this.handleCheckbox = ::this.onCheckbox;
+        this.handleCustomPackageButton = ::this.onCustomPackageButton;
+
         return {
             isChecked: false,
             showCustomPackageCreator: false
@@ -21,16 +25,16 @@ export default class PriceTable extends ReactComponent {
      * Every Button will have an ID in the format of "<package><index" ex. "flatrate4" thus two
      * regexes are used to extract these and retrieve the proper information.
      */
-    handleButtonClick(e) {
-        let regex = /(single|flatrate)/g;
-        let match = regex.exec(e.target.id);
+    onButtonClick(e) {
+        const regex = /(single|flatrate)/g;
+        const match = regex.exec(e.target.id);
         let foundPackage = "";
         if (match !== null)
             foundPackage = match[0];
 
         if (foundPackage === "single") foundPackage = data.single;
         else if (foundPackage === "flatrate") foundPackage = data.flatrate;
-        else return;
+        /*else return;
 
         regex = /\d+/g;
         match = regex.exec(e.target.id);
@@ -38,16 +42,16 @@ export default class PriceTable extends ReactComponent {
         if (match !== null)
             index = match[0];
 
-        let price = foundPackage.elements[index].price;
+        const price = foundPackage.elements[index].price;*/
     }
 
-    handleCheckbox(e) {
+    onCheckbox(e) {
         this.setState({
             isChecked: e.target.checked === true
         });
     }
 
-    handleCustomPackageButton(e) {
+    onCustomPackageButton(e) {
         this.setState({
             showCustomPackageCreator: true
         });
@@ -72,7 +76,7 @@ export default class PriceTable extends ReactComponent {
                                  imgSrc={e.img} imgAlt={e.imgAlt} title={e.title} information={e.info}
                                  subinformation={e.info2} isPopular={e.popular === 1}
                                  isFlatrate={selection === "flatrate"} buttonPrompt={e.prompt}
-                                 onClick={::this.handleButtonClick}
+                                 onClick={this.handleButtonClick}
                         />
                     );
                 })}
@@ -90,16 +94,18 @@ export default class PriceTable extends ReactComponent {
                 <div className={styles.selectorTable}>
                     <div className={styles.selectorTableRow}>
                         <div
-                            className={cx(styles.selectorTableCellLeft, !this.state.isChecked && styles.selectorTableCellSelected)}>
+                            className={cx(styles.selectorTableCellLeft, !this.state.isChecked && styles.selectorTableCellSelected)}
+                        >
                             {this.t("priceTable.leftText")}
                         </div>
                         <div className={styles.selectorTableCellMiddle}>
-                            <Checkbox className={styles.checkBoxFix} onChange={::this.handleCheckbox}
+                            <Checkbox className={styles.checkBoxFix} onChange={this.handleCheckbox}
                                       checked={this.state.isChecked}
                             />
                         </div>
                         <div
-                            className={cx(styles.selectorTableCellRight, this.state.isChecked && styles.selectorTableCellSelected)}>
+                            className={cx(styles.selectorTableCellRight, this.state.isChecked && styles.selectorTableCellSelected)}
+                        >
                             {this.t("priceTable.rightText")}
                         </div>
                     </div>
@@ -111,7 +117,7 @@ export default class PriceTable extends ReactComponent {
                     this.state.showCustomPackageCreator && styles.invisible)}>
                     <p dangerouslySetInnerHTML={{__html: this.t("customPackage.info")}} />
                     <button id="customPackage" className={styles.customPackageButton}
-                            onClick={::this.handleCustomPackageButton}
+                            onClick={this.handleCustomPackageButton}
                     >
                         {this.t("customPackage.buttonPrompt")}
                     </button>

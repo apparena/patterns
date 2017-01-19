@@ -7,6 +7,7 @@ import Row from "../../00-atoms/grid/row";
 import SelectMenu from "../../00-atoms/forms/select-menu";
 import data from "./price-table.json";
 import Icon from "../../00-atoms/icons/icons";
+import AnimatedNumber from "react-animated-number";
 
 export default class CustomPackageCreator extends ReactComponent {
     static propTypes = {
@@ -14,6 +15,9 @@ export default class CustomPackageCreator extends ReactComponent {
     };
 
     getInitState() {
+        this.handleCBChange = ::this.onCBChange;
+        this.handlePurchase = ::this.onPurchase;
+
         return {
             dropdown1Value: "",
             dropdown2Value: "",
@@ -36,7 +40,7 @@ export default class CustomPackageCreator extends ReactComponent {
      * All objects contain only these keys "label" and "price"
      */
     componentDidMount() {
-        let tmp = [];
+        const tmp = [];
         for (let i = 0; i < 10; ++i)
             tmp[i] = 1;
 
@@ -83,15 +87,15 @@ export default class CustomPackageCreator extends ReactComponent {
      * onChange handler for checkboxes inside the checkbox list
      * @param e React Event
      */
-    handleCBChange(e) {
+    onCBChange(e) {
         if (e.target.checked) {
             this.setState({
                 tickedCheckboxes: [...this.state.tickedCheckboxes, e.target.id],
                 price: this.state.price + parseInt(e.target.value, 10)
             });
         } else {
-            let tmp = this.state.tickedCheckboxes;
-            let idx = tmp.indexOf(e.target.id);
+            const tmp = this.state.tickedCheckboxes;
+            const idx = tmp.indexOf(e.target.id);
             tmp.splice(idx, 1);
             this.setState({
                 tickedCheckboxes: tmp,
@@ -109,7 +113,7 @@ export default class CustomPackageCreator extends ReactComponent {
      * @param affectsPrice Should changing the counter affect the state price
      */
     handleCounterClick(e, i, price, increase, affectsPrice) {
-        let tmp = this.state.counters;
+        const tmp = this.state.counters;
         let multiplier = 1;
         if (increase) tmp[i]++;
         else {
@@ -139,8 +143,8 @@ export default class CustomPackageCreator extends ReactComponent {
                 price: this.state.price + (this.state.counters[i] * price)
             });
         } else {
-            let tmp = this.state.tickedCheckboxes;
-            let idx = tmp.indexOf(e.target.id);
+            const tmp = this.state.tickedCheckboxes;
+            const idx = tmp.indexOf(e.target.id);
             tmp.splice(idx, 1);
             this.setState({
                 tickedCheckboxes: tmp,
@@ -153,7 +157,7 @@ export default class CustomPackageCreator extends ReactComponent {
      * Prepare & execute purchase
      * @todo: Implement actual purchase
      */
-    handlePurchase() {
+    onPurchase() {
         if (this.state.dropdown1Value === "") {
             this.setState({
                 dd1ErrorState: 1
@@ -173,19 +177,19 @@ export default class CustomPackageCreator extends ReactComponent {
      * @param price
      */
     handleAddLanguage(languageLabel, price) {
-        let tmp = this.state.selectedLanguages;
-        if (tmp.find(x => x.label === languageLabel)) return;
-        tmp.push({label: languageLabel, price: price});
+        const tmp = this.state.selectedLanguages;
+        if (tmp.find((x) => x.label === languageLabel)) return;
+        tmp.push({label: languageLabel, price});
         this.setState({
             selectedLanguages: tmp,
             price: this.state.price + price,
         });
 
-        let allLanguagesBooked = data.custom.availableLanguages.reduce((a, b) => {
+        const allLanguagesBooked = data.custom.availableLanguages.reduce((a, b) => {
             if (a.label === undefined)
-                return a && !!tmp.find(x => x.label === b.label);
+                return a && !!tmp.find((x) => x.label === b.label);
             else
-                return !!tmp.find(x => x.label === a.label) && !!tmp.find(x => x.label === b.label);
+                return !!tmp.find((x) => x.label === a.label) && !!tmp.find((x) => x.label === b.label);
         });
 
         if (allLanguagesBooked) this.setState({
@@ -199,9 +203,9 @@ export default class CustomPackageCreator extends ReactComponent {
      */
     handleRemoveLanguage(languageLabel) {
         let tmp = this.state.selectedLanguages;
-        if (!tmp.find(x => x.label === languageLabel)) return;
-        let langObj = tmp.find(x => x.label === languageLabel);
-        tmp = tmp.filter(x => x.label !== languageLabel);
+        if (!tmp.find((x) => x.label === languageLabel)) return;
+        const langObj = tmp.find((x) => x.label === languageLabel);
+        tmp = tmp.filter((x) => x.label !== languageLabel);
         this.setState({
             selectedLanguages: tmp,
             moreLanguagesBookable: true,
@@ -302,7 +306,7 @@ export default class CustomPackageCreator extends ReactComponent {
 
                 <ul className={cx(styles.languageList, !this.state.showLanguageSelector && styles.invisible)}>
                     {data.custom.availableLanguages.map((e, i) => {
-                        if (this.state.selectedLanguages.find(x => x.label === e.label)) return;
+                        if (this.state.selectedLanguages.find((x) => x.label === e.label)) return null;
                         return (
                             <li key={i} className={styles.addLanguageButton}
                                 onClick={() => this.handleAddLanguage(e.label, e.price)}
@@ -339,7 +343,16 @@ export default class CustomPackageCreator extends ReactComponent {
                                 </Col>
                                 <Col md="4" mdOffset={2} className={styles.sumContainer}>
                                     <span id="sum" className={styles.sumDisplay}>
-                                        <sup>€</sup>{this.state.price}
+                                        <sup>€</sup>
+                                        <AnimatedNumber component="text" value={this.state.price}
+                                                        style={{
+                                                            transition: '0.8s ease-out',
+                                                            transitionProperty:
+                                                                'background-color, color, opacity'
+                                                        }}
+                                                        duration={300}
+                                                        stepPrecision={0}
+                                        />
                                     </span>
                                 </Col>
                             </Row>
@@ -365,24 +378,26 @@ export default class CustomPackageCreator extends ReactComponent {
                                     </div>
 
                                     {this.renderLanguageSelector()}
+                                    <div className={styles.rightBorder}></div>
                                 </Col>
                                 <Col md="4">
                                     <p className={styles.advisorText}>
                                         {this.t("customPackage.step2Hint")}
                                     </p>
-                                    {this.renderCheckboxList(data.custom.checkboxes, ::this.handleCBChange, 'middle')}
+                                    {this.renderCheckboxList(data.custom.checkboxes, this.handleCBChange, 'middle')}
+                                    <div className={styles.rightBorder}></div>
                                 </Col>
                                 <Col md="4">
                                     <p className={styles.advisorText}>
                                         {this.t("customPackage.step3Hint")}
                                     </p>
-                                    {this.renderCheckboxList(data.custom.topRightCheckboxes, ::this.handleCBChange, 'topRight')}
+                                    {this.renderCheckboxList(data.custom.topRightCheckboxes, this.handleCBChange, 'topRight')}
                                     <div className={styles.rightMiddleHeader}>
                                         <h5>{this.t("customPackage.rightCenterHeader")}</h5>
                                     </div>
-                                    {this.renderCheckboxList(data.custom.bottomRightCheckboxes, ::this.handleCBChange, 'bottomRight')}
+                                    {this.renderCheckboxList(data.custom.bottomRightCheckboxes, this.handleCBChange, 'bottomRight')}
                                     <div className={styles.purchaseButtonContainer}>
-                                        <button className={styles.purchaseButton} onClick={::this.handlePurchase}>
+                                        <button className={styles.purchaseButton} onClick={this.handlePurchase}>
                                             {this.t("customPackage.purchasePrompt")}
                                         </button>
                                     </div>
