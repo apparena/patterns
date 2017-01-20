@@ -25,9 +25,9 @@ export default class AjaxLoader extends ReactComponent {
     };
 
     static defaultProps = {
-        spinnerSize: "md",
+        spinnerSize: "lg",
         spinnerClassName: "",
-        spinnerType: "default",
+        spinnerType: "primary",
         autoHide: true,
     };
 

@@ -11,9 +11,9 @@ export default class CardsList extends ReactComponent {
 
     render() {
         return (
-            <div className="t-col-main-content p-1" key={this.getUniqueKey()}>
-                <div className="t-entity-list" key={this.getUniqueKey()}>
-                    <div className="card-deck" key={this.getUniqueKey()}>
+            <div className="t-col-main-content p-1">
+                <div className="t-entity-list">
+                    <div className="card-deck">
                         {this.getChildrenArray(this.props.children)}
                     </div>
                 </div>

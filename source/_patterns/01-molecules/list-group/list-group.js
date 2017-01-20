@@ -13,7 +13,7 @@ export default class ListGroup extends ReactComponent {
             <ul className={cx('list-group', this.props.classNames)} >
                 {this.props.listItems.map((cname) => {
                     return (
-                        <li className={cx('list-group-item', cname)} key={this.getUniqueKey()}>
+                        <li className={cx('list-group-item', cname)}>
                             {this.props.listItems[cname]}
                         </li>
                     );

@@ -37,6 +37,7 @@ import ProgressTrackerStep from "./00-atoms/progress-tracker-step/progress-track
 import ReactComponent from "./react-utils/component";
 import Row from "./00-atoms/grid/row";
 import Scrollable from "./react-utils/scrollable";
+import SearchBox from "./00-atoms/search-box/search-box";
 import Select from "./00-atoms/forms/select-menu";
 import Spinner from "./00-atoms/spinner/spinner";
 import Stick from "./react-utils/stick";
@@ -86,6 +87,7 @@ export {
     ReactComponent,
     Row,
     Scrollable,
+    SearchBox,
     Select,
     Spinner,
     Stick,

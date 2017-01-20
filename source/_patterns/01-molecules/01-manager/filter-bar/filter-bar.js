@@ -73,15 +73,15 @@ export default class FilterBar extends ReactComponent {
                 let classNameString = '';
                 switch (i) {
                     case 0:
-                        container.push(<h6 className="dropdown-header" key={this.getUniqueKey()}>{item.text}</h6>);
+                        container.push(<h6 className="dropdown-header">{item.text}</h6>);
                         break;
                     case 1:
                         if (this.props.listStyle.status.sort[item.identifier] === null) classNameString = "dropdown-item";
                         else classNameString = cx("dropdown-item", this.props.listStyle.status.sort[item.identifier] ? '' : "active");
                         container.push(
-                            <li className={classNameString} key={this.getUniqueKey()}>
+                            <li className={classNameString}>
                                 <a href="#"
-                                   key={this.getUniqueKey()}
+
                                    onClick={this.onSortChangeHandler.bind(this, item.identifier)}
                                 >
                                     <Icon name="sort-amount-desc" key={key}/>absteigend
@@ -94,12 +94,12 @@ export default class FilterBar extends ReactComponent {
                         if (this.props.listStyle.status.sort[item.identifier] === null) classNameString = "dropdown-item";
                         else classNameString = cx("dropdown-item", this.props.listStyle.status.sort[item.identifier] ? "active" : '');
                         container.push(
-                            <li className="dropdown-item" key={this.getUniqueKey()}>
+                            <li className="dropdown-item">
                                 <a href="#"
-                                   key={this.getUniqueKey()}
+
                                    onClick={this.onSortChangeHandler.bind(this, item.identifier)}
                                 >
-                                    <Icon name="sort-amount-asc" key={this.getUniqueKey()}/>aufsteigend
+                                    <Icon name="sort-amount-asc"/>aufsteigend
                                 </a>
                             </li>
                         );
@@ -107,7 +107,7 @@ export default class FilterBar extends ReactComponent {
                     case 3:
                         if (index !== (this.props.listStyle.cards.sort.length - 1)) {
                             container.push(
-                                <li className="dropdown-divider" key={this.getUniqueKey()}/>
+                                <li className="dropdown-divider"/>
                             );
                         }
                         break;
@@ -118,7 +118,7 @@ export default class FilterBar extends ReactComponent {
         });
         return (
             <ul className={this.props.listStyle.cards.menuClass ? this.props.listStyle.cards.menuClass : "dropdown-menu dropdown-menu-right"}
-                key={this.getUniqueKey()}
+
             >
                 {container}
             </ul>
@@ -147,7 +147,7 @@ export default class FilterBar extends ReactComponent {
                         checkboxes.push(
                             <div>
                                 <CheckBox
-                                    key={this.getUniqueKey()}
+
                                     onChange={this.onFilterChangeHandler.bind(this, element.identifier)}
                                     checked={this.props.filter.status[element.identifier]}
                                 />
@@ -156,7 +156,7 @@ export default class FilterBar extends ReactComponent {
                         );
                     });
                     container.push(
-                        <div className="col-md-4" key={this.getUniqueKey()}>
+                        <div className="col-md-4">
                             <div className="checkboxes">
                                 {checkboxes}
                             </div>
@@ -169,14 +169,14 @@ export default class FilterBar extends ReactComponent {
                         radiobuttons.push(
                             <RadioButton
                                 text={element.text}
-                                key={this.getUniqueKey()}
+
                                 onClick={this.onFilterChangeHandler.bind(this, element.identifier)}
                                 checked={this.props.filter.status[element.identifier]}
                             />
                         );
                     });
                     container.push(
-                        <div className="col-md-4" key={this.getUniqueKey()}>
+                        <div className="col-md-4">
                             {radiobuttons}
                         </div>
                     );
@@ -218,7 +218,7 @@ export default class FilterBar extends ReactComponent {
 
     render() {
         return (
-            <div key={this.getUniqueKey()}>
+            <div>
                 <div className="filter-bar p-1">
                     {(this.props.filter.groups.length >= 1) &&
                     <div className="filter-bar-filter mr-1">
@@ -231,7 +231,7 @@ export default class FilterBar extends ReactComponent {
                         </a>
                     </div>}
                     <div className="filter-bar-search mr-1">
-                        <div className="input-group" key={this.getUniqueKey()}>
+                        <div className="input-group">
                         <span className="input-group-addon" key="loading-icon">
                             {this.props.input.loading ?
                                 <span className="filter-bar-search-spinner text-muted" key="loader-span">
@@ -254,7 +254,7 @@ export default class FilterBar extends ReactComponent {
                         </div>
                     </div>
                     {this.props.listStyle.status.type ?
-                        <div className="filter-bar-sort mr-1" key={this.getUniqueKey()}>
+                        <div className="filter-bar-sort mr-1">
                             <Dropdown
                                 dropdownClass="dropdown dropdown"
                                 buttonClass="btn btn-secondary dropdown-toggle"
@@ -270,7 +270,7 @@ export default class FilterBar extends ReactComponent {
                 {this.props.filter &&
                 <div className={cx("collapse", this.props.filter.status.expanded ? "in" : "")} id="collapseFilter"
                      style={this.props.filter.status.expanded ? {} : {height: 0}}
-                     key={this.getUniqueKey()}
+
                 >
                     <div className="card card-block">
                         <div className="row">

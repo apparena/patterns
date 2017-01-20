@@ -1,0 +1,18 @@
+@import "../../../css/scss/abstracts/variables";
+
+.root {
+  margin-bottom: 10px;
+  border: 1px solid;
+  background: #fff;
+  border-color: darken($card-border-color, 5%) darken($card-border-color, 5%) darken($card-border-color, 10%);
+  span {
+    background: #fff;
+  }
+  i {
+    color: $brand-primary;
+  }
+}
+
+.input {
+  background: #fff;
+}

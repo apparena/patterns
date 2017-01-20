@@ -7,6 +7,7 @@ const argv = Minimist(process.argv.slice(2));
 
 const files = [
     './source/css',
+    './source/iconsets',
     'README.md',
     'CHANGELOG.md',
     'LICENSE',

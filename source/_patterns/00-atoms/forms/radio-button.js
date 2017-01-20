@@ -17,7 +17,7 @@ export default class RadioButton extends ReactComponent {
 
     render() {
         return (
-            <div className="form-check" key={this.getUniqueKey()}>
+            <div className="form-check">
                 <div className="radio">
                     <label className="form-check-label">
                         <input type="radio" onChange={this.props.onClick} checked={this.props.checked} name={this.props.name} />
