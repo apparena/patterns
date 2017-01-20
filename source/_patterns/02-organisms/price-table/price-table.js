@@ -111,7 +111,7 @@ export default class PriceTable extends ReactComponent {
                     </button>
                 </Col>
 
-                <CustomPackageCreator visible={this.state.showCustomPackageCreator}/>
+                <CustomPackageCreator data={this.data} visible={this.state.showCustomPackageCreator}/>
             </div>
         );
     }

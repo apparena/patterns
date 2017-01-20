@@ -5,7 +5,6 @@ import styles from "./custom-package-creator.scss";
 import Col from "../../00-atoms/grid/col";
 import Row from "../../00-atoms/grid/row";
 import SelectMenu from "../../00-atoms/forms/select-menu";
-import data from "./price-table.json";
 import Icon from "../../00-atoms/icons/icons";
 import AnimatedNumber from "react-animated-number";
 import MaterialSlider from "../../00-atoms/slider/slider";
@@ -13,6 +12,7 @@ import MaterialSlider from "../../00-atoms/slider/slider";
 export default class CustomPackageCreator extends ReactComponent {
     static propTypes = {
         visible: PropTypes.bool,
+        data: PropTypes.object.isRequired,
     };
 
     getInitState() {
@@ -43,7 +43,7 @@ export default class CustomPackageCreator extends ReactComponent {
      * @param nextContext
      */
     componentWillUpdate(nextProps, nextState, nextContext) {
-        this.maxServiceHours = data.flatrate.serviceHourMax;
+        this.maxServiceHours = this.props.data.flatrate.serviceHourMax;
     }
 
 
@@ -59,11 +59,11 @@ export default class CustomPackageCreator extends ReactComponent {
         for (let i = 0; i < 10; ++i)
             tmp[i] = 1;
 
-        this.maxServiceHours = data.flatrate.serviceHourMax;
+        this.maxServiceHours = this.props.data.flatrate.serviceHourMax;
         this.setState({
             counters: tmp,
-            selectedLanguages: [{label: data.custom.defaultLanguage, price: 0}],
-            moreLanguagesBookable: data.custom.availableLanguages !== undefined && data.custom.availableLanguages.length > 0
+            selectedLanguages: [{label: this.props.data.custom.defaultLanguage, price: 0}],
+            moreLanguagesBookable: this.props.data.custom.availableLanguages !== undefined && this.props.data.custom.availableLanguages.length > 0
         });
     }
 
@@ -201,7 +201,7 @@ export default class CustomPackageCreator extends ReactComponent {
             price: this.state.price + price,
         });
 
-        const allLanguagesBooked = data.custom.availableLanguages.reduce((a, b) => {
+        const allLanguagesBooked = this.props.data.custom.availableLanguages.reduce((a, b) => {
             if (a.label === undefined)
                 return a && !!tmp.find((x) => x.label === b.label);
             else
@@ -239,7 +239,7 @@ export default class CustomPackageCreator extends ReactComponent {
         const diff = newValue - this.state.previousServiceHours;
         this.setState({
             serviceHours: newValue,
-            price: this.state.price + (data.flatrate.serviceHourPrice * diff),
+            price: this.state.price + (this.props.data.flatrate.serviceHourPrice * diff),
             previousServiceHours: newValue,
         });
     }
@@ -315,7 +315,7 @@ export default class CustomPackageCreator extends ReactComponent {
                                     alt="flag"
                                 />
                                 {e.label}
-                                {e.label !== data.custom.defaultLanguage &&
+                                {e.label !== this.props.data.custom.defaultLanguage &&
                                 <button className={styles.removeLanguageButton}
                                         onClick={() => this.handleRemoveLanguage(e.label)}
                                 >
@@ -336,7 +336,7 @@ export default class CustomPackageCreator extends ReactComponent {
                 </ul>
 
                 <ul className={cx(styles.languageList, !this.state.showLanguageSelector && styles.invisible)}>
-                    {data.custom.availableLanguages.map((e, i) => {
+                    {this.props.data.custom.availableLanguages.map((e, i) => {
                         if (this.state.selectedLanguages.find((x) => x.label === e.label)) return null;
                         return (
                             <li key={i} className={styles.addLanguageButton}
@@ -381,8 +381,8 @@ export default class CustomPackageCreator extends ReactComponent {
                         <div className={styles.borderRadiusFix}>
                             <Row className={styles.headerRow}>
                                 <Col md="6" className={styles.titleLeft}>
-                                    <img src={data.custom.logo} alt="Logo"
-                                         className={!data.custom.logo && styles.invisible}
+                                    <img src={this.props.data.custom.logo} alt="Logo"
+                                         className={!this.props.data.custom.logo && styles.invisible}
                                     />
                                     <p>{this.t("customPackage.header")}</p>
                                 </Col>
@@ -408,8 +408,8 @@ export default class CustomPackageCreator extends ReactComponent {
                                         <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
                                     <div className={this.state.dd1ErrorState && styles.selectError}>
                                         <SelectMenu defaultValue={this.state.dropdown1Value}
-                                                    options={data.custom.dropdown1}
-                                                    onChange={(ev) => this.handleDDChange(ev, this.state.dropdown1Value, data.custom.dropdown1, 1)}
+                                                    options={this.props.data.custom.dropdown1}
+                                                    onChange={(ev) => this.handleDDChange(ev, this.state.dropdown1Value, this.props.data.custom.dropdown1, 1)}
                                         />
                                     </div>
 
@@ -417,8 +417,8 @@ export default class CustomPackageCreator extends ReactComponent {
                                         <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
                                     <div className={this.state.dd2ErrorState && styles.selectError}>
                                         <SelectMenu defaultValue={this.state.dropdown2Value}
-                                                    options={data.custom.dropdown2}
-                                                    onChange={(ev) => this.handleDDChange(ev, this.state.dropdown2Value, data.custom.dropdown2, 2)}
+                                                    options={this.props.data.custom.dropdown2}
+                                                    onChange={(ev) => this.handleDDChange(ev, this.state.dropdown2Value, this.props.data.custom.dropdown2, 2)}
                                         />
                                     </div>
 
@@ -436,18 +436,18 @@ export default class CustomPackageCreator extends ReactComponent {
                                         Service Stunden
                                     </h5>
                                     {this.renderSlider()}
-                                    {this.renderCheckboxList(data.custom.checkboxes, this.handleCBChange, 'middle')}
+                                    {this.renderCheckboxList(this.props.data.custom.checkboxes, this.handleCBChange, 'middle')}
                                     <div className={styles.rightBorder}></div>
                                 </Col>
                                 <Col md="4">
                                     <p className={styles.advisorText}>
                                         {this.t("customPackage.step3Hint")}
                                     </p>
-                                    {this.renderCheckboxList(data.custom.topRightCheckboxes, this.handleCBChange, 'topRight')}
+                                    {this.renderCheckboxList(this.props.data.custom.topRightCheckboxes, this.handleCBChange, 'topRight')}
                                     <div className={styles.rightMiddleHeader}>
                                         <h5>{this.t("customPackage.rightCenterHeader")}</h5>
                                     </div>
-                                    {this.renderCheckboxList(data.custom.bottomRightCheckboxes, this.handleCBChange, 'bottomRight')}
+                                    {this.renderCheckboxList(this.props.data.custom.bottomRightCheckboxes, this.handleCBChange, 'bottomRight')}
                                     <div className={styles.purchaseButtonContainer}>
                                         <button className={styles.purchaseButton} onClick={this.handlePurchase}>
                                             {this.t("customPackage.purchasePrompt")}
