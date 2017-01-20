@@ -355,6 +355,10 @@ export default class CustomPackageCreator extends ReactComponent {
         );
     }
 
+    /**
+     * Render a Material UI-like slider
+     * @returns {XML}
+     */
     renderSlider() {
         return (
             <MaterialSlider step={1/this.maxServiceHours} value={this.state.serviceHours/this.maxServiceHours}
@@ -373,6 +377,7 @@ export default class CustomPackageCreator extends ReactComponent {
             <div>
                 {this.props.visible && (
                     <div className={styles.packageCreator}>
+
                         <div className={styles.borderRadiusFix}>
                             <Row className={styles.headerRow}>
                                 <Col md="6" className={styles.titleLeft}>

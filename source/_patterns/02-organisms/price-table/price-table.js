@@ -1,13 +1,13 @@
-import React from "react";
+import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./price-table.scss";
-import data from "./price-table.json";
 import Element from "./price-table-element";
 import Checkbox from "../../00-atoms/forms/checkbox";
 import CustomPackageCreator from "./custom-package-creator";
 import Col from "../../00-atoms/grid/col";
 import Row from "../../00-atoms/grid/row";
+import AJAXLoader from "../../01-molecules/ajax-loader/ajax-loader";
 
 export default class PriceTable extends ReactComponent {
     getInitState() {
@@ -17,9 +17,14 @@ export default class PriceTable extends ReactComponent {
 
         return {
             isChecked: false,
-            showCustomPackageCreator: false
+            showCustomPackageCreator: false,
+            dataLoaded: false,
         };
     }
+
+    static propTypes = {
+        dataRoute: PropTypes.string.isRequired,
+    };
 
     /**
      * Every Button will have an ID in the format of "<package><index" ex. "flatrate4" thus two
@@ -32,17 +37,17 @@ export default class PriceTable extends ReactComponent {
         if (match !== null)
             foundPackage = match[0];
 
-        if (foundPackage === "single") foundPackage = data.single;
-        else if (foundPackage === "flatrate") foundPackage = data.flatrate;
+        if (foundPackage === "single") foundPackage = this.data.single;
+        else if (foundPackage === "flatrate") foundPackage = this.data.flatrate;
         /*else return;
 
-        regex = /\d+/g;
-        match = regex.exec(e.target.id);
-        let index = -1;
-        if (match !== null)
-            index = match[0];
+         regex = /\d+/g;
+         match = regex.exec(e.target.id);
+         let index = -1;
+         if (match !== null)
+         index = match[0];
 
-        const price = foundPackage.elements[index].price;*/
+         const price = foundPackage.elements[index].price;*/
     }
 
     onCheckbox(e) {
@@ -65,8 +70,8 @@ export default class PriceTable extends ReactComponent {
      */
     renderPackage(selection) {
         let selectedPackage = "";
-        if (selection === "single") selectedPackage = data.single;
-        else if (selection === "flatrate") selectedPackage = data.flatrate;
+        if (selection === "single") selectedPackage = this.data.single;
+        else if (selection === "flatrate") selectedPackage = this.data.flatrate;
 
         return (
             <Row className={styles.price_container}>
@@ -76,7 +81,7 @@ export default class PriceTable extends ReactComponent {
                                  imgSrc={e.img} imgAlt={e.imgAlt} title={e.title} information={e.info}
                                  subinformation={e.info2} isPopular={e.popular === 1}
                                  isFlatrate={selection === "flatrate"} buttonPrompt={e.prompt}
-                                 onClick={this.handleButtonClick} discount={data.flatrate.discount}
+                                 onClick={this.handleButtonClick} discount={this.data.flatrate.discount}
                         />
                     );
                 })}
@@ -84,9 +89,40 @@ export default class PriceTable extends ReactComponent {
         );
     }
 
-    render() {
+    /**
+     * Shows the prompt to create a custom package and includes the custom package creator.
+     * The prompt won't be shown if this.data.custom is empty or doesn't exist.
+     * @returns {XML}
+     */
+    renderCustomPackagePrompt() {
         return (
-            <div className={styles.price_table}>
+            <div>
+                <Col md="4" mdOffset={4} className={cx(styles.customPackage,
+                    this.state.showCustomPackageCreator && styles.invisible)}>
+                    <p>
+                        {this.t("customPackage.info1")}
+                        <br />
+                        {this.t("customPackage.info2")}
+                    </p>
+                    <button id="customPackage" className={styles.customPackageButton}
+                            onClick={this.handleCustomPackageButton}
+                    >
+                        {this.t("customPackage.buttonPrompt")}
+                    </button>
+                </Col>
+
+                <CustomPackageCreator visible={this.state.showCustomPackageCreator}/>
+            </div>
+        );
+    }
+
+    /**
+     * Display the main part of this component
+     * @returns {XML}
+     */
+    renderMainSection() {
+        return (
+            <div>
                 <Col md="4" mdOffset={4} className={styles.priceTableHeader}>
                     <hr className={styles.blueDivider}/>
                     <p>{this.t("priceTable.header")}.</p>
@@ -113,21 +149,25 @@ export default class PriceTable extends ReactComponent {
 
                 {(this.state.isChecked === true) ? this.renderPackage("flatrate") : this.renderPackage("single")}
 
-                <Col md="4" mdOffset={4} className={cx(styles.customPackage,
-                    this.state.showCustomPackageCreator && styles.invisible)}>
-                    <p>
-                        {this.t("customPackage.info1")}
-                        <br />
-                        {this.t("customPackage.info2")}
-                    </p>
-                    <button id="customPackage" className={styles.customPackageButton}
-                            onClick={this.handleCustomPackageButton}
-                    >
-                        {this.t("customPackage.buttonPrompt")}
-                    </button>
-                </Col>
+                {this.data.custom && this.renderCustomPackagePrompt()}
+            </div>
+        );
+    }
 
-                <CustomPackageCreator visible={this.state.showCustomPackageCreator}/>
+    render() {
+        return (
+            <div className={styles.price_table}>
+                {!this.state.dataLoaded &&
+                    <AJAXLoader resource={this.props.dataRoute} autoHide={false}
+                                onLoadingDone={(resp) => {
+                                    this.data = resp.data;
+                                    this.setState({
+                                        dataLoaded: true
+                                    });
+                                }}
+                    />
+                }
+                {this.state.dataLoaded && this.renderMainSection()}
             </div>
         );
     }
