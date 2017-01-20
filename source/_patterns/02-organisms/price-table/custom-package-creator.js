@@ -62,6 +62,7 @@ export default class CustomPackageCreator extends ReactComponent {
         this.maxServiceHours = this.props.data.flatrate.serviceHourMax;
         this.setState({
             counters: tmp,
+            price: this.props.data.custom.initialPrice || 0,
             selectedLanguages: [{label: this.props.data.custom.defaultLanguage, price: 0}],
             moreLanguagesBookable: this.props.data.custom.availableLanguages !== undefined && this.props.data.custom.availableLanguages.length > 0
         });

@@ -226,6 +226,7 @@
   },
   "custom": {
     "logo": "",
+    "initialPrice": 1300,
     "availableLanguages": [
       {
         "label": "de_CH",
