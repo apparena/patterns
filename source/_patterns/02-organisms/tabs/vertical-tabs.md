@@ -16,5 +16,5 @@ vertical tab navigation.
 
 ## Examples
 
-![Feature list](https://aa-ads.s3.amazonaws.com/patterns/organisms/o-vertical-tabs-1.png "Feature list")
+![Feature list](https://s3.app-arena.com/patterns/organisms/o-vertical-tabs-1.png "Feature list")
 

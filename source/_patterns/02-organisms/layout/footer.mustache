@@ -3,14 +3,14 @@
     <div class="container">
         {{# footer.logo }}
             <a class="o-footer-logo mt-1 mb-3" href="#">
-                {{> atoms-logo(logoSrc:"../../images/logo-inverse.svg") }}
+                {{> 00-atoms/logo/logo }}
             </a>
         {{/footer.logo}}
 
         <hr/>
 
         {{#footer.socialMedia}}
-            <div class="o-footer-social-media float-xs-right">
+            <div class="o-footer-social-media float-sm-right">
                 <ul class="list-inline">
                     {{#items}}
                         <li class="list-inline-item">
@@ -23,13 +23,21 @@
             </div>
         {{/footer.socialMedia}}
 
-        {{> organisms-nav-footer:mb-3 text-xs-left }}
+        {{> 02-organisms/test }}
+        {{> 01-molecules/test }}
 
-        {{#footer.navSecondary}}
-            <div class="o-footer-nav-secondary">
-                {{> organisms-nav-footer:mb-1 }}
+        {{#footer.navigation.primary}}
+
+            <div class="o-footer-nav-primary float-sm-left">
+                {{> 02-organisms/navigation/nav-footer }}
             </div>
-        {{/footer.navSecondary}}
+        {{/footer.navigation.primary}}
+
+        {{#footer.navigation.secondary}}
+            <div class="o-footer-nav-secondary">
+                {{> 02-organisms/navigation/nav-footer }}
+            </div>
+        {{/footer.navigation.secondary}}
 
         {{#footer.copyright}}
             <div class="o-footer-copyright text-muted">

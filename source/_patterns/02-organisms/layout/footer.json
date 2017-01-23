@@ -9,20 +9,50 @@
         {"icon":"fa-twitter-square", "url":"https://www.twitter.com", "title": "App-Arena auf Twitter"}
       ]
     },
-    "navSecondary":{
-      "navFooter": {
-        "navList": [
-          {
-            "text": "Impressum",
-            "url": ""
-          },
-          {
-            "text": "Datenschutz"
-          },
-          {
-            "text": "AGB"
-          }
-        ]
+    "navigation": {
+      "primary": {
+        "navFooter": {
+          "navList": [
+            {
+              "text": "Mein Konto",
+              "url": "#"
+            },
+            {
+              "text": "Unternehmen",
+              "url": "#"
+            },
+            {
+              "text": "Partnerprogramm",
+              "url": "#"
+            },
+            {
+              "text": "Jobs",
+              "url": "#"
+            },
+            {
+              "text": "Kontakt",
+              "url": "#"
+            }
+          ]
+        }
+      },
+      "secondary": {
+        "navFooter": {
+          "navList": [
+            {
+              "text": "Impressum",
+              "url": "#"
+            },
+            {
+              "text": "Datenschutz",
+              "url": "#"
+            },
+            {
+              "text": "AGB",
+              "url": "#"
+            }
+          ]
+        }
       }
     }
   }

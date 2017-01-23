@@ -20,7 +20,7 @@ exportDir: export
 publicDir: public
 sourceDir: source
 defaultPattern: corporate-identity-index
-defaultShowPatternInfo: false
+defaultShowPatternInfo: true
 plugins:
     reload:
         enabled: false
