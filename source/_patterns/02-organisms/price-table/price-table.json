@@ -3,17 +3,21 @@
     "elements": [
       {
         "price": 2,
-        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/starter-pack.svg",
         "prompt": "Kaufen",
         "title": "Starter",
         "info": [
           {
-            "text": "Die Starter edition enthält keinen Service",
-            "options": ["bold"]
+            "text": "2 Monate Laufzeit",
+            "options": []
           },
           {
-            "text": "Einige Funktionen sind nicht verfügbar",
-            "options": ["bold", "italic"]
+            "text": "5.000 Teilnehmer exportierbar",
+            "options": []
+          },
+          {
+            "text": "1 Service Stunde",
+            "options": []
           }
         ],
         "info2": [
@@ -25,79 +29,123 @@
       },
       {
         "price": 128,
-        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/standard-pack.svg",
         "prompt": "Kaufen",
-        "title": "Premium",
+        "title": "Standard",
         "info": [
           {
-            "text": "Die Premium edition enthält keinen Service",
+            "text": "2 Monate Laufzeit",
             "options": []
           },
           {
-            "text": "Einige Funktionen sind nicht verfügbar",
+            "text": "10.000 Teilnehmer exportierbar",
+            "options": []
+          },
+          {
+            "text": "4 Service Stunde",
             "options": []
           }
         ],
         "info2": [
           {
-            "text": "Limitierter Quellcode Zugriff",
+            "text": "Alle Leistungen vom Starter Paket, plus",
             "options": ["italic"]
+          },
+          {
+            "text": "Offenes CSS",
+            "options": []
+          },
+          {
+            "text": "Abnahme durch Projektmanager",
+            "options": []
           }
         ]
       },
       {
         "price": 266,
-        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/plus-pack.svg",
         "prompt": "Kaufen",
-        "title": "Deluxe",
+        "title": "Plus",
         "popular": 1,
         "info": [
           {
-            "text": "Die Deluxe edition enthält 1 Stunde Service",
+            "text": "2 Monate Laufzeit",
             "options": []
           },
           {
-            "text": "Einige Funktionen sind nicht verfügbar",
+            "text": "50.000 Teilnehmer exportierbar",
+            "options": []
+          },
+          {
+            "text": "8 Service Stunde",
             "options": []
           }
         ],
         "info2": [
           {
-            "text": "Subdomain",
+            "text": "Alle Leistungen vom Standard Paket, plus",
+            "options": ["italic"]
+          },
+          {
+            "text": "Eigener Projektmanager",
             "options": []
           },
           {
-            "text": "15% bessere Performance",
+            "text": "Umsetzungen von CSS",
+            "options": []
+          },
+          {
+            "text": "Kampangenseite",
+            "options": []
+          },
+          {
+            "text": "Subdomain",
             "options": []
           }
         ]
       },
       {
         "price": 1299,
-        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/enterprise-pack.svg",
         "prompt": "Kaufen",
-        "title": "Ultra Deluxe",
+        "title": "Enterprise",
         "info": [
           {
-            "text": "Die Ultra Deluxe edition enthält 5 Stunden Service",
+            "text": "2 Monate Laufzeit",
             "options": []
           },
           {
-            "text": "Alle Funktionen sind verfügbar",
+            "text": "unbegrenzter Teilnehmer-Export",
             "options": []
           },
           {
-            "text": "Sie erhalten als VIP vorrang im Support",
+            "text": "25 Service Stunde",
             "options": []
           }
         ],
         "info2": [
           {
-            "text": "Voller Quellcode Zugriff",
+            "text": "Alle Leistungen vom Plus Paket, plus",
+            "options": ["italic"]
+          },
+          {
+            "text": "Kreation von Grafiken",
             "options": []
           },
           {
-            "text": "Load balancing",
+            "text": "Einrichtung der App",
+            "options": []
+          },
+          {
+            "text": "Werbemanagement",
+            "options": []
+          },
+          {
+            "text": "Auswertung und Analyse",
+            "options": []
+          },
+          {
+            "text": "Eigene Domain",
             "options": []
           }
         ]
@@ -111,7 +159,7 @@
     "elements": [
       {
         "price": 1,
-        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/starter-pack.svg",
         "prompt": "Kaufen",
         "title": "Starter",
         "info": [
@@ -137,9 +185,9 @@
       },
       {
         "price": 4,
-        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/standard-pack.svg",
         "prompt": "Kaufen",
-        "title": "Premium",
+        "title": "Standard",
         "info": [
           {
             "text": "Die Premium edition enthält keinen Service",
@@ -163,9 +211,9 @@
       },
       {
         "price": 9,
-        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/plus-pack.svg",
         "prompt": "Kaufen",
-        "title": "Deluxe",
+        "title": "Plus",
         "info": [
           {
             "text": "Die Deluxe edition enthält 1 Stunde Service",
@@ -189,9 +237,9 @@
       },
       {
         "price": 27,
-        "img": "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/128/playstation-square-black-and-white-icon.png",
+        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/enterprise-pack.svg",
         "prompt": "Kaufen",
-        "title": "Ultra Deluxe",
+        "title": "Enterprise",
         "popular": 1,
         "info": [
           {
