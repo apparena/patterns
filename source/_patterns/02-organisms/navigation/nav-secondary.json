@@ -3,7 +3,7 @@
     "btnList": [
       { "btnText": "Call to action", "btnClass": "btn-primary"}
     ],
-    "navList": [
+    "items": [
       {
         "text": "Subnav 1",
         "isActive": true

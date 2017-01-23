@@ -2,45 +2,49 @@
 
     <div class="container">
         {{# footer.logo }}
-            <a class="o-footer-logo mt-1 mb-3" href="#">
-                {{> atoms-logo }}
+            <a class="o-footer-logo text-center mt-1 mb-5" href="{{url}}">
+                {{> 00-atoms/logo/logo }}
             </a>
         {{/footer.logo}}
 
         <hr/>
 
-        {{#footer.socialMedia}}
-            <div class="o-footer-social-media float-sm-right">
-                <ul class="list-inline">
-                    {{#items}}
-                        <li class="list-inline-item">
-                            <a href="{{url}}" target="_blank" alt="{{title}}">
-                                <i class="fa {{icon}}" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    {{/items}}
-                </ul>
-            </div>
-        {{/footer.socialMedia}}
+        <div class="o-footer-nav-top row">
+            {{#footer.navigation.primary}}
+                <div class="o-footer-nav-primary col-md-6 text-sm-left">
+                    {{> 02-organisms/navigation/nav-footer }}
+                </div>
+            {{/footer.navigation.primary}}
 
-        {{#footer.navigation.primary}}
+            {{#footer.socialMedia}}
+                <div class="o-footer-social-media col-md-6 text-sm-right">
+                    <ul class="list-inline">
+                        {{#items}}
+                            <li class="list-inline-item">
+                                <a href="{{url}}" target="_blank" alt="{{title}}">
+                                    <i class="fa {{icon}}" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        {{/items}}
+                    </ul>
+                </div>
+            {{/footer.socialMedia}}
+        </div>
 
-            <div class="o-footer-nav-primary float-sm-left">
-                {{> organisms-nav-footer }}
-            </div>
-        {{/footer.navigation.primary}}
+        <div class="o-footer-nav-bottom text-center text-muted">
+            {{#footer.navigation.secondary}}
+                <div class="o-footer-nav-secondary">
+                    {{> 02-organisms/navigation/nav-footer }}
+                </div>
+            {{/footer.navigation.secondary}}
 
-        {{#footer.navigation.secondary}}
-            <div class="o-footer-nav-secondary">
-                {{> organisms-nav-footer }}
-            </div>
-        {{/footer.navigation.secondary}}
+            {{#footer.copyright}}
+                <div class="o-footer-copyright">
+                    Copyright &copy; {{ year }} {{ company.name }}
+                </div>
+            {{/footer.copyright}}
+        </div>
 
-        {{#footer.copyright}}
-            <div class="o-footer-copyright text-muted">
-               Copyright &copy; {{ year }} {{ company.name }}
-            </div>
-        {{/footer.copyright}}
     </div>
 
 </footer><!-- end o-footer -->

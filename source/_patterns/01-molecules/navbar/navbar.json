@@ -18,7 +18,7 @@
       }
     },
     "primaryNavigation": {
-      "navList": [
+      "items": [
         {
           "text": "Dashboard",
           "url": "#",

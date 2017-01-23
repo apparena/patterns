@@ -1,6 +1,6 @@
 {
-  "src":"/images/logo.svg",
-  "company": {
+  "logo": {
+    "src": "/images/logo.svg",
     "name": "App-Arena.com"
   }
 }

@@ -1,10 +1,10 @@
-<ul class="m-navs nav {{ styleModifier }}">
-    {{# navList }}
+<ul class="m-navs nav {{ styleModifier }} {{ class }}">
+    {{# items }}
         <li class="nav-item">
             <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
                href="{{ url }}">
                 {{{ text }}}
             </a>
         </li>
-    {{/ navList }}
+    {{/ items }}
 </ul>

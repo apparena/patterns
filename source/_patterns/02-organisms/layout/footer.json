@@ -1,7 +1,13 @@
 {
   "footer": {
     "copyright": true,
-    "logo": true,
+    "logo": {
+      "logo": {
+        "src": "/images/logo-inverse.svg",
+        "name": "App-Arena.com"
+      },
+      "url": "#"
+    },
     "socialMedia": {
       "items": [
         {"icon":"fa-facebook-square", "url":"https://www.facebook.com", "title": "App-Arena auf Facebook"},
@@ -12,7 +18,7 @@
     "navigation": {
       "primary": {
         "navFooter": {
-          "navList": [
+          "items": [
             {
               "text": "Mein Konto",
               "url": "#"
@@ -38,7 +44,8 @@
       },
       "secondary": {
         "navFooter": {
-          "navList": [
+          "class" : "justify-content-center",
+          "items": [
             {
               "text": "Impressum",
               "url": "#"

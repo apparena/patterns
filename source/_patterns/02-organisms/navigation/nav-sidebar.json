@@ -15,7 +15,7 @@
       "link": "#",
       "title": "Container name"
     },
-    "navList": [
+    "items": [
       {
         "text": "Sidebar Nav 1",
         "isActive": true
@@ -26,7 +26,7 @@
     ],
     "secondaryGroup": {
       "title": "Secondary Sidebar Nav",
-      "navList": [
+      "items": [
         {
           "text": "Secondary Nav 1",
           "isActive": true

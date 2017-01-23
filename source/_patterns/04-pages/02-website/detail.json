@@ -63,7 +63,7 @@
 		"navbar": {
 			"helpNavigation": false,
 			"primaryNavigation": {
-				"navList": [
+				"items": [
 					{
 						"text": "Produkte & Tools",
 						"url": "link.pages-homepage",
@@ -99,7 +99,7 @@
 			},
 			"userNavigation": {
 				"links": {
-					"navList": [
+					"items": [
 						{
 							"text": "Anmelden",
 							"url": "link.pages-login",
