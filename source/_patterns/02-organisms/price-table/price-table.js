@@ -11,7 +11,6 @@ import AJAXLoader from "../../01-molecules/ajax-loader/ajax-loader";
 
 export default class PriceTable extends ReactComponent {
     getInitState() {
-        this.handleButtonClick = ::this.onButtonClick;
         this.handleCheckbox = ::this.onCheckbox;
         this.handleCustomPackageButton = ::this.onCustomPackageButton;
 
@@ -25,30 +24,6 @@ export default class PriceTable extends ReactComponent {
     static propTypes = {
         dataRoute: PropTypes.string.isRequired,
     };
-
-    /**
-     * Every Button will have an ID in the format of "<package><index" ex. "flatrate4" thus two
-     * regexes are used to extract these and retrieve the proper information.
-     */
-    onButtonClick(e) {
-        const regex = /(single|flatrate)/g;
-        const match = regex.exec(e.target.id);
-        let foundPackage = "";
-        if (match !== null)
-            foundPackage = match[0];
-
-        if (foundPackage === "single") foundPackage = this.data.single;
-        else if (foundPackage === "flatrate") foundPackage = this.data.flatrate;
-        /*else return;
-
-         regex = /\d+/g;
-         match = regex.exec(e.target.id);
-         let index = -1;
-         if (match !== null)
-         index = match[0];
-
-         const price = foundPackage.elements[index].price;*/
-    }
 
     onCheckbox(e) {
         this.setState({
@@ -79,9 +54,9 @@ export default class PriceTable extends ReactComponent {
                     return (
                         <Element id={`${selection}${i}`} key={`${selection}-element${i}`} price={e.price}
                                  imgSrc={e.img} imgAlt={e.imgAlt} title={e.title} information={e.info}
-                                 subinformation={e.info2} isPopular={e.popular === 1}
-                                 isFlatrate={selection === "flatrate"} buttonPrompt={e.prompt}
-                                 onClick={this.handleButtonClick} discount={this.data.flatrate.discount}
+                                 isPopular={e.popular === 1}
+                                 isFlatrate={selection === "flatrate"} button={e.cta}
+                                 discount={this.data.flatrate.discount}
                         />
                     );
                 })}

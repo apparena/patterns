@@ -13,8 +13,7 @@ export default class PriceTableElement extends ReactComponent {
         title: PropTypes.string,
         price: PropTypes.number.isRequired,
         information: PropTypes.array,
-        subinformation: PropTypes.array,
-        buttonPrompt: PropTypes.string,
+        button: PropTypes.object,
         id: PropTypes.string.isRequired,
         onClick: PropTypes.func,
         isPopular: PropTypes.bool,
@@ -40,34 +39,16 @@ export default class PriceTableElement extends ReactComponent {
         );
     }
 
-    /**
-     * Process information and convert it so that it can be rendered easily.
-     * Will only be executed on mount (i.e. on page load)
-     */
-    componentWillMount() {
-        this.prepared_information = this.props.information.map((x, i) => {
-            return this.processInformation(x, i);
-        });
-        this.prepared_subinformation = this.props.subinformation.map((x, i) => {
-            return this.processInformation(x, i);
-        });
+    renderInfoBlocks(block, i) {
+        return (
+            <div key={i}>
+                <div className={styles.infoContainer}>
+                    {block.map(::this.processInformation)}
+                </div>
+                {(i + 1 < this.props.information.length) && <hr className={styles.horizontalDividerShort}/>}
+            </div>
+        )
     }
-
-    /**
-     * Process information and convert it so that it can be rendered easily.
-     * Will only be executed when the component changes (i.e. by selecting another package)
-     * In this case "nextProps" contains the information we want because this.props still contains
-     * old information.
-     */
-    componentWillUpdate(nextProps, nextState, nextContext) {
-        this.prepared_information = nextProps.information.map((x, i) => {
-            return this.processInformation(x, i);
-        });
-        this.prepared_subinformation = nextProps.subinformation.map((x, i) => {
-            return this.processInformation(x, i);
-        });
-    }
-
 
     /**
      * Renders the popular Tag
@@ -115,15 +96,9 @@ export default class PriceTableElement extends ReactComponent {
                         </sub>
                     </p>
                     <hr className={styles.horizontalDividerLong}/>
-                    <div className={styles.infoContainer}>
-                        {this.prepared_information}
-                    </div>
-                    <hr className={styles.horizontalDividerShort}/>
-                    <div className={styles.infoContainer}>
-                        {this.prepared_subinformation}
-                    </div>
-                    <button id={this.props.id} className={styles.purchase_button} onClick={this.props.onClick}>
-                        {this.props.buttonPrompt}
+                    {this.props.information.map(::this.renderInfoBlocks)}
+                    <button id={this.props.id} className={styles.purchase_button} href={this.props.button.url}>
+                        {this.props.button.caption}
                     </button>
                 </div>
             </Col>
