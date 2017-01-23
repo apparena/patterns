@@ -3,7 +3,7 @@
     <div class="container">
         {{# footer.logo }}
             <a class="o-footer-logo mt-1 mb-3" href="#">
-                {{> 00-atoms/logo/logo }}
+                {{> atoms-logo }}
             </a>
         {{/footer.logo}}
 
@@ -23,19 +23,16 @@
             </div>
         {{/footer.socialMedia}}
 
-        {{> 02-organisms/test }}
-        {{> 01-molecules/test }}
-
         {{#footer.navigation.primary}}
 
             <div class="o-footer-nav-primary float-sm-left">
-                {{> 02-organisms/navigation/nav-footer }}
+                {{> organisms-nav-footer }}
             </div>
         {{/footer.navigation.primary}}
 
         {{#footer.navigation.secondary}}
             <div class="o-footer-nav-secondary">
-                {{> 02-organisms/navigation/nav-footer }}
+                {{> organisms-nav-footer }}
             </div>
         {{/footer.navigation.secondary}}
 

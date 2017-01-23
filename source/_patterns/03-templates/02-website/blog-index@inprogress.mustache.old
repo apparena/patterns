@@ -1,7 +1,7 @@
-{{> organisms-header }}
+{{> 02-organisms/layout/header }}
 <main role="main">
 
-    {{> molecules-page-header }}
+    {{!> molecules-page-header }}
 
     <div class="push"></div>
 </main>

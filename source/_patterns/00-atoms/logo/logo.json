@@ -1,3 +1,6 @@
 {
-  "logoSrc":"../../images/logo.svg"
+  "src":"/images/logo.svg",
+  "company": {
+    "name": "App-Arena.com"
+  }
 }

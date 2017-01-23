@@ -9,12 +9,12 @@
             </div>
             <div class="row services-row">
                 {{#items}}
-                    {{> 01-molecules/02-website/service}}
+                    {{!> 01-molecules/website/service }}
                 {{/items}}
             </div>
             <div class="row services-row services-row-more">
                 {{#items-more}}
-                    {{> 01-molecules/02-website/service}}
+                    {{!> 01-molecules/website/service }}
                 {{/items-more}}
             </div>
             {{#more-btn-text}}
@@ -34,12 +34,12 @@
             /* untested */
             $(function () {
                 var $$serviceLists = $('section.section-services-list');
-                $$serviceLists.each(function() {
+                $$serviceLists.each(function () {
                     var $serviceList = $(this);
                     var $moreServicesBtn = $serviceList.find('.js-more-services');
                     var $moreServiceRow = $serviceList.find('.services-row-more');
                     $moreServiceRow.hide();
-                    $moreServicesBtn.on('click', function(e) {
+                    $moreServicesBtn.on('click', function (e) {
                         $moreServiceRow.slideDown();
                         $moreServicesBtn.fadeOut();
                     });

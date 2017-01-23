@@ -21,20 +21,20 @@
       "navList": [
         {
           "text": "Dashboard",
-          "url": "link.pages-dashboard",
+          "url": "#",
           "isActive": true
         },
         {
           "text": "Apps",
-          "url": "link.pages-apps"
+          "url": "#"
         },
         {
           "text": "Kunden",
-          "url": "link.pages-customers"
+          "url": "#"
         },
         {
           "text": "Entwickler",
-          "url": "link.pages-developers"
+          "url": "#"
         }
       ]
     },

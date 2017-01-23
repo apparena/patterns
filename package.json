@@ -11,23 +11,28 @@
     "reactjs",
     "react"
   ],
+  "engines": {
+    "node": ">=5.0"
+  },
   "scripts": {
     "build": "npm run build:babel && npm run build:copy-files && npm run build:umd",
-    "build:light": "npm run build:babel && npm run build:copy-files",
     "build:babel": "babel ./source/_patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./build/apparena-patterns-react/_patterns --copy-files",
     "build:copy-files": "babel-node ./build/scripts/copy-files.js",
+    "build:light": "npm run build:babel && npm run build:copy-files",
+    "build:umd": "webpack -p --config build/webpack/webpack.config.prod.js",
     "clean:build": "rimraf build/apparena-patterns-react",
+    "gulp": "gulp -- ",
     "lint": "eslint src docs/src build/test/integration && echo \"eslint: no lint errors\"",
     "lint:find-rules": "eslint-find-rules -u .eslintrc.js",
+    "postinstall": "node scripts/postinstall.js",
     "prebuild": "npm run clean:build",
+    "publish": "cd build/apparena-patterns-react && npm publish",
+    "start": "node build/webpack/server.js",
     "test": "cross-env NODE_ENV=test babel-node build/test/index.js",
     "test:coverage": "cross-env NODE_ENV=test babel-node ./node_modules/istanbul/lib/cli.js cover build/test/index.js",
     "test:karma": "karma start build/test/karma.conf.js --single-run",
     "test:unit": "cross-env NODE_ENV=test babel-node build/test/index.js unit",
-    "test:unit:watch": "cross-env NODE_ENV=test babel-node build/test/watch.js unit",
-    "build:umd": "webpack -p --config build/webpack/webpack.config.prod.js",
-    "start": "node build/webpack/server.js",
-    "publish": "cd build/apparena-patterns-react && npm publish"
+    "test:unit:watch": "cross-env NODE_ENV=test babel-node build/test/watch.js unit"
   },
   "repository": {
     "type": "git",
@@ -39,16 +44,22 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
-    "bootstrap": "^4.0.0-alpha.5",
+    "bootstrap": "^4.0.0-alpha.6",
+    "browser-sync": "^2.0.0",
     "classnames": "^2.2.5",
     "font-awesome": "^4.6.3",
+    "gulp-cli": "^1.2.2",
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
+    "minimist": "^1.2.0",
+    "patternlab-node": "^2.0.0",
     "react-addons-shallow-compare": "^15.4.2",
     "react-animated-number": "^0.4.2",
     "react-draggable": "^2.2.2",
     "react-gemini-scrollbar": "^2.1.5",
     "react-select": "^1.0.0-rc.2",
     "react-toggle": "^2.1.1",
+    "styleguidekit-assets-default": "^3.0.0",
+    "styleguidekit-mustache-default": "^3.0.0",
     "velocity-animate": "^1.2.3"
   },
   "devDependencies": {
@@ -96,6 +107,7 @@
     "grunt-cli": "^1.2.0",
     "grunt-sass": "^1.2.0",
     "grunt-sass-tilde-importer": "^1.0.2",
+    "gulp": "git://github.com/gulpjs/gulp#4.0",
     "istanbul": "^1.1.0-alpha.1",
     "jsdom": "^9.4.1",
     "json-loader": "^0.5.4",

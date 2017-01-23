@@ -9,11 +9,11 @@
       "navList":[
         {
           "text": "Go to dashboard",
-          "url": "link.pages-dashboard"
+          "url": "#"
         },
         {
           "text": "Apps",
-          "url": "link.pages-apps"
+          "url": "#"
         }
       ]
     }

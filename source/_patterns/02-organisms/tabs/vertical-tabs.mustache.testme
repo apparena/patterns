@@ -83,7 +83,6 @@
                     </div>
                 </div>
             {{/navigation.positionLeft}}
-
         </div>
     </div>
 {{/vertical-tabs}}
