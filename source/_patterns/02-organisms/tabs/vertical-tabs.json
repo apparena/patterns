@@ -15,7 +15,7 @@
         "icon": "<i class='fa fa-line-chart'></i>",
         "title": "Statistiken und Tracking Infos",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
-        "content": "<img src=\"/images/sample/aa-website/mobile-template_adventskalender-2016.png\" />"
+        "content": "<img src=\"/images/sample/aa-website/browser-template_adventskalender-2016.png\" />"
       },
       {
         "id": "tab2",
@@ -29,7 +29,7 @@
         "icon": "<i class='fa fa-check'></i>",
         "title": "Tab 3 Title",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
-        "content": "<img src=\"/images/sample/aa-website/mobile-template_adventskalender-2016.png\" />"
+        "content": "<img src=\"/images/sample/aa-website/browser-template_adventskalender-2016.png\" />"
       },
       {
         "id": "tab4",

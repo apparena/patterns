@@ -10791,6 +10791,8 @@ html {
     transition: opacity 0.15s linear; }
     .o-vertical-tabs ul.hover-tabs li:hover {
       opacity: 1; }
+  .o-vertical-tabs .col-md-7.tabs-content {
+    align-items: center; }
   .o-vertical-tabs .row {
     justify-content: center; }
   .o-vertical-tabs p {
@@ -10801,8 +10803,8 @@ html {
     color: #0275d8;
     cursor: pointer; }
   .o-vertical-tabs img {
-    max-height: 100%;
-    max-width: 100%; }
+    max-height: 80%;
+    max-width: 80%; }
   .o-vertical-tabs .o-vertical-tab-icon {
     font-size: 2rem;
     padding: 1rem;
