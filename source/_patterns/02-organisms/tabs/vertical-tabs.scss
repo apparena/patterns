@@ -1,0 +1,49 @@
+
+
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+@import "../../../css/scss/abstracts/mixins";
+
+
+/*=========================================================================
+ Organism vertical tabs
+ ========================================================================== */
+
+
+
+img {
+
+  height: auto;
+}
+
+.o-vertical-tabs {
+  ul.hover-tabs {
+    li {
+      opacity: 0.5;
+      padding: $spacer*2.5;
+      margin-top: $spacer*2.4;
+      @include transition($transition-fade);
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+/*
+  .media-body:hover {
+
+    opacity: 0;
+  } */
+
+
+
+ .icon-vertical-tabs {
+
+    font-size: 3.0rem;
+    padding: ($spacer);
+    font-color: blue;
+
+  }
+
+}

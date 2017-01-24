@@ -1,34 +1,77 @@
 {{#vertical-tabs}}
     <div class="o-vertical-tabs">
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    function showHover(img) {
+        if(img) {
+            img.src = '/images/sample/admin-panel.png';
+        }
+    }
+    function showNormal(img) {
+        if(img) {
+            img.src = '/images/sample/admin-panel.png';
+        }
+    }
+
+    $(document).ready(function() {
+        $('.media-body').mouseover(function(){
+            showHover(this);
+        }).mouseout(function(){
+            showNormal(this);
+        });
+
+        $('.media-body a').mouseover(function(){
+            showHover($('#ex2').get()[0]);
+        }).mouseout(function(){
+            showNormal($('#ex2').get()[0]);
+        });
+    });
+    </script>
+
+
         <div class="row">
             {{# navigation.positionLeft }}
-                <div class="col-md-5">
+                <div class="tabs">
                     <div class="row">
-                        <div class="offset-md-1 col-md-11">
-                            <ul class="list-unstyled">
+                        <div class="offset-md-1 col-md-11 tabs">
+                            <ul class="list-unstyled hover-tabs">
                                 {{#items}}
-                                    <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab" href="#{{id}}" role="tab">
+                                    <li class="media {{#isActive}}active{{/isActive}} mb-4 fade" data-toggle="tab" href="#{{id}}" role="tab">
                                         <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
-                                        <div class="icon">
-                                            {{{ icon }}}
+                                        <div class="o-vertical-tab-icon">
+                                            <i class='{{ aa-icon }}'></i>
                                         </div>
                                         <div class="media-body">
-                                            <h5 class="mt-0 mb-1">{{{title}}}</h5>
-                                            {{{description}}}
+                                            <h5 class="mt-2 mb-1">{{{title}}}</h5>
+                                            <p> {{{description}}} </p>
                                         </div>
                                     </li>
                                 {{/items}}
 
-                                {{#cta}}
-                                    <li>
-                                        <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
-                                    </li>
-                                {{/cta}}
                             </ul>
+                            {{#cta}}
+                                    <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
+                            {{/cta}}
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    $(function(){
+                        // preload images
+                        $('div.media mb-4').each(function(){
+                            var img = new Image();
+                            img.src = $(this).class('tab-pane');
+                        })
+                        // bind hover event to anchor tags
+                                .bind('mouseover',function(){
+                                    $('.tab-content').attr('src',$(this).class('tab-pane'));
+                                })
+                                // activate first image
+                                .eq(0).mouseover();
+                    });
+                </script>
                 <div class="col-md-7">
                     <div class="row">
                         <div class="col-md-11">
@@ -36,6 +79,9 @@
                             <div class="tab-content">
                                 {{#items}}
                                     <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
+
+
+
                                         {{{content}}}
                                     </div>
                                 {{/items}}

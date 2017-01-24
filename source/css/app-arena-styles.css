@@ -10652,7 +10652,8 @@ html {
   margin-top: -5px; }
 
 .o-footer-nav-secondary {
-  margin-top: 2rem; }
+  margin-top: 1rem;
+  margin-bottom: 0.5rem; }
   .o-footer-nav-secondary .nav-link {
     color: #818a91; }
   .o-footer-nav-secondary .nav-link:hover {
@@ -10747,6 +10748,56 @@ html {
   color: #818a91;
   border-top: 1px solid #ccc;
   padding: 10px 10px 4px 10px; }
+
+/**
+ * Pattern Dependencies
+ */
+/**
+ * Pattern Dependencies
+ */
+/*=========================================================================
+  Variable definitions
+ ========================================================================== */
+html {
+  font-size: 14px; }
+
+/*------------------------------------*    #MIXINS
+\*------------------------------------*/
+@-webkit-keyframes pulse {
+  0%, 80%, 100% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+
+@keyframes pulse {
+  0%, 80%, 100% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+
+/*=========================================================================
+ Organism vertical tabs
+ ========================================================================== */
+img {
+  height: auto; }
+
+.o-vertical-tabs {
+  /*
+  .media-body:hover {
+
+    opacity: 0;
+  } */ }
+  .o-vertical-tabs ul.hover-tabs li {
+    opacity: 0.5;
+    padding: 2.5rem;
+    margin-top: 2.4rem;
+    transition: opacity 0.15s linear; }
+    .o-vertical-tabs ul.hover-tabs li:hover {
+      opacity: 1; }
+  .o-vertical-tabs .icon-vertical-tabs {
+    font-size: 3.0rem;
+    padding: 1rem;
+    font-color: blue; }
 
 /*------------------------------------*    $ABSTRACTS
 \*------------------------------------*/
