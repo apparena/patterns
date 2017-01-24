@@ -10778,9 +10778,6 @@ html {
 /*=========================================================================
  Organism vertical tabs
  ========================================================================== */
-img {
-  height: auto; }
-
 .o-vertical-tabs {
   /*
   .media-body:hover {
@@ -10789,15 +10786,27 @@ img {
   } */ }
   .o-vertical-tabs ul.hover-tabs li {
     opacity: 0.5;
-    padding: 2.5rem;
-    margin-top: 2.4rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
     transition: opacity 0.15s linear; }
     .o-vertical-tabs ul.hover-tabs li:hover {
       opacity: 1; }
-  .o-vertical-tabs .icon-vertical-tabs {
-    font-size: 3.0rem;
+  .o-vertical-tabs .row {
+    justify-content: center; }
+  .o-vertical-tabs p {
+    cursor: pointer; }
+  .o-vertical-tabs media.mb-4 {
+    cursor: pointer; }
+  .o-vertical-tabs h5 {
+    color: #0275d8;
+    cursor: pointer; }
+  .o-vertical-tabs img {
+    max-height: 100%;
+    max-width: 100%; }
+  .o-vertical-tabs .o-vertical-tab-icon {
+    font-size: 2rem;
     padding: 1rem;
-    font-color: blue; }
+    color: #0275d8; }
 
 /*------------------------------------*    $ABSTRACTS
 \*------------------------------------*/
