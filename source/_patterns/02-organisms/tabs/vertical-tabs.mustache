@@ -2,6 +2,7 @@
     <div class="o-vertical-tabs">
         <div class="row">
             {{# navigation.positionLeft }}
+
                 <div class="col-md-5 tabs-nav">
                     <div class="row">
                         <div class="offset-md-1 col-md-11 tabs">
@@ -11,10 +12,10 @@
                                         href="#{{id}}" role="tab">
                                         <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                         <div class="o-vertical-tab-icon">
-                                            {{ aa-icon }}
+                                            {{{ icon }}}
                                         </div>
                                         <div class="media-body">
-                                            <h5 class="mt-2 mb-1">{{{title}}}</h5>
+                                            <h5 class="mt-0 mb-1">{{{title}}}</h5>
                                             <p> {{{description}}} </p>
                                         </div>
                                     </li>
@@ -29,7 +30,7 @@
                 </div>
                 <div class="col-md-7 tabs-content">
                     <div class="row">
-                        <div class="col-md-11">
+                        <div class="offset-md-1 col-md-11">
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 {{#items}}
@@ -42,92 +43,56 @@
                     </div>
                 </div>
             {{/navigation.positionLeft}}
+
+
             {{^ navigation.positionLeft }}
+
+
                 <div class="col-md-7 tabs-content">
                     <div class="row">
-                        <div class="offset-md-1 col-md-11">
-                            In mattis ultricies luctus. Sed non sapien dolor. Donec
-                            elementum, felis et fermentum aliquet, magna magna efficitur risus, id mattis ligula libero
-                            vel augue. Nulla
-                            vestibulum velit est, at rutrum nunc consectetur sit amet. Donec pulvinar leo ac mi
-                            pellentesque, non porta
-                            lectus congue. Proin laoreet accumsan urna, at scelerisque libero pharetra vitae. Interdum
-                            et malesuada
-                            fames ac ante ipsum primis in faucibus. Morbi id rhoncus nisi. Nunc felis nisl, auctor
-                            condimentum accumsan
-                            nec, cursus eu ante. Proin pellentesque felis eget metus porta, eu auctor sem faucibus.
-                            Suspendisse vitae
-                            ligula at augue imperdiet interdum sit amet vel sapien. Interdum et malesuada fames ac ante
-                            ipsum primis in
-                            faucibus. Maecenas turpis lectus, ultricies vitae ipsum quis, convallis auctor sapien. Class
-                            aptent taciti
-                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent varius, est
-                            eu tincidunt
-                            blandit, leo tortor vehicula turpis, ut lobortis est libero in risus.
+                        <div class="col-md-11">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                {{#items}}
+                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
+                                        {{{content}}}
+                                    </div>
+                                {{/items}}
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-5 tabs-nav">
                     <div class="row">
-                        <div class="col-md-11">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs flex-column" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+
+                        <ul class="list-unstyled hover-tabs">
+                            {{#items}}
+                                <li class="media {{#isActive}}active{{/isActive}} mb-4 fade" data-toggle="tab"
+                                    href="#{{id}}" role="tab">
+                                    <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
+                                    <div class="o-vertical-tab-icon">
+                                        {{{ icon }}}
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">{{{title}}}</h5>
+                                        <p> {{{description}}} </p>
+                                    </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
-                                </li>
-                            </ul>
-                        </div>
+                            {{/items}}
+
+                        </ul>
+                        {{#cta}}
+                            <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
+                        {{/cta}}
+
                     </div>
                 </div>
+
             {{/navigation.positionLeft}}
         </div>
     </div>
 
-    <script type="text/javascript">
-        /*function showHover(img) {
-            if (img) {
-                img.src = '/images/sample/admin-panel.png';
-            }
-        }
-        function showNormal(img) {
-            if (img) {
-                img.src = '/images/sample/admin-panel.png';
-            }
-        }
 
-        $(function () {
-            // preload images
-            $('div.media mb-4').each(function () {
-                var img = new Image();
-                img.src = $(this).class('tab-pane');
-            }).bind('mouseover', function () {
-                // bind hover event to anchor tags
-                $('.tab-content').attr('src', $(this).class('tab-pane'));
-            }).eq(0).mouseover();
-        });
-
-        $(document).ready(function () {
-            $('.media-body').mouseover(function () {
-                showHover(this);
-            }).mouseout(function () {
-                showNormal(this);
-            });
-
-            $('.media-body a').mouseover(function () {
-                showHover($('#ex2').get()[0]);
-            }).mouseout(function () {
-                showNormal($('#ex2').get()[0]);
-            });
-        });*/
-    </script>
 {{/vertical-tabs}}
 
