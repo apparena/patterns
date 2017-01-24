@@ -11172,27 +11172,27 @@ html {
       border-style: solid;
       border-width: 25px 25px 0 25px;
       border-color: #ffffff transparent transparent transparent; }
-  .o-references-slider .o-references-slider-logo-slider {
+  .o-references-slider .references-slider-logo-slider {
     width: 100%;
     background-color: #f6f8fa;
     padding: 0 10%;
     cursor: pointer; }
-    .o-references-slider .o-references-slider-logo-slider.slick-slider {
+    .o-references-slider .references-slider-logo-slider.slick-slider {
       margin-bottom: 0; }
-    .o-references-slider .o-references-slider-logo-slider .o-references-slider-logo {
+    .o-references-slider .references-slider-logo-slider .references-slider-logo {
       padding: 1rem;
       height: 90px;
       text-align: center; }
-      .o-references-slider .o-references-slider-logo-slider .o-references-slider-logo img {
+      .o-references-slider .references-slider-logo-slider .references-slider-logo img {
         max-height: 70%;
         max-width: 100%;
         margin: auto;
         transition: filter 1s, opacity 1s;
         filter: grayscale(100%);
         opacity: 0.5; }
-      .o-references-slider .o-references-slider-logo-slider .o-references-slider-logo:hover img {
+      .o-references-slider .references-slider-logo-slider .references-slider-logo:hover img {
         opacity: 1; }
-      .o-references-slider .o-references-slider-logo-slider .o-references-slider-logo.slick-current img {
+      .o-references-slider .references-slider-logo-slider .references-slider-logo.slick-current img {
         filter: grayscale(0%);
         opacity: 1; }
 
