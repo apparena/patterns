@@ -98,10 +98,6 @@ export default class PriceTable extends ReactComponent {
     renderMainSection() {
         return (
             <div>
-                <Col md="4" mdOffset={4} className={styles.priceTableHeader}>
-                    <hr className={styles.blueDivider}/>
-                    <p>{this.t("priceTable.header")}.</p>
-                </Col>
                 <div className={styles.selectorTable}>
                     <div className={styles.selectorTableRow}>
                         <div
