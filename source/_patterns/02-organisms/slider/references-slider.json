@@ -1,0 +1,198 @@
+{
+    "references-slider": {
+        "items": [
+            {
+                "screens": {
+                    "desktop": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                    "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                },
+                "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                "author": {
+                    "name": "Stephanie S. Walsh",
+                    "position": "Senior Manager",
+                    "company": "Ergo"
+                },
+                "logo": "/images/sample/aa-website/ergo-logo.png",
+                "title": "Titel der Kunden-Referenz",
+                "buttons": {
+                    "primary": {
+                        "caption": "Jetzt testen!",
+                        "url": "#"
+                    },
+                    "secondary": {
+                        "caption": "mehr erfahren",
+                        "url": "#"
+                    }
+                }
+            },
+            {
+                "screens": {
+                    "desktop": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                    "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                },
+                "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                "author": {
+                    "name": "Gunda Zellweger",
+                    "position": "Senior Manager",
+                    "company": "Eventim"
+                },
+                "logo": "/images/sample/aa-website/eventim-logo.png",
+                "title": "Titel der Kunden-Referenz",
+                "buttons": {
+                    "primary": {
+                        "caption": "Jetzt testen!",
+                        "url": "#"
+                    },
+                    "secondary": {
+                        "caption": "mehr erfahren",
+                        "url": "#"
+                    }
+                }
+            },
+            {
+                "screens": {
+                    "desktop": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                    "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                },
+                "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                "author": {
+                    "name": "Tilo Holtzer",
+                    "position": "Senior Manager",
+                    "company": "M2Beauté"
+                },
+                "logo": "/images/sample/aa-website/m2beaute-logo.png",
+                "title": "Titel der Kunden-Referenz",
+                "buttons": {
+                    "primary": {
+                        "caption": "Jetzt testen!",
+                        "url": "#"
+                    },
+                    "secondary": {
+                        "caption": "mehr erfahren",
+                        "url": "#"
+                    }
+                }
+            },
+            {
+                "screens": {
+                    "desktop": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                    "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                },
+                "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                "author": {
+                    "name": "Brünhild Papke",
+                    "position": "Senior Manager",
+                    "company": "Universal Music"
+                },
+                "logo": "/images/sample/aa-website/universal-music-group-logo.png",
+                "title": "Titel der Kunden-Referenz",
+                "buttons": {
+                    "primary": {
+                        "caption": "Jetzt testen!",
+                        "url": "#"
+                    },
+                    "secondary": {
+                        "caption": "mehr erfahren",
+                        "url": "#"
+                    }
+                }
+            },
+            {
+                "screens": {
+                    "desktop": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                    "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                },
+                "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                "author": {
+                    "name": "Marcella Oliver",
+                    "position": "Senior Manager",
+                    "company": ""
+                },
+                "logo": "/images/sample/aa-website/ergo-logo.png",
+                "title": "Titel der Kunden-Referenz",
+                "buttons": {
+                    "primary": {
+                        "caption": "Jetzt testen!",
+                        "url": "#"
+                    },
+                    "secondary": {
+                        "caption": "mehr erfahren",
+                        "url": "#"
+                    }
+                }
+            },
+            {
+                "screens": {
+                    "desktop": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                    "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                },
+                "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                "author": {
+                    "name": "Kilian Hirsch",
+                    "position": "Senior Manager",
+                    "company": ""
+                },
+                "logo": "/images/sample/aa-website/eventim-logo.png",
+                "title": "Titel der Kunden-Referenz",
+                "buttons": {
+                    "primary": {
+                        "caption": "Jetzt testen!",
+                        "url": "#"
+                    },
+                    "secondary": {
+                        "caption": "mehr erfahren",
+                        "url": "#"
+                    }
+                }
+            },
+            {
+                "screens": {
+                    "desktop": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                    "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                },
+                "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                "author": {
+                    "name": "Thorsten Klages",
+                    "position": "Senior Manager",
+                    "company": ""
+                },
+                "logo": "/images/sample/aa-website/m2beaute-logo.png",
+                "title": "Titel der Kunden-Referenz",
+                "buttons": {
+                    "primary": {
+                        "caption": "Jetzt testen!",
+                        "url": "#"
+                    },
+                    "secondary": {
+                        "caption": "mehr erfahren",
+                        "url": "#"
+                    }
+                }
+            },
+            {
+                "screens": {
+                    "desktop": "/images/sample/aa-website/browser-template_adventskalender-2016.png",
+                    "mobile":  "/images/sample/aa-website/mobile-template_adventskalender-2016.png"
+                },
+                "quote": "Haben alles SUPER gemacht, wir freuen uns auf weitere Zusammenarbeit.",
+                "author": {
+                    "name": "Annett Eilerts",
+                    "position": "Senior Manager",
+                    "company": ""
+                },
+                "logo": "/images/sample/aa-website/universal-music-group-logo.png",
+                "title": "Titel der Kunden-Referenz",
+                "buttons": {
+                    "primary": {
+                        "caption": "Jetzt testen!",
+                        "url": "#"
+                    },
+                    "secondary": {
+                        "caption": "mehr erfahren",
+                        "url": "#"
+                    }
+                }
+            }
+        ]
+    }
+}

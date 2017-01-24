@@ -1,0 +1,24 @@
+/**
+  * Top navigations
+  */
+.o-nav {
+
+}
+
+/**
+ * Primary top navigation
+ */
+.o-nav-primary {
+	> .nav {
+		margin-top: 20px;
+	}
+}
+
+/**
+ * Secondary top navigation
+ */
+.o-nav-secondary {
+	padding:15px;
+	border-bottom: 1px solid $gray-lighter;
+}
+

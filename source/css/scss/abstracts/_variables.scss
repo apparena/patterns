@@ -9,6 +9,16 @@
   Variable definitions
  ========================================================================== */
 
+// Typography
+$font-weights: (
+        light: 300,
+        regular: 400,
+        bold: 600
+);
+
+// Icons
+$icomoon-font-path: "../../../iconsets/app-arena-website/icomoon-font/fonts";
+
 // Brand colors
 $color-brand-blue-light: #478AB8;
 $color-brand-blue-dark: #2D343D;

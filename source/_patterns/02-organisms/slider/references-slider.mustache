@@ -1,0 +1,118 @@
+{{#references-slider}}
+    <section class="o-references-slider mb-0 pb-0">
+        <div class="reference-slider">
+            {{#items}}
+                <div class="reference">
+                    <div class="reference-screens">
+                        {{#screens.desktop}}
+                            <img class="reference-screen-desktop" src="{{screens.desktop}}">
+                        {{/screens.desktop}}
+                        {{#screens.mobile}}
+                            <img class="reference-screen-mobile" src="{{screens.mobile}}">
+                        {{/screens.mobile}}
+                    </div>
+                    <div class="reference-quote text-center">
+                        <blockquote>
+                            {{#title}}<h3>{{title}}</h3>{{/title}}
+                            <p class="quote">" {{quote}} "</p>
+                            <hr class="center">
+                            <footer class="author">
+                                <span class="name">{{author.name}}</span>,
+                                <span class="position">{{author.position}}</span>
+                                <br>
+                                <span class="company">{{author.company}}</span>
+                            </footer>
+                            <div class="buttons">
+                                {{#buttons}}
+                                    {{#secondary}}
+                                        <a href="{{url}}" class="btn btn-outline-primary">{{caption}}</a>
+                                    {{/secondary}}
+                                    {{#primary}}
+                                        <a href="{{url}}" class="btn btn-success">{{caption}}</a>
+                                    {{/primary}}
+                                {{/buttons}}
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            {{/items}}
+        </div>
+        <div class="reference-slider-divider">
+            <div class="reference-slider-divider-arrow"></div>
+        </div>
+        <div class="references-slider-logo-slider">
+            {{#items}}
+                <div class="o-references-slider-logo">
+                    <img src="{{logo}}">
+                </div>
+            {{/items}}
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('.o-references-slider .reference-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: '.references-slider-logo-slider',
+                useCSS: true,
+                cssEase: 'ease',
+                infinite: true,
+                lazyLoad: 'ondemand',
+                cssTransitions: true,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                ]
+            });
+            $('.references-slider-logo-slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: false,
+                infinite: true,
+                asNavFor: '.reference-slider',
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true,
+                useCSS: true,
+                initialSlide: 0,
+                draggable: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                /*variableWidths: false,*/
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 5
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+{{/references-slider}}

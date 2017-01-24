@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    Typography
+\*------------------------------------*/
+$font-weights: (
+        light: 300,
+        regular: 400,
+        bold: 600
+);
+@each $weight, $value in $font-weights {
+  .font-weight-#{$weight} {
+    font-weight: $value;
+  }
+}

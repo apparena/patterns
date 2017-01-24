@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    #MAIN
+\*------------------------------------*/
+
+/**
+ * Main content area.
+ */
+[role=main] {
+  flex: 1;
+  background-color: $gray-lightest;
+}
+
+/**
+  * Left column in main content area
+  */
+.t-col-left {
+  background-color: #fff;
+  min-height: 800px;
+  border-right: 1px solid darken($card-border-color, 10%);
+  //box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+/**
+  * Main column
+  */
+.t-col-main-content {
+  background-color: #fff;
+  border: 1px solid darken($card-border-color, 10%);
+}
