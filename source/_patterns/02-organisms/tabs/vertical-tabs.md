@@ -10,6 +10,9 @@ vertical tab navigation.
 - Up to 6 tabs
 - Call to action button below the tab navigation
 
+## Dependencies
+
+- jQuery 
 
 ## Use cases
 - Feature list
