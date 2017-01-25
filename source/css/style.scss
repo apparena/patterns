@@ -95,18 +95,18 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
-@import "scss/base/body";
-@import "scss/base/animation";
-@import "scss/base/forms";
-@import "scss/base/global-classes";
-@import "scss/base/headings";
-@import "scss/base/links";
-@import "scss/base/lists";
-@import "scss/base/main";
-@import "scss/base/media";
-@import "scss/base/reset";
-@import "scss/base/tables";
-@import "scss/base/text";
+@import "scss/styleguide/base/body";
+@import "scss/styleguide/base/animation";
+@import "scss/styleguide/base/forms";
+@import "scss/styleguide/base/global-classes";
+@import "scss/styleguide/base/headings";
+@import "scss/styleguide/base/links";
+@import "scss/styleguide/base/lists";
+@import "scss/styleguide/base/main";
+@import "scss/styleguide/base/media";
+@import "scss/styleguide/base/reset";
+@import "scss/styleguide/base/tables";
+@import "scss/styleguide/base/text";
 
 
 
@@ -115,25 +115,25 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-@import "scss/components/blocks";
-@import "scss/components/buttons";
-@import "scss/components/carousels";
-@import "scss/components/footer";
-@import "scss/components/footer-nav";
-@import "scss/components/forms";
-@import "scss/components/fields";
-@import "scss/components/header";
-@import "scss/components/logo";
-@import "scss/components/icons";
-@import "scss/components/lists";
-@import "scss/components/messaging";
-@import "scss/components/primary-nav";
-@import "scss/components/nav";
-@import "scss/components/page-header";
-@import "scss/components/sections";
-@import "scss/components/text";
-@import "scss/components/box";
-@import "scss/components/feedback";
+@import "scss/styleguide/components/blocks";
+@import "scss/styleguide/components/buttons";
+@import "scss/styleguide/components/carousels";
+@import "scss/styleguide/components/footer";
+@import "scss/styleguide/components/footer-nav";
+@import "scss/styleguide/components/forms";
+@import "scss/styleguide/components/fields";
+@import "scss/styleguide/components/header";
+@import "scss/styleguide/components/logo";
+@import "scss/styleguide/components/icons";
+@import "scss/styleguide/components/lists";
+@import "scss/styleguide/components/messaging";
+@import "scss/styleguide/components/primary-nav";
+@import "scss/styleguide/components/nav";
+@import "scss/styleguide/components/page-header";
+@import "scss/styleguide/components/sections";
+@import "scss/styleguide/components/text";
+@import "scss/styleguide/components/box";
+@import "scss/styleguide/components/feedback";
 
 
 
@@ -142,4 +142,4 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
-@import "scss/layout/layout";
+@import "scss/styleguide/layout/layout";

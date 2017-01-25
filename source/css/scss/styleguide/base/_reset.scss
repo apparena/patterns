@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+
+// Add styling for a sticky footer
+html, body {
+	height: 100%;
+}
+main[role=main] {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -180px; /* the bottom margin is the negative value of the footer's height */
+}
+.o-footer, .push {
+	height: 300px; /* .push must be the same height as .footer */
+}

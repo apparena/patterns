@@ -71,7 +71,7 @@
 // Atoms
 @import "../_patterns/00-atoms/spinner/spinner";
 @import "../_patterns/00-atoms/button/button";
-@import "../_patterns/00-atoms/icons/app-arena-website";
+@import "../_patterns/00-atoms/icons/icons";
 
 // Molecules
 @import "../_patterns/01-molecules/breadcrumb/breadcrumb";
@@ -93,6 +93,7 @@
 @import "../_patterns/02-organisms/layout/footer";
 @import "../_patterns/02-organisms/navigation/nav-secondary";
 @import "../_patterns/02-organisms/navigation/nav-sidebar";
+@import "../_patterns/02-organisms/slider/references-slider";
 @import "../_patterns/02-organisms/tabs/vertical-tabs";
 
 
@@ -109,11 +110,12 @@
 @import "scss/base/headings";
 @import "scss/base/main";
 @import "scss/base/reset";
+@import "scss/base/typography";
 
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-@import "scss/components/header";
-@import "scss/components/nav";
 @import "scss/components/cards";
 @import "scss/components/filter-bar";
+@import "scss/components/header";
+@import "scss/components/nav";

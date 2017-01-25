@@ -2,14 +2,17 @@
  * Pattern Dependencies
  */
 @import "../../../css/scss/abstracts/variables";
-@import "../../../css/scss/abstracts/mixins";
-@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/modal";
 
 /*=========================================================================
-  Atoms Button
+  Molecules Filter bar
  ========================================================================== */
 
-// Bootstrap hack as our styleguide does not display border 1px solid for outline buttons
-.btn {
-  border: 1px solid;
+.filter-bar {
+	border: 1px solid $card-border-color;
+	display: flex;
+	justify-content: space-between;
+}
+.filter-bar-search {
+	flex: 1;
 }
