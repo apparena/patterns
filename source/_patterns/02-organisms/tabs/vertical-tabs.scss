@@ -13,8 +13,7 @@
   ul.hover-tabs {
     li {
       opacity: 0.5;
-      padding: $spacer*0.5;
-      margin-top: $spacer*2;
+
       @include transition($transition-fade);
       &:hover {
         opacity: 1;
@@ -31,15 +30,12 @@
     align-items: center;
   }
 
-  .row {
-    justify-content: center;
-  }
 
   p {
     cursor: pointer;
   }
 
-  media.mb-4 {
+  .media.mb-4 {
     cursor: pointer;
   }
 
@@ -49,14 +45,41 @@
   }
 
   img {
-    max-height: 80%;
-    max-width: 80%;
+    width: 100%;
+    height: auto;
+
   }
 
   .o-vertical-tab-icon {
     font-size: $spacer*2;
     padding: $spacer;
     color: $blue;
+    float: left;
   }
+
+
+  li.media {
+    display: table-row;
+    padding-top: $spacer*0.30;
+    &active {
+      font-size: $spacer;
+
+    }
+
+  }
+
+  .col-md-5.tabs-nav {
+
+    padding: $spacer;
+  }
+
+  .list-unstyled.hover-tabs {
+
+    display: table;
+  }
+
+
+
+
 
 }
