@@ -10,7 +10,7 @@
  ========================================================================== */
 
 .o-references-slider {
-  $reference-height: 34rem;
+  $reference-height: 476px;
   $reference-quote-width: 40/100;
   $slick-font-path: "./fonts/" !default;
   $slick-font-family: "app-arena-website";
@@ -198,6 +198,9 @@
   }
 
   .reference-slider {
+
+    height: $reference-height;
+
     .slick-prev, .slick-next {
       // position arrows in the middle of relevant image
       top: 300px; // half of mobile image height
@@ -212,6 +215,7 @@
       .reference-screens {
         position: relative;
         width: 100%;
+        overflow: hidden;
         @media (min-width: map_get($grid-breakpoints, 'lg')) {
           height: $reference-height;
           width: 100% - percentage($reference-quote-width);
@@ -244,6 +248,7 @@
       .reference-quote {
         width: 100%;
         display: table;
+        overflow: hidden;
         @media (min-width: map_get($grid-breakpoints, 'lg')) {
           height: $reference-height;
           width: percentage($reference-quote-width);
