@@ -1,20 +1,14 @@
-
-
 /**
  * Pattern Dependencies
  */
 @import "../../../css/scss/abstracts/variables";
 @import "../../../css/scss/abstracts/mixins";
 
-
 /*=========================================================================
  Organism vertical tabs
  ========================================================================== */
 
-
-
 .o-vertical-tabs {
-
 
   ul.hover-tabs {
     li {
@@ -27,21 +21,17 @@
       }
     }
   }
-/*
-  .media-body:hover {
+  /*
+    .media-body:hover {
 
-    opacity: 0;
-  } */
-
+      opacity: 0;
+    } */
 
   .col-md-7.tabs-content {
-
     align-items: center;
   }
 
-
   .row {
-
     justify-content: center;
   }
 
@@ -50,32 +40,23 @@
   }
 
   media.mb-4 {
-
     cursor: pointer;
-
   }
 
   h5 {
-
     color: $blue;
     cursor: pointer;
   }
 
   img {
-
-
     max-height: 80%;
     max-width: 80%;
-
-
   }
 
- .o-vertical-tab-icon {
-
+  .o-vertical-tab-icon {
     font-size: $spacer*2;
     padding: $spacer;
     color: $blue;
-
   }
 
 }
