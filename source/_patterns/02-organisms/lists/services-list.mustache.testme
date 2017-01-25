@@ -32,10 +32,10 @@
         <script>
             /* show more services */
             /* untested */
-            $(function () {
-                var $$serviceLists = $('section.section-services-list');
+            jQuery(function () {
+                var $$serviceLists = jQuery('section.section-services-list');
                 $$serviceLists.each(function () {
-                    var $serviceList = $(this);
+                    var $serviceList = jQuery(this);
                     var $moreServicesBtn = $serviceList.find('.js-more-services');
                     var $moreServiceRow = $serviceList.find('.services-row-more');
                     $moreServiceRow.hide();
