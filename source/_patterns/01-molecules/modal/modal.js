@@ -50,17 +50,25 @@ export default class Modal extends ReactComponent {
     getInitState() {
         return {
             searchQuery: "",
+            classAlreadyExists: false,
         };
     }
 
     componentDidMount() {
         if (this.props.visible) {
+            if (document.body.classList.contains(styles["modal-open"])) {
+                this.setState({
+                    classAlreadyExists: true,
+                });
+            }
             document.body.classList.add(styles["modal-open"]);
         }
     }
 
     componentWillUnmount() {
-        document.body.classList.remove(styles["modal-open"]);
+        if (!this.state.classAlreadyExists) {
+            document.body.classList.remove(styles["modal-open"]);
+        }
     }
 
     componentWillReceiveProps(nextProps) {
