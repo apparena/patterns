@@ -17,7 +17,7 @@ $font-weights: (
 );
 
 // Icons
-$icomoon-font-path: "../../../iconsets/app-arena-website/icomoon-font/fonts";
+//$icomoon-font-path: "../../../iconsets/app-arena-website/icomoon-font/fonts";
 
 // Brand colors
 $color-brand-blue-light: #478AB8;
@@ -48,7 +48,3 @@ $spinner-dot-bg:               $gray-light;
 $spinner-dot-size:             8px;
 $spinner-dot-size-sm:          $spinner-dot-size / 2;
 $spinner-dot-size-lg:          $spinner-dot-size * 2;
-
-html {
-  font-size: 14px;
-}
