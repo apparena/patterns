@@ -18,6 +18,7 @@
 
   ul.hover-tabs {
     align-items: center;
+
     li {
       opacity: 0.5;
       cursor: pointer;
@@ -40,35 +41,29 @@
   .tabs-content {
     align-items: center;
     width: 100%;
-  }
+    margin-bottom: $spacer;
 
-  img {
-    width: 100%;
-    height: auto;
+    img {
+      width: 100%;
+      height: auto;
 
-  }
-
-  .tabs-btn {
-
-    display: inline;
+    }
   }
 
   /* tab-navigation */
 
-  .o-vertical-tab-icon {
+  .o-vertical-tab-icon { /* Icon  */
     font-size: $spacer*2.5;
     padding: $spacer;
     color: $blue;
     float: left;
   }
 
-
   .tabs-nav {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 
     div {
       display: flex;
@@ -100,11 +95,7 @@
     }
   }
 
-  .tabs-btn {
-    width: $spacer*17;
-  }
-
-  .media {
+  .media { /* description */
     display: table-row;
     padding-top: $spacer*0.30;
 

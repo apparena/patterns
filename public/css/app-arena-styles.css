@@ -11114,13 +11114,13 @@ a.bg-inverse:hover {
     cursor: pointer; }
   .o-vertical-tabs .tabs-content {
     align-items: center;
-    width: 100%; }
-  .o-vertical-tabs img {
     width: 100%;
-    height: auto; }
-  .o-vertical-tabs .tabs-btn {
-    display: inline; }
+    margin-bottom: 1rem; }
+    .o-vertical-tabs .tabs-content img {
+      width: 100%;
+      height: auto; }
   .o-vertical-tabs .o-vertical-tab-icon {
+    /* Icon  */
     font-size: 2.5rem;
     padding: 1rem;
     color: #0275d8;
@@ -11150,9 +11150,8 @@ a.bg-inverse:hover {
           flex-basis: auto;
           flex-grow: 1;
           flex-shrink: 1; }
-  .o-vertical-tabs .tabs-btn {
-    width: 17rem; }
   .o-vertical-tabs .media {
+    /* description */
     display: table-row;
     padding-top: 0.3rem; }
     .o-vertical-tabs .mediaactive {
