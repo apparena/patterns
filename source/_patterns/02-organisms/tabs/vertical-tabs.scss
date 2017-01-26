@@ -8,49 +8,48 @@
  Organism vertical tabs
  ========================================================================== */
 
-.o-vertical-tabs {
 
-  ul.hover-tabs {
-    li {
+
+
+.o-vertical-tabs{
+
+  /* Tags */
+
+  ul.hover-tabs{
+    align-items: center;
+    li{
       opacity: 0.5;
-
+      cursor: pointer;
       @include transition($transition-fade);
-      &:hover {
+      &:hover{
+
         opacity: 1;
+        transform: scale(1.005);
       }
     }
   }
-  /*
-    .media-body:hover {
 
-      opacity: 0;
-    } */
-
-  .col-md-7.tabs-content {
-    align-items: center;
-  }
-
-
-  p {
-    cursor: pointer;
-  }
-
-  .media.mb-4 {
-    cursor: pointer;
-  }
-
-  h5 {
+  h5{
     color: $blue;
     cursor: pointer;
   }
 
-  img {
+  /* tab-content: img/html/etc */
+
+  .tabs-content{
+    align-items: center;
+    width: 100%;
+  }
+
+  img{
     width: 100%;
     height: auto;
 
   }
 
-  .o-vertical-tab-icon {
+  /* tab-navigation */
+
+  .o-vertical-tab-icon{
     font-size: $spacer*2;
     padding: $spacer;
     color: $blue;
@@ -58,28 +57,52 @@
   }
 
 
-  li.media {
+  .tabs-nav{
+    div {
+      ul{
+        li{
+        flex: 1;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      flex: 1;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+      flex: 1;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    padding: $spacer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+
+
+  .tabs-btn {
+
+    width: auto;
+  }
+
+
+  .media{
     display: table-row;
     padding-top: $spacer*0.30;
-    &active {
+    &active{
       font-size: $spacer;
 
     }
 
   }
-
-  .col-md-5.tabs-nav {
-
-    padding: $spacer;
-  }
-
-  .list-unstyled.hover-tabs {
-
-    display: table;
-  }
-
-
-
-
 
 }

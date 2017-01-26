@@ -11095,25 +11095,24 @@ a.bg-inverse:hover {
  Organism vertical tabs
  ========================================================================== */
 .o-vertical-tabs {
-  /*
-    .media-body:hover {
-
-      opacity: 0;
-    } */ }
-  .o-vertical-tabs ul.hover-tabs li {
-    opacity: 0.5;
-    transition: opacity 0.15s linear; }
-    .o-vertical-tabs ul.hover-tabs li:hover {
-      opacity: 1; }
-  .o-vertical-tabs .col-md-7.tabs-content {
+  /* Tags */
+  /* tab-content: img/html/etc */
+  /* tab-navigation */ }
+  .o-vertical-tabs ul.hover-tabs {
     align-items: center; }
-  .o-vertical-tabs p {
-    cursor: pointer; }
-  .o-vertical-tabs .media.mb-4 {
-    cursor: pointer; }
+    .o-vertical-tabs ul.hover-tabs li {
+      opacity: 0.5;
+      cursor: pointer;
+      transition: opacity 0.15s linear; }
+      .o-vertical-tabs ul.hover-tabs li:hover {
+        opacity: 1;
+        transform: scale(1.005); }
   .o-vertical-tabs h5 {
     color: #0275d8;
     cursor: pointer; }
+  .o-vertical-tabs .tabs-content {
+    align-items: center;
+    width: 100%; }
   .o-vertical-tabs img {
     width: 100%;
     height: auto; }
@@ -11122,15 +11121,33 @@ a.bg-inverse:hover {
     padding: 1rem;
     color: #0275d8;
     float: left; }
-  .o-vertical-tabs li.media {
+  .o-vertical-tabs .tabs-nav {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .o-vertical-tabs .tabs-nav div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .o-vertical-tabs .tabs-nav div ul {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        .o-vertical-tabs .tabs-nav div ul li {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          flex-direction: column; }
+  .o-vertical-tabs .tabs-btn {
+    width: auto; }
+  .o-vertical-tabs .media {
     display: table-row;
     padding-top: 0.3rem; }
-    .o-vertical-tabs li.mediaactive {
+    .o-vertical-tabs .mediaactive {
       font-size: 1rem; }
-  .o-vertical-tabs .col-md-5.tabs-nav {
-    padding: 1rem; }
-  .o-vertical-tabs .list-unstyled.hover-tabs {
-    display: table; }
 
 /*------------------------------------*    $ABSTRACTS
 \*------------------------------------*/

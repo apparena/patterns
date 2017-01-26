@@ -45,6 +45,7 @@
             {{/navigation.positionLeft}}
 
 
+
             {{^ navigation.positionLeft }}
 
 
@@ -66,33 +67,43 @@
                 <div class="col-md-5 tabs-nav">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
-                        <ul class="list-unstyled hover-tabs">
-                            {{#items}}
+                            <ul class="list-unstyled hover-tabs">
+                                {{#items}}
+
+                                        <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
+
+
                                 <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
                                     href="#{{id}}" role="tab">
-                                    <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                     <div class="o-vertical-tab-icon">
                                         {{{ icon }}}
                                     </div>
-                                    <div class="media-body">
-                                        <h5 class="mt-0 mb-1">{{{title}}}</h5>
-                                        <p> {{{description}}} </p>
-                                    </div>
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1">{{{title}}}</h5>
+                                            <p> {{{description}}} </p>
+                                        </div>
+                                    </li>
+                                {{/items}}
+
+                                <li class="tabs-btn">
+                                    {{#cta}}
+                                        <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
+                                    {{/cta}}
                                 </li>
-                            {{/items}}
 
-                        </ul>
-                        {{#cta}}
-                            <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
-                        {{/cta}}
+                            </ul>
 
+
+                        </div>
                     </div>
                 </div>
 
+
             {{/navigation.positionLeft}}
+
+
         </div>
     </div>
-
-
 {{/vertical-tabs}}
+
 
