@@ -1,5 +1,19 @@
 ---
-title: Navbar Nav
+title: Navbar
 ---
 
-Read all about the navbar element in the official [bootstrap 4 documentation](http://v4-alpha.getbootstrap.com/components/navbar/)
+Main responsive navigation bar. It can be customized using bootstrap classes. The responsive version of the navbar is 
+implemented using [mmenu](http://mmenu.frebsite.nl/).
+
+## Configuration
+- View the json file to see all configuration options
+
+## Dependencies
+
+- Bootstrap (for dropdowns in second level nav) 
+
+## Use cases
+- Main navigation
+
+
+
