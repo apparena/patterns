@@ -47,8 +47,8 @@ export default class Icon extends ReactComponent {
         } = this.props;
         // classes
         const componentClass = cx(
-            styles.fa,
-            styles[`fa-${name}`],
+            styles.aaIcon,
+            styles[`aa-icon-${name}`],
             styles[`icon-${type}`],
             size && styles[`fa-${size}`],
             inverse && styles['fa-inverse'],
