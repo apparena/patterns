@@ -11120,6 +11120,8 @@ a.bg-inverse:hover {
   /* Tags */
   /* tab-content: img/html/etc */
   /* tab-navigation */ }
+  .o-vertical-tabs li.media.active {
+    opacity: 1; }
   .o-vertical-tabs ul.hover-tabs {
     align-items: center; }
     .o-vertical-tabs ul.hover-tabs li {
@@ -11134,17 +11136,18 @@ a.bg-inverse:hover {
     cursor: pointer; }
   .o-vertical-tabs .tabs-content {
     align-items: center;
-    width: 100%; }
-  .o-vertical-tabs img {
     width: 100%;
-    height: auto; }
+    margin-bottom: 1rem; }
+    .o-vertical-tabs .tabs-content img {
+      width: 100%;
+      height: auto; }
   .o-vertical-tabs .o-vertical-tab-icon {
+    /* Icon  */
     font-size: 2.5rem;
     padding: 1rem;
     color: #0275d8;
     float: left; }
   .o-vertical-tabs .tabs-nav {
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -11163,17 +11166,14 @@ a.bg-inverse:hover {
         flex-direction: column;
         height: 100%; }
         .o-vertical-tabs .tabs-nav div ul li {
-          display: flex;
           justify-content: center;
           flex-direction: row;
           width: 85%;
           flex-basis: auto;
           flex-grow: 1;
-          flex-shrink: 1;
-          padding-top: 4rem; }
-  .o-vertical-tabs .tabs-btn {
-    width: 17rem; }
+          flex-shrink: 1; }
   .o-vertical-tabs .media {
+    /* description */
     display: table-row;
     padding-top: 0.3rem; }
     .o-vertical-tabs .mediaactive {
