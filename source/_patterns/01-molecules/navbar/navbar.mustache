@@ -1,0 +1,21 @@
+{{#navbar}}
+    <nav class="m-navbar {{class }} {{ styleModifier }}">
+        <a class="navbar-logo" href="{{logo.url}}">
+            {{> 00-atoms/logo/logo }}
+        </a>
+
+        {{# searchForm }}
+            <div class="search-form">
+                <div class="search-form-handle">
+                    {{{icon}}}
+                </div>
+                {{> 01-molecules/navbar/navbar-form }}
+            </div>
+        {{/searchForm}}
+
+        <div class="navbar-navs text-center py-2">
+            {{> 01-molecules/navs/navs }}
+        </div>
+
+    </nav>
+{{/navbar}}
