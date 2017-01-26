@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../../react-utils/component";
+import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 
 const ALERT_TYPES = [
