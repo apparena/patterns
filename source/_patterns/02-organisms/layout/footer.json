@@ -10,9 +10,9 @@
     },
     "socialMedia": {
       "items": [
-        {"icon":"fa-facebook-square", "url":"https://www.facebook.com", "title": "App-Arena auf Facebook"},
-        {"icon":"fa-youtube-square", "url":"https://www.youtube.com", "title": "App-Arena auf Youtube"},
-        {"icon":"fa-twitter-square", "url":"https://www.twitter.com", "title": "App-Arena auf Twitter"}
+        {"icon":"<i class=\"fa fa-facebook-square\"></i>", "url":"https://www.facebook.com", "title": "App-Arena auf Facebook"},
+        {"icon":"<i class=\"fa fa-youtube-square\"></i>", "url":"https://www.youtube.com", "title": "App-Arena auf Youtube"},
+        {"icon":"<i class=\"fa fa-twitter-square\"></i>", "url":"https://www.twitter.com", "title": "App-Arena auf Twitter"}
       ]
     },
     "navigation": {
