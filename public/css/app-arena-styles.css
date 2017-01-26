@@ -11098,6 +11098,8 @@ a.bg-inverse:hover {
   /* Tags */
   /* tab-content: img/html/etc */
   /* tab-navigation */ }
+  .o-vertical-tabs li.media.active {
+    opacity: 1; }
   .o-vertical-tabs ul.hover-tabs {
     align-items: center; }
     .o-vertical-tabs ul.hover-tabs li {
@@ -11116,13 +11118,14 @@ a.bg-inverse:hover {
   .o-vertical-tabs img {
     width: 100%;
     height: auto; }
+  .o-vertical-tabs .tabs-btn {
+    display: inline; }
   .o-vertical-tabs .o-vertical-tab-icon {
     font-size: 2.5rem;
     padding: 1rem;
     color: #0275d8;
     float: left; }
   .o-vertical-tabs .tabs-nav {
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -11141,14 +11144,12 @@ a.bg-inverse:hover {
         flex-direction: column;
         height: 100%; }
         .o-vertical-tabs .tabs-nav div ul li {
-          display: flex;
           justify-content: center;
           flex-direction: row;
           width: 85%;
           flex-basis: auto;
           flex-grow: 1;
-          flex-shrink: 1;
-          padding-top: 4rem; }
+          flex-shrink: 1; }
   .o-vertical-tabs .tabs-btn {
     width: 17rem; }
   .o-vertical-tabs .media {
