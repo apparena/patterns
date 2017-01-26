@@ -8,40 +8,36 @@
  Organism vertical tabs
  ========================================================================== */
 
-
-
-
-.o-vertical-tabs{
+.o-vertical-tabs {
 
   /* Tags */
 
-  ul.hover-tabs{
+  ul.hover-tabs {
     align-items: center;
-    li{
+    li {
       opacity: 0.5;
       cursor: pointer;
       @include transition($transition-fade);
-      &:hover{
-
+      &:hover {
         opacity: 1;
         transform: scale(1.005);
       }
     }
   }
 
-  h5{
+  h5 {
     color: $blue;
     cursor: pointer;
   }
 
   /* tab-content: img/html/etc */
 
-  .tabs-content{
+  .tabs-content {
     align-items: center;
     width: 100%;
   }
 
-  img{
+  img {
     width: 100%;
     height: auto;
 
@@ -49,60 +45,60 @@
 
   /* tab-navigation */
 
-  .o-vertical-tab-icon{
-    font-size: $spacer*2;
+  .o-vertical-tab-icon {
+    font-size: $spacer*2.5;
     padding: $spacer;
     color: $blue;
     float: left;
   }
 
-
-  .tabs-nav{
-    div {
-      ul{
-        li{
-        flex: 1;
-
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-      }
-      flex: 1;
-
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-      flex: 1;
-
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-
+  .tabs-nav {
     padding: $spacer;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    div {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-basis: auto;
+      width: auto;
+      flex-shrink: 1;
+      flex-grow: 1;
+
+      ul {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+
+        li {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          width: 85%;
+          flex-basis: auto;
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding-top: $spacer*4;
+        }
+      }
+    }
   }
-
-
 
   .tabs-btn {
-
-    width: auto;
+    width: $spacer*17;
   }
 
-
-  .media{
+  .media {
     display: table-row;
     padding-top: $spacer*0.30;
-    &active{
+
+    &active {
       font-size: $spacer;
-
     }
-
   }
 
 }

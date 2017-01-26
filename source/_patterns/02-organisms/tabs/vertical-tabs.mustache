@@ -70,14 +70,15 @@
                             <ul class="list-unstyled hover-tabs">
                                 {{#items}}
 
-                                        <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
+                                    <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
+                                    <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
+                                        href="#{{id}}" role="tab">
 
 
-                                <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
-                                    href="#{{id}}" role="tab">
-                                    <div class="o-vertical-tab-icon">
-                                        {{{ icon }}}
-                                    </div>
+                                        <div class="o-vertical-tab-icon">
+                                            {{{ icon }}}
+                                        </div>
+
                                         <div class="media-body">
                                             <h5 class="mt-0 mb-1">{{{title}}}</h5>
                                             <p> {{{description}}} </p>
