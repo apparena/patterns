@@ -18,47 +18,51 @@
     "navigation": {
       "primary": {
         "navFooter": {
-          "items": [
-            {
-              "text": "Mein Konto",
-              "url": "#"
-            },
-            {
-              "text": "Unternehmen",
-              "url": "#"
-            },
-            {
-              "text": "Partnerprogramm",
-              "url": "#"
-            },
-            {
-              "text": "Jobs",
-              "url": "#"
-            },
-            {
-              "text": "Kontakt",
-              "url": "#"
-            }
-          ]
+          "navs": {
+            "items": [
+              {
+                "text": "Mein Konto",
+                "url": "#"
+              },
+              {
+                "text": "Unternehmen",
+                "url": "#"
+              },
+              {
+                "text": "Partnerprogramm",
+                "url": "#"
+              },
+              {
+                "text": "Jobs",
+                "url": "#"
+              },
+              {
+                "text": "Kontakt",
+                "url": "#"
+              }
+            ]
+          }
         }
       },
       "secondary": {
         "navFooter": {
           "class" : "justify-content-center",
-          "items": [
-            {
-              "text": "Impressum",
-              "url": "#"
-            },
-            {
-              "text": "Datenschutz",
-              "url": "#"
-            },
-            {
-              "text": "AGB",
-              "url": "#"
-            }
-          ]
+          "navs": {
+            "items": [
+              {
+                "text": "Impressum",
+                "url": "#"
+              },
+              {
+                "text": "Datenschutz",
+                "url": "#"
+              },
+              {
+                "text": "AGB",
+                "url": "#"
+              }
+            ]
+          }
         }
       }
     }
