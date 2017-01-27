@@ -1,8 +1,95 @@
-<div class="row">
-    <div class="col-md-offset-1 col-md-10">
-        <iframe src="/iconsets/app-arena-website/icomoon-font/demo.html" frameborder="0" width="100%" height="400"></iframe>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>App-Arena Iconset & Iconfont</h1>
+            <p>Icons for our websites are hold in a <a href="https://icomoon.io/app" rel="noreferrer nofollow" target="_blank">IcoMoon App</a> project. <br>
+                The icons can only be used in a single color when using the iconfont. <br>
+                All icons are not only bundled in one iconfont but also exported to SVG, PDF and PNG.
+            </p>
+            <h2>Instructions</h2>
+            <h3>Asset locations</h3>
+            <p>The iconset is located in the <em>/source/iconsets/app-arena-website/</em> folder of the <em>github.com/apparena/patterns</em> project.</p>
+            <p>
+                <ul>
+                    <li>
+                        <strong>app-arena-website-icomoon.json</strong> <br>
+                        project configuration<br>
+                        from <em>IcoMoon App ⭢ Manage Projects ⭢ Download</em>
+                    </li>
+                    <li>
+                        <strong>icomoon-font/</strong> <br>
+                        contents of the extracted <em>app-arena-webseite.zip</em> archive. <br>
+                        from <em>IcoMoon App ⭢ Generate Font ⭢ Download</em>
+                    </li>
+                    <li>
+                        <strong>icomoon-svg/</strong> <br>
+                        contents of the extracted <em>icomoon_*_icons.zip</em> archive. <br>
+                        from <em>IcoMoon App ⭢ Generate SVG & More ⭢ Download</em>
+                    </li>
+                </ul>
+            </p>
+            <h3>How to add new icons</h3>
+            <div class="alert alert-info" role="alert">
+                <strong>Requirements:</strong> You should be familiar with git. Otherwise get help from a developer. :)</div>
+            <div class="alert alert-danger" role="alert">
+                <strong>Attention!</strong> It is very important to export the project configuration file and push it to the repository after you made changes. Otherwise icons may get lost.
+            </div>
+            <h4>Create new Icons in Photoshop, Illustrator ...</h4>
+            <p>Export the icons as SVG. Keep the following points in mind while drawing the icons:
+                <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes" rel="noreferrer nofollow" target="_blank">Strokes</a> get ignored when generating fonts or CSH files.<br>You can convert/expand <mark>strokes to fills</mark>.</li>
+                    <li>Text elements get ignored. You could convert them to fills.</li>
+                    <li>Unite/combine your fills and avoid overlapping paths.</li>
+                    <li>Instead of using white fills for making holes, subtract the shape in the front from the shape in the back. In Adobe Illustrator, this can be done using the Pathfinder window. In general, avoid overlapping shapes with the same color.</li>
+                    <li>Adding a bitmap image (PNG, JPEG, etc.) to an SVG image does not make it vector. Bitmap images embedded in SVGs get ignored.</li>
+                </ul>
+            </p>
+            <p>Please read the <a href="https://icomoon.io/#docs" rel="noreferrer nofollow" target="_blank">IcoMoon Docs</a>!</p>
+            <h4>Import the SVG to IcoMoon</h4>
+            <p>
+                <strong>
+                    <ul>
+                        <li>Pull current <em>patterns repository</em> from <a href="https://github.com/apparena/patterns">github.com/apparena/patterns</a></li>
+                        <li>Open the <a href="https://icomoon.io/app" rel="noreferrer nofollow" target="_blank">IcoMoon App</a></li>
+                        <li>
+                            Manage Projects<br>
+                            <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/d9dAVxJTk8wyM0k/upload.png" class="img-fluid">
+                        </li>
+                        <li>Import the current <em>/source/iconsets/app-arena-website/app-arena-website-icomoon.json</em> from the repository<br>
+                            <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/wpNPQjSpEKlFWmt/upload.png" class="img-fluid"></li>
+                        <li>Load the project<br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/YFcYyvxixkPr9dW/upload.png" class="img-fluid"></li>
+                        <li>Drag & drop svg file(s) of the icons onto the <em>App-Arena</em> section<br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/ldSgT7Z4M4GJASA/upload.png" class="img-fluid"></li>
+                        <li>Edit the icons if necessary</li>
+                        <li>Select the new icons, you want to include to the font<br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/xXHLh7kmtKJYkRS/upload.png" class="img-fluid"></li>
+                        <li>Click <em>Generate Font</em><br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/fy0zmBO4MPlTdEE/upload.png" class="img-fluid">
+                            <div class="alert alert-danger" role="alert">Do not change the Preferences of the font <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/1Hn6llWRqVRa1ET/upload.png" class="img-fluid"></div>
+                        </li>
+                        <li>Name your Icons appropriately and try to find a fitting fallback utf-8 symbol that is not already used<br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/ft0mZUTjx0hefCu/upload.png" class="img-fluid"></li>
+                        <li>Download your fontpackage (<em>app-arenawebsite.zip</em>) <br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/nCFONuYhr7GB4Xq/upload.png" class="img-fluid"></li>
+                        <li>Download your iconpackage (<em>icomoon_*_icons.zip</em>) <br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/FRcLR90ylgBoPw2/upload.png" class="img-fluid"></li>
+                        <li>
+                            Manage Projects<br>
+                            <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/d9dAVxJTk8wyM0k/upload.png" class="img-fluid">
+                        </li>
+                        <li>Download the updated project file <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/HaRFyCbsaadN7og/upload.png" class="img-fluid"></li>
+                        <li>Replace the project file <em>/source/iconsets/app-arena-website/app-arena-website-icomoon.json</em> with the new one in the repository</li>
+                        <li>Replace the content of the <em>/source/iconsets/app-arena-website/icomoon-font/</em> with the content of <em>app-arenawebsite.zip</em></li>
+                        <li>Replace the content of the <em>/source/iconsets/app-arena-website/icomoon-svg/</em> with the content of <em>icomoon_*_icons.zip</em></li>
+                        <li>Compile PatternLab with <code>$ grunt</code> and <code>$ composer generate</code></li>
+                        <li>Commit the project, tag it with a new version and push it to github</li>
+                        <li>Done :) You can now use the updated icons in other Projects. You probably need to <code>$ composer update</code></li>
+                    </ul>
+                </strong>
+            </p>
+        </div>
     </div>
-    <div class="col-md-offset-1 col-md-10">
-        <iframe src="/iconsets/app-arena-website/icomoon-svg/demo.html" frameborder="0" width="100%" height="400"></iframe>
+    <div class="row">
+        <div class="col">
+            <h2>Demo</h2>
+            <h3><br>Iconfont</h3>
+            <iframe src="/iconsets/app-arena-website/icomoon-font/demo.html" frameborder="0" width="100%" height="400"></iframe>
+            <h3><br>Iconset</h3>
+            <iframe src="/iconsets/app-arena-website/icomoon-svg/demo.html" frameborder="0" width="100%" height="400"></iframe>
+        </div>
     </div>
 </div>
