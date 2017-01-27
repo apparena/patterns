@@ -1,7 +1,10 @@
 {
-  "title": "Flexible Laufzeitverlängerung",
-  "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
-  "href": "#",
-  "aa-icon": "aa-icon-aa-analytics",
-  "__read-more": "Mehr erfahren"
+  "title": "Server in Deutschland",
+  "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, consetetur sadipscing elitr",
+  "icon-class": "aa-icon aa-icon-user-circle",
+  "read-more": {
+    "href": "#",
+    "text": "Mehr erfahren",
+    "icon-class": "aa-icon aa-icon-arrow-right"
+  }
 }
