@@ -5,9 +5,28 @@
 @import "../../../css/scss/abstracts/mixins";
 @import "../../../iconsets/app-arena-website/icomoon-font/style.scss";
 
+/*
+ Icon Helper Classes
+*/
+@import "./scss/variables";
+@import "./scss/mixins";
+@import "./scss/larger";
+@import "./scss/fixed-width";
+@import "./scss/list";
+@import "./scss/bordered-pulled";
+@import "./scss/animated";
+@import "./scss/rotated-flipped";
+@import "./scss/stacked";
+@import "./scss/screen-reader";
+
+
 /*=========================================================================
   Atoms Icons
  ========================================================================== */
+
+.aa-icon {
+  display: inline-block;
+}
 
 .icon-primary {
    color: $brand-primary

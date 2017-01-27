@@ -42,7 +42,7 @@
   .o-nav-sidebar-secondaryGroup {
     .title {
       color: $gray-light;
-      border-top: 1px solid #ccc;
+      border-top: 1px solid $card-border-color;
       padding: 10px 10px 4px 10px;
     }
   }
