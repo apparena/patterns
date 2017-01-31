@@ -1,4 +1,10 @@
-<span class="usp-icon aa-icon {{aa-icon}}"></span>
-<h3 class="usp-title">{{title}}</h3>
-<p class="usp-description">{{description}}</p>
-<p class="usp-more-link"><a href="{{href}}">{{__read-more}} <span class="aa-icon aa-icon-arrow-right"></span></a></p>
+<div class="m-usp">
+    <span class="m-usp-icon {{icon-class}}"></span>
+    <h3 class="m-usp-title">{{title}}</h3>
+    <p class="m-usp-description">{{description}}</p>
+    {{#read-more}}
+        <p class="m-usp-more-link">
+            <a href="{{href}}">{{text}} <span class="{{icon-class}}"></span></a>
+        </p>
+    {{/read-more}}
+</div>
