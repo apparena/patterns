@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'app-arena-website';
-  src:  url('#{$icomoon-font-path}/app-arena-website.eot?5p9lyr');
-  src:  url('#{$icomoon-font-path}/app-arena-website.eot?5p9lyr#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/app-arena-website.ttf?5p9lyr') format('truetype'),
-    url('#{$icomoon-font-path}/app-arena-website.woff?5p9lyr') format('woff'),
-    url('#{$icomoon-font-path}/app-arena-website.svg?5p9lyr#app-arena-website') format('svg');
+  src:  url('#{$icomoon-font-path}/app-arena-website.eot?x55ys9');
+  src:  url('#{$icomoon-font-path}/app-arena-website.eot?x55ys9#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/app-arena-website.ttf?x55ys9') format('truetype'),
+    url('#{$icomoon-font-path}/app-arena-website.woff?x55ys9') format('woff'),
+    url('#{$icomoon-font-path}/app-arena-website.svg?x55ys9#app-arena-website') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.aa-icon-key {
+  &:before {
+    content: $aa-icon-key;
+  }
+}
+.aa-icon-layers {
+  &:before {
+    content: $aa-icon-layers;
+  }
+}
+.aa-icon-share {
+  &:before {
+    content: $aa-icon-share;
+  }
+}
+.aa-icon-ellipsis {
+  &:before {
+    content: $aa-icon-ellipsis;
+  }
+}
 .aa-icon-browser {
   &:before {
     content: $aa-icon-browser;
@@ -304,6 +324,26 @@
 .aa-icon-aa-analytics {
   &:before {
     content: $aa-icon-aa-analytics;
+  }
+}
+.aa-icon-question-circle {
+  &:before {
+    content: $aa-icon-question-circle;
+  }
+}
+.aa-icon-facebook {
+  &:before {
+    content: $aa-icon-facebook;
+  }
+}
+.aa-icon-thumbs-o-up {
+  &:before {
+    content: $aa-icon-thumbs-o-up;
+  }
+}
+.aa-icon-calendar {
+  &:before {
+    content: $aa-icon-calendar;
   }
 }
 
