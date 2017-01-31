@@ -10,6 +10,10 @@ import Row from "../../00-atoms/grid/row";
 import AJAXLoader from "../../01-molecules/ajax-loader/ajax-loader";
 
 export default class PriceTable extends ReactComponent {
+    static propTypes = {
+        dataRoute: PropTypes.string.isRequired,
+    };
+
     getInitState() {
         this.handleCheckbox = ::this.onCheckbox;
         this.handleCustomPackageButton = ::this.onCustomPackageButton;
@@ -18,12 +22,9 @@ export default class PriceTable extends ReactComponent {
             isChecked: false,
             showCustomPackageCreator: false,
             dataLoaded: false,
+            data: {}
         };
     }
-
-    static propTypes = {
-        dataRoute: PropTypes.string.isRequired,
-    };
 
     onCheckbox(e) {
         this.setState({
@@ -45,8 +46,8 @@ export default class PriceTable extends ReactComponent {
      */
     renderPackage(selection) {
         let selectedPackage = "";
-        if (selection === "single") selectedPackage = this.data.single;
-        else if (selection === "flatrate") selectedPackage = this.data.flatrate;
+        if (selection === "single") selectedPackage = this.state.data.single;
+        else if (selection === "flatrate") selectedPackage = this.state.data.flatrate;
 
         return (
             <Row className={styles.price_container}>
@@ -56,7 +57,7 @@ export default class PriceTable extends ReactComponent {
                                  imgSrc={e.img} imgAlt={e.imgAlt} title={e.title} information={e.info}
                                  isPopular={e.popular === 1}
                                  isFlatrate={selection === "flatrate"} button={e.cta}
-                                 discount={this.data.flatrate.discount}
+                                 discount={this.state.data.flatrate.discount}
                         />
                     );
                 })}
@@ -66,7 +67,7 @@ export default class PriceTable extends ReactComponent {
 
     /**
      * Shows the prompt to create a custom package and includes the custom package creator.
-     * The prompt won't be shown if this.data.custom is empty or doesn't exist.
+     * The prompt won't be shown if this.state.data.custom is empty or doesn't exist.
      * @returns {XML}
      */
     renderCustomPackagePrompt() {
@@ -86,7 +87,7 @@ export default class PriceTable extends ReactComponent {
                     </button>
                 </Col>
 
-                <CustomPackageCreator data={this.data} visible={this.state.showCustomPackageCreator}/>
+                <CustomPackageCreator data={this.state.data} visible={this.state.showCustomPackageCreator}/>
             </div>
         );
     }
@@ -120,7 +121,7 @@ export default class PriceTable extends ReactComponent {
 
                 {(this.state.isChecked === true) ? this.renderPackage("flatrate") : this.renderPackage("single")}
 
-                {this.data.custom && this.renderCustomPackagePrompt()}
+                {this.state.data.custom && this.renderCustomPackagePrompt()}
             </div>
         );
     }
@@ -128,17 +129,17 @@ export default class PriceTable extends ReactComponent {
     render() {
         return (
             <div className={styles.priceTable}>
-                {!this.state.dataLoaded &&
-                <AJAXLoader resource={this.props.dataRoute} autoHide={false}
-                            onLoadingDone={(resp) => {
-                                this.data = resp.data;
-                                this.setState({
-                                    dataLoaded: true
-                                });
-                            }}
-                />
+                {!this.state.data ?
+                    <AJAXLoader resource={this.props.dataRoute} autoHide={false}
+                                onLoadingDone={(resp) => {
+                                    this.setState({
+                                        data: resp.data
+                                    });
+                                }}
+                    />
+                    :
+                    this.renderMainSection()
                 }
-                {this.state.dataLoaded && this.renderMainSection()}
             </div>
         );
     }

@@ -1,6 +1,6 @@
-import Alert from "./01-molecules/messages/alert/alert";
+import Alert from "./01-molecules/messages/alert";
 import Animate from "./react-utils/animate";
-import BannerMessage from "./01-molecules/messages/banner-message/banner-message";
+import BannerMessage from "./01-molecules/messages/banner-message";
 import BreadCrumb from "./01-molecules/breadcrumb/breadcrumb";
 import Button from "./00-atoms/button/button";
 import ButtonGroup from "./01-molecules/button-group/button-group";
@@ -10,7 +10,6 @@ import Checkbox from "./00-atoms/forms/checkbox";
 import Col from "./00-atoms/grid/col";
 import Container from "./00-atoms/grid/container";
 import Dropdown from "./01-molecules/dropdown/dropdown";
-import FilterBar from "./01-molecules/01-manager/filter-bar/filter-bar";
 import Form from "./02-organisms/forms/form";
 import FormGroup from "./01-molecules/forms/form-group";
 import Icon from "./00-atoms/icons/icons";
@@ -27,7 +26,7 @@ import Navbar from "./01-molecules/navbar/navbar";
 import NavItem from "./01-molecules/navs/nav-item";
 import NavSecondary from "./02-organisms/navigation/nav-secondary";
 import NavSecondaryGroup from "./02-organisms/navigation/nav-secondary-group";
-import Notification from "./01-molecules/messages/notification/notification";
+import Notification from "./01-molecules/messages/notification";
 import Popover from "./01-molecules/popover/popover";
 import Portal from "./react-utils/portal";
 import PriceTable from "./02-organisms/price-table/price-table";
@@ -60,7 +59,6 @@ export {
     Col,
     Container,
     Dropdown,
-    FilterBar,
     Form,
     FormGroup,
     Icon,

@@ -50,7 +50,7 @@ export default class Card extends ReactComponent {
                             case "card-header":
                             case "card-block":
                             case "card-footer":
-                                const newClassName = cx(styles[child.props.type], className);
+                                const newClassName = cx(styles[type], className);
                                 return React.cloneElement(child, {...props, className: newClassName});
                             default:
                                 return React.cloneElement(child, {...props});

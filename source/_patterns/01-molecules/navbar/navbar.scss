@@ -9,8 +9,42 @@
 /*=========================================================================
   Molecules Modal
  ========================================================================== */
-.navbar-brand {
-  > img {
-    max-height: 25px;
+.m-navbar {
+  position: relative;
+
+  .navbar-logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    > img {
+      height: 25px;
+      max-width: 200px;
+    }
+  }
+
+  .navbar-navs .m-navs {
+      justify-content: center;
+
+    .nav-link {
+      text-transform: uppercase;
+      color: $gray;
+
+      &.active {
+        color: darken($gray, 20%);
+      }
+
+      &:hover {
+        color: darken($gray, 10%);
+      }
+    }
+  }
+
+  .search-form {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index:1;
   }
 }

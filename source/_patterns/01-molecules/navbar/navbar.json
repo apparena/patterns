@@ -1,65 +1,131 @@
 {
   "navbar": {
-    "class": "navbar-light bg-faded",
-    "helpNavigation": {
-      "dropdown": {
-        "class": "nav-item",
-        "btnCaption": "<i class=\"fa fa-question-circle-o\" aria-hidden=\"true\"></i>",
-        "btnClass": "nav-link",
-        "id":"navbarHelp",
-        "items": [
-          {"class": "dropdown-item", "text": "Onlinehilfe", "url":"https://wiki.app-arena.com/display/SP/Service-Portal"},
-          {"class": "dropdown-item", "text": "Support Anfragen", "url":"#"},
-          {"class": "dropdown-item", "text": "Informationen zum App-Manager", "url":"#"},
-          {"class": "dropdown-item", "text": "Kontakt", "url":"#"}
-        ],
-        "header":"Hilfe & Support",
-        "menuClass": "dropdown-menu dropdown-menu-right"
-      }
+    "class": "navbar-light",
+    "logo": {
+      "src": "/images/logo.svg",
+      "name": "App-Arena.com",
+      "url": "#"
     },
-    "primaryNavigation": {
+    "navs": {
+      "class": "",
       "items": [
         {
-          "text": "Dashboard",
-          "url": "#",
-          "isActive": true
+          "text": "Produkte/Tools",
+          "isActive": true,
+          "url": false,
+          "subnav": {
+            "headline": "Unsere Produkte",
+            "columns": [
+              {
+                "class": "col-1",
+                "items": [
+                  {
+                    "text": "Adventskalender",
+                    "url": "#",
+                    "isActive": true
+                  },
+                  {
+                    "text": "Adventskranz",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Tippspiel",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Gewinnspiel",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Finde den Fehler",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Pairs",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Quiz",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Fotowettbewerb",
+                    "url": "#"
+                  }
+                ]
+              },
+              {
+                "class": "col-2",
+                "items": [
+                  {
+                    "text": "Videowettbewerb",
+                    "url": "#",
+                    "isActive": true
+                  },
+                  {
+                    "text": "Multimediawettbewerb",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Produkte-Voting",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Projekte-Voting",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Vereins-Voting",
+                    "url": "#"
+                  },
+                  {
+                    "text": "Sparty",
+                    "url": "#"
+                  },
+                  {
+                    "text": "VR-Party",
+                    "url": "#"
+                  }
+                ]
+              }
+            ],
+            "promotion": {
+              "content": "<h2>Produkt des Monats: Adventskalender</h2><img src=\"/images/sample/aa-website/detail-template_adventskalender-2016.png\">",
+              "cta": {
+                "text": "Jetzt testen!",
+                "url": "#"
+              }
+            }
+          }
         },
         {
-          "text": "Apps",
+          "text": "Marketing",
           "url": "#"
         },
         {
-          "text": "Kunden",
+          "text": "Technologie",
           "url": "#"
         },
         {
-          "text": "Entwickler",
+          "text": "Blog",
+          "url": "#"
+        },
+        {
+          "text": "Support",
+          "url": "#"
+        },
+        {
+          "text": "<i class\"fa fa-user\"></i> Anmelden",
           "url": "#"
         }
       ]
     },
     "searchForm": {
+      "icon": "<i class=\"fa fa-search text-muted\"></i>",
       "navbarForm": {
-        "icon":"<i class=\"fa fa-search text-muted\"></i>",
+        "class": "hidden-xs-up",
+        "icon": "<i class=\"fa fa-search text-muted\"></i>",
         "placeholder": "Suchen..."
-      }
-    },
-    "userNavigation": {
-      "links": false,
-      "dropdown": {
-        "class": "nav-item",
-        "btnCaption": "<img src=\"../../images/sample/avatar2.jpg\" class=\"img-circle\" width=\"24\" >",
-        "btnClass": "nav-link",
-        "id":"navbarUser",
-        "items": [
-          {"class": "dropdown-item", "text": "Profil", "url":"https://wiki.app-arena.com/display/SP/Service-Portal"},
-          {"class": "dropdown-item", "text": "Unternehmen", "url":"#"},
-          {"class": "dropdown-item", "text": "Einstellungen", "url":"#"},
-          {"class": "dropdown-divider"},
-          {"class": "dropdown-item", "text": "Abmelden", "url":"#"}
-        ],
-        "header":false,
-        "menuClass": "dropdown-menu dropdown-menu-right"
       }
     }
   }

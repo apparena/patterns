@@ -83,7 +83,8 @@ $input-bg: #EEF2F8 !default;
 $input-line-height: 1.6 !default;
 $input-box-shadow: none !default;
 $input-box-shadow-focus: none !default;
-$input-btn-border-width: 0 !default;
+$input-btn-border-width: 0.1rem !default;
+$input-border-color: transparent !default;
 
 // Navbar
 $navbar-border-radius: 0 !default;

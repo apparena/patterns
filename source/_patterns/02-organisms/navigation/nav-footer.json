@@ -1,16 +1,20 @@
 {
   "navFooter": {
-    "items": [
-      {
-        "text": "Mein Konto",
-        "url": ""
-      },
-      {
-        "text": "Unternehmen"
-      },
-      {
-        "text": "Partnerprogramm"
-      }
-    ]
+    "class": "",
+    "navs": {
+      "class": "",
+      "items": [
+        {
+          "text": "Mein Konto",
+          "url": ""
+        },
+        {
+          "text": "Unternehmen"
+        },
+        {
+          "text": "Partnerprogramm"
+        }
+      ]
+    }
   }
 }

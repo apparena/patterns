@@ -3,31 +3,43 @@
     "items": [
       {
         "title": "Flexible Laufzeitverlängerung",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
-        "href": "#",
-        "aa-icon": "aa-icon-aa-analytics",
-        "__read-more": "Mehr erfahren"
+        "description": "Lorem ipsum dolor sit amet",
+        "icon-class": "aa-icon aa-icon-chart",
+        "read-more": {
+          "href": "#",
+          "text": "Mehr erfahren",
+          "icon-class": "aa-icon aa-icon-arrow-right"
+        }
       },
       {
         "title": "Stark serviceorientiert",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
-        "href": "#",
-        "aa-icon": "aa-icon-aa-analytics",
-        "__read-more": "Mehr erfahren"
+        "description": "consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+        "icon-class": "aa-icon aa-icon-upload",
+        "read-more": {
+          "href": "#",
+          "text": "Mehr erfahren",
+          "icon-class": "aa-icon aa-icon-arrow-right"
+        }
       },
       {
-        "title": "Flexible Laufzeitverlängerung",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
-        "href": "#",
-        "aa-icon": "aa-icon-aa-analytics",
-        "__read-more": "Mehr erfahren"
+        "title": "Server in Deutschland",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, consetetur sadipscing elitr",
+        "icon-class": "aa-icon aa-icon-user-circle",
+        "read-more": {
+          "href": "#",
+          "text": "Mehr erfahren",
+          "icon-class": "aa-icon aa-icon-arrow-right"
+        }
       },
       {
-        "title": "Stark serviceorientiert",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
-        "href": "#",
-        "aa-icon": "aa-icon-aa-analytics",
-        "__read-more": "Mehr erfahren"
+        "title": "Breites Produktportfolio",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "icon-class": "aa-icon aa-icon-star",
+        "read-more": {
+          "href": "#",
+          "text": "Mehr erfahren",
+          "icon-class": "aa-icon aa-icon-arrow-right"
+        }
       }
     ]
   }

@@ -1,6 +1,6 @@
 import React, {PropTypes} from "react";
-import ReactComponent from "../../../react-utils/component";
-import Icon from "../../../00-atoms/icons/icons";
+import ReactComponent from "../../react-utils/component";
+import Icon from "../../00-atoms/icons/icons";
 import cx from "classnames";
 import styles from "./banner-message.scss"
 
