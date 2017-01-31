@@ -11787,23 +11787,26 @@ a.bg-inverse:hover {
     .o-vertical-tabs ul.hover-tabs li {
       opacity: 0.5;
       cursor: pointer;
-      transition: opacity 0.15s linear; }
+      transition: opacity 0.15s linear;
+      padding: 6%;
+      margin-top: 1rem; }
       .o-vertical-tabs ul.hover-tabs li:hover {
-        opacity: 1;
-        transform: scale(1.005); }
-    .o-vertical-tabs ul.hover-tabs li.tabs-btn {
-      opacity: 1; }
-      .o-vertical-tabs ul.hover-tabs li.tabs-btn:hover {
-        opacity: 0.5; }
+        opacity: 1; }
+  .o-vertical-tabs li.tabs-btn {
+    opacity: 1; }
+    .o-vertical-tabs li.tabs-btn:hover {
+      opacity: 0.5; }
   .o-vertical-tabs h5 {
     color: #0275d8;
     cursor: pointer; }
-  .o-vertical-tabs .tabs-content {
+  .o-vertical-tabs .tab-content {
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem;
-    max-height: 500px; }
-    .o-vertical-tabs .tabs-content img {
+    margin-top: 1rem;
+    min-height: 370px;
+    padding-bottom: 2rem;
+    padding-top: 2rem; }
+    .o-vertical-tabs .tab-content img {
       width: 100%;
       height: auto; }
   .o-vertical-tabs .o-vertical-tab-icon {
