@@ -12,6 +12,8 @@
 
   /* Tags */
 
+
+
   li.media.active {
     opacity: 1;
   }
@@ -24,11 +26,23 @@
       cursor: pointer;
       @include transition($transition-fade);
 
+
       &:hover {
         opacity: 1;
         transform: scale(1.005);
       }
+
+
     }
+
+    li.tabs-btn {
+
+      opacity: 1;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
   }
 
   h5 {
@@ -42,6 +56,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: $spacer;
+    max-height: 500px;
 
     img {
       width: 100%;
@@ -51,6 +66,8 @@
   }
 
   /* tab-navigation */
+
+
 
   .o-vertical-tab-icon { /* Icon  */
     font-size: $spacer*2.5;

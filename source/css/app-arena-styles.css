@@ -11109,13 +11109,18 @@ a.bg-inverse:hover {
       .o-vertical-tabs ul.hover-tabs li:hover {
         opacity: 1;
         transform: scale(1.005); }
+    .o-vertical-tabs ul.hover-tabs li.tabs-btn {
+      opacity: 1; }
+      .o-vertical-tabs ul.hover-tabs li.tabs-btn:hover {
+        opacity: 0.5; }
   .o-vertical-tabs h5 {
     color: #0275d8;
     cursor: pointer; }
   .o-vertical-tabs .tabs-content {
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    max-height: 500px; }
     .o-vertical-tabs .tabs-content img {
       width: 100%;
       height: auto; }
