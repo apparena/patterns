@@ -8,40 +8,49 @@
     "navigation": {
       "positionLeft": false
     },
-
-
-
-
+    "slider": {
+      "id": "mySlider",
+      "settings": {
+        "dots": true,
+        "slidesToScroll": 1,
+        "slidesToShow": 1,
+        "autoplaySpeed": 3000
+      }
+    },
     "items": [
+      {
+        "id": "tab2",
+        "icon": "<i class='aa-icon aa-icon-aa-analytics'></i>",
+        "title": "Tab 2 Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
+        "content": "<img src=\"/images/sample/aa-website/admin-panel Kopie.png\" />"
+      },
       {
         "isActive": true,
         "id": "stats",
         "icon": "<i class='aa-icon aa-icon-aa-analytics'></i>",
         "title": "Statistiken und Tracking Infos",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
-        "content": "<img src=\"/images/sample/aa-website/flatrate-pakete.png\" />"
-      },
-      {
-        "id": "tab2",
-        "icon": "<i class='aa-icon aa-icon-aa-analytics'></i>",
-        "title": "Tab 2 Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
-        "content": "<img src=\"/images/sample/admin-panel.png\" />"
-      },
-      {
-        "id": "tab3",
-        "icon": "<i class='aa-icon aa-icon-aa-analytics'></i>",
-        "title": "Tab 3 Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
-        "content": "<img src=\"/images/sample/aa-website/flatrate-pakete.png\" />"
+        "content": "<img src=\"/images/sample/aa-website/flatrate-pakete1.png\" />"
       },
       {
         "id": "tab4",
         "icon": "<i class='aa-icon aa-icon-aa-analytics'></i>",
         "title": "Tab 4 Title",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
-        "content": "<img src=\"/images/sample/admin-panel.png\" />"
+        "content": "<img src=\"/images/sample/aa-website/admin-panel Kopie.png\" />"
+      },
+      {
+        "id": "tab3",
+        "icon": "<i class='aa-icon aa-icon-aa-analytics'></i>",
+        "title": "Tab 3 Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
+        "content": "<img src=\"/images/sample/aa-website/flatrate-pakete1.png\" />"
       }
     ]
   }
 }
+
+
+
+
