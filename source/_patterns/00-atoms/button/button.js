@@ -83,7 +83,7 @@ export default class Button extends ReactComponent {
                 );
             case "error":
                 return (
-                    <Icon type="error" name="times"/>
+                    <Icon type="error" name="close"/>
                 );
             default:
                 return children;

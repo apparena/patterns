@@ -13,6 +13,10 @@
 		el.innerHTML = '<span style="font-family: \'app-arena-website\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'aa-icon-key': '&#xe901;',
+		'aa-icon-layers': '&#xe031;',
+		'aa-icon-share': '&#xe081;',
+		'aa-icon-ellipsis': '&#xe129;',
 		'aa-icon-browser': '&#xe900;',
 		'aa-icon-bullhorn': '&#x1f4ef;',
 		'aa-icon-chart': '&#x1f4c9;',
@@ -69,6 +73,10 @@
 		'aa-icon-arrow-right-circle': '&#x21e2;',
 		'aa-icon-Neue_Nutzerdaten_generieren_fill': '&#x1f4ca;',
 		'aa-icon-aa-analytics': '&#x1f4c8;',
+		'aa-icon-question-circle': '&#xf059;',
+		'aa-icon-facebook': '&#xf082;',
+		'aa-icon-thumbs-o-up': '&#xf087;',
+		'aa-icon-calendar': '&#xf133;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

@@ -10,7 +10,7 @@ function ModalHeader({className, headerText, onClose, ...props}) {
             <h5 className={styles["modal-title"]}>{headerText}</h5>
             {onClose &&
             <button type="button" className={styles.close} onClick={onClose}>
-                <Icon name="times"/>
+                <Icon name="close"/>
             </button>
             }
         </div>

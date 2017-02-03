@@ -3,13 +3,13 @@
         <div class="row">
             {{# navigation.positionLeft }}
 
-                <div class="col-md-5 tabs-nav">
+                <div class="hidden-xs-down col-lg-5 col-md-12 tabs-nav">
                     <div class="row">
                         <div class="offset-md-1 col-md-11 tabs">
                             <ul class="list-unstyled hover-tabs">
                                 {{#items}}
                                     <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
-                                        href="#{{id}}" role="tab">
+                                        href="#{{class}}" role="tab">
                                         <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                         <div class="o-vertical-tab-icon">
                                             {{{ icon }}}
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 tabs-content">
+                <div class="hidden -xs-down col-lg-7 col-md-12 tabs-content">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
                             <!-- Tab panes -->
@@ -49,22 +49,26 @@
             {{^ navigation.positionLeft }}
 
 
-                <div class="col-md-7 tabs-content">
+                <div class="hidden-xs-down col-lg-7 col-md-12 tab-content">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 {{#items}}
-                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
+                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{class}}"
+                                         role="tabpanel">
                                         {{{content}}}
                                     </div>
+
+
                                 {{/items}}
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-5 tabs-nav">
+
+                <div class="hidden-xs-down col-lg-5 col-md-5 col-sm-12 tabs-nav">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
                             <ul class="list-unstyled hover-tabs">
@@ -72,10 +76,10 @@
 
                                     <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                     <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
-                                        href="#{{id}}" role="tab">
+                                        href="#{{class}}" role="tab">
 
 
-                                        <div class="o-vertical-tab-icon">
+                                        <div class="o-vertical-tab-icon ">
                                             {{{ icon }}}
                                         </div>
 
@@ -92,19 +96,57 @@
                                     {{/cta}}
                                 </li>
 
+
                             </ul>
-
-
                         </div>
                     </div>
                 </div>
 
+                {{# slider }}
+
+
+
+
+                    <div class="hidden-sm-up col-xs-12 o-slider ml-3 mr-3" id="{{id}}">
+
+
+                        {{# items }}
+                            <div class="carouselContainer">
+                                <div class="carouselImg">{{{content}}} </div>
+                                <div class="carouselIcon">{{{icon}}} </div>
+                                <div class="carouselTitle">{{{title}}}</div>
+                                <div class="carouselDescription"> {{{description}}}  </div>
+                            </div>
+                        {{/ items }}
+
+                    </div>
+
+
+                    <script>
+                        jQuery(document).ready(function () {
+                            jQuery('#{{id}}').slick({
+                                {{#settings.dots}}dots: true,{{/settings.dots}}
+                                {{#settings.slidesToScroll}}slidesToScroll: {{settings.slidesToScroll}},{{/settings.slidesToScroll}}
+                                {{#settings.slidesToShow}}slidesToShow: {{settings.slidesToShow}},{{/settings.slidesToShow}}
+                                {{#settings.centerMode}}centerMode: true,{{/settings.centerMode}}
+                                {{#settings.centerPadding}}centerPadding: "{{settings.centerPadding}}",{{/settings.centerPadding}}
+                                {{#settings.autoplay}}autoplay: false,{{/settings.autoplay}}
+                                {{#settings.autoplaySpeed}}autoplaySpeed: {{settings.autoplaySpeed}},{{/settings.autoplaySpeed}}
+                                infinite: true
+                            });
+                        });
+                    </script>
+                {{/slider}}
 
             {{/navigation.positionLeft}}
 
-
         </div>
     </div>
+
+
+
+
+
 {{/vertical-tabs}}
 
 

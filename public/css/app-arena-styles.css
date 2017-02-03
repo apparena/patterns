@@ -8808,8 +8808,8 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'app-arena-website';
-  src: url("fonts/app-arena-website.eot?5p9lyr");
-  src: url("fonts/app-arena-website.eot?5p9lyr#iefix") format("embedded-opentype"), url("fonts/app-arena-website.ttf?5p9lyr") format("truetype"), url("fonts/app-arena-website.woff?5p9lyr") format("woff"), url("fonts/app-arena-website.svg?5p9lyr#app-arena-website") format("svg");
+  src: url("fonts/app-arena-website.eot?x55ys9");
+  src: url("fonts/app-arena-website.eot?x55ys9#iefix") format("embedded-opentype"), url("fonts/app-arena-website.ttf?x55ys9") format("truetype"), url("fonts/app-arena-website.woff?x55ys9") format("woff"), url("fonts/app-arena-website.svg?x55ys9#app-arena-website") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -8825,6 +8825,18 @@ input[type="button"].btn-block {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.aa-icon-key:before {
+  content: ""; }
+
+.aa-icon-layers:before {
+  content: ""; }
+
+.aa-icon-share:before {
+  content: ""; }
+
+.aa-icon-ellipsis:before {
+  content: ""; }
 
 .aa-icon-browser:before {
   content: ""; }
@@ -8993,6 +9005,18 @@ input[type="button"].btn-block {
 
 .aa-icon-aa-analytics:before {
   content: "📈"; }
+
+.aa-icon-question-circle:before {
+  content: ""; }
+
+.aa-icon-facebook:before {
+  content: ""; }
+
+.aa-icon-thumbs-o-up:before {
+  content: ""; }
+
+.aa-icon-calendar:before {
+  content: ""; }
 
 /*
  Icon Helper Classes
@@ -11356,8 +11380,8 @@ a.bg-inverse:hover {
 
 @font-face {
   font-family: 'app-arena-website';
-  src: url("fonts/app-arena-website.eot?5p9lyr");
-  src: url("fonts/app-arena-website.eot?5p9lyr#iefix") format("embedded-opentype"), url("fonts/app-arena-website.ttf?5p9lyr") format("truetype"), url("fonts/app-arena-website.woff?5p9lyr") format("woff"), url("fonts/app-arena-website.svg?5p9lyr#app-arena-website") format("svg");
+  src: url("fonts/app-arena-website.eot?x55ys9");
+  src: url("fonts/app-arena-website.eot?x55ys9#iefix") format("embedded-opentype"), url("fonts/app-arena-website.ttf?x55ys9") format("truetype"), url("fonts/app-arena-website.woff?x55ys9") format("woff"), url("fonts/app-arena-website.svg?x55ys9#app-arena-website") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -11373,6 +11397,18 @@ a.bg-inverse:hover {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.aa-icon-key:before {
+  content: ""; }
+
+.aa-icon-layers:before {
+  content: ""; }
+
+.aa-icon-share:before {
+  content: ""; }
+
+.aa-icon-ellipsis:before {
+  content: ""; }
 
 .aa-icon-browser:before {
   content: ""; }
@@ -11541,6 +11577,18 @@ a.bg-inverse:hover {
 
 .aa-icon-aa-analytics:before {
   content: "📈"; }
+
+.aa-icon-question-circle:before {
+  content: ""; }
+
+.aa-icon-facebook:before {
+  content: ""; }
+
+.aa-icon-thumbs-o-up:before {
+  content: ""; }
+
+.aa-icon-calendar:before {
+  content: ""; }
 
 /*
  Icon Helper Classes
@@ -12016,20 +12064,44 @@ a.bg-inverse:hover {
     .o-vertical-tabs ul.hover-tabs li {
       opacity: 0.5;
       cursor: pointer;
-      transition: opacity 0.15s linear; }
+      transition: opacity 0.15s linear;
+      margin-top: 1rem; }
       .o-vertical-tabs ul.hover-tabs li:hover {
-        opacity: 1;
-        transform: scale(1.005); }
+        opacity: 1; }
+  .o-vertical-tabs li.tabs-btn {
+    opacity: 1; }
+    .o-vertical-tabs li.tabs-btn:hover {
+      opacity: 0.5; }
   .o-vertical-tabs h5 {
     color: #0275d8;
     cursor: pointer; }
-  .o-vertical-tabs .tabs-content {
+  .o-vertical-tabs .tab-content {
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem; }
-    .o-vertical-tabs .tabs-content img {
-      width: 100%;
-      height: auto; }
+    margin-top: 1rem; }
+    .o-vertical-tabs .tab-content img {
+      width: 100% !important;
+      height: auto !important; }
+  .o-vertical-tabs .carouselContainer {
+    overflow: hidden; }
+    .o-vertical-tabs .carouselContainer .carouselImg img {
+      max-width: 100%;
+      height: auto;
+      padding: 1rem; }
+    .o-vertical-tabs .carouselContainer .carouselTitle {
+      text-align: center;
+      font-size: 1.5rem;
+      color: dimgrey; }
+    .o-vertical-tabs .carouselContainer .carouselIcon {
+      font-size: 3rem;
+      font-color: #0275d8;
+      text-align: center; }
+  .o-vertical-tabs div.slick-list.draggable {
+    height: 500px; }
+  .o-vertical-tabs div#mySlider.hidden-sm-up.col-xs-12.o-slider.ml-3.mr-3.slick-initialized.slick-slider.slick-dotted {
+    width: 100%;
+    position: absolute;
+    height: 500px; }
   .o-vertical-tabs .o-vertical-tab-icon {
     /* Icon  */
     font-size: 2.5rem;
@@ -12039,7 +12111,8 @@ a.bg-inverse:hover {
   .o-vertical-tabs .tabs-nav {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 4rem; }
     .o-vertical-tabs .tabs-nav div {
       display: flex;
       justify-content: center;

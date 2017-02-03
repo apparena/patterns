@@ -1,3 +1,15 @@
+.aa-icon-key {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;');
+}
+.aa-icon-layers {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe031;');
+}
+.aa-icon-share {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe081;');
+}
+.aa-icon-ellipsis {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe129;');
+}
 .aa-icon-browser {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
 }
@@ -165,5 +177,17 @@
 }
 .aa-icon-aa-analytics {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f4c8;');
+}
+.aa-icon-question-circle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf059;');
+}
+.aa-icon-facebook {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf082;');
+}
+.aa-icon-thumbs-o-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf087;');
+}
+.aa-icon-calendar {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf133;');
 }
 
