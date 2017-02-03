@@ -17,39 +17,48 @@
             {{#navs}}
                 <ul class="m-navs nav {{ class }}">
                     {{# items }}
-                        <li class="nav-item {{# subnav}}drop-target{{/subnav}}">
-                            <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
-                               href="{{ url }}">
+                        <li class="nav-item {{# subnav}}dropdown{{/subnav}}">
+                            <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }} {{#subnav}}dropdown-toggle{{/subnav}}"
+                               href="{{ url }}" {{#subnav}}data-toggle="dropdown"{{/subnav}}>
                                 {{{ text }}}
-                                {{# subnav}}
-                                    <i class="fa fa-angle-down"></i>
-                                {{/subnav}}
                             </a>
 
-                            <!-- Very special subnav for navbars -->
-                            {{# subnav}}
-                                <div class="drop-content" style="display: none;">
-                                    <div class="subnav row">
-                                        <div class="items col-6 p-3 text-left">
-                                            <h5>{{headline}}</h5>
-                                            <div class="row">
-                                                {{#columns}}
-                                                    <div class="subnav-column col {{class}}">
-                                                        {{> 01-molecules/navs/navs }}
-                                                    </div>
-                                                {{/columns}}
+                            {{# subnav }}
+                                <!-- Very special subnav for navbars -->
+                                <div class="dropdown-menu">
+                                    <div class="subnav-container">
+                                        <div class="row">
+                                            <div class="items col-sm-7">
+                                                {{#headline}}
+                                                    <h6 class="subnav-header">{{headline}}</h6>
+                                                {{/headline}}
+                                                <div class="row">
+                                                    {{#columns}}
+                                                        <div class="subnav-column {{class}}">
+                                                            <ul>
+                                                                {{#items}}
+                                                                    <li>
+                                                                        <a href="{{url}}">{{text}}</a>
+                                                                    </li>
+                                                                {{/items}}
+                                                            </ul>
+                                                        </div>
+                                                    {{/columns}}
+                                                </div>
                                             </div>
+                                            {{#promotion}}
+                                                <div class="promotion col-sm-5">
+                                                    {{{content}}}
+                                                    {{# cta }}
+                                                        <div class="cta">
+                                                            <a href="{{url}}" class="{{class}}">
+                                                                {{{text}}}
+                                                            </a>
+                                                        </div>
+                                                    {{/cta}}
+                                                </div>
+                                            {{/promotion}}
                                         </div>
-                                        {{#promotion}}
-                                            <div class="promotion col-3">
-                                                {{{content}}}
-                                                {{# cta }}
-                                                    <a href="{{url}}" class="{{class}}">
-                                                        {{{text}}}
-                                                    </a>
-                                                {{/cta}}
-                                            </div>
-                                        {{/promotion}}
                                     </div>
                                 </div>
                             {{/subnav}}
@@ -59,33 +68,10 @@
             {{/navs}}
         </div>
 
-        <script>
-            var drop;
-            var defaultOptions;
 
-            jQuery(document).ready(function () {
-                defaultOptions = {
-                    content: function(e){
-                        var node = $(e.target);
-                        return node.find('.drop-content').html();
-                    },
-                    target: document.querySelector('.drop-target'),
-                    position: 'bottom left',
-                    openOn: 'click',
-                    constrainToWindow: true,
-                    constrainToScrollParent: true,
-                    classes: 'drop-theme-arrows-bounce-dark',
-                    hoverOpenDelay: 0,
-                    hoverCloseDelay: 50,
-                    focusDelay: 0,
-                    blurDelay: 50,
-                    tetherOptions: {}
-                };
-                drop = new Drop(defaultOptions);
-            });
+        <script type="application/javascript">
 
         </script>
-
 
     </nav>
 {{/navbar}}

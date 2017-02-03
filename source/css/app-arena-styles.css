@@ -10894,13 +10894,68 @@ a.bg-inverse:hover {
     top: 1rem;
     right: 1rem;
     z-index: 1; }
-
-.subnav > .items {
-  background: #373a3c;
-  color: #f6f8fa; }
-
-.subnav > .promotion img {
-  max-width: 100%; }
+  .m-navbar .dropdown-menu {
+    padding: 0; }
+    .m-navbar .dropdown-menu ul {
+      padding-left: 0;
+      list-style: none; }
+      .m-navbar .dropdown-menu ul li {
+        padding: 0.3rem 0; }
+      .m-navbar .dropdown-menu ul a {
+        color: #818a91; }
+    .m-navbar .dropdown-menu .subnav-container {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 576px) {
+        .m-navbar .dropdown-menu .subnav-container {
+          padding-right: 15px;
+          padding-left: 15px; } }
+      @media (min-width: 768px) {
+        .m-navbar .dropdown-menu .subnav-container {
+          padding-right: 15px;
+          padding-left: 15px; } }
+      @media (min-width: 992px) {
+        .m-navbar .dropdown-menu .subnav-container {
+          padding-right: 15px;
+          padding-left: 15px; } }
+      @media (min-width: 1200px) {
+        .m-navbar .dropdown-menu .subnav-container {
+          padding-right: 15px;
+          padding-left: 15px; } }
+      @media (min-width: 576px) {
+        .m-navbar .dropdown-menu .subnav-container {
+          width: 540px;
+          max-width: 100%; } }
+      @media (min-width: 768px) {
+        .m-navbar .dropdown-menu .subnav-container {
+          width: 540px;
+          max-width: 100%; } }
+      @media (min-width: 992px) {
+        .m-navbar .dropdown-menu .subnav-container {
+          width: 720px;
+          max-width: 100%; } }
+      @media (min-width: 1200px) {
+        .m-navbar .dropdown-menu .subnav-container {
+          width: 960px;
+          max-width: 100%; } }
+    .m-navbar .dropdown-menu .items {
+      padding: 2rem;
+      background: #373a3c;
+      color: #ccc; }
+      .m-navbar .dropdown-menu .items .subnav-header {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase; }
+    .m-navbar .dropdown-menu .promotion {
+      padding: 2rem;
+      background: #434749;
+      color: #ccc; }
+      .m-navbar .dropdown-menu .promotion img {
+        max-width: 100%; }
 
 /**
  * Pattern Dependencies

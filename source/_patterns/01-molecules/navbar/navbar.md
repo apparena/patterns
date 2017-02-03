@@ -11,7 +11,6 @@ implemented using [mmenu](http://mmenu.frebsite.nl/).
 ## Dependencies
 
 - Bootstrap (for dropdowns in second level nav) 
-- tether-drop (https://github.com/HubSpot/drop) for Subnavigation
 
 ## Use cases
 - Main navigation
