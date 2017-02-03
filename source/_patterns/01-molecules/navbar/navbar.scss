@@ -5,6 +5,7 @@
 @import "../../../css/scss/abstracts/mixins";
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/utilities/background";
+@import "~tether-drop/dist/css/drop-theme-arrows-bounce-dark";
 
 /*=========================================================================
   Molecules Modal
@@ -23,10 +24,10 @@
     }
   }
 
-  .navbar-navs .m-navs {
-      justify-content: center;
+  > .navbar-navs > .m-navs {
+    justify-content: center;
 
-    .nav-link {
+    > .nav-link {
       text-transform: uppercase;
       color: $gray;
 
@@ -45,6 +46,20 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    z-index:1;
+    z-index: 1;
+  }
+}
+
+// Subnav
+.subnav {
+  > .items {
+    background: $gray-dark;
+    color: $gray-lightest;
+  }
+
+  > .promotion {
+    img {
+      max-width:100%;
+    }
   }
 }

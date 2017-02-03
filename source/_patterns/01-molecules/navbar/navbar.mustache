@@ -14,8 +14,78 @@
         {{/searchForm}}
 
         <div class="navbar-navs text-center py-2">
-            {{> 01-molecules/navs/navs }}
+            {{#navs}}
+                <ul class="m-navs nav {{ class }}">
+                    {{# items }}
+                        <li class="nav-item {{# subnav}}drop-target{{/subnav}}">
+                            <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
+                               href="{{ url }}">
+                                {{{ text }}}
+                                {{# subnav}}
+                                    <i class="fa fa-angle-down"></i>
+                                {{/subnav}}
+                            </a>
+
+                            <!-- Very special subnav for navbars -->
+                            {{# subnav}}
+                                <div class="drop-content" style="display: none;">
+                                    <div class="subnav row">
+                                        <div class="items col-6 p-3 text-left">
+                                            <h5>{{headline}}</h5>
+                                            <div class="row">
+                                                {{#columns}}
+                                                    <div class="subnav-column col {{class}}">
+                                                        {{> 01-molecules/navs/navs }}
+                                                    </div>
+                                                {{/columns}}
+                                            </div>
+                                        </div>
+                                        {{#promotion}}
+                                            <div class="promotion col-3">
+                                                {{{content}}}
+                                                {{# cta }}
+                                                    <a href="{{url}}" class="{{class}}">
+                                                        {{{text}}}
+                                                    </a>
+                                                {{/cta}}
+                                            </div>
+                                        {{/promotion}}
+                                    </div>
+                                </div>
+                            {{/subnav}}
+                        </li>
+                    {{/ items }}
+                </ul>
+            {{/navs}}
         </div>
+
+        <script>
+            var drop;
+            var defaultOptions;
+
+            jQuery(document).ready(function () {
+                defaultOptions = {
+                    content: function(e){
+                        var node = $(e.target);
+                        return node.find('.drop-content').html();
+                    },
+                    target: document.querySelector('.drop-target'),
+                    position: 'bottom left',
+                    openOn: 'click',
+                    constrainToWindow: true,
+                    constrainToScrollParent: true,
+                    classes: 'drop-theme-arrows-bounce-dark',
+                    hoverOpenDelay: 0,
+                    hoverCloseDelay: 50,
+                    focusDelay: 0,
+                    blurDelay: 50,
+                    tetherOptions: {}
+                };
+                drop = new Drop(defaultOptions);
+            });
+
+        </script>
+
 
     </nav>
 {{/navbar}}

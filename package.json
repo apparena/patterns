@@ -54,6 +54,7 @@
     "react-gemini-scrollbar": "^2.1.5",
     "react-select": "^1.0.0-rc.2",
     "react-toggle": "^2.1.1",
+    "tether-drop": "^1.4.2",
     "velocity-animate": "^1.2.3"
   },
   "devDependencies": {
