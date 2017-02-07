@@ -7,15 +7,30 @@
 }
 
 .checkBoxFix {
-  > div {
-    display: block !important;
-
-    div[class="react-toggle-track"] {
-      background-color: $gray-lighter !important;
-    }
-
-    div[class="react-toggle-thumb"] {
-      border-color: $gray !important;
+  :global {
+    .react-toggle {
+      .react-toggle-track {
+        background: rgba(0, 0, 0, 0);
+        border: 2px solid #fff;
+      }
+      .react-toggle-thumb {
+        border: none;
+        box-shadow: none;
+        background: #fff;
+        width: 28px;
+        height: 28px;
+        top: 3px;
+        left: 3px;
+      }
+      &.react-toggle--checked .react-toggle-thumb {
+        left: 29px;
+      }
+      &.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+        background-color: transparent;
+      }
+      &:hover:not(.react-toggle--disabled) .react-toggle-track {
+        background-color: transparent;
+      }
     }
   }
 }
