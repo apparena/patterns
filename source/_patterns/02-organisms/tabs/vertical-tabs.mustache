@@ -2,14 +2,13 @@
     <div class="o-vertical-tabs">
         <div class="row">
             {{# navigation.positionLeft }}
-
                 <div class="hidden-xs-down col-lg-5 col-md-12 tabs-nav">
                     <div class="row">
                         <div class="offset-md-1 col-md-11 tabs">
                             <ul class="list-unstyled hover-tabs">
                                 {{#items}}
                                     <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
-                                        href="#{{class}}" role="tab">
+                                        href="#{{id}}" role="tab">
                                         <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                         <div class="o-vertical-tab-icon">
                                             {{{ icon }}}
@@ -44,40 +43,30 @@
                 </div>
             {{/navigation.positionLeft}}
 
-
-
             {{^ navigation.positionLeft }}
-
-
                 <div class="hidden-xs-down col-lg-7 col-md-12 tab-content">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 {{#items}}
-                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{class}}"
+                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}"
                                          role="tabpanel">
                                         {{{content}}}
                                     </div>
-
-
                                 {{/items}}
                             </div>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="hidden-xs-down col-lg-5 col-md-5 col-sm-12 tabs-nav">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
                             <ul class="list-unstyled hover-tabs">
                                 {{#items}}
-
-                                    <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                     <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
-                                        href="#{{class}}" role="tab">
-
+                                        href="#{{id}}" role="tab">
 
                                         <div class="o-vertical-tab-icon ">
                                             {{{ icon }}}
@@ -96,20 +85,13 @@
                                     {{/cta}}
                                 </li>
 
-
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 {{# slider }}
-
-
-
-
-                    <div class="hidden-sm-up col-xs-12 o-slider ml-3 mr-3" id="{{id}}">
-
-
+                    <div class="o-slider hidden-sm-up col-xs-12 ml-3 mr-3" id="{{id}}">
                         {{# items }}
                             <div class="carouselContainer">
                                 <div class="carouselImg">{{{content}}} </div>
@@ -118,9 +100,7 @@
                                 <div class="carouselDescription"> {{{description}}}  </div>
                             </div>
                         {{/ items }}
-
                     </div>
-
 
                     <script>
                         jQuery(document).ready(function () {
