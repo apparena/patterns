@@ -8808,8 +8808,8 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'app-arena-website';
-  src: url("fonts/app-arena-website.eot?x55ys9");
-  src: url("fonts/app-arena-website.eot?x55ys9#iefix") format("embedded-opentype"), url("fonts/app-arena-website.ttf?x55ys9") format("truetype"), url("fonts/app-arena-website.woff?x55ys9") format("woff"), url("fonts/app-arena-website.svg?x55ys9#app-arena-website") format("svg");
+  src: url("fonts/app-arena-website.eot?kh75pc");
+  src: url("fonts/app-arena-website.eot?kh75pc#iefix") format("embedded-opentype"), url("fonts/app-arena-website.ttf?kh75pc") format("truetype"), url("fonts/app-arena-website.woff?kh75pc") format("woff"), url("fonts/app-arena-website.svg?kh75pc#app-arena-website") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -8826,17 +8826,245 @@ input[type="button"].btn-block {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.aa-icon-key:before {
+.aa-icon-arrow-down:before {
   content: ""; }
 
-.aa-icon-layers:before {
-  content: ""; }
+.aa-icon-arrow-left:before {
+  content: ""; }
 
-.aa-icon-share:before {
-  content: ""; }
+.aa-icon-arrow-up:before {
+  content: ""; }
+
+.aa-icon-balance-scale:before {
+  content: ""; }
+
+.aa-icon-bar-chart:before {
+  content: ""; }
+
+.aa-icon-bell:before {
+  content: ""; }
+
+.aa-icon-bolt-o:before {
+  content: ""; }
+
+.aa-icon-bolt:before {
+  content: ""; }
+
+.aa-icon-box:before {
+  content: ""; }
+
+.aa-icon-browser-plus:before {
+  content: ""; }
+
+.aa-icon-brush:before {
+  content: ""; }
+
+.aa-icon-calendar:before {
+  content: ""; }
+
+.aa-icon-caret-down:before {
+  content: ""; }
+
+.aa-icon-caret-left:before {
+  content: ""; }
+
+.aa-icon-caret-right:before {
+  content: ""; }
+
+.aa-icon-caret-up:before {
+  content: ""; }
+
+.aa-icon-circle-o-notch:before {
+  content: ""; }
+
+.aa-icon-clipboard:before {
+  content: ""; }
+
+.aa-icon-cog-star:before {
+  content: ""; }
+
+.aa-icon-colors:before {
+  content: ""; }
+
+.aa-icon-comment-text:before {
+  content: ""; }
+
+.aa-icon-comment:before {
+  content: ""; }
+
+.aa-icon-crop:before {
+  content: ""; }
+
+.aa-icon-css:before {
+  content: ""; }
+
+.aa-icon-customer:before {
+  content: ""; }
+
+.aa-icon-desktop:before {
+  content: ""; }
+
+.aa-icon-domain:before {
+  content: ""; }
+
+.aa-icon-dot-circle-o:before {
+  content: ""; }
 
 .aa-icon-ellipsis:before {
-  content: ""; }
+  content: ""; }
+
+.aa-icon-facebook-app:before {
+  content: ""; }
+
+.aa-icon-facebook-apps:before {
+  content: ""; }
+
+.aa-icon-facebook:before {
+  content: ""; }
+
+.aa-icon-flag-checkered:before {
+  content: ""; }
+
+.aa-icon-floppy:before {
+  content: ""; }
+
+.aa-icon-gallery:before {
+  content: ""; }
+
+.aa-icon-github:before {
+  content: ""; }
+
+.aa-icon-globe-filled:before {
+  content: ""; }
+
+.aa-icon-globe:before {
+  content: ""; }
+
+.aa-icon-google-plus:before {
+  content: ""; }
+
+.aa-icon-graduation-cap:before {
+  content: ""; }
+
+.aa-icon-html:before {
+  content: ""; }
+
+.aa-icon-image:before {
+  content: ""; }
+
+.aa-icon-key:before {
+  content: ""; }
+
+.aa-icon-lightbulb:before {
+  content: ""; }
+
+.aa-icon-like-plus:before {
+  content: ""; }
+
+.aa-icon-link:before {
+  content: ""; }
+
+.aa-icon-list:before {
+  content: ""; }
+
+.aa-icon-mail:before {
+  content: ""; }
+
+.aa-icon-mobile-check:before {
+  content: ""; }
+
+.aa-icon-mobile:before {
+  content: ""; }
+
+.aa-icon-multi-select:before {
+  content: ""; }
+
+.aa-icon-newsletter:before {
+  content: ""; }
+
+.aa-icon-paper-plane-o:before {
+  content: ""; }
+
+.aa-icon-plug:before {
+  content: ""; }
+
+.aa-icon-pointer:before {
+  content: ""; }
+
+.aa-icon-popularity:before {
+  content: ""; }
+
+.aa-icon-question-circle-filled:before {
+  content: ""; }
+
+.aa-icon-question-circle:before {
+  content: ""; }
+
+.aa-icon-refresh:before {
+  content: ""; }
+
+.aa-icon-scale:before {
+  content: ""; }
+
+.aa-icon-select:before {
+  content: ""; }
+
+.aa-icon-share:before {
+  content: ""; }
+
+.aa-icon-stadion:before {
+  content: ""; }
+
+.aa-icon-tablet:before {
+  content: ""; }
+
+.aa-icon-target:before {
+  content: ""; }
+
+.aa-icon-text:before {
+  content: ""; }
+
+.aa-icon-thumbs-o-up:before {
+  content: ""; }
+
+.aa-icon-thumbs:before {
+  content: ""; }
+
+.aa-icon-ticket:before {
+  content: ""; }
+
+.aa-icon-time-filter:before {
+  content: ""; }
+
+.aa-icon-tool:before {
+  content: ""; }
+
+.aa-icon-trash:before {
+  content: ""; }
+
+.aa-icon-trophy:before {
+  content: ""; }
+
+.aa-icon-twitter:before {
+  content: ""; }
+
+.aa-icon-two-users:before {
+  content: ""; }
+
+.aa-icon-user-minus:before {
+  content: ""; }
+
+.aa-icon-user-refresh:before {
+  content: ""; }
+
+.aa-icon-user-up:before {
+  content: ""; }
+
+.aa-icon-whatsapp:before {
+  content: ""; }
+
+.aa-icon-youtube:before {
+  content: ""; }
 
 .aa-icon-browser:before {
   content: ""; }
@@ -9005,18 +9233,6 @@ input[type="button"].btn-block {
 
 .aa-icon-aa-analytics:before {
   content: "📈"; }
-
-.aa-icon-question-circle:before {
-  content: ""; }
-
-.aa-icon-facebook:before {
-  content: ""; }
-
-.aa-icon-thumbs-o-up:before {
-  content: ""; }
-
-.aa-icon-calendar:before {
-  content: ""; }
 
 /*
  Icon Helper Classes
@@ -11214,8 +11430,8 @@ a.bg-inverse:hover {
 
 @font-face {
   font-family: 'app-arena-website';
-  src: url("fonts/app-arena-website.eot?x55ys9");
-  src: url("fonts/app-arena-website.eot?x55ys9#iefix") format("embedded-opentype"), url("fonts/app-arena-website.ttf?x55ys9") format("truetype"), url("fonts/app-arena-website.woff?x55ys9") format("woff"), url("fonts/app-arena-website.svg?x55ys9#app-arena-website") format("svg");
+  src: url("fonts/app-arena-website.eot?kh75pc");
+  src: url("fonts/app-arena-website.eot?kh75pc#iefix") format("embedded-opentype"), url("fonts/app-arena-website.ttf?kh75pc") format("truetype"), url("fonts/app-arena-website.woff?kh75pc") format("woff"), url("fonts/app-arena-website.svg?kh75pc#app-arena-website") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -11232,17 +11448,245 @@ a.bg-inverse:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.aa-icon-key:before {
+.aa-icon-arrow-down:before {
   content: ""; }
 
-.aa-icon-layers:before {
-  content: ""; }
+.aa-icon-arrow-left:before {
+  content: ""; }
 
-.aa-icon-share:before {
-  content: ""; }
+.aa-icon-arrow-up:before {
+  content: ""; }
+
+.aa-icon-balance-scale:before {
+  content: ""; }
+
+.aa-icon-bar-chart:before {
+  content: ""; }
+
+.aa-icon-bell:before {
+  content: ""; }
+
+.aa-icon-bolt-o:before {
+  content: ""; }
+
+.aa-icon-bolt:before {
+  content: ""; }
+
+.aa-icon-box:before {
+  content: ""; }
+
+.aa-icon-browser-plus:before {
+  content: ""; }
+
+.aa-icon-brush:before {
+  content: ""; }
+
+.aa-icon-calendar:before {
+  content: ""; }
+
+.aa-icon-caret-down:before {
+  content: ""; }
+
+.aa-icon-caret-left:before {
+  content: ""; }
+
+.aa-icon-caret-right:before {
+  content: ""; }
+
+.aa-icon-caret-up:before {
+  content: ""; }
+
+.aa-icon-circle-o-notch:before {
+  content: ""; }
+
+.aa-icon-clipboard:before {
+  content: ""; }
+
+.aa-icon-cog-star:before {
+  content: ""; }
+
+.aa-icon-colors:before {
+  content: ""; }
+
+.aa-icon-comment-text:before {
+  content: ""; }
+
+.aa-icon-comment:before {
+  content: ""; }
+
+.aa-icon-crop:before {
+  content: ""; }
+
+.aa-icon-css:before {
+  content: ""; }
+
+.aa-icon-customer:before {
+  content: ""; }
+
+.aa-icon-desktop:before {
+  content: ""; }
+
+.aa-icon-domain:before {
+  content: ""; }
+
+.aa-icon-dot-circle-o:before {
+  content: ""; }
 
 .aa-icon-ellipsis:before {
-  content: ""; }
+  content: ""; }
+
+.aa-icon-facebook-app:before {
+  content: ""; }
+
+.aa-icon-facebook-apps:before {
+  content: ""; }
+
+.aa-icon-facebook:before {
+  content: ""; }
+
+.aa-icon-flag-checkered:before {
+  content: ""; }
+
+.aa-icon-floppy:before {
+  content: ""; }
+
+.aa-icon-gallery:before {
+  content: ""; }
+
+.aa-icon-github:before {
+  content: ""; }
+
+.aa-icon-globe-filled:before {
+  content: ""; }
+
+.aa-icon-globe:before {
+  content: ""; }
+
+.aa-icon-google-plus:before {
+  content: ""; }
+
+.aa-icon-graduation-cap:before {
+  content: ""; }
+
+.aa-icon-html:before {
+  content: ""; }
+
+.aa-icon-image:before {
+  content: ""; }
+
+.aa-icon-key:before {
+  content: ""; }
+
+.aa-icon-lightbulb:before {
+  content: ""; }
+
+.aa-icon-like-plus:before {
+  content: ""; }
+
+.aa-icon-link:before {
+  content: ""; }
+
+.aa-icon-list:before {
+  content: ""; }
+
+.aa-icon-mail:before {
+  content: ""; }
+
+.aa-icon-mobile-check:before {
+  content: ""; }
+
+.aa-icon-mobile:before {
+  content: ""; }
+
+.aa-icon-multi-select:before {
+  content: ""; }
+
+.aa-icon-newsletter:before {
+  content: ""; }
+
+.aa-icon-paper-plane-o:before {
+  content: ""; }
+
+.aa-icon-plug:before {
+  content: ""; }
+
+.aa-icon-pointer:before {
+  content: ""; }
+
+.aa-icon-popularity:before {
+  content: ""; }
+
+.aa-icon-question-circle-filled:before {
+  content: ""; }
+
+.aa-icon-question-circle:before {
+  content: ""; }
+
+.aa-icon-refresh:before {
+  content: ""; }
+
+.aa-icon-scale:before {
+  content: ""; }
+
+.aa-icon-select:before {
+  content: ""; }
+
+.aa-icon-share:before {
+  content: ""; }
+
+.aa-icon-stadion:before {
+  content: ""; }
+
+.aa-icon-tablet:before {
+  content: ""; }
+
+.aa-icon-target:before {
+  content: ""; }
+
+.aa-icon-text:before {
+  content: ""; }
+
+.aa-icon-thumbs-o-up:before {
+  content: ""; }
+
+.aa-icon-thumbs:before {
+  content: ""; }
+
+.aa-icon-ticket:before {
+  content: ""; }
+
+.aa-icon-time-filter:before {
+  content: ""; }
+
+.aa-icon-tool:before {
+  content: ""; }
+
+.aa-icon-trash:before {
+  content: ""; }
+
+.aa-icon-trophy:before {
+  content: ""; }
+
+.aa-icon-twitter:before {
+  content: ""; }
+
+.aa-icon-two-users:before {
+  content: ""; }
+
+.aa-icon-user-minus:before {
+  content: ""; }
+
+.aa-icon-user-refresh:before {
+  content: ""; }
+
+.aa-icon-user-up:before {
+  content: ""; }
+
+.aa-icon-whatsapp:before {
+  content: ""; }
+
+.aa-icon-youtube:before {
+  content: ""; }
 
 .aa-icon-browser:before {
   content: ""; }
@@ -11411,18 +11855,6 @@ a.bg-inverse:hover {
 
 .aa-icon-aa-analytics:before {
   content: "📈"; }
-
-.aa-icon-question-circle:before {
-  content: ""; }
-
-.aa-icon-facebook:before {
-  content: ""; }
-
-.aa-icon-thumbs-o-up:before {
-  content: ""; }
-
-.aa-icon-calendar:before {
-  content: ""; }
 
 /*
  Icon Helper Classes
@@ -11883,6 +12315,72 @@ a.bg-inverse:hover {
     opacity: 0; }
   40% {
     opacity: 1; } }
+
+.nav {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.nav-link {
+  display: block;
+  padding: 0.5em 1em; }
+  .nav-link:focus {
+    text-decoration: none; }
+  .nav-link:hover {
+    text-decoration: none; }
+  .nav-link.disabled {
+    color: #818a91;
+    cursor: not-allowed; }
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd; }
+  .nav-tabs .nav-item {
+    margin-bottom: -1px; }
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem; }
+    .nav-tabs .nav-link:focus {
+      border-color: #ccc #ccc #ddd; }
+    .nav-tabs .nav-link:hover {
+      border-color: #ccc #ccc #ddd; }
+    .nav-tabs .nav-link.disabled {
+      color: #818a91;
+      background-color: transparent;
+      border-color: transparent; }
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    color: #777582;
+    background-color: #fff;
+    border-color: #ddd #ddd #fff; }
+  .nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+
+.nav-pills .nav-link {
+  border-radius: 0; }
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-item.show .nav-link {
+  color: #fff;
+  cursor: default;
+  background-color: #478AB8; }
+
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center; }
+
+.nav-justified .nav-item {
+  flex: 1 1 100%;
+  text-align: center; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
 
 /*=========================================================================
  Organism vertical tabs
