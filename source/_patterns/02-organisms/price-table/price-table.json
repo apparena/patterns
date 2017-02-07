@@ -8,10 +8,14 @@
         "title": "Starter",
         "info": [
           {
+            "productId": "validity",
+            "value": 60,
             "text": "2 Monate Laufzeit",
             "options": []
           },
           {
+            "productId": "export",
+            "value": 60,
             "text": "5.000 Teilnehmer exportierbar",
             "options": []
           },
