@@ -12386,34 +12386,27 @@ a.bg-inverse:hover {
  Organism vertical tabs
  ========================================================================== */
 .o-vertical-tabs {
-  /* Tags */
-  /* tab-content: img/html/etc */
   /* tab-navigation */ }
-  .o-vertical-tabs li.media.active {
-    opacity: 1; }
+  .o-vertical-tabs h5 {
+    color: #478AB8;
+    cursor: pointer; }
   .o-vertical-tabs ul.hover-tabs {
     align-items: center; }
-    .o-vertical-tabs ul.hover-tabs li {
+    .o-vertical-tabs ul.hover-tabs li.media {
       opacity: 0.5;
       cursor: pointer;
-      transition: opacity 0.15s linear;
-      margin-top: 1rem; }
-      .o-vertical-tabs ul.hover-tabs li:hover {
+      margin-top: 1rem;
+      transition: opacity 0.15s linear; }
+      .o-vertical-tabs ul.hover-tabs li.media:hover, .o-vertical-tabs ul.hover-tabs li.media.active {
         opacity: 1; }
-  .o-vertical-tabs li.tabs-btn {
-    opacity: 1; }
-    .o-vertical-tabs li.tabs-btn:hover {
-      opacity: 0.5; }
-  .o-vertical-tabs h5 {
-    color: #0275d8;
-    cursor: pointer; }
-  .o-vertical-tabs .tab-content {
-    align-items: center;
-    width: 100%;
-    margin-top: 1rem; }
-    .o-vertical-tabs .tab-content img {
-      width: 100% !important;
-      height: auto !important; }
+      .o-vertical-tabs ul.hover-tabs li.media .o-vertical-tab-icon, .o-vertical-tabs ul.hover-tabs li.media .media-body {
+        display: inline-block; }
+      .o-vertical-tabs ul.hover-tabs li.media .o-vertical-tab-icon {
+        color: #478AB8;
+        font-size: 3rem;
+        float: right; }
+  .o-vertical-tabs .tab-content img {
+    max-width: 100%; }
   .o-vertical-tabs .carouselContainer {
     overflow: hidden; }
     .o-vertical-tabs .carouselContainer .carouselImg img {
@@ -12426,52 +12419,10 @@ a.bg-inverse:hover {
       color: dimgrey; }
     .o-vertical-tabs .carouselContainer .carouselIcon {
       font-size: 3rem;
-      font-color: #0275d8;
+      color: #478AB8;
       text-align: center; }
   .o-vertical-tabs div.slick-list.draggable {
     height: 500px; }
-  .o-vertical-tabs div#mySlider.hidden-sm-up.col-xs-12.o-slider.ml-3.mr-3.slick-initialized.slick-slider.slick-dotted {
-    width: 100%;
-    position: absolute;
-    height: 500px; }
-  .o-vertical-tabs .o-vertical-tab-icon {
-    /* Icon  */
-    font-size: 2.5rem;
-    padding: 1rem;
-    color: #0275d8;
-    float: left; }
-  .o-vertical-tabs .tabs-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 4rem; }
-    .o-vertical-tabs .tabs-nav div {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      flex-basis: auto;
-      width: auto;
-      flex-shrink: 1;
-      flex-grow: 1; }
-      .o-vertical-tabs .tabs-nav div ul {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%; }
-        .o-vertical-tabs .tabs-nav div ul li {
-          justify-content: center;
-          flex-direction: row;
-          width: 85%;
-          flex-basis: auto;
-          flex-grow: 1;
-          flex-shrink: 1; }
-  .o-vertical-tabs .media {
-    /* description */
-    display: table-row;
-    padding-top: 0.3rem; }
-    .o-vertical-tabs .mediaactive {
-      font-size: 1rem; }
 
 /*------------------------------------*    $ABSTRACTS
 \*------------------------------------*/
@@ -12544,6 +12495,15 @@ a.bg-inverse:hover {
 
 /*------------------------------------*    #HEADINGS
 \*------------------------------------*/
+hr.boldline.left {
+  margin-left: 0;
+  margin-right: auto; }
+
+hr.boldline {
+  width: 80px;
+  margin: 1rem auto;
+  border: 2px solid #478AB8; }
+
 .page-header {
   position: relative;
   display: block;
