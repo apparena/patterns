@@ -11,149 +11,72 @@
 
 .o-vertical-tabs {
 
-  /* Tags */
-
-  li.media.active {
-    opacity: 1;
-  }
-
-  ul.hover-tabs {
-    align-items: center;
-
-    li {
-      opacity: 0.5;
-      cursor: pointer;
-      @include transition($transition-fade);
-
-      margin-top: $spacer;
-
-      &:hover {
-        opacity: 1;
-
-      }
-
-    }
-  }
-
-  li.tabs-btn {
-
-    opacity: 1;
-    &:hover {
-      opacity: 0.5;
-    }
-  }
-
   h5 {
-    color: $blue;
+    color: $brand-primary;
     cursor: pointer;
   }
 
-  /* tab-content: img/html/etc */
-
-  .tab-content {
+  // Navigation
+  ul.hover-tabs {
     align-items: center;
-    width: 100%;
-    margin-top: $spacer;
 
-    img {
-      width: 100% !important;
-      height: auto !important;
+    li.media {
+      opacity: 0.5;
+      cursor: pointer;
+      margin-top: $spacer;
+      @include transition($transition-fade);
+
+      &:hover, &.active {
+        opacity: 1;
+      }
+
+      .o-vertical-tab-icon, .media-body {
+        display: inline-block;
+      }
+
+      .o-vertical-tab-icon {
+        color: $brand-primary;
+        font-size: 3rem;
+        float: right;
+      }
+
     }
-
   }
 
-
-
-/* tab-navigation */
-
-
-.carouselContainer {
-  overflow: hidden;
-
-  .carouselImg {
+  // Content
+  .tab-content {
     img {
       max-width: 100%;
-      height: auto;
-      padding: $spacer;
-
     }
   }
-  .carouselTitle {
-    text-align: center;
-    font-size: 1.5rem;
-    color: dimgrey;
-  }
-  .carouselIcon {
-    font-size: 3rem;
-    font-color: $blue;
-    text-align: center;
 
+  /* tab-navigation */
+  .carouselContainer {
+    overflow: hidden;
 
-  }
-}
-
-div.slick-list.draggable {
-  height: 500px;
-}
-
-div#mySlider.hidden-sm-up.col-xs-12.o-slider.ml-3.mr-3.slick-initialized.slick-slider.slick-dotted {
-  width: 100%;
-  position: absolute;
-  height: 500px;
-}
-
-.o-vertical-tab-icon { /* Icon  */
-  font-size: $spacer*2.5;
-  padding: $spacer;
-  color: $blue;
-  float: left;
-}
-
-.tabs-nav {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 4rem;
-
-  div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-basis: auto;
-    width: auto;
-    flex-shrink: 1;
-    flex-grow: 1;
-
-    ul {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 100%;
-
-      li {
-
-        justify-content: center;
-        flex-direction: row;
-        width: 85%;
-        flex-basis: auto;
-        flex-grow: 1;
-        flex-shrink: 1;
+    .carouselImg {
+      img {
+        max-width: 100%;
+        height: auto;
+        padding: $spacer;
 
       }
     }
+    .carouselTitle {
+      text-align: center;
+      font-size: 1.5rem;
+      color: dimgrey;
+    }
+    .carouselIcon {
+      font-size: 3rem;
+      color: $brand-primary;
+      text-align: center;
+    }
   }
-}
 
-.media { /* description */
-  display: table-row;
-  padding-top: $spacer*0.30;
-
-  &active {
-    font-size: $spacer;
+  div.slick-list.draggable {
+    height: 500px;
   }
-}
 
 }
 

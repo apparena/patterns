@@ -2,24 +2,24 @@
     <div class="o-vertical-tabs">
         <div class="row">
             {{# navigation.positionLeft }}
-                <div class="hidden-xs-down col-lg-5 col-md-12 tabs-nav">
+                <div class="tabs-nav hidden-xs-down col-lg-5 col-md-12">
                     <div class="row">
                         <div class="offset-md-1 col-md-11 tabs">
-                            <ul class="list-unstyled hover-tabs">
+                            <ul class="hover-tabs list-unstyled">
                                 {{#items}}
-                                    <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
+                                    <li class="media {{#isActive}}active{{/isActive}} mb-5" data-toggle="tab"
                                         href="#{{id}}" role="tab">
-                                        <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
-                                        <div class="o-vertical-tab-icon">
-                                            {{{ icon }}}
-                                        </div>
+                                        {{#icon}}
+                                            <div class="o-vertical-tab-icon ">
+                                                {{{ icon }}}
+                                            </div>
+                                        {{/icon}}
                                         <div class="media-body">
                                             <h5 class="mt-0 mb-1">{{{title}}}</h5>
                                             <p> {{{description}}} </p>
                                         </div>
                                     </li>
                                 {{/items}}
-
                             </ul>
                             {{#cta}}
                                 <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
@@ -27,17 +27,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden -xs-down col-lg-7 col-md-12 tabs-content">
+                <div class="hidden-xs-down col-lg-7 col-md-12">
                     <div class="row">
-                        <div class="offset-md-1 col-md-11">
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                {{#items}}
-                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
-                                        {{{content}}}
-                                    </div>
-                                {{/items}}
-                            </div>
+                        <div class="tab-content col-md-11">
+                            {{#items}}
+                                <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
+                                    {{{content}}}
+                                </div>
+                            {{/items}}
                         </div>
                     </div>
                 </div>
@@ -46,51 +43,51 @@
             {{^ navigation.positionLeft }}
                 <div class="hidden-xs-down col-lg-7 col-md-12">
                     <div class="row">
-                        <div class="offset-md-1 col-md-11">
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                {{#items}}
-                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
-                                        {{{content}}}
-                                    </div>
-                                {{/items}}
-                            </div>
+                        <div class="tab-content offset-md-1 col-md-11">
+                            {{#items}}
+                                <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
+                                    {{{content}}}
+                                </div>
+                            {{/items}}
                         </div>
                     </div>
                 </div>
 
-                <div class="hidden-xs-down col-lg-5 col-md-5 col-sm-12 tabs-nav">
-                    <div class="row">
-                        <div class="offset-md-1 col-md-11">
-                            <ul class="list-unstyled hover-tabs">
-                                {{#items}}
-                                    <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
-                                        href="#{{id}}" role="tab">
+                <div class="tabs-nav hidden-xs-down col-lg-5 col-sm-12">
+                    <ul class="hover-tabs list-unstyled">
+                        {{#items}}
+                            <li class="media {{#isActive}}active{{/isActive}} mb-5" data-toggle="tab"
+                                href="#{{id}}" role="tab">
 
-                                        <div class="o-vertical-tab-icon ">
-                                            {{{ icon }}}
-                                        </div>
-
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        {{#icon}}
+                                            <div class="o-vertical-tab-icon ">
+                                                {{{ icon }}}
+                                            </div>
+                                        {{/icon}}
+                                    </div>
+                                    <div class="col-md-10">
                                         <div class="media-body">
                                             <h5 class="mt-0 mb-1">{{{title}}}</h5>
                                             <p> {{{description}}} </p>
                                         </div>
-                                    </li>
-                                {{/items}}
+                                    </div>
+                                </div>
 
-                                <li class="tabs-btn">
-                                    {{#cta}}
-                                        <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
-                                    {{/cta}}
-                                </li>
+                            </li>
+                        {{/items}}
 
-                            </ul>
-                        </div>
-                    </div>
+                        <li class="tabs-btn">
+                            {{#cta}}
+                                <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
+                            {{/cta}}
+                        </li>
+                    </ul>
                 </div>
 
                 {{# slider }}
-                    <div class="o-slider hidden-sm-up col-xs-12 ml-3 mr-3" id="{{id}}">
+                    <div class="o-slider hidden-sm-up col-xs-12 mx-3" id="{{id}}">
                         {{# items }}
                             <div class="carouselContainer">
                                 <div class="carouselImg">{{{content}}} </div>
@@ -104,14 +101,14 @@
                     <script>
                         jQuery(document).ready(function () {
                             jQuery('#{{id}}').slick({
-                                {{#settings.dots}}dots: true,{{/settings.dots}}
+                                {{#settings.dots}}dots                    : true,{{/settings.dots}}
                                 {{#settings.slidesToScroll}}slidesToScroll: {{settings.slidesToScroll}},{{/settings.slidesToScroll}}
-                                {{#settings.slidesToShow}}slidesToShow: {{settings.slidesToShow}},{{/settings.slidesToShow}}
-                                {{#settings.centerMode}}centerMode: true,{{/settings.centerMode}}
-                                {{#settings.centerPadding}}centerPadding: "{{settings.centerPadding}}",{{/settings.centerPadding}}
-                                {{#settings.autoplay}}autoplay: false,{{/settings.autoplay}}
-                                {{#settings.autoplaySpeed}}autoplaySpeed: {{settings.autoplaySpeed}},{{/settings.autoplaySpeed}}
-                                infinite: true
+                                {{#settings.slidesToShow}}slidesToShow    : {{settings.slidesToShow}},{{/settings.slidesToShow}}
+                                {{#settings.centerMode}}centerMode        : true,{{/settings.centerMode}}
+                                {{#settings.centerPadding}}centerPadding  : "{{settings.centerPadding}}",{{/settings.centerPadding}}
+                                {{#settings.autoplay}}autoplay            : false,{{/settings.autoplay}}
+                                {{#settings.autoplaySpeed}}autoplaySpeed  : {{settings.autoplaySpeed}},{{/settings.autoplaySpeed}}
+                                infinite                                  : true
                             });
                         });
                     </script>
@@ -121,10 +118,6 @@
 
         </div>
     </div>
-
-
-
-
 
 {{/vertical-tabs}}
 
