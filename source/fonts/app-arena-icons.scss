@@ -2,10 +2,17 @@ $aa-font-path: "../fonts" !default;
 
 @font-face {
     font-family: "app-arena-icons";
+<<<<<<< HEAD
+    src: url("#{$aa-font-path}/app-arena-icons.eot?482c89b5d6a9ce91bf5c3c8184976d68?#iefix") format("embedded-opentype"),
+url("#{$aa-font-path}/app-arena-icons.woff?482c89b5d6a9ce91bf5c3c8184976d68") format("woff"),
+url("#{$aa-font-path}/app-arena-icons.ttf?482c89b5d6a9ce91bf5c3c8184976d68") format("truetype"),
+url("#{$aa-font-path}/app-arena-icons.svg?482c89b5d6a9ce91bf5c3c8184976d68#app-arena-icons") format("svg");
+=======
     src: url("#{$aa-font-path}/app-arena-icons.eot?81e3d7e942df90bb8a87e3eb145ce195?#iefix") format("embedded-opentype"),
 url("#{$aa-font-path}/app-arena-icons.woff?81e3d7e942df90bb8a87e3eb145ce195") format("woff"),
 url("#{$aa-font-path}/app-arena-icons.ttf?81e3d7e942df90bb8a87e3eb145ce195") format("truetype"),
 url("#{$aa-font-path}/app-arena-icons.svg?81e3d7e942df90bb8a87e3eb145ce195#app-arena-icons") format("svg");
+>>>>>>> 0d466658aea684d1139855bf93814776f3998145
     font-weight: normal;
     font-style: normal;
 }
@@ -34,7 +41,7 @@ $aa-icon-arrow-left: "\f103";
 $aa-icon-arrow-right-circle: "\f104";
 $aa-icon-arrow-right: "\f105";
 $aa-icon-arrow-up: "\f106";
-$aa-icon-atoms: "\f107";
+$aa-icon-atoms_l: "\f107";
 $aa-icon-balance-scale: "\f108";
 $aa-icon-bar-chart: "\f109";
 $aa-icon-bell: "\f10a";
@@ -43,6 +50,118 @@ $aa-icon-bolt: "\f10c";
 $aa-icon-box: "\f10d";
 $aa-icon-browser-plus: "\f10e";
 $aa-icon-browser: "\f10f";
+<<<<<<< HEAD
+$aa-icon-brush: "\f110";
+$aa-icon-bullhorn: "\f111";
+$aa-icon-calendar: "\f112";
+$aa-icon-caret-down: "\f113";
+$aa-icon-caret-left: "\f114";
+$aa-icon-caret-right: "\f115";
+$aa-icon-caret-up: "\f116";
+$aa-icon-chart: "\f117";
+$aa-icon-check: "\f118";
+$aa-icon-chevron-down: "\f119";
+$aa-icon-chevron-left: "\f11a";
+$aa-icon-chevron-right: "\f11b";
+$aa-icon-chevron-up: "\f11c";
+$aa-icon-circle-o-notch: "\f11d";
+$aa-icon-circle: "\f11e";
+$aa-icon-clipboard: "\f11f";
+$aa-icon-close: "\f120";
+$aa-icon-cloud-upload: "\f121";
+$aa-icon-cog-star: "\f122";
+$aa-icon-cog: "\f123";
+$aa-icon-color_l: "\f124";
+$aa-icon-color: "\f125";
+$aa-icon-comment-chart: "\f126";
+$aa-icon-comment-text: "\f127";
+$aa-icon-comment: "\f128";
+$aa-icon-crop: "\f129";
+$aa-icon-css: "\f12a";
+$aa-icon-customer: "\f12b";
+$aa-icon-desktop: "\f12c";
+$aa-icon-digital-chart: "\f12d";
+$aa-icon-domain: "\f12e";
+$aa-icon-dot-circle-o: "\f12f";
+$aa-icon-download: "\f130";
+$aa-icon-ellipsis: "\f131";
+$aa-icon-exclamation-circle: "\f132";
+$aa-icon-external-link: "\f133";
+$aa-icon-eye: "\f134";
+$aa-icon-facebook-app: "\f135";
+$aa-icon-facebook-apps: "\f136";
+$aa-icon-facebook: "\f137";
+$aa-icon-file-pdf: "\f138";
+$aa-icon-file: "\f139";
+$aa-icon-flag-checkered: "\f13a";
+$aa-icon-flag: "\f13b";
+$aa-icon-floppy: "\f13c";
+$aa-icon-gallery: "\f13d";
+$aa-icon-github: "\f13e";
+$aa-icon-globe-filled: "\f13f";
+$aa-icon-globe: "\f140";
+$aa-icon-google-plus: "\f141";
+$aa-icon-graduation-cap: "\f142";
+$aa-icon-grid-full: "\f143";
+$aa-icon-grid-two: "\f144";
+$aa-icon-heart-filled: "\f145";
+$aa-icon-heart: "\f146";
+$aa-icon-html: "\f147";
+$aa-icon-icons_l: "\f148";
+$aa-icon-image: "\f149";
+$aa-icon-info-circle: "\f14a";
+$aa-icon-key: "\f14b";
+$aa-icon-label: "\f14c";
+$aa-icon-layout_l: "\f14d";
+$aa-icon-lightbulb: "\f14e";
+$aa-icon-like-plus: "\f14f";
+$aa-icon-line-chart: "\f150";
+$aa-icon-link: "\f151";
+$aa-icon-list: "\f152";
+$aa-icon-lock: "\f153";
+$aa-icon-log-in: "\f154";
+$aa-icon-log-out: "\f155";
+$aa-icon-logo_l: "\f156";
+$aa-icon-mail: "\f157";
+$aa-icon-menu-circle: "\f158";
+$aa-icon-minus: "\f159";
+$aa-icon-mobile-check: "\f15a";
+$aa-icon-mobile: "\f15b";
+$aa-icon-molecules_l: "\f15c";
+$aa-icon-mouse-click: "\f15d";
+$aa-icon-multi-select: "\f15e";
+$aa-icon-newsletter: "\f15f";
+$aa-icon-organisms_l: "\f160";
+$aa-icon-pages_l: "\f161";
+$aa-icon-paper-plane-o: "\f162";
+$aa-icon-pencil-circle: "\f163";
+$aa-icon-pencil: "\f164";
+$aa-icon-play-circle: "\f165";
+$aa-icon-plug: "\f166";
+$aa-icon-plus: "\f167";
+$aa-icon-pointer: "\f168";
+$aa-icon-popularity: "\f169";
+$aa-icon-question-circle-filled: "\f16a";
+$aa-icon-question-circle: "\f16b";
+$aa-icon-refresh: "\f16c";
+$aa-icon-responsive: "\f16d";
+$aa-icon-scale: "\f16e";
+$aa-icon-search-circle: "\f16f";
+$aa-icon-search: "\f170";
+$aa-icon-select: "\f171";
+$aa-icon-share: "\f172";
+$aa-icon-shield: "\f173";
+$aa-icon-slider-arrow-left: "\f174";
+$aa-icon-slider-arrow-right: "\f175";
+$aa-icon-sort-amount-asc: "\f176";
+$aa-icon-sort-amount-desc: "\f177";
+$aa-icon-stadion: "\f178";
+$aa-icon-star: "\f179";
+$aa-icon-tablet: "\f17a";
+$aa-icon-target: "\f17b";
+$aa-icon-templates_l: "\f17c";
+$aa-icon-text_l: "\f17d";
+=======
 $aa-icon-brush-2: "\f110";
 $aa-icon-brush: "\f111";
 $aa-icon-bullhorn: "\f112";
@@ -153,6 +272,7 @@ $aa-icon-star: "\f17a";
 $aa-icon-tablet: "\f17b";
 $aa-icon-target: "\f17c";
 $aa-icon-templates: "\f17d";
+>>>>>>> 0d466658aea684d1139855bf93814776f3998145
 $aa-icon-text: "\f17e";
 $aa-icon-thumbs-o-up: "\f17f";
 $aa-icon-thumbs: "\f180";
@@ -193,8 +313,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-arrow-up:before {
     content: $aa-icon-arrow-up;
 }
-.aa-icon-atoms:before {
-    content: $aa-icon-atoms;
+.aa-icon-atoms_l:before {
+    content: $aa-icon-atoms_l;
 }
 .aa-icon-balance-scale:before {
     content: $aa-icon-balance-scale;
@@ -286,8 +406,11 @@ $aa-icon-youtube: "\f191";
 .aa-icon-cog:before {
     content: $aa-icon-cog;
 }
-.aa-icon-colors:before {
-    content: $aa-icon-colors;
+.aa-icon-color_l:before {
+    content: $aa-icon-color_l;
+}
+.aa-icon-color:before {
+    content: $aa-icon-color;
 }
 .aa-icon-comment-chart:before {
     content: $aa-icon-comment-chart;
@@ -391,8 +514,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-html:before {
     content: $aa-icon-html;
 }
-.aa-icon-icons:before {
-    content: $aa-icon-icons;
+.aa-icon-icons_l:before {
+    content: $aa-icon-icons_l;
 }
 .aa-icon-image:before {
     content: $aa-icon-image;
@@ -406,8 +529,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-label:before {
     content: $aa-icon-label;
 }
-.aa-icon-layout:before {
-    content: $aa-icon-layout;
+.aa-icon-layout_l:before {
+    content: $aa-icon-layout_l;
 }
 .aa-icon-lightbulb:before {
     content: $aa-icon-lightbulb;
@@ -433,8 +556,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-log-out:before {
     content: $aa-icon-log-out;
 }
-.aa-icon-logo:before {
-    content: $aa-icon-logo;
+.aa-icon-logo_l:before {
+    content: $aa-icon-logo_l;
 }
 .aa-icon-mail:before {
     content: $aa-icon-mail;
@@ -451,8 +574,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-mobile:before {
     content: $aa-icon-mobile;
 }
-.aa-icon-molecules:before {
-    content: $aa-icon-molecules;
+.aa-icon-molecules_l:before {
+    content: $aa-icon-molecules_l;
 }
 .aa-icon-mouse-click:before {
     content: $aa-icon-mouse-click;
@@ -463,11 +586,11 @@ $aa-icon-youtube: "\f191";
 .aa-icon-newsletter:before {
     content: $aa-icon-newsletter;
 }
-.aa-icon-organisms:before {
-    content: $aa-icon-organisms;
+.aa-icon-organisms_l:before {
+    content: $aa-icon-organisms_l;
 }
-.aa-icon-pages:before {
-    content: $aa-icon-pages;
+.aa-icon-pages_l:before {
+    content: $aa-icon-pages_l;
 }
 .aa-icon-paper-plane-o:before {
     content: $aa-icon-paper-plane-o;
@@ -547,8 +670,11 @@ $aa-icon-youtube: "\f191";
 .aa-icon-target:before {
     content: $aa-icon-target;
 }
-.aa-icon-templates:before {
-    content: $aa-icon-templates;
+.aa-icon-templates_l:before {
+    content: $aa-icon-templates_l;
+}
+.aa-icon-text_l:before {
+    content: $aa-icon-text_l;
 }
 .aa-icon-text:before {
     content: $aa-icon-text;

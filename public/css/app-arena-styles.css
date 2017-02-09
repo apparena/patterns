@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-  * App-Arena.com Styles related to the styleguide. Include this file to your pages to apply all styles described in
+  * App-Arena.com    Styles related to the styleguide. Include this file to your pages to apply all styles described in
   * the styleguide. Use bootstrap 4 as base and then overwrite and extend it
   *
   */
@@ -8808,7 +8808,11 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: "app-arena-icons";
+<<<<<<< HEAD
+  src: url("../fonts/app-arena-icons.eot?482c89b5d6a9ce91bf5c3c8184976d68?#iefix") format("embedded-opentype"), url("../fonts/app-arena-icons.woff?482c89b5d6a9ce91bf5c3c8184976d68") format("woff"), url("../fonts/app-arena-icons.ttf?482c89b5d6a9ce91bf5c3c8184976d68") format("truetype"), url("../fonts/app-arena-icons.svg?482c89b5d6a9ce91bf5c3c8184976d68#app-arena-icons") format("svg");
+=======
   src: url("../fonts/app-arena-icons.eot?81e3d7e942df90bb8a87e3eb145ce195?#iefix") format("embedded-opentype"), url("../fonts/app-arena-icons.woff?81e3d7e942df90bb8a87e3eb145ce195") format("woff"), url("../fonts/app-arena-icons.ttf?81e3d7e942df90bb8a87e3eb145ce195") format("truetype"), url("../fonts/app-arena-icons.svg?81e3d7e942df90bb8a87e3eb145ce195#app-arena-icons") format("svg");
+>>>>>>> 0d466658aea684d1139855bf93814776f3998145
   font-weight: normal;
   font-style: normal; }
 
@@ -8845,7 +8849,7 @@ input[type="button"].btn-block {
 .aa-icon-arrow-up:before {
   content: ""; }
 
-.aa-icon-atoms:before {
+.aa-icon-atoms_l:before {
   content: ""; }
 
 .aa-icon-balance-scale:before {
@@ -8932,6 +8936,276 @@ input[type="button"].btn-block {
 .aa-icon-cloud-upload:before {
   content: ""; }
 
+<<<<<<< HEAD
+.aa-icon-color_l:before {
+  content: ""; }
+
+.aa-icon-color:before {
+  content: ""; }
+
+.aa-icon-comment-chart:before {
+  content: ""; }
+
+.aa-icon-comment-text:before {
+  content: ""; }
+
+.aa-icon-comment:before {
+  content: ""; }
+
+.aa-icon-crop:before {
+  content: ""; }
+
+.aa-icon-css:before {
+  content: ""; }
+
+.aa-icon-customer:before {
+  content: ""; }
+
+.aa-icon-desktop:before {
+  content: ""; }
+
+.aa-icon-digital-chart:before {
+  content: ""; }
+
+.aa-icon-domain:before {
+  content: ""; }
+
+.aa-icon-dot-circle-o:before {
+  content: ""; }
+
+.aa-icon-download:before {
+  content: ""; }
+
+.aa-icon-ellipsis:before {
+  content: ""; }
+
+.aa-icon-exclamation-circle:before {
+  content: ""; }
+
+.aa-icon-external-link:before {
+  content: ""; }
+
+.aa-icon-eye:before {
+  content: ""; }
+
+.aa-icon-facebook-app:before {
+  content: ""; }
+
+.aa-icon-facebook-apps:before {
+  content: ""; }
+
+.aa-icon-facebook:before {
+  content: ""; }
+
+.aa-icon-file-pdf:before {
+  content: ""; }
+
+.aa-icon-file:before {
+  content: ""; }
+
+.aa-icon-flag-checkered:before {
+  content: ""; }
+
+.aa-icon-flag:before {
+  content: ""; }
+
+.aa-icon-floppy:before {
+  content: ""; }
+
+.aa-icon-gallery:before {
+  content: ""; }
+
+.aa-icon-github:before {
+  content: ""; }
+
+.aa-icon-globe-filled:before {
+  content: ""; }
+
+.aa-icon-globe:before {
+  content: ""; }
+
+.aa-icon-google-plus:before {
+  content: ""; }
+
+.aa-icon-graduation-cap:before {
+  content: ""; }
+
+.aa-icon-grid-full:before {
+  content: ""; }
+
+.aa-icon-grid-two:before {
+  content: ""; }
+
+.aa-icon-heart-filled:before {
+  content: ""; }
+
+.aa-icon-heart:before {
+  content: ""; }
+
+.aa-icon-html:before {
+  content: ""; }
+
+.aa-icon-icons_l:before {
+  content: ""; }
+
+.aa-icon-image:before {
+  content: ""; }
+
+.aa-icon-info-circle:before {
+  content: ""; }
+
+.aa-icon-key:before {
+  content: ""; }
+
+.aa-icon-label:before {
+  content: ""; }
+
+.aa-icon-layout_l:before {
+  content: ""; }
+
+.aa-icon-lightbulb:before {
+  content: ""; }
+
+.aa-icon-like-plus:before {
+  content: ""; }
+
+.aa-icon-line-chart:before {
+  content: ""; }
+
+.aa-icon-link:before {
+  content: ""; }
+
+.aa-icon-list:before {
+  content: ""; }
+
+.aa-icon-lock:before {
+  content: ""; }
+
+.aa-icon-log-in:before {
+  content: ""; }
+
+.aa-icon-log-out:before {
+  content: ""; }
+
+.aa-icon-logo_l:before {
+  content: ""; }
+
+.aa-icon-mail:before {
+  content: ""; }
+
+.aa-icon-menu-circle:before {
+  content: ""; }
+
+.aa-icon-minus:before {
+  content: ""; }
+
+.aa-icon-mobile-check:before {
+  content: ""; }
+
+.aa-icon-mobile:before {
+  content: ""; }
+
+.aa-icon-molecules_l:before {
+  content: ""; }
+
+.aa-icon-mouse-click:before {
+  content: ""; }
+
+.aa-icon-multi-select:before {
+  content: ""; }
+
+.aa-icon-newsletter:before {
+  content: ""; }
+
+.aa-icon-organisms_l:before {
+  content: ""; }
+
+.aa-icon-pages_l:before {
+  content: ""; }
+
+.aa-icon-paper-plane-o:before {
+  content: ""; }
+
+.aa-icon-pencil-circle:before {
+  content: ""; }
+
+.aa-icon-pencil:before {
+  content: ""; }
+
+.aa-icon-play-circle:before {
+  content: ""; }
+
+.aa-icon-plug:before {
+  content: ""; }
+
+.aa-icon-plus:before {
+  content: ""; }
+
+.aa-icon-pointer:before {
+  content: ""; }
+
+.aa-icon-popularity:before {
+  content: ""; }
+
+.aa-icon-question-circle-filled:before {
+  content: ""; }
+
+.aa-icon-question-circle:before {
+  content: ""; }
+
+.aa-icon-refresh:before {
+  content: ""; }
+
+.aa-icon-responsive:before {
+  content: ""; }
+
+.aa-icon-scale:before {
+  content: ""; }
+
+.aa-icon-search-circle:before {
+  content: ""; }
+
+.aa-icon-search:before {
+  content: ""; }
+
+.aa-icon-select:before {
+  content: ""; }
+
+.aa-icon-share:before {
+  content: ""; }
+
+.aa-icon-shield:before {
+  content: ""; }
+
+.aa-icon-slider-arrow-left:before {
+  content: ""; }
+
+.aa-icon-slider-arrow-right:before {
+  content: ""; }
+
+.aa-icon-sort-amount-asc:before {
+  content: ""; }
+
+.aa-icon-sort-amount-desc:before {
+  content: ""; }
+
+.aa-icon-stadion:before {
+  content: ""; }
+
+.aa-icon-star:before {
+  content: ""; }
+
+.aa-icon-tablet:before {
+  content: ""; }
+
+.aa-icon-target:before {
+  content: ""; }
+
+.aa-icon-templates_l:before {
+  content: ""; }
+
+.aa-icon-text_l:before {
+=======
 .aa-icon-cog-star:before {
   content: ""; }
 
@@ -9200,6 +9474,7 @@ input[type="button"].btn-block {
   content: ""; }
 
 .aa-icon-templates:before {
+>>>>>>> 0d466658aea684d1139855bf93814776f3998145
   content: ""; }
 
 .aa-icon-text:before {
@@ -11458,7 +11733,11 @@ a.bg-inverse:hover {
 
 @font-face {
   font-family: "app-arena-icons";
+<<<<<<< HEAD
+  src: url("../fonts/app-arena-icons.eot?482c89b5d6a9ce91bf5c3c8184976d68?#iefix") format("embedded-opentype"), url("../fonts/app-arena-icons.woff?482c89b5d6a9ce91bf5c3c8184976d68") format("woff"), url("../fonts/app-arena-icons.ttf?482c89b5d6a9ce91bf5c3c8184976d68") format("truetype"), url("../fonts/app-arena-icons.svg?482c89b5d6a9ce91bf5c3c8184976d68#app-arena-icons") format("svg");
+=======
   src: url("../fonts/app-arena-icons.eot?81e3d7e942df90bb8a87e3eb145ce195?#iefix") format("embedded-opentype"), url("../fonts/app-arena-icons.woff?81e3d7e942df90bb8a87e3eb145ce195") format("woff"), url("../fonts/app-arena-icons.ttf?81e3d7e942df90bb8a87e3eb145ce195") format("truetype"), url("../fonts/app-arena-icons.svg?81e3d7e942df90bb8a87e3eb145ce195#app-arena-icons") format("svg");
+>>>>>>> 0d466658aea684d1139855bf93814776f3998145
   font-weight: normal;
   font-style: normal; }
 
@@ -11495,7 +11774,7 @@ a.bg-inverse:hover {
 .aa-icon-arrow-up:before {
   content: ""; }
 
-.aa-icon-atoms:before {
+.aa-icon-atoms_l:before {
   content: ""; }
 
 .aa-icon-balance-scale:before {
@@ -11582,6 +11861,276 @@ a.bg-inverse:hover {
 .aa-icon-cloud-upload:before {
   content: ""; }
 
+<<<<<<< HEAD
+.aa-icon-color_l:before {
+  content: ""; }
+
+.aa-icon-color:before {
+  content: ""; }
+
+.aa-icon-comment-chart:before {
+  content: ""; }
+
+.aa-icon-comment-text:before {
+  content: ""; }
+
+.aa-icon-comment:before {
+  content: ""; }
+
+.aa-icon-crop:before {
+  content: ""; }
+
+.aa-icon-css:before {
+  content: ""; }
+
+.aa-icon-customer:before {
+  content: ""; }
+
+.aa-icon-desktop:before {
+  content: ""; }
+
+.aa-icon-digital-chart:before {
+  content: ""; }
+
+.aa-icon-domain:before {
+  content: ""; }
+
+.aa-icon-dot-circle-o:before {
+  content: ""; }
+
+.aa-icon-download:before {
+  content: ""; }
+
+.aa-icon-ellipsis:before {
+  content: ""; }
+
+.aa-icon-exclamation-circle:before {
+  content: ""; }
+
+.aa-icon-external-link:before {
+  content: ""; }
+
+.aa-icon-eye:before {
+  content: ""; }
+
+.aa-icon-facebook-app:before {
+  content: ""; }
+
+.aa-icon-facebook-apps:before {
+  content: ""; }
+
+.aa-icon-facebook:before {
+  content: ""; }
+
+.aa-icon-file-pdf:before {
+  content: ""; }
+
+.aa-icon-file:before {
+  content: ""; }
+
+.aa-icon-flag-checkered:before {
+  content: ""; }
+
+.aa-icon-flag:before {
+  content: ""; }
+
+.aa-icon-floppy:before {
+  content: ""; }
+
+.aa-icon-gallery:before {
+  content: ""; }
+
+.aa-icon-github:before {
+  content: ""; }
+
+.aa-icon-globe-filled:before {
+  content: ""; }
+
+.aa-icon-globe:before {
+  content: ""; }
+
+.aa-icon-google-plus:before {
+  content: ""; }
+
+.aa-icon-graduation-cap:before {
+  content: ""; }
+
+.aa-icon-grid-full:before {
+  content: ""; }
+
+.aa-icon-grid-two:before {
+  content: ""; }
+
+.aa-icon-heart-filled:before {
+  content: ""; }
+
+.aa-icon-heart:before {
+  content: ""; }
+
+.aa-icon-html:before {
+  content: ""; }
+
+.aa-icon-icons_l:before {
+  content: ""; }
+
+.aa-icon-image:before {
+  content: ""; }
+
+.aa-icon-info-circle:before {
+  content: ""; }
+
+.aa-icon-key:before {
+  content: ""; }
+
+.aa-icon-label:before {
+  content: ""; }
+
+.aa-icon-layout_l:before {
+  content: ""; }
+
+.aa-icon-lightbulb:before {
+  content: ""; }
+
+.aa-icon-like-plus:before {
+  content: ""; }
+
+.aa-icon-line-chart:before {
+  content: ""; }
+
+.aa-icon-link:before {
+  content: ""; }
+
+.aa-icon-list:before {
+  content: ""; }
+
+.aa-icon-lock:before {
+  content: ""; }
+
+.aa-icon-log-in:before {
+  content: ""; }
+
+.aa-icon-log-out:before {
+  content: ""; }
+
+.aa-icon-logo_l:before {
+  content: ""; }
+
+.aa-icon-mail:before {
+  content: ""; }
+
+.aa-icon-menu-circle:before {
+  content: ""; }
+
+.aa-icon-minus:before {
+  content: ""; }
+
+.aa-icon-mobile-check:before {
+  content: ""; }
+
+.aa-icon-mobile:before {
+  content: ""; }
+
+.aa-icon-molecules_l:before {
+  content: ""; }
+
+.aa-icon-mouse-click:before {
+  content: ""; }
+
+.aa-icon-multi-select:before {
+  content: ""; }
+
+.aa-icon-newsletter:before {
+  content: ""; }
+
+.aa-icon-organisms_l:before {
+  content: ""; }
+
+.aa-icon-pages_l:before {
+  content: ""; }
+
+.aa-icon-paper-plane-o:before {
+  content: ""; }
+
+.aa-icon-pencil-circle:before {
+  content: ""; }
+
+.aa-icon-pencil:before {
+  content: ""; }
+
+.aa-icon-play-circle:before {
+  content: ""; }
+
+.aa-icon-plug:before {
+  content: ""; }
+
+.aa-icon-plus:before {
+  content: ""; }
+
+.aa-icon-pointer:before {
+  content: ""; }
+
+.aa-icon-popularity:before {
+  content: ""; }
+
+.aa-icon-question-circle-filled:before {
+  content: ""; }
+
+.aa-icon-question-circle:before {
+  content: ""; }
+
+.aa-icon-refresh:before {
+  content: ""; }
+
+.aa-icon-responsive:before {
+  content: ""; }
+
+.aa-icon-scale:before {
+  content: ""; }
+
+.aa-icon-search-circle:before {
+  content: ""; }
+
+.aa-icon-search:before {
+  content: ""; }
+
+.aa-icon-select:before {
+  content: ""; }
+
+.aa-icon-share:before {
+  content: ""; }
+
+.aa-icon-shield:before {
+  content: ""; }
+
+.aa-icon-slider-arrow-left:before {
+  content: ""; }
+
+.aa-icon-slider-arrow-right:before {
+  content: ""; }
+
+.aa-icon-sort-amount-asc:before {
+  content: ""; }
+
+.aa-icon-sort-amount-desc:before {
+  content: ""; }
+
+.aa-icon-stadion:before {
+  content: ""; }
+
+.aa-icon-star:before {
+  content: ""; }
+
+.aa-icon-tablet:before {
+  content: ""; }
+
+.aa-icon-target:before {
+  content: ""; }
+
+.aa-icon-templates_l:before {
+  content: ""; }
+
+.aa-icon-text_l:before {
+=======
 .aa-icon-cog-star:before {
   content: ""; }
 
@@ -11850,6 +12399,7 @@ a.bg-inverse:hover {
   content: ""; }
 
 .aa-icon-templates:before {
+>>>>>>> 0d466658aea684d1139855bf93814776f3998145
   content: ""; }
 
 .aa-icon-text:before {
