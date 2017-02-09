@@ -9,6 +9,7 @@ module.exports = function (grunt) {
                 files: {
                     'public/css/app-arena-styles.css': 'source/css/app-arena-styles.scss',
                     'source/css/app-arena-styles.css': 'source/css/app-arena-styles.scss',
+                    'source/fonts/app-arena-icons.css': 'source/fonts/app-arena-icons.scss',
                 }
             }
         },
@@ -20,6 +21,7 @@ module.exports = function (grunt) {
                 args: [
                     'source/icons/svg/*.svg',
                     '--out=source/fonts',
+                    '--fontspath=#{$aa-font-path}',
                     '--name=app-arena-icons',
                     '--prefix=aa-icon',
                     '--normalize=true',
@@ -39,5 +41,5 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-run');
     grunt.loadTasks('build/scripts/grunt');
-    grunt.registerTask('default', ['sass', 'run']);
+    grunt.registerTask('default', ['run', 'sass']);
 };
