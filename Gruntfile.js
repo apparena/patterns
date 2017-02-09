@@ -20,11 +20,11 @@ module.exports = function (grunt) {
                 args: [
                     'source/icons/svg/*.svg',
                     '--out=source/fonts',
-                    '--name=icons',
+                    '--name=app-arena-icons',
                     '--prefix=aa-icon',
                     '--normalize=true',
                     '--tag=aa-icon',
-                    '--htmtp=source/icons/font/template/html.hbs', // HTML handlebars template path (Optional)
+                    '--htmltp=source/icons/font/template/html.hbs', // HTML handlebars template path (Optional)
                     '--csstp=source/icons/font/template/css.hbs', // CSS handlebars template path (Optional)
                     '--round=10e12', // Setup SVG rounding (Default: 10e12)
                     '--descent=150', // Offset applied to the baseline (Default: 0)

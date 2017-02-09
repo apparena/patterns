@@ -27,6 +27,7 @@ import NavItem from "./01-molecules/navs/nav-item";
 import NavSecondary from "./02-organisms/navigation/nav-secondary";
 import NavSecondaryGroup from "./02-organisms/navigation/nav-secondary-group";
 import Notification from "./01-molecules/messages/notification";
+import NotificationContainer from "./react-utils/notificationContainer";
 import Popover from "./01-molecules/popover/popover";
 import Portal from "./react-utils/portal";
 import PriceTable from "./02-organisms/price-table/price-table";
@@ -76,6 +77,7 @@ export {
     NavSecondary,
     NavSecondaryGroup,
     Notification,
+    NotificationContainer,
     Popover,
     Portal,
     PriceTable,
