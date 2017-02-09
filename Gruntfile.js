@@ -13,6 +13,19 @@ module.exports = function (grunt) {
                 }
             }
         },
+        filenamesToJson : {
+            options : {
+                // true if full path should be included, default is false
+                fullPath : false,
+                // true if file extension should be included, default is false
+                extensions : false
+            },
+            // any valid glob
+            files : 'source/icons/svg/*.svg',
+
+            // path to write json to
+            destination : 'source/fonts/app-arena-icons.json'
+        },
         run: {
             options: {},
             // Runt the icon generator https://github.com/Workshape/icon-font-generator
@@ -29,6 +42,8 @@ module.exports = function (grunt) {
                     '--htmltp=source/icons/font/template/html.hbs', // HTML handlebars template path (Optional)
                     '--csstp=source/icons/font/template/css.hbs', // CSS handlebars template path (Optional)
                     '--csspath=source/fonts/app-arena-icons.scss',  // CSS output path (Defaults to <out>/<name>.css)
+                    '--json=true',  // CSS output path (Defaults to <out>/<name>.css)
+                    '--jsonpath=source/fonts/app-arena-icons.json',  // CSS output path (Defaults to <out>/<name>.css)
                     '--round=10e12', // Setup SVG rounding (Default: 10e12)
                     '--descent=150', // Offset applied to the baseline (Default: 0)
                     '--mono=true', // Make font monospace (Default: false)
@@ -41,5 +56,5 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-run');
     grunt.loadTasks('build/scripts/grunt');
-    grunt.registerTask('default', ['run', 'sass']);
+    grunt.registerTask('default', ['run', 'sass', 'filenamesToJson']);
 };
