@@ -12,7 +12,7 @@ echo "RootPath: ${RootPath}"
 # Build the theme: Download PHP libs and build styleguide
 echo "$(date): Start building PHP"
 cd ${RootPath}/dist
-composer install
+composer install > /dev/null
 echo "$(date): End building PHP"
 
 # Update path in config file
@@ -26,9 +26,9 @@ echo "$(date): End generating the styleguide"
 
 # Build the theme: Download JS libs and build webfont and compile CSS
 echo "$(date): Start building JS"
-bower install --allow-root
+bower install --allow-root > /dev/null
 npm i -g icon-font-generator grunt
-yarn install
+yarn install > /dev/null
 yarn upgrade
 grunt
 echo "$(date): End building JS"
