@@ -23,8 +23,10 @@ module.exports = function (grunt) {
                     '--out=source/fonts',
                     '--name=icons',
                     '--prefix=aa-icon',
-                    '--normalize=true',
-                    //'--tag=i',
+                    //'--normalize=true',
+                    '--tag=aa-icon',
+                    '--htmtp=source/icons/font/template/css.hbs', // HTML handlebars template path (Optional)
+                    '--csstp=source/icons/font/template/html.hbs', // CSS handlebars template path (Optional)
                 ]
             }
         }

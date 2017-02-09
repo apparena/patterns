@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>icons</title>
+    <title>{{ fontName }}</title>
     <style>
 
         body {
@@ -28,7 +28,7 @@
             border-radius: 3px 3px 0 0;
         }
 
-        .preview .inner aa-icon {
+        .preview .inner {{ baseTag }} {
             line-height: 85px;
             font-size: 40px;
             color: #333;
@@ -52,14 +52,25 @@
             color: #666;
         }
 
-        
+        {{{ styles }}}
 
     </style>
 </head>
 <body>
 
-    <h1>icons</h1>
+    <h1>{{ fontName }}</h1>
 
+    {{# each names }}
+
+        <div class="preview">
+            <span class="inner">
+                <{{ ../baseTag }} class="{{ ../classPrefix }}{{ this }}"></{{ ../baseTag }}>
+            </span>
+            <br>
+            <span class='label'>{{ this }}</span>
+        </div>
+
+    {{/ each }}
 
 </body>
 </html>
