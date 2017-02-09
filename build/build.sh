@@ -11,7 +11,6 @@ echo "RootPath: ${RootPath}"
 
 # Build the theme: Download PHP libs and build styleguide
 echo "$(date): Start building PHP"
-cd ${RootPath}/dist
 composer install > /dev/null
 echo "$(date): End building PHP"
 
