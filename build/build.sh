@@ -13,12 +13,16 @@ echo "RootPath: ${RootPath}"
 echo "$(date): Start building PHP"
 cd ${RootPath}/dist
 composer install
-composer generate
 echo "$(date): End building PHP"
 
 # Update path in config file
 TARGET=${RootPath}/dist/
 sed -i "s|/var/www/html/|${TARGET}|g" config/config.yml
+
+# Generate the styleguide
+echo "$(date): Start generating the styleguide"
+composer generate
+echo "$(date): End generating the styleguide"
 
 # Build the theme: Download JS libs and build webfont and compile CSS
 echo "$(date): Start building JS"
