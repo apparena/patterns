@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>app-arena-icons</title>
+    <style>
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .preview .inner i {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #ddd;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+        }
+
+        @font-face {
+    font-family: "app-arena-icons";
+    src: url("./app-arena-icons.eot?6578089940f731515ce3287f109a1761?#iefix") format("embedded-opentype"),
+url("./app-arena-icons.woff?6578089940f731515ce3287f109a1761") format("woff"),
+url("./app-arena-icons.ttf?6578089940f731515ce3287f109a1761") format("truetype"),
+url("./app-arena-icons.svg?6578089940f731515ce3287f109a1761#app-arena-icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.aa-icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'app-arena-icons' !important;
+    display: inline-block;
+    text-rendering: auto;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.aa-icon-aa-analytics:before {
+    content: "\f101";
+}
+.aa-icon-arrow-down:before {
+    content: "\f102";
+}
+.aa-icon-arrow-left:before {
+    content: "\f103";
+}
+.aa-icon-arrow-right-circle:before {
+    content: "\f104";
+}
+.aa-icon-arrow-right:before {
+    content: "\f105";
+}
+.aa-icon-arrow-up:before {
+    content: "\f106";
+}
+.aa-icon-balance-scale:before {
+    content: "\f107";
+}
+.aa-icon-bar-chart:before {
+    content: "\f108";
+}
+.aa-icon-bell:before {
+    content: "\f109";
+}
+.aa-icon-bolt-o:before {
+    content: "\f10a";
+}
+.aa-icon-bolt:before {
+    content: "\f10b";
+}
+.aa-icon-box:before {
+    content: "\f10c";
+}
+.aa-icon-browser-plus:before {
+    content: "\f10d";
+}
+.aa-icon-browser:before {
+    content: "\f10e";
+}
+.aa-icon-brush:before {
+    content: "\f10f";
+}
+.aa-icon-bullhorn:before {
+    content: "\f110";
+}
+.aa-icon-calendar:before {
+    content: "\f111";
+}
+.aa-icon-caret-down:before {
+    content: "\f112";
+}
+.aa-icon-caret-left:before {
+    content: "\f113";
+}
+.aa-icon-caret-right:before {
+    content: "\f114";
+}
+.aa-icon-caret-up:before {
+    content: "\f115";
+}
+.aa-icon-chart:before {
+    content: "\f116";
+}
+.aa-icon-check:before {
+    content: "\f117";
+}
+.aa-icon-chevron-down:before {
+    content: "\f118";
+}
+.aa-icon-chevron-left:before {
+    content: "\f119";
+}
+.aa-icon-chevron-right:before {
+    content: "\f11a";
+}
+.aa-icon-chevron-up:before {
+    content: "\f11b";
+}
+.aa-icon-circle-o-notch:before {
+    content: "\f11c";
+}
+.aa-icon-circle:before {
+    content: "\f11d";
+}
+.aa-icon-clipboard:before {
+    content: "\f11e";
+}
+.aa-icon-close:before {
+    content: "\f11f";
+}
+.aa-icon-cloud-upload:before {
+    content: "\f120";
+}
+.aa-icon-cog-star:before {
+    content: "\f121";
+}
+.aa-icon-cog:before {
+    content: "\f122";
+}
+.aa-icon-colors:before {
+    content: "\f123";
+}
+.aa-icon-comment-chart:before {
+    content: "\f124";
+}
+.aa-icon-comment-text:before {
+    content: "\f125";
+}
+.aa-icon-comment:before {
+    content: "\f126";
+}
+.aa-icon-crop:before {
+    content: "\f127";
+}
+.aa-icon-css:before {
+    content: "\f128";
+}
+.aa-icon-customer:before {
+    content: "\f129";
+}
+.aa-icon-desktop:before {
+    content: "\f12a";
+}
+.aa-icon-digital-chart:before {
+    content: "\f12b";
+}
+.aa-icon-domain:before {
+    content: "\f12c";
+}
+.aa-icon-dot-circle-o:before {
+    content: "\f12d";
+}
+.aa-icon-download:before {
+    content: "\f12e";
+}
+.aa-icon-ellipsis:before {
+    content: "\f12f";
+}
+.aa-icon-exclamation-circle:before {
+    content: "\f130";
+}
+.aa-icon-external-link:before {
+    content: "\f131";
+}
+.aa-icon-eye:before {
+    content: "\f132";
+}
+.aa-icon-facebook-app:before {
+    content: "\f133";
+}
+.aa-icon-facebook-apps:before {
+    content: "\f134";
+}
+.aa-icon-facebook:before {
+    content: "\f135";
+}
+.aa-icon-file-pdf:before {
+    content: "\f136";
+}
+.aa-icon-file:before {
+    content: "\f137";
+}
+.aa-icon-flag-checkered:before {
+    content: "\f138";
+}
+.aa-icon-flag:before {
+    content: "\f139";
+}
+.aa-icon-floppy:before {
+    content: "\f13a";
+}
+.aa-icon-gallery:before {
+    content: "\f13b";
+}
+.aa-icon-github:before {
+    content: "\f13c";
+}
+.aa-icon-globe-filled:before {
+    content: "\f13d";
+}
+.aa-icon-globe:before {
+    content: "\f13e";
+}
+.aa-icon-google-plus:before {
+    content: "\f13f";
+}
+.aa-icon-graduation-cap:before {
+    content: "\f140";
+}
+.aa-icon-grid-full:before {
+    content: "\f141";
+}
+.aa-icon-grid-two:before {
+    content: "\f142";
+}
+.aa-icon-heart-filled:before {
+    content: "\f143";
+}
+.aa-icon-heart:before {
+    content: "\f144";
+}
+.aa-icon-html:before {
+    content: "\f145";
+}
+.aa-icon-image:before {
+    content: "\f146";
+}
+.aa-icon-info-circle:before {
+    content: "\f147";
+}
+.aa-icon-key:before {
+    content: "\f148";
+}
+.aa-icon-label:before {
+    content: "\f149";
+}
+.aa-icon-lightbulb:before {
+    content: "\f14a";
+}
+.aa-icon-like-plus:before {
+    content: "\f14b";
+}
+.aa-icon-line-chart:before {
+    content: "\f14c";
+}
+.aa-icon-link:before {
+    content: "\f14d";
+}
+.aa-icon-list:before {
+    content: "\f14e";
+}
+.aa-icon-lock:before {
+    content: "\f14f";
+}
+.aa-icon-log-in:before {
+    content: "\f150";
+}
+.aa-icon-log-out:before {
+    content: "\f151";
+}
+.aa-icon-mail:before {
+    content: "\f152";
+}
+.aa-icon-menu-circle:before {
+    content: "\f153";
+}
+.aa-icon-minus:before {
+    content: "\f154";
+}
+.aa-icon-mobile-check:before {
+    content: "\f155";
+}
+.aa-icon-mobile:before {
+    content: "\f156";
+}
+.aa-icon-mouse-click:before {
+    content: "\f157";
+}
+.aa-icon-multi-select:before {
+    content: "\f158";
+}
+.aa-icon-newsletter:before {
+    content: "\f159";
+}
+.aa-icon-paper-plane-o:before {
+    content: "\f15a";
+}
+.aa-icon-pencil-circle:before {
+    content: "\f15b";
+}
+.aa-icon-pencil:before {
+    content: "\f15c";
+}
+.aa-icon-play-circle:before {
+    content: "\f15d";
+}
+.aa-icon-plug:before {
+    content: "\f15e";
+}
+.aa-icon-plus:before {
+    content: "\f15f";
+}
+.aa-icon-pointer:before {
+    content: "\f160";
+}
+.aa-icon-popularity:before {
+    content: "\f161";
+}
+.aa-icon-question-circle-filled:before {
+    content: "\f162";
+}
+.aa-icon-question-circle:before {
+    content: "\f163";
+}
+.aa-icon-refresh:before {
+    content: "\f164";
+}
+.aa-icon-responsive:before {
+    content: "\f165";
+}
+.aa-icon-scale:before {
+    content: "\f166";
+}
+.aa-icon-search-circle:before {
+    content: "\f167";
+}
+.aa-icon-search:before {
+    content: "\f168";
+}
+.aa-icon-select:before {
+    content: "\f169";
+}
+.aa-icon-share:before {
+    content: "\f16a";
+}
+.aa-icon-shield:before {
+    content: "\f16b";
+}
+.aa-icon-slider-arrow-left:before {
+    content: "\f16c";
+}
+.aa-icon-slider-arrow-right:before {
+    content: "\f16d";
+}
+.aa-icon-sort-amount-asc:before {
+    content: "\f16e";
+}
+.aa-icon-sort-amount-desc:before {
+    content: "\f16f";
+}
+.aa-icon-stadion:before {
+    content: "\f170";
+}
+.aa-icon-star:before {
+    content: "\f171";
+}
+.aa-icon-tablet:before {
+    content: "\f172";
+}
+.aa-icon-target:before {
+    content: "\f173";
+}
+.aa-icon-text:before {
+    content: "\f174";
+}
+.aa-icon-thumbs-o-up:before {
+    content: "\f175";
+}
+.aa-icon-thumbs:before {
+    content: "\f176";
+}
+.aa-icon-ticket:before {
+    content: "\f177";
+}
+.aa-icon-time-filter:before {
+    content: "\f178";
+}
+.aa-icon-time:before {
+    content: "\f179";
+}
+.aa-icon-tool:before {
+    content: "\f17a";
+}
+.aa-icon-trash:before {
+    content: "\f17b";
+}
+.aa-icon-trophy:before {
+    content: "\f17c";
+}
+.aa-icon-twitter:before {
+    content: "\f17d";
+}
+.aa-icon-two-users:before {
+    content: "\f17e";
+}
+.aa-icon-upload:before {
+    content: "\f17f";
+}
+.aa-icon-user-circle:before {
+    content: "\f180";
+}
+.aa-icon-user-minus:before {
+    content: "\f181";
+}
+.aa-icon-user-refresh:before {
+    content: "\f182";
+}
+.aa-icon-user-up:before {
+    content: "\f183";
+}
+.aa-icon-user:before {
+    content: "\f184";
+}
+.aa-icon-users:before {
+    content: "\f185";
+}
+.aa-icon-whatsapp:before {
+    content: "\f186";
+}
+.aa-icon-youtube:before {
+    content: "\f187";
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>app-arena-icons</h1>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-aa-analytics"></i>
+            </span>
+            <br>
+            <span class='label'>aa-analytics</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-arrow-down"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-down</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-arrow-left"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-arrow-right-circle"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-arrow-right"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-arrow-up"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-up</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-balance-scale"></i>
+            </span>
+            <br>
+            <span class='label'>balance-scale</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-bar-chart"></i>
+            </span>
+            <br>
+            <span class='label'>bar-chart</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-bell"></i>
+            </span>
+            <br>
+            <span class='label'>bell</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-bolt-o"></i>
+            </span>
+            <br>
+            <span class='label'>bolt-o</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-bolt"></i>
+            </span>
+            <br>
+            <span class='label'>bolt</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-box"></i>
+            </span>
+            <br>
+            <span class='label'>box</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-browser-plus"></i>
+            </span>
+            <br>
+            <span class='label'>browser-plus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-browser"></i>
+            </span>
+            <br>
+            <span class='label'>browser</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-brush"></i>
+            </span>
+            <br>
+            <span class='label'>brush</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-bullhorn"></i>
+            </span>
+            <br>
+            <span class='label'>bullhorn</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-calendar"></i>
+            </span>
+            <br>
+            <span class='label'>calendar</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-caret-down"></i>
+            </span>
+            <br>
+            <span class='label'>caret-down</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-caret-left"></i>
+            </span>
+            <br>
+            <span class='label'>caret-left</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-caret-right"></i>
+            </span>
+            <br>
+            <span class='label'>caret-right</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-caret-up"></i>
+            </span>
+            <br>
+            <span class='label'>caret-up</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-chart"></i>
+            </span>
+            <br>
+            <span class='label'>chart</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-check"></i>
+            </span>
+            <br>
+            <span class='label'>check</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-chevron-down"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-down</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-chevron-left"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-left</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-chevron-right"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-right</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-chevron-up"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-up</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-circle-o-notch"></i>
+            </span>
+            <br>
+            <span class='label'>circle-o-notch</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-circle"></i>
+            </span>
+            <br>
+            <span class='label'>circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-clipboard"></i>
+            </span>
+            <br>
+            <span class='label'>clipboard</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-close"></i>
+            </span>
+            <br>
+            <span class='label'>close</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-cloud-upload"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-upload</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-cog-star"></i>
+            </span>
+            <br>
+            <span class='label'>cog-star</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-cog"></i>
+            </span>
+            <br>
+            <span class='label'>cog</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-colors"></i>
+            </span>
+            <br>
+            <span class='label'>colors</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-comment-chart"></i>
+            </span>
+            <br>
+            <span class='label'>comment-chart</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-comment-text"></i>
+            </span>
+            <br>
+            <span class='label'>comment-text</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-comment"></i>
+            </span>
+            <br>
+            <span class='label'>comment</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-crop"></i>
+            </span>
+            <br>
+            <span class='label'>crop</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-css"></i>
+            </span>
+            <br>
+            <span class='label'>css</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-customer"></i>
+            </span>
+            <br>
+            <span class='label'>customer</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-desktop"></i>
+            </span>
+            <br>
+            <span class='label'>desktop</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-digital-chart"></i>
+            </span>
+            <br>
+            <span class='label'>digital-chart</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-domain"></i>
+            </span>
+            <br>
+            <span class='label'>domain</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-dot-circle-o"></i>
+            </span>
+            <br>
+            <span class='label'>dot-circle-o</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-download"></i>
+            </span>
+            <br>
+            <span class='label'>download</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-ellipsis"></i>
+            </span>
+            <br>
+            <span class='label'>ellipsis</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-exclamation-circle"></i>
+            </span>
+            <br>
+            <span class='label'>exclamation-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-external-link"></i>
+            </span>
+            <br>
+            <span class='label'>external-link</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-eye"></i>
+            </span>
+            <br>
+            <span class='label'>eye</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-facebook-app"></i>
+            </span>
+            <br>
+            <span class='label'>facebook-app</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-facebook-apps"></i>
+            </span>
+            <br>
+            <span class='label'>facebook-apps</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-facebook"></i>
+            </span>
+            <br>
+            <span class='label'>facebook</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-file-pdf"></i>
+            </span>
+            <br>
+            <span class='label'>file-pdf</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-file"></i>
+            </span>
+            <br>
+            <span class='label'>file</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-flag-checkered"></i>
+            </span>
+            <br>
+            <span class='label'>flag-checkered</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-flag"></i>
+            </span>
+            <br>
+            <span class='label'>flag</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-floppy"></i>
+            </span>
+            <br>
+            <span class='label'>floppy</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-gallery"></i>
+            </span>
+            <br>
+            <span class='label'>gallery</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-github"></i>
+            </span>
+            <br>
+            <span class='label'>github</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-globe-filled"></i>
+            </span>
+            <br>
+            <span class='label'>globe-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-globe"></i>
+            </span>
+            <br>
+            <span class='label'>globe</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-google-plus"></i>
+            </span>
+            <br>
+            <span class='label'>google-plus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-graduation-cap"></i>
+            </span>
+            <br>
+            <span class='label'>graduation-cap</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-grid-full"></i>
+            </span>
+            <br>
+            <span class='label'>grid-full</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-grid-two"></i>
+            </span>
+            <br>
+            <span class='label'>grid-two</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-heart-filled"></i>
+            </span>
+            <br>
+            <span class='label'>heart-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-heart"></i>
+            </span>
+            <br>
+            <span class='label'>heart</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-html"></i>
+            </span>
+            <br>
+            <span class='label'>html</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-image"></i>
+            </span>
+            <br>
+            <span class='label'>image</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-info-circle"></i>
+            </span>
+            <br>
+            <span class='label'>info-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-key"></i>
+            </span>
+            <br>
+            <span class='label'>key</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-label"></i>
+            </span>
+            <br>
+            <span class='label'>label</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-lightbulb"></i>
+            </span>
+            <br>
+            <span class='label'>lightbulb</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-like-plus"></i>
+            </span>
+            <br>
+            <span class='label'>like-plus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-line-chart"></i>
+            </span>
+            <br>
+            <span class='label'>line-chart</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-link"></i>
+            </span>
+            <br>
+            <span class='label'>link</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-list"></i>
+            </span>
+            <br>
+            <span class='label'>list</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-lock"></i>
+            </span>
+            <br>
+            <span class='label'>lock</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-log-in"></i>
+            </span>
+            <br>
+            <span class='label'>log-in</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-log-out"></i>
+            </span>
+            <br>
+            <span class='label'>log-out</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-mail"></i>
+            </span>
+            <br>
+            <span class='label'>mail</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-menu-circle"></i>
+            </span>
+            <br>
+            <span class='label'>menu-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-minus"></i>
+            </span>
+            <br>
+            <span class='label'>minus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-mobile-check"></i>
+            </span>
+            <br>
+            <span class='label'>mobile-check</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-mobile"></i>
+            </span>
+            <br>
+            <span class='label'>mobile</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-mouse-click"></i>
+            </span>
+            <br>
+            <span class='label'>mouse-click</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-multi-select"></i>
+            </span>
+            <br>
+            <span class='label'>multi-select</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-newsletter"></i>
+            </span>
+            <br>
+            <span class='label'>newsletter</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-paper-plane-o"></i>
+            </span>
+            <br>
+            <span class='label'>paper-plane-o</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-pencil-circle"></i>
+            </span>
+            <br>
+            <span class='label'>pencil-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-pencil"></i>
+            </span>
+            <br>
+            <span class='label'>pencil</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-play-circle"></i>
+            </span>
+            <br>
+            <span class='label'>play-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-plug"></i>
+            </span>
+            <br>
+            <span class='label'>plug</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-plus"></i>
+            </span>
+            <br>
+            <span class='label'>plus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-pointer"></i>
+            </span>
+            <br>
+            <span class='label'>pointer</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-popularity"></i>
+            </span>
+            <br>
+            <span class='label'>popularity</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-question-circle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>question-circle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-question-circle"></i>
+            </span>
+            <br>
+            <span class='label'>question-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-refresh"></i>
+            </span>
+            <br>
+            <span class='label'>refresh</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-responsive"></i>
+            </span>
+            <br>
+            <span class='label'>responsive</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-scale"></i>
+            </span>
+            <br>
+            <span class='label'>scale</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-search-circle"></i>
+            </span>
+            <br>
+            <span class='label'>search-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-search"></i>
+            </span>
+            <br>
+            <span class='label'>search</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-select"></i>
+            </span>
+            <br>
+            <span class='label'>select</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-share"></i>
+            </span>
+            <br>
+            <span class='label'>share</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-shield"></i>
+            </span>
+            <br>
+            <span class='label'>shield</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-slider-arrow-left"></i>
+            </span>
+            <br>
+            <span class='label'>slider-arrow-left</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-slider-arrow-right"></i>
+            </span>
+            <br>
+            <span class='label'>slider-arrow-right</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-sort-amount-asc"></i>
+            </span>
+            <br>
+            <span class='label'>sort-amount-asc</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-sort-amount-desc"></i>
+            </span>
+            <br>
+            <span class='label'>sort-amount-desc</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-stadion"></i>
+            </span>
+            <br>
+            <span class='label'>stadion</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-star"></i>
+            </span>
+            <br>
+            <span class='label'>star</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-tablet"></i>
+            </span>
+            <br>
+            <span class='label'>tablet</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-target"></i>
+            </span>
+            <br>
+            <span class='label'>target</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-text"></i>
+            </span>
+            <br>
+            <span class='label'>text</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-thumbs-o-up"></i>
+            </span>
+            <br>
+            <span class='label'>thumbs-o-up</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-thumbs"></i>
+            </span>
+            <br>
+            <span class='label'>thumbs</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-ticket"></i>
+            </span>
+            <br>
+            <span class='label'>ticket</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-time-filter"></i>
+            </span>
+            <br>
+            <span class='label'>time-filter</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-time"></i>
+            </span>
+            <br>
+            <span class='label'>time</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-tool"></i>
+            </span>
+            <br>
+            <span class='label'>tool</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-trash"></i>
+            </span>
+            <br>
+            <span class='label'>trash</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-trophy"></i>
+            </span>
+            <br>
+            <span class='label'>trophy</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-twitter"></i>
+            </span>
+            <br>
+            <span class='label'>twitter</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-two-users"></i>
+            </span>
+            <br>
+            <span class='label'>two-users</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-upload"></i>
+            </span>
+            <br>
+            <span class='label'>upload</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-user-circle"></i>
+            </span>
+            <br>
+            <span class='label'>user-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-user-minus"></i>
+            </span>
+            <br>
+            <span class='label'>user-minus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-user-refresh"></i>
+            </span>
+            <br>
+            <span class='label'>user-refresh</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-user-up"></i>
+            </span>
+            <br>
+            <span class='label'>user-up</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-user"></i>
+            </span>
+            <br>
+            <span class='label'>user</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-users"></i>
+            </span>
+            <br>
+            <span class='label'>users</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-whatsapp"></i>
+            </span>
+            <br>
+            <span class='label'>whatsapp</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="aa-icon aa-icon-youtube"></i>
+            </span>
+            <br>
+            <span class='label'>youtube</span>
+        </div>
+
+
+</body>
+</html>
