@@ -29,7 +29,7 @@ echo "$(date): Start building JS"
 bower install --allow-root > /dev/null
 npm i -g icon-font-generator grunt
 yarn install > /dev/null
-yarn upgrade
+yarn upgrade > /dev/null
 grunt
 echo "$(date): End building JS"
 
