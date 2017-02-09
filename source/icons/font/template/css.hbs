@@ -1,3 +1,5 @@
+$aa-font-path: "../fonts" !default;
+
 @font-face {
     font-family: "{{ fontName }}";
     src: {{{ src }}};
@@ -22,8 +24,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+//Icon Name Variables
+{{# each codepoints }}
+${{ ../classPrefix }}{{ @key }}: "\\{{ this }}";
+{{/ each }}
+
+
 {{# each codepoints }}
 .{{ ../classPrefix }}{{ @key }}:before {
-    content: "\\{{ this }}";
+    content: ${{ ../classPrefix }}{{ @key }};
 }
 {{/ each }}
