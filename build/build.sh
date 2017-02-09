@@ -23,7 +23,7 @@ sed -i "s|/var/www/html/|${TARGET}|g" config/config.yml
 # Build the theme: Download JS libs and build webfont and compile CSS
 echo "$(date): Start building JS"
 bower install --allow-root
-npm i -g icon-font-generator
+npm i -g icon-font-generator grunt
 yarn install
 yarn upgrade
 grunt
