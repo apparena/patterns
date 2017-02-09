@@ -26,6 +26,7 @@ module.exports = function (grunt) {
                     '--tag=aa-icon',
                     '--htmltp=source/icons/font/template/html.hbs', // HTML handlebars template path (Optional)
                     '--csstp=source/icons/font/template/css.hbs', // CSS handlebars template path (Optional)
+                    '--csspath=source/fonts/app-arena-icons.scss',  // CSS output path (Defaults to <out>/<name>.css)
                     '--round=10e12', // Setup SVG rounding (Default: 10e12)
                     '--descent=150', // Offset applied to the baseline (Default: 0)
                     '--mono=true', // Make font monospace (Default: false)
