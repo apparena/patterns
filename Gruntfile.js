@@ -13,8 +13,7 @@ module.exports = function (grunt) {
             }
         },
         run: {
-            options: {
-            },
+            options: {},
             // Runt the icon generator https://github.com/Workshape/icon-font-generator
             icon_generator: {
                 cmd: 'icon-font-generator',
@@ -25,8 +24,13 @@ module.exports = function (grunt) {
                     '--prefix=aa-icon',
                     //'--normalize=true',
                     '--tag=aa-icon',
-                    '--htmtp=source/icons/font/template/css.hbs', // HTML handlebars template path (Optional)
-                    '--csstp=source/icons/font/template/html.hbs', // CSS handlebars template path (Optional)
+                    '--htmtp=source/icons/font/template/html.hbs', // HTML handlebars template path (Optional)
+                    '--csstp=source/icons/font/template/css.hbs', // CSS handlebars template path (Optional)
+                    '--round=10e12', // Setup SVG rounding (Default: 10e12)
+                    '--descent=150', // Offset applied to the baseline (Default: 0)
+                    '--mono=true', // Make font monospace (Default: false)
+                    '--height=1000', // Fixed font height value
+                    '--center=true', // Center font horizontally
                 ]
             }
         }
