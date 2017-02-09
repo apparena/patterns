@@ -31,6 +31,5 @@ echo "$(date): End building JS"
 
 # Compress source code to generate the arctifact
 echo "$(date): Start building artifact"
-cd ${RootPath}
 tar -cvzf artifact.tar.gz . --exclude=artifact.tar.gz --warning=no-file-changed
 echo "$(date): End building artifact"
