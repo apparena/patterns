@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width"/>
     <meta about="App-Arena.com">
 
-    <link rel="stylesheet" href="../../css/app-arena-styles.css?1486576448" media="all"/>
-    <!--<link rel="stylesheet" href="../../css/website-wordpress-styles.css?1486576448" media="all"/>-->
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1486576448" media="all"/>
+    <link rel="stylesheet" href="../../css/app-arena-styles.css?1486634023" media="all"/>
+    <!--<link rel="stylesheet" href="../../css/website-wordpress-styles.css?1486634023" media="all"/>-->
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1486634023" media="all"/>
 
-    <!--<link rel="stylesheet" href="../../css/bootstrap.css?1486576448" media="all"/>
-    <link rel="stylesheet" href="../../css/bootstrap-theme.css?1486576448" media="all"/>-->
+    <!--<link rel="stylesheet" href="../../css/bootstrap.css?1486634023" media="all"/>
+    <link rel="stylesheet" href="../../css/bootstrap-theme.css?1486634023" media="all"/>-->
 
     <script src="../../js/vendor/jquery/dist/jquery.min.js"></script>
     <script src="../../js/vendor/tether/dist/js/tether.min.js"></script>
@@ -32,8 +32,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1486576448" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1486576448" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1486634023" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1486634023" media="all" />
 
     <!-- End Pattern Lab -->
 
@@ -370,9 +370,8 @@
         <div id="atoms-icons" class="sg-pattern">
           <div class="sg-pattern-head">
             <h3 class="sg-pattern-title">
-              <a href="../../patterns/00-atoms-icons-icons@inprogress/00-atoms-icons-icons@inprogress.html" class="patternLink" data-patternpartial="atoms-icons" title="Link to Pattern">
+              <a href="../../patterns/00-atoms-icons-icons/00-atoms-icons-icons.html" class="patternLink" data-patternpartial="atoms-icons" title="Link to Pattern">
                   Icons
-                    <span class="sg-pattern-state inprogress">inprogress</span>
               </a>
             </h3>
             <div class="sg-pattern-breadcrumb"></div>
@@ -382,102 +381,29 @@
             
           </div>
           <div class="sg-pattern-example">
-            <div class="container">
-    <div class="row">
-        <div class="col">
-            <h1>App-Arena Iconset & Iconfont</h1>
-            <p>Icons for our websites are hold in a <a href="https://icomoon.io/app" rel="noreferrer nofollow" target="_blank">IcoMoon App</a> project. <br>
-                The icons can only be used in a single color when using the iconfont. <br>
-                All icons are not only bundled in one iconfont but also exported to SVG, PDF and PNG.
-            </p>
-            <h2>Instructions</h2>
-            <h3>Asset locations</h3>
-            <p>The iconset is located in the <em>/source/iconsets/app-arena-website/</em> folder of the <em>github.com/apparena/patterns</em> project.</p>
-            <p>
-                <ul>
-                    <li>
-                        <strong>app-arena-website-icomoon.json</strong> <br>
-                        project configuration<br>
-                        from <em>IcoMoon App ⭢ Manage Projects ⭢ Download</em>
-                    </li>
-                    <li>
-                        <strong>icomoon-font/</strong> <br>
-                        contents of the extracted <em>app-arena-webseite.zip</em> archive. <br>
-                        from <em>IcoMoon App ⭢ Generate Font ⭢ Download</em>
-                    </li>
-                    <li>
-                        <strong>icomoon-svg/</strong> <br>
-                        contents of the extracted <em>icomoon_*_icons.zip</em> archive. <br>
-                        from <em>IcoMoon App ⭢ Generate SVG & More ⭢ Download</em>
-                    </li>
-                </ul>
-            </p>
-            <h3>How to add new icons</h3>
-            <div class="alert alert-info" role="alert">
-                <strong>Requirements:</strong> You should be familiar with git. Otherwise get help from a developer. :)</div>
-            <div class="alert alert-danger" role="alert">
-                <strong>Attention!</strong> It is very important to export the project configuration file and push it to the repository after you made changes. Otherwise icons may get lost.
+            <section class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-5 text-center">
+                    <hr class="boldline">
+                    <h2 class="mb-4">Icons</h2>
+
+                    <h5 class="text-muted mb-4">
+                        Use icons from our webfont to provide a unfied user experience.
+                    </h5>
+                </div>
             </div>
-            <h4>Create new Icons in Photoshop, Illustrator ...</h4>
-            <p>Export the icons as SVG. Keep the following points in mind while drawing the icons:
-                <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes" rel="noreferrer nofollow" target="_blank">Strokes</a> get ignored when generating fonts or CSH files.<br>You can convert/expand <mark>strokes to fills</mark>.</li>
-                    <li>Text elements get ignored. You could convert them to fills.</li>
-                    <li>Unite/combine your fills and avoid overlapping paths.</li>
-                    <li>Instead of using white fills for making holes, subtract the shape in the front from the shape in the back. In Adobe Illustrator, this can be done using the Pathfinder window. In general, avoid overlapping shapes with the same color.</li>
-                    <li>Adding a bitmap image (PNG, JPEG, etc.) to an SVG image does not make it vector. Bitmap images embedded in SVGs get ignored.</li>
-                </ul>
-            </p>
-            <p>Please read the <a href="https://icomoon.io/#docs" rel="noreferrer nofollow" target="_blank">IcoMoon Docs</a>!</p>
-            <h4>Import the SVG to IcoMoon</h4>
-            <p>
-                <ul>
-                    <li>Pull current <em>patterns repository</em> from <a href="https://github.com/apparena/patterns">github.com/apparena/patterns</a></li>
-                    <li>Open the <a href="https://icomoon.io/app" rel="noreferrer nofollow" target="_blank">IcoMoon App</a></li>
-                    <li>
-                        Manage Projects<br>
-                        <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/d9dAVxJTk8wyM0k/upload.png" class="img-fluid">
-                    </li>
-                    <li>Import the current <em>/source/iconsets/app-arena-website/app-arena-website-icomoon.json</em> from the repository<br>
-                        <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/wpNPQjSpEKlFWmt/upload.png" class="img-fluid"></li>
-                    <li>Load the project<br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/YFcYyvxixkPr9dW/upload.png" class="img-fluid"></li>
-                    <li>Drag & drop svg file(s) of the icons onto the <em>App-Arena</em> section<br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/ldSgT7Z4M4GJASA/upload.png" class="img-fluid"></li>
-                    <li>Edit the icons if necessary</li>
-                    <li>Select the new icons, you want to include to the font<br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/xXHLh7kmtKJYkRS/upload.png" class="img-fluid"></li>
-                    <li>Click <em>Generate Font</em><br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/fy0zmBO4MPlTdEE/upload.png" class="img-fluid">
-                        <div class="alert alert-danger" role="alert">Do not change the Preferences of the font <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/1Hn6llWRqVRa1ET/upload.png" class="img-fluid"></div>
-                    </li>
-                    <li>Name your Icons appropriately and try to find a fitting fallback utf-8 symbol that is not already used<br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/ft0mZUTjx0hefCu/upload.png" class="img-fluid"></li>
-                    <li>Download your fontpackage (<em>app-arenawebsite.zip</em>) <br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/nCFONuYhr7GB4Xq/upload.png" class="img-fluid"></li>
-                    <li>Download your iconpackage (<em>icomoon_*_icons.zip</em>) <br><img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/FRcLR90ylgBoPw2/upload.png" class="img-fluid"></li>
-                    <li>
-                        Manage Projects<br>
-                        <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/d9dAVxJTk8wyM0k/upload.png" class="img-fluid">
-                    </li>
-                    <li>Download the updated project file <img src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/115407/3037704/HaRFyCbsaadN7og/upload.png" class="img-fluid"></li>
-                    <li>Replace the project file <em>/source/iconsets/app-arena-website/app-arena-website-icomoon.json</em> with the new one in the repository</li>
-                    <li>Replace the content of the <em>/source/iconsets/app-arena-website/icomoon-font/</em> with the content of <em>app-arenawebsite.zip</em></li>
-                    <li>Replace the content of the <em>/source/iconsets/app-arena-website/icomoon-svg/</em> with the content of <em>icomoon_*_icons.zip</em></li>
-                    <li>Compile PatternLab with <code>$ grunt</code> and <code>$ composer generate</code></li>
-                    <li>Commit the project, tag it with a new version and push it to github</li>
-                    <li>Done :) You can now use the updated icons in other Projects. You probably need to <code>$ composer update</code></li>
-                </ul>
-            </p>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <h2>Demo</h2>
-            <h3><br>Iconfont</h3>
-            <iframe src="/iconsets/app-arena-website/icomoon-font/demo.html" frameborder="0" width="100%" height="400"></iframe>
-            <h3><br>Iconset</h3>
-            <iframe src="/iconsets/app-arena-website/icomoon-svg/demo.html" frameborder="0" width="100%" height="400"></iframe>
-        </div>
-    </div>
-</div>
+</section>
+
+<section id="icons" class="icons">
+    <iframe src="/fonts/icons.html" frameborder="0" width="100%" height="300"></iframe>
+</section>
           </div>
           <script type="text/json" id="sg-pattern-data-atoms-icons" class="sg-pattern-data">
-            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"icons"},"patternDesc":"<p>A custom iconset created using icomoon.<\/p>","patternExtension":"mustache","patternName":"Icons","patternPartial":"atoms-icons","patternState":"inprogress"}
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"icons"},"patternDesc":"<p>A custom iconset created using icomoon.<\/p>","patternExtension":"mustache","patternName":"Icons","patternPartial":"atoms-icons","patternState":""}
           </script>
         </div><!--end .sg-pattern-->
         <div id="viewall-atoms-image" class="sg-pattern-category">
@@ -3519,11 +3445,11 @@
           </div>
           <div class="sg-pattern-example">
             <div class="m-usp">
-    <span class="m-usp-icon aa-icon aa-icon-user-circle"></span>
+    <i class="m-usp-icon aa-icon aa-icon-user-circle"></i>
     <h3 class="m-usp-title">Server in Deutschland</h3>
     <p class="m-usp-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, consetetur sadipscing elitr</p>
         <p class="m-usp-more-link">
-            <a href="#">Mehr erfahren <span class="aa-icon aa-icon-arrow-right"></span></a>
+            <a href="#">Mehr erfahren <i class="aa-icon aa-icon-arrow-right"></i></a>
         </p>
 </div>
           </div>
@@ -3744,38 +3670,38 @@
             <div class="row">
                     <div class="col-md-6 col-lg-3">
                         <div class="m-usp">
-                            <span class="m-usp-icon aa-icon aa-icon-chart"></span>
+                            <i class="m-usp-icon aa-icon aa-icon-chart"></i>
                             <h3 class="m-usp-title">Flexible Laufzeitverlängerung</h3>
                             <p class="m-usp-description">Lorem ipsum dolor sit amet</p>
                                 <p class="m-usp-more-link">
-                                    <a href="#">Mehr erfahren <span class="aa-icon aa-icon-arrow-right"></span></a>
+                                    <a href="#">Mehr erfahren <i class="aa-icon aa-icon-arrow-right"></i></a>
                                 </p>
                         </div>                    </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="m-usp">
-                            <span class="m-usp-icon aa-icon aa-icon-upload"></span>
+                            <i class="m-usp-icon aa-icon aa-icon-upload"></i>
                             <h3 class="m-usp-title">Stark serviceorientiert</h3>
                             <p class="m-usp-description">consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
                                 <p class="m-usp-more-link">
-                                    <a href="#">Mehr erfahren <span class="aa-icon aa-icon-arrow-right"></span></a>
+                                    <a href="#">Mehr erfahren <i class="aa-icon aa-icon-arrow-right"></i></a>
                                 </p>
                         </div>                    </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="m-usp">
-                            <span class="m-usp-icon aa-icon aa-icon-user-circle"></span>
+                            <i class="m-usp-icon aa-icon aa-icon-user-circle"></i>
                             <h3 class="m-usp-title">Server in Deutschland</h3>
                             <p class="m-usp-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, consetetur sadipscing elitr</p>
                                 <p class="m-usp-more-link">
-                                    <a href="#">Mehr erfahren <span class="aa-icon aa-icon-arrow-right"></span></a>
+                                    <a href="#">Mehr erfahren <i class="aa-icon aa-icon-arrow-right"></i></a>
                                 </p>
                         </div>                    </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="m-usp">
-                            <span class="m-usp-icon aa-icon aa-icon-star"></span>
+                            <i class="m-usp-icon aa-icon aa-icon-star"></i>
                             <h3 class="m-usp-title">Breites Produktportfolio</h3>
                             <p class="m-usp-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
                                 <p class="m-usp-more-link">
-                                    <a href="#">Mehr erfahren <span class="aa-icon aa-icon-arrow-right"></span></a>
+                                    <a href="#">Mehr erfahren <i class="aa-icon aa-icon-arrow-right"></i></a>
                                 </p>
                         </div>                    </div>
             </div>
@@ -5332,10 +5258,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1486576448">
+<script id="pl-js-polyfill-insert-1486634023">
   (function() {
     if (self != top) {
-      var cb = '1486576448';
+      var cb = '1486634023';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -5345,10 +5271,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1486576448">
+<script id="pl-js-insert-1486634023">
   (function() {
     if (self != top) {
-      var cb = '1486576448';
+      var cb = '1486634023';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

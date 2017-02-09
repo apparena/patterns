@@ -1,0 +1,13 @@
+{
+  "logo": {
+    "jumpLink": {
+      "title": "Logo",
+      "icon-class": "aa-icon-logo",
+      "read-more": {
+        "href": "#",
+        "text": "View logo variants",
+        "icon-class": "aa-icon aa-icon-arrow-right"
+      }
+    }
+  }
+}

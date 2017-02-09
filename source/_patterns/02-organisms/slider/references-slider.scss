@@ -3,8 +3,6 @@
  */
 @import "../../../css/scss/abstracts/variables";
 @import "../../00-atoms/icons/icons";
-/* @import "~slick-carousel/slick/slick.scss";
-@import "~slick-carousel/slick/slick-theme.scss"; */
 
 
 /*=========================================================================
@@ -20,8 +18,8 @@
   $slick-arrow-color: black;
   $slick-dot-color: black;
   $slick-dot-color-active: $slick-dot-color;
-  $slick-prev-character: $aa-icon-slider-arrow-left;
-  $slick-next-character: $aa-icon-slider-arrow-right;
+  $slick-prev-character: 'aa-icon-slider-arrow-left';
+  $slick-next-character: 'aa-icon-slider-arrow-right';
   $slick-dot-character: "\2022" !default;
   $slick-dot-size: 6px !default;
   $slick-opacity-default: 0.75 !default;
