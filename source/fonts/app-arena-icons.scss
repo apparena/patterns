@@ -2,10 +2,10 @@ $aa-font-path: "../fonts" !default;
 
 @font-face {
     font-family: "app-arena-icons";
-    src: url("#{$aa-font-path}/app-arena-icons.eot?d6eb6ce6faf96511795b926d24a1ec24?#iefix") format("embedded-opentype"),
-url("#{$aa-font-path}/app-arena-icons.woff?d6eb6ce6faf96511795b926d24a1ec24") format("woff"),
-url("#{$aa-font-path}/app-arena-icons.ttf?d6eb6ce6faf96511795b926d24a1ec24") format("truetype"),
-url("#{$aa-font-path}/app-arena-icons.svg?d6eb6ce6faf96511795b926d24a1ec24#app-arena-icons") format("svg");
+    src: url("#{$aa-font-path}/app-arena-icons.eot?e6a8b05f0dd0a923e6decada241841e0?#iefix") format("embedded-opentype"),
+url("#{$aa-font-path}/app-arena-icons.woff?e6a8b05f0dd0a923e6decada241841e0") format("woff"),
+url("#{$aa-font-path}/app-arena-icons.ttf?e6a8b05f0dd0a923e6decada241841e0") format("truetype"),
+url("#{$aa-font-path}/app-arena-icons.svg?e6a8b05f0dd0a923e6decada241841e0#app-arena-icons") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -33,7 +33,7 @@ $aa-icon-arrow-left: "\f102";
 $aa-icon-arrow-right-circle: "\f103";
 $aa-icon-arrow-right: "\f104";
 $aa-icon-arrow-up: "\f105";
-$aa-icon-atoms_l: "\f106";
+$aa-icon-atoms-l: "\f106";
 $aa-icon-balance-scale: "\f107";
 $aa-icon-bar-chart: "\f108";
 $aa-icon-bell: "\f109";
@@ -62,7 +62,7 @@ $aa-icon-close: "\f11f";
 $aa-icon-cloud-upload: "\f120";
 $aa-icon-cog-star: "\f121";
 $aa-icon-cog: "\f122";
-$aa-icon-color_l: "\f123";
+$aa-icon-color-l: "\f123";
 $aa-icon-color: "\f124";
 $aa-icon-comment-chart: "\f125";
 $aa-icon-comment-text: "\f126";
@@ -98,12 +98,12 @@ $aa-icon-grid-two: "\f143";
 $aa-icon-heart-filled: "\f144";
 $aa-icon-heart: "\f145";
 $aa-icon-html: "\f146";
-$aa-icon-icons_l: "\f147";
+$aa-icon-icons-l: "\f147";
 $aa-icon-image: "\f148";
 $aa-icon-info-circle: "\f149";
 $aa-icon-key: "\f14a";
 $aa-icon-label: "\f14b";
-$aa-icon-layout_l: "\f14c";
+$aa-icon-layout-l: "\f14c";
 $aa-icon-lightbulb: "\f14d";
 $aa-icon-like-plus: "\f14e";
 $aa-icon-line-chart: "\f14f";
@@ -112,18 +112,18 @@ $aa-icon-list: "\f151";
 $aa-icon-lock: "\f152";
 $aa-icon-log-in: "\f153";
 $aa-icon-log-out: "\f154";
-$aa-icon-logo_l: "\f155";
+$aa-icon-logo-l: "\f155";
 $aa-icon-mail: "\f156";
 $aa-icon-menu-circle: "\f157";
 $aa-icon-minus: "\f158";
 $aa-icon-mobile-check: "\f159";
 $aa-icon-mobile: "\f15a";
-$aa-icon-molecules_l: "\f15b";
+$aa-icon-molecules-l: "\f15b";
 $aa-icon-mouse-click: "\f15c";
 $aa-icon-multi-select: "\f15d";
 $aa-icon-newsletter: "\f15e";
-$aa-icon-organisms_l: "\f15f";
-$aa-icon-pages_l: "\f160";
+$aa-icon-organisms-l: "\f15f";
+$aa-icon-pages-l: "\f160";
 $aa-icon-paper-plane-o: "\f161";
 $aa-icon-pencil-circle: "\f162";
 $aa-icon-pencil: "\f163";
@@ -150,8 +150,8 @@ $aa-icon-stadion: "\f177";
 $aa-icon-star: "\f178";
 $aa-icon-tablet: "\f179";
 $aa-icon-target: "\f17a";
-$aa-icon-templates_l: "\f17b";
-$aa-icon-text_l: "\f17c";
+$aa-icon-templates-l: "\f17b";
+$aa-icon-text-l: "\f17c";
 $aa-icon-text: "\f17d";
 $aa-icon-thumbs-o-up: "\f17e";
 $aa-icon-thumbs: "\f17f";
@@ -189,8 +189,8 @@ $aa-icon-youtube: "\f190";
 .aa-icon-arrow-up:before {
     content: $aa-icon-arrow-up;
 }
-.aa-icon-atoms_l:before {
-    content: $aa-icon-atoms_l;
+.aa-icon-atoms-l:before {
+    content: $aa-icon-atoms-l;
 }
 .aa-icon-balance-scale:before {
     content: $aa-icon-balance-scale;
@@ -276,8 +276,8 @@ $aa-icon-youtube: "\f190";
 .aa-icon-cog:before {
     content: $aa-icon-cog;
 }
-.aa-icon-color_l:before {
-    content: $aa-icon-color_l;
+.aa-icon-color-l:before {
+    content: $aa-icon-color-l;
 }
 .aa-icon-color:before {
     content: $aa-icon-color;
@@ -384,8 +384,8 @@ $aa-icon-youtube: "\f190";
 .aa-icon-html:before {
     content: $aa-icon-html;
 }
-.aa-icon-icons_l:before {
-    content: $aa-icon-icons_l;
+.aa-icon-icons-l:before {
+    content: $aa-icon-icons-l;
 }
 .aa-icon-image:before {
     content: $aa-icon-image;
@@ -399,8 +399,8 @@ $aa-icon-youtube: "\f190";
 .aa-icon-label:before {
     content: $aa-icon-label;
 }
-.aa-icon-layout_l:before {
-    content: $aa-icon-layout_l;
+.aa-icon-layout-l:before {
+    content: $aa-icon-layout-l;
 }
 .aa-icon-lightbulb:before {
     content: $aa-icon-lightbulb;
@@ -426,8 +426,8 @@ $aa-icon-youtube: "\f190";
 .aa-icon-log-out:before {
     content: $aa-icon-log-out;
 }
-.aa-icon-logo_l:before {
-    content: $aa-icon-logo_l;
+.aa-icon-logo-l:before {
+    content: $aa-icon-logo-l;
 }
 .aa-icon-mail:before {
     content: $aa-icon-mail;
@@ -444,8 +444,8 @@ $aa-icon-youtube: "\f190";
 .aa-icon-mobile:before {
     content: $aa-icon-mobile;
 }
-.aa-icon-molecules_l:before {
-    content: $aa-icon-molecules_l;
+.aa-icon-molecules-l:before {
+    content: $aa-icon-molecules-l;
 }
 .aa-icon-mouse-click:before {
     content: $aa-icon-mouse-click;
@@ -456,11 +456,11 @@ $aa-icon-youtube: "\f190";
 .aa-icon-newsletter:before {
     content: $aa-icon-newsletter;
 }
-.aa-icon-organisms_l:before {
-    content: $aa-icon-organisms_l;
+.aa-icon-organisms-l:before {
+    content: $aa-icon-organisms-l;
 }
-.aa-icon-pages_l:before {
-    content: $aa-icon-pages_l;
+.aa-icon-pages-l:before {
+    content: $aa-icon-pages-l;
 }
 .aa-icon-paper-plane-o:before {
     content: $aa-icon-paper-plane-o;
@@ -540,11 +540,11 @@ $aa-icon-youtube: "\f190";
 .aa-icon-target:before {
     content: $aa-icon-target;
 }
-.aa-icon-templates_l:before {
-    content: $aa-icon-templates_l;
+.aa-icon-templates-l:before {
+    content: $aa-icon-templates-l;
 }
-.aa-icon-text_l:before {
-    content: $aa-icon-text_l;
+.aa-icon-text-l:before {
+    content: $aa-icon-text-l;
 }
 .aa-icon-text:before {
     content: $aa-icon-text;

@@ -8808,7 +8808,7 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: "app-arena-icons";
-  src: url("../fonts/app-arena-icons.eot?d6eb6ce6faf96511795b926d24a1ec24?#iefix") format("embedded-opentype"), url("../fonts/app-arena-icons.woff?d6eb6ce6faf96511795b926d24a1ec24") format("woff"), url("../fonts/app-arena-icons.ttf?d6eb6ce6faf96511795b926d24a1ec24") format("truetype"), url("../fonts/app-arena-icons.svg?d6eb6ce6faf96511795b926d24a1ec24#app-arena-icons") format("svg");
+  src: url("../fonts/app-arena-icons.eot?e6a8b05f0dd0a923e6decada241841e0?#iefix") format("embedded-opentype"), url("../fonts/app-arena-icons.woff?e6a8b05f0dd0a923e6decada241841e0") format("woff"), url("../fonts/app-arena-icons.ttf?e6a8b05f0dd0a923e6decada241841e0") format("truetype"), url("../fonts/app-arena-icons.svg?e6a8b05f0dd0a923e6decada241841e0#app-arena-icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -8842,7 +8842,7 @@ input[type="button"].btn-block {
 .aa-icon-arrow-up:before {
   content: ""; }
 
-.aa-icon-atoms_l:before {
+.aa-icon-atoms-l:before {
   content: ""; }
 
 .aa-icon-balance-scale:before {
@@ -8929,7 +8929,7 @@ input[type="button"].btn-block {
 .aa-icon-cog:before {
   content: ""; }
 
-.aa-icon-color_l:before {
+.aa-icon-color-l:before {
   content: ""; }
 
 .aa-icon-color:before {
@@ -9037,7 +9037,7 @@ input[type="button"].btn-block {
 .aa-icon-html:before {
   content: ""; }
 
-.aa-icon-icons_l:before {
+.aa-icon-icons-l:before {
   content: ""; }
 
 .aa-icon-image:before {
@@ -9052,7 +9052,7 @@ input[type="button"].btn-block {
 .aa-icon-label:before {
   content: ""; }
 
-.aa-icon-layout_l:before {
+.aa-icon-layout-l:before {
   content: ""; }
 
 .aa-icon-lightbulb:before {
@@ -9079,7 +9079,7 @@ input[type="button"].btn-block {
 .aa-icon-log-out:before {
   content: ""; }
 
-.aa-icon-logo_l:before {
+.aa-icon-logo-l:before {
   content: ""; }
 
 .aa-icon-mail:before {
@@ -9097,7 +9097,7 @@ input[type="button"].btn-block {
 .aa-icon-mobile:before {
   content: ""; }
 
-.aa-icon-molecules_l:before {
+.aa-icon-molecules-l:before {
   content: ""; }
 
 .aa-icon-mouse-click:before {
@@ -9109,10 +9109,10 @@ input[type="button"].btn-block {
 .aa-icon-newsletter:before {
   content: ""; }
 
-.aa-icon-organisms_l:before {
+.aa-icon-organisms-l:before {
   content: ""; }
 
-.aa-icon-pages_l:before {
+.aa-icon-pages-l:before {
   content: ""; }
 
 .aa-icon-paper-plane-o:before {
@@ -9193,10 +9193,10 @@ input[type="button"].btn-block {
 .aa-icon-target:before {
   content: ""; }
 
-.aa-icon-templates_l:before {
+.aa-icon-templates-l:before {
   content: ""; }
 
-.aa-icon-text_l:before {
+.aa-icon-text-l:before {
   content: ""; }
 
 .aa-icon-text:before {
@@ -11455,7 +11455,7 @@ a.bg-inverse:hover {
 
 @font-face {
   font-family: "app-arena-icons";
-  src: url("../fonts/app-arena-icons.eot?d6eb6ce6faf96511795b926d24a1ec24?#iefix") format("embedded-opentype"), url("../fonts/app-arena-icons.woff?d6eb6ce6faf96511795b926d24a1ec24") format("woff"), url("../fonts/app-arena-icons.ttf?d6eb6ce6faf96511795b926d24a1ec24") format("truetype"), url("../fonts/app-arena-icons.svg?d6eb6ce6faf96511795b926d24a1ec24#app-arena-icons") format("svg");
+  src: url("../fonts/app-arena-icons.eot?e6a8b05f0dd0a923e6decada241841e0?#iefix") format("embedded-opentype"), url("../fonts/app-arena-icons.woff?e6a8b05f0dd0a923e6decada241841e0") format("woff"), url("../fonts/app-arena-icons.ttf?e6a8b05f0dd0a923e6decada241841e0") format("truetype"), url("../fonts/app-arena-icons.svg?e6a8b05f0dd0a923e6decada241841e0#app-arena-icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -11489,7 +11489,7 @@ a.bg-inverse:hover {
 .aa-icon-arrow-up:before {
   content: ""; }
 
-.aa-icon-atoms_l:before {
+.aa-icon-atoms-l:before {
   content: ""; }
 
 .aa-icon-balance-scale:before {
@@ -11576,7 +11576,7 @@ a.bg-inverse:hover {
 .aa-icon-cog:before {
   content: ""; }
 
-.aa-icon-color_l:before {
+.aa-icon-color-l:before {
   content: ""; }
 
 .aa-icon-color:before {
@@ -11684,7 +11684,7 @@ a.bg-inverse:hover {
 .aa-icon-html:before {
   content: ""; }
 
-.aa-icon-icons_l:before {
+.aa-icon-icons-l:before {
   content: ""; }
 
 .aa-icon-image:before {
@@ -11699,7 +11699,7 @@ a.bg-inverse:hover {
 .aa-icon-label:before {
   content: ""; }
 
-.aa-icon-layout_l:before {
+.aa-icon-layout-l:before {
   content: ""; }
 
 .aa-icon-lightbulb:before {
@@ -11726,7 +11726,7 @@ a.bg-inverse:hover {
 .aa-icon-log-out:before {
   content: ""; }
 
-.aa-icon-logo_l:before {
+.aa-icon-logo-l:before {
   content: ""; }
 
 .aa-icon-mail:before {
@@ -11744,7 +11744,7 @@ a.bg-inverse:hover {
 .aa-icon-mobile:before {
   content: ""; }
 
-.aa-icon-molecules_l:before {
+.aa-icon-molecules-l:before {
   content: ""; }
 
 .aa-icon-mouse-click:before {
@@ -11756,10 +11756,10 @@ a.bg-inverse:hover {
 .aa-icon-newsletter:before {
   content: ""; }
 
-.aa-icon-organisms_l:before {
+.aa-icon-organisms-l:before {
   content: ""; }
 
-.aa-icon-pages_l:before {
+.aa-icon-pages-l:before {
   content: ""; }
 
 .aa-icon-paper-plane-o:before {
@@ -11840,10 +11840,10 @@ a.bg-inverse:hover {
 .aa-icon-target:before {
   content: ""; }
 
-.aa-icon-templates_l:before {
+.aa-icon-templates-l:before {
   content: ""; }
 
-.aa-icon-text_l:before {
+.aa-icon-text-l:before {
   content: ""; }
 
 .aa-icon-text:before {

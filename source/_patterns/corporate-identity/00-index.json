@@ -3,7 +3,7 @@
     "logos": {
       "title": "Logos",
       "description": "Learn how to use our logo",
-      "icon-class": "aa-icon aa-icon-logo",
+      "icon-class": "aa-icon aa-icon-logo-l",
       "read-more": {
         "href": "link.corporate-identity-brand",
         "text": "View logo variants",
@@ -13,7 +13,7 @@
     "colors": {
       "title": "Colors",
       "description": "View our color palette and the use case of each color",
-      "icon-class": "aa-icon aa-icon-colors",
+      "icon-class": "aa-icon aa-icon-color-l",
       "read-more": {
         "href": "link.corporate-identity-brand",
         "text": "View our colors",
@@ -23,7 +23,7 @@
     "typography": {
       "title": "Typography",
       "description": "Fonts and font-sizes we use in our interfaces and print media.",
-      "icon-class": "aa-icon aa-icon-typography",
+      "icon-class": "aa-icon aa-icon-text-l",
       "read-more": {
         "href": "link.corporate-identity-brand",
         "text": "View all types",
@@ -33,7 +33,7 @@
     "icons": {
       "title": "Icons",
       "description": "Our icon font provides icons for a lot of use cases. Check it out.",
-      "icon-class": "aa-icon aa-icon-star",
+      "icon-class": "aa-icon aa-icon-icons-l",
       "read-more": {
         "href": "link.corporate-identity-brand",
         "text": "View all icons",
@@ -43,7 +43,7 @@
     "layout": {
       "title": "Layout",
       "description": "Layouts for interfaces and print media can be a challenge. Use our guidelines to create yours quickly.",
-      "icon-class": "aa-icon aa-icon-layout",
+      "icon-class": "aa-icon aa-icon-layout-l",
       "read-more": {
         "href": "link.corporate-identity-brand",
         "text": "View layout options",
@@ -55,7 +55,7 @@
     "atoms": {
       "title": "Atoms",
       "description": "Atoms are the basic building blocks of matter. Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button.",
-      "icon-class": "aa-icon aa-icon-atoms",
+      "icon-class": "aa-icon aa-icon-atoms-l",
       "read-more": {
         "href": "#",
         "text": "Read more",
@@ -65,7 +65,7 @@
     "molecules": {
       "title": "Molecules",
       "description": "Things start getting more interesting and tangible when we start combining atoms together. Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound. These molecules take on their own properties and serve as the backbone of our design systems.",
-      "icon-class": "aa-icon aa-icon-molecules",
+      "icon-class": "aa-icon aa-icon-molecules-l",
       "read-more": {
         "href": "#",
         "text": "Read more",
@@ -75,7 +75,7 @@
     "organisms": {
       "title": "Organisms",
       "description": "Molecules give us some building blocks to work with, and we can now combine them together to form organisms. Organisms are groups of molecules joined together to form a relatively complex, distinct section of an interface.",
-      "icon-class": "aa-icon aa-icon-organisms",
+      "icon-class": "aa-icon aa-icon-organisms-l",
       "read-more": {
         "href": "#",
         "text": "Read more",
@@ -85,7 +85,7 @@
     "templates": {
       "title": "Templates",
       "description": "t the template stage, we break our chemistry analogy to get into language that makes more sense to our clients and our final output. Templates consist mostly of groups of organisms stitched together to form pages. It’s here where we start to see the design coming together and start seeing things like layout in action.",
-      "icon-class": "aa-icon aa-icon-templates",
+      "icon-class": "aa-icon aa-icon-templates-l",
       "read-more": {
         "href": "#",
         "text": "Read more",
@@ -95,7 +95,7 @@
     "pages": {
       "title": "Pages",
       "description": "Pages are specific instances of templates. Here, placeholder content is replaced with real representative content to give an accurate depiction of what a user will ultimately see.",
-      "icon-class": "aa-icon aa-icon-pages",
+      "icon-class": "aa-icon aa-icon-pages-l",
       "read-more": {
         "href": "#",
         "text": "Read more",
