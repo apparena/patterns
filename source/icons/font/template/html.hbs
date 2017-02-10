@@ -42,7 +42,6 @@
             padding: 5px;
             font-size: 10px;
             font-family: Monaco, monospace;
-            color: #666;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -50,25 +49,23 @@
             -webkit-border-radius: 0 0 3px 3px;
             -moz-border-radius: 0 0 3px 3px;
             border-radius: 0 0 3px 3px;
-            color: #666;
         }
     </style>
     <link rel="stylesheet" href="{{fontName}}.css">
+    <link rel="stylesheet" href="/css/app-arena-styles.css">
 </head>
 <body>
 
-    <h1>{{ fontName }}</h1>
+    <!--<h1>{{ fontName }}</h1>-->
 
     {{# each names }}
-
         <div class="preview">
-            <span class="inner">
+            <span class="inner text-primary">
                 <i class="{{ ../baseTag }} {{ ../classPrefix }}{{ this }}"></i>
             </span>
             <br>
             <span class='label'>{{ this }}</span>
         </div>
-
     {{/ each }}
 
 </body>

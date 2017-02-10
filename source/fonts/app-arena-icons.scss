@@ -2,10 +2,10 @@ $aa-font-path: "../fonts" !default;
 
 @font-face {
     font-family: "app-arena-icons";
-    src: url("#{$aa-font-path}/app-arena-icons.eot?d937ae241ec9a637c72be726081bbd45?#iefix") format("embedded-opentype"),
-url("#{$aa-font-path}/app-arena-icons.woff?d937ae241ec9a637c72be726081bbd45") format("woff"),
-url("#{$aa-font-path}/app-arena-icons.ttf?d937ae241ec9a637c72be726081bbd45") format("truetype"),
-url("#{$aa-font-path}/app-arena-icons.svg?d937ae241ec9a637c72be726081bbd45#app-arena-icons") format("svg");
+    src: url("#{$aa-font-path}/app-arena-icons.eot?4d1a8cb8da4f3028f5b4634a0c23d5b6?#iefix") format("embedded-opentype"),
+url("#{$aa-font-path}/app-arena-icons.woff?4d1a8cb8da4f3028f5b4634a0c23d5b6") format("woff"),
+url("#{$aa-font-path}/app-arena-icons.ttf?4d1a8cb8da4f3028f5b4634a0c23d5b6") format("truetype"),
+url("#{$aa-font-path}/app-arena-icons.svg?4d1a8cb8da4f3028f5b4634a0c23d5b6#app-arena-icons") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -28,54 +28,54 @@ url("#{$aa-font-path}/app-arena-icons.svg?d937ae241ec9a637c72be726081bbd45#app-a
 }
 
 //Icon Name Variables
-$aa-icon-aa-analytics: "\f101";
-$aa-icon-arrow-down: "\f102";
-$aa-icon-arrow-left: "\f103";
-$aa-icon-arrow-right-circle: "\f104";
-$aa-icon-arrow-right: "\f105";
-$aa-icon-arrow-up: "\f106";
-$aa-icon-atoms_l: "\f107";
-$aa-icon-balance-scale: "\f108";
-$aa-icon-bar-chart: "\f109";
-$aa-icon-bell: "\f10a";
-$aa-icon-bolt-o: "\f10b";
-$aa-icon-bolt: "\f10c";
-$aa-icon-box: "\f10d";
-$aa-icon-browser-plus: "\f10e";
-$aa-icon-browser: "\f10f";
-$aa-icon-brush: "\f110";
-$aa-icon-bullhorn: "\f111";
-$aa-icon-calendar: "\f112";
-$aa-icon-caret-down: "\f113";
-$aa-icon-caret-left: "\f114";
-$aa-icon-caret-right: "\f115";
-$aa-icon-caret-up: "\f116";
-$aa-icon-chart: "\f117";
-$aa-icon-check: "\f118";
-$aa-icon-chevron-down: "\f119";
-$aa-icon-chevron-left: "\f11a";
-$aa-icon-chevron-right: "\f11b";
-$aa-icon-chevron-up: "\f11c";
-$aa-icon-circle-o-notch: "\f11d";
-$aa-icon-circle: "\f11e";
-$aa-icon-clipboard: "\f11f";
-$aa-icon-close: "\f120";
-$aa-icon-cloud-upload: "\f121";
-$aa-icon-cog-star: "\f122";
-$aa-icon-cog: "\f123";
-$aa-icon-color_l: "\f124";
-$aa-icon-color: "\f125";
-$aa-icon-comment-chart: "\f126";
-$aa-icon-comment-text: "\f127";
-$aa-icon-comment: "\f128";
-$aa-icon-crop: "\f129";
-$aa-icon-css: "\f12a";
-$aa-icon-customer: "\f12b";
-$aa-icon-desktop: "\f12c";
-$aa-icon-digital-chart: "\f12d";
-$aa-icon-domain: "\f12e";
-$aa-icon-dot-circle-o: "\f12f";
-$aa-icon-download: "\f130";
+$aa-icon-arrow-down: "\f101";
+$aa-icon-arrow-left: "\f102";
+$aa-icon-arrow-right-circle: "\f103";
+$aa-icon-arrow-right: "\f104";
+$aa-icon-arrow-up: "\f105";
+$aa-icon-atoms-l: "\f106";
+$aa-icon-balance-scale: "\f107";
+$aa-icon-bar-chart: "\f108";
+$aa-icon-bell: "\f109";
+$aa-icon-bolt-o: "\f10a";
+$aa-icon-bolt: "\f10b";
+$aa-icon-box: "\f10c";
+$aa-icon-browser-plus: "\f10d";
+$aa-icon-browser: "\f10e";
+$aa-icon-brush: "\f10f";
+$aa-icon-bullhorn: "\f110";
+$aa-icon-calendar: "\f111";
+$aa-icon-caret-down: "\f112";
+$aa-icon-caret-left: "\f113";
+$aa-icon-caret-right: "\f114";
+$aa-icon-caret-up: "\f115";
+$aa-icon-chart: "\f116";
+$aa-icon-check: "\f117";
+$aa-icon-chevron-down: "\f118";
+$aa-icon-chevron-left: "\f119";
+$aa-icon-chevron-right: "\f11a";
+$aa-icon-chevron-up: "\f11b";
+$aa-icon-circle-o-notch: "\f11c";
+$aa-icon-circle: "\f11d";
+$aa-icon-clipboard: "\f11e";
+$aa-icon-close: "\f11f";
+$aa-icon-cloud-upload: "\f120";
+$aa-icon-cog-star: "\f121";
+$aa-icon-cog: "\f122";
+$aa-icon-color-l: "\f123";
+$aa-icon-color: "\f124";
+$aa-icon-comment-chart: "\f125";
+$aa-icon-comment-text: "\f126";
+$aa-icon-comment: "\f127";
+$aa-icon-crop: "\f128";
+$aa-icon-css: "\f129";
+$aa-icon-customer: "\f12a";
+$aa-icon-desktop: "\f12b";
+$aa-icon-digital-chart: "\f12c";
+$aa-icon-domain: "\f12d";
+$aa-icon-dot-circle-o: "\f12e";
+$aa-icon-download: "\f12f";
+$aa-icon-drop-f: "\f130";
 $aa-icon-ellipsis: "\f131";
 $aa-icon-exclamation-circle: "\f132";
 $aa-icon-external-link: "\f133";
@@ -99,12 +99,12 @@ $aa-icon-grid-two: "\f144";
 $aa-icon-heart-filled: "\f145";
 $aa-icon-heart: "\f146";
 $aa-icon-html: "\f147";
-$aa-icon-icons_l: "\f148";
+$aa-icon-icons-l: "\f148";
 $aa-icon-image: "\f149";
 $aa-icon-info-circle: "\f14a";
 $aa-icon-key: "\f14b";
 $aa-icon-label: "\f14c";
-$aa-icon-layout_l: "\f14d";
+$aa-icon-layout-l: "\f14d";
 $aa-icon-lightbulb: "\f14e";
 $aa-icon-like-plus: "\f14f";
 $aa-icon-line-chart: "\f150";
@@ -113,18 +113,18 @@ $aa-icon-list: "\f152";
 $aa-icon-lock: "\f153";
 $aa-icon-log-in: "\f154";
 $aa-icon-log-out: "\f155";
-$aa-icon-logo_l: "\f156";
+$aa-icon-logo-l: "\f156";
 $aa-icon-mail: "\f157";
 $aa-icon-menu-circle: "\f158";
 $aa-icon-minus: "\f159";
 $aa-icon-mobile-check: "\f15a";
 $aa-icon-mobile: "\f15b";
-$aa-icon-molecules_l: "\f15c";
+$aa-icon-molecules-l: "\f15c";
 $aa-icon-mouse-click: "\f15d";
 $aa-icon-multi-select: "\f15e";
 $aa-icon-newsletter: "\f15f";
-$aa-icon-organisms_l: "\f160";
-$aa-icon-pages_l: "\f161";
+$aa-icon-organisms-l: "\f160";
+$aa-icon-pages-l: "\f161";
 $aa-icon-paper-plane-o: "\f162";
 $aa-icon-pencil-circle: "\f163";
 $aa-icon-pencil: "\f164";
@@ -151,8 +151,8 @@ $aa-icon-stadion: "\f178";
 $aa-icon-star: "\f179";
 $aa-icon-tablet: "\f17a";
 $aa-icon-target: "\f17b";
-$aa-icon-templates_l: "\f17c";
-$aa-icon-text_l: "\f17d";
+$aa-icon-templates-l: "\f17c";
+$aa-icon-text-l: "\f17d";
 $aa-icon-text: "\f17e";
 $aa-icon-thumbs-o-up: "\f17f";
 $aa-icon-thumbs: "\f180";
@@ -175,9 +175,6 @@ $aa-icon-whatsapp: "\f190";
 $aa-icon-youtube: "\f191";
 
 
-.aa-icon-aa-analytics:before {
-    content: $aa-icon-aa-analytics;
-}
 .aa-icon-arrow-down:before {
     content: $aa-icon-arrow-down;
 }
@@ -193,8 +190,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-arrow-up:before {
     content: $aa-icon-arrow-up;
 }
-.aa-icon-atoms_l:before {
-    content: $aa-icon-atoms_l;
+.aa-icon-atoms-l:before {
+    content: $aa-icon-atoms-l;
 }
 .aa-icon-balance-scale:before {
     content: $aa-icon-balance-scale;
@@ -280,8 +277,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-cog:before {
     content: $aa-icon-cog;
 }
-.aa-icon-color_l:before {
-    content: $aa-icon-color_l;
+.aa-icon-color-l:before {
+    content: $aa-icon-color-l;
 }
 .aa-icon-color:before {
     content: $aa-icon-color;
@@ -318,6 +315,9 @@ $aa-icon-youtube: "\f191";
 }
 .aa-icon-download:before {
     content: $aa-icon-download;
+}
+.aa-icon-drop-f:before {
+    content: $aa-icon-drop-f;
 }
 .aa-icon-ellipsis:before {
     content: $aa-icon-ellipsis;
@@ -388,8 +388,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-html:before {
     content: $aa-icon-html;
 }
-.aa-icon-icons_l:before {
-    content: $aa-icon-icons_l;
+.aa-icon-icons-l:before {
+    content: $aa-icon-icons-l;
 }
 .aa-icon-image:before {
     content: $aa-icon-image;
@@ -403,8 +403,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-label:before {
     content: $aa-icon-label;
 }
-.aa-icon-layout_l:before {
-    content: $aa-icon-layout_l;
+.aa-icon-layout-l:before {
+    content: $aa-icon-layout-l;
 }
 .aa-icon-lightbulb:before {
     content: $aa-icon-lightbulb;
@@ -430,8 +430,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-log-out:before {
     content: $aa-icon-log-out;
 }
-.aa-icon-logo_l:before {
-    content: $aa-icon-logo_l;
+.aa-icon-logo-l:before {
+    content: $aa-icon-logo-l;
 }
 .aa-icon-mail:before {
     content: $aa-icon-mail;
@@ -448,8 +448,8 @@ $aa-icon-youtube: "\f191";
 .aa-icon-mobile:before {
     content: $aa-icon-mobile;
 }
-.aa-icon-molecules_l:before {
-    content: $aa-icon-molecules_l;
+.aa-icon-molecules-l:before {
+    content: $aa-icon-molecules-l;
 }
 .aa-icon-mouse-click:before {
     content: $aa-icon-mouse-click;
@@ -460,11 +460,11 @@ $aa-icon-youtube: "\f191";
 .aa-icon-newsletter:before {
     content: $aa-icon-newsletter;
 }
-.aa-icon-organisms_l:before {
-    content: $aa-icon-organisms_l;
+.aa-icon-organisms-l:before {
+    content: $aa-icon-organisms-l;
 }
-.aa-icon-pages_l:before {
-    content: $aa-icon-pages_l;
+.aa-icon-pages-l:before {
+    content: $aa-icon-pages-l;
 }
 .aa-icon-paper-plane-o:before {
     content: $aa-icon-paper-plane-o;
@@ -544,11 +544,11 @@ $aa-icon-youtube: "\f191";
 .aa-icon-target:before {
     content: $aa-icon-target;
 }
-.aa-icon-templates_l:before {
-    content: $aa-icon-templates_l;
+.aa-icon-templates-l:before {
+    content: $aa-icon-templates-l;
 }
-.aa-icon-text_l:before {
-    content: $aa-icon-text_l;
+.aa-icon-text-l:before {
+    content: $aa-icon-text-l;
 }
 .aa-icon-text:before {
     content: $aa-icon-text;

@@ -1,2 +1,0 @@
-#!/bin/bash
-rsync -rv "/home/darius/Darius/Development/apparena/patterns/source/_patterns/" "/home/darius/Darius/Development/apparena/wp-aa-core/web/app/themes/app-arena/vendor/apparena/patterns-wp/source/_patterns/"
