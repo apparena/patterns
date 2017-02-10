@@ -17,7 +17,7 @@
             "headline": "Unsere Produkte",
             "columns": [
               {
-                "class": "col-1",
+                "class": "col-sm-6 subnav-col-1",
                 "items": [
                   {
                     "text": "Adventskalender",
@@ -55,7 +55,7 @@
                 ]
               },
               {
-                "class": "col-2",
+                "class": "col-sm-6 subnav-col-2",
                 "items": [
                   {
                     "text": "Videowettbewerb",
@@ -90,8 +90,9 @@
               }
             ],
             "promotion": {
-              "content": "<h2>Produkt des Monats: Adventskalender</h2><img src=\"/images/sample/aa-website/detail-template_adventskalender-2016.png\">",
+              "content": "<h5>Produkt des Monats: Adventskalender</h5><p>15% Rabatt auf den Adventskalender.</p><img src=\"/images/sample/aa-website/detail-template_adventskalender-2016.png\">",
               "cta": {
+                "class": "btn btn-block btn-success",
                 "text": "Jetzt testen!",
                 "url": "#"
               }

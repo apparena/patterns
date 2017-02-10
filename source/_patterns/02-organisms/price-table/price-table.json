@@ -2,406 +2,390 @@
   "single": {
     "elements": [
       {
-        "price": 2,
-        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/starter-pack.svg",
-        "prompt": "Kaufen",
+        "img": "https://s3.app-arena.com/website/images/starter-pack.svg",
         "title": "Starter",
+        "price": 590,
+        "cta": {
+          "caption": "Kaufen",
+          "url": "#"
+        },
         "info": [
-          {
-            "text": "2 Monate Laufzeit",
-            "options": []
-          },
-          {
-            "text": "5.000 Teilnehmer exportierbar",
-            "options": []
-          },
-          {
-            "text": "1 Service Stunde",
-            "options": []
-          }
-        ],
-        "info2": [
-          {
-            "text": "Einführungswebinar",
-            "options": []
-          }
+          [
+            {
+              "text": "Laufzeit 2 Monate",
+              "options": []
+            },
+            {
+              "text": "5.000 Teilnehmer exportierbar",
+              "options": []
+            },
+            {
+              "text": "1 Service Stunde",
+              "options": []
+            }
+          ],
+          [
+            {
+              "text": "Einführungswebinar",
+              "options": []
+            }
+          ]
         ]
       },
       {
-        "price": 128,
-        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/standard-pack.svg",
-        "prompt": "Kaufen",
+        "img": "https://s3.app-arena.com/website/images/standard-pack.svg",
         "title": "Standard",
+        "price": 1080,
+        "cta": {
+          "caption": "Kaufen",
+          "url": "#"
+        },
         "info": [
-          {
-            "text": "2 Monate Laufzeit",
-            "options": []
-          },
-          {
-            "text": "10.000 Teilnehmer exportierbar",
-            "options": []
-          },
-          {
-            "text": "4 Service Stunde",
-            "options": []
-          }
-        ],
-        "info2": [
-          {
-            "text": "Alle Leistungen vom Starter Paket, plus",
-            "options": ["italic"]
-          },
-          {
-            "text": "Offenes CSS",
-            "options": []
-          },
-          {
-            "text": "Abnahme durch Projektmanager",
-            "options": []
-          }
+          [
+            {
+              "text": "Laufzeit 2 Monate",
+              "options": []
+            },
+            {
+              "text": "10.000 Teilnehmer exportierbar",
+              "options": []
+            },
+            {
+              "text": "4 Service Stunden",
+              "options": []
+            }
+          ],
+          [
+            {
+              "text": "Alle Leistungen vom Starter Paket, plus",
+              "options": [
+                "italic"
+              ]
+            },
+            {
+              "text": "Offenes CSS",
+              "options": []
+            },
+            {
+              "text": "Abnahme durch Projektmanager",
+              "options": []
+            }
+          ]
         ]
       },
       {
-        "price": 266,
-        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/plus-pack.svg",
-        "prompt": "Kaufen",
+        "img": "https://s3.app-arena.com/website/images/plus-pack.svg",
         "title": "Plus",
-        "popular": 1,
+        "price": 1900,
+        "cta": {
+          "caption": "Kaufen",
+          "url": "#"
+        },
         "info": [
-          {
-            "text": "2 Monate Laufzeit",
-            "options": []
-          },
-          {
-            "text": "50.000 Teilnehmer exportierbar",
-            "options": []
-          },
-          {
-            "text": "8 Service Stunde",
-            "options": []
-          }
-        ],
-        "info2": [
-          {
-            "text": "Alle Leistungen vom Standard Paket, plus",
-            "options": ["italic"]
-          },
-          {
-            "text": "Eigener Projektmanager",
-            "options": []
-          },
-          {
-            "text": "Umsetzungen von CSS",
-            "options": []
-          },
-          {
-            "text": "Kampangenseite",
-            "options": []
-          },
-          {
-            "text": "Subdomain",
-            "options": []
-          }
+          [
+            {
+              "text": "Laufzeit 2 Monate",
+              "options": []
+            },
+            {
+              "text": "50.000 Teilnehmer exportierbar",
+              "options": []
+            },
+            {
+              "text": "8 Service Stunden",
+              "options": []
+            }
+          ],
+          [
+            {
+              "text": "Alle Leistungen vom Standard Paket, plus",
+              "options": [
+                "italic"
+              ]
+            },
+            {
+              "text": "Eigener Projektmanager",
+              "options": []
+            },
+            {
+              "text": "CSS Umsetzung",
+              "options": []
+            },
+            {
+              "text": "Kampagnenseite",
+              "options": []
+            },
+            {
+              "text": "Subdomain",
+              "options": []
+            }
+          ]
         ]
       },
       {
-        "price": 1299,
-        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/enterprise-pack.svg",
-        "prompt": "Kaufen",
+        "img": "https://s3.app-arena.com/website/images/enterprise-pack.svg",
         "title": "Enterprise",
+        "price": 4300,
+        "cta": {
+          "caption": "Kaufen",
+          "url": "#"
+        },
         "info": [
-          {
-            "text": "2 Monate Laufzeit",
-            "options": []
-          },
-          {
-            "text": "unbegrenzter Teilnehmer-Export",
-            "options": []
-          },
-          {
-            "text": "25 Service Stunde",
-            "options": []
-          }
-        ],
-        "info2": [
-          {
-            "text": "Alle Leistungen vom Plus Paket, plus",
-            "options": ["italic"]
-          },
-          {
-            "text": "Kreation von Grafiken",
-            "options": []
-          },
-          {
-            "text": "Einrichtung der App",
-            "options": []
-          },
-          {
-            "text": "Werbemanagement",
-            "options": []
-          },
-          {
-            "text": "Auswertung und Analyse",
-            "options": []
-          },
-          {
-            "text": "Eigene Domain",
-            "options": []
-          }
+          [
+            {
+              "text": "Laufzeit 2 Monate",
+              "options": []
+            },
+            {
+              "text": "unbegrenzter Teilnehmerexport",
+              "options": []
+            },
+            {
+              "text": "25 Service Stunden",
+              "options": []
+            }
+          ],
+          [
+            {
+              "text": "Alle Leistungen vom Plus Paket, plus",
+              "options": [
+                "italic"
+              ]
+            },
+            {
+              "text": "Grafikdesign",
+              "options": []
+            },
+            {
+              "text": "App-Setup",
+              "options": []
+            },
+            {
+              "text": "Werbemanagement",
+              "options": []
+            },
+            {
+              "text": "Auswertung und Analyse",
+              "options": []
+            },
+            {
+              "text": "Eigene Domain",
+              "options": []
+            }
+          ]
         ]
       }
     ]
   },
   "flatrate": {
-    "discount": 3.1415,
-    "serviceHourPrice": 60,
-    "serviceHourMax": 24,
+    "discount": 10,
     "elements": [
       {
-        "price": 1,
-        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/starter-pack.svg",
-        "prompt": "Kaufen",
+        "img": "https://s3.app-arena.com/website/images/starter-pack.svg",
         "title": "Starter",
+        "price": 249,
+        "cta": {
+          "caption": "Kaufen",
+          "url": "#"
+        },
         "info": [
-          {
-            "text": "Die Starter edition enthält keinen Service",
-            "options": []
-          },
-          {
-            "text": "Einige Funktionen sind nicht verfügbar",
-            "options": []
-          },
-          {
-            "text": "Für nur einen Euro im Monat erhalten sie dieses exklusive Paket",
-            "options": ["bold"]
-          }
-        ],
-        "info2": [
-          {
-            "text": "Einführungswebinar",
-            "options": []
-          }
+          [
+            {
+              "text": "Laufzeit 1 Jahr",
+              "options": []
+            },
+            {
+              "text": "5.000 Teilnehmer exportierbar",
+              "options": []
+            },
+            {
+              "text": "1 Service Stunde / Monat",
+              "options": []
+            },
+            {
+              "text": "Zugriff auf alle Apps",
+              "options": [
+                "bold"
+              ]
+            },
+            {
+              "text": "Bis zu 2 Apps gleichzeitig",
+              "options": [
+                "bold"
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Einführungswebinar",
+              "options": []
+            }
+          ]
         ]
       },
       {
-        "price": 4,
-        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/standard-pack.svg",
-        "prompt": "Kaufen",
+        "img": "https://s3.app-arena.com/website/images/standard-pack.svg",
         "title": "Standard",
+        "price": 349,
+        "cta": {
+          "caption": "Kaufen",
+          "url": "#"
+        },
         "info": [
-          {
-            "text": "Die Premium edition enthält keinen Service",
-            "options": []
-          },
-          {
-            "text": "Einige Funktionen sind nicht verfügbar",
-            "options": []
-          },
-          {
-            "text": "Das Premium Paket ist mit 4€/mtl unschlagbar",
-            "options": []
-          }
-        ],
-        "info2": [
-          {
-            "text": "Webinar zur Qualitätsverbesserung",
-            "options": []
-          }
+          [
+            {
+              "text": "Laufzeit 1 Jahr",
+              "options": []
+            },
+            {
+              "text": "10.000 Teilnehmer exportierbar",
+              "options": []
+            },
+            {
+              "text": "2 Service Stunden / Monat",
+              "options": []
+            },
+            {
+              "text": "Zugriff auf alle Apps",
+              "options": [
+                "bold"
+              ]
+            },
+            {
+              "text": "Bis zu 2 Apps gleichzeitig",
+              "options": [
+                "bold"
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Alle Leistungen vom Starter Paket, plus",
+              "options": [
+                "italic"
+              ]
+            },
+            {
+              "text": "Offenes CSS",
+              "options": []
+            }
+          ]
         ]
       },
       {
-        "price": 9,
-        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/plus-pack.svg",
-        "prompt": "Kaufen",
+        "img": "https://s3.app-arena.com/website/images/plus-pack.svg",
         "title": "Plus",
-        "info": [
-          {
-            "text": "Die Deluxe edition enthält 1 Stunde Service",
-            "options": []
-          },
-          {
-            "text": "Einige Funktionen sind nicht verfügbar",
-            "options": []
-          },
-          {
-            "text": "Das Deluxe Paket ist mit 9€/mtl nicht zu übertreffen",
-            "options": []
-          }
-        ],
-        "info2": [
-          {
-            "text": "Zugriff per SSH und SFTP",
-            "options": []
-          }
-        ]
-      },
-      {
-        "price": 27,
-        "img": "https://aa-ads.s3.amazonaws.com/temp/Screendesign/Icons/Icons/enterprise-pack.svg",
-        "prompt": "Kaufen",
-        "title": "Enterprise",
+        "price": 499,
+        "cta": {
+          "caption": "Kaufen",
+          "url": "#"
+        },
         "popular": 1,
         "info": [
-          {
-            "text": "Die Ultra Deluxe edition enthält 5 Stunden Service",
-            "options": []
-          },
-          {
-            "text": "Alle Funktionen sind verfügbar",
-            "options": []
-          },
-          {
-            "text": "Sie erhalten als VIP vorrang im Support",
-            "options": []
-          },
-          {
-            "text": "27€/mtl für perfektion",
-            "options": []
-          }
-        ],
-        "info2": [
-          {
-            "text": "Google Analytics und Load Balancer",
-            "options": []
-          },
-          {
-            "text": "1 Probemonat Amazon Prime enthalten",
-            "options": []
-          }
+          [
+            {
+              "text": "Laufzeit 1 Jahr",
+              "options": []
+            },
+            {
+              "text": "50.000 Teilnehmer exportierbar",
+              "options": []
+            },
+            {
+              "text": "3 Service Stunden / Monat",
+              "options": []
+            },
+            {
+              "text": "Zugriff auf alle Apps",
+              "options": [
+                "bold"
+              ]
+            },
+            {
+              "text": "Bis zu 3 Apps gleichzeitig",
+              "options": [
+                "bold"
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Alle Leistungen vom Standard Paket, plus",
+              "options": [
+                "italic"
+              ]
+            },
+            {
+              "text": "Eigener Projektmanager",
+              "options": []
+            },
+            {
+              "text": "Kampagnenseite",
+              "options": []
+            },
+            {
+              "text": "Subdomain",
+              "options": []
+            }
+          ]
         ]
-      }
-    ]
-  },
-  "custom": {
-    "logo": "",
-    "initialPrice": 1300,
-    "availableLanguages": [
-      {
-        "label": "de_CH",
-        "price": 99
       },
       {
-        "label": "en_US",
-        "price": 125
-      },
-      {
-        "label": "dk_DK",
-        "price": 99
-      },
-      {
-        "label": "de_AT",
-        "price": 99
-      }
-    ],
-    "defaultLanguage": "de_DE",
-    "dropdown1": [
-      {
-        "label": "1 Monat Laufzeit",
-        "price": 600,
-        "value": 0
-      },
-      {
-        "label": "2 Monate Laufzeit",
-        "price": 1100,
-        "value": 1
-      }
-    ],
-    "dropdown2": [
-      {
-        "label": "1000 Teilnehmer exportierbar",
-        "price": 45,
-        "value": 0
-      },
-      {
-        "label": "2000 Teilnehmer exportierbar",
-        "price": 100,
-        "value": 1
-      },
-      {
-        "label": "3000 Teilnehmer exportierbar",
-        "price": 220,
-        "value": 2
-      },
-      {
-        "label": "4000 Teilnehmer exportierbar",
-        "price": 350,
-        "value": 3
-      },
-      {
-        "label": "5000 Teilnehmer exportierbar",
-        "price": 500,
-        "value": 4
-      }
-    ],
-    "checkboxes": [
-      {
-        "label": "Einführungswebinar",
-        "price": 12
-      },
-      {
-        "label": "Support via Email",
-        "price": 16
-      },
-      {
-        "label": "Support via Telefon",
-        "price": 16
-      },
-      {
-        "label": "Abnahme durch PM",
-        "price": 5
-      },
-      {
-        "label": "Beratung durch PM",
-        "price": 2
-      },
-      {
-        "label": "Konzeption durch PM",
-        "price": 20
-      },
-      {
-        "label": "Kreation von Grafiken",
-        "price": 100
-      },
-      {
-        "label": "Umsetzung der Designs",
-        "price": 140
-      },
-      {
-        "label": "Einrichtung der App",
-        "price": 120
-      },
-      {
-        "label": "Werbemanagement",
-        "price": 150
-      },
-      {
-        "label": "Auswertung und Analyse",
-        "price": 75
-      }
-    ],
-    "topRightCheckboxes": [
-      {
-        "label": "Kampagnenseite",
-        "price": 400
-      },
-      {
-        "label": "Facebook Fanseite",
-        "labelPlural": "Facebook Fanseiten",
-        "price": 50
-      },
-      {
-        "label": "Einbindung auf Webseite",
-        "price": 250
-      }
-    ],
-    "bottomRightCheckboxes": [
-      {
-        "label": "Subdomain (z.B. sk.adventskalender.co)",
-        "price": 55
-      },
-      {
-        "label": "Eigene Domain buchen (ab 199€)",
-        "price": 199
+        "img": "https://s3.app-arena.com/website/images/enterprise-pack.svg",
+        "title": "Enterprise",
+        "price": 949,
+        "cta": {
+          "caption": "Kaufen",
+          "url": "#"
+        },
+        "info": [
+          [
+            {
+              "text": "Laufzeit 1 Jahr",
+              "options": []
+            },
+            {
+              "text": "unbegrenzter Teilnehmerexport",
+              "options": []
+            },
+            {
+              "text": "6 Service Stunden / Monat",
+              "options": []
+            },
+            {
+              "text": "Zugriff auf alle Apps",
+              "options": [
+                "bold"
+              ]
+            },
+            {
+              "text": "Bis zu 4 Apps gleichzeitig",
+              "options": [
+                "bold"
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Alle Leistungen vom Plus Paket, plus",
+              "options": [
+                "italic"
+              ]
+            },
+            {
+              "text": "Google Analytics",
+              "options": []
+            },
+            {
+              "text": "Auswertung und Analyse",
+              "options": []
+            },
+            {
+              "text": "Eigene Domain",
+              "options": []
+            }
+          ]
+        ]
       }
     ]
   }

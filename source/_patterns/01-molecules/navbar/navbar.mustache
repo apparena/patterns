@@ -14,8 +14,64 @@
         {{/searchForm}}
 
         <div class="navbar-navs text-center py-2">
-            {{> 01-molecules/navs/navs }}
+            {{#navs}}
+                <ul class="m-navs nav {{ class }}">
+                    {{# items }}
+                        <li class="nav-item {{# subnav}}dropdown{{/subnav}}">
+                            <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }} {{#subnav}}dropdown-toggle{{/subnav}}"
+                               href="{{ url }}" {{#subnav}}data-toggle="dropdown"{{/subnav}}>
+                                {{{ text }}}
+                            </a>
+
+                            {{# subnav }}
+                                <!-- Very special subnav for navbars -->
+                                <div class="dropdown-menu">
+                                    <div class="subnav-container">
+                                        <div class="row">
+                                            <div class="items col-sm-7">
+                                                {{#headline}}
+                                                    <h6 class="subnav-header">{{headline}}</h6>
+                                                {{/headline}}
+                                                <div class="row">
+                                                    {{#columns}}
+                                                        <div class="subnav-column {{class}}">
+                                                            <ul>
+                                                                {{#items}}
+                                                                    <li>
+                                                                        <a href="{{url}}">{{text}}</a>
+                                                                    </li>
+                                                                {{/items}}
+                                                            </ul>
+                                                        </div>
+                                                    {{/columns}}
+                                                </div>
+                                            </div>
+                                            {{#promotion}}
+                                                <div class="promotion col-sm-5">
+                                                    {{{content}}}
+                                                    {{# cta }}
+                                                        <div class="cta">
+                                                            <a href="{{url}}" class="{{class}}">
+                                                                {{{text}}}
+                                                            </a>
+                                                        </div>
+                                                    {{/cta}}
+                                                </div>
+                                            {{/promotion}}
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/subnav}}
+                        </li>
+                    {{/ items }}
+                </ul>
+            {{/navs}}
         </div>
+
+
+        <script type="application/javascript">
+
+        </script>
 
     </nav>
 {{/navbar}}

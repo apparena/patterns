@@ -26,8 +26,9 @@
     "bootstrap": "^4.0",
     "font-awesome": "^4.0",
     "jquery": "^2.0.0",
-    "tether": "^1.3.3",
+    "jquery-match-height": "^0",
     "slick-carousel": "^1.6.0",
-    "jquery-match-height": "^0"
+    "tether": "^1.3.3",
+    "tether-drop": "^1.4.2"
   }
 }

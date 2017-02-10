@@ -20,11 +20,12 @@
     },
     "items": [
       {
-        "id": "tab2",
-        "icon": "<i class='aa-icon aa-icon-aa-analytics'></i>",
-        "title": "Tab 2 Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
-        "content": "<img src=\"/images/sample/aa-website/admin-panel Kopie.png\" />"
+        "isActive": false,
+        "id": "fraud_detection",
+        "icon": "<i class='aa-icon aa-icon-aa-facebook'></i>",
+        "title": "Betrugsprävention",
+        "description": "Zahlreiche Mechanismen zur Betrugsprävention",
+        "content": "<img src=\"https://wp.app-arena.com/app/uploads/2017/02/20_Betrugspr%C3%A4vention.png\" />"
       },
       {
         "isActive": true,
@@ -35,18 +36,20 @@
         "content": "<img src=\"/images/sample/aa-website/flatrate-pakete1.png\" />"
       },
       {
-        "id": "tab4",
-        "icon": "<i class='aa-icon aa-icon-aa-analytics'></i>",
-        "title": "Tab 4 Title",
+        "isActive": false,
+        "id": "smart_login",
+        "icon": "<i class='aa-icon aa-icon-aa-user'></i>",
+        "title": "SmartLogin-Technologie",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
-        "content": "<img src=\"/images/sample/aa-website/admin-panel Kopie.png\" />"
+        "content": "<img src=\"https://wp.app-arena.com/app/uploads/2017/02/19_SmartLogin.png\" />"
       },
       {
-        "id": "tab3",
-        "icon": "<i class='aa-icon aa-icon-aa-analytics'></i>",
-        "title": "Tab 3 Title",
+        "isActive": false,
+        "id": "reminder",
+        "icon": "<i class='aa-icon aa-icon-aa-time'></i>",
+        "title": "Tägliche Erinnerungsfunktion",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.",
-        "content": "<img src=\"/images/sample/aa-website/flatrate-pakete1.png\" />"
+        "content": "<img src=\"https://wp.app-arena.com/app/uploads/2017/02/09_Erinnerungs-E-Mail.png\" />"
       }
     ]
   }

@@ -129,7 +129,7 @@ export default class PriceTable extends ReactComponent {
     render() {
         return (
             <div className={styles.priceTable}>
-                {!this.state.data ?
+                {!Object.keys(this.state.data).length ?
                     <AJAXLoader resource={this.props.dataRoute} autoHide={false}
                                 onLoadingDone={(resp) => {
                                     this.setState({

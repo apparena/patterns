@@ -25,7 +25,7 @@ class Test extends ReactComponent {
     render() {
         return (
             <div>
-                <PriceTable dataRoute={"https://aa-ads.s3.amazonaws.com/temp/price-table.json"}/>
+                <PriceTable dataRoute={"/source/_patterns/02-organisms/price-table/price-table.json"}/>
             </div>
         );
     }

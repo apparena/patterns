@@ -1,22 +1,24 @@
 {
-  "class": "custom-class",
-  "items":[
-    {
-      "text": "Dashboard",
-      "url": "#",
-      "isActive": true
-    },
-    {
-      "text": "Apps",
-      "url": "#"
-    },
-    {
-      "text": "Kunden",
-      "url": "#"
-    },
-    {
-      "text": "Entwickler",
-      "url": "#"
-    }
-  ]
+  "navs": {
+    "class": "custom-class",
+    "items":[
+      {
+        "text": "Dashboard",
+        "url": "#",
+        "isActive": true
+      },
+      {
+        "text": "Apps",
+        "url": "#"
+      },
+      {
+        "text": "Kunden",
+        "url": "#"
+      },
+      {
+        "text": "Entwickler",
+        "url": "#"
+      }
+    ]
+  }
 }
