@@ -3,10 +3,10 @@
         <div class="row">
             {{# navigation.positionLeft }}
 
-                <div class="hidden-xs-down col-lg-5 col-md-12 tabs-nav">
+                <div class="tabs-nav hidden-xs-down col-lg-5 col-md-12">
                     <div class="row">
-                        <div class="offset-md-1 col-md-11 tabs">
-                            <ul class="list-unstyled hover-tabs">
+                        <div class="tabs offset-md-1 col-md-11">
+                            <ul class="hover-tabs list-unstyled">
                                 {{#items}}
                                     <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
                                         href="#{{class}}" role="tab">
@@ -28,11 +28,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden -xs-down col-lg-7 col-md-12 tabs-content">
+                <div class="tab-content hidden-xs hidden-lg-down mx-auto d-blockcol-lg-12 col-md-12 col-xl-7"">
                     <div class="row">
-                        <div class="offset-md-1 col-md-11">
+                        <div class="col-md-12">
                             <!-- Tab panes -->
-                            <div class="tab-content">
+                            <div class="tab-content ">
                                 {{#items}}
                                     <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
                                         {{{content}}}
@@ -49,16 +49,18 @@
             {{^ navigation.positionLeft }}
 
 
-                <div class="hidden-xs-down col-lg-7 col-md-12 tab-content">
+                <div class="tab-content hidden-xs-down col-sm-12 col-lg-7 col-md-12 col-xl-7">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 {{#items}}
-                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{class}}"
+                                    <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}"
                                          role="tabpanel">
                                         {{{content}}}
                                     </div>
+
+
 
 
                                 {{/items}}
@@ -68,15 +70,15 @@
                 </div>
 
 
-                <div class="hidden-xs-down col-lg-5 col-md-5 col-sm-12 tabs-nav">
+                <div class="tabs-nav hidden-xs-down col-lg-5 col-xl-5 col-md-12 col-sm-12">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
-                            <ul class="list-unstyled hover-tabs">
+                            <ul class="hover-tabs list-unstyled">
                                 {{#items}}
 
                                     <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                     <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
-                                        href="#{{class}}" role="tab">
+                                        href="#{{id}}" role="tab">
 
 
                                         <div class="o-vertical-tab-icon ">
@@ -90,11 +92,11 @@
                                     </li>
                                 {{/items}}
 
-                                <li class="tabs-btn">
+
                                     {{#cta}}
-                                        <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
+                                        <a href="{{url}}" class="btn {{id}}">{{{text}}}</a>
                                     {{/cta}}
-                                </li>
+
 
 
                             </ul>
@@ -115,13 +117,16 @@
                                 <div class="carouselImg">{{{content}}} </div>
                                 <div class="carouselIcon">{{{icon}}} </div>
                                 <div class="carouselTitle">{{{title}}}</div>
-                                <div class="carouselDescription"> {{{description}}}  </div>
+                                <div class="carouselDescription"> {{{description}}}</div>
+
+
+
+
                             </div>
                         {{/ items }}
 
+
                     </div>
-
-
                     <script>
                         jQuery(document).ready(function () {
                             jQuery('#{{id}}').slick({
@@ -136,6 +141,15 @@
                             });
                         });
                     </script>
+
+
+                    <div class="slick-btn hidden-sm-up">
+
+                        {{#cta}}
+                            <a href="{{url}}" class="btn {{id}}">{{{text}}}</a>
+                        {{/cta}}
+                    </div>
+
                 {{/slider}}
 
             {{/navigation.positionLeft}}
