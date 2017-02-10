@@ -12,6 +12,7 @@
   padding: $alert-padding-y $alert-padding-x;
   border: $alert-border-width solid transparent;
   @include border-radius(0);
+  text-align: center;
 
   i {
     margin-right: 5px;
