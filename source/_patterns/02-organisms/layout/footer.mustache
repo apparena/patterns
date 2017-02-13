@@ -11,17 +11,17 @@
 
         <div class="o-footer-nav-top row">
             {{#footer.navigation.primary}}
-                <div class="o-footer-nav-primary col-md-6 text-sm-left">
+                <div class="o-footer-nav-primary col-md-9 text-sm-left">
                     {{> 02-organisms/navigation/nav-footer }}
                 </div>
             {{/footer.navigation.primary}}
 
             {{#footer.socialMedia}}
-                <div class="o-footer-social-media col-md-6 text-sm-right">
+                <div class="o-footer-social-media col-md-3 text-sm-right">
                     <ul class="list-inline">
                         {{#items}}
                             <li class="list-inline-item">
-                                <a href="{{url}}" target="_blank" alt="{{title}}">
+                                <a href="{{url}}" target="_blank">
                                     {{{icon}}}
                                 </a>
                             </li>
@@ -40,7 +40,7 @@
 
             {{#footer.copyright}}
                 <div class="o-footer-copyright">
-                    Copyright &copy; {{ year }} {{ company.name }}
+                    Copyright &copy; {{ year }} {{ company.name }}™ | Made with <i class="aa-icon aa-icon-heart text-danger"></i> in Cologne, Germany.
                 </div>
             {{/footer.copyright}}
         </div>
