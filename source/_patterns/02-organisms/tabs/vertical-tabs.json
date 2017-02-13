@@ -2,7 +2,7 @@
   "vertical-tabs": {
     "cta": {
       "text": "Kostenlos testen!!",
-      "class": "btn-success btn-lg",
+      "class": "btn btn-success",
       "url": "https://www.app-arena.com"
     },
     "navigation": {
@@ -12,6 +12,7 @@
       "id": "mySlider",
       "settings": {
         "dots": true,
+
         "slidesToScroll": 1,
         "slidesToShow": 1,
         "autoplaySpeed": 3000
