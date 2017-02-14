@@ -67,7 +67,7 @@
       }
     }
 
-    .subnav-container {
+    .subnav-container.promotion-activated {
       @include make-container();
       @include make-container-max-widths((
               sm: 540px,

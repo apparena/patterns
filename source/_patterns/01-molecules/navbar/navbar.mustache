@@ -26,9 +26,9 @@
                             {{# subnav }}
                                 <!-- Very special subnav for navbars -->
                                 <div class="dropdown-menu">
-                                    <div class="subnav-container">
+                                    <div class="subnav-container {{#promotion}}promotion-activated{{/promotion}}">
                                         <div class="row">
-                                            <div class="items col-sm-7">
+                                            <div class="items {{#promotion}}col-sm-7{{/promotion}} {{^promotion}}col-sm-12{{/promotion}}">
                                                 {{#headline}}
                                                     <h6 class="subnav-header">{{headline}}</h6>
                                                 {{/headline}}
