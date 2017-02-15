@@ -1,11 +1,6 @@
 @import "../../../css/scss/abstracts/variables";
 @import "../../../css/scss/abstracts/mixins";
 
-.img-container {
-  margin: 0 auto 20px;
-  width: 20%;
-}
-
 .checkBoxFix {
   :global {
     .react-toggle {
@@ -42,8 +37,7 @@
 .price-table {
   background-color: $gray-lightest;
   font-family: $font-family-base;
-  width: 100%;
-  display: table;
+  padding-bottom: 1rem;
 
   .selector-table {
     display: table;
@@ -79,6 +73,10 @@
     }
   }
 
+  .price-table-container {
+    margin: 40px;
+  }
+
   .priceTableHeader {
     text-align: center;
     font-size: 31pt;
@@ -92,10 +90,9 @@
     }
   }
 
-  .price_container {
-    margin: 40px auto;
-
-    .price_table_element {
+  .price-table-element-container {
+    margin-bottom: 40px;
+    .price-table-element {
       background-color: white;
       text-align: center;
       height: 100%;
@@ -104,6 +101,11 @@
       -moz-border-radius: 8px;
       border-radius: 5px;
       font-size: 11pt;
+
+      .img-container {
+        margin: 0 auto 20px;
+        width: 20%;
+      }
 
       .discountText {
         color: $brand-success;
@@ -124,20 +126,12 @@
 
       .tagContainer {
         width: 100%;
-
-        @media (min-width: 1200px) {
-          .tag {
-            float: right;
-            margin: 15px 30px 0 0;
-            padding: 3px 10px;
-            font-size: 90%;
-          }
-          .pseudotag {
-            float: right;
-            margin: 15px 30px 0 0;
-            font-size: 90%;
-            visibility: hidden;
-          }
+        min-height: 35px;
+        .tag {
+          float: right;
+          margin: 15px 30px 0 0;
+          padding: 3px 10px;
+          font-size: 90%;
         }
       }
 

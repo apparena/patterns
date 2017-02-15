@@ -7,459 +7,319 @@ import Row from "../../00-atoms/grid/row";
 import SelectMenu from "../../00-atoms/forms/select-menu";
 import Icon from "../../00-atoms/icons/icons";
 import AnimatedNumber from "react-animated-number";
-import MaterialSlider from "../../00-atoms/slider/slider";
+import Slider from "../../00-atoms/slider/slider";
 
 export default class CustomPackageCreator extends ReactComponent {
     static propTypes = {
-        visible: PropTypes.bool,
         data: PropTypes.object.isRequired,
+        onClick: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.func,
+        ]).isRequired,
     };
 
     getInitState() {
-        this.handleCBChange = ::this.onCBChange;
-        this.handlePurchase = ::this.onPurchase;
-        this.handleSliderChange = ::this.onSliderChange;
-
         return {
-            dropdown1Value: "",
-            dropdown2Value: "",
-            dd1ErrorState: 0,
-            dd2ErrorState: 0,
-            tickedCheckboxes: [],
-            counters: [],
-            price: 0,
-            selectedLanguages: [],
+            moreLanguagesBookable: this.props.data.languages !== undefined && this.props.data.languages.length > 0,
             showLanguageSelector: false,
-            moreLanguagesBookable: false,
-            serviceHours: 0,
-            previousServiceHours: 0,
+            ...this.generateStartState()
         };
     }
 
-    /**
-     * Allow changing the max service hours for the slider dynamically
-     * @param nextProps
-     * @param nextState
-     * @param nextContext
-     */
-    componentWillUpdate(nextProps, nextState, nextContext) {
-        this.maxServiceHours = this.props.data.flatrate.serviceHourMax;
-    }
-
-
-    /**
-     * Initialize variables and the this.state.counters array with 10 items set to 1.
-     * Since it doesn't make sense to have 0 or less as a value all values should be initialized to 1.
-     *
-     * this.state.selectedLanguages is an array of objects.
-     * All objects contain only these keys "label" and "price"
-     */
-    componentDidMount() {
-        const tmp = [];
-        for (let i = 0; i < 10; ++i)
-            tmp[i] = 1;
-
-        this.maxServiceHours = this.props.data.flatrate.serviceHourMax;
-        this.setState({
-            counters: tmp,
-            price: this.props.data.custom.initialPrice || 0,
-            selectedLanguages: [{label: this.props.data.custom.defaultLanguage, price: 0}],
-            moreLanguagesBookable: this.props.data.custom.availableLanguages !== undefined && this.props.data.custom.availableLanguages.length > 0
-        });
-    }
-
-    /**
-     * Handle selection of dropdown items
-     * @param e React Event
-     * @param previousValue Value that was previously selected (can be supplied using this.state)
-     * @param dataSource Source of the  data
-     * @param dropdownSelect Whether to update the state for dropdown #1 or #2
-     */
-    handleDDChange(e, previousValue, dataSource, dropdownSelect) {
-        let priceDiff = 0;
-        if (previousValue === "") {
-            priceDiff = dataSource[e.value].price;
-        } else {
-            priceDiff = dataSource[e.value].price - dataSource[previousValue].price;
-        }
-
-        this.setState({
-            price: this.state.price + priceDiff
-        });
-
-        if (dropdownSelect === 1) {
-            this.setState({
-                dropdown1Value: e.value,
-                dd1ErrorState: 0
-            });
-        } else if (dropdownSelect === 2) {
-            this.setState({
-                dropdown2Value: e.value,
-                dd2ErrorState: 0
-            });
-        }
-    }
-
-    /**
-     * onChange handler for checkboxes inside the checkbox list
-     * @param e React Event
-     */
-    onCBChange(e) {
-        if (e.target.checked) {
-            this.setState({
-                tickedCheckboxes: [...this.state.tickedCheckboxes, e.target.id],
-                price: this.state.price + parseInt(e.target.value, 10)
-            });
-        } else {
-            const tmp = this.state.tickedCheckboxes;
-            const idx = tmp.indexOf(e.target.id);
-            tmp.splice(idx, 1);
-            this.setState({
-                tickedCheckboxes: tmp,
-                price: this.state.price - parseInt(e.target.value, 10)
-            });
-        }
-    }
-
-    /**
-     * Handle the click of a counter next to a counted checkbox
-     * @param e React Event
-     * @param i Index of counted checkbox
-     * @param price Price of the checkbox
-     * @param increase Whether the counter increases(+) or decreases (-)
-     * @param affectsPrice Should changing the counter affect the state price
-     */
-    handleCounterClick(e, i, price, increase, affectsPrice) {
-        const tmp = this.state.counters;
-        let multiplier = 1;
-        if (increase) tmp[i]++;
-        else {
-            tmp[i]--;
-            if (tmp[i] < 1) {
-                tmp[i] = 1;
-                return;
+    generateStartState() {
+        const {data} = this.props;
+        const state = {
+            price: data.basePrice,
+        };
+        data.plans.custom.articles.forEach((articles) => {
+            if (Array.isArray(articles)) {
+                articles.forEach((article) => {
+                    state[article.key] = article.value;
+                    if (article.value === true && article.price) {
+                        state.price += article.price;
+                    }
+                    if (article.key === 'service') {
+                        state.price += article.options[article.value].price
+                    }
+                })
             }
-            multiplier = -1;
-        }
-        this.setState({
-            counters: tmp,
-            price: this.state.price + (!!affectsPrice * (multiplier * price))
         });
-    }
-
-    /**
-     * onChange handler for checkboxes in the checkbox list which feature a counter
-     * @param e React Event
-     * @param i Index of counted checkboxes
-     * @param price Price for each checkbox
-     */
-    handleCountedCBChange(e, i, price) {
-        if (e.target.checked) {
-            this.setState({
-                tickedCheckboxes: [...this.state.tickedCheckboxes, e.target.id],
-                price: this.state.price + (this.state.counters[i] * price)
-            });
-        } else {
-            const tmp = this.state.tickedCheckboxes;
-            const idx = tmp.indexOf(e.target.id);
-            tmp.splice(idx, 1);
-            this.setState({
-                tickedCheckboxes: tmp,
-                price: this.state.price - (this.state.counters[i] * price)
-            });
+        this.purchaseData = {
+            title: data.plans.custom.title,
+            price: state.price,
+            flatrate: false,
+            articles: []
+        };
+        return {
+            ...state
         }
     }
 
     /**
      * Prepare & execute purchase
-     * @todo: Implement actual purchase
      */
     onPurchase() {
-        if (this.state.dropdown1Value === "") {
-            this.setState({
-                dd1ErrorState: 1
-            });
-        }
-
-        if (this.state.dropdown2Value === "") {
-            this.setState({
-                dd2ErrorState: 1
-            });
-        }
-    }
-
-    /**
-     * Add a language to the selection and calculate the new price
-     * @param languageLabel
-     * @param price
-     */
-    handleAddLanguage(languageLabel, price) {
-        const tmp = this.state.selectedLanguages;
-        if (tmp.find((x) => x.label === languageLabel)) return;
-        tmp.push({label: languageLabel, price});
-        this.setState({
-            selectedLanguages: tmp,
-            price: this.state.price + price,
-        });
-
-        const allLanguagesBooked = this.props.data.custom.availableLanguages.reduce((a, b) => {
-            if (a.label === undefined)
-                return a && !!tmp.find((x) => x.label === b.label);
-            else
-                return !!tmp.find((x) => x.label === a.label) && !!tmp.find((x) => x.label === b.label);
-        });
-
-        if (allLanguagesBooked) this.setState({
-            moreLanguagesBookable: false
-        });
-    }
-
-    /**
-     * Remove a language to the selection and calculate the new price
-     * @param languageLabel
-     */
-    handleRemoveLanguage(languageLabel) {
-        let tmp = this.state.selectedLanguages;
-        if (!tmp.find((x) => x.label === languageLabel)) return;
-        const langObj = tmp.find((x) => x.label === languageLabel);
-        tmp = tmp.filter((x) => x.label !== languageLabel);
-        this.setState({
-            selectedLanguages: tmp,
-            moreLanguagesBookable: true,
-            price: this.state.price - langObj.price,
-        });
-    }
-
-    /**
-     * Keep track of slider state and update price accordingly
-     * @param e React Event
-     * @param v Slider Value
-     */
-    onSliderChange(e, v) {
-        const newValue = Math.round(v * this.maxServiceHours);
-        const diff = newValue - this.state.previousServiceHours;
-        this.setState({
-            serviceHours: newValue,
-            price: this.state.price + (this.props.data.flatrate.serviceHourPrice * diff),
-            previousServiceHours: newValue,
-        });
-    }
-
-    /**
-     * Creates nice-looking checkboxes that alter the state price.
-     * Automatically recognized checkboxes which need a counter
-     *
-     * @param dataSource source of the checkboxes
-     * @param onChange method that reacts to the onChange event of the checkbox
-     * @param idPrefix prefix for the ID to make it unique (only needed when using multiple checkbox lists or incremental IDs would clash)
-     * @returns {XML}
-     */
-    renderCheckboxList(dataSource, onChange, idPrefix) {
-        return (
-            <ul className={styles.checkboxes}>
-                {dataSource.map((e, i) => {
-                    return (
-                        <li key={i}>
-                            {!this.state.tickedCheckboxes.includes(idPrefix + i) &&
-                                <Icon name="times-circle-o"/>
-                            }
-                            {this.state.tickedCheckboxes.includes(idPrefix + i) &&
-                                <Icon name="check-circle-o" className={styles.cbChecked}/>
-                            }
-                            {e.labelPlural &&
-                                <div className={styles.counter}>
-                                    {this.state.counters[i]}
-                                </div>
-                            }
-                            <input id={`${idPrefix}${i}`} type="checkbox" value={e.price}
-                                   onChange={e.labelPlural ? (ev) => this.handleCountedCBChange(ev, i, e.price) : onChange}
-                            />
-                            <label htmlFor={`${idPrefix}${i}`}
-                                   className={!this.state.tickedCheckboxes.includes(idPrefix + i) && styles.cbUncheckedLabel}
-                            >
-                                {e.labelPlural && this.state.counters[i] > 1 ? e.labelPlural : e.label}
-                            </label>
-                            {e.labelPlural &&
-                                <div className={styles.buttonRow}>
-                                    <button className={styles.checkboxButton}
-                                            onClick={(ev) => this.handleCounterClick(ev, i, e.price, true, this.state.tickedCheckboxes.includes(idPrefix + i))}
-                                    >
-                                        <Icon name="plus"/>
-                                    </button>
-                                    <button className={styles.checkboxButton}
-                                            onClick={(ev) => this.handleCounterClick(ev, i, e.price, false, this.state.tickedCheckboxes.includes(idPrefix + i))}
-                                    >
-                                        <Icon name="minus"/>
-                                    </button>
-                                </div>
-                            }
-                        </li>
-                    );
-                })}
-            </ul>
-        );
+        this.props.onClick(this.purchaseData)
     }
 
     /**
      * Renders a list of selected languages with the ability to add more.
+     * @param article
+     * @param i index
      * @returns {XML}
      */
-    renderLanguageSelector() {
+    renderLanguageSelector(article, i) {
         return (
-            <div className={styles.languageSelectorContainer}>
-                <ul className={styles.languageList}>
-                    {this.state.selectedLanguages.map((e, i) => {
+            <div className={styles.languageSelectorContainer} key={`article-${i}`}>
+                <div className={styles.headline}>
+                    {this.t("customPackage.languagesSelected", {count: this.state[article.key].length})}
+                </div>
+                {this.state[article.key].map((e, i) => {
+                    const languageData = this.props.data.languages.filter((language, i) => {
+                        return language.key === e;
+                    });
+                    return (
+                        <div key={i}>
+                            <img
+                                className={styles.flag}
+                                src={`https://my.app-arena.com/img/flags/32/${e.substring(3, 5).toLowerCase()}.png`}
+                                alt="flag"
+                            />
+                            {languageData[0].value}
+                            {e !== this.props.data.defaultLanguage &&
+                            <span
+                                className={styles.removeLanguageButton}
+                                onClick={() => {
+                                    const newState = this.state[article.key].filter((lang) => {
+                                        return (lang !== e)
+                                    });
+                                    this.setState({
+                                        [article.key]: newState,
+                                        price: this.state.price - languageData[0].price
+                                    });
+                                }}
+                            >
+                                <Icon name="close"/>
+                            </span>
+                            }
+                        </div>
+                    );
+                })}
+                {this.props.data.languages.length > this.state[article.key].length &&
+                <div className={cx(styles.addLanguageButton, !this.state.moreLanguagesBookable && styles.invisible)}
+                     onClick={(e) => {
+                         this.setState({
+                             showLanguageSelector: !this.state.showLanguageSelector
+                         });
+                     }}
+                >
+                    <Icon name="plus" className={styles.icon}/>
+                    {this.t("customPackage.addLanguagePrompt")}
+                </div>
+                }
+                {this.state.showLanguageSelector &&
+                <div className={cx(styles.languageList)}>
+                    {this.props.data.languages.map((e, i) => {
+                        if (!!~this.state[article.key].indexOf(e.key)) {
+                            return null;
+                        }
                         return (
-                            <li key={i}>
-                                <img
-                                    src="http://data.websitebox.com/data/applications/01/images/gadgets/translator/images/32x32/plain/flag_germany.png"
-                                    alt="flag"
-                                />
-                                {e.label}
-                                {e.label !== this.props.data.custom.defaultLanguage &&
-                                <button className={styles.removeLanguageButton}
-                                        onClick={() => this.handleRemoveLanguage(e.label)}
-                                >
-                                    {this.t("customPackage.removeLanguage")}
-                                </button>
-                                }
-                            </li>
-                        );
-                    })}
-                    <li className={cx(styles.addLanguageButton, !this.state.moreLanguagesBookable && styles.invisible)}
-                        onClick={(e) => {
-                        this.setState({
-                            showLanguageSelector: !this.state.showLanguageSelector
-                        });}}
-                    >
-                        {this.t("customPackage.addLanguagePrompt")}
-                    </li>
-                </ul>
-
-                <ul className={cx(styles.languageList, !this.state.showLanguageSelector && styles.invisible)}>
-                    {this.props.data.custom.availableLanguages.map((e, i) => {
-                        if (this.state.selectedLanguages.find((x) => x.label === e.label)) return null;
-                        return (
-                            <li key={i} className={styles.addLanguageButton}
-                                onClick={() => this.handleAddLanguage(e.label, e.price)}
+                            <div key={i} className={styles.addLanguageButton}
+                                 onClick={() => {
+                                     this.setState({
+                                         [article.key]: [...this.state[article.key], e.key],
+                                         price: this.state.price + e.price,
+                                         showLanguageSelector: !this.state.showLanguageSelector
+                                     });
+                                 }}
                             >
                                 <img
-                                    src="http://data.websitebox.com/data/applications/01/images/gadgets/translator/images/32x32/plain/flag_germany.png"
+                                    className={styles.flag}
+                                    src={`https://my.app-arena.com/img/flags/32/${e.key.substring(3, 5).toLowerCase()}.png`}
                                     alt="flag"
                                 />
-                                {e.label} - {e.price}€
-                            </li>
+                                {e.value} - {e.price}€
+                            </div>
                         );
                     })}
-                </ul>
+                </div>
+                }
             </div>
         );
     }
 
-    /**
-     * Render a Material UI-like slider
-     * @returns {XML}
-     */
-    renderSlider() {
-        return (
-            <MaterialSlider step={1/this.maxServiceHours} value={this.state.serviceHours/this.maxServiceHours}
-                            onChange={this.handleSliderChange}
-                            style={{width: "80%", margin: "auto"}}
-            />
-        );
+    selectArticle(article) {
+        this.setState({
+            price: (this.state[article.key]) ? this.state.price - article.price : this.state.price + article.price,
+            [article.key]: !this.state[article.key]
+        });
     }
 
-    /**
-     * Main render method.
-     * @returns {XML}
-     */
-    render() {
-        return (
-            <div>
-                {this.props.visible && (
-                    <div className={styles.packageCreator}>
-
-                        <div className={styles.borderRadiusFix}>
-                            <Row className={styles.headerRow}>
-                                <Col md="6" className={styles.titleLeft}>
-                                    <img src={this.props.data.custom.logo} alt="Logo"
-                                         className={!this.props.data.custom.logo && styles.invisible}
-                                    />
-                                    <p>{this.t("customPackage.header")}</p>
-                                </Col>
-                                <Col md="4" mdOffset={2} className={styles.sumContainer}>
-                                    <span id="sum" className={styles.sumDisplay}>
-                                        <sup>€</sup>
-                                        <AnimatedNumber component="text" value={this.state.price}
-                                                        style={{
-                                                            transition: '0.8s ease-out',
-                                                            transitionProperty:
-                                                                'background-color, color, opacity'
-                                                        }}
-                                                        duration={300}
-                                                        stepPrecision={0}
-                                        />
-                                    </span>
-                                </Col>
-                            </Row>
-                            <Row className={styles.contentRow}>
-                                <Col md="4" className={styles.dropdownContainer}>
-                                    <p>{this.t("customPackage.step1Hint")}</p>
-                                    {this.state.dd1ErrorState ?
-                                        <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
-                                    <div className={this.state.dd1ErrorState && styles.selectError}>
-                                        <SelectMenu defaultValue={this.state.dropdown1Value}
-                                                    options={this.props.data.custom.dropdown1}
-                                                    onChange={(ev) => this.handleDDChange(ev, this.state.dropdown1Value, this.props.data.custom.dropdown1, 1)}
-                                        />
-                                    </div>
-
-                                    {this.state.dd2ErrorState ?
-                                        <p className={styles.errorText}>{this.t("customPackage.dropdownError")}</p> : ""}
-                                    <div className={this.state.dd2ErrorState && styles.selectError}>
-                                        <SelectMenu defaultValue={this.state.dropdown2Value}
-                                                    options={this.props.data.custom.dropdown2}
-                                                    onChange={(ev) => this.handleDDChange(ev, this.state.dropdown2Value, this.props.data.custom.dropdown2, 2)}
-                                        />
-                                    </div>
-
-                                    {this.renderLanguageSelector()}
-                                    <div className={styles.rightBorder}></div>
-                                </Col>
-                                <Col md="4">
-                                    <p className={styles.advisorText}>
-                                        {this.t("customPackage.step2Hint")}
-                                    </p>
-                                    <h5 className={styles.serviceHours}>
-                                        <span className={styles.serviceHourNumber}>
-                                            {this.state.serviceHours}
-                                        </span>
-                                        Service Stunden
-                                    </h5>
-                                    {this.renderSlider()}
-                                    {this.renderCheckboxList(this.props.data.custom.checkboxes, this.handleCBChange, 'middle')}
-                                    <div className={styles.rightBorder}></div>
-                                </Col>
-                                <Col md="4">
-                                    <p className={styles.advisorText}>
-                                        {this.t("customPackage.step3Hint")}
-                                    </p>
-                                    {this.renderCheckboxList(this.props.data.custom.topRightCheckboxes, this.handleCBChange, 'topRight')}
-                                    <div className={styles.rightMiddleHeader}>
-                                        <h5>{this.t("customPackage.rightCenterHeader")}</h5>
-                                    </div>
-                                    {this.renderCheckboxList(this.props.data.custom.bottomRightCheckboxes, this.handleCBChange, 'bottomRight')}
-                                    <div className={styles.purchaseButtonContainer}>
-                                        <button className={styles.purchaseButton} onClick={this.handlePurchase}>
-                                            {this.t("customPackage.purchasePrompt")}
-                                        </button>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
+    renderArticle(article, i) {
+        this.purchaseData.articles = this.purchaseData.articles.filter((purchase) => {
+            return (purchase.key !== article.key)
+        });
+        if ((!article.includedIf && this.state[article.key] !== false) || (article.includedIf && this.state.service >= article.includedIf.value)) {
+            this.purchaseData.articles.push({
+                ...article,
+                value: this.state[article.key]
+            });
+        }
+        switch (article.key) {
+            case "validity":
+            case "participants":
+                const options = Object.keys(article.options).map((option, i) => {
+                    return {
+                        label: article.options[option].text,
+                        value: parseInt(option, 10)
+                    }
+                });
+                return (
+                    <div className={styles.dropdown} key={`article-${i}`}>
+                        <SelectMenu defaultValue={this.state[article.key]}
+                                    options={options}
+                                    onChange={(obj) => {
+                                        this.setState({
+                                            [article.key]: obj.value,
+                                            price: (this.state.price - article.options[this.state[article.key]].price) + article.options[obj.value].price
+                                        });
+                                    }}
+                        />
                     </div>
-                )}
-            </div>
-        );
+                );
+            case "languages":
+                return this.renderLanguageSelector(article, i);
+            case "service":
+                return (
+                    <div key={`article-${i}`}>
+                        <h5 className={styles.serviceHours}>
+                                <span className={styles.serviceHourNumber}>
+                                    {this.state[article.key]}
+                                </span>
+                            {this.t("customPackage.serviceHours")}
+                        </h5>
+                        <Slider step={1}
+                                max={30}
+                                value={this.state[article.key]}
+                                onChange={(e, value) => {
+                                    if (article.options[value]) {
+                                        this.setState({
+                                            [article.key]: value,
+                                            price: (this.state.price - article.options[this.state[article.key]].price) + article.options[value].price
+                                        });
+                                    }
+                                }}
+                                style={{width: "100%"}}
+                        />
+                    </div>
+                );
+            case "intro_webinar":
+            case "support_email":
+            case "support_phone":
+            case "service_agent_approval":
+            case "service_agent_dedicated":
+            case "css_implementation":
+            case "design_creation":
+            case "full_setup":
+            case "ad_management":
+            case "analytics_monitoring":
+                const checked = (this.state.service >= article.includedIf.value);
+                return (
+                    <div key={`article-${i}`}>
+                        <Icon fixedWidth name={checked ? "check" : "close"}
+                              className={cx(styles.checkboxIcon, checked && styles.cbChecked)}
+                        />
+                        {this.t(`customPackage.articles.${article.key}`)}
+                    </div>
+                );
+            case "css_editable":
+            case "campaign_page":
+            case "subdomain":
+            case "custom_domain":
+                return (
+                    <div
+                        key={`article-${i}`}
+                        onClick={this.selectArticle.bind(this, article)}
+                        className={cx(styles.checkboxLine)}
+                    >
+                        <Icon
+                            fixedWidth name={this.state[article.key] ? "check" : "close"}
+                            className={cx(styles.checkboxIcon, this.state[article.key] && styles.cbChecked)}
+                        />
+                        {this.t(`customPackage.articles.${article.key}`)}
+                    </div>
+                );
+            default:
+                console.warn(`${article.key} not valid`);
+                return null;
+        }
+    }
+
+    renderButton() {
+        const {onClick, button, templateId} = this.props;
+        if (typeof onClick === "function") {
+            return (
+                <button className={styles.purchase_button}
+                        onClick={::this.onPurchase}
+                >
+                    {this.t("priceTableElement.button.caption")}
+                </button>
+            )
+        }
+        return (
+            <button className={styles.purchase_button}
+                    href={`${onClick}?templateId=${templateId}&orderData=${btoa(JSON.stringify(this.purchaseData))}`}
+            >
+                {this.t("priceTableElement.button.caption")}
+            </button>
+        )
+    }
+
+    renderCustomCols(column, i) {
+        return (
+            <Col md="12" lg="4" key={`col-${i}`} className={styles.column}>
+                <p className={styles.advisorText}>
+                    {this.t(`customPackage.step${i + 1}Hint`)}
+                </p>
+                {column.map(::this.renderArticle)}
+            </Col>
+        )
+    }
+
+    render() {
+        const {data} = this.props;
+        return (
+            <Row className={styles.customPackageContainer}>
+                <Col xs="12">
+                    <Row>
+                        <Col md="6" className={styles.titleLeft}>
+                            <img src={data.plans.custom.img} alt="Logo"
+                                 className={!data.plans.custom.img && styles.invisible}
+                            />
+                            <p>{data.plans.custom.title}</p>
+                        </Col>
+                        <Col md="4" mdOffset={2} className={styles.sumContainer}>
+                            <span id="sum" className={styles.sumDisplay}>
+                                <sup>€</sup>
+                                <AnimatedNumber component="text" value={this.state.price}
+                                                style={{
+                                                    transition: '0.8s ease-out',
+                                                    transitionProperty: 'background-color, color, opacity'
+                                                }}
+                                                duration={300}
+                                                stepPrecision={0}
+                                />
+                            </span>
+                        </Col>
+                    </Row>
+                    <Row className={styles.customRow}>
+                        {data.plans.custom.articles.map(::this.renderCustomCols)}
+                    </Row>
+                    <Row>
+                        {this.renderButton()}
+                    </Row>
+                </Col>
+            </Row>
+        )
     }
 }
