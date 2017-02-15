@@ -56,7 +56,9 @@ export default class PriceTableElement extends ReactComponent {
         let text = element.text;
         if (element.style.includes("bold")) text = <b>{text}</b>;
         if (element.style.includes("italic")) text = <i>{text}</i>;
-        this.purchaseData.articles.push(element);
+        if (element.key) {
+            this.purchaseData.articles.push(element);
+        }
         return (
             <p key={i}>
                 {text}
