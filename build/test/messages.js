@@ -3,7 +3,23 @@ export default {
         priceTable: {
             leftText: "Einzelpakete",
             rightText: "Flatratepakete",
-            header: "Preise"
+            header: "Preise",
+            articles: {
+                intro_webinar: "Einführungswebinar",
+                support_email: "Support via Email",
+                support_phone: "Support via Telefon",
+                service_agent_approval: "Abnahme durch PM.",
+                service_agent_dedicated: "Beratung durch PM.",
+                css_implementation: "Umsetzung von Grafiken",
+                design_creation: "Kreation von Grafiken",
+                full_setup: "Einrichtung der App",
+                ad_management: "Werbemanagement",
+                analytics_monitoring: "Auswertung und Analyse",
+                css_editable: "Offenens CSS",
+                campaign_page: "Kampagnenseite",
+                subdomain: "Subdomain (z.B. sk.adventskalender.co)",
+                custom_domain: "Eigene Domain",
+            }
         },
         priceTableElement: {
             popular: "BELIEBT",
@@ -27,22 +43,6 @@ export default {
                 one: "{{count}} Sprache ausgewählt",
                 other: "{{count}} Sprachen ausgewählt",
                 zero: "Keine Sprache ausgewählt"
-            },
-            articles: {
-                intro_webinar: "Einführungswebinar",
-                support_email: "Support via Email",
-                support_phone: "Support via Telefon",
-                service_agent_approval: "Abnahme durch PM.",
-                service_agent_dedicated: "Beratung durch PM.",
-                css_implementation: "Umsetzung von Grafiken",
-                design_creation: "Kreation von Grafiken",
-                full_setup: "Einrichtung der App",
-                ad_management: "Werbemanagement",
-                analytics_monitoring: "Auswertung und Analyse",
-                css_editable: "Offenens CSS",
-                campaign_page: "Kampagnenseite",
-                subdomain: "Subdomain (z.B. sk.adventskalender.co)",
-                custom_domain: "Eigene Domain",
             }
         }
     }

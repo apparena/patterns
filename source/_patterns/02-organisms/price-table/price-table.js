@@ -79,10 +79,14 @@ export default class PriceTable extends ReactComponent {
      */
     renderCustomPackagePrompt() {
         const {plans, onClick, templateId} = this.props;
+        if (this.state.showCustomPackageCreator) {
+            return (
+                <CustomPackageCreator templateId={templateId} onClick={onClick} data={plans}/>
+            )
+        }
         return (
-            <div>
-                <Col md="4" mdOffset={4} className={cx(styles.customPackage,
-                    this.state.showCustomPackageCreator && styles.invisible)}>
+            <Row justifyContent="center">
+                <Col xs="10" md="6" lg="4" className={cx(styles.customPackage)}>
                     <p>
                         {this.t("customPackage.info1")}
                         <br />
@@ -94,9 +98,7 @@ export default class PriceTable extends ReactComponent {
                         {this.t("customPackage.buttonPrompt")}
                     </button>
                 </Col>
-                {this.state.showCustomPackageCreator &&
-                <CustomPackageCreator templateId={templateId} onClick={onClick} data={plans}/>}
-            </div>
+            </Row>
         );
     }
 

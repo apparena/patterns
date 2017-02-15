@@ -159,7 +159,7 @@ export default class CustomPackageCreator extends ReactComponent {
         this.purchaseData.articles = this.purchaseData.articles.filter((purchase) => {
             return (purchase.key !== article.key)
         });
-        if ((!article.includedIf && this.state[article.key] !== false) || (article.includedIf && this.state.service >= article.includedIf.value)) {
+        if (article.key && ((!article.includedIf && this.state[article.key] !== false) || (article.includedIf && this.state.service >= article.includedIf.value))) {
             this.purchaseData.articles.push({
                 ...article,
                 value: this.state[article.key]
@@ -229,7 +229,7 @@ export default class CustomPackageCreator extends ReactComponent {
                         <Icon fixedWidth name={checked ? "check" : "close"}
                               className={cx(styles.checkboxIcon, checked && styles.cbChecked)}
                         />
-                        {this.t(`customPackage.articles.${article.key}`)}
+                        {this.t(`priceTable.articles.${article.key}`)}
                     </div>
                 );
             case "css_editable":
@@ -246,7 +246,7 @@ export default class CustomPackageCreator extends ReactComponent {
                             fixedWidth name={this.state[article.key] ? "check" : "close"}
                             className={cx(styles.checkboxIcon, this.state[article.key] && styles.cbChecked)}
                         />
-                        {this.t(`customPackage.articles.${article.key}`)}
+                        {this.t(`priceTable.articles.${article.key}`)}
                     </div>
                 );
             default:
@@ -291,14 +291,15 @@ export default class CustomPackageCreator extends ReactComponent {
         return (
             <Row className={styles.customPackageContainer}>
                 <Col xs="12">
-                    <Row>
-                        <Col md="6" className={styles.titleLeft}>
-                            <img src={data.plans.custom.img} alt="Logo"
-                                 className={!data.plans.custom.img && styles.invisible}
-                            />
-                            <p>{data.plans.custom.title}</p>
-                        </Col>
-                        <Col md="4" mdOffset={2} className={styles.sumContainer}>
+                    <div className={styles.customPackageInnerContainer}>
+                        <Row>
+                            <Col md="6" className={styles.titleLeft}>
+                                <img src={data.plans.custom.img} alt="Logo"
+                                     className={!data.plans.custom.img && styles.invisible}
+                                />
+                                <p>{data.plans.custom.title}</p>
+                            </Col>
+                            <Col md="4" mdOffset={2} className={styles.sumContainer}>
                             <span id="sum" className={styles.sumDisplay}>
                                 <sup>€</sup>
                                 <AnimatedNumber component="text" value={this.state.price}
@@ -310,14 +311,15 @@ export default class CustomPackageCreator extends ReactComponent {
                                                 stepPrecision={0}
                                 />
                             </span>
-                        </Col>
-                    </Row>
-                    <Row className={styles.customRow}>
-                        {data.plans.custom.articles.map(::this.renderCustomCols)}
-                    </Row>
-                    <Row>
-                        {this.renderButton()}
-                    </Row>
+                            </Col>
+                        </Row>
+                        <Row className={styles.customRow}>
+                            {data.plans.custom.articles.map(::this.renderCustomCols)}
+                        </Row>
+                        <Row>
+                            {this.renderButton()}
+                        </Row>
+                    </div>
                 </Col>
             </Row>
         )
