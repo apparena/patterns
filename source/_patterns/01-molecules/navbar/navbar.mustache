@@ -72,6 +72,7 @@
     </div>
 
     <!-- Mobile navigation -->
+    <!--
     <div class="handle">
         <a href="#m-navbar-mobile">
             <i class="aa-icon aa-icon-menu-circle"></i>
@@ -102,12 +103,13 @@
             </ul>
         {{/navs}}
     </nav>
+    -->
 
 
     <script type="application/javascript">
         $(document).ready(function () {
-            $("#m-navbar-mobile").mmenu({
-                "counters": true,
+            //$(".m-navs.nav").mmenu({
+                /* "counters": true,
                 "navbars": [
                     {
                         "position": "top",
@@ -126,8 +128,10 @@
                             "<a class='fa fa-facebook' href='#/'></a>"
                         ]
                     }
-                ]
-            });
+                ] */
+            //}, {
+            //    "clone": true
+            //});
         });
     </script>
 {{/navbar}}
