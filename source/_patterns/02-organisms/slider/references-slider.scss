@@ -13,13 +13,13 @@
   $reference-height: 476px;
   $reference-quote-width: 40/100;
   $slick-font-path: "./fonts/" !default;
-  $slick-font-family: "app-arena-website";
+  $slick-font-family: "app-arena-icons";
   $slick-loader-path: "./" !default;
   $slick-arrow-color: black;
   $slick-dot-color: black;
   $slick-dot-color-active: $slick-dot-color;
-  $slick-prev-character: 'aa-icon-slider-arrow-left';
-  $slick-next-character: 'aa-icon-slider-arrow-right';
+  $slick-prev-character: $aa-icon-slider-arrow-left;
+  $slick-next-character: $aa-icon-slider-arrow-right;
   $slick-dot-character: "\2022" !default;
   $slick-dot-size: 6px !default;
   $slick-opacity-default: 0.75 !default;
