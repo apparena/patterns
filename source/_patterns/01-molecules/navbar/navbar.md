@@ -11,6 +11,7 @@ implemented using [mmenu](http://mmenu.frebsite.nl/).
 ## Dependencies
 
 - Bootstrap (for dropdowns in second level nav) 
+- [Mmenu](http://mmenu.frebsite.nl/) (for mobile navigation) 
 
 ## Use cases
 - Main navigation
