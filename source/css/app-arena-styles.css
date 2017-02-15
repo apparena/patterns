@@ -8895,95 +8895,161 @@ li.mm-vertical.mm-opened > .mm-panel {
   .mm-menu .mm-divider {
     background: rgba(0, 0, 0, 0.05); }
 
+/*
+	jQuery.mmenu offCanvas addon CSS
+*/
+.mm-page {
+  box-sizing: border-box;
+  position: relative; }
+
+.mm-slideout {
+  transition: transform 0.4s ease;
+  z-index: 1; }
+
+html.mm-opened {
+  overflow-x: hidden;
+  position: relative; }
+
+html.mm-blocking {
+  overflow: hidden; }
+  html.mm-blocking body {
+    overflow: hidden; }
+
+html.mm-background .mm-page {
+  background: inherit; }
+
+#mm-blocker {
+  background: rgba(3, 2, 1, 0);
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+html.mm-blocking #mm-blocker {
+  display: block; }
+
+.mm-menu.mm-offcanvas {
+  z-index: 0;
+  display: none;
+  position: fixed; }
+  .mm-menu.mm-offcanvas.mm-current {
+    display: block; }
+
+.mm-menu.mm-offcanvas.mm-no-csstransforms.mm-current.mm-opened {
+  z-index: 10; }
+
+.mm-menu.mm-offcanvas {
+  width: 80%;
+  min-width: 140px;
+  max-width: 440px; }
+
+html.mm-opening .mm-slideout {
+  transform: translate(80%, 0);
+  transform: translate3d(80%, 0, 0); }
+
+@media all and (max-width: 175px) {
+  html.mm-opening .mm-slideout {
+    transform: translate(140px, 0);
+    transform: translate3d(140px, 0, 0); } }
+
+@media all and (min-width: 550px) {
+  html.mm-opening .mm-slideout {
+    transform: translate(440px, 0);
+    transform: translate3d(440px, 0, 0); } }
+
 /*=========================================================================
   Molecules Modal
  ========================================================================== */
-.m-navbar {
+.m-navbar .m-navbar-desktop {
   position: relative; }
-  .m-navbar .navbar-logo {
+  .m-navbar .m-navbar-desktop .navbar-logo {
     position: absolute;
     top: 1rem;
     left: 1rem; }
-    .m-navbar .navbar-logo > img {
-      height: 25px;
-      max-width: 200px; }
-  .m-navbar .navbar-navs > .m-navs {
-    justify-content: center; }
-    .m-navbar .navbar-navs > .m-navs > .nav-link {
+    .m-navbar .m-navbar-desktop .navbar-logo > img {
+      height: 1.5rem;
+      max-width: 10rem; }
+  .m-navbar .m-navbar-desktop .navbar-navs > .m-navs {
+    justify-content: center;
+    flex-wrap: wrap; }
+    .m-navbar .m-navbar-desktop .navbar-navs > .m-navs > .nav-link {
       text-transform: uppercase;
       color: #777582; }
-      .m-navbar .navbar-navs > .m-navs > .nav-link.active {
+      .m-navbar .m-navbar-desktop .navbar-navs > .m-navs > .nav-link.active {
         color: #46454c; }
-      .m-navbar .navbar-navs > .m-navs > .nav-link:hover {
+      .m-navbar .m-navbar-desktop .navbar-navs > .m-navs > .nav-link:hover {
         color: #5e5d67; }
-  .m-navbar .search-form {
+  .m-navbar .m-navbar-desktop .search-form {
     cursor: pointer;
     position: absolute;
     top: 1rem;
     right: 1rem;
     z-index: 1; }
-  .m-navbar .dropdown-menu {
+  .m-navbar .m-navbar-desktop .dropdown-menu {
     padding: 0;
     border-radius: inherit; }
-    .m-navbar .dropdown-menu ul {
+    .m-navbar .m-navbar-desktop .dropdown-menu ul {
       padding-left: 0;
       list-style: none; }
-      .m-navbar .dropdown-menu ul li {
+      .m-navbar .m-navbar-desktop .dropdown-menu ul li {
         padding: 0.3rem 0; }
-      .m-navbar .dropdown-menu ul a {
+      .m-navbar .m-navbar-desktop .dropdown-menu ul a {
         color: #818a91; }
-    .m-navbar .dropdown-menu .subnav-container.promotion-activated {
+    .m-navbar .m-navbar-desktop .dropdown-menu .subnav-container.promotion-activated {
       position: relative;
       margin-left: auto;
       margin-right: auto;
       padding-right: 15px;
       padding-left: 15px; }
       @media (min-width: 576px) {
-        .m-navbar .dropdown-menu .subnav-container.promotion-activated {
+        .m-navbar .m-navbar-desktop .dropdown-menu .subnav-container.promotion-activated {
           padding-right: 15px;
           padding-left: 15px; } }
       @media (min-width: 768px) {
-        .m-navbar .dropdown-menu .subnav-container.promotion-activated {
+        .m-navbar .m-navbar-desktop .dropdown-menu .subnav-container.promotion-activated {
           padding-right: 15px;
           padding-left: 15px; } }
       @media (min-width: 992px) {
-        .m-navbar .dropdown-menu .subnav-container.promotion-activated {
+        .m-navbar .m-navbar-desktop .dropdown-menu .subnav-container.promotion-activated {
           padding-right: 15px;
           padding-left: 15px; } }
       @media (min-width: 1200px) {
-        .m-navbar .dropdown-menu .subnav-container.promotion-activated {
+        .m-navbar .m-navbar-desktop .dropdown-menu .subnav-container.promotion-activated {
           padding-right: 15px;
           padding-left: 15px; } }
       @media (min-width: 576px) {
-        .m-navbar .dropdown-menu .subnav-container.promotion-activated {
+        .m-navbar .m-navbar-desktop .dropdown-menu .subnav-container.promotion-activated {
           width: 540px;
           max-width: 100%; } }
       @media (min-width: 768px) {
-        .m-navbar .dropdown-menu .subnav-container.promotion-activated {
+        .m-navbar .m-navbar-desktop .dropdown-menu .subnav-container.promotion-activated {
           width: 540px;
           max-width: 100%; } }
       @media (min-width: 992px) {
-        .m-navbar .dropdown-menu .subnav-container.promotion-activated {
+        .m-navbar .m-navbar-desktop .dropdown-menu .subnav-container.promotion-activated {
           width: 720px;
           max-width: 100%; } }
       @media (min-width: 1200px) {
-        .m-navbar .dropdown-menu .subnav-container.promotion-activated {
+        .m-navbar .m-navbar-desktop .dropdown-menu .subnav-container.promotion-activated {
           width: 960px;
           max-width: 100%; } }
-    .m-navbar .dropdown-menu .items {
+    .m-navbar .m-navbar-desktop .dropdown-menu .items {
       padding: 2rem;
       background: #373a3c;
       color: #ccc; }
-      .m-navbar .dropdown-menu .items .subnav-header {
+      .m-navbar .m-navbar-desktop .dropdown-menu .items .subnav-header {
         border-bottom: 1px solid #ccc;
         padding-bottom: 0.5rem;
         margin-bottom: 1rem;
         text-transform: uppercase; }
-    .m-navbar .dropdown-menu .promotion {
+    .m-navbar .m-navbar-desktop .dropdown-menu .promotion {
       padding: 2rem;
       background: #434749;
       color: #ccc; }
-      .m-navbar .dropdown-menu .promotion img {
+      .m-navbar .m-navbar-desktop .dropdown-menu .promotion img {
         max-width: 100%; }
 
 /**

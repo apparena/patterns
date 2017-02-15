@@ -18,9 +18,9 @@
                 {{#navs}}
                     <ul class="m-navs nav {{ class }}">
                         {{# items }}
-                            <li class="nav-item {{# subnav}}dropdown{{/subnav}}">
-                                <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }} {{#subnav}}dropdown-toggle{{/subnav}}"
-                                   href="{{ url }}" {{#subnav}}data-toggle="dropdown"{{/subnav}}>
+                            <li class="nav-item {{# subnav }}dropdown{{/subnav}}">
+                                <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }} {{# subnav }}dropdown-toggle{{/ subnav }}"
+                                   href="{{ url }}" {{# subnav }}data-toggle="dropdown"{{/ subnav }}>
                                     {{{ text }}}
                                 </a>
 
@@ -72,18 +72,17 @@
     </div>
 
     <!-- Mobile navigation -->
-    <!--
     <div class="handle">
         <a href="#m-navbar-mobile">
             <i class="aa-icon aa-icon-menu-circle"></i>
         </a>
     </div>
-    <nav id="m-navbar-mobile" class="m-navbar-mobile {{class }}">
+    <nav id="m-navbar-mobile" class="m-navbar-mobile">
         {{#navs}}
-            <ul class="m-navs nav {{ class }}">
+            <ul>
                 {{# items }}
-                    <li class="nav-item">
-                        <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
+                    <li class="">
+                        <a class="{{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
                            href="{{ url }}" >
                             {{{ text }}}
                         </a>
@@ -103,35 +102,13 @@
             </ul>
         {{/navs}}
     </nav>
-    -->
 
 
     <script type="application/javascript">
         $(document).ready(function () {
-            //$(".m-navs.nav").mmenu({
-                /* "counters": true,
-                "navbars": [
-                    {
-                        "position": "top",
-                        "content": [
-                            "searchfield"
-                        ]
-                    },
-                    {
-                        "position": "top"
-                    },
-                    {
-                        "position": "bottom",
-                        "content": [
-                            "<a class='fa fa-envelope' href='#/'></a>",
-                            "<a class='fa fa-twitter' href='#/'></a>",
-                            "<a class='fa fa-facebook' href='#/'></a>"
-                        ]
-                    }
-                ] */
-            //}, {
-            //    "clone": true
-            //});
+            $("#m-navbar-mobile").mmenu();
+            //var api = $("#m-navbar-mobile").data( "mmenu" );
+            //api.open();
         });
     </script>
 {{/navbar}}
