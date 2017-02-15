@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "app-arena-icons";
-  src: url("/dist/vendor/app-arena-icons.eot?d3d033c286180bad243dda2c0c5880c6?#iefix") format("embedded-opentype"), url("/dist/vendor/app-arena-icons.woff?d3d033c286180bad243dda2c0c5880c6") format("woff"), url("/dist/vendor/app-arena-icons.ttf?d3d033c286180bad243dda2c0c5880c6") format("truetype"), url("/dist/vendor/app-arena-icons.svg?d3d033c286180bad243dda2c0c5880c6#app-arena-icons") format("svg");
+  src: url("../fonts/app-arena-icons.eot?639ac03947a62b3e898d9897e1ddecb2?#iefix") format("embedded-opentype"), url("../fonts/app-arena-icons.woff?639ac03947a62b3e898d9897e1ddecb2") format("woff"), url("../fonts/app-arena-icons.ttf?639ac03947a62b3e898d9897e1ddecb2") format("truetype"), url("../fonts/app-arena-icons.svg?639ac03947a62b3e898d9897e1ddecb2#app-arena-icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
