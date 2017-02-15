@@ -2,7 +2,6 @@
     <div class="o-vertical-tabs">
         <div class="row">
             {{# navigation.positionLeft }}
-
                 <div class="tabs-nav hidden-xs-down col-lg-5 col-md-12">
                     <div class="row">
                         <div class="tabs offset-md-1 col-md-11">
@@ -20,7 +19,6 @@
                                         </div>
                                     </li>
                                 {{/items}}
-
                             </ul>
                             {{#cta}}
                                 <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
@@ -28,11 +26,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content hidden-xs hidden-lg-down mx-auto d-blockcol-lg-12 col-md-12 col-xl-7"">
+                <div class="tab-content hidden-xs hidden-lg-down mx-auto d-blockcol-lg-12 col-md-12 col-xl-7">
                     <div class="row">
                         <div class="col-md-12">
                             <!-- Tab panes -->
-                            <div class="tab-content ">
+                            <div class="tab-content">
                                 {{#items}}
                                     <div class="tab-pane {{#isActive}}active{{/isActive}}" id="{{id}}" role="tabpanel">
                                         {{{content}}}
@@ -44,11 +42,7 @@
                 </div>
             {{/navigation.positionLeft}}
 
-
-
             {{^ navigation.positionLeft }}
-
-
                 <div class="tab-content hidden-xs-down col-sm-12 col-lg-7 col-md-12 col-xl-7">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
@@ -59,27 +53,20 @@
                                          role="tabpanel">
                                         {{{content}}}
                                     </div>
-
-
-
-
                                 {{/items}}
                             </div>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="tabs-nav hidden-xs-down col-lg-5 col-xl-5 col-md-12 col-sm-12">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
                             <ul class="hover-tabs list-unstyled">
                                 {{#items}}
-
                                     <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                     <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
                                         href="#{{id}}" role="tab">
-
 
                                         <div class="o-vertical-tab-icon ">
                                             {{{ icon }}}
@@ -91,60 +78,41 @@
                                         </div>
                                     </li>
                                 {{/items}}
-
-
-                                    {{#cta}}
-                                        <a href="{{url}}" class="btn {{id}}">{{{text}}}</a>
-                                    {{/cta}}
-
-
-
+                                {{#cta}}
+                                    <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
+                                {{/cta}}
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 {{# slider }}
-
-
-
-
                     <div class="hidden-sm-up col-xs-12 o-slider ml-3 mr-3" id="{{id}}">
-
-
                         {{# items }}
                             <div class="carouselContainer">
                                 <div class="carouselImg">{{{content}}} </div>
                                 <div class="carouselIcon">{{{icon}}} </div>
                                 <div class="carouselTitle">{{{title}}}</div>
                                 <div class="carouselDescription"> {{{description}}}</div>
-
-
-
-
                             </div>
                         {{/ items }}
-
-
                     </div>
                     <script>
                         jQuery(document).ready(function () {
                             jQuery('#{{id}}').slick({
-                                {{#settings.dots}}dots: true,{{/settings.dots}}
+                                {{#settings.dots}}dots                    : true,{{/settings.dots}}
                                 {{#settings.slidesToScroll}}slidesToScroll: {{settings.slidesToScroll}},{{/settings.slidesToScroll}}
-                                {{#settings.slidesToShow}}slidesToShow: {{settings.slidesToShow}},{{/settings.slidesToShow}}
-                                {{#settings.centerMode}}centerMode: true,{{/settings.centerMode}}
-                                {{#settings.centerPadding}}centerPadding: "{{settings.centerPadding}}",{{/settings.centerPadding}}
-                                {{#settings.autoplay}}autoplay: false,{{/settings.autoplay}}
-                                {{#settings.autoplaySpeed}}autoplaySpeed: {{settings.autoplaySpeed}},{{/settings.autoplaySpeed}}
-                                infinite: true
+                                {{#settings.slidesToShow}}slidesToShow    : {{settings.slidesToShow}},{{/settings.slidesToShow}}
+                                {{#settings.centerMode}}centerMode        : true,{{/settings.centerMode}}
+                                {{#settings.centerPadding}}centerPadding  : "{{settings.centerPadding}}",{{/settings.centerPadding}}
+                                {{#settings.autoplay}}autoplay            : false,{{/settings.autoplay}}
+                                {{#settings.autoplaySpeed}}autoplaySpeed  : {{settings.autoplaySpeed}},{{/settings.autoplaySpeed}}
+                                infinite                                  : true
                             });
                         });
                     </script>
 
-
                     <div class="slick-btn hidden-sm-up">
-
                         {{#cta}}
                             <a href="{{url}}" class="btn {{id}}">{{{text}}}</a>
                         {{/cta}}
@@ -156,11 +124,6 @@
 
         </div>
     </div>
-
-
-
-
-
 {{/vertical-tabs}}
 
 
