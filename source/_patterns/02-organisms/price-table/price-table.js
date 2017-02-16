@@ -7,6 +7,7 @@ import Checkbox from "../../00-atoms/forms/checkbox";
 import CustomPackageCreator from "./custom-package-creator";
 import Col from "../../00-atoms/grid/col";
 import Row from "../../00-atoms/grid/row";
+import Button from "../../00-atoms/button/button";
 
 export default class PriceTable extends ReactComponent {
     static propTypes = {
@@ -92,11 +93,13 @@ export default class PriceTable extends ReactComponent {
                         <br />
                         {this.t("customPackage.info2")}
                     </p>
-                    <button id="customPackage" className={styles.customPackageButton}
+                    <Button className={styles.customPackageButton}
                             onClick={this.handleCustomPackageButton}
+                            type="primary"
+                            rounded
                     >
                         {this.t("customPackage.buttonPrompt")}
-                    </button>
+                    </Button>
                 </Col>
             </Row>
         );

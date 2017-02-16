@@ -5,6 +5,7 @@ import styles from "./price-table.scss";
 import Tag from "../../00-atoms/tag/tag";
 import Col from "../../00-atoms/grid/col";
 import Row from "../../00-atoms/grid/row";
+import Button from "../../00-atoms/button/button";
 
 export default class PriceTableElement extends ReactComponent {
     static propTypes = {
@@ -96,22 +97,26 @@ export default class PriceTableElement extends ReactComponent {
     }
 
     renderButton() {
-        const {onClick, button, templateId} = this.props;
+        const {onClick, templateId} = this.props;
         if (typeof onClick === "function") {
             return (
-                <button className={styles.purchase_button}
+                <Button className={styles.purchase_button}
                         onClick={::this.onPurchase}
+                        type="primary"
+                        rounded
                 >
                     {this.t("priceTableElement.button.caption")}
-                </button>
+                </Button>
             )
         }
         return (
-            <button className={styles.purchase_button}
+            <Button className={styles.purchase_button}
+                    type="primary"
+                    rounded
                     href={`${onClick}?templateId=${templateId}&orderData=${btoa(JSON.stringify(this.purchaseData))}`}
             >
                 {this.t("priceTableElement.button.caption")}
-            </button>
+            </Button>
         )
     }
 

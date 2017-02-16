@@ -33,6 +33,7 @@ export default class Button extends ReactComponent {
         size: PropTypes.oneOf(BUTTON_SIZES),
         target: PropTypes.oneOf(["blank", "top", "self"]),
         block: PropTypes.bool,
+        rounded: PropTypes.bool,
         href: PropTypes.string,
         isActive: PropTypes.bool,
         isDisabled: PropTypes.bool,
@@ -104,6 +105,7 @@ export default class Button extends ReactComponent {
             isDisabled,
             target,
             submit,
+            rounded,
         } = this.props;
         // classes
         const componentClass = cx(
@@ -113,6 +115,7 @@ export default class Button extends ReactComponent {
             block && styles["btn-block"],
             isActive && styles["active"],
             isDisabled && styles["disabled"],
+            rounded && styles["btn-rounded"],
             className
         );
 
@@ -126,6 +129,7 @@ export default class Button extends ReactComponent {
         const style = (state !== "default" && this.btnWidth) ? {width: `${this.btnWidth}px`} : {};
         return (
             <button
+                role="button"
                 ref={this.refBind}
                 style={style}
                 onClick={onClick}
