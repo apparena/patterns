@@ -112,32 +112,37 @@ export default class Button extends ReactComponent {
             styles.btn,
             styles[`btn-${type}`],
             size && styles[`btn-${size}`],
-            block && styles["btn-block"],
-            isActive && styles["active"],
-            isDisabled && styles["disabled"],
-            rounded && styles["btn-rounded"],
+            block && styles['btn-block'],
+            isActive && styles['active'],
+            isDisabled && styles['disabled'],
+            rounded && styles['btn-rounded'],
             className
         );
-
+        const style = (state !== 'default' && this.btnWidth) ? {width: `${this.btnWidth}px`} : {};
         if (href) {
             return (
-                <a href={href} className={componentClass} target={`_${target}`}>
-                    {(state === "default") ? children : this.renderState()}
+                <a
+                    ref={this.refBind}
+                    style={style}
+                    href={href}
+                    className={componentClass}
+                    target={`_${target}`}
+                >
+                    {(state === 'default') ? children : this.renderState()}
                 </a>
             );
         }
-        const style = (state !== "default" && this.btnWidth) ? {width: `${this.btnWidth}px`} : {};
         return (
             <button
                 role="button"
                 ref={this.refBind}
                 style={style}
                 onClick={onClick}
-                disabled={isDisabled || (state !== "default")}
+                disabled={isDisabled || (state !== 'default')}
                 className={componentClass}
-                type={submit ? "submit" : "button"}
+                type={submit ? 'submit' : 'button'}
             >
-                {(state === "default") ? children : this.renderState()}
+                {(state === 'default') ? children : this.renderState()}
             </button>
         );
     }
