@@ -20,11 +20,11 @@
       &.react-toggle--checked .react-toggle-thumb {
         left: 29px;
       }
-      &.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-        background-color: transparent;
-      }
-      &:hover:not(.react-toggle--disabled) .react-toggle-track {
-        background-color: transparent;
+      &.react-toggle--checked:hover:not(.react-toggle--disabled), .react-toggle--checked,
+      &:hover:not(.react-toggle--disabled), &:hover:not(.react-toggle--disabled) {
+        .react-toggle-track {
+          background-color: transparent;
+        }
       }
     }
   }
@@ -35,9 +35,9 @@
 }
 
 .price-table {
-  background-color: $gray-lightest;
   font-family: $font-family-base;
   padding-bottom: 1rem;
+  text-align: initial;
 
   .selector-table {
     display: table;
@@ -155,29 +155,11 @@
       }
 
       .purchase_button {
-        font-size: 14pt;
-        background-color: $brand-focus;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
         width: 50%;
-        color: white;
-        border: none;
-        height: 40px;
         position: absolute;
         left: 25%;
         bottom: -20px;
         cursor: pointer;
-        box-shadow: 0 0 10px 0 rgba(44, 130, 201, 0.5);
-
-        &:focus {
-          outline: none;
-        }
-
-        &:active {
-          background-color: darken($brand-focus, 15%);
-          box-shadow: inset -5px 5px 8px -2px rgba(6, 18, 28, 0.5);
-        }
       }
     }
   }
@@ -188,24 +170,7 @@
     padding-top: 15px;
 
     button {
-      font-size: 14pt;
-      background-color: $brand-focus;
-      border-radius: 20px;
       width: 60%;
-      color: white;
-      border: none;
-      height: 33px;
-      cursor: pointer;
-      box-shadow: 0 0 10px 0 rgba(44, 130, 201, 0.5);
-
-      &:focus {
-        outline: none;
-      }
-
-      &:active {
-        background-color: darken($brand-focus, 15%);
-        box-shadow: inset -5px 5px 8px -2px rgba(6, 18, 28, 0.5);
-      }
     }
   }
 }
