@@ -14,7 +14,7 @@
                 </div>
             {{/searchForm}}
 
-            <div class="navbar-navs text-center py-2">
+            <div class="navbar-navs text-center py-2 hidden-md-down">
                 {{#navs}}
                     <ul class="m-navs nav {{ class }}">
                         {{# items }}
@@ -68,24 +68,34 @@
                     </ul>
                 {{/navs}}
             </div>
+            <div class="navbar-actions">
+                <a href="#" class="navbar-action">
+                    <i class="aa-icon aa-icon-search-circle"></i>
+                </a>
+                <a href="#m-navbar-mobile" class="navbar-action hidden-lg-up">
+                    <i class="aa-icon aa-icon-menu-circle"></i>
+                </a>
+            </div>
         </nav>
     </div>
 
     <!-- Mobile navigation -->
-    <div class="handle">
-        <a href="#m-navbar-mobile">
-            <i class="aa-icon aa-icon-menu-circle"></i>
-        </a>
-    </div>
     <nav id="m-navbar-mobile" class="m-navbar-mobile">
         {{#navs}}
             <ul>
                 {{# items }}
                     <li class="">
-                        <a class="{{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
-                           href="{{ url }}" >
-                            {{{ text }}}
-                        </a>
+                        {{# url }}
+                            <a class="{{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
+                               href="{{ url }}" >
+                                {{{ text }}}
+                            </a>
+                        {{/ url}}
+                        {{^ url }}
+                            <span class="{{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}">
+                                {{{ text }}}
+                            </span>
+                        {{/ url }}
                         {{# subnav }}
                             <ul>
                                 {{#columns}}
@@ -106,9 +116,9 @@
 
     <script type="application/javascript">
         $(document).ready(function () {
-            $("#m-navbar-mobile").mmenu();
-            //var api = $("#m-navbar-mobile").data( "mmenu" );
-            //api.open();
+            if (!$("#m-navbar-mobile").data('mmenu')) {
+                $("#m-navbar-mobile").mmenu();
+            }
         });
     </script>
 {{/navbar}}
