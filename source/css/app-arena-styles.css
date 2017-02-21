@@ -8990,7 +8990,8 @@ html.mm-opening .mm-slideout {
  ========================================================================== */
 .m-navbar .m-navbar-desktop {
   color: #373a3c;
-  position: relative; }
+  position: relative;
+  min-height: 3.5rem; }
   .m-navbar .m-navbar-desktop .navbar-logo {
     position: absolute;
     top: 1rem;
