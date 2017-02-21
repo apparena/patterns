@@ -117,7 +117,14 @@
     <script type="application/javascript">
         $(document).ready(function () {
             if (!$("#m-navbar-mobile").data('mmenu')) {
-                $("#m-navbar-mobile").mmenu();
+                var options = {},
+                    configuration = {};
+                if ($("#main")) {
+                    configuration['offCanvas'] = {
+                        pageSelector: "#main"
+                    }
+                }
+                $("#m-navbar-mobile").mmenu(options, configuration);
             }
         });
     </script>
