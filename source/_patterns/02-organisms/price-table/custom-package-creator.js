@@ -160,9 +160,11 @@ export default class CustomPackageCreator extends ReactComponent {
         this.purchaseData.articles = this.purchaseData.articles.filter((purchase) => {
             return (purchase.key !== article.key)
         });
-        if (article.key && ((!article.includedIf && this.state[article.key] !== false) || (article.includedIf && this.state.service >= article.includedIf.value))) {
+        const {includedIf, options, ...rest} =  article;
+        if (article.key && ((!article.includedIf && this.state[article.key] !== false) || (includedIf && this.state.service >= includedIf.value))) {
             this.purchaseData.articles.push({
-                ...article,
+                ...rest,
+                price: this.state.price,
                 value: this.state[article.key]
             });
         }
