@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width"/>
     <meta about="App-Arena.com">
 
-    <link rel="stylesheet" href="../../css/app-arena-styles.css?1487692535" media="all"/>
-    <!--<link rel="stylesheet" href="../../css/website-wordpress-styles.css?1487692535" media="all"/>-->
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1487692535" media="all"/>
+    <link rel="stylesheet" href="../../css/app-arena-styles.css?1487759254" media="all"/>
+    <!--<link rel="stylesheet" href="../../css/website-wordpress-styles.css?1487759254" media="all"/>-->
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1487759254" media="all"/>
 
-    <!--<link rel="stylesheet" href="../../css/bootstrap.css?1487692535" media="all"/>
-    <link rel="stylesheet" href="../../css/bootstrap-theme.css?1487692535" media="all"/>-->
+    <!--<link rel="stylesheet" href="../../css/bootstrap.css?1487759254" media="all"/>
+    <link rel="stylesheet" href="../../css/bootstrap-theme.css?1487759254" media="all"/>-->
 
     <script src="../../js/vendor/jquery/dist/jquery.min.js"></script>
     <script src="../../js/vendor/tether/dist/js/tether.min.js"></script>
@@ -33,8 +33,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1487692535" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1487692535" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1487759254" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1487759254" media="all" />
 
     <!-- End Pattern Lab -->
 
@@ -494,6 +494,36 @@
           </div><!--end sg-pattern-category-body-->
           
         </div><!--end sg-pattern-category-->
+        <div id="viewall-atoms-navbar" class="sg-pattern-category">
+          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-navbar/index.html" class="patternLink" data-patternpartial="viewall-atoms-navbar">navbar</a></h2>
+        
+          <div class="sg-pattern-category-body">
+            
+          </div><!--end sg-pattern-category-body-->
+          
+        </div><!--end sg-pattern-category-->
+        <div id="atoms-action" class="sg-pattern">
+          <div class="sg-pattern-head">
+            <h3 class="sg-pattern-title">
+              <a href="../../patterns/00-atoms-navbar-action/00-atoms-navbar-action.html" class="patternLink" data-patternpartial="atoms-action" title="Link to Pattern">
+                  action
+              </a>
+            </h3>
+            <div class="sg-pattern-breadcrumb"></div>
+            <a href="#" data-patternpartial="atoms-action" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-action" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+          </div>
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-action">
+            
+          </div>
+          <div class="sg-pattern-example">
+            <a href="#" class="navbar-action " alt="open search form">
+    <i class="aa-icon aa-icon-search-circle"></i>
+</a>
+          </div>
+          <script type="text/json" id="sg-pattern-data-atoms-action" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"navbar"},"patternDesc":"","patternExtension":"mustache","patternName":"action","patternPartial":"atoms-action","patternState":""}
+          </script>
+        </div><!--end .sg-pattern-->
         <div id="viewall-atoms-progress-tracker-step" class="sg-pattern-category">
           <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-progress-tracker-step/index.html" class="patternLink" data-patternpartial="viewall-atoms-progress-tracker-step">progress tracker step</a></h2>
         
@@ -2944,14 +2974,12 @@
                             </li>
                     </ul>
             </div>
-            <div class="navbar-actions">
-                <a href="#" class="navbar-action">
-                    <i class="aa-icon aa-icon-search-circle"></i>
-                </a>
-                <a href="#m-navbar-mobile" class="navbar-action hidden-lg-up">
-                    <i class="aa-icon aa-icon-menu-circle"></i>
-                </a>
-            </div>
+                <div class="navbar-actions">
+                        <a href="#m-navbar-mobile" class="navbar-action hidden-lg-up" alt="toggle mobile menu">
+                            <i class="aa-icon aa-icon-cog"></i>
+                        </a>                        <a href="#" class="navbar-action " alt="open search form">
+                            <i class="aa-icon aa-icon-search-circle"></i>
+                        </a>                </div>
         </nav>
     </div>
 
@@ -3047,7 +3075,14 @@
     <script type="application/javascript">
         $(document).ready(function () {
             if (!$("#m-navbar-mobile").data('mmenu')) {
-                $("#m-navbar-mobile").mmenu();
+                var options = {},
+                    configuration = {};
+                if ($("#main")) {
+                    configuration['offCanvas'] = {
+                        pageSelector: "#main"
+                    }
+                }
+                $("#m-navbar-mobile").mmenu(options, configuration);
             }
         });
     </script>
@@ -5359,10 +5394,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1487692535">
+<script id="pl-js-polyfill-insert-1487759254">
   (function() {
     if (self != top) {
-      var cb = '1487692535';
+      var cb = '1487759254';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -5372,10 +5407,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1487692535">
+<script id="pl-js-insert-1487759254">
   (function() {
     if (self != top) {
-      var cb = '1487692535';
+      var cb = '1487759254';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
