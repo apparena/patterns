@@ -70,8 +70,8 @@
     display: block;
     height: auto;
     width: auto;
-    line-height: 0px;
-    font-size: 0px;
+    line-height: 0;
+    font-size: 0;
     cursor: pointer;
     background: transparent;
     color: transparent;
@@ -273,10 +273,10 @@
         }
 
         .quote {
-          font-size: 1.4rem;
+          font-size: 1.1rem;
           font-weight: lighter;
           font-style: italic;
-          color: $gray-light;
+          color: $gray-dark;
         }
 
         blockquote {

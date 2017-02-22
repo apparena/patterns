@@ -68,14 +68,13 @@
                     </ul>
                 {{/navs}}
             </div>
-            <div class="navbar-actions">
-                <a href="#" class="navbar-action">
-                    <i class="aa-icon aa-icon-search-circle"></i>
-                </a>
-                <a href="#m-navbar-mobile" class="navbar-action hidden-lg-up">
-                    <i class="aa-icon aa-icon-menu-circle"></i>
-                </a>
-            </div>
+            {{#actions}}
+                <div class="navbar-actions">
+                    {{#items}}
+                        {{> 00-atoms/navbar/action }}
+                    {{/items}}
+                </div>
+            {{/actions}}
         </nav>
     </div>
 
@@ -117,7 +116,14 @@
     <script type="application/javascript">
         $(document).ready(function () {
             if (!$("#m-navbar-mobile").data('mmenu')) {
-                $("#m-navbar-mobile").mmenu();
+                var options = {},
+                    configuration = {};
+                if ($("#main")) {
+                    configuration['offCanvas'] = {
+                        pageSelector: "#main"
+                    }
+                }
+                $("#m-navbar-mobile").mmenu(options, configuration);
             }
         });
     </script>
