@@ -16,12 +16,15 @@
                             {{#title}}<h3>{{title}}</h3>{{/title}}
                             <p class="quote">" {{quote}} "</p>
                             <hr class="center">
-                            <footer class="author">
-                                <span class="name">{{author.name}}</span>,
-                                <span class="position">{{author.position}}</span>
-                                <br>
-                                <span class="company">{{author.company}}</span>
-                            </footer>
+                            {{#author}}
+                                <footer class="author">
+                                    {{#name}}<span class="name">{{name}}</span>{{/name}}
+                                    {{#position}},<span class="position">{{position}}</span>{{/position}}
+                                    {{#company}}
+                                        <span class="company">{{company}}</span>
+                                    {{/company}}
+                                </footer>
+                            {{/author}}
                             <div class="buttons">
                                 {{#buttons}}
                                     {{#secondary}}

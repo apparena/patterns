@@ -4,177 +4,104 @@
 @import "../../../css/scss/abstracts/variables";
 @import "../../../css/scss/abstracts/mixins";
 
-
 .o-vertical-tabs {
-
-  .row {
-    width: 100%;
-    height: 100%;
-  }
-
-  /* Tags */
-
-  li.media.active {
-    opacity: 1;
-  }
-
-  ul.hover-tabs {
-    align-items: center;
-
-    li {
-      opacity: 0.5;
-      cursor: pointer;
-      @include transition($transition-fade);
-
-      margin-top: $spacer;
-
-      &:hover {
-        opacity: 1;
-
-      }
-
-    }
-  }
-
-  li.tabs-btn {
-
-    opacity: 1;
-    &:hover {
-      opacity: 0.5;
-    }
-  }
 
   h5 {
     color: $blue;
     cursor: pointer;
   }
 
-  /* tab-content: img/html/etc */
+  li.media.active {
+    opacity: 1;
+  }
 
+  .row {
+    width: 100%;
+    height: 100%;
+  }
+
+  // Tab navigation
+  .tabs-nav {
+
+    // Default navigation item
+    li.media {
+      display: block;
+      clear: both;
+      opacity: 0.5;
+      cursor: pointer;
+      border-bottom: 1px solid $gray-lighter;
+      margin: 20px 0;
+      padding-bottom: 10px;
+
+      @include transition($transition-fade);
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .icon {
+        float: left;
+        width: 90px;
+        height: 100px;
+        text-align: center;
+        font-size: $spacer * 2.5;
+        color: $blue;
+      }
+    }
+  }
+
+  // Tab content
   .tab-content {
-    align-items: center;
     margin-top: $spacer;
-display: flex;
 
     img {
       width: 100% !important;
       height: auto !important;
       margin: auto;
     }
-
   }
 
-
-.slick-btn {
-
-  margin-top: 500px;
-}
-
-/* tab-navigation */
-
-.carouselContainer {
-  overflow: hidden;
-
-  .carouselImg {
-    img {
-      max-width: 100%;
-      height: auto;
-      padding: $spacer;
-
-    }
+  // Slider (visible for sm and xs devices)
+  .slick-btn {
+    margin-top: 500px;
   }
 
-  .carouselDescription {
+  /* tab-navigation */
+  .carouselContainer {
+    overflow: hidden;
 
-    color: grey;
-    text-align: center;
-  }
-  .carouselTitle {
-    text-align: center;
-    font-size: 1.5rem;
-    color: dimgrey;
-  }
-  .carouselIcon {
-    font-size: 3rem;
-    text-align: center;
-
-  }
-}
-
-
-
-div#mySlider.hidden-sm-up.col-xs-12.o-slider.ml-3.mr-3.slick-initialized.slick-slider.slick-dotted { /* mobile slider */
-  width: 100%;
-  position: absolute;
-
-}
-
-.o-vertical-tab-icon { /* Icon  */
-  font-size: $spacer*2.5;
-  padding: $spacer;
-  color: $blue;
-  float: left;
-}
-
-.slick-dots {
-
-  li button:focus {
-
-    box-shadow: 0 0 0 2px #478ab8;
-    border-radius: 100%;
-    font-size: 2px;
-
-  }
-}
-
-.tabs-nav {
-
-  display: flex;
-
-  justify-content: center;
-
-
-  div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-basis: auto;
-    width: auto;
-    flex-shrink: 1;
-    flex-grow: 1;
-
-    ul {
-
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 100%;
-
-      li {
-
-        justify-content: center;
-        flex-direction: row;
-        width: 85%;
-        flex-basis: auto;
-        flex-grow: 1;
-        flex-shrink: 1;
+    .carouselImg {
+      img {
+        max-width: 100%;
+        height: auto;
+        padding: $spacer;
 
       }
     }
+
+    .carouselDescription {
+
+      color: grey;
+      text-align: center;
+    }
+    .carouselTitle {
+      text-align: center;
+      font-size: 1.5rem;
+      color: dimgrey;
+    }
+    .carouselIcon {
+      font-size: 3rem;
+      text-align: center;
+
+    }
   }
-}
 
-.media { /* description */
-  display: table-row;
-  padding-top: $spacer*0.30;
-
-  &active {
-    font-size: $spacer;
+  .slick-dots {
+    li button:focus {
+      box-shadow: 0 0 0 2px #478ab8;
+      border-radius: 100%;
+      font-size: 2px;
+    }
   }
-}
 
 }
-
-
-
