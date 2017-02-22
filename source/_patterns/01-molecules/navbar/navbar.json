@@ -128,6 +128,22 @@
         "icon": "<i class=\"fa fa-search text-muted\"></i>",
         "placeholder": "Suchen..."
       }
+    },
+    "actions": {
+      "items": [
+        {
+          "name": "toggle mobile menu",
+          "aa-icon": "cog",
+          "class": "hidden-lg-up",
+          "href": "#m-navbar-mobile"
+        },
+        {
+          "name": "open search form",
+          "aa-icon": "search-circle",
+          "class": "",
+          "href": "#"
+        }
+      ]
     }
   }
 }

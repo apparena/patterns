@@ -57,7 +57,7 @@ export default class PriceTableContainer extends ReactComponent {
             <PriceTable
                 plans={this.state.plans}
                 templateId={this.props.templateId}
-                onClick={::this.onBuy}
+                onClick={"dsa"}
             />
         )
     }

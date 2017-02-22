@@ -14,13 +14,13 @@
                 </div>
             {{/searchForm}}
 
-            <div class="navbar-navs text-center py-2">
+            <div class="navbar-navs text-center py-2 hidden-md-down">
                 {{#navs}}
                     <ul class="m-navs nav {{ class }}">
                         {{# items }}
-                            <li class="nav-item {{# subnav}}dropdown{{/subnav}}">
-                                <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }} {{#subnav}}dropdown-toggle{{/subnav}}"
-                                   href="{{ url }}" {{#subnav}}data-toggle="dropdown"{{/subnav}}>
+                            <li class="nav-item {{# subnav }}dropdown{{/subnav}}">
+                                <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }} {{# subnav }}dropdown-toggle{{/ subnav }}"
+                                   href="{{ url }}" {{# subnav }}data-toggle="dropdown"{{/ subnav }}>
                                     {{{ text }}}
                                 </a>
 
@@ -68,25 +68,33 @@
                     </ul>
                 {{/navs}}
             </div>
+            {{#actions}}
+                <div class="navbar-actions">
+                    {{#items}}
+                        {{> 00-atoms/navbar/action }}
+                    {{/items}}
+                </div>
+            {{/actions}}
         </nav>
     </div>
 
     <!-- Mobile navigation -->
-    <!--
-    <div class="handle">
-        <a href="#m-navbar-mobile">
-            <i class="aa-icon aa-icon-menu-circle"></i>
-        </a>
-    </div>
-    <nav id="m-navbar-mobile" class="m-navbar-mobile {{class }}">
+    <nav id="m-navbar-mobile" class="m-navbar-mobile">
         {{#navs}}
-            <ul class="m-navs nav {{ class }}">
+            <ul>
                 {{# items }}
-                    <li class="nav-item">
-                        <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
-                           href="{{ url }}" >
-                            {{{ text }}}
-                        </a>
+                    <li class="">
+                        {{# url }}
+                            <a class="{{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
+                               href="{{ url }}" >
+                                {{{ text }}}
+                            </a>
+                        {{/ url}}
+                        {{^ url }}
+                            <span class="{{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}">
+                                {{{ text }}}
+                            </span>
+                        {{/ url }}
                         {{# subnav }}
                             <ul>
                                 {{#columns}}
@@ -103,35 +111,20 @@
             </ul>
         {{/navs}}
     </nav>
-    -->
 
 
     <script type="application/javascript">
         $(document).ready(function () {
-            //$(".m-navs.nav").mmenu({
-                /* "counters": true,
-                "navbars": [
-                    {
-                        "position": "top",
-                        "content": [
-                            "searchfield"
-                        ]
-                    },
-                    {
-                        "position": "top"
-                    },
-                    {
-                        "position": "bottom",
-                        "content": [
-                            "<a class='fa fa-envelope' href='#/'></a>",
-                            "<a class='fa fa-twitter' href='#/'></a>",
-                            "<a class='fa fa-facebook' href='#/'></a>"
-                        ]
+            if (!$("#m-navbar-mobile").data('mmenu')) {
+                var options = {},
+                    configuration = {};
+                if ($("#main")) {
+                    configuration['offCanvas'] = {
+                        pageSelector: "#main"
                     }
-                ] */
-            //}, {
-            //    "clone": true
-            //});
+                }
+                $("#m-navbar-mobile").mmenu(options, configuration);
+            }
         });
     </script>
 {{/navbar}}

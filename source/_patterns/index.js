@@ -15,6 +15,7 @@ import FormGroup from "./01-molecules/forms/form-group";
 import Icon from "./00-atoms/icons/icons";
 import Input from "./00-atoms/forms/input";
 import InputGroup from "./01-molecules/input-group/input-group";
+import Intro from "./01-molecules/box/intro";
 import Jumbotron from "./01-molecules/jumbotron/jumbotron";
 import ListGroup from "./01-molecules/list-group/list-group";
 import Modal from "./01-molecules/modal/modal";
@@ -65,6 +66,7 @@ export {
     Icon,
     Input,
     InputGroup,
+    Intro,
     Jumbotron,
     ListGroup,
     Modal,

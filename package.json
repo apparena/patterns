@@ -57,6 +57,7 @@
     "velocity-animate": "^1.2.3"
   },
   "devDependencies": {
+    "generator-apparena-react-component": "latest",
     "app-module-path": "^1.0.6",
     "autoprefixer": "6.3.7",
     "babel-cli": "^6.7.7",

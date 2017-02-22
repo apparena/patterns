@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width"/>
     <meta about="App-Arena.com">
 
-    <link rel="stylesheet" href="../../css/app-arena-styles.css?1487167007" media="all"/>
-    <!--<link rel="stylesheet" href="../../css/website-wordpress-styles.css?1487167007" media="all"/>-->
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1487167007" media="all"/>
+    <link rel="stylesheet" href="../../css/app-arena-styles.css?1487759254" media="all"/>
+    <!--<link rel="stylesheet" href="../../css/website-wordpress-styles.css?1487759254" media="all"/>-->
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1487759254" media="all"/>
 
-    <!--<link rel="stylesheet" href="../../css/bootstrap.css?1487167007" media="all"/>
-    <link rel="stylesheet" href="../../css/bootstrap-theme.css?1487167007" media="all"/>-->
+    <!--<link rel="stylesheet" href="../../css/bootstrap.css?1487759254" media="all"/>
+    <link rel="stylesheet" href="../../css/bootstrap-theme.css?1487759254" media="all"/>-->
 
     <script src="../../js/vendor/jquery/dist/jquery.min.js"></script>
     <script src="../../js/vendor/tether/dist/js/tether.min.js"></script>
@@ -33,8 +33,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1487167007" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1487167007" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1487759254" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1487759254" media="all" />
 
     <!-- End Pattern Lab -->
 
@@ -494,6 +494,36 @@
           </div><!--end sg-pattern-category-body-->
           
         </div><!--end sg-pattern-category-->
+        <div id="viewall-atoms-navbar" class="sg-pattern-category">
+          <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-navbar/index.html" class="patternLink" data-patternpartial="viewall-atoms-navbar">navbar</a></h2>
+        
+          <div class="sg-pattern-category-body">
+            
+          </div><!--end sg-pattern-category-body-->
+          
+        </div><!--end sg-pattern-category-->
+        <div id="atoms-action" class="sg-pattern">
+          <div class="sg-pattern-head">
+            <h3 class="sg-pattern-title">
+              <a href="../../patterns/00-atoms-navbar-action/00-atoms-navbar-action.html" class="patternLink" data-patternpartial="atoms-action" title="Link to Pattern">
+                  action
+              </a>
+            </h3>
+            <div class="sg-pattern-breadcrumb"></div>
+            <a href="#" data-patternpartial="atoms-action" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-action" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+          </div>
+          <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-action">
+            
+          </div>
+          <div class="sg-pattern-example">
+            <a href="#" class="navbar-action " alt="open search form">
+    <i class="aa-icon aa-icon-search-circle"></i>
+</a>
+          </div>
+          <script type="text/json" id="sg-pattern-data-atoms-action" class="sg-pattern-data">
+            {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"navbar"},"patternDesc":"","patternExtension":"mustache","patternName":"action","patternPartial":"atoms-action","patternState":""}
+          </script>
+        </div><!--end .sg-pattern-->
         <div id="viewall-atoms-progress-tracker-step" class="sg-pattern-category">
           <h2 class="sg-pattern-category-title"><a href="../../patterns/00-atoms-progress-tracker-step/index.html" class="patternLink" data-patternpartial="viewall-atoms-progress-tracker-step">progress tracker step</a></h2>
         
@@ -2825,7 +2855,7 @@
                         </form>
                 </div>
 
-            <div class="navbar-navs text-center py-2">
+            <div class="navbar-navs text-center py-2 hidden-md-down">
                     <ul class="m-navs nav ">
                             <li class="nav-item dropdown">
                                 <a class="nav-link active  dropdown-toggle"
@@ -2944,23 +2974,22 @@
                             </li>
                     </ul>
             </div>
+                <div class="navbar-actions">
+                        <a href="#m-navbar-mobile" class="navbar-action hidden-lg-up" alt="toggle mobile menu">
+                            <i class="aa-icon aa-icon-cog"></i>
+                        </a>                        <a href="#" class="navbar-action " alt="open search form">
+                            <i class="aa-icon aa-icon-search-circle"></i>
+                        </a>                </div>
         </nav>
     </div>
 
     <!-- Mobile navigation -->
-    <!--
-    <div class="handle">
-        <a href="#m-navbar-mobile">
-            <i class="aa-icon aa-icon-menu-circle"></i>
-        </a>
-    </div>
-    <nav id="m-navbar-mobile" class="m-navbar-mobile navbar-light">
-            <ul class="m-navs nav ">
-                    <li class="nav-item">
-                        <a class="nav-link active "
-                           href="" >
-                            Produkte/Tools
-                        </a>
+    <nav id="m-navbar-mobile" class="m-navbar-mobile">
+            <ul>
+                    <li class="">
+                            <span class="active ">
+                                Produkte/Tools
+                            </span>
                             <ul>
                                         <li>
                                             <a href="#">Adventskalender</a>
@@ -3009,67 +3038,52 @@
                                         </li>
                             </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  "
-                           href="#" >
-                            Marketing
-                        </a>
+                    <li class="">
+                            <a class=" "
+                               href="#" >
+                                Marketing
+                            </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  "
-                           href="#" >
-                            Technologie
-                        </a>
+                    <li class="">
+                            <a class=" "
+                               href="#" >
+                                Technologie
+                            </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  "
-                           href="#" >
-                            Blog
-                        </a>
+                    <li class="">
+                            <a class=" "
+                               href="#" >
+                                Blog
+                            </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  "
-                           href="#" >
-                            Support
-                        </a>
+                    <li class="">
+                            <a class=" "
+                               href="#" >
+                                Support
+                            </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  "
-                           href="#" >
-                            <i class"fa fa-user"></i> Anmelden
-                        </a>
+                    <li class="">
+                            <a class=" "
+                               href="#" >
+                                <i class"fa fa-user"></i> Anmelden
+                            </a>
                     </li>
             </ul>
     </nav>
-    -->
 
 
     <script type="application/javascript">
         $(document).ready(function () {
-            //$(".m-navs.nav").mmenu({
-                /* "counters": true,
-                "navbars": [
-                    {
-                        "position": "top",
-                        "content": [
-                            "searchfield"
-                        ]
-                    },
-                    {
-                        "position": "top"
-                    },
-                    {
-                        "position": "bottom",
-                        "content": [
-                            "<a class='fa fa-envelope' href='#/'></a>",
-                            "<a class='fa fa-twitter' href='#/'></a>",
-                            "<a class='fa fa-facebook' href='#/'></a>"
-                        ]
+            if (!$("#m-navbar-mobile").data('mmenu')) {
+                var options = {},
+                    configuration = {};
+                if ($("#main")) {
+                    configuration['offCanvas'] = {
+                        pageSelector: "#main"
                     }
-                ] */
-            //}, {
-            //    "clone": true
-            //});
+                }
+                $("#m-navbar-mobile").mmenu(options, configuration);
+            }
         });
     </script>
 
@@ -3600,6 +3614,14 @@
         </div><!--end sg-pattern-category-->
         <div id="viewall-organisms-auth" class="sg-pattern-category">
           <h2 class="sg-pattern-category-title"><a href="../../patterns/02-organisms-auth/index.html" class="patternLink" data-patternpartial="viewall-organisms-auth">auth</a></h2>
+        
+          <div class="sg-pattern-category-body">
+            
+          </div><!--end sg-pattern-category-body-->
+          
+        </div><!--end sg-pattern-category-->
+        <div id="viewall-organisms-fangate" class="sg-pattern-category">
+          <h2 class="sg-pattern-category-title"><a href="../../patterns/02-organisms-fangate/index.html" class="patternLink" data-patternpartial="viewall-organisms-fangate">fangate</a></h2>
         
           <div class="sg-pattern-category-body">
             
@@ -4373,10 +4395,6 @@
                 <div class="o-vertical-tabs">
         <div class="row">
 
-
-
-
-
                 <div class="tab-content hidden-xs-down col-sm-12 col-lg-7 col-md-12 col-xl-7">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
@@ -4386,49 +4404,30 @@
                                          role="tabpanel">
                                         <img src="https://wp.app-arena.com/app/uploads/2017/02/20_Betrugspr%C3%A4vention.png" />
                                     </div>
-
-
-
-
                                     <div class="tab-pane active" id="stats"
                                          role="tabpanel">
                                         <img src="/images/sample/aa-website/flatrate-pakete1.png" />
                                     </div>
-
-
-
-
                                     <div class="tab-pane " id="smart_login"
                                          role="tabpanel">
                                         <img src="https://wp.app-arena.com/app/uploads/2017/02/19_SmartLogin.png" />
                                     </div>
-
-
-
-
                                     <div class="tab-pane " id="reminder"
                                          role="tabpanel">
                                         <img src="https://wp.app-arena.com/app/uploads/2017/02/09_Erinnerungs-E-Mail.png" />
                                     </div>
-
-
-
-
                             </div>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="tabs-nav hidden-xs-down col-lg-5 col-xl-5 col-md-12 col-sm-12">
                     <div class="row">
                         <div class="offset-md-1 col-md-11">
                             <ul class="hover-tabs list-unstyled">
-
                                     <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                     <li class="media  mb-4" data-toggle="tab"
                                         href="#fraud_detection" role="tab">
-
 
                                         <div class="o-vertical-tab-icon ">
                                             <i class='aa-icon aa-icon-aa-facebook'></i>
@@ -4439,11 +4438,9 @@
                                             <p> Zahlreiche Mechanismen zur Betrugsprävention </p>
                                         </div>
                                     </li>
-
                                     <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                     <li class="media active mb-4" data-toggle="tab"
                                         href="#stats" role="tab">
-
 
                                         <div class="o-vertical-tab-icon ">
                                             <i class='aa-icon aa-icon-aa-analytics'></i>
@@ -4454,11 +4451,9 @@
                                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus. </p>
                                         </div>
                                     </li>
-
                                     <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                     <li class="media  mb-4" data-toggle="tab"
                                         href="#smart_login" role="tab">
-
 
                                         <div class="o-vertical-tab-icon ">
                                             <i class='aa-icon aa-icon-aa-user'></i>
@@ -4469,11 +4464,9 @@
                                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus. </p>
                                         </div>
                                     </li>
-
                                     <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                     <li class="media  mb-4" data-toggle="tab"
                                         href="#reminder" role="tab">
-
 
                                         <div class="o-vertical-tab-icon ">
                                             <i class='aa-icon aa-icon-aa-time'></i>
@@ -4484,85 +4477,54 @@
                                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus. </p>
                                         </div>
                                     </li>
-
-
-                                        <a href="https://www.app-arena.com" class="btn ">Kostenlos testen!!</a>
-
-
-
+                                    <a href="https://www.app-arena.com" class="btn btn btn-success">Kostenlos testen!!</a>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-
-
-
-
                     <div class="hidden-sm-up col-xs-12 o-slider ml-3 mr-3" id="mySlider">
-
-
                             <div class="carouselContainer">
                                 <div class="carouselImg"><img src="https://wp.app-arena.com/app/uploads/2017/02/20_Betrugspr%C3%A4vention.png" /> </div>
                                 <div class="carouselIcon"><i class='aa-icon aa-icon-aa-facebook'></i> </div>
                                 <div class="carouselTitle">Betrugsprävention</div>
                                 <div class="carouselDescription"> Zahlreiche Mechanismen zur Betrugsprävention</div>
-
-
-
-
                             </div>
                             <div class="carouselContainer">
                                 <div class="carouselImg"><img src="/images/sample/aa-website/flatrate-pakete1.png" /> </div>
                                 <div class="carouselIcon"><i class='aa-icon aa-icon-aa-analytics'></i> </div>
                                 <div class="carouselTitle">Statistiken und Tracking Infos</div>
                                 <div class="carouselDescription"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.</div>
-
-
-
-
                             </div>
                             <div class="carouselContainer">
                                 <div class="carouselImg"><img src="https://wp.app-arena.com/app/uploads/2017/02/19_SmartLogin.png" /> </div>
                                 <div class="carouselIcon"><i class='aa-icon aa-icon-aa-user'></i> </div>
                                 <div class="carouselTitle">SmartLogin-Technologie</div>
                                 <div class="carouselDescription"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.</div>
-
-
-
-
                             </div>
                             <div class="carouselContainer">
                                 <div class="carouselImg"><img src="https://wp.app-arena.com/app/uploads/2017/02/09_Erinnerungs-E-Mail.png" /> </div>
                                 <div class="carouselIcon"><i class='aa-icon aa-icon-aa-time'></i> </div>
                                 <div class="carouselTitle">Tägliche Erinnerungsfunktion</div>
                                 <div class="carouselDescription"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante id nibh rhoncus maximus.</div>
-
-
-
-
                             </div>
-
-
                     </div>
                     <script>
                         jQuery(document).ready(function () {
                             jQuery('#mySlider').slick({
-                                dots: true,
+                                dots                    : true,
                                 slidesToScroll: 1,
-                                slidesToShow: 1,
+                                slidesToShow    : 1,
                                 
                                 
                                 
-                                autoplaySpeed: 3000,
-                                infinite: true
+                                autoplaySpeed  : 3000,
+                                infinite                                  : true
                             });
                         });
                     </script>
 
-
                     <div class="slick-btn hidden-sm-up">
-
                             <a href="https://www.app-arena.com" class="btn mySlider">Kostenlos testen!!</a>
                     </div>
 
@@ -4570,11 +4532,6 @@
 
         </div>
     </div>
-
-
-
-
-
 
 
 
@@ -5437,10 +5394,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1487167007">
+<script id="pl-js-polyfill-insert-1487759254">
   (function() {
     if (self != top) {
-      var cb = '1487167007';
+      var cb = '1487759254';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -5450,10 +5407,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1487167007">
+<script id="pl-js-insert-1487759254">
   (function() {
     if (self != top) {
-      var cb = '1487167007';
+      var cb = '1487759254';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
