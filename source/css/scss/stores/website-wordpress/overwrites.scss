@@ -33,7 +33,9 @@
 $font-weights: (
         light: 300,
         regular: 400,
-        bold: 600
+        semi-bold: 600,
+        semibold: 600,
+        bold: 700
 );
 @each $weight, $value in $font-weights {
   .font-weight-#{$weight} {
