@@ -13,5 +13,8 @@ main[role=main] {
 	margin: 0 auto -180px; /* the bottom margin is the negative value of the footer's height */
 }
 .o-footer, .push {
-	height: 300px; /* .push must be the same height as .footer */
+	height: 500px; /* .push must be the same height as .footer */
+	@include media-breakpoint-up(md) {
+		height: 300px;
+	}
 }
