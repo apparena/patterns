@@ -11,13 +11,13 @@
 
         <div class="o-footer-nav-top row">
             {{#footer.navigation.primary}}
-                <div class="o-footer-nav-primary col-md-9 text-sm-left">
+                <div class="o-footer-nav-primary col-sm-6 col-md-8 text-center text-sm-left">
                     {{> 02-organisms/navigation/nav-footer }}
                 </div>
             {{/footer.navigation.primary}}
 
             {{#footer.socialMedia}}
-                <div class="o-footer-social-media col-md-3 text-sm-right">
+                <div class="o-footer-social-media col-sm-6 col-md-4 text-center text-sm-right pt-4 pt-sm-0">
                     <ul class="list-inline">
                         {{#items}}
                             <li class="list-inline-item">
@@ -40,7 +40,9 @@
 
             {{#footer.copyright}}
                 <div class="o-footer-copyright">
-                    Copyright &copy; {{ year }} {{ company.name }}™ | Made with <i class="aa-icon aa-icon-heart text-danger"></i> in Cologne, Germany.
+                    Copyright &copy; <span class="countup">{{ year }}</span> &copy; {{ company.name }}™
+                    <span class="hidden-md-up"><br></span><span class="hidden-sm-down"> | </span>
+                    Made with <i class="aa-icon aa-icon-heart text-danger"></i> in Cologne, Germany.
                 </div>
             {{/footer.copyright}}
         </div>
@@ -48,3 +50,23 @@
     </div>
 
 </footer><!-- end o-footer -->
+<script>
+    jQuery(document).ready(function() {
+        yearEl= jQuery('.o-footer-copyright .countup')[0];
+        if (yearEl
+                && typeof CountUp !== 'undefined'
+                && typeof Waypoint !== 'undefined'
+                && typeof Waypoint.Inview != 'undefined') {
+            var countup = new CountUp(this, 2012, parseInt(yearEl.innerText), 0, 3, {
+                useEasing : true,
+                useGrouping : false
+            });
+            new Waypoint.Inview({
+                element: yearEl,
+                enter: function() {
+                    countup.start();
+                }
+            });
+        }
+    });
+</script>

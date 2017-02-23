@@ -1,4 +1,7 @@
 {
+  "company": {
+    "name": "App-Arena GmbH"
+  },
   "footer": {
     "copyright": true,
     "logo": {
@@ -10,15 +13,17 @@
     },
     "socialMedia": {
       "items": [
-        {"icon":"<i class=\"fa fa-facebook-square\"></i>", "url":"https://www.facebook.com", "title": "App-Arena auf Facebook"},
-        {"icon":"<i class=\"fa fa-youtube-square\"></i>", "url":"https://www.youtube.com", "title": "App-Arena auf Youtube"},
-        {"icon":"<i class=\"fa fa-twitter-square\"></i>", "url":"https://www.twitter.com", "title": "App-Arena auf Twitter"}
+        {"icon":"<i class=\"aa-icon aa-icon-facebook\"></i>", "url":"https://www.facebook.com", "title": "App-Arena auf Facebook"},
+        {"icon":"<i class=\"aa-icon aa-icon-youtube\"></i>", "url":"https://www.youtube.com", "title": "App-Arena auf Youtube"},
+        {"icon":"<i class=\"aa-icon aa-icon-twitter\"></i>", "url":"https://www.twitter.com", "title": "App-Arena auf Twitter"},
+        {"icon":"<i class=\"aa-icon aa-icon-github\"></i>", "url":"https://github.com/orgs/apparena", "title": "App-Arena auf Github"}
       ]
     },
     "navigation": {
       "primary": {
         "navFooter": {
           "navs": {
+            "class": "flex-column flex-md-row flex-wrap",
             "items": [
               {
                 "text": "Mein Konto",
@@ -66,5 +71,6 @@
         }
       }
     }
-  }
+  },
+  "year": "2017"
 }

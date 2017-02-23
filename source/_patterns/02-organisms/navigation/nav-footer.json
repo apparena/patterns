@@ -2,7 +2,7 @@
   "navFooter": {
     "class": "",
     "navs": {
-      "class": "",
+      "class": "flex-column flex-md-row flex-wrap",
       "items": [
         {
           "text": "Mein Konto",
