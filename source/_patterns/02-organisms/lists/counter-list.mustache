@@ -2,7 +2,7 @@
     <div class="o-counter-list text-center {{class}}" id="{{id}}">
         <div class="row">
             {{# items }}
-                <div class="col-md-4">
+                <div class="col-md-4 py-4 py-md-0">
                     {{> 00-atoms/counter/counter }}
                 </div>
             {{/ items }}
@@ -15,12 +15,13 @@
                 // initialize every o-counter-list only once
                 jQuery('.o-counter-list').each(function () {
                     if (!jQuery(this).data('initialized')) {
-                        // use Waypoint if available
-                        if (typeof Waypoint !== 'undefined') {
+                        // use Waypoint (+Inview) if available
+                        if (typeof Waypoint !== 'undefined'
+                            && typeof Waypoint.Inview !== 'undefined') {
                             var counterObjs = initCounters(jQuery(this), 3);
-                            new Waypoint({
+                            new Waypoint.Inview({
                                 element: this,
-                                handler: function() {
+                                enter: function() {
                                     startCounters(counterObjs);
                                 }
                             });
