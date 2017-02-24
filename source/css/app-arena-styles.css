@@ -11422,9 +11422,6 @@ html.mm-opening .mm-slideout {
     cursor: pointer; }
   .o-vertical-tabs li.media.active {
     opacity: 1; }
-  .o-vertical-tabs .row {
-    width: 100%;
-    height: 100%; }
   .o-vertical-tabs .tabs-nav li.media {
     display: block;
     clear: both;
@@ -11449,8 +11446,6 @@ html.mm-opening .mm-slideout {
       width: 100% !important;
       height: auto !important;
       margin: auto; }
-  .o-vertical-tabs .slick-btn {
-    margin-top: 500px; }
   .o-vertical-tabs .carouselContainer {
     overflow: hidden; }
     .o-vertical-tabs .carouselContainer .carouselImg img {

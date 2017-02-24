@@ -57,16 +57,19 @@
                 && typeof CountUp !== 'undefined'
                 && typeof Waypoint !== 'undefined'
                 && typeof Waypoint.Inview != 'undefined') {
-            var countup = new CountUp(this, 2012, parseInt(yearEl.innerText), 0, 3, {
-                useEasing : true,
-                useGrouping : false
-            });
-            new Waypoint.Inview({
-                element: yearEl,
-                enter: function() {
-                    countup.start();
-                }
-            });
+            if (!jQuery(yearEl).data('initialized')) {
+                var countup = new CountUp(yearEl, 2012, parseInt(yearEl.innerText), 0, 3, {
+                    useEasing : true,
+                    useGrouping : false
+                });
+                new Waypoint.Inview({
+                    element: yearEl,
+                    enter: function() {
+                        countup.start();
+                    }
+                });
+                jQuery(yearEl).data('initialized', true);
+            }
         }
     });
 </script>
