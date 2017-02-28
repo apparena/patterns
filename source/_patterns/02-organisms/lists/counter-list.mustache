@@ -1,0 +1,59 @@
+{{# counter-list }}
+    <div class="o-counter-list text-center {{class}}" id="{{id}}">
+        <div class="row">
+            {{# items }}
+                <div class="col-md-4 py-4 py-md-0">
+                    {{> 00-atoms/counter/counter }}
+                </div>
+            {{/ items }}
+        </div>
+    </div>
+    <script>
+        jQuery(document).ready(function () {
+            // only if CountUp is available
+            if (typeof CountUp !== 'undefined') {
+                // initialize every o-counter-list only once
+                jQuery('.o-counter-list').each(function () {
+                    if (!jQuery(this).data('initialized')) {
+                        // use Waypoint (+Inview) if available
+                        if (typeof Waypoint !== 'undefined'
+                            && typeof Waypoint.Inview !== 'undefined') {
+                            var counterObjs = initCounters(jQuery(this), 3);
+                            new Waypoint.Inview({
+                                element: this,
+                                enter: function() {
+                                    startCounters(counterObjs);
+                                }
+                            });
+                        } else {
+                            // otherwise init and start with longer duration
+                            var counterObjs = initCounters(jQuery(this), 6);
+                            startCounters(counterObjs);
+                        }
+                        jQuery(this).data('initialized', true);
+                    }
+                });
+            }
+        });
+        function initCounters($listEl, duration) {
+            var $$counters = $listEl.find('.a-counter .countup'),
+                counterObjs = [];
+            $$counters.each(function() {
+               var value = parseInt(jQuery(this).text());
+               var counterObj = new CountUp(this, 0, value, 0, duration, {
+                   useEasing : true,
+                   useGrouping : true,
+                   separator : '.',
+                   decimal : ',',
+               });
+               counterObjs.push(counterObj);
+            });
+            return counterObjs;
+        }
+        function startCounters(counterObjs) {
+            jQuery.each(counterObjs, function() {
+               this.start();
+            });
+        }
+    </script>
+{{/ counter-list }}

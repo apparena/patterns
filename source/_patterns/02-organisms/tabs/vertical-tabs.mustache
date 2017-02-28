@@ -61,40 +61,41 @@
                 </div>
             {{/navigation.positionLeft}}
             {{# slider }}
-                <div class="hidden-sm-up col-xs-12 o-slider mx-3" id="{{id}}">
-                    {{# items }}
-                        <div class="carouselContainer">
-                            <div class="carouselImg">{{{content}}} </div>
-                            <div class="carouselIcon">{{{icon}}} </div>
-                            <div class="carouselTitle">{{{title}}}</div>
-                            <div class="carouselDescription"> {{{description}}}</div>
-                        </div>
-                    {{/ items }}
+                <div class="o-slider hidden-sm-up col-12">
+                    <div id="{{id}}" class="slider">
+                        {{# items }}
+                            <div class="carouselContainer">
+                                <div class="carouselImg">{{{content}}} </div>
+                                <div class="carouselIcon">{{{icon}}} </div>
+                                <div class="carouselTitle">{{{title}}}</div>
+                                <div class="carouselDescription"> {{{description}}}</div>
+                            </div>
+                        {{/ items }}
+                    </div>
                 </div>
+                <div class="col-12 text-center">
+                    <div class="slick-btn hidden-sm-up">
+                        {{#cta}}
+                            <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
+                        {{/cta}}
+                    </div>
+                </div>
+
                 <script>
                     jQuery(document).ready(function () {
                         jQuery('#{{id}}').slick({
-                            {{#settings.dots}}dots: true,{{/settings.dots}}
+                            {{#settings.dots}}dots                    : true,{{/settings.dots}}
                             {{#settings.slidesToScroll}}slidesToScroll: {{settings.slidesToScroll}},{{/settings.slidesToScroll}}
                             {{#settings.slidesToShow}}slidesToShow    : {{settings.slidesToShow}},{{/settings.slidesToShow}}
                             {{#settings.centerMode}}centerMode        : true,{{/settings.centerMode}}
                             {{#settings.centerPadding}}centerPadding  : "{{settings.centerPadding}}",{{/settings.centerPadding}}
                             {{#settings.autoplay}}autoplay            : false,{{/settings.autoplay}}
                             {{#settings.autoplaySpeed}}autoplaySpeed  : {{settings.autoplaySpeed}},{{/settings.autoplaySpeed}}
-                            infinite: true
+                            infinite                                  : true
                         });
                     });
                 </script>
-
-                <div class="slick-btn hidden-sm-up">
-                    {{#cta}}
-                        <a href="{{url}}" class="btn {{class}}">{{{text}}}</a>
-                    {{/cta}}
-                </div>
-
             {{/slider}}
         </div>
     </div>
 {{/vertical-tabs}}
-
-
