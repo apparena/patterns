@@ -118,8 +118,11 @@ export default class PriceTable extends ReactComponent {
                             {this.t("priceTable.leftText")}
                         </div>
                         <div className={styles.selectorTableCellMiddle}>
-                            <Checkbox className={styles.checkBoxFix} onChange={this.handleCheckbox}
-                                      checked={showPlans === "flatrate"}
+                            <Checkbox
+                                className={styles.checkBoxFix}
+                                renderTooltip={false}
+                                onChange={this.handleCheckbox}
+                                checked={showPlans === "flatrate"}
                             />
                         </div>
                         <div
