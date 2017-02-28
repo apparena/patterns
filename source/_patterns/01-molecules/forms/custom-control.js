@@ -28,7 +28,7 @@ function CustomControl({className, type, label, children, validationState, ...pr
 CustomControl.propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
-    label: PropTypes.string,
+    label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
     type: PropTypes.oneOf(["checkbox", "radio"]),
     validationState: PropTypes.oneOf(["default", "danger", "success", "warning"]),
 };
