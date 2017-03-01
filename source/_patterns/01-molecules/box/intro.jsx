@@ -59,12 +59,14 @@ export default class Copy extends ReactComponent {
             btnText,
             onClick,
             className,
-            href
+            href,
+            props
         } = this.props;
         if (href) {
             return (
                 <a className={cx(styles.root, className)}
                    href={href}
+                   {...props}
                 >
                     {this.renderContent()}
                 </a>

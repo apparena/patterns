@@ -62,7 +62,7 @@ export default class Button extends ReactComponent {
     }
 
     setButtonWidth(state) {
-        if (state === "default") {
+        if (state === "default" && this.button) {
             this.btnWidth = this.button.getBoundingClientRect().width;
         }
     }
