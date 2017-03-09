@@ -134,8 +134,8 @@
         {
           "name": "toggle mobile menu",
           "aa-icon": "cog",
-          "class": "hidden-lg-up",
-          "href": "#m-navbar-mobile"
+          "class": "hidden-lg-up m-navbar-mobile-toggle",
+          "href": "#"
         },
         {
           "name": "open search form",

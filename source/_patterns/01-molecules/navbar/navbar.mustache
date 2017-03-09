@@ -123,7 +123,13 @@
                         pageSelector: "#main"
                     }
                 }
-                $("#m-navbar-mobile").mmenu(options, configuration);
+                var mmenu = $('#m-navbar-mobile').mmenu(options, configuration);
+                $('.m-navbar-mobile-toggle').each(function() {
+                   $(this).on('click', function(e) {
+                       e.preventDefault();
+                       $("#m-navbar-mobile").data('mmenu').open();
+                   });
+                });
             }
         });
     </script>
