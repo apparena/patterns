@@ -1,103 +1,77 @@
-# Pattern Lab Node - Gulp Edition
+#[App-Arena Patterns](https://design.app-arena.com/)
+[![npm package](https://img.shields.io/npm/v/apparena-patterns-react.svg?style=flat-square)](https://www.npmjs.org/package/apparena-patterns-react)
 
-The Gulp wrapper around [Pattern Lab Node Core](https://github.com/pattern-lab/patternlab-node) providing tasks to interact with the core library and move supporting frontend assets.
+[![PeerDependencies](https://img.shields.io/david/peer/apparena/patterns.svg?style=flat-square)](https://david-dm.org/apparena/patterns#info=peerDependencies&view=list)
+[![Dependencies](https://img.shields.io/david/apparena/patterns.svg?style=flat-square)](https://david-dm.org/apparena/patterns)
+[![DevDependencies](https://img.shields.io/david/dev/apparena/patterns.svg?style=flat-square)](https://david-dm.org/apparena/patterns#info=devDependencies&view=list)
 
-## Packaged Components
+App-Arena Patterns is a set of [React](http://facebook.github.io/react/) components that implement the App-Arena CI.
 
-The Gulp Edition comes with the following components:
+Check out our [documentation site](http://design.app-arena.com/) for live examples.
+It's still a work in progress, but hopefully you can see where we're headed.
 
-* `patternlab-node`: [GitHub](https://github.com/pattern-lab/patternlab-node), [npm](https://www.npmjs.com/package/patternlab-node)
-* `patternengine-node-mustache`: [GitHub](https://github.com/pattern-lab/patternengine-node-mustache), [npm](https://www.npmjs.com/package/patternengine-node-mustache)
-* `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-assets-default)
-* `pattern-lab/styleguidekit-mustache-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-mustache-default)
+**Recently Updated?** Please read the [changelog](https://github.com/apparena/patterns/releases), this README and the documentation before posting an issue.
 
-## Prerequisites
+## Required Knowledge
 
-The Pattern Lab Node - Gulp Edition uses [Node](https://nodejs.org) for core processing, [npm](https://www.npmjs.com/) to manage project dependencies, and [gulp.js](http://gulpjs.com/) to run tasks and interface with the core library. Node version 4 or higher suffices. You can follow the directions for [installing Node](https://nodejs.org/en/download/) on the Node website if you haven't done so already. Installation of Node will include npm.
+We recommend that you get to know [React](http://facebook.github.io/react/)
+before diving into apparena-patterns-react. App-Arena Patterns is a set of React components,
+so understanding how React fits into web development is important.
 
-It's also highly recommended that you [install gulp](hhttps://github.com/gulpjs/gulp/blob/4.0/docs/getting-started.md) globally.
+## Installation
 
-> Note: The Gulp Edition of Pattern Lab uses Gulp 4, which may require a new global install of the Gulp command line interface. Follow the [gulp upgrade instructions](https://github.com/pattern-lab/edition-node-gulp/wiki/Updating-to-Gulp-4) if you already have gulp installed and need to upgrade. Gulp 4 is in alpha, but brings many benefits to the table and is relatively stable. You can alternatively [run with local gulp instead of global gulp](https://github.com/pattern-lab/patternlab-node/wiki/Running-with-Local-Gulp-Instead-of-Global-Gulp), but commands are a bit more verbose. The rest of this documentation assumes a global install.
+App-Arena Patterns are available as an [npm package](https://www.npmjs.org/package/apparena-patterns-react).
 
-## Installing
+**Stable channel**
+```sh
+npm install apparena-patterns-react
+yarn add apparena-patterns-react
+```
 
-There are two methods for downloading and installing the Gulp Edition:
+## Usage
 
-* [Download a pre-built package](#download-a-pre-built-package)
-* [Use npm](#use-npm)
+Here is a quick example to get you started:
 
-### Download a pre-built package
+**./App.js**
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 
-The fastest way to get started with the Gulp Edition is to [download the pre-built version](https://github.com/pattern-lab/edition-node-gulp/releases) from the [releases page](https://github.com/pattern-lab/edition-node-gulp/releases). The pre-built project comes with the [Base Starterkit for Mustache](https://github.com/pattern-lab/starterkit-mustache-base) installed by default.
+const App = () => (
+    <MyAwesomeReactComponent />
+);
 
-**Please note:** Pattern Lab Node uses [npm](https://www.npmjs.com/) to manage project dependencies. To upgrade the Gulp Edition or to install plug-ins you'll need to be familiar with npm.
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+);
+```
 
-### Use npm
+**./MyAwesomeReactComponent.js**
+```jsx
+import React from 'react';
+import {Button} from 'apparena-patterns-react';
 
-`npm` is a dependency management and package system which can pull in all of the Gulp Edition's dependencies for you. To accomplish this:
+const MyAwesomeReactComponent = () => (
+  <Button type="primary">Label</Button>
+);
 
-* download or `git clone` this repository to an install location.
+export default MyAwesomeReactComponent;
+```
 
-* run the following
+Please refer to each component's documentation page to see how they should be imported.
 
-    ```
-    cd install/location
-    npm install
-    ```
+## Roadmap
 
-Running `npm install` from a directory containing a `package.json` file will download all dependencies defined within.
+The future plans and high priority features and enhancements can be found
+in the [ROADMAP.md](https://github.com/apparena/patterns/blob/master/ROADMAP.md) file.
 
-#### Install the Gulp Edition of Pattern Lab Node as a Dependency
+## Contribute
 
-Most people want to run Pattern Lab Node standalone and not as a dependency. If you wish to install as a dependency you can do the following:
+[App-Arena Patterns](http://design.app-arena.com/) came about from our love of
+[React](http://facebook.github.io/react/)
 
-Use npm's [`install` command](https://docs.npmjs.com/cli/install) with an argument to install the Gulp Edition into a location of your choosing. In Terminal type:
-
-    cd install/location/
-    npm install edition-node-gulp
-
-This will install the Gulp Edition into a directory called `node_modules` in `install/location/`.
-
-## Getting Started
-
-The Pattern Lab Node - Gulp Edition ships with a [base experience](https://github.com/pattern-lab/starterkit-mustache-base) which serves as clean place to start from scratch with Pattern Lab. But if you want to get rolling with a starterkit of your own, or use the [demo starterkit](https://github.com/pattern-lab/starterkit-mustache-demo) like the one on [demo.patternlab.io](http://demo.patternlab.io), you can do so automatically at time of `npm install` by adding your starterkit to the `package.json` file.
-
-You can also [work with starterkits using the command line](https://github.com/pattern-lab/patternlab-node/wiki/Importing-Starterkits).
-
-## Updating Pattern Lab
-
-To update Pattern Lab please refer to each component's GitHub repository, and the [master instructions for core](https://github.com/pattern-lab/patternlab-node/wiki/Upgrading). The components are listed at the top of the README.
-
-## Helpful Commands
-
-These are some helpful commands you can use on the command line for working with Pattern Lab.
-
-> Reminder: These commands assume a global installation of gulp 4.X, instead of a local installation. Depending on your preference, you may need to [upgrade your global version of gulp](https://github.com/pattern-lab/edition-node-gulp/wiki/Updating-to-Gulp-4) or [run with local gulp](https://github.com/pattern-lab/patternlab-node/wiki/Running-with-Local-Gulp-Instead-of-Global-Gulp).
-
-### List all of the available commands
-
-To list all available commands type:
-
-    gulp patternlab:help
-
-### Generate Pattern Lab
-
-To generate the front-end for Pattern Lab type:
-
-    gulp patternlab:build
-
-### Watch for changes and re-generate Pattern Lab
-
-To watch for changes, re-generate the front-end, and server it via a BrowserSync server,  type:
-
-    gulp patternlab:serve
-
-BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Install a StarterKit
-
-To install a specific StarterKit from GitHub type:
-
-    npm install [starterkit-vendor/starterkit-name]
-
-    gulp patternlab:loadstarterkit --kit=[starterkit-name]
+## License
+This project is licensed under the terms of the
+[MIT license](https://github.com/callemall/apparena-patterns-react/blob/master/LICENSE)
