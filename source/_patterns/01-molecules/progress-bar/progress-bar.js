@@ -1,6 +1,7 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
+import styles from "./progress-bar.scss";
 
 const PROGRESS_TYPES = [
     "success",
@@ -13,6 +14,8 @@ export default class ProgressBar extends ReactComponent {
     static propTypes = {
         classNames: PropTypes.string,
         value: PropTypes.number.isRequired,
+        striped: PropTypes.bool,
+        animated: PropTypes.bool,
         maxValue: PropTypes.number.isRequired,
         minWidth: PropTypes.number.isRequired,
         text: PropTypes.string,
@@ -29,7 +32,7 @@ export default class ProgressBar extends ReactComponent {
     renderRemovableText(text) {
         if (text !== '') {
             return (
-                <div className="text-center text-muted" id={this.props.captionID}>
+                <div className={styles.removableText} id={this.props.captionID}>
                     <small>{text}</small>
                 </div>
             );
@@ -39,20 +42,25 @@ export default class ProgressBar extends ReactComponent {
 
     render() {
         const classNames = cx(
-            'progress',
-            `progress-${this.props.type}`,
+            styles[`progress-bar`],
+            styles[`progress-bar-${this.props.type}`],
+            (this.props.striped) && styles[`progress-bar-striped`],
+            (this.props.animated) && styles[`progress-bar-animated`],
             this.props.classNames
         );
+        const style = {
+            width: `${(this.props.value / this.props.maxValue).toFixed(1) * 100}%`
+        };
         return (
             <div>
                 {this.renderRemovableText(this.props.text)}
-
-                <progress
-                    className={classNames}
-                    value={this.props.value}
-                    max={this.props.maxValue}
-                    style={{width: '100%', minWidth: `${this.props.minWidth}em`}}
-                />
+                <div className={styles.progress}>
+                    <div
+                        className={classNames}
+                        role="progressbar"
+                        style={style}
+                    />
+                </div>
             </div>
         );
     }

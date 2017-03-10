@@ -1,0 +1,39 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+@import "../../../css/scss/abstracts/mixins";
+@import "~bootstrap/scss/progress";
+
+/*=========================================================================
+  Molecules Progress-Bar
+ ========================================================================== */
+
+.removable-text {
+  text-align: center;
+  color: $text-muted;
+}
+
+.progress-bar-primary {
+  background-color: $brand-primary
+}
+
+.progress-bar-secondary {
+  background-color: $brand-secondary
+}
+
+.progress-bar-success {
+  background-color: $brand-success
+}
+
+.progress-bar-info {
+  background-color: $brand-info
+}
+
+.progress-bar-warning {
+  background-color: $brand-warning
+}
+
+.progress-bar-danger {
+  background-color: $brand-danger
+}
