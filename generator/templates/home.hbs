@@ -1,0 +1,78 @@
+import React from "react";
+import { Link } from "react-router";
+import * as components from "./components/index";
+import cx from "classnames";
+import styles from "./styles/home.scss";
+import {Row, Col} from "apparena-patterns-react";
+
+export default class Home extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            currentComponent: undefined,
+            categories: {
+            {{#categorize categories}}
+                "{{ name }}": {
+                    visible: {{ visible }}
+                    components: [
+                        {{#each componentList}}
+                            "{{this}}",
+                        {{/each}}
+                    ]
+            {{/categorize}}
+            }
+        };
+    }
+
+    componentWillMount() {
+        const location = this.props.location.pathname.split("/");
+        if (Array.isArray(location) && location.length === 2) {
+            this.setState({
+                currentComponent: components[location[1]],
+            });
+        }
+    }
+
+    componentWillReceiveProps(nextProps, nextContext) {
+        this.setState({
+            currentComponent: components[nextProps.params.component],
+        });
+    }
+
+    toggleVisibility(target) {
+        const state = this.state;
+        state.categories[target].visible = !state.categories[target].visible;
+        this.setState({
+            state
+        })
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>Hello</h1>
+                <Row>
+                    <Col xs="2">
+                    {{#each categoryNames}}
+                        <div onClick={this.toggleVisibility.bind(this, "{{this}}")} className={styles.listHeader}>{{this}}</div>
+                        <ul className={cx(!this.state.categories["{{this}}"].visible && styles.invisible, styles.listEntries)}>
+                            {this.state.categories["{{this}}"].components.map((component, i) => {
+                                return (
+                                    <li key={i}>
+                                        Go to <Link to={`/${component}`}>{component}</Link>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    {{/each}}
+                    </Col>
+
+                    <Col xs="9" className={styles.widthFix}>
+                        {this.state.currentComponent !== undefined && <this.state.currentComponent />}
+                    </Col>
+                </Row>
+            </div>
+        );
+    }
+}

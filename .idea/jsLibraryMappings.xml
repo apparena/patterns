@@ -2,6 +2,6 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <includedPredefinedLibrary name="ECMAScript 6" />
-    <excludedPredefinedLibrary name="styleguide/node_modules" />
+    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

@@ -1,0 +1,26 @@
+import React, {PropTypes} from "react";
+import Description from "../include/description";
+import ExampleContainer from "../include/example-container";
+import Snippet from "../include/code-snippet";
+import TestResult from "../include/test-result";
+{{#if exampleClassName}}import {{ exampleClassName }} from "./{{ exampleFileName }}";{{/if}}
+
+export default class AnotherExample extends React.Component {
+    render() {
+        {{{ description }}}
+        {{{ codeSnippet }}}
+
+        return (
+            <div>
+                <Description description={description} />
+                <Snippet code={codeSnippet} />
+                {{#if exampleUsage}}
+                    <ExampleContainer>
+                        {{{ exampleUsage }}}
+                    </ExampleContainer>
+                {{/if}}
+                <TestResult result="Meh"/>
+            </div>
+        );
+    }
+}
