@@ -1,0 +1,9 @@
+{{#each components}}
+import {{ name }} from "./{{ fileName }}";
+{{/each}}
+
+export {
+{{#each components}}
+    {{ name }},
+{{/each}}
+}

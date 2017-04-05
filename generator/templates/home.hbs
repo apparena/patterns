@@ -14,12 +14,13 @@ export default class Home extends React.Component {
             categories: {
             {{#categorize categories}}
                 "{{ name }}": {
-                    visible: {{ visible }}
+                    visible: {{ visible }},
                     components: [
                         {{#each componentList}}
                             "{{this}}",
                         {{/each}}
-                    ]
+                    ],
+                },
             {{/categorize}}
             }
         };
@@ -51,25 +52,34 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                <h1>Hello</h1>
+                <h1 className={styles.pageHeader}>Dokumentationsplattform</h1>
                 <Row>
-                    <Col xs="2">
+                    <Col xs="2" className={styles.navMenu}>
                     {{#each categoryNames}}
-                        <div onClick={this.toggleVisibility.bind(this, "{{this}}")} className={styles.listHeader}>{{this}}</div>
-                        <ul className={cx(!this.state.categories["{{this}}"].visible && styles.invisible, styles.listEntries)}>
-                            {this.state.categories["{{this}}"].components.map((component, i) => {
-                                return (
-                                    <li key={i}>
-                                        Go to <Link to={`/${component}`}>{component}</Link>
-                                    </li>
-                                )
-                            })}
-                        </ul>
+                        <div className={styles.listItemWrapper}>
+                            <div onClick={this.toggleVisibility.bind(this, "{{this}}")} className={styles.listHeader}>{{this}}</div>
+                            <ul className={cx(!this.state.categories["{{this}}"].visible && styles.invisible, styles.listEntries)}>
+                                {this.state.categories["{{this}}"].components.map((component, i) => {
+                                    return (
+                                        <li key={i}>
+                                            <Link to={`/${component}`}>{component}</Link>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
                     {{/each}}
                     </Col>
 
                     <Col xs="9" className={styles.widthFix}>
-                        {this.state.currentComponent !== undefined && <this.state.currentComponent />}
+                        {this.state.currentComponent !== undefined ? <this.state.currentComponent /> : (
+                            <div>
+                                <h3>Willkommen zur Dokumentationsplattform</h3>
+                                <p>
+                                    Klicken Sie auf eine Komponente um zu ihrer Dokumentation zu gelangen!
+                                </p>
+                            </div>
+                        )}
                     </Col>
                 </Row>
             </div>

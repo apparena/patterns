@@ -5,21 +5,24 @@ import Snippet from "../include/code-snippet";
 import TestResult from "../include/test-result";
 {{#if exampleClassName}}import {{ exampleClassName }} from "./{{ exampleFileName }}";{{/if}}
 
-export default class AnotherExample extends React.Component {
+export default class {{ componentClassName }} extends React.Component {
     render() {
         {{{ description }}}
         {{{ codeSnippet }}}
 
         return (
             <div>
+                {{#if description}}
                 <Description description={description} />
+                {{/if}}
+                {{#if codeSnippet}}
                 <Snippet code={codeSnippet} />
+                {{/if}}
                 {{#if exampleUsage}}
                     <ExampleContainer>
                         {{{ exampleUsage }}}
                     </ExampleContainer>
                 {{/if}}
-                <TestResult result="Meh"/>
             </div>
         );
     }
