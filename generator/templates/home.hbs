@@ -55,6 +55,9 @@ export default class Home extends React.Component {
                 <h1 className={styles.pageHeader}>Dokumentationsplattform</h1>
                 <Row>
                     <Col xs="2" className={styles.navMenu}>
+                    <div className={styles.listItemWrapper}>
+                        <h3><Link to="/">Home</Link></h3>
+                    </div>
                     {{#each categoryNames}}
                         <div className={styles.listItemWrapper}>
                             <div onClick={this.toggleVisibility.bind(this, "{{this}}")} className={styles.listHeader}>{{this}}</div>
@@ -71,7 +74,7 @@ export default class Home extends React.Component {
                     {{/each}}
                     </Col>
 
-                    <Col xs="9" className={styles.widthFix}>
+                    <Col xs="9" className={cx(styles.widthFix, styles.mainContent)}>
                         {this.state.currentComponent !== undefined ? <this.state.currentComponent /> : (
                             <div>
                                 <h3>Willkommen zur Dokumentationsplattform</h3>
