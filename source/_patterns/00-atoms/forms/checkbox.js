@@ -46,7 +46,7 @@ export default class Checkbox extends ReactComponent {
      * @returns {XML}
      */
     renderWithTooltip() {
-        const {id, positioning, checked, disabled, onChange, zIndex} = this.props;
+        const {id, positioning, checked, disabled, onChange, zIndex, name} = this.props;
         const cId = id.replace("_", "");
         return (
             <Tooltip
@@ -59,6 +59,7 @@ export default class Checkbox extends ReactComponent {
                     disabled={disabled}
                     checked={checked}
                     onChange={onChange}
+                    name={name}
                 />
             </Tooltip>
         );
@@ -69,7 +70,7 @@ export default class Checkbox extends ReactComponent {
      * @returns {XML}
      */
     renderWithoutTooltip() {
-        const {id, checked, disabled, onChange} = this.props;
+        const {id, checked, disabled, onChange, name} = this.props;
         const cId = id.replace("_", "");
         return (
             <Toggle
@@ -77,6 +78,7 @@ export default class Checkbox extends ReactComponent {
                 disabled={disabled}
                 checked={checked}
                 onChange={onChange}
+                name={name}
             />
         );
     }

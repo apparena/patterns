@@ -1,19 +1,16 @@
 import React, {PropTypes} from "react";
 import ReactComponent from "../../react-utils/component";
+import styles from "./button-group.scss";
 
 export default class ButtonGroup extends ReactComponent {
     static propTypes = {
-        ariaLabel: PropTypes.string
-    };
-
-    static defaultProps = {
-        ariaLabel: "Submit",
+        children: PropTypes.node.isRequired,
     };
 
     render() {
         return (
-            <div className="btn-group" role="group">
-                {this.getChildrenArray(this.props.children)}
+            <div className={styles.btnGroup} role="group">
+                {this.props.children}
             </div>
         )
     }

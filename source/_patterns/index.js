@@ -9,7 +9,9 @@ import CardsList from "./02-organisms/lists/cards-list";
 import Checkbox from "./00-atoms/forms/checkbox";
 import Col from "./00-atoms/grid/col";
 import Container from "./00-atoms/grid/container";
+import Copy from "./00-atoms/copy";
 import CustomControl from "./01-molecules/forms/custom-control";
+import DatePicker from "./00-atoms/datepicker";
 import Dropdown from "./01-molecules/dropdown/dropdown";
 import Form from "./02-organisms/forms/form";
 import FormGroup from "./01-molecules/forms/form-group";
@@ -21,6 +23,7 @@ import Jumbotron from "./01-molecules/jumbotron/jumbotron";
 import ListGroup from "./01-molecules/list-group/list-group";
 import Modal from "./01-molecules/modal/modal";
 import ModalBody from "./01-molecules/modal/modal-body";
+import ModalContainer from "./react-utils/modalContainer";
 import ModalFooter from "./01-molecules/modal/modal-footer";
 import ModalHeader from "./01-molecules/modal/modal-header";
 import Nav from "./01-molecules/navs/nav";
@@ -61,7 +64,9 @@ export {
     Checkbox,
     Col,
     Container,
+    Copy,
     CustomControl,
+    DatePicker,
     Dropdown,
     Form,
     FormGroup,
@@ -73,6 +78,7 @@ export {
     ListGroup,
     Modal,
     ModalBody,
+    ModalContainer,
     ModalFooter,
     ModalHeader,
     Nav,

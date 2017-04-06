@@ -3,11 +3,29 @@ import cx from "classnames";
 import ReactComponent from "../../react-utils/component";
 import styles from "./spinner.scss";
 
+const SPINNER_TYPES = [
+    "default",
+    "primary",
+    "secondary",
+    "success",
+    "info",
+    "warning",
+    "danger",
+    "link",
+    "outline-primary",
+    "outline-secondary",
+    "outline-success",
+    "outline-info",
+    "outline-warning",
+    "outline-danger",
+    "inverted"
+];
+
 export default class Spinner extends ReactComponent {
     static propTypes = {
         className: PropTypes.string,
         size: PropTypes.oneOf(['sm', 'md', 'lg']),
-        type: PropTypes.oneOf(['default', 'primary', 'inverted'])
+        type: PropTypes.oneOf(SPINNER_TYPES)
     };
 
     static defaultProps = {
