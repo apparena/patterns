@@ -3,20 +3,9 @@
  */
 @import "../../../css/scss/abstracts/variables";
 @import "../../../css/scss/abstracts/mixins";
-@import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/buttons";
 
 /*=========================================================================
-  Molecules Form group
+  Atoms Button-Group
  ========================================================================== */
-.form-group {
-
-  .col-form-label .is-required {
-    position: absolute;
-    right:5px;
-  }
-}
-
-.tooltip {
-  display: block;
-}

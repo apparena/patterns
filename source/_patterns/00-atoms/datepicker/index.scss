@@ -1,0 +1,49 @@
+@import "~apparena-patterns-react/css/scss/abstracts/variables";
+
+//overriding default sass variables with my project's colors
+//$react-dates-color-primary: $some-color-specific-to-my-project;
+$react-dates-width-input: 130px !default;
+$react-dates-width-arrow: 24px !default;
+$react-dates-width-tooltip-arrow: 20px !default;
+$react-dates-width-day-picker: 300px !default;
+$react-dates-spacing-vertical-picker: 72px !default;
+
+$react-dates-color-primary: $brand-primary !default;
+$react-dates-color-primary-dark: $input-bg !default;
+$react-dates-color-primary-shade-1: $input-bg !default;
+$react-dates-color-primary-shade-2: lighten($input-bg, 10%) !default;
+$react-dates-color-primary-shade-3: lighten($input-bg, 20%) !default;
+$react-dates-color-primary-shade-4: lighten($input-bg, 30%) !default;
+$react-dates-color-secondary: $brand-secondary !default;
+$react-dates-color-white: #fff !default;
+$react-dates-color-gray: $gray !default;
+$react-dates-color-gray-dark: darken($react-dates-color-gray, 10.5%) !default;
+$react-dates-color-gray-light: lighten($react-dates-color-gray, 17.8%) !default; // #82888a
+$react-dates-color-gray-lighter: lighten($react-dates-color-gray, 45%) !default; // #cacccd
+
+$react-dates-color-border: $input-bg !default;
+$react-dates-color-border-light: lighten($input-bg, 10%) !default;
+$react-dates-color-border-medium: lighten($input-bg, 20%) !default;
+$react-dates-color-placeholder-text: $input-color-placeholder !default;
+$react-dates-color-text: $input-color !default;
+$react-dates-color-text-focus: $input-color-focus !default;
+$react-dates-color-focus: $input-bg !default;
+
+:global {
+  @import '~react-dates/css/styles.scss';
+  .CalendarMonth__caption {
+    caption-side: top;
+  }
+  .SingleDatePicker__tether--show {
+    z-index: 1600;
+  }
+}
+
+.underlay {
+  opacity: 0;
+  width: 3840px;
+  height: 2160px;
+  left: -1920px;
+  top: -100px;
+  position: fixed;
+}

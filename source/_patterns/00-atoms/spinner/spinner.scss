@@ -1,7 +1,6 @@
 /**
  * Pattern Dependencies
  */
-
 @import "../../../css/scss/abstracts/variables";
 @import "../../../css/scss/abstracts/mixins";
 
@@ -39,19 +38,61 @@
 
 /* Types */
 
-// default
+// colors
 .spinner-default > .spinner-dot {
   background-color: $spinner-dot-bg;
 }
 
-// primary
 .spinner-primary > .spinner-dot {
-  background-color: $brand-primary;
+  background-color: $btn-primary-color;
 }
 
-// inverted
+.spinner-secondary > .spinner-dot {
+  background-color: $btn-secondary-color;
+}
+
+.spinner-info > .spinner-dot {
+  background-color: $btn-info-color;
+}
+
+.spinner-success > .spinner-dot {
+  background-color: $btn-success-color;
+}
+
+.spinner-warning > .spinner-dot {
+  background-color: $btn-warning-color;
+}
+
+.spinner-danger > .spinner-dot {
+  background-color: $btn-danger-color;
+}
+
 .spinner-inverted > .spinner-dot {
   background-color: white;
+}
+
+.spinner-outline-primary > .spinner-dot {
+  background-color: $btn-primary-bg;
+}
+
+.spinner-outline-secondary > .spinner-dot {
+  background-color: $btn-secondary-border;
+}
+
+.spinner-outline-info > .spinner-dot {
+  background-color: $btn-info-bg;
+}
+
+.spinner-outline-success > .spinner-dot {
+  background-color: $btn-success-bg;
+}
+
+.spinner-outline-warning > .spinner-dot {
+  background-color: $btn-warning-bg;
+}
+
+.spinner-outline-danger > .spinner-dot {
+  background-color: $btn-danger-bg;
 }
 
 /* Sizes */

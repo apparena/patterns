@@ -12,6 +12,9 @@ source/styleguide/*
 /public/styleguide/
 /public/latest-change.txt
 
+.idea/*
+!.idea/codeStyleSettings.xml
+
 ### Ignore bower components
 source/js/vendor/
 

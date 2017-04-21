@@ -44,6 +44,7 @@ export default class Button extends ReactComponent {
     static defaultProps = {
         type: "secondary",
         state: "default",
+        stateType: "inverted",
         isDisabled: false
     };
 
@@ -76,7 +77,7 @@ export default class Button extends ReactComponent {
         switch (state) {
             case "loading":
                 return (
-                    <Spinner size="sm" type={(type === "default") ? "primary" : "inverted"}/>
+                    <Spinner size="sm" type={type}/>
                 );
             case "success":
                 return (
