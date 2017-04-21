@@ -52,6 +52,11 @@
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 
+  .footer-nav {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
   .nav-link {
     color: $gray-light;
   }
