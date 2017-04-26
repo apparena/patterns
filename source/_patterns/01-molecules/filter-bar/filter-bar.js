@@ -1,4 +1,5 @@
-import React, {PropTypes} from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import ReactComponent from "../../../react-utils/component";
 import Dropdown from "../../../01-molecules/dropdown/dropdown";
 import ButtonGroup from "../../../01-molecules/button-group/button-group";

@@ -1,4 +1,5 @@
-import React, {PropTypes} from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import cx from "classnames";
 import Input from "../forms/input";
 import InputGroup from "../../01-molecules/input-group/input-group";

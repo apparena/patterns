@@ -1,4 +1,5 @@
-import React, {PropTypes} from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import {render} from "react-dom";
 import {ReactComponent, PriceTable, Spinner} from "../../source/_patterns/index";
 import i18n from "i18n-js";

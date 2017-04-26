@@ -1,4 +1,5 @@
-import React, {PropTypes} from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import ReactComponent from "../../react-utils/component";
 import Icon from "../../00-atoms/icons/icons";
 import cx from "classnames";
