@@ -1,6 +1,8 @@
 /**
  * Pattern Dependencies
  */
+@import "../../../css/scss/abstracts/variables";
+@import "../../../css/scss/abstracts/mixins";
 
 /*=========================================================================
   Organism Login
@@ -8,10 +10,11 @@
 .o-login {
 
   .o-login-logo {
-    margin: ($spacer-y * 2) 0;
+    margin: ($spacer-y * 2) auto;
+    max-width: 300px;
   }
   .o-login-logo img {
-    max-width: 300px;
+    @include img-fluid();
   }
 
   .o-login-context-usps {
