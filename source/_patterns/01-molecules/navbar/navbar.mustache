@@ -1,80 +1,79 @@
 {{#navbar}}
     <div class="m-navbar">
         <nav id="m-navbar-desktop" class="m-navbar-desktop {{class }}">
-            <a class="navbar-logo" href="{{logo.url}}">
-                {{> 00-atoms/logo/logo }}
-            </a>
+            <div class="container">
+                <a class="navbar-brand" href="{{logo.url}}">
+                    {{> 00-atoms/logo/logo }}
+                </a>
 
-            {{# searchForm }}
-                <div class="search-form">
-                    <div class="search-form-handle">
-                        {{{icon}}}
+                {{# searchForm }}
+                    <div class="search-form">
+                        <div class="search-form-handle">
+                            {{{icon}}}
+                        </div>
+                        {{> 01-molecules/navbar/navbar-form }}
                     </div>
-                    {{> 01-molecules/navbar/navbar-form }}
-                </div>
-            {{/searchForm}}
+                {{/searchForm}}
 
-            <div class="navbar-navs text-center py-2 hidden-md-down">
-                {{#navs}}
-                    <ul class="m-navs nav {{ class }}">
-                        {{# items }}
-                            <li class="nav-item {{# subnav }}dropdown{{/subnav}}">
-                                <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }} {{# subnav }}dropdown-toggle{{/ subnav }}"
-                                   href="{{ url }}" {{# subnav }}data-toggle="dropdown"{{/ subnav }}>
-                                    {{{ text }}}
-                                </a>
-
-                                {{# subnav }}
-                                    <!-- Very special subnav for navbars -->
-                                    <div class="dropdown-menu">
-                                        <div class="subnav-container {{#promotion}}promotion-activated{{/promotion}}">
-                                            <div class="row">
-                                                <div class="items {{#promotion}}col-sm-7{{/promotion}} {{^promotion}}col-sm-12{{/promotion}}">
-                                                    {{#headline}}
-                                                        <h6 class="subnav-header">{{headline}}</h6>
-                                                    {{/headline}}
-                                                    <div class="row">
-                                                        {{#columns}}
-                                                            <div class="subnav-column {{class}}">
-                                                                <ul>
-                                                                    {{#items}}
-                                                                        <li>
-                                                                            <a href="{{url}}">{{text}}</a>
-                                                                        </li>
-                                                                    {{/items}}
-                                                                </ul>
-                                                            </div>
-                                                        {{/columns}}
-                                                    </div>
+                <div class="text-right hidden-md-down cd-morph-dropdown">
+                    {{#navs}}
+                        <ul class="main-nav navbar-nav {{ class }}">
+                            {{# items }}
+                                <li class="nav-item">
+                                    <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }} {{# subnav }}has-dropdown gallery{{/ subnav }} {{ class }}"
+                                       href="{{ url }}" {{# subnav }} data-content="subnav"{{/ subnav }}>
+                                        {{{ text }}}
+                                        {{# subnav }}<i class="aa-icon aa-icon-chevron-o-down"></i>{{/ subnav }}
+                                    </a>
+                                </li>
+                            {{/ items }}
+                        </ul>
+                        <!-- Very special subnav for navbars -->
+                        <div class="morph-dropdown-wrapper">
+                            <div class="dropdown-list">
+                                <ul>
+                                    {{# items }}
+                                        <li id="subnav" class="dropdown gallery">
+                                            <a href="{{ url }}" class="label">
+                                                <h4>{{{ text }}}</h4>
+                                            </a>
+                                            {{# subnav }}
+                                                <div class="content">
+                                                    {{#columns}}
+                                                        <ul class="row">
+                                                            {{#items}}
+                                                                <li class="col-6">
+                                                                    <a class="link-container" href="{{url}}">
+                                                                        {{#icon}}
+                                                                            <i class="nav-icon aa-icon aa-icon-fw aa-icon-{{icon}}"></i>
+                                                                        {{/icon}}
+                                                                        <div class="product-link-content">
+                                                                            <h3 class="link-title">
+                                                                                {{text}}</h3>
+                                                                            <p class="link-sub hidden-sm-down">{{description}}</p>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                            {{/items}}
+                                                        </ul>
+                                                    {{/columns}}
                                                 </div>
-                                                {{#promotion}}
-                                                    <div class="promotion col-sm-5">
-                                                        {{{content}}}
-                                                        {{# cta }}
-                                                            <div class="cta">
-                                                                <a href="{{url}}" class="{{class}}">
-                                                                    {{{text}}}
-                                                                </a>
-                                                            </div>
-                                                        {{/cta}}
-                                                    </div>
-                                                {{/promotion}}
-                                            </div>
-                                        </div>
-                                    </div>
-                                {{/subnav}}
-                            </li>
-                        {{/ items }}
-                    </ul>
-                {{/navs}}
-            </div>
-            {{#actions}}
-                <div class="navbar-actions">
-                    {{#items}}
-                        {{> 00-atoms/navbar/action }}
-                    {{/items}}
+                                            {{/subnav}}
+                                        </li>
+                                    {{/ items }}
+                                </ul>
+                            </div>
+                        </div>
+                    {{/navs}}
                 </div>
-            {{/actions}}
+                {{#actions}}
+                    <div class="navbar-actions">
+                        {{#items}}
+                            {{> 00-atoms/navbar/action }}
+                        {{/items}}
+                    </div>
+                {{/actions}}
+            </div>
         </nav>
     </div>
 
@@ -86,7 +85,7 @@
                     <li class="">
                         {{# url }}
                             <a class="{{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }}"
-                               href="{{ url }}" >
+                               href="{{ url }}">
                                 {{{ text }}}
                             </a>
                         {{/ url}}
@@ -117,18 +116,18 @@
         $(document).ready(function () {
             if (!$("#m-navbar-mobile").data('mmenu')) {
                 var options = {},
-                    configuration = {};
+                        configuration = {};
                 if ($("#main")) {
                     configuration['offCanvas'] = {
                         pageSelector: "#main"
                     }
                 }
                 var mmenu = $('#m-navbar-mobile').mmenu(options, configuration);
-                $('.m-navbar-mobile-toggle').each(function() {
-                   $(this).on('click', function(e) {
-                       e.preventDefault();
-                       $("#m-navbar-mobile").data('mmenu').open();
-                   });
+                $('.m-navbar-mobile-toggle').each(function () {
+                    $(this).on('click', function (e) {
+                        e.preventDefault();
+                        $("#m-navbar-mobile").data('mmenu').open();
+                    });
                 });
             }
         });
