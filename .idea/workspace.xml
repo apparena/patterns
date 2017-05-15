@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.mustache" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.scss" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -39,33 +40,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="spinner.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.js">
+      <file leaf-file-name="footer.mustache" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="845">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#1636#1642#0#HTML" expanded="true" />
+                <element signature="e#1666#1672#0#HTML" expanded="true" />
+                <element signature="e#1696#1702#0#HTML" expanded="true" />
+                <element signature="e#1721#1727#0#HTML" expanded="true" />
+                <element signature="e#1747#1753#0#HTML" expanded="true" />
+                <element signature="e#1774#1780#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.mustache" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.mustache">
+      <file leaf-file-name="footer.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="200">
+              <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -106,6 +102,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -133,6 +132,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.mustache" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" />
+        <option value="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.scss" />
       </list>
     </option>
   </component>
@@ -249,6 +250,54 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="02-organisms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02-organisms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="01-molecules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -298,7 +347,7 @@
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="navbar.mu&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.mustache&#10;sear&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;overlay&#9;null&#9;null&#10;search&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;Spi&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/spinner/spinner.js&#10;forms.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/forms.scss&#10;form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/bootstrap/scss/_forms.scss&#10;card&#9;null&#9;null&#10;stick&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js" />
+    <property name="SearchEverywhereHistoryKey" value="footer.mu&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/layout/footer.mustache&#10;navbar.mu&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.mustache&#10;sear&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;overlay&#9;null&#9;null&#10;search&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;Spi&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/spinner/spinner.js&#10;forms.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/forms.scss&#10;form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/bootstrap/scss/_forms.scss&#10;card&#9;null&#9;null&#10;stick&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RunDashboard">
@@ -417,7 +466,7 @@
       <workItem from="1494485155373" duration="598000" />
       <workItem from="1494504795729" duration="492000" />
       <workItem from="1494554477908" duration="5116000" />
-      <workItem from="1494829637432" duration="2848000" />
+      <workItem from="1494829637432" duration="4394000" />
     </task>
     <task id="LOCAL-00001" summary="update card style">
       <created>1492075461097</created>
@@ -468,14 +517,21 @@
       <option name="project" value="LOCAL" />
       <updated>1494832663556</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="AA-1322, update nav styling">
+      <created>1494834688130</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1494834688130</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80631000" />
+    <option name="totallyTimeSpent" value="82177000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="6" />
+    <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -539,7 +595,8 @@
     <MESSAGE value="refactor react PropTypes to import from prop-types module" />
     <MESSAGE value="update login styling" />
     <MESSAGE value="update nav styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="update nav styling" />
+    <MESSAGE value="AA-1322, update nav styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="AA-1322, update nav styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -555,14 +612,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/test/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/graceful-fs/graceful-fs.js" />
     <entry file="file://$PROJECT_DIR$/generator/dist/button.example.js" />
     <entry file="file://$PROJECT_DIR$/generator/dist/button-group.jsx" />
     <entry file="file://$PROJECT_DIR$/generator/dist/button.jsx" />
@@ -743,20 +792,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -769,10 +816,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="285">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="845">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#1636#1642#0#HTML" expanded="true" />
+            <element signature="e#1666#1672#0#HTML" expanded="true" />
+            <element signature="e#1696#1702#0#HTML" expanded="true" />
+            <element signature="e#1721#1727#0#HTML" expanded="true" />
+            <element signature="e#1747#1753#0#HTML" expanded="true" />
+            <element signature="e#1774#1780#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding />
         </state>
       </provider>
