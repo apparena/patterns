@@ -47,17 +47,21 @@ export default class CustomPackageCreator extends ReactComponent {
                             break;
                         case "languages":
                             if (state[article.key].price === undefined) {
-                                state[article.key].price = state[article.key].value.reduce((a, b) => {
-                                    if (a.price) {
-                                        if (a.language === data.defaultLanguage)
-                                            return b.price;
-                                        else if (b.language === data.defaultLanguage)
-                                            return a.price;
-                                        else
-                                            return a.price + b.price;
-                                    }
-                                    else return a + b.price;
-                                });
+                                if (state[article.key].value.length === 1) {
+                                    state[article.key].price = 0;
+                                } else {
+                                    state[article.key].price = state[article.key].value.reduce((a, b) => {
+                                        if (a.price) {
+                                            if (a.language === data.defaultLanguage)
+                                                return b.price;
+                                            else if (b.language === data.defaultLanguage)
+                                                return a.price;
+                                            else
+                                                return a.price + b.price;
+                                        }
+                                        else return a + b.price;
+                                    });
+                                }
                             }
                             break;
                     }
@@ -315,7 +319,6 @@ export default class CustomPackageCreator extends ReactComponent {
                 </Button>
             )
         }
-        const loc = "http://manager.local/stores/1/orders/create";
         const utf8_to_b64 = (str) => {
             return window.btoa(encodeURIComponent(str));
         };
@@ -323,7 +326,7 @@ export default class CustomPackageCreator extends ReactComponent {
             <Button className={styles.purchase_button}
                     type="primary"
                     rounded
-                    href={`${loc}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`}
+                    href={`${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`}
             >
                 {this.t("priceTableElement.button.caption")}
             </Button>
