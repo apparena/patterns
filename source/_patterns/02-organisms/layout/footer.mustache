@@ -31,18 +31,21 @@
             {{/footer.socialMedia}}
         </div>
 
-        <div class="o-footer-nav-bottom text-center text-muted">
+        <div class="o-footer-nav-bottom text-center text-muted row">
             {{#footer.navigation.secondary}}
-                <div class="o-footer-nav-secondary">
+                <div class="o-footer-nav-secondary col-12">
                     {{> 02-organisms/navigation/nav-footer }}
                 </div>
             {{/footer.navigation.secondary}}
 
             {{#footer.copyright}}
-                <div class="o-footer-copyright">
-                    Copyright &copy; <span class="countup">{{ year }}</span> &copy; {{ company.name }}™
+                <div class="o-footer-contact col-12">
+                    {{ company.name }} &bull; {{ company.address1 }} &bull; {{ company.address2 }} &bull; {{ company.zip }} &bull; {{ company.city }} &bull; {{ company.phone }} &bull; {{ company.email }}
+                </div>
+                <div class="o-footer-copyright col-12">
+                    <span class="countup">{{ year }}</span> &copy; {{ company.name }}™
                     <span class="hidden-md-up"><br></span><span class="hidden-sm-down"> | </span>
-                    Made with <i class="aa-icon aa-icon-heart text-danger"></i> in Cologne, Germany.
+                    Made with <i class="aa-icon aa-icon-heart"></i> in Cologne, Germany.
                 </div>
             {{/footer.copyright}}
         </div>
@@ -51,20 +54,20 @@
 
 </footer><!-- end o-footer -->
 <script>
-    jQuery(document).ready(function() {
-        yearEl= jQuery('.o-footer-copyright .countup')[0];
+    jQuery(document).ready(function () {
+        yearEl = jQuery('.o-footer-copyright .countup')[0];
         if (yearEl
                 && typeof CountUp !== 'undefined'
                 && typeof Waypoint !== 'undefined'
                 && typeof Waypoint.Inview != 'undefined') {
             if (!jQuery(yearEl).data('initialized')) {
                 var countup = new CountUp(yearEl, 2012, parseInt(yearEl.innerText), 0, 3, {
-                    useEasing : true,
-                    useGrouping : false
+                    useEasing: true,
+                    useGrouping: false
                 });
                 new Waypoint.Inview({
                     element: yearEl,
-                    enter: function() {
+                    enter: function () {
                         countup.start();
                     }
                 });
