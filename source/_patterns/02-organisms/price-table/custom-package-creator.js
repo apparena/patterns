@@ -275,6 +275,17 @@ export default class CustomPackageCreator extends ReactComponent {
             case "ad_management":
             case "analytics_monitoring":
                 const checked = (this.state.service.value >= article.includedIf.value);
+                if (checked) {
+                    this.purchaseData.articles = this.purchaseData.articles.filter((purchase) => {
+                        return (purchase.key !== article.key)
+                    });
+
+                    this.purchaseData.articles.push({
+                        price: 0,
+                        value: this.state[article.key].value,
+                        text: this.t(`priceTable.articles.${article.key}`)
+                    });
+                }
                 return (
                     <div key={`article-${i}`}>
                         <Icon fixedWidth name={checked ? "check" : "close"}
