@@ -110,11 +110,14 @@ export default class PriceTableElement extends ReactComponent {
                 </Button>
             )
         }
+        const utf8_to_b64 = (str) => {
+            return window.btoa(encodeURIComponent(str));
+        };
         return (
             <Button className={styles.purchase_button}
                     type="primary"
                     rounded
-                    href={`${onClick}?templateId=${templateId}&orderData=${btoa(JSON.stringify(this.purchaseData))}`}
+                    href={`${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`}
             >
                 {this.t("priceTableElement.button.caption")}
             </Button>
