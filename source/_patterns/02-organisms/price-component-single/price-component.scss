@@ -3,6 +3,7 @@
 
 .price-selector-container {
   background: white;
+  position: relative;
 
   .service-hours {
     margin: auto;
@@ -39,5 +40,16 @@
   .tax-hint {
     text-align: right;
     margin-right: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  button {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 30%;
+    margin: auto;
+    right: 0;
+    border-radius: 9999rem;
   }
 }
