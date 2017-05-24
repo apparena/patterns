@@ -277,7 +277,7 @@ export default class CustomPackageCreator extends ReactComponent {
                 const checked = (this.state.service.value >= article.includedIf.value);
                 if (checked) {
                     this.purchaseData.articles = this.purchaseData.articles.filter((purchase) => {
-                        return (purchase.key !== article.key)
+                        return (purchase.text !== this.t(`priceTable.articles.${article.key}`))
                     });
 
                     this.purchaseData.articles.push({
