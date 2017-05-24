@@ -44,6 +44,16 @@ export default {
                 other: "{{count}} Sprachen ausgewählt",
                 zero: "Keine Sprache ausgewählt"
             }
+        },
+        priceSingle: {
+            serviceHours: {
+                one: "Stunde",
+                other: "Stunden",
+                zero: "Stunde",
+            },
+            hoursPrompt: "Wählen Sie die benötigten Stunden aus.",
+            taxHint: "zzgl. Steuern",
+            purchase: "Kaufen",
         }
     }
 }

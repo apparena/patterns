@@ -1,0 +1,43 @@
+@import "../../../css/scss/abstracts/variables";
+@import "../../../css/scss/abstracts/mixins";
+
+.price-selector-container {
+  background: white;
+
+  .service-hours {
+    margin: auto;
+    width: 40%;
+
+    .service-hour-number {
+      background-color: $brand-success;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      margin-top: -5px;
+      margin-right: 5px;
+      float: left;
+      text-align: center;
+      color: white;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+    }
+  }
+
+  .price-service-prompt {
+    color: $gray-light;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .price {
+    font-size: 26px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  .tax-hint {
+    text-align: right;
+    margin-right: 1rem;
+  }
+}
