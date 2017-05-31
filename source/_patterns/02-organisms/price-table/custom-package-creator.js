@@ -282,6 +282,7 @@ export default class CustomPackageCreator extends ReactComponent {
 
                     this.purchaseData.articles.push({
                         price: 0,
+                        key: article.key,
                         value: this.state[article.key].value,
                         text: this.t(`priceTable.articles.${article.key}`)
                     });
