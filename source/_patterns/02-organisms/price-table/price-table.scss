@@ -1,17 +1,17 @@
 @import "../../../css/scss/abstracts/variables";
 @import "../../../css/scss/abstracts/mixins";
 
-.checkBoxFix {
+.check-box-fix {
   :global {
     .react-toggle {
       .react-toggle-track {
         background: rgba(0, 0, 0, 0);
-        border: 2px solid #fff;
+        border: 2px solid $brand-primary;
       }
       .react-toggle-thumb {
         border: none;
         box-shadow: none;
-        background: #fff;
+        background: $brand-primary;
         width: 28px;
         height: 28px;
         top: 3px;
