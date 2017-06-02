@@ -10,11 +10,21 @@
   Molecules Form group
  ========================================================================== */
 .form-group {
-
   .col-form-label .is-required {
     position: absolute;
     right:5px;
   }
+}
+
+// Form validation states
+.has-success {
+  @include form-control-validation($body-color);
+}
+
+.form-control-success,
+.form-control-warning,
+.form-control-danger {
+  background-size: ($input-height / 3) ($input-height / 3);
 }
 
 .tooltip {

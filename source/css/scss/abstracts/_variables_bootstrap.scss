@@ -19,6 +19,22 @@
 //
 // Variable format should follow the `$component-modifier-state-property` order.
 
+// Replace `$search` with `$replace` in `$string`
+// @author Hugo Giraudel
+// @param {String} $string - Initial string
+// @param {String} $search - Substring to replace
+// @param {String} $replace ('') - New value
+// @return {String} - Updated string
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
 // Colors
 //
 // Grayscale and brand colors for use across Bootstrap.
@@ -97,5 +113,17 @@ $modal-backdrop-bg: transparentize($brand-secondary, 0.2);
 $modal-lg:                    1000px !default;
 $modal-md:                    500px !default;
 $modal-sm:                    300px !default;
+
+// Form Validation
+// Form validation icons
+$form-icon-success-color: $brand-success !default;
+$form-icon-success: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$form-icon-success-color}' d='M12 .3C5.5.3.3 5.5.3 12c0 6.5 5.3 11.8 11.8 11.8 6.5 0 11.8-5.3 11.8-11.8C23.8 5.5 18.5.3 12 .3zm0 22C6.3 22.3 1.8 17.7 1.8 12 1.8 6.3 6.3 1.8 12 1.8c5.7 0 10.3 4.6 10.3 10.3 0 5.6-4.6 10.2-10.3 10.2z'/%3E%3Cpath fill='#{$form-icon-success-color}' d='M16.2 8.3l-5.8 5.8-2.6-2.6c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l3.3 3.3c.2.2.4.3.7.3.2 0 .5-.1.7-.3l6.5-6.5c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z'/%3E%3C/svg%3E"), "#", "%23") !default;
+
+$form-icon-warning-color: $brand-warning !default;
+$form-icon-warning: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$form-icon-warning-color}' d='M12 .3C5.5.3.3 5.5.3 12c0 6.5 5.3 11.8 11.8 11.8 6.5 0 11.8-5.3 11.8-11.8C23.8 5.5 18.5.3 12 .3zm0 22C6.3 22.3 1.8 17.7 1.8 12 1.8 6.3 6.3 1.8 12 1.8c5.7 0 10.3 4.6 10.3 10.3 0 5.6-4.6 10.2-10.3 10.2z'/%3E%3Cpath fill='#{$form-icon-warning-color}' d='M12 15.2c-.5 0-.8.1-1 .3s-.4.6-.4 1 .1.8.4 1c.2.2.6.4 1 .4s.8-.1 1-.4c.2-.2.4-.6.4-1s-.1-.8-.4-1c-.2-.2-.6-.3-1-.3zM11 13.9h2l.4-7.8h-2.8z'/%3E%3C/svg%3E"), "#", "%23") !default;
+
+$form-icon-danger-color: $brand-danger !default;
+$form-icon-danger: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$form-icon-danger-color}' d='M12 .3C5.5.3.3 5.5.3 12c0 6.5 5.3 11.8 11.8 11.8 6.5 0 11.8-5.3 11.8-11.8C23.8 5.5 18.5.3 12 .3zm0 22C6.3 22.3 1.8 17.7 1.8 12 1.8 6.3 6.3 1.8 12 1.8c5.7 0 10.3 4.6 10.3 10.3 0 5.6-4.6 10.2-10.3 10.2z'/%3E%3Cpath fill='#{$form-icon-danger-color}' d='M15.9 8.2c-.4-.4-1-.4-1.4 0L12 10.8 9.4 8.2c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l2.6 2.6L8 14.8c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l2.6-2.6 2.6 2.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-2.6-2.6L16 9.6c.3-.4.3-1-.1-1.4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+
 
 @import "~bootstrap/scss/variables";
