@@ -199,9 +199,30 @@
     color: #8898aa;
     line-height: 40px;
   }
+
+  .cta-block {
+    display: none;
+  }
+
   @media only screen and (min-width: 768px) {
     &::before {
       content: 'desktop';
+    }
+
+    .cta-block {
+      display: block;
+      background: $brand-success;
+      padding: 2rem;
+      text-align: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      a {
+        color: white;
+        &:hover {
+          color: white;
+          text-decoration: underline;
+        }
+      }
     }
 
     &.dropdown-visible .main-nav > ul > li > a {
@@ -265,10 +286,10 @@
       &:hover, &:active {
         text-decoration: none;
         .link-title {
-          color: darken($brand-primary, 50%);
+          color: darken($brand-primary, .5);
         }
         .nav-icon {
-          color: darken($brand-primary, 50%);
+          color: darken($brand-primary, .5);
         }
       }
     }
@@ -358,7 +379,7 @@
       transition: transform .3s;
       text-align: left;
       background: $brand-secondary;
-      border-radius: 5px;
+      border-radius: 5px 5px 0 0;
     }
 
     .gallery .content {
