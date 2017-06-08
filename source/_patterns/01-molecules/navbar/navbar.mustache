@@ -21,7 +21,7 @@
                             {{# items }}
                                 <li class="nav-item">
                                     <a class="nav-link {{# isActive }}active{{/ isActive }} {{# isDisabled }}disabled{{/ isDisabled }} {{# subnav }}has-dropdown gallery{{/ subnav }} {{ class }}"
-                                       href="{{ url }}" {{# subnav }} data-content="subnav"{{/ subnav }}>
+                                       href="{{ url }}" {{# subnav }} data-content="subnav-{{ID}}"{{/ subnav }}>
                                         {{{ text }}}
                                         {{# subnav }}<i class="aa-icon aa-icon-chevron-o-down"></i>{{/ subnav }}
                                     </a>
@@ -33,7 +33,7 @@
                             <div class="dropdown-list">
                                 <ul>
                                     {{# items }}
-                                        <li id="subnav" class="dropdown gallery">
+                                        <li id="subnav-{{ID}}" class="dropdown gallery">
                                             <a href="{{ url }}" class="label">
                                                 <h4>{{{ text }}}</h4>
                                             </a>
