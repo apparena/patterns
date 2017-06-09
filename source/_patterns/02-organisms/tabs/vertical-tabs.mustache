@@ -3,10 +3,11 @@
         <div class="row">
             {{# navigation.positionLeft }}
                 <div class="tabs-nav hidden-xs-down col-sm-12 col-lg-6">
-                    <ul class="hover-tabs list-unstyled">
+                    <ul class="hover-tabs list-unstyled"  role = "tablist">
                         {{#items}}
-                            <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
-                                href="#{{class}}" role="tab">
+                            <li role="tab">
+                              <a class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
+                                  href="#{{class}}" role="tab" >
                                 <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                                 <div class="o-vertical-tab-icon">
                                     {{{ icon }}}
@@ -15,6 +16,7 @@
                                     <h5 class="mt-0 mb-1">{{{title}}}</h5>
                                     <p> {{{description}}} </p>
                                 </div>
+                              </a>
                             </li>
                         {{/items}}
                         {{#cta}}
@@ -34,7 +36,7 @@
             </div>
             {{^ navigation.positionLeft }}
                 <div class="tabs-nav hidden-xs-down col-sm-12 col-lg-6">
-                    <ul class="hover-tabs list-unstyled">
+                    <ul class="hover-tabs list-unstyled"  role = "tablist">
                         {{#items}}
                             <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
                             <li>
