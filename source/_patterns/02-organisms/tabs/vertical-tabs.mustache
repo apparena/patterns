@@ -37,8 +37,9 @@
                     <ul class="hover-tabs list-unstyled">
                         {{#items}}
                             <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
-                            <li class="media {{#isActive}}active{{/isActive}}" data-toggle="tab" href="#{{id}}"
-                                role="tab">
+                            <li>
+                              <a class="media {{#isActive}}active{{/isActive}}" data-toggle="tab" href="#{{id}}"
+                                  role="tab" >
 
                                 {{#icon}}
                                     <div class="icon">
@@ -50,6 +51,7 @@
                                     <h5 class="mt-0 mb-1">{{{title}}}</h5>
                                     <p> {{{description}}} </p>
                                 </div>
+                              </a>
                             </li>
                         {{/items}}
                         {{#cta}}
