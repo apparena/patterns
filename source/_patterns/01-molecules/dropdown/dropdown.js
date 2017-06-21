@@ -63,7 +63,7 @@ export default class Dropdown extends ReactComponent {
         return React.Children.map(this.props.children, (child) => {
             return React.cloneElement(child, {
                 onClick: this.state.isOpen ? ::this.closeDropdown : ::this.openDropdown,
-                className: cx(child.props.className, styles["dropdown-toggle"]),
+                className: cx(child.props.className, styles["dropdown-toggle"], !this.props.arrow && styles["no-icon"]),
             });
         });
     }
@@ -91,7 +91,7 @@ export default class Dropdown extends ReactComponent {
     renderDropdownMenu() {
         if (!this.state.isOpen) return null;
         return (
-            <ul key="Dropdown-menu" className={styles["dropdown-menu"]} role="menu">
+            <ul key="Dropdown-menu" className={cx(styles["dropdown-menu"], this.props.align && styles[`dropdown-menu-${this.props.align}`])} role="menu">
                 {React.Children.map(this.props.items, (child, index) => {
                     if (React.isValidElement(child)) {
                         return (
@@ -117,8 +117,6 @@ export default class Dropdown extends ReactComponent {
         // classes
         const componentClass = cx(styles["dropdown"],
             this.state.isOpen && styles["show"],
-            this.props.align && styles[`dropdown-menu-${this.props.align}`],
-            !this.props.arrow && styles["no-icon"],
             this.props.className
         );
         if (!this.props.dropup) {

@@ -9,13 +9,8 @@
 /*=========================================================================
   Molecules Dropdown
  ========================================================================== */
-.no-icon:after {
-  content: initial;
-  border: none;
-}
-
 .dropdown-item {
-  cursor: pointer;;
+  cursor: pointer;
 }
 
 .dropdown-toggle {
@@ -39,5 +34,9 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  &.no-icon:after {
+    content: initial;
+    border: none;
   }
 }
