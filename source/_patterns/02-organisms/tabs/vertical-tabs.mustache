@@ -3,18 +3,21 @@
         <div class="row">
             {{# navigation.positionLeft }}
                 <div class="tabs-nav hidden-xs-down col-sm-12 col-lg-6">
-                    <ul class="hover-tabs list-unstyled">
+                    <ul class="nav  hover-tabs list-unstyled  flex-column"  role = "tablist">
                         {{#items}}
-                            <li class="media {{#isActive}}active{{/isActive}} mb-4" data-toggle="tab"
-                                href="#{{class}}" role="tab">
-                                <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
-                                <div class="o-vertical-tab-icon">
-                                    {{{ icon }}}
-                                </div>
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">{{{title}}}</h5>
-                                    <p> {{{description}}} </p>
-                                </div>
+                            <li  class="nav-item"  >
+                                <a class="media {{#isActive}}active{{/isActive}}" href="#{{id}}" data-toggle="tab" role="tab"  >
+                                    {{#icon}}
+                                        <div class="icon">
+                                            {{{ icon }}}
+                                        </div>
+                                    {{/icon}}
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">{{{title}}}</h5>
+                                        <p> {{{description}}} </p>
+                                    </div>
+                                </a>
                             </li>
                         {{/items}}
                         {{#cta}}
@@ -34,22 +37,22 @@
             </div>
             {{^ navigation.positionLeft }}
                 <div class="tabs-nav hidden-xs-down col-sm-12 col-lg-6">
-                    <ul class="hover-tabs list-unstyled">
+                    <ul class="nav  hover-tabs list-unstyled  flex-column"  role = "tablist">
                         {{#items}}
                             <!--<img class="d-flex mr-3" src="..." alt="Generic placeholder image">-->
-                            <li class="media {{#isActive}}active{{/isActive}}" data-toggle="tab" href="#{{id}}"
-                                role="tab">
+                            <li  class="nav-item"  >
+                                <a class="media {{#isActive}}active{{/isActive}}" href="#{{id}}" data-toggle="tab" role="tab"  >
+                                    {{#icon}}
+                                        <div class="icon">
+                                            {{{ icon }}}
+                                        </div>
+                                    {{/icon}}
 
-                                {{#icon}}
-                                    <div class="icon">
-                                        {{{ icon }}}
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">{{{title}}}</h5>
+                                        <p> {{{description}}} </p>
                                     </div>
-                                {{/icon}}
-
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">{{{title}}}</h5>
-                                    <p> {{{description}}} </p>
-                                </div>
+                                </a>
                             </li>
                         {{/items}}
                         {{#cta}}
