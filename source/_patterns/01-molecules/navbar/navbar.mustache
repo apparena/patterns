@@ -34,31 +34,33 @@
                                 <ul>
                                     {{# items }}
                                         <li id="subnav-{{ID}}" class="dropdown gallery">
-                                            <a href="{{ url }}" class="label">
-                                                <h4>{{{ text }}}</h4>
-                                            </a>
-                                            {{# subnav }}
-                                                <div class="content">
-                                                    {{#columns}}
-                                                        <ul class="row">
-                                                            {{#items}}
-                                                                <li class="col-6">
-                                                                    <a class="link-container" href="{{url}}">
-                                                                        {{#icon}}
-                                                                            <i class="nav-icon aa-icon aa-icon-fw aa-icon-{{icon}}"></i>
-                                                                        {{/icon}}
-                                                                        <div class="product-link-content">
-                                                                            <span  class="link-title">
+                                            <div class="content">
+                                                <a href="{{ url }}" class="label">
+                                                    <h4>{{{ text }}}</h4>
+                                                </a>
+                                                {{# subnav }}
+                                                    <div class="content-container">
+                                                        {{#columns}}
+                                                            <ul class="row">
+                                                                {{#items}}
+                                                                    <li class="col-6">
+                                                                        <a class="link-container" href="{{url}}">
+                                                                            {{#icon}}
+                                                                                <i class="nav-icon aa-icon aa-icon-fw aa-icon-{{icon}}"></i>
+                                                                            {{/icon}}
+                                                                            <div class="product-link-content">
+                                                                            <span class="link-title">
                                                                                 {{text}}</span>
-                                                                            <p class="link-sub hidden-sm-down">{{description}}</p>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                            {{/items}}
-                                                        </ul>
-                                                    {{/columns}}
-                                                </div>
-                                            {{/subnav}}
+                                                                                <p class="link-sub hidden-sm-down">{{description}}</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                {{/items}}
+                                                            </ul>
+                                                        {{/columns}}
+                                                    </div>
+                                                {{/subnav}}
+                                            </div>
                                         </li>
                                     {{/ items }}
                                 </ul>

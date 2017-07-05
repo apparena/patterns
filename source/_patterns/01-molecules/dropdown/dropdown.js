@@ -91,7 +91,7 @@ export default class Dropdown extends ReactComponent {
     renderDropdownMenu() {
         if (!this.state.isOpen) return null;
         return (
-            <ul key="Dropdown-menu" className={cx(styles["dropdown-menu"], this.props.align && styles[`dropdown-menu-${this.props.align}`])} role="menu">
+            <ul className={cx(styles["dropdown-menu"], this.props.align && styles[`dropdown-menu-${this.props.align}`])} role="menu">
                 {React.Children.map(this.props.items, (child, index) => {
                     if (React.isValidElement(child)) {
                         return (

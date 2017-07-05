@@ -127,13 +127,13 @@
       bottom: auto;
       right: auto;
       transform: translateX(-50%) translateY(-50%);
-      transition: background-color .3s;
+      transition: background-color .25s;
     }
 
     span::after, span::before {
       content: '';
       left: 0;
-      transition: transform .3s;
+      transition: transform .25s;
     }
 
     span::before {
@@ -174,11 +174,11 @@
     color: $brand-primary;
   }
 
-  .content > .row > .col-6 {
+  .content .content-container > .row > .col-6 {
     padding: 3px 15px;
   }
 
-  .gallery .content a {
+  .gallery .content .content-container a {
     display: block;
     font-weight: 500;
     line-height: 50px;
@@ -188,7 +188,7 @@
     }
   }
 
-  .content h3 {
+  .content .content-container h3 {
     color: mix(#000, $brand-primary, 35%);
     font-weight: bold;
   }
@@ -233,7 +233,7 @@
     &.dropdown-visible .main-nav > ul > li.active > a {
       opacity: 1;
     }
-    .gallery .content a {
+    .gallery .content .content-container a {
       display: flex;
     }
     .link-container {
@@ -312,7 +312,7 @@
       visibility: hidden;
       transform: translateZ(0);
       will-change: transform, width, height;
-      transition: visibility .3s;
+      transition: visibility .25s;
       box-shadow: 0 10px 20px rgba(#000, .08);
       border-radius: 5px;
 
@@ -320,7 +320,7 @@
         display: none;
       }
 
-      &::before {
+      &:before {
         /* dropdown top triangle */
         content: '';
         position: absolute;
@@ -333,13 +333,13 @@
         border: 15px solid rgba(0, 0, 0, 0);
         border-bottom: 15px solid $brand-secondary;
         opacity: 0;
-        transition: opacity .3s;
+        transition: opacity .25s;
       }
     }
 
     &.dropdown-visible .dropdown-list {
       visibility: visible;
-      transition: transform .3s, width .3s, height .3s;
+      transition: transform .25s, width .25s, height .25s;
 
       &::before {
         opacity: 1;
@@ -354,7 +354,7 @@
       visibility: hidden;
       width: 100%;
       z-index: 2060;
-      transition: opacity .3s, visibility .3s;
+      transition: opacity .25s, visibility .25s;
 
       &.active {
         opacity: 1;
@@ -362,54 +362,35 @@
       }
 
       &.move-left .content {
-        transform: translateX(-100px);
+        transform: translateX(-150px);
       }
 
       &.move-right .content {
-        transform: translateX(100px);
+        transform: translateX(150px);
       }
-    }
 
-    .label {
-      /* hide the label on bigger devices */
-      display: none;
-    }
-
-    .content {
-      padding: 2.2em 1.8em;
-      transition: transform .3s;
-      text-align: left;
-      background: $brand-secondary;
-      border-radius: 5px 5px 0 0;
-    }
-
-    .gallery .content {
-      /* you need to set a width for the .content elements because they have a position absolute */
-      width: 690px;
-      padding-bottom: .8em;
-    }
-
-    .links .content,
-    .button .content {
-      width: 390px;
-    }
-
-    .links-list a {
-      font-size: 1.6rem;
-      margin-left: 0;
-    }
-
-    .content h2 {
-      font-size: 1.8rem;
-      text-transform: none;
-      font-weight: normal;
-      color: $brand-primary;
-      margin: 0 0 .6em;
-    }
-
-    &.dropdown-visible .bg-layer {
-      opacity: 1;
-      transition: transform .3s, opacity .3s;
+      .content {
+        /* you need to set a width for the .content elements because they have a position absolute */
+        width: 690px;
+        transition: transform .25s;
+        text-align: left;
+        background: $brand-secondary;
+        border-radius: 5px;
+        a.label {
+          /* hide the label on bigger devices */
+          display: none;
+        }
+        .content-container {
+          padding: 2.2em 1.8em;
+          h2 {
+            font-size: 1.8rem;
+            text-transform: none;
+            font-weight: normal;
+            color: $brand-primary;
+            margin: 0 0 .6em;
+          }
+        }
+      }
     }
   }
 }
