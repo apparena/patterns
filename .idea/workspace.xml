@@ -2,54 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/assets/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/SCSSStub.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/.eslintrc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/babel.dev.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/babel.prod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/babel-plugin-transform-async/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/babel-plugin-transform-async/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/babel-plugin-transform-async/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/babel-plugin-transform-async/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/debug-noop/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/eslint.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/flow/css.js.flow" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/flow/file.js.flow" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/public-path.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/addHotMiddleware.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/assetManifestsFormatter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/interpolateName.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/mergeWithConcat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/promisify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.optimize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.watch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.plugin.copyglobs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/code-snippet.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/test-result.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/main.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/routes.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/styles/darcula.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/src/styles/home.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/frontend/yarn.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/generator.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/templates/component.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/templates/components_index.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/templates/home.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/build.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generator/deploy.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -84,7 +39,28 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/generator/build.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deploy.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build/generator/deploy.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -186,6 +162,8 @@
         <option value="$PROJECT_DIR$/build/generator/frontend/src/styles/home.scss" />
         <option value="$PROJECT_DIR$/build/generator/frontend/build/webpack/config.js" />
         <option value="$PROJECT_DIR$/build/generator/frontend/src/index.html" />
+        <option value="$PROJECT_DIR$/build/generator/build.sh" />
+        <option value="$PROJECT_DIR$/build/generator/deploy.sh" />
       </list>
     </option>
   </component>
@@ -285,54 +263,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -362,6 +292,7 @@
       <recent name="$PROJECT_DIR$/build/generator/frontend/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build/generator" />
       <recent name="$PROJECT_DIR$/build" />
     </key>
   </component>
@@ -547,7 +478,7 @@
       <workItem from="1499173724907" duration="6704000" />
       <workItem from="1499769294953" duration="595000" />
       <workItem from="1499792429738" duration="602000" />
-      <workItem from="1499855652062" duration="7152000" />
+      <workItem from="1499855652062" duration="9588000" />
     </task>
     <task id="LOCAL-00001" summary="update card style">
       <created>1492075461097</created>
@@ -689,14 +620,22 @@
       <option name="project" value="LOCAL" />
       <updated>1499325444337</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add doc generator to patternlab">
+      <created>1499864646328</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1499864646328</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154969000" />
+    <option name="totallyTimeSpent" value="157405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30182928" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
@@ -705,7 +644,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23642172" sideWeight="0.5121212" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.49786553" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3109691" sideWeight="0.4878788" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3109691" sideWeight="0.4878788" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
@@ -784,7 +723,8 @@
     <MESSAGE value="quick fix of bg color of search input" />
     <MESSAGE value="fix &quot;stripe&quot; navbar" />
     <MESSAGE value="fix z-index of notifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix z-index of notifications" />
+    <MESSAGE value="add doc generator to patternlab" />
+    <option name="LAST_COMMIT_MESSAGE" value="add doc generator to patternlab" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -800,27 +740,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="142" column="1" lean-forward="false" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/tag/tag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1132,7 +1051,7 @@
         <state relative-caret-position="255">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1177,18 +1096,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="130" column="27" lean-forward="false" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/generator/frontend/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding />
         </state>
       </provider>
