@@ -36,6 +36,7 @@ ssh -T bamboo@${TargetIp} << EOSSH
     echo "$(date): End extract and delete source-code zip file"
 
     echo "$(date): Start Setting access rights"
+    cd ${RootPath}
     chown -R www-data:www-data ${FolderName}_new/.
     chmod -R 775 ${FolderName}_new/.
     find ${FolderName}_new/ -type d -exec chmod 775 {} \;
