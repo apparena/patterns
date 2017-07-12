@@ -369,6 +369,11 @@
         transform: translateX(150px);
       }
 
+      .label {
+        /* hide the label on bigger devices */
+        display: none;
+      }
+
       .content {
         /* you need to set a width for the .content elements because they have a position absolute */
         width: 690px;
