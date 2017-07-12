@@ -13,7 +13,6 @@ echo "$(date): End Yarn install & build"
 
 # Compress source code to generate the artifacts
 echo "$(date): Start building artifacts"
-cp build/generator/deploy.sh build/generator/frontend/src/
 cd build/generator/frontend/src/
 tar -cvzf ../../../../artifact.tar.gz . --exclude=artifact.tar.gz --warning=no-file-changed > /dev/null
 echo "$(date): End building artifacts"
