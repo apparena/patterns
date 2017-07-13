@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {ReactComponent, Table} from "apparena-patterns-react";
 
-export default class RadioButtonInput extends Component {
+export default class RadioButtonInput extends ReactComponent {
     render () {
         return (
-            <table className="table table-bordered table-inverse">
+            <Table bordered inverse>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -48,7 +49,7 @@ export default class RadioButtonInput extends Component {
                         <td />
                     </tr>
                 </tbody>
-            </table>
+            </Table>
         );
     }
 };

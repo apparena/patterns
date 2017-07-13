@@ -2,9 +2,11 @@ import React, {PropTypes} from "react";
 import {ReactComponent} from "apparena-patterns-react";
 import Description from "include/description";
 import ExampleContainer from "include/example-container";
+import PropsContainer from "include/props-container";
 import Snippet from "include/code-snippet";
 import TestResult from "include/test-result";
 {{#if exampleClassName}}import {{ exampleClassName }} from "./docs/{{ exampleFileName }}";{{/if}}
+{{#if propsClassName}}import {{ propsClassName }} from "./docs/{{ propsFileName }}";{{/if}}
 
 export default class {{ componentClassName }} extends ReactComponent {
     render() {
@@ -23,6 +25,11 @@ export default class {{ componentClassName }} extends ReactComponent {
                     <ExampleContainer>
                         {{{ exampleUsage }}}
                     </ExampleContainer>
+                {{/if}}
+                {{#if propsUsage}}
+                    <PropsContainer>
+                        <{{{ propsUsage }}}/>
+                    </PropsContainer>
                 {{/if}}
             </div>
         );

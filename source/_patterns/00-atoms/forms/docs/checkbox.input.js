@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {ReactComponent, Table} from "apparena-patterns-react";
 
-export default class CheckboxInput extends Component {
+export default class CheckboxInput extends ReactComponent {
     render () {
         return (
-            <table className="table table-bordered table-inverse">
+            <Table bordered inverse>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -76,7 +77,7 @@ export default class CheckboxInput extends Component {
                         <td>top, bottom, left, right, top left, top center, top right, right top, right middle, right bottom, bottom right, bottom center, bottom top, left top, left middle, left bottom</td>
                     </tr>
                 </tbody>
-            </table>
+            </Table>
         );
     }
 };

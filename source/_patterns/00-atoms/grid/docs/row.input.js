@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {ReactComponent, Table} from "apparena-patterns-react";
 
-export default class RowInput extends Component {
+export default class RowInput extends ReactComponent {
     render () {
         return (
-            <table className="table table-bordered table-inverse">
+            <Table bordered inverse>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -41,7 +42,7 @@ export default class RowInput extends Component {
                         <td>start, center, end, around, between</td>
                     </tr>
                 </tbody>
-            </table>
+            </Table>
         );
     }
 };

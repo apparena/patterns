@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {ReactComponent, Table} from "apparena-patterns-react";
 
-export default class SpinnerInput extends Component {
+export default class SpinnerInput extends ReactComponent {
     render () {
         return (
-            <table className="table table-bordered table-inverse">
+            <Table bordered inverse>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -36,7 +37,7 @@ export default class SpinnerInput extends Component {
                         <td>default, primary, secondary, success, info, warning, danger, link, outline-primary, outline-secondary, outline-success, outline-info, outline-warning, outline-danger, inverted</td>
                     </tr>
                 </tbody>
-            </table>
+            </Table>
         );
     }
 };

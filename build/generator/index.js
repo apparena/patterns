@@ -49,6 +49,9 @@ function generateComponentDocumentation(directory) {
     let exampleClassName = "";
     let exampleUsage = "";
     let componentClassName = "";
+    let propsUsage = "";
+    let propsFileName = "";
+    let propsClassName = "";
 
     const files = glob.sync(`${directory}/**/?(docs)/**`);
     files.forEach((file) => {
@@ -78,6 +81,22 @@ function generateComponentDocumentation(directory) {
             exampleUsage = exampleContent.match(/\/\*;;usage([\w\W\s.<>="{()}]+);;\*\//)[1];
 
             fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${exampleFileName}`, exampleContent, "utf8");
+        } else if (file.endsWith(".input.js")) {
+            const propsContent = fs.readFileSync(file, "utf8");
+            propsFileName = file.split("/").slice(-1)[0];
+            propsClassName = propsContent.match(/export default class ([a-zA-z0-9]+)\s?extend/)[1];
+            /**
+             * Within an props, you have to specify how it should be inserted into the documentation.
+             * The format is:
+             * /*;;usage
+             * <YourReactComponent props={asUsual()}>
+             *     <Children are="allowed" />
+             * </YourReactComponent
+             * ;;*/
+
+            propsUsage = propsClassName;
+
+            fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${propsFileName}`, propsContent, "utf8");
         } else if (file.endsWith(".js")) {
             const componentContent = fs.readFileSync(file, "utf8");
             const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
@@ -95,6 +114,9 @@ function generateComponentDocumentation(directory) {
         exampleFileName,
         exampleClassName,
         exampleUsage,
+        propsFileName,
+        propsClassName,
+        propsUsage,
         componentClassName,
     };
     const renderedTemplate = componentTemplate(data);
