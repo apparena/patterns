@@ -3,7 +3,7 @@ import React from "react";
 import {shallow, mount} from "enzyme";
 import {expect} from "chai";
 import {spy} from "sinon";
-import Button from "./button";
+import Button from "../button";
 
 describe('<Button />', () => {
 
