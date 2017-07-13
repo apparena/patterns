@@ -71,11 +71,11 @@ export default class Home extends ReactComponent {
             if (this.state.searchQuery !== "") {
                 const categories = cloneDeep(this.backupCategories);
                 Object.keys(categories).forEach((cat) => {
-                    categories[cat].components = categories[cat].components.filter((comp) => {
+                    categories[cat].componentList = categories[cat].componentList.filter((comp) => {
                         return comp.toLowerCase().includes(this.state.searchQuery.toLowerCase());
                     });
 
-                    categories[cat].visible = categories[cat].components.length !== 0;
+                    categories[cat].visible = categories[cat].componentList.length !== 0;
                 });
 
                 this.setState({
