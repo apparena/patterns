@@ -8,7 +8,7 @@ echo "RootPath: ${RootPath}"
 
 echo "$(date): Start Yarn install & build"
 yarn
-yarn build:docs
+yarn build:docs:all
 echo "$(date): End Yarn install & build"
 
 # Compress source code to generate the artifacts
