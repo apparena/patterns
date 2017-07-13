@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent, Table} from "apparena-patterns-react";
+import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 
 export default class SpinnerInput extends ReactComponent {
     render () {

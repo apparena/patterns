@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent, Table} from "apparena-patterns-react";
+import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 
 export default class AjaxLoaderInput extends ReactComponent {
     render () {
@@ -18,9 +18,9 @@ export default class AjaxLoaderInput extends ReactComponent {
                     <tr>
                         <td>
                             resource
-                            <span className="badge badge-warning">
+                           <Tag type="warning" pill>
                                 Required
-                            </span>    
+                            </Tag>    
                         </td>
                         <td>string</td>
                         <td>Give the ajax loader some resources</td>
@@ -30,9 +30,9 @@ export default class AjaxLoaderInput extends ReactComponent {
                     <tr>
                         <td>
                             onLoadingDone
-                            <span className="badge badge-warning">
+                           <Tag type="warning" pill>
                                 Required
-                            </span>    
+                            </Tag>    
                         </td>
                         <td>function</td>
                         <td>Add a function to the ajax loader</td>

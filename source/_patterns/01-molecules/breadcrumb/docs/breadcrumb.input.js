@@ -1,7 +1,7 @@
 import React from 'react';
-import {ReactComponent, Table, Tag} from "apparena-patterns-react";
+import {ReactComponent, Table, Tag} from 'apparena-patterns-react';
 
-export default class TextFieldInput extends ReactComponent {
+export default class BreadcrumbInput extends ReactComponent {
     render () {
         return (
             <Table bordered inverse>
@@ -17,35 +17,33 @@ export default class TextFieldInput extends ReactComponent {
                 <tbody>
                     <tr>
                         <td>
-                            id
+                            crumbNames
                            <Tag type="warning" pill>
                                 Required
-                            </Tag>
+                            </Tag>    
                         </td>
-                        <td>string</td>
-                        <td>Give the text area an ID</td>
-                        <td><em>undefinded</em></td>
-                        <td />
+                        <td>array</td>
+                        <td>Give the component an array with names so it can create the breadcrumbs</td>
+                        <td><em>undefined</em></td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td>onChange</td>
-                        <td>function</td>
-                        <td>Add a function to the text area</td>
-                        <td><em>undefinded</em></td>
+                        <td>
+                            crumbLocations
+                           <Tag type="warning" pill>
+                                Required
+                            </Tag>    
+                        </td>
+                        <td>array</td>
+                        <td>Give the component an array with location so it knows where the breadcrumbs can be found</td>
+                        <td><em>undefined</em></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>classNames</td>
                         <td>string</td>
-                        <td>Give the text area some classnames</td>
+                        <td>Give the breadcrumbs a classname</td>
                         <td><em>undefined</em></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>placeholder</td>
-                        <td>string</td>
-                        <td>Define a placeholder for the text area</td>
-                        <td><em>undefinded</em></td>
                         <td></td>
                     </tr>
                 </tbody>

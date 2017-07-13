@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent, Table} from "apparena-patterns-react";
+import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 
 export default class CheckboxInput extends ReactComponent {
     render () {
@@ -18,9 +18,9 @@ export default class CheckboxInput extends ReactComponent {
                     <tr>
                         <td>
                             onChange
-                            <span className="badge badge-warning">
+                           <Tag type="warning" pill>
                                 Required
-                            </span>
+                            </Tag>
                         </td>
                         <td>function</td>
                         <td>Add a function to the checkbox</td>

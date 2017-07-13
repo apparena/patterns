@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent, Table} from "apparena-patterns-react";
+import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 
 export default class RowInput extends ReactComponent {
     render () {
@@ -18,9 +18,9 @@ export default class RowInput extends ReactComponent {
                     <tr>
                         <td>
                             children
-                            <span className="badge badge-warning">
+                           <Tag type="warning" pill>
                                 Required
-                            </span>
+                            </Tag>
                         </td>
                         <td>node</td>
                         <td>Give the row some childrens</td>

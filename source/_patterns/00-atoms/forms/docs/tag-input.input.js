@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent, Table} from "apparena-patterns-react";
+import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 
 export default class TagInputInput extends ReactComponent {
     render () {
@@ -18,9 +18,9 @@ export default class TagInputInput extends ReactComponent {
                     <tr>
                         <td>
                             onChange
-                            <span className="badge badge-warning">
+                           <Tag type="warning" pill>
                                 Required
-                            </span>
+                            </Tag>
                         </td>
                         <td>function</td>
                         <td>Add a function to the tag input</td>
@@ -30,9 +30,9 @@ export default class TagInputInput extends ReactComponent {
                     <tr>
                         <td>
                             value
-                            <span className="badge badge-warning">
+                           <Tag type="warning" pill>
                                 Required
-                            </span>
+                            </Tag>
                         </td>
                         <td>oneOf</td>
                         <td>Decide wich value the tag input should have</td>
@@ -42,9 +42,9 @@ export default class TagInputInput extends ReactComponent {
                     <tr>
                         <td>
                             options
-                            <span className="badge badge-warning">
+                           <Tag type="warning" pill>
                                 Required
-                            </span>
+                            </Tag>
                         </td>
                         <td>array</td>
                         <td>Add some options to the tag input</td>
