@@ -10,4 +10,3 @@ dist/
 /.webpack-cache/
 /config/.webpack-cache/
 /src/components/
-/src/home.jsx

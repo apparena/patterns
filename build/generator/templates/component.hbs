@@ -1,11 +1,12 @@
 import React, {PropTypes} from "react";
-import Description from "../include/description";
-import ExampleContainer from "../include/example-container";
-import Snippet from "../include/code-snippet";
-import TestResult from "../include/test-result";
-{{#if exampleClassName}}import {{ exampleClassName }} from "./{{ exampleFileName }}";{{/if}}
+import {ReactComponent} from "apparena-patterns-react";
+import Description from "include/description";
+import ExampleContainer from "include/example-container";
+import Snippet from "include/code-snippet";
+import TestResult from "include/test-result";
+{{#if exampleClassName}}import {{ exampleClassName }} from "./docs/{{ exampleFileName }}";{{/if}}
 
-export default class {{ componentClassName }} extends React.Component {
+export default class {{ componentClassName }} extends ReactComponent {
     render() {
         {{{ description }}}
         {{{ codeSnippet }}}

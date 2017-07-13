@@ -4,13 +4,7 @@ import fs from "fs-extra";
 import handlebars from "handlebars";
 
 console.log("Cleaning directories...");
-if (!fs.existsSync("build/generator/frontend/src/components")) {
-    fs.mkdirSync("build/generator/frontend/src/components");
-} else {
-    fs.emptyDirSync("build/generator/frontend/src/components");
-    fs.rmdirSync("build/generator/frontend/src/components");
-    fs.mkdirSync("build/generator/frontend/src/components");
-}
+fs.removeSync("build/generator/frontend/src/components");
 
 /**
  * Formats some content in such a way that it will be stored as a variable named varName according to the conventions
@@ -46,91 +40,85 @@ function getBaseName(fileName) {
  * Generates the documentation for all components supplied to it. This function only needs an array of base names
  * generated from getBaseName() to generate the necessary documentation. It also compiles a handlebars template and
  * writes it to the dist/ directory.
- * @param components
+ * @param directory
  */
-function generateComponentDocumentation(components) {
-    components.forEach((component) => {
-        let descriptionMarkdown = "";
-        let codeSnippet = "";
-        let exampleFileName = "";
-        let exampleClassName = "";
-        let exampleUsage = "";
-        let componentClassName = "";
+function generateComponentDocumentation(directory) {
+    let descriptionMarkdown = "";
+    let codeSnippet = "";
+    let exampleFileName = "";
+    let exampleClassName = "";
+    let exampleUsage = "";
+    let componentClassName = "";
 
-        const files = glob.sync(`${component}.*`);
-        files.forEach((file) => {
-            if (file.endsWith(".md")) {
-                const descriptionFileContent = fs.readFileSync(file, "utf8");
-                descriptionMarkdown = preformatContent(descriptionFileContent, "description");
-            } else if (file.endsWith(".spec.js")) {
-                // TODO: Figure out testing
+    const files = glob.sync(`${directory}/**/?(docs)/**`);
+    files.forEach((file) => {
+        console.log(file);
+        if (file.endsWith(".md")) {
+            const descriptionFileContent = fs.readFileSync(file, "utf8");
+            descriptionMarkdown = preformatContent(descriptionFileContent, "description");
+        } else if (file.endsWith(".spec.js")) {
+            // TODO: Figure out testing
 
-            } else if (file.endsWith(".snippet.js")) {
-                const snippet = fs.readFileSync(file, "utf8");
-                codeSnippet = preformatContent(snippet, "codeSnippet");
-            } else if (file.endsWith(".example.js")) {
-                const exampleContent = fs.readFileSync(file, "utf8");
-                exampleFileName = file.split("/").slice(-1)[0];
-                exampleClassName = exampleContent.match(/export default function ([a-zA-z0-9]+)\s?\(/)[1];
-                /**
-                 * Within an example, you have to specify how it should be inserted into the documentation.
-                 * The format is:
-                 * /*;;usage
-                 * <YourReactComponent props={asUsual()}>
-                 *     <Children are="allowed" />
-                 * </YourReactComponent
-                 * ;;*/
+        } else if (file.endsWith(".snippet.js")) {
+            const snippet = fs.readFileSync(file, "utf8");
+            codeSnippet = preformatContent(snippet, "codeSnippet");
+        } else if (file.endsWith(".example.js")) {
+            const exampleContent = fs.readFileSync(file, "utf8");
+            exampleFileName = file.split("/").slice(-1)[0];
+            exampleClassName = exampleContent.match(/export default function ([a-zA-z0-9]+)\s?\(/)[1];
+            /**
+             * Within an example, you have to specify how it should be inserted into the documentation.
+             * The format is:
+             * /*;;usage
+             * <YourReactComponent props={asUsual()}>
+             *     <Children are="allowed" />
+             * </YourReactComponent
+             * ;;*/
 
-                exampleUsage = exampleContent.match(/\/\*;;usage([\w\W\s.<>="{()}]+);;\*\//)[1];
+            exampleUsage = exampleContent.match(/\/\*;;usage([\w\W\s.<>="{()}]+);;\*\//)[1];
 
-                fs.writeFileSync(`build/generator/frontend/src/components/${exampleFileName}`, exampleContent, "utf8");
-            } else if (file.endsWith(".js")) {
-                const componentContent = fs.readFileSync(file, "utf8");
-                const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
-                if (componentMatch)
-                    componentClassName = componentMatch[2];
-            }
-        });
+            fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${exampleFileName}`, exampleContent, "utf8");
+        } else if (file.endsWith(".js")) {
+            const componentContent = fs.readFileSync(file, "utf8");
+            const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
+            if (componentMatch)
+                componentClassName = componentMatch[2];
+        }
+    });
 
 
-        const componentTemplateSource = fs.readFileSync("build/generator/templates/component.hbs", "utf8");
-        const componentTemplate = handlebars.compile(componentTemplateSource);
-        const data = {
-            description: descriptionMarkdown,
-            codeSnippet,
-            exampleFileName,
-            exampleClassName,
-            exampleUsage,
-            componentClassName,
-        };
-        const renderedTemplate = componentTemplate(data);
-        fs.writeFileSync(`build/generator/frontend/src/components/${component.split("/").slice(-1)[0]}.jsx`, renderedTemplate, "utf8");
-    })
+    const componentTemplateSource = fs.readFileSync("build/generator/templates/component.hbs", "utf8");
+    const componentTemplate = handlebars.compile(componentTemplateSource);
+    const data = {
+        description: descriptionMarkdown,
+        codeSnippet,
+        exampleFileName,
+        exampleClassName,
+        exampleUsage,
+        componentClassName,
+    };
+    const renderedTemplate = componentTemplate(data);
+    fs.outputFileSync(`build/generator/frontend/src/components/${directory}/index.jsx`, renderedTemplate, "utf8");
 }
 
-/**
- * Handlebars helper 'categorize' which will turn a set of data into categories that can be
- * used by React
- */
-handlebars.registerHelper("categorize", (categories, options) => {
-    let output = "";
-    Object.keys(categories).forEach((category) => {
-        const data = {
+function createComponentsList(categories) {
+    const list = Object.keys(categories).map((category) => {
+        return {
             name: category,
             visible: categories[category].visible,
             componentList: categories[category].components,
         };
-
-        output += options.fn(data);
     });
+    const liststring = JSON.stringify(list);
 
-    return output;
-});
+    fs.writeFile("build/generator/frontend/src/components/list.json", liststring);
+}
+
 
 /**
  * Iterate through the component sources
  */
-glob("source/_patterns/*/**/*.js", (err, files) => {
+glob("source/_patterns/*/**/!(__tests|docs)/*.js", (err, files) => {
     const componentDirectories = [];
 
     console.log("Preparing...");
@@ -138,21 +126,21 @@ glob("source/_patterns/*/**/*.js", (err, files) => {
         const fileSplit = file.split("/");
         fileSplit.splice(fileSplit.length - 1);
         const dir = fileSplit.join("/");
-        if (!componentDirectories.includes(dir)) componentDirectories.push(dir);
+        if (!componentDirectories.includes(dir)) {
+            componentDirectories.push(dir);
+        }
     });
 
+    console.log(componentDirectories);
     /**
      * Initialize and generate categories from component sources and prepare them for the
      * handlebars template
      */
     console.log("Initializing categories...");
     const categories = {}, indexFiles = [];
-    glob.sync("source/_patterns/*/")
+    glob.sync("source/_patterns/!(react-utils|corporate-identity)/")
         .map((cf) => {
             return cf.split("/").slice(-2)[0]
-        })
-        .filter((cf) => {
-            return cf !== "react-utils" && cf !== "corporate-identity"
         })
         .forEach((cf) => {
             categories[cf] = {visible: true, components: []}
@@ -181,11 +169,13 @@ glob("source/_patterns/*/**/*.js", (err, files) => {
                     return self.indexOf(value) === index
                 })
                 .forEach((componentFile) => {
-                    if (!componentFiles.includes(componentFile)) componentFiles.push(componentFile)
+                    if (!componentFiles.includes(componentFile)) {
+                        componentFiles.push(componentFile)
+                    }
                 });
         });
 
-        generateComponentDocumentation(componentFiles);
+        generateComponentDocumentation(directory);
 
         /**
          * Fill in all components and assign them their categories so that they will be displayed properly
@@ -209,7 +199,7 @@ glob("source/_patterns/*/**/*.js", (err, files) => {
                         className = fileName.charAt(0).toUpperCase() + fileName.slice(1);
                     }
                     category.components.push(className);
-                    indexFiles.push({name: className, fileName});
+                    indexFiles.push({name: className, fileName, directory});
                 }
             }
         });
@@ -222,14 +212,8 @@ glob("source/_patterns/*/**/*.js", (err, files) => {
     });
 
     console.log("Finishing up...");
-    const homeTemplateSource = fs.readFileSync("build/generator/templates/home.hbs", "utf8");
-    const homeTemplate = handlebars.compile(homeTemplateSource);
-    const homeTemplateData = {
-        categories,
-        categoryNames: Object.keys(categories)
-    };
-    const renderedHomeTemplate = homeTemplate(homeTemplateData);
-    fs.writeFileSync("build/generator/frontend/src/home.jsx", renderedHomeTemplate, "utf8");
+
+    createComponentsList(categories);
 
     const indexTemplateSource = fs.readFileSync("build/generator/templates/components_index.hbs", "utf8");
     const indexTemplate = handlebars.compile(indexTemplateSource);
@@ -237,7 +221,7 @@ glob("source/_patterns/*/**/*.js", (err, files) => {
         components: indexFiles,
     };
     const renderedIndexTemplate = indexTemplate(indexTemplateData);
-    fs.writeFileSync("build/generator/frontend/src/components/index.jsx", renderedIndexTemplate, "utf8");
+    fs.outputFileSync("build/generator/frontend/src/components/index.jsx", renderedIndexTemplate, "utf8");
 
 });
 
