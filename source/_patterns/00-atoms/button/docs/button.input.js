@@ -4,7 +4,7 @@ import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 export default class ButtonInput extends ReactComponent {
     render() {
         return (
-            <Table bordered inverse>
+            <Table bordered>
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -34,14 +34,14 @@ export default class ButtonInput extends ReactComponent {
                 <tr>
                     <td>target</td>
                     <td>oneOf</td>
-                    <td>???</td>
+                    <td>Select a target for the button</td>
                     <td><em>undefined</em></td>
                     <td>blank, top, self</td>
                 </tr>
                 <tr>
                     <td>block</td>
                     <td>boolean</td>
-                    <td>???</td>
+                    <td>Decide if the button should be a block or not</td>
                     <td><em>undefined</em></td>
                     <td />
                 </tr>

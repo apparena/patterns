@@ -1,7 +1,7 @@
 import React from 'react';
 import {ReactComponent, Table, Tag} from 'apparena-patterns-react';
 
-export default class BreadcrumbInput extends ReactComponent {
+export default class ButtonGroupInput extends ReactComponent {
     render () {
         return (
             <Table bordered inverse>

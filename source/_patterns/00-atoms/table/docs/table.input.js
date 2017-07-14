@@ -31,7 +31,7 @@ export default class TableInput extends ReactComponent {
                         <td>classNames</td>
                         <td>string</td>
                         <td>Give the table some classNames</td>
-                        <td></td>
+                        <td><em>undefined</em></td>
                         <td></td>
                     </tr>
                     <tr>

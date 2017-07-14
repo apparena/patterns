@@ -3,7 +3,7 @@ import {Spinner} from "apparena-patterns-react";
 
 export default function SpinnerExample() {
     return (
-        <Spinner type="info" size="lg"/>
+        <Spinner type="default" size="lg"/>
     );
 }
 

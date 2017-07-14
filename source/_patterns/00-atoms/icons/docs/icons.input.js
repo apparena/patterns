@@ -23,7 +23,7 @@ export default class IconInput extends ReactComponent {
                             </Tag>
                         </td>
                         <td>string</td>
-                        <td>Give the table a name </td>
+                        <td>Give the icon a name </td>
                         <td><em>undefinded</em></td>
                         <td></td>
                     </tr>

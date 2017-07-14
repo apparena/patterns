@@ -11,5 +11,5 @@ export default function JumbotronExample(){
 }
 
 /*;;usage
-<Jumbotron Example />
+<JumbotronExample />
 ;;*/

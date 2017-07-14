@@ -18,7 +18,7 @@ export default class ProgressTrackerStepInput extends ReactComponent {
                     <tr>
                         <td>className</td>
                         <td>string</td>
-                        <td>Give the table a className </td>
+                        <td>Give the tracker a className </td>
                         <td><em>undefinded</em></td>
                         <td></td>
                     </tr>
