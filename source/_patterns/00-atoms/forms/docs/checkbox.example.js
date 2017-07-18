@@ -8,7 +8,3 @@ export default function CheckboxExample({text}) {
         </Checkbox>
     );
 }
-
-/*;;usage
-<CkeckboxExample text="Check Me Out!"/>
-;;*/

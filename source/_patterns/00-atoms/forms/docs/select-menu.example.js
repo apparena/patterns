@@ -1,12 +1,8 @@
 import React from "react";
 import {SelectMenu} from "apparena-patterns-react";
 
-export default function SelectMenuExample({text}) {
+export default function SelectMenuExample() {
     return (
-        <SelectMenu onChange={::this.change} options:{["action","sci-fi","western"]} />
+        <SelectMenu onChange={::this.change} defaultValue="action" options={["action","sci-fi","western"]} />
     );
 }
-
-/*;;usage
-<SelectMenuExample text="Check Me Out!"/>
-;;*/

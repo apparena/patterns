@@ -2,7 +2,6 @@ import React from "react";
 import {ProgressTrackerStep} from "apparena-patterns-react";
 
 export default class MyAwesomeClass extends React.ReactComponent {
-    ...
     render() {
         return (
              <div>

@@ -6,7 +6,3 @@ export default function ColExample() {
         <Col xsVerticalAlignment="center"/>
     );
 }
-
-/*;;usage
-<ColExample />
-;;*/

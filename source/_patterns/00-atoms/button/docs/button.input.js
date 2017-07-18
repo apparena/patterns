@@ -99,7 +99,3 @@ export default class ButtonInput extends ReactComponent {
         );
     }
 };
-
-/*;;usage
- <ButtonInput/>
- ;;*/

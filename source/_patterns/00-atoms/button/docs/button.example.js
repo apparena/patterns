@@ -1,14 +1,10 @@
 import React from "react";
 import {Button} from "apparena-patterns-react";
 
-export default function ButtonExample({text}) {
+export default function ButtonExample() {
     return (
         <Button type="primary">
-            {text}
+            Primary
         </Button>
     );
 }
-
-/*;;usage
-<ButtonExample text="Drück mich!" />
-;;*/

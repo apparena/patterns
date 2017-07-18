@@ -1,12 +1,8 @@
 import React from "react";
 import {TextArea} from "apparena-patterns-react";
 
-export default function TextAreaExample({text}) {
+export default function TextAreaExample() {
     return (
-        <TextArea placeholder={text} />
+        <TextArea placeholder="I'm a text area" />
     );
 }
-
-/*;;usage
-<TextAreaExample text="I'm a text area" />
-;;*/

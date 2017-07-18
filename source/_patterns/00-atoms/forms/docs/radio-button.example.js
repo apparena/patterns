@@ -3,10 +3,6 @@ import {RadioButton} from "apparena-patterns-react";
 
 export default function RadioButtonExample({text}) {
     return (
-        <RadioButton onChange={::this.check} text={text} />
+        <RadioButton onChange={::this.check} text="Check Me Out!" />
     );
 }
-
-/*;;usage
-<RadioButtonExample text="Check Me Out!"/>
-;;*/

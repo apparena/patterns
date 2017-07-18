@@ -10,7 +10,3 @@ export default function ProgressTrackerStepExample() {
         </div>
     );
 }
-
-/*;;usage
-<ProgressTrackerStepExample />
-;;*/

@@ -69,31 +69,13 @@ function generateComponentDocumentation(directory) {
             const exampleContent = fs.readFileSync(file, "utf8");
             exampleFileName = file.split("/").slice(-1)[0];
             exampleClassName = exampleContent.match(/export default function ([a-zA-z0-9]+)\s?\(/)[1];
-            /**
-             * Within an example, you have to specify how it should be inserted into the documentation.
-             * The format is:
-             * /*;;usage
-             * <YourReactComponent props={asUsual()}>
-             *     <Children are="allowed" />
-             * </YourReactComponent
-             * ;;*/
-
-            exampleUsage = exampleContent.match(/\/\*;;usage([\w\W\s.<>="{()}]+);;\*\//)[1];
+            exampleUsage = exampleClassName;
 
             fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${exampleFileName}`, exampleContent, "utf8");
         } else if (file.endsWith(".input.js")) {
             const propsContent = fs.readFileSync(file, "utf8");
             propsFileName = file.split("/").slice(-1)[0];
             propsClassName = propsContent.match(/export default class ([a-zA-z0-9]+)\s?extend/)[1];
-            /**
-             * Within an props, you have to specify how it should be inserted into the documentation.
-             * The format is:
-             * /*;;usage
-             * <YourReactComponent props={asUsual()}>
-             *     <Children are="allowed" />
-             * </YourReactComponent
-             * ;;*/
-
             propsUsage = propsClassName;
 
             fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${propsFileName}`, propsContent, "utf8");

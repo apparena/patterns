@@ -6,7 +6,3 @@ export default function IconsExample() {
         <Icon name="customer" type="primary"/>
     );
 }
-
-/*;;usage
-<IconsExample />
-;;*/

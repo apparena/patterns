@@ -8,7 +8,3 @@ export default function RowExample() {
         </Row>
     );
 }
-
-/*;;usage
-<RowExample />
-;;*/

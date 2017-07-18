@@ -1,12 +1,8 @@
 import React from "react";
 import {AjaxLoader} from "apparena-patterns-react";
 
-export default function AjaxLoaderExample({resource}) {
+export default function AjaxLoaderExample() {
     return (
-        <AjaxLoader resource={resource} onLoadingDone={::this.finished} />
+        <AjaxLoader resource="?" onLoadingDone={::this.finished} />
     );
 }
-
-/*;;usage
-<AjaxLoaderExample resource="?" />
-;;*/

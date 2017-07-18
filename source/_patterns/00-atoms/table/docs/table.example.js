@@ -26,7 +26,3 @@ export default function TableExample() {
         </Table>
     );
 }
-
-/*;;usage
-<TableExample />
-;;*/
