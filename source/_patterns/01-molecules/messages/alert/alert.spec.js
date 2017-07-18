@@ -2,7 +2,7 @@
 import React from "react";
 import {shallow} from "enzyme";
 import {expect} from "chai";
-import Alert from "./alert";
+import Alert from "./index";
 
 describe('<Alert />', () => {
     it('alerts with custom text', () => {

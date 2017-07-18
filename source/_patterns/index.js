@@ -15,7 +15,7 @@ import DatePicker from "./00-atoms/datepicker";
 import Dropdown from "./01-molecules/dropdown/dropdown";
 import Form from "./02-organisms/forms/form";
 import FormGroup from "./01-molecules/forms/form-group";
-import Icon from "./00-atoms/icons/icons";
+import Icon from "./00-atoms/icons";
 import Input from "./00-atoms/forms/input";
 import InputGroup from "./01-molecules/input-group/input-group";
 import Intro from "./01-molecules/box/intro";
