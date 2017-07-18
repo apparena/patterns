@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent, Table} from "apparena-patterns-react";
+import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 
 export default class ProgressTrackerStepInput extends ReactComponent {
     render () {
@@ -18,7 +18,7 @@ export default class ProgressTrackerStepInput extends ReactComponent {
                     <tr>
                         <td>className</td>
                         <td>string</td>
-                        <td>Give the table a className </td>
+                        <td>Give the tracker a className </td>
                         <td><em>undefinded</em></td>
                         <td></td>
                     </tr>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent, Table} from "apparena-patterns-react";
+import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 
 export default class TagInput extends ReactComponent {
     render () {
@@ -34,7 +34,7 @@ export default class TagInput extends ReactComponent {
                         <td>boolean</td>
                         <td>Decide if the tag should be a pill or not</td>
                         <td><em>undefined</em></td>
-                        <td>blank, top, self</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </Table>

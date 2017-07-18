@@ -3,7 +3,7 @@ import {Table} from "apparena-patterns-react";
 
 export default function TableExample() {
     return (
-        <Table bordered="true">
+        <Table bordered>
             <thead>
                     <tr>
                         <th>Name</th>

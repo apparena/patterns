@@ -3,7 +3,7 @@ import {Tag} from "apparena-patterns-react";
 
 export default function TagExample() {
     return (
-        <Tag type="primary" pill="true">
+        <Tag type="primary" pill>
             Primary
         </Tag>
     );

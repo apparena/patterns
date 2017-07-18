@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent, Table} from "apparena-patterns-react";
+import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 
 export default class IconInput extends ReactComponent {
     render () {
@@ -18,12 +18,12 @@ export default class IconInput extends ReactComponent {
                     <tr>
                         <td>
                             name
-                            <span className="badge badge-warning">
+                           <Tag type="warning" pill>
                                 Required
-                            </span>
+                            </Tag>
                         </td>
                         <td>string</td>
-                        <td>Give the table a name </td>
+                        <td>Give the icon a name </td>
                         <td><em>undefinded</em></td>
                         <td></td>
                     </tr>
