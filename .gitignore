@@ -84,6 +84,9 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
+#Babel Cache
+.babel-cache
+
 # nyc test coverage
 .nyc_output
 
