@@ -36,6 +36,7 @@ import NotificationContainer from "./react-utils/notificationContainer";
 import Popover from "./01-molecules/popover/popover";
 import Portal from "./react-utils/portal";
 import PriceTable from "./02-organisms/price-table/price-table";
+import PriceTableSingle from "./02-organisms/price-component-single/price-component";
 import ProgressBar from "./01-molecules/progress-bar/progress-bar";
 import ProgressTracker from "./01-molecules/progress-tracker/progress-tracker";
 import ProgressTrackerStep from "./00-atoms/progress-tracker-step/progress-tracker-step";
@@ -91,6 +92,7 @@ export {
     Popover,
     Portal,
     PriceTable,
+    PriceTableSingle,
     ProgressBar,
     ProgressTracker,
     ProgressTrackerStep,
