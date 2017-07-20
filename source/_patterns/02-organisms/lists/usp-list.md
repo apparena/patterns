@@ -1,5 +1,4 @@
----
-title: USP list
+USP list
 ---
 
 List to present usps to a user.

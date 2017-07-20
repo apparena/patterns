@@ -1,4 +1,3 @@
----
-title: Progress Bars Variants
+Progress Bars Variants
 ---
 

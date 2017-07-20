@@ -1,5 +1,4 @@
----
-title: Navs
+Navs
 ---
 
   <p>Navigation available in Bootstrap share general markup and styles, from the base <code class="highlighter-rouge">.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>

@@ -1,5 +1,4 @@
----
-title: Filter Bar
+Filter Bar
 ---
 
 [Insert Description here]

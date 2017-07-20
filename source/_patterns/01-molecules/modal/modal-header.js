@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
 import styles from "./modal.scss";
-import Icon from "../../00-atoms/icons/icons";
+import Icon from "../../00-atoms/icons";
 
 function ModalHeader({className, headerText, onClose, ...props}) {
     props.className = cx(styles["modal-header"], className);

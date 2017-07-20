@@ -1,7 +1,7 @@
 import React from "react";
-import {ProgressTrackerStep} from "apparena-patterns-react";
+import {ProgressTrackerStep, ReactComponent} from "apparena-patterns-react";
 
-export default class MyAwesomeClass extends React.ReactComponent {
+export default class MyAwesomeClass extends ReactComponent {
     render() {
         return (
              <div>

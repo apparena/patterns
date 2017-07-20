@@ -1,5 +1,4 @@
----
-title: Button Groups
+Button Groups
 ---
 
 See the 

@@ -4,7 +4,7 @@ import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 export default class ButtonInput extends ReactComponent {
     render() {
         return (
-            <Table bordered>
+            <Table bordered hover>
                 <thead>
                 <tr>
                     <th>Name</th>

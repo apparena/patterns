@@ -1,5 +1,4 @@
----
-title: Footer
+Footer
 ---
 
 [Insert description here]

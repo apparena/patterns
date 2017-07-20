@@ -1,5 +1,4 @@
----
-title: List Group
+List Group
 ---
 
 [Insert description here]

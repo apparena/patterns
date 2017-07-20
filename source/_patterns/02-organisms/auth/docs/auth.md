@@ -1,5 +1,4 @@
----
-title: Auth
+Auth
 ---
 
 [Insert description here]

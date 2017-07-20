@@ -1,5 +1,4 @@
----
-title: NavItem
+NavItem
 ---
 
 [Inser description here]

@@ -1,5 +1,4 @@
----
-title: Footer Navigation
+Footer Navigation
 ---
 
 [Insert description here]

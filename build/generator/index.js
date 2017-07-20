@@ -62,10 +62,9 @@ function generateComponentDocumentation(directory) {
         } else if (file.endsWith(".spec.js")) {
             // TODO: Figure out testing
 
-        } else if (file.endsWith(".snippet.js")) {
+        } else if (file.endsWith(".example.js")) {
             const snippet = fs.readFileSync(file, "utf8");
             codeSnippet = preformatContent(snippet, "codeSnippet");
-        } else if (file.endsWith(".example.js")) {
             const exampleContent = fs.readFileSync(file, "utf8");
             exampleFileName = file.split("/").slice(-1)[0];
             exampleClassName = exampleContent.match(/export default function ([a-zA-z0-9]+)\s?\(/)[1];
@@ -192,7 +191,7 @@ glob("source/_patterns/*/**/!(__tests|docs)/*.js", (err, files) => {
                 if (fs.existsSync(`${cf}.js`))
                     className = fs.readFileSync(`${cf}.js`, "utf8").match(/export default class (\w+)/);
                 if (Array.isArray(className) && className.length > 1) {
-                    const fileName = cf.split("/").slice(-1)[0];
+                    const fileName = cf.split("/").slice(-2)[0];
                     let className = "";
                     if (fileName.includes("-")) {
                         const splittedFileName = fileName.split("-");
@@ -203,7 +202,7 @@ glob("source/_patterns/*/**/!(__tests|docs)/*.js", (err, files) => {
                         className = fileName.charAt(0).toUpperCase() + fileName.slice(1);
                     }
                     category.components.push(className);
-                    indexFiles.push({name: className, fileName, directory});
+                    indexFiles.push({name: className, directory});
                 }
             }
         });

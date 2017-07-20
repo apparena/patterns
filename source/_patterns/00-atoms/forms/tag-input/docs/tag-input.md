@@ -1,5 +1,4 @@
----
-title: Tag Input
+Tag Input
 ---
 
 [Insert description here]

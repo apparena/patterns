@@ -1,5 +1,4 @@
----
-title: Vertical tabs
+Vertical tabs
 ---
 
 A vertical navigation enables the user to browse through multiple tabs. The tab content will be displayed beside the 

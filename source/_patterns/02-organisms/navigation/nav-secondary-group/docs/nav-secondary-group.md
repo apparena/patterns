@@ -1,5 +1,4 @@
----
-title: NavSecondaryGroup
+NavSecondaryGroup
 ---
 
 [insert description here]

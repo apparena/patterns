@@ -6,7 +6,3 @@ export default function ListGroupExample(){
         <ListGroup listItems={["Apples","Bananas","Strawberries"]} />
     )
 }
-
-/*;;usage
-<ListGroupExample />
-;;*/

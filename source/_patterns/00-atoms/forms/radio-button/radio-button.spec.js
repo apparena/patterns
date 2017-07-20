@@ -3,7 +3,7 @@ import React from "react";
 import {shallow, mount} from "enzyme";
 import {expect} from "chai";
 import {spy} from "sinon";
-import RadioButton from "./radio-button";
+import RadioButton from "./index";
 
 describe('<RadioButton />', () => {
     it('renders with default text', () => {

@@ -1,5 +1,4 @@
----
-title: Input Groups
+Input Groups
 ---
 
 See the 

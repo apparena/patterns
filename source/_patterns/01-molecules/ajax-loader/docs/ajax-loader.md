@@ -1,5 +1,4 @@
----
-title: Ajax-Loader
+Ajax-Loader
 ---
 
 [Insert description Here]

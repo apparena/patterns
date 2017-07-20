@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
+import ReactComponent from "../../../react-utils/component";
 
 var Highcharts = require('highcharts');
 

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ReactComponent from "../../react-utils/component";
 import Button from "../../00-atoms/button/button";
-import Icon from "../../00-atoms/icons/icons";
+import Icon from "../../00-atoms/icons";
 import cx from "classnames";
 import styles from "./intro.scss";
 

@@ -1,8 +1,7 @@
 import React from "react";
-import {ButtonGroup} from "apparena-patterns-react";
+import {ButtonGroup, ReactComponent} from "apparena-patterns-react";
 
-export default class MyAwesomeClass extends React.ReactComponent {
-    ...
+export default class MyAwesomeClass extends ReactComponent {
     render() {
         return (
             <ButtonGroup>

@@ -1,5 +1,4 @@
----
-title: Table
+Table
 ---
 
 See the 

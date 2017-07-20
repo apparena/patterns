@@ -1,5 +1,4 @@
----
-title: Search
+Search
 ---
 
 [Insert description here]

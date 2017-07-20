@@ -1,5 +1,5 @@
 import React from 'react';
-import {Tooltip} from 'apparena-patterns-react';
+import {Tooltip, Button} from 'apparena-patterns-react';
 
 export default function TooltipExample(){
     return(
@@ -8,7 +8,3 @@ export default function TooltipExample(){
         </Tooltip>
         )
 }
-
-/*;;usage
-<TooltipExample />
-;;*/

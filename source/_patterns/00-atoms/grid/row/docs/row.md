@@ -1,5 +1,4 @@
----
-title: Row
+Row
 ---
 
 [Insert description here]

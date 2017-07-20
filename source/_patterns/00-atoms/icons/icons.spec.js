@@ -2,7 +2,7 @@
 import React from "react";
 import {shallow} from "enzyme";
 import {expect} from "chai";
-import Icon from "./icons";
+import Icon from "./index";
 
 describe('<Icon />', () => {
     it('renders an icon', () => {

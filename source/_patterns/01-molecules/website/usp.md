@@ -1,5 +1,4 @@
----
-title: USP item
+USP item
 ---
 
 Molecule to present a usp to a user.

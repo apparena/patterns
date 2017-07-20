@@ -1,5 +1,4 @@
----
-title: Radio Button
+Radio Button
 ---
 
 [Insert description here]

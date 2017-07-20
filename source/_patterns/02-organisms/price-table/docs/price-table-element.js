@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
+import ReactComponent from "../../../react-utils/component";
 import cx from "classnames";
-import styles from "./price-table.scss";
-import Tag from "../../00-atoms/tag/tag";
-import Col from "../../00-atoms/grid/col";
-import Row from "../../00-atoms/grid/row";
-import Button from "../../00-atoms/button/button";
+import styles from "../price-table.scss";
+import Tag from "../../../00-atoms/tag/tag";
+import Col from "../../../00-atoms/grid/col/index";
+import Row from "../../../00-atoms/grid/row/index";
+import Button from "../../../00-atoms/button/button";
 
 export default class PriceTableElement extends ReactComponent {
     static propTypes = {

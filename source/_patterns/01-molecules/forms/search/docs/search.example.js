@@ -1,12 +1,8 @@
 import React from 'react';
-import {Search} from 'apparena-patterns-react';
+import {SearchBox} from 'apparena-patterns-react';
 
 export default function SearchExample(){
     return(
-        <search placeholder="Test Search" />
+        <Search placeholder="Test Search" />
     )
 }
-
-/*;;usage
-<DropdownExample />
-;;*/

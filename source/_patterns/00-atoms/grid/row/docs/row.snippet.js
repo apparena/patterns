@@ -1,7 +1,7 @@
 import React from "react";
-import {Row, Col} from "apparena-patterns-react";
+import {Row, Col, ReactComponent} from "apparena-patterns-react";
 
-export default class MyAwesomeClass extends React.ReactComponent {
+export default class MyAwesomeClass extends ReactComponent {
     render() {
         return (
             <Row>

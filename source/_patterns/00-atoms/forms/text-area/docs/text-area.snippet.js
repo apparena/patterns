@@ -1,7 +1,7 @@
 import React from "react";
-import {TextArea} from "apparena-patterns-react";
+import {TextArea, ReactComponent} from "apparena-patterns-react";
 
-export default class MyAwesomeClass extends React.ReactComponent {
+export default class MyAwesomeClass extends ReactComponent {
     render() {
         return (
             <TextArea placeholcer="I'm the placeholder" />

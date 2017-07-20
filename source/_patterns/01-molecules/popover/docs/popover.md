@@ -1,5 +1,4 @@
----
-title: Popover
+Popover
 ---
 
 [Insert description here]

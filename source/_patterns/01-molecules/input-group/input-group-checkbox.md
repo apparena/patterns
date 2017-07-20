@@ -1,5 +1,4 @@
----
-title: Input Groups Checkbox
+Input Groups Checkbox
 ---
 
 <h2 id="input-groups-checkboxes-radios">Checkboxes addon</h2>

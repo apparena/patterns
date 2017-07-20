@@ -1,5 +1,4 @@
----
-title: Chart
+Chart
 ---
 
 [Insert description here]

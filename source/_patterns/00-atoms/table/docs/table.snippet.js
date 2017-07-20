@@ -1,7 +1,7 @@
 import React from "react";
-import {Button} from "apparena-patterns-react";
+import {Table, ReactComponent} from "apparena-patterns-react";
 
-export default class MyAwesomeClass extends React.ReactComponent {
+export default class MyAwesomeClass extends ReactComponent {
     render() {
         return (
             <Table bordered>

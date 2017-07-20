@@ -4,7 +4,7 @@ import ReactComponent from "../../react-utils/component";
 import cx from "classnames";
 import styles from "./button.scss";
 import Spinner from "../spinner/spinner";
-import Icon from "../icons/icons";
+import Icon from "../icons";
 
 const BUTTON_SIZES = ["lg", "sm", "xs"];
 

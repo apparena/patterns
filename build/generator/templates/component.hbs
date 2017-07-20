@@ -22,14 +22,14 @@ export default class {{ componentClassName }} extends ReactComponent {
                 <Snippet code={codeSnippet} />
                 {{/if}}
                 {{#if exampleUsage}}
-                    <ExampleContainer>
-                        <{{{ exampleUsage }}}/>
-                    </ExampleContainer>
+                <ExampleContainer>
+                    <{{{ exampleUsage }}}/>
+                </ExampleContainer>
                 {{/if}}
                 {{#if propsUsage}}
-                    <PropsContainer>
-                        <{{{ propsUsage }}}/>
-                    </PropsContainer>
+                <PropsContainer>
+                    <{{{ propsUsage }}}/>
+                </PropsContainer>
                 {{/if}}
             </div>
         );

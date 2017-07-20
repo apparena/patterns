@@ -2,7 +2,6 @@ import React from 'react';
 import {Dropdown} from 'apparena-patterns-react';
 
 export default class MyAwesomeClass extends React.Component{
-    ...
     render(){
         return(
             <Dropdown buttonSize="lg" arrow="true">

@@ -1,3 +1,2 @@
----
-title: Input Groups Variants
+Input Groups Variants
 ---

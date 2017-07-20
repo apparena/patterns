@@ -1,5 +1,4 @@
----
-title: Nav
+Nav
 ---
 
 [Insert description here]

@@ -8,7 +8,3 @@ export default function NavSecondaryExample(){
         </NavSecondary>
     )
 }
-
-/*;;usage
-<NavSecondaryExample />
-;;*/

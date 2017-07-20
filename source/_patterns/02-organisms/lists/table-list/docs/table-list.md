@@ -1,4 +1,3 @@
----
-title: TableList
+TableList
 ---
 [Insert description here]

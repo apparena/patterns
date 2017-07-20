@@ -6,7 +6,3 @@ export default function NavbarExample(){
         <Navbar children="A String" colorScheme="inverse" />
     )
 }
-
-/*;;usage
-<NavbarExample />
-;;*/

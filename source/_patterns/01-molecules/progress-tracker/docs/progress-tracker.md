@@ -1,5 +1,4 @@
----
-title: Progress Tracker
+Progress Tracker
 ---
 
 ### What problem does this solve?

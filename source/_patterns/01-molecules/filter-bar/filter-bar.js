@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {ReactComponent} from "apparena-patterns-react";
 import Dropdown from "../../../01-molecules/dropdown/dropdown";
 import ButtonGroup from "../../../01-molecules/button-group/button-group";
-import Icon from "../../../00-atoms/icons/icons";
+import Icon from "../../../00-atoms/icons";
 import Input from "../../../00-atoms/forms/input";
 import Button from "../../../00-atoms/button/button";
 import CheckBox from "../../../00-atoms/forms/checkbox";

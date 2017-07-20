@@ -1,3 +1,2 @@
----
-title: Input Groups Dropdown
+Input Groups Dropdown
 ---

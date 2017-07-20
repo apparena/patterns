@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
+import ReactComponent from "../../../react-utils/component";
 import cx from "classnames";
-import styles from "./navs.scss";
+import styles from "../navs.scss";
 
 export default class Nav extends ReactComponent {
     static propTypes = {

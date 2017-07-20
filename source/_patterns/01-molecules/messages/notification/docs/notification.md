@@ -1,5 +1,4 @@
----
-title: Notification
+Notification
 ---
 
 [Insert description here]

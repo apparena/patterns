@@ -1,5 +1,4 @@
----
-title: Brand Colors
+Brand Colors
 ---
 
 This color palette contains App-Arena primary colors, which dominate all user interfaces.

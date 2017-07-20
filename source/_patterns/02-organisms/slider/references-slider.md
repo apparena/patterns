@@ -1,5 +1,4 @@
----
-title: References Slider
+References Slider
 ---
 
 Slider component to show references on a landingpage

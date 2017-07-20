@@ -1,5 +1,4 @@
----
-title: Input Groups Button
+Input Groups Button
 ---
 
   <h2 id="input-groups-buttons">Button addons</h2>

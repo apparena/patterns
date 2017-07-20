@@ -16,7 +16,3 @@ export default function NavExample(){
         </Nav>
     )
 }
-
-/*;;usage
-<NavExample />
-;;*/

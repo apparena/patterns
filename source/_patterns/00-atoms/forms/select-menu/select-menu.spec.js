@@ -3,7 +3,7 @@ import React from "react";
 import {shallow, mount} from "enzyme";
 import {expect} from "chai";
 import {spy} from "sinon";
-import SelectMenu from "./select-menu";
+import SelectMenu from "./index";
 
 describe('<SelectMenu />', () => {
     it('renders elements correctly', () => {

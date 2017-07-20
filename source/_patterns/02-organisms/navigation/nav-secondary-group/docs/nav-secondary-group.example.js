@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavSecondaryGroupExample, Button} from 'apparena-patterns-react';
+import {NavSecondaryGroup, Button} from 'apparena-patterns-react';
 
 export default function NavSecondaryGroupExample(){
     return(
@@ -8,7 +8,3 @@ export default function NavSecondaryGroupExample(){
         </NavSecondaryGroup>
     )
 }
-
-/*;;usage
-<NavSecondaryGroupExample />
-;;*/

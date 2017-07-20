@@ -1,3 +1,2 @@
----
-title: Ordered List
+Ordered List
 ---

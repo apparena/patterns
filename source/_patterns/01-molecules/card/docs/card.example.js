@@ -4,12 +4,12 @@ import {Card} from 'apparena-patterns-react';
 export default function CardExample(){
     return(
         <Card>
-            <h4>This is the title of the card</h4>
-            <p>This is the body of the card</p>
+            <div type="card-header">
+                <h4>This is the title of the card</h4>
+            </div>
+            <div type="card-body">
+                <p>This is the body of the card</p>
+            </div>
         </Card>
     )
 }
-
-/*;;usage
-<CardExample />
-;;*/

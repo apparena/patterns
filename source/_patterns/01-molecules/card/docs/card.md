@@ -1,5 +1,4 @@
----
-title: Cards
+Cards
 ---
 
 See the 

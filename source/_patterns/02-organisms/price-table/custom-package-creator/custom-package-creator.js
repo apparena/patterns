@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
+import ReactComponent from "../../../react-utils/component";
 import cx from "classnames";
 import styles from "./custom-package-creator.scss";
-import priceTableStyles from "./price-table.scss";
-import Col from "../../00-atoms/grid/col";
-import Row from "../../00-atoms/grid/row";
-import SelectMenu from "../../00-atoms/forms/select-menu";
-import Icon from "../../00-atoms/icons/icons";
-import Button from "../../00-atoms/button/button";
+import priceTableStyles from "../price-table.scss";
+import Col from "../../../00-atoms/grid/col/index";
+import Row from "../../../00-atoms/grid/row/index";
+import SelectMenu from "../../../00-atoms/forms/select-menu/index";
+import Icon from "../../../00-atoms/icons";
+import Button from "../../../00-atoms/button/button";
 import AnimatedNumber from "react-animated-number";
-import Slider from "../../00-atoms/slider/slider";
+import Slider from "../../../00-atoms/slider/slider";
 
 export default class CustomPackageCreator extends ReactComponent {
     static propTypes = {

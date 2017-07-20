@@ -1,5 +1,4 @@
----
-title: Media
+Media
 ---
 
 [Insert description here]

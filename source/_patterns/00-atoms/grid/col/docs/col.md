@@ -1,5 +1,4 @@
----
-title: Col
+Col
 ---
 
 [Insert description here]

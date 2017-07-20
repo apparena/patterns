@@ -3,7 +3,7 @@ import React from "react";
 import {mount} from "enzyme";
 import {expect} from "chai";
 import {spy} from "sinon";
-import TextArea from "./text-area";
+import TextArea from "./index";
 
 describe('<TextArea />', () => {
     it('listens to change', () => {

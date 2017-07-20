@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
-import ReactComponent from "../../react-utils/component";
+import ReactComponent from "../../../react-utils/component";
 import Select from "react-select";
 import styles from "./select-menu.scss";
 

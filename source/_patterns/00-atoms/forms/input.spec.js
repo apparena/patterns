@@ -7,8 +7,9 @@ import Input from "./input";
 
 describe('<Input />', () => {
     it('is focused by default', () => {
+        const onChange = spy();
         const wrapper = mount(
-            <Input />
+            <Input onChange={onChange} />
         );
         expect(wrapper.find('input').node).to.equal(document.activeElement);
     });
@@ -16,7 +17,7 @@ describe('<Input />', () => {
     it('accepts custom functions', () => {
         const onChange = spy();
         const wrapper = mount(
-            <Input onFilterInput={onChange} />
+            <Input onChange={onChange} />
         );
         wrapper.find('input').simulate('change', {target: {value: 'My old value'}})
             .simulate('change', {target: {value: 'My new value'}});

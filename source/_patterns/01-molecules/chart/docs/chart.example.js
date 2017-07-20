@@ -1,12 +1,8 @@
 import React from 'react';
 import {Chart} from 'apparena-patterns-react';
 
-export default function ChartExample({config}){
+export default function ChartExample(){
     return(
-        <Chart type="chart" config={config}/>
+        <Chart type="chart" config="?"/>
     )
 }
-
-/*;;usage
-<ChartExample config="?" />
-;;*/

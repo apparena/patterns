@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
+import ReactComponent from "../../../react-utils/component";
 import cx from "classnames";
-import styles from "./nav-sidebar.scss";
+import styles from "../nav-sidebar.scss";
 
 export default class NavSecondaryGroup extends ReactComponent {
     static propTypes = {

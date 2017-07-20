@@ -1,5 +1,4 @@
----
-title: Spinner
+Spinner
 ---
 
 ### What problem does this solve?

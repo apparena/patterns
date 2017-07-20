@@ -1,7 +1,7 @@
 import React from "react";
-import {Button} from "apparena-patterns-react";
+import {Tag, ReactComponent} from "apparena-patterns-react";
 
-export default class MyAwesomeClass extends React.ReactComponent {
+export default class MyAwesomeClass extends ReactComponent {
     render() {
         return (
             <Tag type="primary" pill="true">

@@ -4,7 +4,7 @@ import {ReactComponent, Table, Tag} from "apparena-patterns-react";
 export default class SpinnerInput extends ReactComponent {
     render () {
         return (
-            <Table bordered inverse>
+            <Table bordered hover>
                 <thead>
                     <tr>
                         <th>Name</th>

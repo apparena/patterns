@@ -1,5 +1,4 @@
----
-title: Select Menu
+Select Menu
 ---
 
 [Insert description here]

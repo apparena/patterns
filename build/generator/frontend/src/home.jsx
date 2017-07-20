@@ -141,7 +141,7 @@ export default class Home extends ReactComponent {
                     </Col>
                     <Container className={styles.container}>
                         <Row>
-                            <Col xs="10">
+                            <Col xs="12">
                                 {this.state.currentComponent !== undefined ? <this.state.currentComponent /> : (
                                     <div>
                                         <h3>Willkommen zur Dokumentationsplattform</h3>

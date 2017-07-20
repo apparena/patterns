@@ -1,8 +1,7 @@
 import React from "react";
-import {Breadcrumb} from "apparena-patterns-react";
+import {Breadcrumb, ReactComponent} from "apparena-patterns-react";
 
-export default class MyAwesomeClass extends React.ReactComponent {
-    ...
+export default class MyAwesomeClass extends ReactComponent {
     render() {
         return (
             <Breadcrumb

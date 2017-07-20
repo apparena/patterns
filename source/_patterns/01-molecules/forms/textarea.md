@@ -1,5 +1,4 @@
----
-title: Text Area
+Text Area
 ---
 
 [Insert description here]

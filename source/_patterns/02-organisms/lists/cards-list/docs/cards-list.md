@@ -1,5 +1,4 @@
----
-title: Card List
+Card List
 ---
 
 The card list is used to display mixed content items. An example of a cards list is a list of all apps of a user,

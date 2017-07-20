@@ -1,7 +1,7 @@
 import React from "react";
-import {Checkbox} from "apparena-patterns-react";
+import {Checkbox, ReactComponent} from "apparena-patterns-react";
 
-export default class MyAwesomeClass extends React.ReactComponent {
+export default class MyAwesomeClass extends ReactComponent {
     render() {
         return (
             <Checkbox onChange={::this.check}>

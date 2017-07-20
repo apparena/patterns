@@ -1,5 +1,4 @@
----
-title: Modal
+Modal
 ---
 
 See the 

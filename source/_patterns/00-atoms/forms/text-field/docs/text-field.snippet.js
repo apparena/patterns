@@ -1,7 +1,7 @@
 import React from "react";
-import {TextField} from "apparena-patterns-react";
+import {TextField, ReactComponent} from "apparena-patterns-react";
 
-export default class MyAwesomeClass extends React.ReactComponent {
+export default class MyAwesomeClass extends ReactComponent {
     render() {
         return (
             <TextField id="username" />

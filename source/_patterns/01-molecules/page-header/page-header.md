@@ -1,5 +1,4 @@
----
-title: Page Header
+Page Header
 ---
 
 The page header gives a title and context to the content within a page. It may contain additional navigation, metadata 

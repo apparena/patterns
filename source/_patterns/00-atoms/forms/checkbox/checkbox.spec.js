@@ -3,7 +3,7 @@ import React from "react";
 import {shallow, mount} from "enzyme";
 import {expect} from "chai";
 import {spy} from "sinon";
-import CheckBox from "./checkbox";
+import CheckBox from "./index";
 
 describe('<CheckBox />', () => {
     it('renders with default text', () => {

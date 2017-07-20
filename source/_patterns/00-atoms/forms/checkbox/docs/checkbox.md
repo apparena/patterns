@@ -1,5 +1,4 @@
----
-title: Checkbox
+Checkbox
 ---
 
 [Insert description here]

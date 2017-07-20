@@ -1,5 +1,4 @@
----
-title: Responsive Embed
+Responsive Embed
 ---
 
 Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device.

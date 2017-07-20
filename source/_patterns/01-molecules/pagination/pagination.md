@@ -1,5 +1,4 @@
----
-title: Pagination
+Pagination
 ---
 
   <p class="lead">Provide pagination links for your site or app with the multi-page pagination component, or the simpler <a href="#pagination-pager">pager alternative</a>.</p>

@@ -1,5 +1,4 @@
----
-title: Banner messages
+Banner messages
 ---
 
 Banners messages appear at the very top of the screen, and are reserved for system-level messaging. 

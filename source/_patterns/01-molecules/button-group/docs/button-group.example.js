@@ -1,5 +1,5 @@
 import React from "react";
-import {ButtonGroup} from "apparena-patterns-react";
+import {ButtonGroup, Button} from "apparena-patterns-react";
 
 export default function ButtonGroupExample() {
     return (
@@ -10,7 +10,3 @@ export default function ButtonGroupExample() {
         </ButtonGroup>
     );
 }
-
-/*;;usage
-<ButtonGroupExample />
-;;*/

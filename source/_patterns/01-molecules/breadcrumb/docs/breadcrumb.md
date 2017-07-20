@@ -1,5 +1,4 @@
----
-title: Breadcrumbs
+Breadcrumbs
 ---
 
 Indicate the current page's location within a navigational hierarchy.

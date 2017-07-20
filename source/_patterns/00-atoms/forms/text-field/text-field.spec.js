@@ -3,7 +3,7 @@ import React from "react";
 import {mount} from "enzyme";
 import {expect} from "chai";
 import {spy} from "sinon";
-import TextField from "./text-field";
+import TextField from "./index";
 
 describe('<TextField />', () => {
     it('listens to change', () => {

@@ -1,4 +1,3 @@
----
-title: NavSecondary
+NavSecondary
 ---
 [Insert description here]
