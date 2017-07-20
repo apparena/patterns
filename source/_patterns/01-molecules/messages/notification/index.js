@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ReactComponent from "../../../react-utils/component";
 import cx from "classnames";
-import styles from "./notification.scss";
+import styles from "./index.scss";
 import Animate from "../../../react-utils/animate";
 import Icon from "../../../00-atoms/icons";
 

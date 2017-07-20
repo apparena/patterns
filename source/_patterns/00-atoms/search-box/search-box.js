@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 import Input from "../forms/input";
 import InputGroup from "../../01-molecules/input-group/input-group";
-import Icon from "../icons/icons";
+import Icon from "../icons";
 import styles from "./search-box.scss";
 import i18n from "i18n-js";
 

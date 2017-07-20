@@ -28,6 +28,7 @@ export default class SelectMenu extends ReactComponent {
     };
 
     static defaultProps = {
+        createable: false,
         multi: false,
         clearable: false,
         autofocus: false,
@@ -38,14 +39,38 @@ export default class SelectMenu extends ReactComponent {
         placeholder: "Auswählen",
         searchingText: "Suchen...",
         noResultsText: "Keine Ergebnisse",
+        name: "form-field-name",
         backspaceToRemoveMessage: ""
     };
 
     render() {
+        if (this.props.createable) {
+            return (
+                <div className={cx("input-group", styles.select)}>
+                    <Select.Creatable
+                        name={this.props.name}
+                        id={this.props.id}
+                        value={this.props.defaultValue}
+                        options={this.props.options}
+                        onChange={this.props.onChange}
+                        multi={this.props.multi}
+                        clearable={this.props.clearable}
+                        autoBlur={this.props.autoBlur}
+                        clearAllText={this.props.clearAllText}
+                        clearValueText={this.props.clearValueText}
+                        placeholder={this.props.placeholder}
+                        searchingText={this.props.searchingText}
+                        backspaceToRemoveMessage={this.props.backspaceToRemoveMessage}
+                        noResultsText={this.props.noResultsText}
+                        disabled={this.props.disabled}
+                    />
+                </div>
+            )
+        }
         return (
             <div className={cx("input-group", styles.select)}>
                 <Select
-                    name="form-field-name"
+                    name={this.props.name}
                     id={this.props.id}
                     value={this.props.defaultValue}
                     options={this.props.options}

@@ -18,7 +18,7 @@
     "build": "npm run build:babel && npm run build:copy-files && npm run build:umd",
     "build:babel": "babel ./source/_patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./build/apparena-patterns-react/_patterns --copy-files",
     "build:copy-files": "babel-node ./build/scripts/copy-files.js",
-    "build:light": "npm run build:babel && npm run build:copy-files",
+    "build:light": "npm run clean:build:all && npm run build:babel && npm run build:copy-files",
     "build:umd": "webpack -p --config build/webpack/webpack.config.prod.js",
     "build:docs": "babel-node $NODE_DEBUG_OPTION build/generator/index.js",
     "build:docs:all": "npm run build:docs && webpack --progress --config build/generator/frontend/build/webpack/webpack.config.js",
