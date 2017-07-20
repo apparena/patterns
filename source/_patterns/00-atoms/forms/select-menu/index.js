@@ -28,7 +28,7 @@ export default class SelectMenu extends ReactComponent {
     };
 
     static defaultProps = {
-        createable: false,
+        creatable: false,
         multi: false,
         clearable: false,
         autofocus: false,
@@ -44,7 +44,7 @@ export default class SelectMenu extends ReactComponent {
     };
 
     render() {
-        if (this.props.createable) {
+        if (this.props.creatable) {
             return (
                 <div className={cx("input-group", styles.select)}>
                     <Select.Creatable

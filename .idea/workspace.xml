@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/00-molecules/void.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/00-organisms/void.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/notification.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/container/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/container/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/search-box/search-box.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/search-box/search-box.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -45,7 +38,18 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -167,11 +171,11 @@
         <option value="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/docs/price-component.example.js" />
         <option value="$PROJECT_DIR$/source/_patterns/index.js" />
         <option value="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/index.jsx" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/search-box/search-box.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/container/index.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" />
       </list>
     </option>
   </component>
@@ -343,7 +347,7 @@
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="grid/container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/apparena-patterns-react/_patterns/00-atoms/grid/container.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;_patterns/01-molecules/messages/notification/index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification/index.js&#10;_patterns/01-molecules/messages/notification/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification&#10;00-atoms/search-box&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;input.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;select&#9;null&#9;null&#10;.exam&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav/docs/nav.example.js&#10;Spinn&#9;null&#9;null&#10;price-ta&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/docs/price-table-element.js&#10;button/button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;nav.exam&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav/docs/nav.example.js&#10;progres&#9;null&#9;null&#10;Pro&#9;null&#9;null&#10;Card&#9;null&#9;null&#10;price&#9;null&#9;null&#10;input.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.spec.js&#10;checkbox.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;dropdown.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;*.spec.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;card&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/docs/card.example.js&#10;row.ex&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/row/docs/row.example.js&#10;comp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;SelectMenuExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.example.js&#10;RadioButtonExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/radio-button/docs/radio-button.example.js&#10;main.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/main.jsx&#10;select-menu.snippet&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.snippet.js&#10;NavSecondaryGroupExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.example.js&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;price-table/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table&#10;components_index.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/components_index.hbs&#10;components_index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/components_index.hbs&#10;example-container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;com&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;row.input.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/docs/row.input.js&#10;component.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;ind&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;home.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/home.jsx&#10;docs/bu&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/docs/button.md&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/webpack.config.js&#10;price-table-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/price-table-element.js&#10;copy/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/copy/index.js&#10;secon&#9;null&#9;null&#10;na&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/components/nav-secondary.jsx" />
+    <property name="SearchEverywhereHistoryKey" value="select-menu/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/index.js&#10;sele&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/react-select/lib/Select.js&#10;grid/container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/apparena-patterns-react/_patterns/00-atoms/grid/container.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;_patterns/01-molecules/messages/notification/index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification/index.js&#10;_patterns/01-molecules/messages/notification/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification&#10;00-atoms/search-box&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;input.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;select&#9;null&#9;null&#10;.exam&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav/docs/nav.example.js&#10;Spinn&#9;null&#9;null&#10;price-ta&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/docs/price-table-element.js&#10;button/button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;nav.exam&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav/docs/nav.example.js&#10;progres&#9;null&#9;null&#10;Pro&#9;null&#9;null&#10;Card&#9;null&#9;null&#10;price&#9;null&#9;null&#10;input.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.spec.js&#10;checkbox.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;dropdown.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;*.spec.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;card&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/docs/card.example.js&#10;row.ex&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/row/docs/row.example.js&#10;comp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;SelectMenuExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.example.js&#10;RadioButtonExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/radio-button/docs/radio-button.example.js&#10;main.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/main.jsx&#10;select-menu.snippet&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.snippet.js&#10;NavSecondaryGroupExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.example.js&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;price-table/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table&#10;components_index.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/components_index.hbs&#10;components_index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/components_index.hbs&#10;example-container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;com&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;row.input.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/docs/row.input.js&#10;component.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;ind&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;home.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/home.jsx&#10;docs/bu&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/docs/button.md&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/webpack.config.js&#10;price-table-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/price-table-element.js&#10;copy/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/copy/index.js" />
     <property name="node.js.path.for.package.standard" value="/usr/local/bin/node" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
@@ -586,7 +590,7 @@
       <workItem from="1499792429738" duration="602000" />
       <workItem from="1499855652062" duration="18721000" />
       <workItem from="1499930027929" duration="16740000" />
-      <workItem from="1500296572455" duration="22190000" />
+      <workItem from="1500296572455" duration="22408000" />
     </task>
     <task id="LOCAL-00001" summary="update card style">
       <created>1492075461097</created>
@@ -833,14 +837,22 @@
       <option name="project" value="LOCAL" />
       <updated>1500542306618</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="relases 1.1.0">
+      <created>1500546531197</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1500546531197</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205468000" />
+    <option name="totallyTimeSpent" value="205686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -935,7 +947,8 @@
     <MESSAGE value="change generator" />
     <MESSAGE value="change Example Structur to ease up documentation" />
     <MESSAGE value="change structur of singlePriceTable" />
-    <option name="LAST_COMMIT_MESSAGE" value="change structur of singlePriceTable" />
+    <MESSAGE value="relases 1.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="relases 1.1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1275,16 +1288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-select/lib/Select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="68" column="32" lean-forward="false" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1369,16 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/search-box/search-box.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1404,6 +1397,22 @@
           <folding>
             <element signature="e#0#26#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-select/lib/Select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="68" column="32" lean-forward="false" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
