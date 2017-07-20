@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/css/app-arena-styles.scss" afterPath="$PROJECT_DIR$/source/css/app-arena-styles.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -39,11 +39,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js">
+      <file leaf-file-name="app-arena-styles.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/css/app-arena-styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+            <state relative-caret-position="285">
+              <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -125,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build/generator/templates/components_index.hbs" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.md" />
         <option value="$PROJECT_DIR$/build/generator/build.sh" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/docs/text-field.example.js" />
@@ -176,6 +175,7 @@
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/container/index.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" />
+        <option value="$PROJECT_DIR$/source/css/app-arena-styles.scss" />
       </list>
     </option>
   </component>
@@ -271,7 +271,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_patterns" />
+              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,43 +289,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_patterns" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="00-atoms" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,7 +311,7 @@
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="select-menu/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/index.js&#10;sele&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/react-select/lib/Select.js&#10;grid/container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/apparena-patterns-react/_patterns/00-atoms/grid/container.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;_patterns/01-molecules/messages/notification/index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification/index.js&#10;_patterns/01-molecules/messages/notification/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification&#10;00-atoms/search-box&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;input.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;select&#9;null&#9;null&#10;.exam&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav/docs/nav.example.js&#10;Spinn&#9;null&#9;null&#10;price-ta&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/docs/price-table-element.js&#10;button/button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;nav.exam&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav/docs/nav.example.js&#10;progres&#9;null&#9;null&#10;Pro&#9;null&#9;null&#10;Card&#9;null&#9;null&#10;price&#9;null&#9;null&#10;input.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.spec.js&#10;checkbox.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;dropdown.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;*.spec.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;card&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/docs/card.example.js&#10;row.ex&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/row/docs/row.example.js&#10;comp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;SelectMenuExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.example.js&#10;RadioButtonExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/radio-button/docs/radio-button.example.js&#10;main.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/main.jsx&#10;select-menu.snippet&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.snippet.js&#10;NavSecondaryGroupExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.example.js&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;price-table/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table&#10;components_index.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/components_index.hbs&#10;components_index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/components_index.hbs&#10;example-container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;com&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;row.input.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/docs/row.input.js&#10;component.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;ind&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;home.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/home.jsx&#10;docs/bu&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/docs/button.md&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/webpack.config.js&#10;price-table-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/price-table-element.js&#10;copy/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/copy/index.js" />
+    <property name="SearchEverywhereHistoryKey" value="navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;icon.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/icons/icons.scss&#10;fonts/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/fonts&#10;banner-message.scs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/banner-message/banner-message.scss&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;select-menu/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/index.js&#10;sele&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/react-select/lib/Select.js&#10;grid/container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/apparena-patterns-react/_patterns/00-atoms/grid/container.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;_patterns/01-molecules/messages/notification/index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification/index.js&#10;_patterns/01-molecules/messages/notification/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification&#10;00-atoms/search-box&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;input.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;select&#9;null&#9;null&#10;.exam&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav/docs/nav.example.js&#10;Spinn&#9;null&#9;null&#10;price-ta&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/docs/price-table-element.js&#10;button/button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;nav.exam&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav/docs/nav.example.js&#10;progres&#9;null&#9;null&#10;Pro&#9;null&#9;null&#10;Card&#9;null&#9;null&#10;price&#9;null&#9;null&#10;input.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.spec.js&#10;checkbox.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;dropdown.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;*.spec.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;card&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/docs/card.example.js&#10;row.ex&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/row/docs/row.example.js&#10;comp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;SelectMenuExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.example.js&#10;RadioButtonExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/radio-button/docs/radio-button.example.js&#10;main.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/main.jsx&#10;select-menu.snippet&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.snippet.js&#10;NavSecondaryGroupExample&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.example.js&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;price-table/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table&#10;components_index.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/components_index.hbs&#10;components_index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/components_index.hbs&#10;example-container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;com&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;row.input.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/docs/row.input.js&#10;component.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;ind&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js" />
     <property name="node.js.path.for.package.standard" value="/usr/local/bin/node" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
@@ -590,7 +554,7 @@
       <workItem from="1499792429738" duration="602000" />
       <workItem from="1499855652062" duration="18721000" />
       <workItem from="1499930027929" duration="16740000" />
-      <workItem from="1500296572455" duration="22408000" />
+      <workItem from="1500296572455" duration="25754000" />
     </task>
     <task id="LOCAL-00001" summary="update card style">
       <created>1492075461097</created>
@@ -844,11 +808,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500546531197</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="relases 1.1.0">
+      <created>1500546747447</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1500546747447</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205686000" />
+    <option name="totallyTimeSpent" value="209032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -856,13 +827,13 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3038618" sideWeight="0.5170394" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30081302" sideWeight="0.5063898" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3495935" sideWeight="0.4744409" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30081302" sideWeight="0.49574015" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2774228" sideWeight="0.503125" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3038618" sideWeight="0.48296058" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30081302" sideWeight="0.49361023" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2774228" sideWeight="0.50218976" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3038618" sideWeight="0.48296058" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2774228" sideWeight="0.496875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2774228" sideWeight="0.4978102" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
@@ -964,60 +935,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/row/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/animations/animations.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.example.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/test/coverage/coverage.raw.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="0" column="146059" lean-forward="false" selection-start-line="0" selection-start-column="146059" selection-end-line="0" selection-end-column="146059" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/css-modules-require-hook/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="144" column="3" lean-forward="true" selection-start-line="144" selection-start-column="3" selection-end-line="144" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1270,16 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-select/lib/Creatable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1410,8 +1317,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        <state relative-caret-position="415">
+          <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/banner-message.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1629">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/fonts/app-arena-icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/icons/icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/css/app-arena-styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding />
         </state>
       </provider>
