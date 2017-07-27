@@ -67,12 +67,12 @@ function generateComponentDocumentation(directory) {
             const snippet = fs.readFileSync(file, "utf8");
             codeSnippet = preformatContent(snippet, "codeSnippet");
             const exampleContent = fs.readFileSync(file, "utf8");
-            exampleFileName = file.split("/").slice(-1)[0];
+            exampleFileName = path.basename(file);
 
             fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${exampleFileName}`, exampleContent, "utf8");
         } else if (file.match(/.input.?(js|jsx)/)) {
             const propsContent = fs.readFileSync(file, "utf8");
-            propsFileName = file.split("/").slice(-1)[0];
+            propsFileName = path.basename(file);
 
             fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${propsFileName}`, propsContent, "utf8");
         } else if (file.match(/.?(js|jsx)/)) {
@@ -119,15 +119,12 @@ glob("source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)", (err, files) => {
 
     console.log("Preparing...");
     files.forEach((file) => {
-        const fileSplit = file.split("/");
-        fileSplit.splice(fileSplit.length - 1);
-        const dir = fileSplit.join("/");
+        const dir = path.dirname(file);
         if (!componentDirectories.includes(dir)) {
             componentDirectories.push(dir);
         }
     });
 
-    console.log(componentDirectories);
     /**
      * Initialize and generate categories from component sources and prepare them for the
      * handlebars template
@@ -148,7 +145,7 @@ glob("source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)", (err, files) => {
     console.log("Generating documentation...");
     each(componentDirectories, (directory, callback) => {
         const components = glob.sync(`${directory}/*.?(js|jsx)`).map((component) => {
-            return component.split("/").slice(-1)[0];
+            return path.basename(component);
         });
 
         const componentFiles = [];
