@@ -46,6 +46,7 @@ import Scrollable from "./react-utils/scrollable";
 import SearchBox from "./00-atoms/search-box/search-box";
 import Select from "./00-atoms/forms/select-menu";
 import Spinner from "./00-atoms/spinner/spinner";
+import Step from "./00-atoms/step";
 import Stick from "./react-utils/stick";
 import Table from "./00-atoms/table/table";
 import TableList from "./02-organisms/lists/table-list";
@@ -102,6 +103,7 @@ export {
     SearchBox,
     Select,
     Spinner,
+    Step,
     Stick,
     Table,
     TableList,

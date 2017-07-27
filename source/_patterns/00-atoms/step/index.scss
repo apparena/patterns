@@ -1,0 +1,58 @@
+@import '../../../../../../node_modules/apparena-patterns-react/css/scss/abstracts/variables';
+@import '../../../../../../node_modules/apparena-patterns-react/css/scss/abstracts/mixins';
+
+.step {
+  margin-bottom: 1rem;
+  .container {
+    .header {
+      border-radius: 5px;
+      background: #fff;
+      border: 1px solid darken($card-border-color, 10%);
+      padding: 1rem;
+      .topic {
+        margin-left: 0.5rem;
+      }
+      .title {
+        margin-left: 2rem;
+      }
+      * {
+        display: inline;
+      }
+      .button {
+        @include float-right();
+      }
+    }
+    .body {
+      display: none;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  &.active {
+    .container {
+      border: 1px solid $brand-primary;
+      border-radius: 5px;
+      background: #fff;
+      .header {
+        background: $brand-primary;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+      }
+      .body {
+        display: block;
+      }
+    }
+  }
+  &.done {
+    .container {
+      .header {
+        .icon {
+          i {
+            color: $brand-success;
+          }
+        }
+      }
+    }
+  }
+}

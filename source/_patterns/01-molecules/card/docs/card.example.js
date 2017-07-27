@@ -7,7 +7,7 @@ export default function CardExample(){
             <div type="card-header">
                 <h4>This is the title of the card</h4>
             </div>
-            <div type="card-body">
+            <div type="card-block">
                 <p>This is the body of the card</p>
             </div>
         </Card>

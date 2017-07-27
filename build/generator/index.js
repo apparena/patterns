@@ -2,9 +2,14 @@ import glob from "glob";
 import each from "async/each";
 import fs from "fs-extra";
 import handlebars from "handlebars";
+import path from "path";
+import _ from "lodash";
+
+_.mixin({ 'pascalCase': _.flow(_.camelCase, _.upperFirst) });
 
 console.log("Cleaning directories...");
 fs.removeSync("build/generator/frontend/src/components");
+
 
 /**
  * Formats some content in such a way that it will be stored as a variable named varName according to the conventions
@@ -46,12 +51,8 @@ function generateComponentDocumentation(directory) {
     let descriptionMarkdown = "";
     let codeSnippet = "";
     let exampleFileName = "";
-    let exampleClassName = "";
-    let exampleUsage = "";
     let componentClassName = "";
-    let propsUsage = "";
     let propsFileName = "";
-    let propsClassName = "";
 
     const files = glob.sync(`${directory}/**/?(docs)/**`);
     files.forEach((file) => {
@@ -59,26 +60,22 @@ function generateComponentDocumentation(directory) {
         if (file.endsWith(".md")) {
             const descriptionFileContent = fs.readFileSync(file, "utf8");
             descriptionMarkdown = preformatContent(descriptionFileContent, "description");
-        } else if (file.endsWith(".spec.js")) {
+        } else if (file.match(/.spec.?(js|jsx)/)) {
             // TODO: Figure out testing
 
-        } else if (file.endsWith(".example.js")) {
+        } else if (file.match(/.example.?(js|jsx)/)) {
             const snippet = fs.readFileSync(file, "utf8");
             codeSnippet = preformatContent(snippet, "codeSnippet");
             const exampleContent = fs.readFileSync(file, "utf8");
             exampleFileName = file.split("/").slice(-1)[0];
-            exampleClassName = exampleContent.match(/export default function ([a-zA-z0-9]+)\s?\(/)[1];
-            exampleUsage = exampleClassName;
 
             fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${exampleFileName}`, exampleContent, "utf8");
-        } else if (file.endsWith(".input.js")) {
+        } else if (file.match(/.input.?(js|jsx)/)) {
             const propsContent = fs.readFileSync(file, "utf8");
             propsFileName = file.split("/").slice(-1)[0];
-            propsClassName = propsContent.match(/export default class ([a-zA-z0-9]+)\s?extend/)[1];
-            propsUsage = propsClassName;
 
             fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${propsFileName}`, propsContent, "utf8");
-        } else if (file.endsWith(".js")) {
+        } else if (file.match(/.?(js|jsx)/)) {
             const componentContent = fs.readFileSync(file, "utf8");
             const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
             if (componentMatch)
@@ -93,11 +90,7 @@ function generateComponentDocumentation(directory) {
         description: descriptionMarkdown,
         codeSnippet,
         exampleFileName,
-        exampleClassName,
-        exampleUsage,
         propsFileName,
-        propsClassName,
-        propsUsage,
         componentClassName,
     };
     const renderedTemplate = componentTemplate(data);
@@ -121,7 +114,7 @@ function createComponentsList(categories) {
 /**
  * Iterate through the component sources
  */
-glob("source/_patterns/*/**/!(__tests|docs)/*.js", (err, files) => {
+glob("source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)", (err, files) => {
     const componentDirectories = [];
 
     console.log("Preparing...");
@@ -154,7 +147,7 @@ glob("source/_patterns/*/**/!(__tests|docs)/*.js", (err, files) => {
      */
     console.log("Generating documentation...");
     each(componentDirectories, (directory, callback) => {
-        const components = glob.sync(`${directory}/*.js`).map((component) => {
+        const components = glob.sync(`${directory}/*.?(js|jsx)`).map((component) => {
             return component.split("/").slice(-1)[0];
         });
 
@@ -187,23 +180,16 @@ glob("source/_patterns/*/**/!(__tests|docs)/*.js", (err, files) => {
         componentFiles.forEach((cf) => {
             const category = categories[directory.split("/")[2]];
             if (category !== undefined) {
-                let className;
-                if (fs.existsSync(`${cf}.js`))
-                    className = fs.readFileSync(`${cf}.js`, "utf8").match(/export default class (\w+)/);
-                if (Array.isArray(className) && className.length > 1) {
-                    const fileName = cf.split("/").slice(-2)[0];
-                    let className = "";
-                    if (fileName.includes("-")) {
-                        const splittedFileName = fileName.split("-");
-                        className = splittedFileName.map((f) => {
-                            return f.charAt(0).toUpperCase() + f.slice(1);
-                        }).join("");
-                    } else {
-                        className = fileName.charAt(0).toUpperCase() + fileName.slice(1);
+                const files = glob.sync(`${cf}.?(js|jsx)`);
+                files.forEach((file) => {
+                    let className = path.basename(file, path.extname(file));
+                    if (className === 'index') {
+                        className = path.dirname(file).split(path.sep).pop();
                     }
+                    className = _.pascalCase(className);
                     category.components.push(className);
                     indexFiles.push({name: className, directory});
-                }
+                });
             }
         });
         callback();

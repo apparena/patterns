@@ -5,8 +5,8 @@ import ExampleContainer from "include/example-container";
 import PropsContainer from "include/props-container";
 import Snippet from "include/code-snippet";
 import TestResult from "include/test-result";
-{{#if exampleClassName}}import {{ exampleClassName }} from "./docs/{{ exampleFileName }}";{{/if}}
-{{#if propsClassName}}import {{ propsClassName }} from "./docs/{{ propsFileName }}";{{/if}}
+{{#if exampleFileName}}import Example from "./docs/{{ exampleFileName }}";{{/if}}
+{{#if propsFileName}}import PropsTable from "./docs/{{ propsFileName }}";{{/if}}
 
 export default class {{ componentClassName }} extends ReactComponent {
     render() {
@@ -21,14 +21,14 @@ export default class {{ componentClassName }} extends ReactComponent {
                 {{#if codeSnippet}}
                 <Snippet code={codeSnippet} />
                 {{/if}}
-                {{#if exampleUsage}}
+                {{#if exampleFileName}}
                 <ExampleContainer>
-                    <{{{ exampleUsage }}}/>
+                    <Example/>
                 </ExampleContainer>
                 {{/if}}
-                {{#if propsUsage}}
+                {{#if propsFileName}}
                 <PropsContainer>
-                    <{{{ propsUsage }}}/>
+                    <PropsTable/>
                 </PropsContainer>
                 {{/if}}
             </div>
