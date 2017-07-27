@@ -13,17 +13,19 @@ export default class PriceComponentSingle extends ReactComponent {
         onClick: PropTypes.oneOfType([
             PropTypes.string,
             PropTypes.func,
-        ]).isRequired
+        ]).isRequired,
+        hoursPrompt: PropTypes.string,
+        articles: PropTypes.array
     };
 
     getInitState() {
         this.onPurchase = ::this.onPurchase;
-        const {title, price} = this.props;
+        const {title, articles} = this.props;
         this.purchaseData = {
             title,
-            price,
+            price: articles[0].price,
             flatrate: false,
-            articles: []
+            articles
         };
         return {
             hours: 1
@@ -44,26 +46,29 @@ export default class PriceComponentSingle extends ReactComponent {
                     <Col xs="4" xsOffset={4}>
                         <div className={styles.priceSelectorContainer}>
                             <div className={styles.price}>
-                                <sup>€</sup>{this.state.hours * this.props.price}<sup>*</sup>
+                                <sup>€</sup>{this.state.hours * this.props.articles[0].price}<sup>*</sup>
                             </div>
                             <p className={styles.priceServicePrompt}>
-                                {this.t("priceSingle.hoursPrompt")}
+                                {this.props.hoursPrompt}
                             </p>
                             <p className={styles.serviceHours}>
                                 <span className={styles.serviceHourNumber}>
                                     {this.state.hours}
                                 </span>
-                                {this.t("priceSingle.serviceHours", {count: this.state.hours})}
+                                {this.t("priceSingle.hours", {count: this.state.hours})}
                             </p>
                             <Slider
                                 value={this.state.hours}
-                                min={0}
+                                min={1}
                                 max={30}
                                 step={1}
                                 onChange={(e, value) => {
                                     this.setState({
                                         hours: value,
                                     });
+
+                                    this.purchaseData.price = this.props.articles[0].price * value;
+                                    this.purchaseData.articles[0].value = value;
                                 }}
                                 style={{width: "80%", margin: "auto"}}
                             />
