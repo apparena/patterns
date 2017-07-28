@@ -50,13 +50,37 @@ function Step({children, active, done, title, topic, btnText, onClick, btnTextDo
 }
 
 Step.propTypes = {
+    /**
+     * Elements to be displayed in the Step Component
+     */
     children: PropTypes.node.isRequired,
+    /**
+     * Set whether to display the Step Content
+     */
     active: PropTypes.bool.isRequired,
+    /**
+     * Set whether the Step is finished
+     */
     done: PropTypes.bool.isRequired,
+    /**
+     * The topic of this Step
+     */
     topic: PropTypes.string.isRequired,
+    /**
+     * The title of this Step
+     */
     title: PropTypes.string.isRequired,
+    /**
+     * The Text of the Button of this Step
+     */
     btnText: PropTypes.string.isRequired,
+    /**
+     * The Text of the Button of this Step if active
+     */
     btnTextDone: PropTypes.string.isRequired,
+    /**
+     * Function called when the Step Button is clicked.
+     */
     onClick: PropTypes.func.isRequired
 };
 
