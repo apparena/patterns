@@ -69,6 +69,7 @@ export default class PriceComponentSingle extends ReactComponent {
 
                                     this.purchaseData.price = this.props.articles[0].price * value;
                                     this.purchaseData.articles[0].value = value;
+                                    this.purchaseData.articles[0].text = `${this.purchaseData.articles[0].title} - ${value} ${this.t("priceSingle.hours", {count: value})}`;
                                 }}
                                 style={{width: "80%", margin: "auto"}}
                             />
