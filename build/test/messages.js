@@ -46,12 +46,11 @@ export default {
             }
         },
         priceSingle: {
-            serviceHours: {
+            hours: {
                 one: "Stunde",
                 other: "Stunden",
                 zero: "Stunde",
             },
-            hoursPrompt: "Wählen Sie die benötigten Stunden aus.",
             taxHint: "zzgl. Steuern",
             purchase: "Kaufen",
         }

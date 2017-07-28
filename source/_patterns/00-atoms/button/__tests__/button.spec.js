@@ -1,11 +1,17 @@
 /* eslint-env mocha */
 import React from "react";
 import {shallow, mount} from "enzyme";
-import {expect} from "chai";
 import {spy} from "sinon";
+import test from 'ava';
+
 import Button from "../button";
 
-describe('<Button />', () => {
+test('renders a button'), t => {
+    const wrapper = shallow(<Button />)
+    t.is(wrapper.is('button'), true);
+}
+
+/*test('<Button />', () => {
 
     it('renders a button', () => {
         const wrapper = shallow(
@@ -50,4 +56,4 @@ describe('<Button />', () => {
         wrapper.find('button').simulate('click');
         expect(onClick.calledWith("custom-button-id")).to.equal(true);
     });
-});
+});*/
