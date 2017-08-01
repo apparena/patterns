@@ -16,6 +16,13 @@ export default class ButtonInput extends ReactComponent {
                 </thead>
                 <tbody>
                 <tr>
+                    <td>className</td>
+                    <td>string</td>
+                    <td>Give the button a classname</td>
+                    <td><em>undefined</em></td>
+                    <td></td>
+                </tr>
+                <tr>
                     <td>type</td>
                     <td>oneOf</td>
                     <td>Select the type of the button</td>
