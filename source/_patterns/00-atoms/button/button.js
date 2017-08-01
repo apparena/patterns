@@ -45,7 +45,6 @@ export default class Button extends ReactComponent {
     static defaultProps = {
         type: "secondary",
         state: "default",
-        stateType: "inverted",
         isDisabled: false
     };
 

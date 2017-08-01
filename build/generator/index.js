@@ -1,31 +1,17 @@
-import glob from "glob";
-import each from "async/each";
-import fs from "fs-extra";
-import handlebars from "handlebars";
-import path from "path";
-import _ from "lodash";
+import glob from 'glob';
+import each from 'async/each';
+import fse from 'fs-extra';
+import handlebars from 'handlebars';
+import path from 'path';
+import _ from 'lodash';
 
-_.mixin({ 'pascalCase': _.flow(_.camelCase, _.upperFirst) });
-
-console.log("Cleaning directories...");
-fs.removeSync("build/generator/frontend/src/components");
+const reactDocs = require('react-docgen');
 
 
-/**
- * Formats some content in such a way that it will be stored as a variable named varName according to the conventions
- * of the documentation, i.e. each line is an array item and it will be joined together. Newlines are replaced with
- * a unescaped newline "\\n"
- * @param fileContent
- * @param varName
- * @returns {string}
- */
-function preformatContent(fileContent, varName) {
-    const formatted = [];
-    fileContent.split("\n").forEach((line) => {
-        formatted.push(`'${line.replace(/[']/g, "\\'")}\\n'`);
-    });
-    return `const ${varName} = [${formatted}].join("");`;
-}
+_.mixin({pascalCase: _.flow(_.camelCase, _.upperFirst)});
+
+console.log('Cleaning directories...');
+fse.removeSync('build/generator/frontend/src/components');
 
 /**
  * Get the path + the base name of a component. The base name is the entire name without the extension. This helps
@@ -35,10 +21,10 @@ function preformatContent(fileContent, varName) {
  * @returns {string}
  */
 function getBaseName(fileName) {
-    const parts = fileName.split("/");
-    const basename = parts.slice(-1)[0].split(".")[0];
+    const parts = fileName.split('/');
+    const basename = parts.slice(-1)[0].split('.')[0];
     parts.splice(parts.length - 1);
-    return `${parts.join("/")}/${basename}`;
+    return `${parts.join('/')}/${basename}`;
 }
 
 /**
@@ -48,53 +34,56 @@ function getBaseName(fileName) {
  * @param directory
  */
 function generateComponentDocumentation(directory) {
-    let descriptionMarkdown = "";
-    let codeSnippet = "";
-    let exampleFileName = "";
-    let componentClassName = "";
-    let propsFileName = "";
+    let mdFileName = '';
+    let exampleFileName = '';
+    let componentClassName = '';
+    let propsFileName = '';
 
-    const files = glob.sync(`${directory}/**/?(docs)/**`);
-    files.forEach((file) => {
-        console.log(file);
-        if (file.endsWith(".md")) {
-            const descriptionFileContent = fs.readFileSync(file, "utf8");
-            descriptionMarkdown = preformatContent(descriptionFileContent, "description");
+    glob.sync(`${directory}/**/?(docs)/**`).forEach((file) => {
+        if (file.endsWith('.md')) {
+            mdFileName = `${_.camelCase(path.basename(file, path.extname(file)))}${path.extname(file)}`;
+            fse.copySync(file, `build/generator/frontend/src/components/${directory}/docs/${mdFileName}`);
         } else if (file.match(/.spec.?(js|jsx)/)) {
             // TODO: Figure out testing
 
         } else if (file.match(/.example.?(js|jsx)/)) {
-            const snippet = fs.readFileSync(file, "utf8");
-            codeSnippet = preformatContent(snippet, "codeSnippet");
-            const exampleContent = fs.readFileSync(file, "utf8");
-            exampleFileName = path.basename(file);
-
-            fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${exampleFileName}`, exampleContent, "utf8");
-        } else if (file.match(/.input.?(js|jsx)/)) {
-            const propsContent = fs.readFileSync(file, "utf8");
-            propsFileName = path.basename(file);
-
-            fs.outputFileSync(`build/generator/frontend/src/components/${directory}/docs/${propsFileName}`, propsContent, "utf8");
+            exampleFileName = `${_.camelCase(path.basename(file, path.extname(file)))}${path.extname(file)}`;
+            fse.copySync(file, `build/generator/frontend/src/components/${directory}/docs/${exampleFileName}`);
         } else if (file.match(/.?(js|jsx)/)) {
-            const componentContent = fs.readFileSync(file, "utf8");
+            const componentContent = fse.readFileSync(file, 'utf8');
             const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
             if (componentMatch)
                 componentClassName = componentMatch[2];
         }
     });
 
+    glob.sync(`${directory}/*.?(js|jsx)`).forEach((component) => {
+        const componentContent = fse.readFileSync(component, 'utf8');
+        try {
+            const infos = reactDocs.parse(componentContent);
+            const infosString = JSON.stringify(infos);
+            if (fse.existsSync(`build/generator/frontend/src/components/${directory}/docs/`)) {
+                propsFileName = 'info.json';
+                fse.writeFileSync(`build/generator/frontend/src/components/${directory}/docs/info.json`, infosString);
+            }
+        }
+        catch (err) {
+            // Example error won't be caught here... crashing our app
+            // hence the need for domains
+        }
+    });
 
-    const componentTemplateSource = fs.readFileSync("build/generator/templates/component.hbs", "utf8");
+
+    const componentTemplateSource = fse.readFileSync('build/generator/templates/component.hbs', 'utf8');
     const componentTemplate = handlebars.compile(componentTemplateSource);
     const data = {
-        description: descriptionMarkdown,
-        codeSnippet,
+        mdFileName,
         exampleFileName,
         propsFileName,
-        componentClassName,
+        componentClassName
     };
     const renderedTemplate = componentTemplate(data);
-    fs.outputFileSync(`build/generator/frontend/src/components/${directory}/index.jsx`, renderedTemplate, "utf8");
+    fse.outputFileSync(`build/generator/frontend/src/components/${directory}/index.jsx`, renderedTemplate, 'utf8');
 }
 
 function createComponentsList(categories) {
@@ -102,22 +91,22 @@ function createComponentsList(categories) {
         return {
             name: category,
             visible: categories[category].visible,
-            componentList: categories[category].components,
+            componentList: categories[category].components
         };
     });
     const liststring = JSON.stringify(list);
 
-    fs.writeFile("build/generator/frontend/src/components/list.json", liststring);
+    fse.writeFileSync('build/generator/frontend/src/components/list.json', liststring);
 }
 
 
 /**
  * Iterate through the component sources
  */
-glob("source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)", (err, files) => {
+glob('source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
     const componentDirectories = [];
 
-    console.log("Preparing...");
+    console.log('Preparing...');
     files.forEach((file) => {
         const dir = path.dirname(file);
         if (!componentDirectories.includes(dir)) {
@@ -129,20 +118,20 @@ glob("source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)", (err, files) => {
      * Initialize and generate categories from component sources and prepare them for the
      * handlebars template
      */
-    console.log("Initializing categories...");
+    console.log('Initializing categories...');
     const categories = {}, indexFiles = [];
-    glob.sync("source/_patterns/!(react-utils|corporate-identity)/")
+    glob.sync('source/_patterns/!(react-utils|corporate-identity)/')
         .map((cf) => {
-            return cf.split("/").slice(-2)[0]
+            return cf.split('/').slice(-2)[0];
         })
         .forEach((cf) => {
-            categories[cf] = {visible: true, components: []}
+            categories[cf] = {visible: true, components: []};
         });
 
     /**
      * Generate documentation for each component
      */
-    console.log("Generating documentation...");
+    console.log('Generating documentation...');
     each(componentDirectories, (directory, callback) => {
         const components = glob.sync(`${directory}/*.?(js|jsx)`).map((component) => {
             return path.basename(component);
@@ -154,16 +143,16 @@ glob("source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)", (err, files) => {
          * Collect all components that reside within the directories that contain them
          */
         components.forEach((component) => {
-            glob.sync(`${directory}/${component.split(".js")[0]}.*`)
+            glob.sync(`${directory}/${component.split('.js')[0]}.*`)
                 .map((f) => {
-                    return getBaseName(f)
+                    return getBaseName(f);
                 })
                 .filter((value, index, self) => {
-                    return self.indexOf(value) === index
+                    return self.indexOf(value) === index;
                 })
                 .forEach((componentFile) => {
                     if (!componentFiles.includes(componentFile)) {
-                        componentFiles.push(componentFile)
+                        componentFiles.push(componentFile);
                     }
                 });
         });
@@ -175,7 +164,7 @@ glob("source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)", (err, files) => {
          * in the frontend navigation
          */
         componentFiles.forEach((cf) => {
-            const category = categories[directory.split("/")[2]];
+            const category = categories[directory.split('/')[2]];
             if (category !== undefined) {
                 const files = glob.sync(`${cf}.?(js|jsx)`);
                 files.forEach((file) => {
@@ -197,17 +186,18 @@ glob("source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)", (err, files) => {
             delete categories[key];
     });
 
-    console.log("Finishing up...");
+
+    console.log('Finishing up...');
 
     createComponentsList(categories);
 
-    const indexTemplateSource = fs.readFileSync("build/generator/templates/components_index.hbs", "utf8");
+    const indexTemplateSource = fse.readFileSync('build/generator/templates/components_index.hbs', 'utf8');
     const indexTemplate = handlebars.compile(indexTemplateSource);
     const indexTemplateData = {
-        components: indexFiles,
+        components: indexFiles
     };
     const renderedIndexTemplate = indexTemplate(indexTemplateData);
-    fs.outputFileSync("build/generator/frontend/src/components/index.jsx", renderedIndexTemplate, "utf8");
+    fse.outputFileSync('build/generator/frontend/src/components/index.jsx', renderedIndexTemplate, 'utf8');
 
 });
 
