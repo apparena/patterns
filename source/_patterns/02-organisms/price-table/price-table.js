@@ -12,7 +12,7 @@ import Button from "../../00-atoms/button/button";
 
 export default class PriceTable extends ReactComponent {
     static propTypes = {
-        templateId: PropTypes.string.isRequired,
+        templateId: PropTypes.string,
         plans: PropTypes.object.isRequired,
         onClick: PropTypes.oneOfType([
             PropTypes.string,

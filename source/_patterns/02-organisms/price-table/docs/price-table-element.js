@@ -10,7 +10,7 @@ import Button from "../../../00-atoms/button/button";
 
 export default class PriceTableElement extends ReactComponent {
     static propTypes = {
-        templateId: PropTypes.string.isRequired,
+        templateId: PropTypes.string,
         imgSrc: PropTypes.string,
         title: PropTypes.string,
         price: PropTypes.number.isRequired,
@@ -29,7 +29,7 @@ export default class PriceTableElement extends ReactComponent {
         const {isFlatrate, title, plans, price} = this.props;
         this.purchaseData = {
             title,
-            price: plans.basePrice + price,
+            price: isFlatrate ? price : plans.basePrice + price,
             flatrate: isFlatrate,
             articles: []
         };
@@ -40,7 +40,7 @@ export default class PriceTableElement extends ReactComponent {
         if (this.props !== nextProps) {
             this.purchaseData = {
                 title,
-                price: plans.basePrice + price,
+                price: isFlatrate ? price : plans.basePrice + price,
                 flatrate: isFlatrate,
                 articles: []
             };

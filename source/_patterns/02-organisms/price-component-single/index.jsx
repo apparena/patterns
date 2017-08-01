@@ -15,6 +15,7 @@ export default class PriceComponentSingle extends ReactComponent {
             PropTypes.func,
         ]).isRequired,
         hoursPrompt: PropTypes.string,
+        header: PropTypes.string,
         articles: PropTypes.array
     };
 
@@ -45,6 +46,9 @@ export default class PriceComponentSingle extends ReactComponent {
                 <Row>
                     <Col xs="4" xsOffset={4}>
                         <div className={styles.priceSelectorContainer}>
+                            <div className={styles.header}>
+                                <h3>{this.props.header}</h3>
+                            </div>
                             <div className={styles.price}>
                                 <sup>€</sup>{this.state.hours * this.props.articles[0].price}<sup>*</sup>
                             </div>
