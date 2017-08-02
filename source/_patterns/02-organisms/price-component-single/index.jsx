@@ -9,7 +9,8 @@ import Slider from "../../00-atoms/slider/slider";
 
 export default class PriceComponentSingle extends ReactComponent {
     static propTypes = {
-        templateId: PropTypes.string.isRequired,
+        templateId: PropTypes.string,
+        productId: PropTypes.string,
         onClick: PropTypes.oneOfType([
             PropTypes.string,
             PropTypes.func,
@@ -38,6 +39,35 @@ export default class PriceComponentSingle extends ReactComponent {
      */
     onPurchase() {
         this.props.onClick(this.purchaseData)
+    }
+
+    renderButton() {
+        const {onClick, templateId, productId} = this.props;
+        if (typeof onClick === "function") {
+            return (
+                <Button type="primary" onClick={this.onPurchase}>
+                    {this.t("priceSingle.purchase")}
+                </Button>
+            );
+        }
+
+        let href="";
+
+        const utf8_to_b64 = (str) => {
+            return window.btoa(encodeURIComponent(str));
+        };
+
+        if (templateId) {
+            href=`${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+        } else if (productId) {
+            href=`${onClick}?productId=${productId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+        }
+
+        return (
+            <Button type="primary" href={href}>
+                {this.t("priceSingle.purchase")}
+            </Button>
+        );
     }
 
     render() {
@@ -80,9 +110,7 @@ export default class PriceComponentSingle extends ReactComponent {
                             <p className={styles.taxHint}>
                                 *{this.t("priceSingle.taxHint")}
                             </p>
-                            <Button type="primary" onClick={this.onPurchase}>
-                                {this.t("priceSingle.purchase")}
-                            </Button>
+                            {this.renderButton()}
                         </div>
                     </Col>
                 </Row>

@@ -11,6 +11,7 @@ import Button from "../../../00-atoms/button/button";
 export default class PriceTableElement extends ReactComponent {
     static propTypes = {
         templateId: PropTypes.string,
+        productId: PropTypes.string,
         imgSrc: PropTypes.string,
         title: PropTypes.string,
         price: PropTypes.number.isRequired,
@@ -98,7 +99,8 @@ export default class PriceTableElement extends ReactComponent {
     }
 
     renderButton() {
-        const {onClick, templateId} = this.props;
+        const {onClick, templateId, productId} = this.props;
+        let href = "";
         if (typeof onClick === "function") {
             return (
                 <Button className={styles.purchase_button}
@@ -113,11 +115,18 @@ export default class PriceTableElement extends ReactComponent {
         const utf8_to_b64 = (str) => {
             return window.btoa(encodeURIComponent(str));
         };
+
+        if (templateId) {
+            href=`${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+        } else if (productId) {
+            href=`${onClick}?productId=${productId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+        }
+
         return (
             <Button className={styles.purchase_button}
                     type="primary"
                     rounded
-                    href={`${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`}
+                    href={href}
             >
                 {this.t("priceTableElement.button.caption")}
             </Button>
