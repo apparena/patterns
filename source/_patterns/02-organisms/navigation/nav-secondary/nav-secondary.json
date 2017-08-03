@@ -1,7 +1,10 @@
 {
   "navSecondary": {
     "btnList": [
-      { "btnText": "Call to action", "btnClass": "btn-primary"}
+      {
+        "btnText": "Call to action",
+        "btnClass": "btn-primary"
+      }
     ],
     "items": [
       {

@@ -1,36 +1,36 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import Tooltip from "../../01-molecules/tooltip/tooltip";
-import Icon from "../../00-atoms/icons";
-import cx from "classnames";
-import Clipboard from "clipboard";
-import styles from "./index.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import Tooltip from '../../01-molecules/tooltip/tooltip';
+import Icon from '../../00-atoms/icons';
+import cx from 'classnames';
+import Clipboard from 'clipboard';
+import styles from './index.scss';
 
 export default class Copy extends ReactComponent {
     static propTypes = {
         options: PropTypes.object,
         className: PropTypes.string,
-        text: PropTypes.string.isRequired,
+        text: PropTypes.string.isRequired
     };
 
     static defaultProps = {
-        options: {},
+        options: {}
     };
 
     getInitState() {
         this.handleRefBind = (ref) => {
-            this._copyHandler = ref
+            this._copyHandler = ref;
         };
         return {
-            label: this.t("copy.copy")
-        }
+            label: this.t('copy.copy')
+        };
     }
 
     resetLabel() {
         this.setState({
-            label: this.t("copy.copy")
-        })
+            label: this.t('copy.copy')
+        });
     }
 
     componentDidMount() {
@@ -38,9 +38,9 @@ export default class Copy extends ReactComponent {
         this.clipboard = new Clipboard(this._copyHandler, options);
         this.clipboard.on('success', (e) => {
             this.setState({
-                    label: this.t("copy.copied")
+                    label: this.t('copy.copied')
                 }, () => {
-                    setTimeout(::this.resetLabel, 3000)
+                    setTimeout(::this.resetLabel, 3000);
                 }
             );
             e.clearSelection();
@@ -48,9 +48,9 @@ export default class Copy extends ReactComponent {
 
         this.clipboard.on('error', (e) => {
             this.setState({
-                    label: this.t("copy.error")
+                    label: this.t('copy.error')
                 }, () => {
-                    setTimeout(::this.resetLabel, 3000)
+                    setTimeout(::this.resetLabel, 3000);
                 }
             );
         });
@@ -74,6 +74,6 @@ export default class Copy extends ReactComponent {
                     <textarea readOnly="1" rows={rows} spellCheck="false" value={text}/>
                 </Tooltip>
             </figure>
-        )
+        );
     }
 };

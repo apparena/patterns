@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import {SingleDatePicker} from "react-dates";
-import styles from "./index.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import {SingleDatePicker} from 'react-dates';
+import styles from './index.scss';
 
 export default class DatePicker extends ReactComponent {
     static propTypes = {
@@ -13,13 +13,13 @@ export default class DatePicker extends ReactComponent {
         monthFormat: PropTypes.string,
         onChange: PropTypes.func.isRequired,
         onFocusChange: PropTypes.func.isRequired,
-        isOutsideRange: PropTypes.func,
+        isOutsideRange: PropTypes.func
     };
 
     static defaultProps = {
-        id: "datePicker",
+        id: 'datePicker',
         focused: false,
-        monthFormat: "DD.MM.YYYY",
+        monthFormat: 'DD.MM.YYYY',
         isOutsideRange: () => false
     };
 
@@ -28,7 +28,7 @@ export default class DatePicker extends ReactComponent {
     }
 
     handleClose() {
-        if (this.props.onFocusChange){
+        if (this.props.onFocusChange) {
             this.props.onFocusChange(false);
         }
     }
@@ -48,8 +48,8 @@ export default class DatePicker extends ReactComponent {
                     onFocusChange={onFocusChange}
                     isOutsideRange={isOutsideRange}
                 />
-                <div className={cx(focused && styles.underlay)} onClick={this.handleClose} />
+                <div className={cx(focused && styles.underlay)} onClick={this.handleClose}/>
             </div>
-        )
+        );
     }
 }

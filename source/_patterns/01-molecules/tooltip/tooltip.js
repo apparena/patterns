@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import Portal from "../../react-utils/portal";
-import Stick from "../../react-utils/stick";
-import styles from "./tooltip.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import Portal from '../../react-utils/portal';
+import Stick from '../../react-utils/stick';
+import styles from './tooltip.scss';
 
 const POSITIONING = [
     'top',
@@ -29,12 +29,12 @@ export default class Tooltip extends ReactComponent {
         transition: PropTypes.string,
         className: PropTypes.string,
         positioning: PropTypes.oneOf(POSITIONING),
-        zIndex: PropTypes.number,
+        zIndex: PropTypes.number
     };
 
     static defaultProps = {
-        transition: "fadeIn",
-        positioning: "top"
+        transition: 'fadeIn',
+        positioning: 'top'
     };
 
     getInitState() {
@@ -78,7 +78,7 @@ export default class Tooltip extends ReactComponent {
                         transition={this.props.transition}
                         offset={10}
                     >
-                        <div className={cx(styles.tooltip, styles[this.props.positioning.split(" ")[0]])}>
+                        <div className={cx(styles.tooltip, styles[this.props.positioning.split(' ')[0]])}>
                             {label}
                         </div>
                     </Stick>
@@ -96,7 +96,7 @@ export default class Tooltip extends ReactComponent {
                 onMouseEnter={::this.onMouseEnter}
                 onMouseLeave={::this.onMouseLeave}
                 ref={(c) => {
-                    this._handler = c
+                    this._handler = c;
                 }}
             >
                 {this.props.children}

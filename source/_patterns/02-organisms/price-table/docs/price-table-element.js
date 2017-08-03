@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
-import cx from "classnames";
-import styles from "../price-table.scss";
-import Tag from "../../../00-atoms/tag/tag";
-import Col from "../../../00-atoms/grid/col/index";
-import Row from "../../../00-atoms/grid/row/index";
-import Button from "../../../00-atoms/button/button";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
+import cx from 'classnames';
+import styles from '../price-table.scss';
+import Tag from '../../../00-atoms/tag/tag';
+import Col from '../../../00-atoms/grid/col/index';
+import Row from '../../../00-atoms/grid/row/index';
+import Button from '../../../00-atoms/button/button';
 
 export default class PriceTableElement extends ReactComponent {
     static propTypes = {
@@ -19,11 +19,11 @@ export default class PriceTableElement extends ReactComponent {
         element: PropTypes.object,
         onClick: PropTypes.oneOfType([
             PropTypes.string,
-            PropTypes.func,
+            PropTypes.func
         ]).isRequired,
         isPopular: PropTypes.bool,
         isFlatrate: PropTypes.bool,
-        discount: PropTypes.number,
+        discount: PropTypes.number
     };
 
     getInitState() {
@@ -57,8 +57,8 @@ export default class PriceTableElement extends ReactComponent {
      */
     processInformation(element, i) {
         let text = element.text;
-        if (element.style.includes("bold")) text = <b>{text}</b>;
-        if (element.style.includes("italic")) text = <i>{text}</i>;
+        if (element.style.includes('bold')) text = <b>{text}</b>;
+        if (element.style.includes('italic')) text = <i>{text}</i>;
         if (element.key) {
             this.purchaseData.articles.push(element);
         }
@@ -77,7 +77,7 @@ export default class PriceTableElement extends ReactComponent {
                 </div>
                 {(i + 1 < this.props.articles.length) && <hr className={styles.horizontalDividerShort}/>}
             </div>
-        )
+        );
     }
 
     /**
@@ -87,7 +87,7 @@ export default class PriceTableElement extends ReactComponent {
      */
     renderPopularTag() {
         return (
-            <Tag type="success" className={styles.tag}>{this.t("priceTableElement.popular")}</Tag>
+            <Tag type="success" className={styles.tag}>{this.t('priceTableElement.popular')}</Tag>
         );
     }
 
@@ -95,31 +95,31 @@ export default class PriceTableElement extends ReactComponent {
      * Prepare & execute purchase
      */
     onPurchase() {
-        this.props.onClick(this.purchaseData)
+        this.props.onClick(this.purchaseData);
     }
 
     renderButton() {
         const {onClick, templateId, productId} = this.props;
-        let href = "";
-        if (typeof onClick === "function") {
+        let href = '';
+        if (typeof onClick === 'function') {
             return (
                 <Button className={styles.purchase_button}
                         onClick={::this.onPurchase}
                         type="primary"
                         rounded
                 >
-                    {this.t("priceTableElement.button.caption")}
+                    {this.t('priceTableElement.button.caption')}
                 </Button>
-            )
+            );
         }
         const utf8_to_b64 = (str) => {
             return window.btoa(encodeURIComponent(str));
         };
 
         if (templateId) {
-            href=`${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+            href = `${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
         } else if (productId) {
-            href=`${onClick}?productId=${productId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+            href = `${onClick}?productId=${productId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
         }
 
         return (
@@ -128,9 +128,9 @@ export default class PriceTableElement extends ReactComponent {
                     rounded
                     href={href}
             >
-                {this.t("priceTableElement.button.caption")}
+                {this.t('priceTableElement.button.caption')}
             </Button>
-        )
+        );
     }
 
     render() {
@@ -151,7 +151,7 @@ export default class PriceTableElement extends ReactComponent {
                     <span>/mtl.*</span>}</h3>
                     <p className={styles.discountText}>
                         <sub>
-                            {this.props.isFlatrate && this.t("priceTableElement.discount", {discount: this.props.discount})}
+                            {this.props.isFlatrate && this.t('priceTableElement.discount', {discount: this.props.discount})}
                         </sub>
                     </p>
                     <hr className={styles.horizontalDividerLong}/>

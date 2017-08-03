@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
 
 export default class CardsList extends ReactComponent {
     static propTypes = {
@@ -19,6 +19,6 @@ export default class CardsList extends ReactComponent {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }

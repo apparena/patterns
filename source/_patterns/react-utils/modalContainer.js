@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "./component";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from './component';
 
 export default class OverlaysContainer extends ReactComponent {
     static propTypes = {

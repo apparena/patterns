@@ -1,8 +1,8 @@
 import React from 'react';
 import {Modal} from 'apparena-patterns-react';
 
-export default function ModalExample(){
-    return(
+export default function ModalExample() {
+    return (
         <Modal type="secondary" scrollable>
             <div className="modal-header">
                 <h4>A Modal Title</h4>
@@ -12,9 +12,9 @@ export default function ModalExample(){
             </div>
             <div className="modal-footer">
                 <p>The footer</p>
-            </div> 
+            </div>
         </Modal>
-    )
+    );
 }
 
 /*;;usage

@@ -1,8 +1,8 @@
-import React from "react";
-import {PriceTableSingle} from "apparena-patterns-react";
+import React from 'react';
+import {PriceTableSingle} from 'apparena-patterns-react';
 
 export default function PriceTableSingleExample() {
     return (
         <PriceTableSingle/>
-    )
+    );
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import {ProgressBar} from "apparena-patterns-react";
+import React from 'react';
+import {ProgressBar} from 'apparena-patterns-react';
 
 export default function ProgressBarExample() {
     return (
@@ -10,5 +10,5 @@ export default function ProgressBarExample() {
             type="danger"
             striped
         />
-    )
+    );
 }

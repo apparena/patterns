@@ -84,11 +84,19 @@
     "select": {
       "class": "col-sm-9",
       "options": [
-        {"text":"App-Arena GmbH", "selected": true},
-        {"text":"iConsultants GmbH", "selected": false},
-        {"text":"Marcapo GmbH"}
+        {
+          "text": "App-Arena GmbH",
+          "selected": true
+        },
+        {
+          "text": "iConsultants GmbH",
+          "selected": false
+        },
+        {
+          "text": "Marcapo GmbH"
+        }
       ],
-      "message":"Dieses Feld wird nur angezeigt, wenn auch Kunden existieren."
+      "message": "Dieses Feld wird nur angezeigt, wenn auch Kunden existieren."
     }
   }
 }

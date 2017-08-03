@@ -1,5 +1,5 @@
-import React from "react";
-import {ReactComponent, Step} from "apparena-patterns-react";
+import React from 'react';
+import {ReactComponent, Step} from 'apparena-patterns-react';
 
 export default class StepExample extends ReactComponent {
 
@@ -53,6 +53,6 @@ export default class StepExample extends ReactComponent {
                     </div>
                 </Step>
             </div>
-        )
+        );
     }
 }

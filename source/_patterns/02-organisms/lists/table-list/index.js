@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
-import cx from "classnames";
-import styles from "./table-list.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
+import cx from 'classnames';
+import styles from './table-list.scss';
 
 export default class TableList extends ReactComponent {
     static propTypes = {
@@ -33,6 +33,6 @@ export default class TableList extends ReactComponent {
                     </table>
                 </div>
             </div>
-        )
+        );
     }
 }

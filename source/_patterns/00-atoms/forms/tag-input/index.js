@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import cx from "classnames";
-import ReactComponent from "../../../react-utils/component";
-import Select from "react-select";
-import styles from "./tag-input.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import cx from 'classnames';
+import ReactComponent from '../../../react-utils/component';
+import Select from 'react-select';
+import styles from './tag-input.scss';
 
 export default class TagInput extends ReactComponent {
     static propTypes = {
@@ -24,7 +24,7 @@ export default class TagInput extends ReactComponent {
         placeholder: PropTypes.string,
         searchingText: PropTypes.string,
         noResultsText: PropTypes.string,
-        backspaceToRemoveMessage: PropTypes.string,
+        backspaceToRemoveMessage: PropTypes.string
     };
 
     static defaultProps = {
@@ -33,14 +33,14 @@ export default class TagInput extends ReactComponent {
         autofocus: false,
         autoBlur: true,
         disabled: false,
-        clearAllText: "",
-        clearValueText: "",
-        placeholder: "Auswählen",
-        searchingText: "Suchen...",
-        noResultsText: "Keine Ergebnisse",
-        createOptionText: "Erstelle Tag",
-        backspaceToRemoveMessage: "",
-        name: "form-field-name"
+        clearAllText: '',
+        clearValueText: '',
+        placeholder: 'Auswählen',
+        searchingText: 'Suchen...',
+        noResultsText: 'Keine Ergebnisse',
+        createOptionText: 'Erstelle Tag',
+        backspaceToRemoveMessage: '',
+        name: 'form-field-name'
     };
 
     getInitState() {
@@ -70,7 +70,7 @@ export default class TagInput extends ReactComponent {
             disabled
         } = this.props;
         return (
-            <div className={cx("input-group", styles.select)}>
+            <div className={cx('input-group', styles.select)}>
                 <Select.Creatable
                     name={name}
                     id={id}

@@ -1,10 +1,10 @@
 <ol class="breadcrumb">
-	{{# breadcrumbs }}
+    {{# breadcrumbs }}
         {{#isActive}}
             <li class="breadcrumb-item active">{{ text }}</li>
         {{/isActive}}
         {{^ isActive }}
             <li class="breadcrumb-item"><a href="{{ url }}">{{ text }}</a></li>
         {{/isActive}}
-	{{/ breadcrumbs }}
+    {{/ breadcrumbs }}
 </ol>

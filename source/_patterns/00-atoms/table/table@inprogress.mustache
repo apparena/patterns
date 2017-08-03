@@ -1,25 +1,25 @@
 {{# table }}
-<table class="table {{class}}">
-	{{# thead }}
-	<thead>
-    	<tr {{#class}}class="{{class}}"{{/class}}>
-			{{# th }}
-			<th {{#class}}class="{{class}}"{{/class}}>{{{ text }}}</th>
-			{{/ th }}
-    	</tr>
-  	</thead>
-  	{{/ thead }}
-  	{{# tbody }}
-  	<tbody>
-		{{# tr }}
-		<tr {{#class}}class="{{class}}"{{/class}}>
-			{{# td }} 
-			<td {{#class}}class="{{class}}"{{/class}}>{{{ text }}}</td>
-			{{/ td }} 
-    	</tr>
-		{{/ tr}}
-  	</tbody>
-  	{{/ tbody }}
-</table>
+    <table class="table {{class}}">
+        {{# thead }}
+            <thead>
+            <tr {{#class}}class="{{class}}"{{/class}}>
+                {{# th }}
+                    <th {{#class}}class="{{class}}"{{/class}}>{{{ text }}}</th>
+                {{/ th }}
+            </tr>
+            </thead>
+        {{/ thead }}
+        {{# tbody }}
+            <tbody>
+            {{# tr }}
+                <tr {{#class}}class="{{class}}"{{/class}}>
+                    {{# td }}
+                        <td {{#class}}class="{{class}}"{{/class}}>{{{ text }}}</td>
+                    {{/ td }}
+                </tr>
+            {{/ tr}}
+            </tbody>
+        {{/ tbody }}
+    </table>
 {{/ table }}
  

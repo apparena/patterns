@@ -1,278 +1,332 @@
 {
-	"header": "Adventskalender",
-	"advantages": {
-		"title": "Das können Sie ereichen:",
-		"advantage_01": "Markenbildung",
-		"advantage_01_desc": "Platzierung von Produkten und Dienstleistungen",
-		"advantage_02": "Neukunden",
-		"advantage_02_desc": "Erhöhter Traffic durch regelmäßige Teilnahme.",
-		"advantage_03": "Adressgenerierung",
-		"advantage_03_desc": "Spierlerisch neue Nutzerdaten generieren.",
-		"advantage_04": "Kundenbindung",
-		"advantage_04_desc": "Mitarbeiter-und Kundenbindung durch Produktverlosung."
-	},
-	"features": {
-		"title": "Features der App",
-		"feature1":{
-			"title": "Ideal für Facebook und Webseiten",
-			"description": "Mit einer einzigen App veröffentlichen Sie Ihren Adventskalender gleichzeitig auf Ihrer Website und Facebook-Fanseite. Konvertieren Sie so Ihre Facebook-Fans zu Newsletter-Abonnenten und Besucher Ihrer Website zu Facebook-Fans. Egal ob auf Smartphones, Tablets oder Desktop-Computern – der Adventskalender macht dank des Responsive Designs überall eine gute Figur.",
-			"featureClass": "feature_1",
-			"source": "https://www.app-arena.com/media/wysiwyg/Facebook_und_Website.png",
-			"alt": "Dies ist Feature 1."
-		},
-		"feature2":{
-			"title": "Eine App ganz nach Ihren Vorstellungen",
-			"description": "Gestalten Sie Ihren Adventskalender ganz nach Ihrem Corporate Design: Wählen Sie Farben, Schriftarten und die Form der Türchen mit nur wenigen Klicks. Profis können das offene CSS der App frei bearbeiten und jedes kleinste Detail an die eigenen Bedürfnisse anpassen.",
-			"featureClass": "feature_2",
-			"source": "https://www.app-arena.com/media/wysiwyg/Individuell_corporate.png",
-			"alt": "Dies ist Feature 2."
-		},
-		"feature3":{
-			"title": "Überraschend neue Ideen",
-			"description": "Bieten Sie Ihren Fans Abwechslung. Jedes Türchen kann mit einem Quiz, Gewinnspiel, Foto, Video oder frei editierbaren HTML-Inhalten belegt werden. Um Ihre Teilnehmer herauszufordern, können Sie ein Quiz mit Sofortauswertung einbinden. Fügen Sie beispielsweise ein Bild mit ein und gestalten Sie so ein Bilderrätsel oder Suchspiel. ",
-			"featureClass": "feature_3",
-			"source": "https://www.app-arena.com/media/wysiwyg/apps/adventskranz/icons_abwechslung.png",
-			"alt": "Dies ist Feature 3."
-		},
-		"feature4":{
-			"title": "Eine Aktion für alle Netzwerke",
-			"description": "Der Adventskalender ist für alle wichtigen Sozialen Netzwerke geeignet: Eine einfache Single Sign-on-Anmeldung via Facebook, Google+ oder Twitter ist ebenso integriert wie die klassische Anmeldung mit E-Mail-Adresse. Auch die Einladung von Freunden via WhatsApp, Facebook, Twitter, Google+ und E-Mail-Grußkarte ist möglich.",
-			"featureClass": "feature_4",
-			"source": "https://www.app-arena.com/media/wysiwyg/alle_Netzwerke.png",
-			"alt": "Dies ist Feature 4."
-		},
-		"feature5":{
-			"title": "Nachhaltige Kundenloyalität durch E-Mail-Marketing",
-			"description": "Erhalten Sie neue, rechtssichere E-Mail-Kontakte und binden Sie Ihre Nutzer via Newsletter-Anmeldung mit Double Opt-In an ihr Unternehmen. Alle angemeldeten Teilnehmer können im Excel-Format exportiert werden. Die Erinnerungs-Funktion erinnert Nutzer täglich an die Teilnahme und macht sie auf den Inhalt des Türchens neugierig.",
-			"featureClass": "feature_5",
-			"source": "https://www.app-arena.com/media/wysiwyg/Newsletter.png",
-			"alt": "Dies ist Feature 5."
-		},
-		"feature6":{
-			"title": "Den Überblick behalten dank Statistiken und Teilnehmerexport",
-			"description": "Mit unserem Statistik-Dashboard behalten Sie den Überblick über Ihre Aktion. Auf einen Blick erkennen Sie rechtzeitig, wenn die Aktivität der Nutzer nachlässt und können so rechtzeitig reagieren. Mit dem Teilnehmer-Export greifen Sie direkt und unkompliziert auf die Daten Ihrer Teilnehmer zu. Sie bestimmen selbst, welche Daten abgefragt werden und laden diese bequem im Excel-Format herunter.",
-			"featureClass": "feature_6",
-			"source": "https://www.app-arena.com/media/wysiwyg/icon_statistiken.png",
-			"alt": "Dies ist Feature 6."
-		}
-	},
-	"references": {
-		"title": "Kunden, die uns vertrauen"
-	},
-	"navPrimary": {
-		"navbar": {
-			"helpNavigation": false,
-			"primaryNavigation": {
-				"items": [
-					{
-						"text": "Produkte & Tools",
-						"url": "link.pages-homepage",
-						"isActive": false
-					},
-					{
-						"text": "Marketing & Services",
-						"url": "link.pages-homepage"
-					},
-					{
-						"text": "Technologie",
-						"url": "link.pages-homepage"
-					},
-					{
-						"text": "Blog",
-						"url": "link.pages-homepage"
-					},
-					{
-						"text": "Support",
-						"url": "link.pages-homepage"
-					},
-					{
-						"text": "Kontakt",
-						"url": "link.pages-homepage"
-					}
-				]
-			},
-			"searchForm": {
-				"navbarForm": {
-					"icon": "<i class=\"fa fa-search text-muted\"></i>",
-					"placeholder": "Suchen..."
-				}
-			},
-			"userNavigation": {
-				"links": {
-					"items": [
-						{
-							"text": "Anmelden",
-							"url": "link.pages-login",
-							"isActive": false
-						}
-					]
-				},
-				"dropdown": false
-			}
-		}
-	},
-	"navSecondary": false,
-	"buttons": {
-		"btn_live_demo": {
-			"btnText": "Live Demo anschauen",
-			"btnTitle": "Jetzt live Demo ansehen.",
-			"btnClass": "btn"
-		},
-		"btn_get_demo": {
-			"btnText": "Eigene Demo kostenlos testen",
-			"btnTitle": "Jetzt kostenlose Demo testen.",
-			"btnClass": "btn-success"
-		},
-		"btn_read-more": {
-			"btnText": "Mehr lesen",
-			"btnTitle": "Mit dem Klick auf diesen Button erhalten Sie weitere Informationen.",
-			"btnClass": "btn-primary float-xs-right"
-		},
-		"btn_webinar-request": {
-			"btnText": "Jetzt Termin anfragen",
-			"btnTitle": "Mit dem Klick auf diesen Button können Sie einen Termin für ein kostenloses Webinar vereinbaren.",
-			"btnClass": "btn-primary btn-success float-md-left btn-lg"
-		},
-		"btn_signup_nl": {
-			"btnText": "Abonnieren",
-			"btnTitle": "Mit dem Klick auf diesen Button können Sie einen unserer Newsletter abonnieren.",
-			"btnClass": "btn-primary btn-success float-xs-center"
-		}
-	},
-	"sliders": {
-		"feedbackSlider": {
-			"title": "Das sagen unsere Kunden",
-			"slider": {
-				"id": "feedbackSlider",
-				"settings": {
-					"dots": false,
-					"slidesToScroll": 1,
-					"slidesToShow": 1
-				},
-				"items": [
-					{"content":"<p><i>\"Der Adventskalender hat und und unseren Kunden viel Spaß bereitet. Von 4000 Teilnehmern, konnten wir 30 % zum Produkttest bewegen und unser Produkt so bekannter machen.\"</i></p>"},
-					{"content":"<p><i>\"Mit der Adventskalender-App konnten wir ohne großen Aufwand 900 Kontaktdaten für unseren Newsletter sammeln und die Öffnungsrate um 15% steigern, da wir durch die Applikation bereits ein Interesse entfachen konnten.\"</i></p>"},
-					{"content":"<p><i>\"Der Adventskalender hat und und unseren Kunden viel Spaß bereitet. Von 4000 Teilnehmern, konnten wir 30 % zum Produkttest bewegen und unser Produkt so bekannter machen.\"</i></p>"},
-					{"content":"<p><i>\"Mit der Adventskalender-App konnten wir ohne großen Aufwand 900 Kontaktdaten für unseren Newsletter sammeln und die Öffnungsrate um 15% steigern, da wir durch die Applikation bereits ein Interesse entfachen konnten.\"</i></p>"},
-					{"content":"<p><i>\"Der Adventskalender hat und und unseren Kunden viel Spaß bereitet. Von 4000 Teilnehmern, konnten wir 30 % zum Produkttest bewegen und unser Produkt so bekannter machen.\"</i></p>"},
-					{"content":"<p><i>\"Mit der Adventskalender-App konnten wir ohne großen Aufwand 900 Kontaktdaten für unseren Newsletter sammeln und die Öffnungsrate um 15% steigern, da wir durch die Applikation bereits ein Interesse entfachen konnten.\"</i></p>"}
-				]
-			}
-		},
-		"branchsolutionsSlider": {
-			"slider": {
-				"id": "branchsolutionsSlider",
-				"settings": {
-					"dots": false,
-					"slidesToScroll": 1,
-					"slidesToShow": 3,
-					"centerMode": true,
-					"centerPadding": "60px",
-					"responsive": [
-						{
-							"breakpoint": 768,
-							"settings": {
-								"arrows": false,
-								"centerMode": false,
-								"centerPadding": "40px",
-								"slidesToShow": 3
-							}
-						},
-						{
-							"breakpoint": 480,
-							"settings": {
-								"arrows": false,
-								"centerMode": false,
-								"centerPadding": "40px",
-								"slidesToShow": 1
-							}
-						}
-					]
-				},
-				"items": [
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"},
-					{"content":"<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"}
-				]
-			}
-		},
-		"referenceSlider": {
-			"slider": {
-				"id": "referenceSlider",
-				"settings": {
-					"dots": true,
-					"slidesToScroll": 1,
-					"slidesToShow": 3,
-					"autoplay": true,
-					"autoplaySpeed": 2000
-				},
-				"items": [
-					{"content":"<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_01.jpg'>"},
-					{"content":"<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_02.jpg'>"},
-					{"content":"<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_03.jpg'>"},
-					{"content":"<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_04.jpg'>"},
-					{"content":"<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_05.jpg'>"},
-					{"content":"<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_06.jpg'>"},
-					{"content":"<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_07.jpg'>"},
-					{"content":"<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_08.jpg'>"},
-					{"content":"<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_09.jpg'>"}
-				]
-			}
-		}
-	},
-	"blog": {
-		"article_title": "Der Adventskalender – Leadgenerierung zur Weihnachtszeit!",
-		"article_desc": "Der Sommer ist irgendwie noch nicht wirklich angekommen, daher denkt App-Arena schon an die gemütliche, lauschige Weihnachtszeit. Ist das berechtigt? Ja. Denn eine effiziente Kampagne oder Aktion kann man nicht früh genug planen. Das zeigt unsere Erfahrung mit bisherigen Projekten. Daher bieten wir Interessenten und Kunden einen Frühbucherrabatt von 15 Prozent bis zum 31. August 2016 an. Handeln Sie schnell und profitieren sie von einer einzigartigen App zur Adventszeit – dem Adventskalender von App-Arena.",
-		"article_img": "https://blog.app-arena.com/file/2015/06/Adventskalender.png"
-	},
-	"webinar": {
-		"title": "Gewinne Leads für deine Fanseite",
-		"desc": "Lerne jetzt von unseren Experten!"
-	},
-	"input_01": {
-		"placeholder": "Ihre E-Mail-Adresse"
-	},
-	"input_02": {
-		"placeholder": "Ihre Telefonnummer"
-	},
-	"extended": {
-		"tabs": {
-			"tab_01": {
-				"title": "Optimiert für:"
-			},
-			"tab_02": {
-				"title": "Verfügbare Sprachen"
-			},
-			"tab_03": {
-				"title": "Downloads"
-			},
-			"tab_04": {
-				"title": "Changelog"
-			}
-		}
-	},
-	"branchsolutions": {
-		"title": "Vorhandene Branchenlösungen"
-	},
-	"pricing": {
-		"title": "Preisauskunft"
-	},
-	"newsletter": {
-		"desc": "Über neue Apps & Angebote als 1. erfahren. Jetzt unseren Newsletter abonnieren.",
-		"types":{
-			"type_01": "Alle",
-			"type_02": "Info-NL",
-			"type_03": "Produkt d. Monats NL",
-			"type_04": "Sonder-NL"
-		}
-	}
+  "header": "Adventskalender",
+  "advantages": {
+    "title": "Das können Sie ereichen:",
+    "advantage_01": "Markenbildung",
+    "advantage_01_desc": "Platzierung von Produkten und Dienstleistungen",
+    "advantage_02": "Neukunden",
+    "advantage_02_desc": "Erhöhter Traffic durch regelmäßige Teilnahme.",
+    "advantage_03": "Adressgenerierung",
+    "advantage_03_desc": "Spierlerisch neue Nutzerdaten generieren.",
+    "advantage_04": "Kundenbindung",
+    "advantage_04_desc": "Mitarbeiter-und Kundenbindung durch Produktverlosung."
+  },
+  "features": {
+    "title": "Features der App",
+    "feature1": {
+      "title": "Ideal für Facebook und Webseiten",
+      "description": "Mit einer einzigen App veröffentlichen Sie Ihren Adventskalender gleichzeitig auf Ihrer Website und Facebook-Fanseite. Konvertieren Sie so Ihre Facebook-Fans zu Newsletter-Abonnenten und Besucher Ihrer Website zu Facebook-Fans. Egal ob auf Smartphones, Tablets oder Desktop-Computern – der Adventskalender macht dank des Responsive Designs überall eine gute Figur.",
+      "featureClass": "feature_1",
+      "source": "https://www.app-arena.com/media/wysiwyg/Facebook_und_Website.png",
+      "alt": "Dies ist Feature 1."
+    },
+    "feature2": {
+      "title": "Eine App ganz nach Ihren Vorstellungen",
+      "description": "Gestalten Sie Ihren Adventskalender ganz nach Ihrem Corporate Design: Wählen Sie Farben, Schriftarten und die Form der Türchen mit nur wenigen Klicks. Profis können das offene CSS der App frei bearbeiten und jedes kleinste Detail an die eigenen Bedürfnisse anpassen.",
+      "featureClass": "feature_2",
+      "source": "https://www.app-arena.com/media/wysiwyg/Individuell_corporate.png",
+      "alt": "Dies ist Feature 2."
+    },
+    "feature3": {
+      "title": "Überraschend neue Ideen",
+      "description": "Bieten Sie Ihren Fans Abwechslung. Jedes Türchen kann mit einem Quiz, Gewinnspiel, Foto, Video oder frei editierbaren HTML-Inhalten belegt werden. Um Ihre Teilnehmer herauszufordern, können Sie ein Quiz mit Sofortauswertung einbinden. Fügen Sie beispielsweise ein Bild mit ein und gestalten Sie so ein Bilderrätsel oder Suchspiel. ",
+      "featureClass": "feature_3",
+      "source": "https://www.app-arena.com/media/wysiwyg/apps/adventskranz/icons_abwechslung.png",
+      "alt": "Dies ist Feature 3."
+    },
+    "feature4": {
+      "title": "Eine Aktion für alle Netzwerke",
+      "description": "Der Adventskalender ist für alle wichtigen Sozialen Netzwerke geeignet: Eine einfache Single Sign-on-Anmeldung via Facebook, Google+ oder Twitter ist ebenso integriert wie die klassische Anmeldung mit E-Mail-Adresse. Auch die Einladung von Freunden via WhatsApp, Facebook, Twitter, Google+ und E-Mail-Grußkarte ist möglich.",
+      "featureClass": "feature_4",
+      "source": "https://www.app-arena.com/media/wysiwyg/alle_Netzwerke.png",
+      "alt": "Dies ist Feature 4."
+    },
+    "feature5": {
+      "title": "Nachhaltige Kundenloyalität durch E-Mail-Marketing",
+      "description": "Erhalten Sie neue, rechtssichere E-Mail-Kontakte und binden Sie Ihre Nutzer via Newsletter-Anmeldung mit Double Opt-In an ihr Unternehmen. Alle angemeldeten Teilnehmer können im Excel-Format exportiert werden. Die Erinnerungs-Funktion erinnert Nutzer täglich an die Teilnahme und macht sie auf den Inhalt des Türchens neugierig.",
+      "featureClass": "feature_5",
+      "source": "https://www.app-arena.com/media/wysiwyg/Newsletter.png",
+      "alt": "Dies ist Feature 5."
+    },
+    "feature6": {
+      "title": "Den Überblick behalten dank Statistiken und Teilnehmerexport",
+      "description": "Mit unserem Statistik-Dashboard behalten Sie den Überblick über Ihre Aktion. Auf einen Blick erkennen Sie rechtzeitig, wenn die Aktivität der Nutzer nachlässt und können so rechtzeitig reagieren. Mit dem Teilnehmer-Export greifen Sie direkt und unkompliziert auf die Daten Ihrer Teilnehmer zu. Sie bestimmen selbst, welche Daten abgefragt werden und laden diese bequem im Excel-Format herunter.",
+      "featureClass": "feature_6",
+      "source": "https://www.app-arena.com/media/wysiwyg/icon_statistiken.png",
+      "alt": "Dies ist Feature 6."
+    }
+  },
+  "references": {
+    "title": "Kunden, die uns vertrauen"
+  },
+  "navPrimary": {
+    "navbar": {
+      "helpNavigation": false,
+      "primaryNavigation": {
+        "items": [
+          {
+            "text": "Produkte & Tools",
+            "url": "link.pages-homepage",
+            "isActive": false
+          },
+          {
+            "text": "Marketing & Services",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Technologie",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Blog",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Support",
+            "url": "link.pages-homepage"
+          },
+          {
+            "text": "Kontakt",
+            "url": "link.pages-homepage"
+          }
+        ]
+      },
+      "searchForm": {
+        "navbarForm": {
+          "icon": "<i class=\"fa fa-search text-muted\"></i>",
+          "placeholder": "Suchen..."
+        }
+      },
+      "userNavigation": {
+        "links": {
+          "items": [
+            {
+              "text": "Anmelden",
+              "url": "link.pages-login",
+              "isActive": false
+            }
+          ]
+        },
+        "dropdown": false
+      }
+    }
+  },
+  "navSecondary": false,
+  "buttons": {
+    "btn_live_demo": {
+      "btnText": "Live Demo anschauen",
+      "btnTitle": "Jetzt live Demo ansehen.",
+      "btnClass": "btn"
+    },
+    "btn_get_demo": {
+      "btnText": "Eigene Demo kostenlos testen",
+      "btnTitle": "Jetzt kostenlose Demo testen.",
+      "btnClass": "btn-success"
+    },
+    "btn_read-more": {
+      "btnText": "Mehr lesen",
+      "btnTitle": "Mit dem Klick auf diesen Button erhalten Sie weitere Informationen.",
+      "btnClass": "btn-primary float-xs-right"
+    },
+    "btn_webinar-request": {
+      "btnText": "Jetzt Termin anfragen",
+      "btnTitle": "Mit dem Klick auf diesen Button können Sie einen Termin für ein kostenloses Webinar vereinbaren.",
+      "btnClass": "btn-primary btn-success float-md-left btn-lg"
+    },
+    "btn_signup_nl": {
+      "btnText": "Abonnieren",
+      "btnTitle": "Mit dem Klick auf diesen Button können Sie einen unserer Newsletter abonnieren.",
+      "btnClass": "btn-primary btn-success float-xs-center"
+    }
+  },
+  "sliders": {
+    "feedbackSlider": {
+      "title": "Das sagen unsere Kunden",
+      "slider": {
+        "id": "feedbackSlider",
+        "settings": {
+          "dots": false,
+          "slidesToScroll": 1,
+          "slidesToShow": 1
+        },
+        "items": [
+          {
+            "content": "<p><i>\"Der Adventskalender hat und und unseren Kunden viel Spaß bereitet. Von 4000 Teilnehmern, konnten wir 30 % zum Produkttest bewegen und unser Produkt so bekannter machen.\"</i></p>"
+          },
+          {
+            "content": "<p><i>\"Mit der Adventskalender-App konnten wir ohne großen Aufwand 900 Kontaktdaten für unseren Newsletter sammeln und die Öffnungsrate um 15% steigern, da wir durch die Applikation bereits ein Interesse entfachen konnten.\"</i></p>"
+          },
+          {
+            "content": "<p><i>\"Der Adventskalender hat und und unseren Kunden viel Spaß bereitet. Von 4000 Teilnehmern, konnten wir 30 % zum Produkttest bewegen und unser Produkt so bekannter machen.\"</i></p>"
+          },
+          {
+            "content": "<p><i>\"Mit der Adventskalender-App konnten wir ohne großen Aufwand 900 Kontaktdaten für unseren Newsletter sammeln und die Öffnungsrate um 15% steigern, da wir durch die Applikation bereits ein Interesse entfachen konnten.\"</i></p>"
+          },
+          {
+            "content": "<p><i>\"Der Adventskalender hat und und unseren Kunden viel Spaß bereitet. Von 4000 Teilnehmern, konnten wir 30 % zum Produkttest bewegen und unser Produkt so bekannter machen.\"</i></p>"
+          },
+          {
+            "content": "<p><i>\"Mit der Adventskalender-App konnten wir ohne großen Aufwand 900 Kontaktdaten für unseren Newsletter sammeln und die Öffnungsrate um 15% steigern, da wir durch die Applikation bereits ein Interesse entfachen konnten.\"</i></p>"
+          }
+        ]
+      }
+    },
+    "branchsolutionsSlider": {
+      "slider": {
+        "id": "branchsolutionsSlider",
+        "settings": {
+          "dots": false,
+          "slidesToScroll": 1,
+          "slidesToShow": 3,
+          "centerMode": true,
+          "centerPadding": "60px",
+          "responsive": [
+            {
+              "breakpoint": 768,
+              "settings": {
+                "arrows": false,
+                "centerMode": false,
+                "centerPadding": "40px",
+                "slidesToShow": 3
+              }
+            },
+            {
+              "breakpoint": 480,
+              "settings": {
+                "arrows": false,
+                "centerMode": false,
+                "centerPadding": "40px",
+                "slidesToShow": 1
+              }
+            }
+          ]
+        },
+        "items": [
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc4ReRPhiMhOGjNzqlZ43JcjY_hLHSag1vtMB9ZHBj-7k3mFi1'>"
+          }
+        ]
+      }
+    },
+    "referenceSlider": {
+      "slider": {
+        "id": "referenceSlider",
+        "settings": {
+          "dots": true,
+          "slidesToScroll": 1,
+          "slidesToShow": 3,
+          "autoplay": true,
+          "autoplaySpeed": 2000
+        },
+        "items": [
+          {
+            "content": "<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_01.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_02.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_03.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_04.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_05.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_06.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_07.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_08.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='https://aa-ads.s3.amazonaws.com/temp/pds/references/kunde_09.jpg'>"
+          }
+        ]
+      }
+    }
+  },
+  "blog": {
+    "article_title": "Der Adventskalender – Leadgenerierung zur Weihnachtszeit!",
+    "article_desc": "Der Sommer ist irgendwie noch nicht wirklich angekommen, daher denkt App-Arena schon an die gemütliche, lauschige Weihnachtszeit. Ist das berechtigt? Ja. Denn eine effiziente Kampagne oder Aktion kann man nicht früh genug planen. Das zeigt unsere Erfahrung mit bisherigen Projekten. Daher bieten wir Interessenten und Kunden einen Frühbucherrabatt von 15 Prozent bis zum 31. August 2016 an. Handeln Sie schnell und profitieren sie von einer einzigartigen App zur Adventszeit – dem Adventskalender von App-Arena.",
+    "article_img": "https://blog.app-arena.com/file/2015/06/Adventskalender.png"
+  },
+  "webinar": {
+    "title": "Gewinne Leads für deine Fanseite",
+    "desc": "Lerne jetzt von unseren Experten!"
+  },
+  "input_01": {
+    "placeholder": "Ihre E-Mail-Adresse"
+  },
+  "input_02": {
+    "placeholder": "Ihre Telefonnummer"
+  },
+  "extended": {
+    "tabs": {
+      "tab_01": {
+        "title": "Optimiert für:"
+      },
+      "tab_02": {
+        "title": "Verfügbare Sprachen"
+      },
+      "tab_03": {
+        "title": "Downloads"
+      },
+      "tab_04": {
+        "title": "Changelog"
+      }
+    }
+  },
+  "branchsolutions": {
+    "title": "Vorhandene Branchenlösungen"
+  },
+  "pricing": {
+    "title": "Preisauskunft"
+  },
+  "newsletter": {
+    "desc": "Über neue Apps & Angebote als 1. erfahren. Jetzt unseren Newsletter abonnieren.",
+    "types": {
+      "type_01": "Alle",
+      "type_02": "Info-NL",
+      "type_03": "Produkt d. Monats NL",
+      "type_04": "Sonder-NL"
+    }
+  }
 }

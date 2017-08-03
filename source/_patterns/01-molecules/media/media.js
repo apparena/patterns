@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
 
 export default class Media extends ReactComponent {
     static propTypes = {
@@ -13,12 +13,12 @@ export default class Media extends ReactComponent {
         mediaBodyClassNames: PropTypes.string,
         mediaBodyHeaderClassNames: PropTypes.string,
         mediaBodyHeader: PropTypes.string,
-        mediaBody: PropTypes.string,
+        mediaBody: PropTypes.string
     };
 
     static defaultProps = {
         mediaPosition: 'left',
-        mediaHref: '#',
+        mediaHref: '#'
     };
 
     renderMedia() {
@@ -43,8 +43,8 @@ export default class Media extends ReactComponent {
     render() {
         return (
             <div className={cx('media', this.props.classNames)}>
-                {(this.props.mediaPosition === 'left')?this.renderMedia():this.renderMediaBody()}
-                {(this.props.mediaPosition === 'right')?this.renderMedia():this.renderMediaBody()}
+                {(this.props.mediaPosition === 'left') ? this.renderMedia() : this.renderMediaBody()}
+                {(this.props.mediaPosition === 'right') ? this.renderMedia() : this.renderMediaBody()}
             </div>
         );
     }

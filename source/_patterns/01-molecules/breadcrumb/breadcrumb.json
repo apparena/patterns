@@ -1,7 +1,17 @@
 {
   "breadcrumbs": [
-    {"url":"/", "text": "Level 1"},
-    {"url":"/", "text": "Level 2"},
-    {"url":"/", "text": "Level 3", "isActive": true}
+    {
+      "url": "/",
+      "text": "Level 1"
+    },
+    {
+      "url": "/",
+      "text": "Level 2"
+    },
+    {
+      "url": "/",
+      "text": "Level 3",
+      "isActive": true
+    }
   ]
 }

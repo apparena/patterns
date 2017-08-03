@@ -1,24 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
-import cx from "classnames";
-import styles from "./custom-package-creator.scss";
-import priceTableStyles from "../price-table.scss";
-import Col from "../../../00-atoms/grid/col/index";
-import Row from "../../../00-atoms/grid/row/index";
-import SelectMenu from "../../../00-atoms/forms/select-menu/index";
-import Icon from "../../../00-atoms/icons";
-import Button from "../../../00-atoms/button/button";
-import AnimatedNumber from "react-animated-number";
-import Slider from "../../../00-atoms/slider/slider";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
+import cx from 'classnames';
+import styles from './custom-package-creator.scss';
+import priceTableStyles from '../price-table.scss';
+import Col from '../../../00-atoms/grid/col/index';
+import Row from '../../../00-atoms/grid/row/index';
+import SelectMenu from '../../../00-atoms/forms/select-menu/index';
+import Icon from '../../../00-atoms/icons';
+import Button from '../../../00-atoms/button/button';
+import AnimatedNumber from 'react-animated-number';
+import Slider from '../../../00-atoms/slider/slider';
 
 export default class CustomPackageCreator extends ReactComponent {
     static propTypes = {
         data: PropTypes.object.isRequired,
         onClick: PropTypes.oneOfType([
             PropTypes.string,
-            PropTypes.func,
-        ]).isRequired,
+            PropTypes.func
+        ]).isRequired
     };
 
     getInitState() {
@@ -32,20 +32,20 @@ export default class CustomPackageCreator extends ReactComponent {
     generateStartState() {
         const {data} = this.props;
         const state = {
-            price: data.basePrice,
+            price: data.basePrice
         };
         data.plans.custom.articles.forEach((articles) => {
             if (Array.isArray(articles)) {
                 articles.forEach((article) => {
                     state[article.key] = {value: article.value, price: article.price};
 
-                    switch(article.key) {
-                        case "validity":
-                        case "participants":
+                    switch (article.key) {
+                        case 'validity':
+                        case 'participants':
                             if (state[article.key].price === undefined)
                                 state[article.key].price = article.options[state[article.key].value].price;
                             break;
-                        case "languages":
+                        case 'languages':
                             if (state[article.key].price === undefined) {
                                 if (state[article.key].value.length === 1) {
                                     state[article.key].price = 0;
@@ -69,7 +69,7 @@ export default class CustomPackageCreator extends ReactComponent {
                     if (state[article.key].value !== false && state[article.key].price) {
                         state.price += state[article.key].price;
                     }
-                })
+                });
             }
         });
         this.purchaseData = {
@@ -80,14 +80,14 @@ export default class CustomPackageCreator extends ReactComponent {
         };
         return {
             ...state
-        }
+        };
     }
 
     /**
      * Prepare & execute purchase
      */
     onPurchase() {
-        this.props.onClick(this.purchaseData)
+        this.props.onClick(this.purchaseData);
     }
 
     /**
@@ -100,7 +100,7 @@ export default class CustomPackageCreator extends ReactComponent {
         return (
             <div className={styles.languageSelectorContainer} key={`article-${i}`}>
                 <div className={styles.headline}>
-                    {this.t("customPackage.languagesSelected", {count: this.state[article.key].value.length})}
+                    {this.t('customPackage.languagesSelected', {count: this.state[article.key].value.length})}
                 </div>
                 {this.state[article.key].value.map((e, i) => {
                     const languageData = this.props.data.languages.filter((language, i) => {
@@ -119,7 +119,7 @@ export default class CustomPackageCreator extends ReactComponent {
                                 className={styles.removeLanguageButton}
                                 onClick={() => {
                                     const newState = this.state[article.key].value.filter((lang) => {
-                                        return (lang.language !== e.language)
+                                        return (lang.language !== e.language);
                                     });
                                     const newPrice = newState.length === 1 ? 0 : newState.reduce((a, b) => {
                                         if (a.price) {
@@ -154,7 +154,7 @@ export default class CustomPackageCreator extends ReactComponent {
                      }}
                 >
                     <Icon name="plus" className={styles.icon}/>
-                    {this.t("customPackage.addLanguagePrompt")}
+                    {this.t('customPackage.addLanguagePrompt')}
                 </div>
                 }
                 {this.state.showLanguageSelector &&
@@ -169,11 +169,13 @@ export default class CustomPackageCreator extends ReactComponent {
                             <div key={i} className={styles.addLanguageButton}
                                  onClick={() => {
                                      this.setState({
-                                         [article.key]: {value: [...this.state[article.key].value, {
-                                             language: e.key,
-                                             price: e.price,
-                                             name: e.value,
-                                         }], price: this.state[article.key].price + e.price},
+                                         [article.key]: {
+                                             value: [...this.state[article.key].value, {
+                                                 language: e.key,
+                                                 price: e.price,
+                                                 name: e.value
+                                             }], price: this.state[article.key].price + e.price
+                                         },
                                          price: this.state.price + e.price,
                                          showLanguageSelector: !this.state.showLanguageSelector
                                      });
@@ -203,9 +205,9 @@ export default class CustomPackageCreator extends ReactComponent {
 
     renderArticle(article, i) {
         this.purchaseData.articles = this.purchaseData.articles.filter((purchase) => {
-            return (purchase.key !== article.key)
+            return (purchase.key !== article.key);
         });
-        const {includedIf, options, ...rest} =  article;
+        const {includedIf, options, ...rest} = article;
         if (article.key && ((!article.includedIf && this.state[article.key] !== false) || (includedIf && this.state.service >= includedIf.value))) {
             this.purchaseData.articles.push({
                 ...rest,
@@ -216,13 +218,13 @@ export default class CustomPackageCreator extends ReactComponent {
         this.purchaseData.price = this.state.price;
 
         switch (article.key) {
-            case "validity":
-            case "participants":
+            case 'validity':
+            case 'participants':
                 const options = Object.keys(article.options).map((option, i) => {
                     return {
                         label: article.options[option].text,
                         value: parseInt(option, 10)
-                    }
+                    };
                 });
 
                 return (
@@ -238,16 +240,16 @@ export default class CustomPackageCreator extends ReactComponent {
                         />
                     </div>
                 );
-            case "languages":
+            case 'languages':
                 return this.renderLanguageSelector(article, i);
-            case "service":
+            case 'service':
                 return (
                     <div key={`article-${i}`}>
                         <h5 className={styles.serviceHours}>
                                 <span className={styles.serviceHourNumber}>
                                     {this.state[article.key].value}
                                 </span>
-                            {this.t("customPackage.serviceHours")}
+                            {this.t('customPackage.serviceHours')}
                         </h5>
                         <Slider step={1}
                                 max={30}
@@ -260,24 +262,24 @@ export default class CustomPackageCreator extends ReactComponent {
                                         });
                                     }
                                 }}
-                                style={{width: "100%"}}
+                                style={{width: '100%'}}
                         />
                     </div>
                 );
-            case "intro_webinar":
-            case "support_email":
-            case "support_phone":
-            case "service_agent_approval":
-            case "service_agent_dedicated":
-            case "css_implementation":
-            case "design_creation":
-            case "full_setup":
-            case "ad_management":
-            case "analytics_monitoring":
+            case 'intro_webinar':
+            case 'support_email':
+            case 'support_phone':
+            case 'service_agent_approval':
+            case 'service_agent_dedicated':
+            case 'css_implementation':
+            case 'design_creation':
+            case 'full_setup':
+            case 'ad_management':
+            case 'analytics_monitoring':
                 const checked = (this.state.service.value >= article.includedIf.value);
                 if (checked) {
                     this.purchaseData.articles = this.purchaseData.articles.filter((purchase) => {
-                        return (purchase.text !== this.t(`priceTable.articles.${article.key}`))
+                        return (purchase.text !== this.t(`priceTable.articles.${article.key}`));
                     });
 
                     this.purchaseData.articles.push({
@@ -289,16 +291,16 @@ export default class CustomPackageCreator extends ReactComponent {
                 }
                 return (
                     <div key={`article-${i}`}>
-                        <Icon fixedWidth name={checked ? "check" : "close"}
+                        <Icon fixedWidth name={checked ? 'check' : 'close'}
                               className={cx(styles.checkboxIcon, checked && styles.cbChecked)}
                         />
                         {this.t(`priceTable.articles.${article.key}`)}
                     </div>
                 );
-            case "css_editable":
-            case "campaign_page":
-            case "subdomain":
-            case "custom_domain":
+            case 'css_editable':
+            case 'campaign_page':
+            case 'subdomain':
+            case 'custom_domain':
                 return (
                     <div
                         key={`article-${i}`}
@@ -306,7 +308,7 @@ export default class CustomPackageCreator extends ReactComponent {
                         className={cx(styles.checkboxLine)}
                     >
                         <Icon
-                            fixedWidth name={this.state[article.key].value ? "check" : "close"}
+                            fixedWidth name={this.state[article.key].value ? 'check' : 'close'}
                             className={cx(styles.checkboxIcon, this.state[article.key].value && styles.cbChecked)}
                         />
                         {this.t(`priceTable.articles.${article.key}`)}
@@ -320,16 +322,16 @@ export default class CustomPackageCreator extends ReactComponent {
 
     renderButton() {
         const {onClick, templateId} = this.props;
-        if (typeof onClick === "function") {
+        if (typeof onClick === 'function') {
             return (
                 <Button className={styles.purchase_button}
                         onClick={::this.onPurchase}
                         type="primary"
                         rounded
                 >
-                    {this.t("priceTableElement.button.caption")}
+                    {this.t('priceTableElement.button.caption')}
                 </Button>
-            )
+            );
         }
         const utf8_to_b64 = (str) => {
             return window.btoa(encodeURIComponent(str));
@@ -340,9 +342,9 @@ export default class CustomPackageCreator extends ReactComponent {
                     rounded
                     href={`${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`}
             >
-                {this.t("priceTableElement.button.caption")}
+                {this.t('priceTableElement.button.caption')}
             </Button>
-        )
+        );
     }
 
     renderCustomCols(column, i) {
@@ -353,7 +355,7 @@ export default class CustomPackageCreator extends ReactComponent {
                 </p>
                 {column.map(::this.renderArticle)}
             </Col>
-        )
+        );
     }
 
     render() {
@@ -392,6 +394,6 @@ export default class CustomPackageCreator extends ReactComponent {
                     </div>
                 </Col>
             </Row>
-        )
+        );
     }
 }

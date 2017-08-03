@@ -1,5 +1,5 @@
-import React from "react";
-import {Col, Row} from "apparena-patterns-react";
+import React from 'react';
+import {Col, Row} from 'apparena-patterns-react';
 
 export default function ColExample() {
     return (

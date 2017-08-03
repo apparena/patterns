@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import cx from "classnames";
-import styles from "./input-group.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import cx from 'classnames';
+import styles from './input-group.scss';
 
 function InputGroup({className, children, addon, id, ...props}) {
-    props.className = cx(styles["input-group"], className);
+    props.className = cx(styles['input-group'], className);
 
     return (
         <div {...props} >
-            <span className={styles["input-group-addon"]} id={id}>{addon}</span>
+            <span className={styles['input-group-addon']} id={id}>{addon}</span>
             {children}
         </div>
     );

@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styles from "./forms.scss";
-import cx from "classnames";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './forms.scss';
+import cx from 'classnames';
 
 function Input({className, style, refCallback, defaultValue, isDisabled, ...props}) {
     if (refCallback) {
@@ -12,13 +12,13 @@ function Input({className, style, refCallback, defaultValue, isDisabled, ...prop
     }
     props.value = defaultValue; // eslint-disable-line
     props.className = cx(
-        styles["form-control"],
-        styles["input-ie-fix"],
+        styles['form-control'],
+        styles['input-ie-fix'],
         style && styles[`form-${style}`],
         className
     );
 
-    return <input {...props} />
+    return <input {...props} />;
 }
 
 Input.propTypes = {
@@ -34,13 +34,13 @@ Input.propTypes = {
     tabIndex: PropTypes.number,
     isDisabled: PropTypes.bool,
     autoFocus: PropTypes.bool,
-    style: PropTypes.oneOf(["dotted", "inline"])
+    style: PropTypes.oneOf(['dotted', 'inline'])
 };
 
 Input.defaultProps = {
-    defaultValue: "",
+    defaultValue: '',
     tabIndex: 0,
-    type: "text",
+    type: 'text',
     autoFocus: false,
     isDisabled: false
 };

@@ -1,35 +1,35 @@
 {{> organisms-header }}
 <main role="main">
-<div class="t-focused-task pt-1">
-<div class="container">
-<div class="row">
-<div class="{{focusedTaskSize}}">
-    <div class="card">
-        {{# header }}
-            <div class="card-header">
-                {{{ header }}}
-            </div>
-        {{/header}}
+    <div class="t-focused-task pt-1">
+        <div class="container">
+            <div class="row">
+                <div class="{{focusedTaskSize}}">
+                    <div class="card">
+                        {{# header }}
+                            <div class="card-header">
+                                {{{ header }}}
+                            </div>
+                        {{/header}}
 
-        {{# content }}
-            {{#progressTracker}}
-                {{> molecules-progress-tracker }}
-            {{/progressTracker}}
-            <div class="card-block">
-                {{{ content }}}
-            </div>
-        {{/ content }}
+                        {{# content }}
+                            {{#progressTracker}}
+                                {{> molecules-progress-tracker }}
+                            {{/progressTracker}}
+                            <div class="card-block">
+                                {{{ content }}}
+                            </div>
+                        {{/ content }}
 
-        {{# footer }}
-            <div class="card-footer text-xs-right">
-                {{{ footer }}}
+                        {{# footer }}
+                            <div class="card-footer text-xs-right">
+                                {{{ footer }}}
+                            </div>
+                        {{/footer}}
+                    </div>
+                </div>
             </div>
-        {{/footer}}
+        </div>
     </div>
-</div>
-</div>
-</div>
-</div>
     <div class="push"></div>
 </main>
 {{> organisms-footer }}
