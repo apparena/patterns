@@ -28,6 +28,22 @@ test('renders loading state', (t) => {
     t.is(wrapper.find('Spinner').length === 1, true);
 });
 
+test('renders success state', (t) => {
+    const wrapper = shallow(
+        <Button type="primary" state="success"><p>Hello World</p></Button>
+    );
+    t.is(wrapper.is('button'), true);
+    t.is(wrapper.find('Icon').length === 1, true);
+});
+
+test('renders error state', (t) => {
+    const wrapper = shallow(
+        <Button type="primary" state="error"><p>Hello World</p></Button>
+    );
+    t.is(wrapper.is('button'), true);
+    t.is(wrapper.find('Icon').length === 1, true);
+});
+
 test('reacts to onClick', (t) => {
     const onClick = spy();
     const wrapper = mount(
