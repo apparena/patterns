@@ -33,10 +33,29 @@
 
         <div class="o-footer-nav-bottom text-center text-muted row">
             {{#footer.navigation.secondary}}
-                <div class="o-footer-nav-secondary col-12">
+                <div class="o-footer-nav-secondary col-sm-6 col-md-8 text-center text-sm-left">
                     {{> 02-organisms/navigation/nav-footer }}
                 </div>
             {{/footer.navigation.secondary}}
+
+            {{#footer.languages}}
+                <div class="o-footer-languages col-sm-6 col-md-4 text-center text-sm-right">
+                    <ul class="list-inline">
+                        {{#items}}
+                            <li class="list-inline-item">
+                                {{^active}}
+                                    <a href="{{url}}">
+                                        {{#image}}<img src="{{image.url}}" alt="{{caption}}">{{/image}} {{caption}}
+                                    </a>
+                                {{/active}}
+                                {{#active}}
+                                    {{#image}}<img src="{{image.url}}" alt="{{caption}}">{{/image}} {{caption}}
+                                {{/active}}
+                            </li>
+                        {{/items}}
+                    </ul>
+                </div>
+            {{/footer.languages}}
 
             {{#footer.copyright}}
                 <div class="o-footer-contact col-12">
