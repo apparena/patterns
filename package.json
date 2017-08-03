@@ -194,7 +194,7 @@
   },
   "ava": {
     "files": [
-      "source/**/*.spec.js"
+      "source/**/button.spec.js"
     ],
     "source": [
       "source/**/*.{js,jsx}",
