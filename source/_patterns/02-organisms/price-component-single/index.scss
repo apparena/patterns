@@ -33,9 +33,6 @@
 
   .price {
     font-size: 26px;
-    padding-top: 25px;
-    padding-bottom: 40px;
-    padding-left: 25px;
   }
 
   .tax-hint {
@@ -44,13 +41,22 @@
     padding-bottom: 2rem;
   }
 
-  button {
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 30%;
-    margin: auto;
-    right: 0;
-    border-radius: 9999rem;
+  .left-align {
+    text-align: left;
   }
+
+  .header {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}
+
+.purchase-button {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 30%;
+  margin: auto;
+  right: 0;
+  border-radius: 9999rem;
 }

@@ -3,33 +3,32 @@ import {ReactComponent} from "apparena-patterns-react";
 import Description from "include/description";
 import ExampleContainer from "include/example-container";
 import PropsContainer from "include/props-container";
-import Snippet from "include/code-snippet";
 import TestResult from "include/test-result";
-{{#if exampleFileName}}import Example from "./docs/{{ exampleFileName }}";{{/if}}
-{{#if propsFileName}}import PropsTable from "./docs/{{ propsFileName }}";{{/if}}
+{{#if exampleFileName}}
+import Example from "./docs/{{ exampleFileName }}";
+import ExampleSrc from "!raw-loader!./docs/{{ exampleFileName }}";
+{{/if}}
+{{#if propsFileName}}
+import InfoJson from "./docs/info.json";
+{{/if}}
+{{#if mdFileName}}
+import DescriptionContent from "!raw-loader!./docs/{{ mdFileName }}";
+{{/if}}
 
 export default class {{ componentClassName }} extends ReactComponent {
     render() {
-        {{{ description }}}
-        {{{ codeSnippet }}}
-
         return (
             <div>
-                {{#if description}}
-                <Description description={description} />
-                {{/if}}
-                {{#if codeSnippet}}
-                <Snippet code={codeSnippet} />
+                {{#if mdFileName}}
+                <Description description={DescriptionContent} />
                 {{/if}}
                 {{#if exampleFileName}}
-                <ExampleContainer>
+                <ExampleContainer code={ExampleSrc}>
                     <Example/>
                 </ExampleContainer>
                 {{/if}}
                 {{#if propsFileName}}
-                <PropsContainer>
-                    <PropsTable/>
-                </PropsContainer>
+                <PropsContainer infos={InfoJson}/>
                 {{/if}}
             </div>
         );

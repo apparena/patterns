@@ -1,10 +1,18 @@
-import React from "react";
-import {Button} from "apparena-patterns-react";
+import React from 'react';
+import {Button} from 'apparena-patterns-react';
 
 export default function ButtonExample() {
     return (
-        <Button type="primary">
-            Primary
-        </Button>
+        <div>
+            <Button type="primary">
+                Primary
+            </Button>
+            <Button type="secondary">
+                Secondary
+            </Button>
+            <Button type="link">
+                Link
+            </Button>
+        </div>
     );
 }

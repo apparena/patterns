@@ -9,17 +9,19 @@ import Slider from "../../00-atoms/slider/slider";
 
 export default class PriceComponentSingle extends ReactComponent {
     static propTypes = {
-        templateId: PropTypes.string.isRequired,
+        templateId: PropTypes.string,
+        productId: PropTypes.string,
         onClick: PropTypes.oneOfType([
             PropTypes.string,
             PropTypes.func,
         ]).isRequired,
         hoursPrompt: PropTypes.string,
+        header: PropTypes.string,
         articles: PropTypes.array
     };
 
     getInitState() {
-        this.onPurchase = ::this.onPurchase;
+        this.handlePurchase = ::this.onPurchase;
         const {title, articles} = this.props;
         this.purchaseData = {
             title,
@@ -39,46 +41,127 @@ export default class PriceComponentSingle extends ReactComponent {
         this.props.onClick(this.purchaseData)
     }
 
-    render() {
+    renderButton() {
+        const {onClick, templateId, productId} = this.props;
+        if (typeof onClick === "function") {
+            return (
+                <Button type="primary" onClick={this.handlePurchase} className={styles.purchaseButton}>
+                    {this.t("priceSingle.purchase")}
+                </Button>
+            );
+        }
+
+        let href="";
+
+        const utf8ToB64 = (str) => {
+            return window.btoa(encodeURIComponent(str));
+        };
+
+        if (templateId) {
+            href=`${onClick}?templateId=${templateId}&orderData=${utf8ToB64(JSON.stringify(this.purchaseData))}`;
+        } else if (productId) {
+            href=`${onClick}?productId=${productId}&orderData=${utf8ToB64(JSON.stringify(this.purchaseData))}`;
+        }
+
+        return (
+            <Button type="primary" href={href} className={styles.purchaseButton}>
+                {this.t("priceSingle.purchase")}
+            </Button>
+        );
+    }
+
+    renderNoPriceButton() {
+        let href = "";
+        const {onClick, templateId, productId} = this.props;
+
+        if (templateId) {
+            href=`${onClick}?templateId=${templateId}`;
+        } else if (productId) {
+            href=`${onClick}?productId=${productId}`;
+        }
+
+        return (
+            <Button type="primary" href={href} className={styles.purchaseButton}>
+                {this.t("priceSingle.purchase")}
+            </Button>
+        );
+    }
+
+    renderScreen() {
         return (
             <div>
-                <Row>
-                    <Col xs="4" xsOffset={4}>
-                        <div className={styles.priceSelectorContainer}>
-                            <div className={styles.price}>
-                                <sup>€</sup>{this.state.hours * this.props.articles[0].price}<sup>*</sup>
-                            </div>
-                            <p className={styles.priceServicePrompt}>
-                                {this.props.hoursPrompt}
-                            </p>
-                            <p className={styles.serviceHours}>
+                <Row className={styles.header}>
+                    <Col xs="4" className={styles.price}>
+                        <sup>€</sup>
+                        <span>{this.state.hours * this.props.articles[0].price}</span>
+                        <sup>*</sup>
+                    </Col>
+                    <Col xs="6" className={styles.leftAlign}>
+                        <h3>{this.props.header}</h3>
+                    </Col>
+                </Row>
+                <p className={styles.priceServicePrompt}>
+                    {this.props.hoursPrompt}
+                </p>
+                <p className={styles.serviceHours}>
                                 <span className={styles.serviceHourNumber}>
                                     {this.state.hours}
                                 </span>
-                                {this.t("priceSingle.hours", {count: this.state.hours})}
-                            </p>
-                            <Slider
-                                value={this.state.hours}
-                                min={1}
-                                max={30}
-                                step={1}
-                                onChange={(e, value) => {
-                                    this.setState({
-                                        hours: value,
-                                    });
+                    {this.t("priceSingle.hours", {count: this.state.hours})}
+                </p>
+                <Slider
+                    value={this.state.hours}
+                    min={1}
+                    max={30}
+                    step={1}
+                    onChange={(e, value) => {
+                        this.setState({
+                            hours: value,
+                        });
 
-                                    this.purchaseData.price = this.props.articles[0].price * value;
-                                    this.purchaseData.articles[0].value = value;
-                                }}
-                                style={{width: "80%", margin: "auto"}}
-                            />
-                            <p className={styles.taxHint}>
-                                *{this.t("priceSingle.taxHint")}
-                            </p>
-                            <Button type="primary" onClick={this.onPurchase}>
-                                {this.t("priceSingle.purchase")}
-                            </Button>
-                        </div>
+                        this.purchaseData.price = this.props.articles[0].price * value;
+                        this.purchaseData.articles[0].value = value;
+                        this.purchaseData.articles[0].text = `${this.purchaseData.articles[0].title} - ${value} ${this.t("priceSingle.hours", {count: value})}`;
+                        this.forceUpdate();
+                    }}
+                    style={{width: "80%", margin: "auto"}}
+                />
+                <p className={styles.taxHint}>
+                    *{this.t("priceSingle.taxHint")}
+                </p>
+            </div>
+        );
+    }
+
+    render() {
+        if (this.props.articles[0].price) {
+            return (
+                <div>
+                    <Row>
+                        <Col xs="10" xsOffset={1}
+                             sm="8" smOffset={2}
+                             md="6" mdOffset={3}
+                             lg="4" lgOffset={4}
+                        >
+                            <div className={styles.priceSelectorContainer}>
+                                {this.renderScreen()}
+                                {this.renderButton()}
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
+            );
+        }
+
+        return (
+            <div>
+                <Row>
+                    <Col xs="10" xsOffset={1}
+                         sm="8" smOffset={2}
+                         md="6" mdOffset={3}
+                         lg="4" lgOffset={4}
+                    >
+                        {this.renderNoPriceButton()}
                     </Col>
                 </Row>
             </div>

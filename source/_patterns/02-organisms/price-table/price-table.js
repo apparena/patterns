@@ -12,7 +12,8 @@ import Button from "../../00-atoms/button/button";
 
 export default class PriceTable extends ReactComponent {
     static propTypes = {
-        templateId: PropTypes.string.isRequired,
+        templateId: PropTypes.string,
+        productId: PropTypes.string,
         plans: PropTypes.object.isRequired,
         onClick: PropTypes.oneOfType([
             PropTypes.string,
@@ -49,7 +50,7 @@ export default class PriceTable extends ReactComponent {
      * @returns {XML}
      */
     renderPackage(showPlans) {
-        const {plans, templateId, onClick} = this.props;
+        const {plans, templateId, onClick, productId} = this.props;
         return (
             <Row className={styles.priceTableContainer}>
                 {plans.plans[showPlans].map((element, i) => {
@@ -61,6 +62,7 @@ export default class PriceTable extends ReactComponent {
                             key={`element${i}`}
                             element={element}
                             templateId={templateId}
+                            productId={productId}
                             price={element.price}
                             imgSrc={element.img}
                             title={element.title}
