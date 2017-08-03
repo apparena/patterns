@@ -40,7 +40,7 @@
 
             {{#footer.languages}}
                 <div class="o-footer-languages col-sm-6 col-md-4 text-center text-sm-right">
-                    <ul class="list-inline">
+                    <ul class="list-inline py-1">
                         {{#items}}
                             <li class="list-inline-item">
                                 {{^active}}
@@ -59,9 +59,7 @@
 
             {{#footer.copyright}}
                 <div class="o-footer-contact col-12">
-                    {{ company.name }} &bull; {{ company.address1 }} &bull; {{ company.address2 }}
-                    &bull; {{ company.zip }} &bull; {{ company.city }} &bull; {{ company.phone }}
-                    &bull; {{ company.email }}
+                    {{ company.name }} &bull; {{ company.address1 }} &bull; {{ company.address2 }} &bull; {{ company.zip }} &bull; {{ company.city }} &bull; {{ company.phone }} &bull; {{ company.email }}
                 </div>
                 <div class="o-footer-copyright col-12">
                     <span class="countup">{{ year }}</span> &copy; {{ company.name }}™
