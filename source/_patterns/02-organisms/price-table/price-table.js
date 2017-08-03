@@ -50,7 +50,7 @@ export default class PriceTable extends ReactComponent {
      * @returns {XML}
      */
     renderPackage(showPlans) {
-        const {plans, templateId, onClick} = this.props;
+        const {plans, templateId, onClick, productId} = this.props;
         return (
             <Row className={styles.priceTableContainer}>
                 {plans.plans[showPlans].map((element, i) => {

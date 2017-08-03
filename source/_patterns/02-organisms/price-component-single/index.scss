@@ -33,10 +33,6 @@
 
   .price {
     font-size: 26px;
-    display: inline-block;
-    position: absolute;
-    top: 33px;
-    left: 5px;
   }
 
   .tax-hint {
@@ -45,13 +41,16 @@
     padding-bottom: 2rem;
   }
 
+  .left-align {
+    text-align: left;
+  }
+
   .header {
-    text-align: center;
     padding-top: 40px;
     padding-bottom: 70px;
   }
 
-  button {
+  button, a {
     position: absolute;
     bottom: -20px;
     left: 0;

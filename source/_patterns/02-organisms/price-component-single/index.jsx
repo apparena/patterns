@@ -21,7 +21,7 @@ export default class PriceComponentSingle extends ReactComponent {
     };
 
     getInitState() {
-        this.onPurchase = ::this.onPurchase;
+        this.handlePurchase = ::this.onPurchase;
         const {title, articles} = this.props;
         this.purchaseData = {
             title,
@@ -45,7 +45,7 @@ export default class PriceComponentSingle extends ReactComponent {
         const {onClick, templateId, productId} = this.props;
         if (typeof onClick === "function") {
             return (
-                <Button type="primary" onClick={this.onPurchase}>
+                <Button type="primary" onClick={this.handlePurchase}>
                     {this.t("priceSingle.purchase")}
                 </Button>
             );
@@ -53,14 +53,14 @@ export default class PriceComponentSingle extends ReactComponent {
 
         let href="";
 
-        const utf8_to_b64 = (str) => {
+        const utf8ToB64 = (str) => {
             return window.btoa(encodeURIComponent(str));
         };
 
         if (templateId) {
-            href=`${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+            href=`${onClick}?templateId=${templateId}&orderData=${utf8ToB64(JSON.stringify(this.purchaseData))}`;
         } else if (productId) {
-            href=`${onClick}?productId=${productId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+            href=`${onClick}?productId=${productId}&orderData=${utf8ToB64(JSON.stringify(this.purchaseData))}`;
         }
 
         return (
@@ -74,14 +74,22 @@ export default class PriceComponentSingle extends ReactComponent {
         return (
             <div>
                 <Row>
-                    <Col xs="4" xsOffset={4}>
+                    <Col xs="10" xsOffset={1}
+                         sm="8" smOffset={2}
+                         md="6" mdOffset={3}
+                         lg="4" lgOffset={4}
+                    >
                         <div className={styles.priceSelectorContainer}>
-                            <div className={styles.header}>
-                                <h3>{this.props.header}</h3>
-                            </div>
-                            <div className={styles.price}>
-                                <sup>€</sup>{this.state.hours * this.props.articles[0].price}<sup>*</sup>
-                            </div>
+                            <Row className={styles.header}>
+                                <Col xs="4" className={styles.price}>
+                                    <sup>€</sup>
+                                    <span>{this.state.hours * this.props.articles[0].price}</span>
+                                    <sup>*</sup>
+                                </Col>
+                                <Col xs="6" className={styles.leftAlign}>
+                                    <h3>{this.props.header}</h3>
+                                </Col>
+                            </Row>
                             <p className={styles.priceServicePrompt}>
                                 {this.props.hoursPrompt}
                             </p>
@@ -104,6 +112,7 @@ export default class PriceComponentSingle extends ReactComponent {
                                     this.purchaseData.price = this.props.articles[0].price * value;
                                     this.purchaseData.articles[0].value = value;
                                     this.purchaseData.articles[0].text = `${this.purchaseData.articles[0].title} - ${value} ${this.t("priceSingle.hours", {count: value})}`;
+                                    this.forceUpdate();
                                 }}
                                 style={{width: "80%", margin: "auto"}}
                             />
