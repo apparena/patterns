@@ -1,9 +1,11 @@
 #[App-Arena Patterns](https://design.app-arena.com/)
-[![npm package](https://img.shields.io/npm/v/apparena-patterns-react.svg?style=flat-square)](https://www.npmjs.org/package/apparena-patterns-react)
 
-[![PeerDependencies](https://img.shields.io/david/peer/apparena/patterns.svg?style=flat-square)](https://david-dm.org/apparena/patterns#info=peerDependencies&view=list)
-[![Dependencies](https://img.shields.io/david/apparena/patterns.svg?style=flat-square)](https://david-dm.org/apparena/patterns)
-[![DevDependencies](https://img.shields.io/david/dev/apparena/patterns.svg?style=flat-square)](https://david-dm.org/apparena/patterns#info=devDependencies&view=list)
+[![npm package](https://img.shields.io/npm/v/apparena-patterns-react.svg)](https://www.npmjs.org/package/apparena-patterns-react)
+[![PeerDependencies](https://img.shields.io/david/peer/apparena/patterns.svg)](https://david-dm.org/apparena/patterns#info=peerDependencies&view=list)
+[![Dependencies](https://img.shields.io/david/apparena/patterns.svg)](https://david-dm.org/apparena/patterns)
+[![DevDependencies](https://img.shields.io/david/dev/apparena/patterns.svg)](https://david-dm.org/apparena/patterns#info=devDependencies&view=list)
+[![Coverage Status](https://coveralls.io/repos/github/apparena/patterns/badge.svg?branch=develop)](https://coveralls.io/github/apparena/patterns?branch=develop)
+[![Build Status](https://travis-ci.org/apparena/patterns.svg?branch=master)](https://travis-ci.org/apparena/patterns)
 
 App-Arena Patterns is a set of [React](http://facebook.github.io/react/) components that implement the App-Arena CI.
 

@@ -1,344 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="refactor docs">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/webpack/webpack.config.ava.js" />
+    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/animations/animations@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/animations/animations@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/__tests__/button.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/button/__tests__/button.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/copy/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/copy/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/counter/counter.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/counter/counter.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.jsx" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/__tests__/checkbox.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/__tests__/checkbox.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/forms.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/__tests__/radio-button.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/__tests__/radio-button.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/docs/radio-button.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/docs/radio-button.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/docs/radio-button.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/docs/radio-button.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/radio-button@inreview.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/radio-button@inreview.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/__tests__/select-menu.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/__tests__/select-menu.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/__tests__/text-area.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/__tests__/text-area.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/docs/text-area.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/docs/text-area.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/docs/text-area.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/docs/text-area.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/docs/text-area.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/docs/text-area.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/text-area@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/text-area@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/__tests__/text-field.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/__tests__/text-field.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/docs/text-field.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/docs/text-field.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/docs/text-field.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/docs/text-field.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/docs/text-field.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/docs/text-field.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/container/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/container/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/__tests__/icons.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/__tests__/icons.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/icons.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/index.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_animated.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_animated.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_larger.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_list.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_mixins.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_screen-reader.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_stacked.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_variables.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/image/image@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/image/image@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo-inverse.json" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo-inverse.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo-inverse@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo-inverse@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/media/03-image@inreview.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/media/03-image@inreview.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/__tests__/progress-tracker-step.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/__tests__/progress-tracker-step.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/search-box/search-box.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/search-box/search-box.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/slider/slider.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/slider/slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/__tests__/spinner.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/__tests__/spinner.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/step/docs/step.example.jsx" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/step/docs/step.example.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/__tests__/table.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/table/__tests__/table.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/docs/table.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/table/docs/table.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/docs/table.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/table/docs/table.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/docs/table.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/table/docs/table.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/table.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/table/table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/table@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/table/table@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/docs/tag.example.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/docs/tag.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/docs/tag.input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/docs/tag.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/docs/tag.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/docs/tag.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/tag.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/tag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/blockquote@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/blockquote@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/definition@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/definition@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/headings@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/headings@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/inline-elements@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/inline-elements@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/list-ordered@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/list-ordered@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/list-unordered@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/list-unordered@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/paragraph@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/paragraph@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/ajax-loader.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/ajax-loader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/docs/ajax-loader.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/docs/ajax-loader.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/docs/ajax-loader.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/docs/ajax-loader.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/docs/ajax-loader.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/docs/ajax-loader.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/box/intro.jsx" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/box/intro.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/__tests__/breadcrumb.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/__tests__/breadcrumb.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/docs/breadcrumb.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/docs/breadcrumb.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/docs/breadcrumb.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/docs/breadcrumb.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/docs/breadcrumb.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/docs/breadcrumb.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/__tests__/button-group.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/__tests__/button-group.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/button-group.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/button-group.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/button-group.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/button-group.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/docs/button-group.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/docs/button-group.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/docs/button-group.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/docs/button-group.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/docs/button-group.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/docs/button-group.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/__tests__/card.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/card/__tests__/card.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/docs/card.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/card/docs/card.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/docs/card.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/card/docs/card.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/docs/card.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/card/docs/card.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/chart.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/docs/chart.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/docs/chart.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/docs/chart.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/docs/chart.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/docs/chart.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/docs/chart.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/__tests__/dropdown.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/__tests__/dropdown.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/docs/filter-bar.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/docs/filter-bar.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/docs/filterbar.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/docs/filterbar.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar@inreview.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar@inreview.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/__tests__/checkboxes.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/__tests__/checkboxes.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/custom-control.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/custom-control.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/__tests__/search.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/__tests__/search.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/docs/search.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/docs/search.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/docs/search.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/docs/search.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/docs/search.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/docs/search.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/index.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/search@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/search@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/select.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/select.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/select.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/select.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/textarea@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/textarea@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/__tests__/input-group.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/__tests__/input-group.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-button@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-button@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-dropdown@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-dropdown@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-radio@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-radio@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-segmented@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-segmented@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-variants@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-variants@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group@inreview.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group@inreview.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/__tests__/jumbotron.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/__tests__/jumbotron.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/docs/jumbotron.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/docs/jumbotron.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/docs/jumbotron.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/docs/jumbotron.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/docs/jumbotron.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/docs/jumbotron.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/jumbotron.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/jumbotron.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/jumbotron@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/jumbotron@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/__tests__/list-group.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/__tests__/list-group.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/docs/list-group.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/docs/list-group.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/docs/list-group.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/docs/list-group.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/docs/list-group.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/docs/list-group.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/list-group.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/list-group.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/__tests__/media.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/media/__tests__/media.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/docs/media.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/media/docs/media.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/docs/media.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/media/docs/media.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/docs/media.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/media/docs/media.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media-object-variants@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media-object-variants@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media-object@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media-object@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/responsive-embed@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/media/responsive-embed@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/alert.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/alert.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/alert@reactpending.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/alert@reactpending.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/docs/alert.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/docs/alert.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/docs/alert.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/docs/alert.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/docs/alert.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/docs/alert.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/index.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/banner-message.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/banner-message.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/banner-message.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/banner-message.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/docs/banner-message.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/docs/banner-message.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/docs/banner-message.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/docs/banner-message.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/docs/banner-message.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/docs/banner-message.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/index.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/docs/notification.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/docs/notification.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/docs/notification.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/docs/notification.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/docs/notification.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/docs/notification.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/notification.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/notification.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/__tests__/modal.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/__tests__/modal.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal-body.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal-body.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal-footer.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal-footer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal-header.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal-header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar-form.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar-form.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar-form.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar-form.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/docs/nav-item.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/docs/nav-item.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/docs/nav-item.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/docs/nav-item.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/docs/nav-item.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/docs/nav-item.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/index.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/__tests__/nav.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/__tests__/nav.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/docs/nav.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/docs/nav.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/docs/nav.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/docs/nav.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/docs/nav.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/docs/nav.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/index.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs-variants@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs-variants@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/page-header/page-header.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/page-header/page-header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/pagination/pagination.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/pagination/pagination.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/pagination/pagination@inreview.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/pagination/pagination@inreview.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/docs/popover.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/docs/popover.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/docs/popover.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/docs/popover.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/docs/popover.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/docs/popover.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/__tests__/progress-bar.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/__tests__/progress-bar.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar-variants@complete.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar-variants@complete.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar@complete.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar@complete.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/testimonial/testemonial-client.json" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/testimonial/testemonial-client.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/docs/tooltip.example.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/docs/tooltip.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/docs/tooltip.input.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/docs/tooltip.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/docs/tooltip.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/docs/tooltip.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/website/usp.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/website/usp.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/auth.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/docs/auth.example.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/docs/auth.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/docs/auth.input.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/docs/auth.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/docs/auth.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/docs/auth.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/forms/form.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/forms/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.mustache" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/header.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/header.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/docs/cards-list.example.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/docs/cards-list.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/docs/cards-list.input.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/docs/cards-list.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/docs/cards-list.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/docs/cards-list.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/index.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/counter-list.mustache" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/counter-list.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/services-list.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/services-list.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/docs/table-list.example.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/docs/table-list.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/docs/table-list.input.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/docs/table-list.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/docs/table-list.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/docs/table-list.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/index.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/table-list.scss" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/table-list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.mustache" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/modules/features.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/modules/features.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.example.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.input.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/index.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/docs/nav-secondary.example.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/docs/nav-secondary.example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/docs/nav-secondary.input.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/docs/nav-secondary.input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/docs/nav-secondary.snippet.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/docs/nav-secondary.snippet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/index.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/nav-secondary.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/nav-secondary.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-sidebar.scss" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-sidebar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/docs/index.example.jsx" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/docs/index.example.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/index.jsx" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/custom-package-creator/custom-package-creator.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/custom-package-creator/custom-package-creator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/docs/price-table-element.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/docs/price-table-element.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.js" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/footer-cto.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/footer-cto.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/hompage-header.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/hompage-header.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/hompage-header.scss" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/hompage-header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/productofthemonth.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/productofthemonth.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.mustache" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.scss" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/slider.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/slider.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/slider@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/slider@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.mustache" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.scss" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/03-templates/01-manager/focused-task.json" afterPath="$PROJECT_DIR$/source/_patterns/03-templates/01-manager/focused-task.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/03-templates/01-manager/focused-task@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/03-templates/01-manager/focused-task@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/03-templates/01-manager/focused-task~large.json" afterPath="$PROJECT_DIR$/source/_patterns/03-templates/01-manager/focused-task~large.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/blogs.json" afterPath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/blogs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/detail.json" afterPath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/detail.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/homepage.json" afterPath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/homepage.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/partner.json" afterPath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/partner.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/service.json" afterPath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/service.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create-step2@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create-step2@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create.json" afterPath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login.json" afterPath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login~create-app.json" afterPath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login~create-app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login~register.json" afterPath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login~register.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/about.json" afterPath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/about.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/blog-index.json" afterPath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/blog-index.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/contact.json" afterPath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/contact.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/detail.json" afterPath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/detail.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/colors@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/corporate-identity/colors@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/logos.json" afterPath="$PROJECT_DIR$/source/_patterns/corporate-identity/logos.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/logos@inprogress.mustache" afterPath="$PROJECT_DIR$/source/_patterns/corporate-identity/logos@inprogress.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/index.js" afterPath="$PROJECT_DIR$/source/_patterns/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/animate.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/animate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/component.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/draggable.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/draggable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/modalContainer.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/modalContainer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/notificationContainer.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/notificationContainer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/scrollable.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/scrollable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/stick.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/stick.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -372,17 +37,34 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="run-travis-tests.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/scripts/run-travis-tests.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="345">
+                <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>writeFile</find>
-      <find>.toggle</find>
-      <find>Mocha</find>
-      <find>nyc</find>
-      <find>jest</find>
-      <find>describe</find>
-      <find>() =&gt;</find>
       <find>import React from &quot;react&quot;;</find>
       <find>import React from 'react';</find>
       <find>\/\* eslint\-env mocha \*\/\nimport React from \'react\'\;\nimport \{mount\, shallow\} from \'enzyme\'\;</find>
@@ -406,6 +88,13 @@
       <find>react-addons-test-utils</find>
       <find>t.test(</find>
       <find>test\(\'\&lt;([a-zA-Z]+) \/\&gt;\'\, \(t\) \=\&gt; \{\n\n    test\(</find>
+      <find>ak-css-reset/dist/bundle.css'</find>
+      <find>es6-promise/</find>
+      <find>.then</find>
+      <find>stats.js</find>
+      <find>styles.less</find>
+      <find>nyc</find>
+      <find>cross-env</find>
     </findStrings>
     <replaceStrings>
       <replace>}</replace>
@@ -446,6 +135,7 @@
       <dir>$PROJECT_DIR$/build/generator</dir>
       <dir>$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns</dir>
       <dir>$PROJECT_DIR$/source/_patterns</dir>
+      <dir>$PROJECT_DIR$/build/storybook</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -462,12 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.spec.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/docs/price-component.example.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/index.jsx" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/search-box/search-box.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/container/index.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" />
         <option value="$PROJECT_DIR$/source/css/app-arena-styles.scss" />
@@ -502,17 +186,23 @@
         <option value="$PROJECT_DIR$/build/webpack/webpack.config.ava.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/__tests__/checkbox.spec.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/button/__tests__/button.spec.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.jsx" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/card/__tests__/card.spec.js" />
         <option value="$PROJECT_DIR$/source/_patterns/react-utils/stick.js" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/modal/__tests__/modal.spec.js" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/button/__tests__/button.spec.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js" />
+        <option value="$PROJECT_DIR$/build/storybook/webpack.config.js" />
+        <option value="$PROJECT_DIR$/build/webpack/base.js" />
+        <option value="$PROJECT_DIR$/build/storybook/config.js" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/build/scripts/run-travis-tests.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -557,10 +247,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1001" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -623,25 +311,13 @@
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="coverage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="react-utils" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -664,7 +340,7 @@
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;alert.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js&#10;progress-tracker.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js&#10;modal.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;stick.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;card.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;price-table.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js&#10;tooltip.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;button.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;example&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;checkbox/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/index.js&#10;navbar.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;step/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;step/inde.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;home.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/home.jsx&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;checkbox.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;copy-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/copy-files.js&#10;button.ex&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/docs/button.example.js&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;main.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/main.jsx&#10;step.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;build/generator/templates/component.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;intro&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/box/intro.jsx&#10;prict&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/price-table.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;form.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;Intro&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/box/intro.jsx&#10;navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;icon.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/icons/icons.scss&#10;fonts/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/fonts&#10;banner-message.scs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/banner-message/banner-message.scss&#10;select-menu/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/index.js&#10;sele&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/react-select/lib/Select.js&#10;grid/container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/apparena-patterns-react/_patterns/00-atoms/grid/container.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;_patterns/01-molecules/messages/notification/index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification/index.js&#10;_patterns/01-molecules/messages/notification/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification&#10;00-atoms/search-box&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;input.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;select&#9;null&#9;null&#10;.exam&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav/docs/nav.example.js&#10;Spinn&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;step.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;button.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/__tests__/input.spec.js&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;alert.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js&#10;progress-tracker.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js&#10;modal.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;stick.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;card.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;price-table.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js&#10;tooltip.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;button.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;example&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;checkbox/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/index.js&#10;navbar.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;step/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;step/inde.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;home.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/home.jsx&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;checkbox.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;copy-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/copy-files.js&#10;button.ex&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/docs/button.example.js&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;main.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/main.jsx&#10;step.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;build/generator/templates/component.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;intro&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/box/intro.jsx&#10;prict&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/price-table.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;form.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;Intro&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/box/intro.jsx&#10;navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;icon.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/icons/icons.scss&#10;fonts/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/fonts&#10;banner-message.scs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/banner-message/banner-message.scss&#10;select-menu/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/index.js&#10;sele&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/react-select/lib/Select.js&#10;grid/container&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/apparena-patterns-react/_patterns/00-atoms/grid/container.js&#10;_patterns/01-molecules/messages/notification/index.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification/index.js&#10;_patterns/01-molecules/messages/notification/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/notification&#10;00-atoms/search-box&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/search-box/search-box.js&#10;input.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js" />
     <property name="node.js.path.for.package.standard" value="/usr/local/bin/node" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
@@ -672,19 +348,19 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/navbar" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/__tests__" />
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/__tests__" />
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/__tests__" />
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/__tests__" />
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/modal/__tests__" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build/webpack" />
+      <recent name="$PROJECT_DIR$/build/bin" />
+      <recent name="$PROJECT_DIR$/build" />
+      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search" />
+      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -917,7 +593,7 @@
       <workItem from="1501226791783" duration="17865000" />
       <workItem from="1501518004882" duration="271000" />
       <workItem from="1501599982499" duration="1172000" />
-      <workItem from="1501697313773" duration="5697000" />
+      <workItem from="1501697313773" duration="14367000" />
     </task>
     <task id="LOCAL-00001" summary="update card style">
       <created>1492075461097</created>
@@ -1213,25 +889,47 @@
       <option name="project" value="LOCAL" />
       <updated>1501252363359</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="refactor code and testing cases">
+      <created>1501769844855</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1501769844855</updated>
+    </task>
+    <task id="LOCAL-00044" summary="enable travis-ci">
+      <created>1501787266462</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1501787266462</updated>
+    </task>
+    <task id="LOCAL-00045" summary="enable travis-ci">
+      <created>1501788762680</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1501788762680</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253061000" />
+    <option name="totallyTimeSpent" value="261731000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30995935" sideWeight="0.51277953" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30995935" sideWeight="0.48722044" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3092243" sideWeight="0.48722044" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24334398" sideWeight="0.53252035" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34857723" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27947155" sideWeight="0.4744409" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4297694" sideWeight="0.4744409" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24334398" sideWeight="0.46747968" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2789988" sideWeight="0.46747968" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1316,6 +1014,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="update card style" />
     <MESSAGE value="refactor react PropTypes to import from prop-types module" />
     <MESSAGE value="update login styling" />
@@ -1338,7 +1037,9 @@
     <MESSAGE value="change docs generation, and add step component" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="refactor docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor docs" />
+    <MESSAGE value="refactor code and testing cases" />
+    <MESSAGE value="enable travis-ci" />
+    <option name="LAST_COMMIT_MESSAGE" value="enable travis-ci" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1381,203 +1082,11 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.example.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/scripts/copy-files.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/docs/infos.json" />
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/list1.json" />
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/styles/darcula.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="161" column="16" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/templates/component.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/forms/search/docs/info.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/docs/button.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/docs/info.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2553" lean-forward="false" selection-start-line="0" selection-start-column="2553" selection-end-line="0" selection-end-column="2553" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/step/docs/info.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/props-container.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/step/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/checkbox/docs/info.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/webpack.config.prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/webpack.config.ava.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/test/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#61#93#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1645,26 +1154,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1698,8 +1191,8 @@
         <state relative-caret-position="180">
           <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#23#49#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#23#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1709,7 +1202,7 @@
         <state relative-caret-position="292">
           <caret line="207" column="31" lean-forward="false" selection-start-line="207" selection-start-column="31" selection-end-line="207" selection-end-column="31" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1746,31 +1239,281 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="102" column="17" lean-forward="false" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+        <state relative-caret-position="405">
+          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="e#23#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="e#23#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/generator.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.snippet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/step/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/step/docs/step.example.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state relative-caret-position="270">
+          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="189" column="35" lean-forward="false" selection-start-line="189" selection-start-column="35" selection-end-line="189" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <element signature="e#23#49#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/__tests__/button.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="46" column="3" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+        <state relative-caret-position="47">
+          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/storybook/ExampleWithCode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/storybook/empty.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack/lib/webpack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/storybook/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/storybook/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/storybook/MonitoredStory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/storybook/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/storybook/CodeExampleStory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="63" column="26" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/storybook/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/bin/storybook/run.local.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.istanbul.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/test/integration/.eslintrc.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/test/utils/dom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/_patterns/00-atoms/button/button.js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1530">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/_patterns/00-atoms/button/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/sort-arrow-sprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="200" column="18" lean-forward="true" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/scripts/run-travis-tests.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="345">
+            <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
