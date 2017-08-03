@@ -27,7 +27,7 @@
     "publish": "cd build/apparena-patterns-react && npm publish",
     "start": "node build/webpack/server.js",
     "test": "cross-env NODE_ENV=test nyc ava",
-    "test:coverage": "nyc report --reporter=lcov",
+    "test:coverage": "nyc report --reporter=lcov --reporter=json --reporter=text-lcov",
     "test:coverage:html": "nyc report --reporter=html"
   },
   "repository": {
