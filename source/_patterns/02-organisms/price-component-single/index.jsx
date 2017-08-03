@@ -45,7 +45,7 @@ export default class PriceComponentSingle extends ReactComponent {
         const {onClick, templateId, productId} = this.props;
         if (typeof onClick === "function") {
             return (
-                <Button type="primary" onClick={this.handlePurchase}>
+                <Button type="primary" onClick={this.handlePurchase} className={styles.purchaseButton}>
                     {this.t("priceSingle.purchase")}
                 </Button>
             );
@@ -64,13 +64,95 @@ export default class PriceComponentSingle extends ReactComponent {
         }
 
         return (
-            <Button type="primary" href={href}>
+            <Button type="primary" href={href} className={styles.purchaseButton}>
                 {this.t("priceSingle.purchase")}
             </Button>
         );
     }
 
+    renderNoPriceButton() {
+        let href = "";
+        const {onClick, templateId, productId} = this.props;
+
+        if (templateId) {
+            href=`${onClick}?templateId=${templateId}`;
+        } else if (productId) {
+            href=`${onClick}?productId=${productId}`;
+        }
+
+        return (
+            <Button type="primary" href={href} className={styles.purchaseButton}>
+                {this.t("priceSingle.purchase")}
+            </Button>
+        );
+    }
+
+    renderScreen() {
+        return (
+            <div>
+                <Row className={styles.header}>
+                    <Col xs="4" className={styles.price}>
+                        <sup>€</sup>
+                        <span>{this.state.hours * this.props.articles[0].price}</span>
+                        <sup>*</sup>
+                    </Col>
+                    <Col xs="6" className={styles.leftAlign}>
+                        <h3>{this.props.header}</h3>
+                    </Col>
+                </Row>
+                <p className={styles.priceServicePrompt}>
+                    {this.props.hoursPrompt}
+                </p>
+                <p className={styles.serviceHours}>
+                                <span className={styles.serviceHourNumber}>
+                                    {this.state.hours}
+                                </span>
+                    {this.t("priceSingle.hours", {count: this.state.hours})}
+                </p>
+                <Slider
+                    value={this.state.hours}
+                    min={1}
+                    max={30}
+                    step={1}
+                    onChange={(e, value) => {
+                        this.setState({
+                            hours: value,
+                        });
+
+                        this.purchaseData.price = this.props.articles[0].price * value;
+                        this.purchaseData.articles[0].value = value;
+                        this.purchaseData.articles[0].text = `${this.purchaseData.articles[0].title} - ${value} ${this.t("priceSingle.hours", {count: value})}`;
+                        this.forceUpdate();
+                    }}
+                    style={{width: "80%", margin: "auto"}}
+                />
+                <p className={styles.taxHint}>
+                    *{this.t("priceSingle.taxHint")}
+                </p>
+            </div>
+        );
+    }
+
     render() {
+        if (this.props.articles[0].price) {
+            return (
+                <div>
+                    <Row>
+                        <Col xs="10" xsOffset={1}
+                             sm="8" smOffset={2}
+                             md="6" mdOffset={3}
+                             lg="4" lgOffset={4}
+                        >
+                            <div className={styles.priceSelectorContainer}>
+                                {this.renderScreen()}
+                                {this.renderButton()}
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
+            );
+        }
+
         return (
             <div>
                 <Row>
@@ -79,48 +161,7 @@ export default class PriceComponentSingle extends ReactComponent {
                          md="6" mdOffset={3}
                          lg="4" lgOffset={4}
                     >
-                        <div className={styles.priceSelectorContainer}>
-                            <Row className={styles.header}>
-                                <Col xs="4" className={styles.price}>
-                                    <sup>€</sup>
-                                    <span>{this.state.hours * this.props.articles[0].price}</span>
-                                    <sup>*</sup>
-                                </Col>
-                                <Col xs="6" className={styles.leftAlign}>
-                                    <h3>{this.props.header}</h3>
-                                </Col>
-                            </Row>
-                            <p className={styles.priceServicePrompt}>
-                                {this.props.hoursPrompt}
-                            </p>
-                            <p className={styles.serviceHours}>
-                                <span className={styles.serviceHourNumber}>
-                                    {this.state.hours}
-                                </span>
-                                {this.t("priceSingle.hours", {count: this.state.hours})}
-                            </p>
-                            <Slider
-                                value={this.state.hours}
-                                min={1}
-                                max={30}
-                                step={1}
-                                onChange={(e, value) => {
-                                    this.setState({
-                                        hours: value,
-                                    });
-
-                                    this.purchaseData.price = this.props.articles[0].price * value;
-                                    this.purchaseData.articles[0].value = value;
-                                    this.purchaseData.articles[0].text = `${this.purchaseData.articles[0].title} - ${value} ${this.t("priceSingle.hours", {count: value})}`;
-                                    this.forceUpdate();
-                                }}
-                                style={{width: "80%", margin: "auto"}}
-                            />
-                            <p className={styles.taxHint}>
-                                *{this.t("priceSingle.taxHint")}
-                            </p>
-                            {this.renderButton()}
-                        </div>
+                        {this.renderNoPriceButton()}
                     </Col>
                 </Row>
             </div>
