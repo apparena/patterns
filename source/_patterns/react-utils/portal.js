@@ -1,6 +1,6 @@
-import {PropTypes} from "react";
-import ReactDOM from "react-dom";
-import ReactComponent from "./component";
+import {PropTypes} from 'react';
+import ReactDOM from 'react-dom';
+import ReactComponent from './component';
 
 const renderSubtreeIntoContainer = ReactDOM.unstable_renderSubtreeIntoContainer;
 

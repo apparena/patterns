@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
 
 export default class Search extends ReactComponent {
     static propTypes = {
@@ -10,11 +10,11 @@ export default class Search extends ReactComponent {
         prompt: PropTypes.string,
         placeholder: PropTypes.string,
         method: PropTypes.oneOf(['GET', 'POST']),
-        id: PropTypes.string,
+        id: PropTypes.string
     };
 
     static defaultProps = {
-        method: 'GET',
+        method: 'GET'
     };
 
 
@@ -22,7 +22,7 @@ export default class Search extends ReactComponent {
         return (
             <form method={this.props.method} className={this.props.formClassNames}>
                 <label htmlFor="search" className={this.props.labelClassNames}>{this.props.prompt}</label>
-                <input type="search" id={this.props.id} className={this.props.inputClassNames} placeholder={this.props.placeholder} />
+                <input type="search" id={this.props.id} className={this.props.inputClassNames} placeholder={this.props.placeholder}/>
             </form>
         );
     }

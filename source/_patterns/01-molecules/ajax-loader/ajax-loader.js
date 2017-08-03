@@ -1,21 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import Spinner from "../../00-atoms/spinner/spinner";
-import axios from "axios";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import Spinner from '../../00-atoms/spinner/spinner';
+import axios from 'axios';
 
 export default class AjaxLoader extends ReactComponent {
-    getInitState() {
-        // Create an axios instance so we have everything pre-configured
-        this.axios = axios.create({
-            method: "GET",
-        });
-
-        return ({
-            loading: true
-        });
-    }
-
     static propTypes = {
         resource: PropTypes.string.isRequired,
         onLoadingDone: PropTypes.func.isRequired,
@@ -24,13 +13,23 @@ export default class AjaxLoader extends ReactComponent {
         spinnerType: PropTypes.oneOf(['default', 'primary', 'inverted']),
         autoHide: PropTypes.bool
     };
-
     static defaultProps = {
-        spinnerSize: "lg",
-        spinnerClassName: "",
-        spinnerType: "primary",
-        autoHide: true,
+        spinnerSize: 'lg',
+        spinnerClassName: '',
+        spinnerType: 'primary',
+        autoHide: true
     };
+
+    getInitState() {
+        // Create an axios instance so we have everything pre-configured
+        this.axios = axios.create({
+            method: 'GET'
+        });
+
+        return ({
+            loading: true
+        });
+    }
 
     /**
      * The request to the resource will be fired as soon as the loader has been mounted.
@@ -50,9 +49,9 @@ export default class AjaxLoader extends ReactComponent {
         return (
             <div>
                 {this.state.loading &&
-                    <Spinner size={this.props.spinnerSize} type={this.props.spinnerType}
-                             className={this.props.spinnerClassName}
-                    />
+                <Spinner size={this.props.spinnerSize} type={this.props.spinnerType}
+                         className={this.props.spinnerClassName}
+                />
                 }
             </div>
         );

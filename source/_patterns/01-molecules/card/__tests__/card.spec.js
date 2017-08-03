@@ -1,14 +1,13 @@
 /* eslint-env mocha */
-import React from "react";
-import {shallow} from "enzyme";
-import Card from "../card";
+import React from 'react';
+import {test} from 'ava';
+import {shallow} from 'enzyme';
+import {expect} from 'chai';
+import Card from '../card';
 
-describe('<Card />', () => {
-
-    it('renders a card', () => {
-        const wrapper = shallow(
-            <Card />
-        );
-        expect(wrapper.is('div')).toBeTruthy();
-    });
+test('renders a card', () => {
+    const wrapper = shallow(
+        <Card/>
+    );
+    expect(wrapper.is('div')).toBeTruthy();
 });

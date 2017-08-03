@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import cx from "classnames";
-import styles from "./modal.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import cx from 'classnames';
+import styles from './modal.scss';
 
 function ModalFooter({className, children, ...props}) {
-    props.className = cx(styles["modal-body"], className);
+    props.className = cx(styles['modal-body'], className);
     return (
         <div {...props}>
             {children}
@@ -14,7 +14,7 @@ function ModalFooter({className, children, ...props}) {
 
 ModalFooter.propTypes = {
     className: PropTypes.string,
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired
 };
 
 export default ModalFooter;

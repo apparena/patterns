@@ -1,22 +1,22 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import styles from "./card.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import styles from './card.scss';
 
 const CARD_TYPES = [
-    "default",
-    "primary",
-    "success",
-    "info",
-    "warning",
-    "danger",
-    "outline-primary",
-    "outline-secondary",
-    "outline-success",
-    "outline-info",
-    "outline-warning",
-    "outline-danger",
+    'default',
+    'primary',
+    'success',
+    'info',
+    'warning',
+    'danger',
+    'outline-primary',
+    'outline-secondary',
+    'outline-success',
+    'outline-info',
+    'outline-warning',
+    'outline-danger'
 ];
 
 export default class Card extends ReactComponent {
@@ -26,11 +26,11 @@ export default class Card extends ReactComponent {
             PropTypes.arrayOf(PropTypes.element)
         ]).isRequired,
         type: PropTypes.oneOf(CARD_TYPES),
-        inverse: PropTypes.bool,
+        inverse: PropTypes.bool
     };
 
     static defaultProps = {
-        type: "default"
+        type: 'default'
     };
 
     render() {
@@ -48,9 +48,9 @@ export default class Card extends ReactComponent {
                     if (React.isValidElement(child)) {
                         const {type, className, ...props} = child.props;
                         switch (type) {
-                            case "card-header":
-                            case "card-block":
-                            case "card-footer":
+                            case 'card-header':
+                            case 'card-block':
+                            case 'card-footer':
                                 const newClassName = cx(styles[type], className);
                                 return React.cloneElement(child, {...props, className: newClassName});
                             default:
@@ -59,6 +59,6 @@ export default class Card extends ReactComponent {
                     }
                 })}
             </div>
-        )
+        );
     }
 }

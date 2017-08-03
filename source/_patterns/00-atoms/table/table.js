@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import styles from "./table.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import styles from './table.scss';
 
 export default class Table extends ReactComponent {
     static propTypes = {
@@ -13,7 +13,7 @@ export default class Table extends ReactComponent {
         condensed: PropTypes.bool,
         hover: PropTypes.bool,
         responsive: PropTypes.bool,
-        inverse: PropTypes.bool,
+        inverse: PropTypes.bool
     };
 
     static defaultProps = {
@@ -22,7 +22,7 @@ export default class Table extends ReactComponent {
         hover: false,
         responsive: false,
         striped: false,
-        inverse: false,
+        inverse: false
     };
 
     render() {
@@ -42,7 +42,7 @@ export default class Table extends ReactComponent {
                 <div className={styles['table-responsive']}>
                     <table children={this.props.children} className={componentClass}/>
                 </div>
-            )
+            );
         }
 
         return (

@@ -1,26 +1,26 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import Animate from "../../react-utils/animate";
-import Draggable from "../../react-utils/draggable";
-import cx from "classnames";
-import styles from "./modal.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import Animate from '../../react-utils/animate';
+import Draggable from '../../react-utils/draggable';
+import cx from 'classnames';
+import styles from './modal.scss';
 
 const MODAL_TYPES = [
-    "primary",
-    "secondary",
-    "danger",
-    "info",
-    "success",
-    "warning",
-    "default",
+    'primary',
+    'secondary',
+    'danger',
+    'info',
+    'success',
+    'warning',
+    'default'
 ];
 const MODAL_SIZES = [
-    "lg",
-    "sm",
-    "md",
-    "xs",
-    "xl"
+    'lg',
+    'sm',
+    'md',
+    'xs',
+    'xl'
 ];
 
 export default class Modal extends ReactComponent {
@@ -33,50 +33,50 @@ export default class Modal extends ReactComponent {
         children: PropTypes.node.isRequired,
         draggable: PropTypes.bool,
         scrollable: PropTypes.bool,
-        transition: PropTypes.string,
+        transition: PropTypes.string
     };
 
     static defaultProps = {
-        type: "default",
-        transition: "expandIn",
-        saveText: "Speichern",
-        closeText: "Abbrechen",
+        type: 'default',
+        transition: 'expandIn',
+        saveText: 'Speichern',
+        closeText: 'Abbrechen',
         visible: true,
         modalBackdrop: true,
         draggable: false,
         scrollable: false,
-        size: "sm",
+        size: 'sm'
     };
 
     getInitState() {
         return {
-            searchQuery: "",
-            classAlreadyExists: false,
+            searchQuery: '',
+            classAlreadyExists: false
         };
     }
 
     componentDidMount() {
         if (this.props.visible) {
-            if (document.body.classList.contains(styles["modal-open"])) {
+            if (document.body.classList.contains(styles['modal-open'])) {
                 this.setState({
-                    classAlreadyExists: true,
+                    classAlreadyExists: true
                 });
             }
-            document.body.classList.add(styles["modal-open"]);
+            document.body.classList.add(styles['modal-open']);
         }
     }
 
     componentWillUnmount() {
         if (!this.state.classAlreadyExists) {
-            document.body.classList.remove(styles["modal-open"]);
+            document.body.classList.remove(styles['modal-open']);
         }
     }
 
     componentWillReceiveProps(nextProps) {
         if (!this.props.visible && nextProps.visible) {
-            document.body.classList.add(styles["modal-open"]);
+            document.body.classList.add(styles['modal-open']);
         } else if (this.props.visible && !nextProps.visible) {
-            document.body.classList.remove(styles["modal-open"]);
+            document.body.classList.remove(styles['modal-open']);
         }
     }
 
@@ -87,34 +87,34 @@ export default class Modal extends ReactComponent {
             draggable,
             scrollable,
             type,
-            className,
+            className
         } = this.props;
         const componentClass = cx(
-            styles["modal-dialog"],
+            styles['modal-dialog'],
             styles[`modal-${size}`],
             styles[`modal-${type}`],
-            draggable && styles["modal-draggable"],
-            scrollable && styles["modal-scrollable"],
+            draggable && styles['modal-draggable'],
+            scrollable && styles['modal-scrollable'],
             className
         );
         return (
             <div className={componentClass}>
-                <div className={cx(styles["modal-content"], styles[`modal-content-${size}`])}>
+                <div className={cx(styles['modal-content'], styles[`modal-content-${size}`])}>
                     {children}
                 </div>
             </div>
-        )
+        );
     }
 
     renderDragableWrapper() {
         return (
             <Draggable
                 enabled
-                handle={styles["modal-header"]}
+                handle={styles['modal-header']}
             >
                 {this.renderModalContent()}
             </Draggable>
-        )
+        );
     }
 
     render() {
@@ -128,7 +128,9 @@ export default class Modal extends ReactComponent {
                         {draggable ? this.renderDragableWrapper() : this.renderModalContent()}
                     </div>
                 </Animate>
-                {(!draggable && modalBackdrop) && <Animate transition={"fadeIn"}><div className={cx(visible && styles["modal-backdrop"])}></div></Animate>}
+                {(!draggable && modalBackdrop) && <Animate transition={'fadeIn'}>
+                    <div className={cx(visible && styles['modal-backdrop'])}></div>
+                </Animate>}
             </div>
         );
     }

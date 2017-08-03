@@ -1,5 +1,5 @@
-import React from "react";
-import {ReactComponent, Table, Tag} from "apparena-patterns-react";
+import React from 'react';
+import {ReactComponent, Table} from 'apparena-patterns-react';
 
 export default class ButtonInput extends ReactComponent {
     render() {
@@ -50,49 +50,49 @@ export default class ButtonInput extends ReactComponent {
                     <td>boolean</td>
                     <td>Decide if the button should be a block or not</td>
                     <td><em>undefined</em></td>
-                    <td />
+                    <td/>
                 </tr>
                 <tr>
                     <td>rounded</td>
                     <td>boolean</td>
                     <td>Decide if the button should have rounded corners or not</td>
                     <td><em>undefined</em></td>
-                    <td />
+                    <td/>
                 </tr>
                 <tr>
                     <td>href</td>
                     <td>string</td>
                     <td>Give the button a reference</td>
                     <td><em>undefined</em></td>
-                    <td />
+                    <td/>
                 </tr>
                 <tr>
                     <td>isActive</td>
                     <td>boolean</td>
                     <td>Decide if the button should be active or not</td>
                     <td><em>undefined</em></td>
-                    <td />
+                    <td/>
                 </tr>
                 <tr>
                     <td>isDisabled</td>
                     <td>boolean</td>
                     <td>Decide if the button should be disabled or not</td>
                     <td>false</td>
-                    <td />
+                    <td/>
                 </tr>
                 <tr>
                     <td>onClick</td>
                     <td>function</td>
                     <td>Connects the button to a function</td>
                     <td><em>undefined</em></td>
-                    <td />
+                    <td/>
                 </tr>
                 <tr>
                     <td>submit</td>
                     <td>boolean</td>
                     <td>Decide if the button should submit or not</td>
                     <td><em>undefined</em></td>
-                    <td />
+                    <td/>
                 </tr>
                 <tr>
                     <td>state</td>

@@ -114,19 +114,19 @@
 
     <script type="application/javascript">
         $(document).ready(function () {
-            if (!$("#m-navbar-mobile").data('mmenu')) {
+            if (!$('#m-navbar-mobile').data('mmenu')) {
                 var options = {},
                         configuration = {};
-                if ($("#main")) {
+                if ($('#main')) {
                     configuration['offCanvas'] = {
-                        pageSelector: "#main"
-                    }
+                        pageSelector: '#main'
+                    };
                 }
                 var mmenu = $('#m-navbar-mobile').mmenu(options, configuration);
                 $('.m-navbar-mobile-toggle').each(function () {
                     $(this).on('click', function (e) {
                         e.preventDefault();
-                        $("#m-navbar-mobile").data('mmenu').open();
+                        $('#m-navbar-mobile').data('mmenu').open();
                     });
                 });
             }

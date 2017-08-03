@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
 
 export default class Breadcrumb extends ReactComponent {
     static propTypes = {
         crumbNames: PropTypes.array.isRequired,
         crumbLocations: PropTypes.array.isRequired,
-        classNames: PropTypes.string,
+        classNames: PropTypes.string
     };
 
     render() {

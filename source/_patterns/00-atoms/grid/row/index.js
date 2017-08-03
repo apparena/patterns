@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
-import cx from "classnames";
-import styles from "../grid.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
+import cx from 'classnames';
+import styles from '../grid.scss';
 
 export default class Row extends ReactComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
         className: PropTypes.string,
-        justifyContent: PropTypes.oneOf(["start", "center", "end", "around", "between"]),
+        justifyContent: PropTypes.oneOf(['start', 'center', 'end', 'around', 'between'])
     };
 
     render() {

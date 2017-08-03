@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
-import cx from "classnames";
-import styles from "../nav-sidebar.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
+import cx from 'classnames';
+import styles from '../nav-sidebar.scss';
 
 export default class NavSecondaryGroup extends ReactComponent {
     static propTypes = {
@@ -13,10 +13,10 @@ export default class NavSecondaryGroup extends ReactComponent {
     render() {
         const {children, title} = this.props;
         return (
-            <div className={cx(styles["o-nav-sidebar"])}>
-                <div className={styles["o-nav-sidebar-secondaryGroup"]}>
+            <div className={cx(styles['o-nav-sidebar'])}>
+                <div className={styles['o-nav-sidebar-secondaryGroup']}>
                     {title &&
-                    <div className={styles["title"]}>
+                    <div className={styles['title']}>
                         {title}
                     </div>
                     }

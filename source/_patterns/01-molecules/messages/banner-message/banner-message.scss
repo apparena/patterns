@@ -20,18 +20,33 @@
 }
 
 .m-banner-message-success {
-  a {color: $alert-success-bg; text-decoration: underline;}
+  a {
+    color: $alert-success-bg;
+    text-decoration: underline;
+  }
   @include alert-variant($brand-success, $brand-success, #fff);
 }
+
 .m-banner-message-info {
-  a {color: $alert-info-bg; text-decoration: underline;}
+  a {
+    color: $alert-info-bg;
+    text-decoration: underline;
+  }
   @include alert-variant($brand-info, $brand-info, #fff);
 }
+
 .m-banner-message-warning {
-  a {color: $alert-warning-bg; text-decoration: underline;}
+  a {
+    color: $alert-warning-bg;
+    text-decoration: underline;
+  }
   @include alert-variant($brand-warning, $brand-warning, #fff);
 }
+
 .m-banner-message-danger {
-  a {color: $alert-danger-bg; text-decoration: underline;}
+  a {
+    color: $alert-danger-bg;
+    text-decoration: underline;
+  }
   @include alert-variant($brand-danger, $brand-danger, #fff);
 }

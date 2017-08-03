@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import styles from "./progress-bar.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import styles from './progress-bar.scss';
 
 const PROGRESS_TYPES = [
-    "success",
-    "info",
-    "warning",
-    "danger"
+    'success',
+    'info',
+    'warning',
+    'danger'
 ];
 
 export default class ProgressBar extends ReactComponent {
@@ -21,13 +21,13 @@ export default class ProgressBar extends ReactComponent {
         minWidth: PropTypes.number.isRequired,
         text: PropTypes.string,
         type: PropTypes.oneOf(PROGRESS_TYPES).isRequired,
-        captionID: PropTypes.string,
+        captionID: PropTypes.string
     };
 
     static defaultProps = {
-        classNames: "",
-        text: "",
-        captionID: "progress-bar-caption",
+        classNames: '',
+        text: '',
+        captionID: 'progress-bar-caption'
     };
 
     renderRemovableText(text) {

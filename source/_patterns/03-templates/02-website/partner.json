@@ -58,22 +58,46 @@
         "id": "referenceSlider",
         "settings": {
           "dots": false,
-          "slidesToScroll":3,
+          "slidesToScroll": 3,
           "slidesToShow": 3
         },
         "items": [
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"}
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          }
         ]
       }
     }

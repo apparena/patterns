@@ -1,8 +1,8 @@
 import React from 'react';
 import {Nav, NavItem} from 'apparena-patterns-react';
 
-export default function NavExample(){
-    return(
+export default function NavExample() {
+    return (
         <Nav tabs>
             <NavItem>
                 <a>Item 1</a>
@@ -14,5 +14,5 @@ export default function NavExample(){
                 <a>Part 3</a>
             </NavItem>
         </Nav>
-    )
+    );
 }

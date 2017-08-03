@@ -17,11 +17,11 @@
                     if (!jQuery(this).data('initialized')) {
                         // use Waypoint (+Inview) if available
                         if (typeof Waypoint !== 'undefined'
-                            && typeof Waypoint.Inview !== 'undefined') {
+                                && typeof Waypoint.Inview !== 'undefined') {
                             var counterObjs = initCounters(jQuery(this), 3);
                             new Waypoint.Inview({
                                 element: this,
-                                enter: function() {
+                                enter: function () {
                                     startCounters(counterObjs);
                                 }
                             });
@@ -35,24 +35,26 @@
                 });
             }
         });
+
         function initCounters($listEl, duration) {
             var $$counters = $listEl.find('.a-counter .countup'),
-                counterObjs = [];
-            $$counters.each(function() {
-               var value = parseInt(jQuery(this).text());
-               var counterObj = new CountUp(this, 0, value, 0, duration, {
-                   useEasing : true,
-                   useGrouping : true,
-                   separator : '.',
-                   decimal : ',',
-               });
-               counterObjs.push(counterObj);
+                    counterObjs = [];
+            $$counters.each(function () {
+                var value = parseInt(jQuery(this).text());
+                var counterObj = new CountUp(this, 0, value, 0, duration, {
+                    useEasing: true,
+                    useGrouping: true,
+                    separator: '.',
+                    decimal: ','
+                });
+                counterObjs.push(counterObj);
             });
             return counterObjs;
         }
+
         function startCounters(counterObjs) {
-            jQuery.each(counterObjs, function() {
-               this.start();
+            jQuery.each(counterObjs, function () {
+                this.start();
             });
         }
     </script>
