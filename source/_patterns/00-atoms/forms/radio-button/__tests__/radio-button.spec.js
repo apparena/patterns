@@ -6,7 +6,7 @@ import {test} from "ava";
 import RadioButton from "../index";
 
 
-    test('renders with default text', t => {
+    test('renders with default text', (t) => {
         const wrapper = shallow(
             <RadioButton />
         );
@@ -15,7 +15,7 @@ import RadioButton from "../index";
         t.is(wrapper.find('label').contains('identifier missing!'), true);
     });
 
-    test('listens to change', t => {
+    test('listens to change', (t) => {
         const onSelect = spy();
         const wrapper = mount(
             <RadioButton onClick={onSelect} />
@@ -24,7 +24,7 @@ import RadioButton from "../index";
         t.is(onSelect.calledOnce, true);
     });
 
-    test.failing ('sends values to the change event', t => {
+    test.failing ('sends values to the change event', (t) => {
         const onChange = spy();
         const wrapper = mount(
             <RadioButton text="hello" onClick={onChange}/>

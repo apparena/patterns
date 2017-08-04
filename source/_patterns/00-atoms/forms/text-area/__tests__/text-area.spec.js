@@ -5,7 +5,7 @@ import {mount} from "enzyme";
 import {spy} from "sinon";
 import TextArea from "../index";
 
-test('TextArea listens to change', t => {
+test('TextArea listens to change', (t) => {
     const onChange = spy();
     const wrapper = mount(
         <TextArea id="custom-text-area" onChangeFunction={onChange} />
