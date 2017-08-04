@@ -26,7 +26,7 @@ test.failing('handles change correctly', t => {
 
     t.is(onChange.calledOnce, true);
     t.is(onChange.firstCall.args[0]['target']['value'], 4)
-    expect(wrapper.find('select')).to.have.length(1);
-    expect(wrapper.find('optgroup')).to.have.length(1);
-    expect(wrapper.find('option')).to.have.length(5);
+    t.is(wrapper.find('select')).length, 1 );
+    t.is(wrapper.find('optgroup')).length, 1 );
+    t.is(wrapper.find('option')).length, 5 );
 })
