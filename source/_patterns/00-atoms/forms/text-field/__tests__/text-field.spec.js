@@ -5,7 +5,7 @@ import {mount} from "enzyme";
 import {spy} from "sinon";
 import TextField from "../index";
 
-test('TextField listens to change', t => {
+test('TextField listens to change', (t) => {
     const onChange = spy();
     const wrapper = mount(
         <TextField id="custom-text-field" onChangeFunction={onChange} />

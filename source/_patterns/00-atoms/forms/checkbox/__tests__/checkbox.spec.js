@@ -5,14 +5,14 @@ import {spy} from "sinon";
 import CheckBox  from "../index";
 import {test} from 'ava';
 
-test.failing('check default Tooltip options', t => {
+test.failing('check default Tooltip options', (t) => {
     const wrapper = shallow(
         <CheckBox />
     );
     t.is(wrapper.find('tooltip').length, 1);
 });
 
-test('listens to the change', t => {
+test('listens to the change', (t) => {
     const onSelect = spy();
     const wrapper = mount(
         <CheckBox onChange={onSelect} />
@@ -21,14 +21,14 @@ test('listens to the change', t => {
     t.is(onSelect.calledOnce, true);
 });
 
-test.failing('CheckBox without Tooltip', t => {
+test.failing('CheckBox without Tooltip', (t) => {
     const wrapper = shallow(
         <CheckBox renderTooltip="false"/>
     )
     t.is(wrapper.find('Tooltip').length, 0)
 })
 
-test.failing('sends values to the change event', t => {
+test.failing('sends values to the change event', (t) => {
     const onChange = spy();
     const wrapper = mount(
         <CheckBox text="hello" onChange={onChange} />

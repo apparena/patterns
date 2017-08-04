@@ -6,7 +6,7 @@ import {spy} from "sinon";
 import {test} from "ava";
 import SelectMenu from "../index";
 
-test.failing('Select Menu renders elements correctly', t =>{
+test.failing('Select Menu renders elements correctly', (t) =>{
     const onChange = spy();
     const wrapper = shallow(
         <SelectMenu defaultValue="" options={[1,2,3,4,5]} onChange={onChange} />
@@ -17,7 +17,7 @@ test.failing('Select Menu renders elements correctly', t =>{
     
 })
 
-test.failing('handles change correctly', t => {
+test.failing('handles change correctly', (t) => {
     const onChange = spy();
     const wrapper = mount(
         <SelectMenu id="custom-select-menu" options={[1,2,3,4,5]} onChange={onChange} />
