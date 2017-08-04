@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="update readme">
+    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js" />
     </list>
@@ -41,8 +41,8 @@
       <file leaf-file-name="input.spec.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#23#49#0" expanded="true" />
@@ -574,14 +574,7 @@
       <workItem from="1501226791783" duration="17865000" />
       <workItem from="1501518004882" duration="271000" />
       <workItem from="1501599982499" duration="1172000" />
-      <workItem from="1501697313773" duration="21924000" />
-    </task>
-    <task id="LOCAL-00001" summary="update card style">
-      <created>1492075461097</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1492075461097</updated>
+      <workItem from="1501697313773" duration="21943000" />
     </task>
     <task id="LOCAL-00002" summary="refactor react PropTypes to import from prop-types module">
       <created>1493205431884</created>
@@ -919,11 +912,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501830800612</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="update readme">
+      <created>1501830902060</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1501830902062</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269288000" />
+    <option name="totallyTimeSpent" value="269307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -1523,8 +1523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        <state relative-caret-position="270">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#23#49#0" expanded="true" />
