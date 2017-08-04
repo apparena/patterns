@@ -6,6 +6,7 @@
 [![DevDependencies](https://img.shields.io/david/dev/apparena/patterns.svg)](https://david-dm.org/apparena/patterns#info=devDependencies&view=list)
 [![Coverage Status](https://coveralls.io/repos/github/apparena/patterns/badge.svg?branch=develop)](https://coveralls.io/github/apparena/patterns?branch=develop)
 [![Build Status](https://travis-ci.org/apparena/patterns.svg?branch=master)](https://travis-ci.org/apparena/patterns)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 App-Arena Patterns is a set of [React](http://facebook.github.io/react/) components that implement the App-Arena CI.
 
