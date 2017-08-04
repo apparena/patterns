@@ -26,21 +26,9 @@
     "prebuild": "npm run clean:build",
     "publish": "cd build/apparena-patterns-react && npm publish",
     "start": "node build/webpack/server.js",
-<<<<<<< HEAD
-    "test":"cross-env NODE_ENV=test nyc ava",
-    "test:checkbox": "cross-env NODE_ENV=test nyc ava source/_patterns/00-atoms/forms/checkbox/__tests__/checkbox.spec.js",
-    "test:button": "cross-env NODE_ENV=test nyc ava source/_patterns/00-atoms/button/__tests__/button.spec.js",
-    "test:coverage": "cross-env NODE_ENV=test babel-node ./node_modules/istanbul/lib/cli.js cover build/test/index.js",
-    "test:karma": "karma start build/test/karma.conf.js --single-run",
-    "test:unit": "cross-env NODE_ENV=test babel-node build/test/index.js unit",
-    "test:unit:watch": "cross-env NODE_ENV=test babel-node build/test/watch.js unit",
-    "test:generator": "jest generator",
-    "report" : "nyc report --reporter=html"
-=======
     "test": "cross-env NODE_ENV=test nyc ava",
     "test:coverage": "nyc report --reporter=lcov --reporter=json --reporter=text-lcov",
     "test:coverage:html": "nyc report --reporter=html"
->>>>>>> 3c3bc4e8471f121b9a788fcf2d6b5090fe331479
   },
   "repository": {
     "type": "git",

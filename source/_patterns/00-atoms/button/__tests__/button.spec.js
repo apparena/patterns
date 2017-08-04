@@ -1,14 +1,6 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-<<<<<<< HEAD
-import Button from "../button";
-
-test('renders a button', t => {
-    const wrapper = shallow(
-    <Button />
-    );
-=======
 import {mount, shallow} from 'enzyme';
 import {spy} from 'sinon';
 import {expect} from 'chai';
@@ -16,7 +8,6 @@ import Button from '../button';
 
 test('renders a button', (t) => {
     const wrapper = shallow(<Button/>);
->>>>>>> 3c3bc4e8471f121b9a788fcf2d6b5090fe331479
     t.is(wrapper.is('button'), true);
 });
 
