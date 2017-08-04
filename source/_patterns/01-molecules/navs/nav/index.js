@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
-import cx from "classnames";
-import styles from "../navs.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
+import cx from 'classnames';
+import styles from '../navs.scss';
 
 export default class Nav extends ReactComponent {
     static propTypes = {
@@ -11,7 +11,7 @@ export default class Nav extends ReactComponent {
         tabs: PropTypes.bool,
         pills: PropTypes.bool,
         stacked: PropTypes.bool,
-        vertical: PropTypes.bool,
+        vertical: PropTypes.bool
     };
 
     static defaultProps = {
@@ -27,12 +27,12 @@ export default class Nav extends ReactComponent {
         // classes
         const componentClass = cx(
             styles.nav,
-            this.props.inline && styles["nav-inline"],
-            this.props.tabs && styles["nav-tabs"],
-            this.props.pills && styles["nav-pills"],
-            this.props.stacked && styles["nav-stacked"],
-            this.props.stacked && styles["nav-stacked"],
-            this.props.vertical && styles["flex-column"],
+            this.props.inline && styles['nav-inline'],
+            this.props.tabs && styles['nav-tabs'],
+            this.props.pills && styles['nav-pills'],
+            this.props.stacked && styles['nav-stacked'],
+            this.props.stacked && styles['nav-stacked'],
+            this.props.vertical && styles['flex-column'],
             this.props.className
         );
         const child = React.Children.map(children, (child) => {

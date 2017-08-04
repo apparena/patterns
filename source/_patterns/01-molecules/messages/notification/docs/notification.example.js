@@ -1,5 +1,5 @@
-import React from "react";
-import {Notification} from "apparena-patterns-react";
+import React from 'react';
+import {Notification} from 'apparena-patterns-react';
 
 export default function NotificationExample() {
     return (
@@ -9,5 +9,5 @@ export default function NotificationExample() {
         >
             <p> Some random content </p>
         </Notification>
-    )
+    );
 }

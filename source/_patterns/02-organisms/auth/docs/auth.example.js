@@ -1,5 +1,5 @@
-import React from "react";
-import {Auth} from "apparena-patterns-react";
+import React from 'react';
+import {Auth} from 'apparena-patterns-react';
 
 export default function AuthExample() {
     logIn(console.log(null));
@@ -13,7 +13,7 @@ export default function AuthExample() {
             <TextArea placeholder="Username"/>
             <TextArea placeholder="Password"/>
         </Auth>
-    )
+    );
 }
 
 /*;;usage

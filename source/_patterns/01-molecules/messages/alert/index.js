@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
-import cx from "classnames";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
+import cx from 'classnames';
 
 const ALERT_TYPES = [
-    "danger",
-    "info",
-    "success",
-    "warning",
+    'danger',
+    'info',
+    'success',
+    'warning'
 ];
 
 export default class Alert extends ReactComponent {
@@ -15,12 +15,12 @@ export default class Alert extends ReactComponent {
         text: PropTypes.string.isRequired,
         type: PropTypes.oneOf(ALERT_TYPES).isRequired,
         classNames: PropTypes.string,
-        dismissible: PropTypes.bool,
+        dismissible: PropTypes.bool
     };
 
     static defaultProps = {
         dismissible: false,
-        classNames: "",
+        classNames: ''
     };
 
     renderButton() {

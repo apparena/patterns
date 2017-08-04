@@ -1,5 +1,5 @@
-import React from "react";
-import {Media} from "apparena-patterns-react";
+import React from 'react';
+import {Media} from 'apparena-patterns-react';
 
 export default function MediaExample() {
     return (
@@ -10,5 +10,5 @@ export default function MediaExample() {
         >
             <img src="http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png" alt="presentation"/>
         </Media>
-    )
+    );
 }

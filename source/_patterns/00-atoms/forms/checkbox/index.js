@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
-import Tooltip from "../../../01-molecules/tooltip/tooltip";
-import cx from "classnames";
-import Toggle from "react-toggle";
-import styles from "./checkbox.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
+import Tooltip from '../../../01-molecules/tooltip/tooltip';
+import cx from 'classnames';
+import Toggle from 'react-toggle';
+import styles from './checkbox.scss';
 
 export default class Checkbox extends ReactComponent {
     static PropTypes = {
@@ -32,13 +32,18 @@ export default class Checkbox extends ReactComponent {
             'left top',
             'left middle',
             'left bottom'
-        ]),
+        ])
     };
 
     static defaultProps = {
         id: '',
+<<<<<<< HEAD
         renderTooltip: false,
         positioning: "top"
+=======
+        renderTooltip: true,
+        positioning: 'top'
+>>>>>>> 3c3bc4e8471f121b9a788fcf2d6b5090fe331479
     };
 
     /**
@@ -48,12 +53,12 @@ export default class Checkbox extends ReactComponent {
      */
     renderWithTooltip() {
         const {id, positioning, checked, disabled, onChange, zIndex, name} = this.props;
-        const cId = id.replace("_", "");
+        const cId = id.replace('_', '');
         return (
             <Tooltip
                 zIndex={zIndex}
                 positioning={positioning}
-                label={checked ? "Aktiviert" : "Deaktiviert"}
+                label={checked ? 'Aktiviert' : 'Deaktiviert'}
             >
                 <Toggle
                     id={cId}
@@ -72,7 +77,7 @@ export default class Checkbox extends ReactComponent {
      */
     renderWithoutTooltip() {
         const {id, checked, disabled, onChange, name} = this.props;
-        const cId = id.replace("_", "");
+        const cId = id.replace('_', '');
         return (
             <Toggle
                 id={cId}
@@ -90,6 +95,6 @@ export default class Checkbox extends ReactComponent {
             <div className={cx(styles.checkbox, className)}>
                 {this.props.renderTooltip ? this.renderWithTooltip() : this.renderWithoutTooltip()}
             </div>
-        )
+        );
     }
 }

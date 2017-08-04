@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
 
 export default class Jumbotron extends ReactComponent {
     static propTypes = {
@@ -9,16 +9,16 @@ export default class Jumbotron extends ReactComponent {
             PropTypes.element,
             PropTypes.arrayOf(PropTypes.element)
         ]).isRequired,
-        classNames: PropTypes.string,
+        classNames: PropTypes.string
     };
 
     static defaultProps = {
-        classNames: "",
+        classNames: ''
     };
 
     render() {
         let classes = cx(
-            "jumbotron",
+            'jumbotron',
             this.props.classNames
         );
         return (

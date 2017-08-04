@@ -1,10 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
 
-import Card from "../../01-molecules/card/card"
-import Button from "../../00-atoms/button/button"
+import Card from '../../01-molecules/card/card';
+import Button from '../../00-atoms/button/button';
 
 export default class Auth extends ReactComponent {
     static propTypes = {
@@ -14,7 +13,7 @@ export default class Auth extends ReactComponent {
         children: PropTypes.node.isRequired,
         authButtonText: PropTypes.string.isRequired,
         logoURI: PropTypes.string.isRequired,
-        onAuthClick: PropTypes.func.isRequired,
+        onAuthClick: PropTypes.func.isRequired
     };
 
     renderContextInfo() {
@@ -31,7 +30,7 @@ export default class Auth extends ReactComponent {
         return (
             <div className="o-login">
                 <div className="o-login-logo text-center">
-                    <img src={this.props.logoURI} className="logo" alt="App-Arena.com" />
+                    <img src={this.props.logoURI} className="logo" alt="App-Arena.com"/>
                 </div>
 
                 {this.renderContextInfo()}
@@ -46,7 +45,7 @@ export default class Auth extends ReactComponent {
                     </div>
 
                     <div className="card-footer text-right">
-                        <Button buttonClass="btn btn-primary" onClickMethod={this.props.onAuthClick} >
+                        <Button buttonClass="btn btn-primary" onClickMethod={this.props.onAuthClick}>
                             <p>{this.props.authButtonText}</p>
                         </Button>
                     </div>

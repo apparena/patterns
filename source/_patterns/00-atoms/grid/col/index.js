@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
-import cx from "classnames";
-import styles from "../grid.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
+import cx from 'classnames';
+import styles from '../grid.scss';
 
 export default class Col extends ReactComponent {
     static propTypes = {
@@ -33,14 +33,14 @@ export default class Col extends ReactComponent {
         smHidden: PropTypes.bool,
         mdHidden: PropTypes.bool,
         lgHidden: PropTypes.bool,
-        xsVerticalAlignment: PropTypes.oneOf(["auto", "start", "end", "center", "baseline", "stretch"]),
-        smVerticalAlignment: PropTypes.oneOf(["auto", "start", "end", "center", "baseline", "stretch"]),
-        mdVerticalAlignment: PropTypes.oneOf(["auto", "start", "end", "center", "baseline", "stretch"]),
-        lgVerticalAlignment: PropTypes.oneOf(["auto", "start", "end", "center", "baseline", "stretch"]),
-        xsOrder: PropTypes.oneOf(["unordered", "last", "first"]),
-        smOrder: PropTypes.oneOf(["unordered", "last", "first"]),
-        mdOrder: PropTypes.oneOf(["unordered", "last", "first"]),
-        lgOrder: PropTypes.oneOf(["unordered", "last", "first"]),
+        xsVerticalAlignment: PropTypes.oneOf(['auto', 'start', 'end', 'center', 'baseline', 'stretch']),
+        smVerticalAlignment: PropTypes.oneOf(['auto', 'start', 'end', 'center', 'baseline', 'stretch']),
+        mdVerticalAlignment: PropTypes.oneOf(['auto', 'start', 'end', 'center', 'baseline', 'stretch']),
+        lgVerticalAlignment: PropTypes.oneOf(['auto', 'start', 'end', 'center', 'baseline', 'stretch']),
+        xsOrder: PropTypes.oneOf(['unordered', 'last', 'first']),
+        smOrder: PropTypes.oneOf(['unordered', 'last', 'first']),
+        mdOrder: PropTypes.oneOf(['unordered', 'last', 'first']),
+        lgOrder: PropTypes.oneOf(['unordered', 'last', 'first'])
     };
 
     render() {
@@ -62,10 +62,10 @@ export default class Col extends ReactComponent {
             this.props.smOffset && styles[`offset-sm-${this.props.smOffset}`],
             this.props.mdOffset && styles[`offset-md-${this.props.mdOffset}`],
             this.props.lgOffset && styles[`offset-lg-${this.props.lgOffset}`],
-            this.props.xsAutoContent && styles["col-auto"],
-            this.props.smAutoContent && styles["col-sm-auto"],
-            this.props.mdAutoContent && styles["col-md-auto"],
-            this.props.lgAutoContent && styles["col-lg-auto"],
+            this.props.xsAutoContent && styles['col-auto'],
+            this.props.smAutoContent && styles['col-sm-auto'],
+            this.props.mdAutoContent && styles['col-md-auto'],
+            this.props.lgAutoContent && styles['col-lg-auto'],
             this.props.xsVerticalAlignment && styles[`align-self-${this.props.xsVerticalAlignment}`],
             this.props.smVerticalAlignment && styles[`align-self-sm-${this.props.smVerticalAlignment}`],
             this.props.mdVerticalAlignment && styles[`align-self-md-${this.props.mdVerticalAlignment}`],
@@ -82,10 +82,10 @@ export default class Col extends ReactComponent {
             this.props.smPull && styles[`pull-sm-${this.props.smPull}`],
             this.props.mdPull && styles[`pull-md-${this.props.mdPull}`],
             this.props.lgPull && styles[`pull-lg-${this.props.lgPull}`],
-            this.props.xsHidden && styles["hidden-xs-down"],
-            this.props.smHidden && styles["hidden-sm-down"],
-            this.props.mdHidden && styles["hidden-md-down"],
-            this.props.lgHidden && styles["hidden-lg-down"],
+            this.props.xsHidden && styles['hidden-xs-down'],
+            this.props.smHidden && styles['hidden-sm-down'],
+            this.props.mdHidden && styles['hidden-md-down'],
+            this.props.lgHidden && styles['hidden-lg-down'],
             this.props.className
         );
 

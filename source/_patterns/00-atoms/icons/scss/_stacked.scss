@@ -9,12 +9,22 @@
   line-height: 2em;
   vertical-align: middle;
 }
+
 .#{$aa-icon-css-prefix}-stack-1x, .#{$aa-icon-css-prefix}-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
 }
-.#{$aa-icon-css-prefix}-stack-1x { line-height: inherit; }
-.#{$aa-icon-css-prefix}-stack-2x { font-size: 2em; }
-.#{$aa-icon-css-prefix}-inverse { color: $aa-icon-inverse; }
+
+.#{$aa-icon-css-prefix}-stack-1x {
+  line-height: inherit;
+}
+
+.#{$aa-icon-css-prefix}-stack-2x {
+  font-size: 2em;
+}
+
+.#{$aa-icon-css-prefix}-inverse {
+  color: $aa-icon-inverse;
+}

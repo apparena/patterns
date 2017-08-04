@@ -14,7 +14,7 @@
   li.media.active {
     opacity: 1;
   }
-  .hover-tabs{
+  .hover-tabs {
     margin-top: 20px;
   }
   // Tab navigation
@@ -29,7 +29,7 @@
       border-bottom: 1px solid $gray-lighter;
       margin: 2px 0;
       padding-bottom: 10px;
-      outline:none;
+      outline: none;
       text-decoration: none;
 
       @include transition($transition-fade);

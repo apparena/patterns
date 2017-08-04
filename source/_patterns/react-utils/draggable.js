@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "./component";
-import ReactDraggable from "react-draggable";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from './component';
+import ReactDraggable from 'react-draggable';
 
 export default class Draggable extends ReactComponent {
     static propTypes = {

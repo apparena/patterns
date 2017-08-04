@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import cx from "classnames";
-import ReactComponent from "../../../react-utils/component";
-import Select from "react-select";
-import styles from "./select-menu.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import cx from 'classnames';
+import ReactComponent from '../../../react-utils/component';
+import Select from 'react-select';
+import styles from './select-menu.scss';
 
 export default class SelectMenu extends ReactComponent {
     static propTypes = {
@@ -24,7 +24,7 @@ export default class SelectMenu extends ReactComponent {
         placeholder: PropTypes.string,
         searchingText: PropTypes.string,
         noResultsText: PropTypes.string,
-        backspaceToRemoveMessage: PropTypes.string,
+        backspaceToRemoveMessage: PropTypes.string
     };
 
     static defaultProps = {
@@ -34,19 +34,19 @@ export default class SelectMenu extends ReactComponent {
         autofocus: false,
         autoBlur: true,
         disabled: false,
-        clearAllText: "",
-        clearValueText: "",
-        placeholder: "Auswählen",
-        searchingText: "Suchen...",
-        noResultsText: "Keine Ergebnisse",
-        name: "form-field-name",
-        backspaceToRemoveMessage: ""
+        clearAllText: '',
+        clearValueText: '',
+        placeholder: 'Auswählen',
+        searchingText: 'Suchen...',
+        noResultsText: 'Keine Ergebnisse',
+        name: 'form-field-name',
+        backspaceToRemoveMessage: ''
     };
 
     render() {
         if (this.props.creatable) {
             return (
-                <div className={cx("input-group", styles.select)}>
+                <div className={cx('input-group', styles.select)}>
                     <Select.Creatable
                         name={this.props.name}
                         id={this.props.id}
@@ -65,10 +65,10 @@ export default class SelectMenu extends ReactComponent {
                         disabled={this.props.disabled}
                     />
                 </div>
-            )
+            );
         }
         return (
-            <div className={cx("input-group", styles.select)}>
+            <div className={cx('input-group', styles.select)}>
                 <Select
                     name={this.props.name}
                     id={this.props.id}

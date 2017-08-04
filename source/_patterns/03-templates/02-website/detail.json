@@ -84,18 +84,42 @@
           "slidesToShow": 4
         },
         "items": [
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"}
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          }
         ]
       }
     },
@@ -130,18 +154,42 @@
           ]
         },
         "items": [
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"},
-          {"content":"<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"}
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          },
+          {
+            "content": "<img class='img-fluid' src='../../images/bootstrapthumb.jpg'>"
+          }
         ]
       }
     }

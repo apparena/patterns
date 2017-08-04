@@ -51,7 +51,8 @@
                             <td>
                                 <p><strong>4 Service Stunden</strong> für folgende Leistungen</p>
                                 <ul class="fa-ul mb-0">
-                                    <li><i class="fa-li fa fa-check text-success"></i><abbr title="attribute">CSS Anpassungen</abbr></li>
+                                    <li><i class="fa-li fa fa-check text-success"></i><abbr title="attribute">CSS
+                                        Anpassungen</abbr></li>
                                     <li><i class="fa-li fa fa-check text-success"></i>Grafik-Erstellung</li>
                                     <li class="text-muted"><i class="fa-li fa fa-times"></i> Werbemanagement</li>
                                     <li class="text-muted"><i class="fa-li fa fa-times"></i> Abschlussbericht</li>
@@ -74,8 +75,10 @@
                             <th scope="row">Kanäle zur Veröffentlichung</th>
                             <td>
                                 <ul class="fa-ul mb-0">
-                                    <li><i class="fa-li fa fa-check text-success"></i> <strong>Kampagnenseite</strong></li>
-                                    <li><i class="fa-li fa fa-check text-success"></i> <strong>1 Facebook Fanseite</strong></li>
+                                    <li><i class="fa-li fa fa-check text-success"></i> <strong>Kampagnenseite</strong>
+                                    </li>
+                                    <li><i class="fa-li fa fa-check text-success"></i> <strong>1 Facebook
+                                        Fanseite</strong></li>
                                     <li class="text-muted"><i class="fa-li fa fa-times"></i> Webseiteneinbindung</li>
                                 </ul>
                             </td>
@@ -92,7 +95,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="servicesCustom" class="collapse" >
+                <div id="servicesCustom" class="collapse">
                     <table class="table">
                         <tbody>
                         <tr>
@@ -113,10 +116,12 @@
                                             class="tag tag-default float-right">ab 4 Service Stunden</span>
                                     </li>
                                     <li>
-                                        <i class="fa-li fa fa-times"></i>Werbemanagement <span class="tag tag-default float-right">ab 10 Service Stunden</span>
+                                        <i class="fa-li fa fa-times"></i>Werbemanagement
+                                        <span class="tag tag-default float-right">ab 10 Service Stunden</span>
                                     </li>
                                     <li>
-                                        <i class="fa-li fa fa-times"></i>Abschluss-Report <span class="tag tag-default float-right">ab 10 Service Stunden</span>
+                                        <i class="fa-li fa fa-times"></i>Abschluss-Report
+                                        <span class="tag tag-default float-right">ab 10 Service Stunden</span>
                                     </li>
                                 </ul>
                             </td>
@@ -162,7 +167,8 @@
                                     <li><i class="fa-li fa fa-check text-success"></i> 1 Facebook Fanseite <a
                                             href="#">Fanseiten
                                         dazu buchen</a></li>
-                                    <li><i class="fa-li fa fa-times"></i> Einbindung in Webseite <a href="#">Webseiten dazu
+                                    <li><i class="fa-li fa fa-times"></i> Einbindung in Webseite <a href="#">Webseiten
+                                        dazu
                                         buchen</a></li>
                                 </ul>
                             </td>
@@ -201,24 +207,24 @@
 
 <script type="application/javascript">
     var servicePackageSlider = document.getElementById('servicePackageSlider'),
-        servicePackageValue  = document.getElementById('servicePackageValue'),
-        licenseSlider        = document.getElementById('licenseSlider'),
-        licenseValue         = document.getElementById('licenseValue');
+            servicePackageValue = document.getElementById('servicePackageValue'),
+            licenseSlider = document.getElementById('licenseSlider'),
+            licenseValue = document.getElementById('licenseValue');
 
     noUiSlider.create(licenseSlider, {
-        start : 1,
-        step  : 1,
+        start: 1,
+        step: 1,
         format: wNumb({
             decimals: 0
         }),
-        range : {
+        range: {
             'min': 1,
             'max': 24
         },
-        pips  : {
-            mode   : 'steps',
+        pips: {
+            mode: 'steps',
             density: 24,
-            format : wNumb({
+            format: wNumb({
                 decimals: 0
             })
         }
@@ -230,19 +236,19 @@
     });
 
     noUiSlider.create(servicePackageSlider, {
-        start : 0,
-        step  : 1,
+        start: 0,
+        step: 1,
         format: wNumb({
             decimals: 0
         }),
-        range : {
+        range: {
             'min': 0,
             'max': 24
         },
-        pips  : {
-            mode   : 'steps',
+        pips: {
+            mode: 'steps',
             density: 24,
-            format : wNumb({
+            format: wNumb({
                 decimals: 0
             })
         }

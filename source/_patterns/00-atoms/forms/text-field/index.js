@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
 
 export default class TextField extends ReactComponent {
     static propTypes = {
         placeholder: PropTypes.string,
         id: PropTypes.string.isRequired,
         onChangeFunction: PropTypes.func,
-        classNames: PropTypes.string,
+        classNames: PropTypes.string
     };
 
     render() {

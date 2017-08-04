@@ -1,8 +1,8 @@
-import velocity from "velocity-animate/velocity";
-import "velocity-animate/velocity.ui";
-import {PropTypes} from "react";
-import {findDOMNode} from "react-dom";
-import ReactComponent from "./component";
+import velocity from 'velocity-animate/velocity';
+import 'velocity-animate/velocity.ui';
+import {PropTypes} from 'react';
+import {findDOMNode} from 'react-dom';
+import ReactComponent from './component';
 
 export default class Animate extends ReactComponent {
     static propTypes = {

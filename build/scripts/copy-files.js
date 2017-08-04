@@ -1,25 +1,12 @@
 /* eslint-disable no-console */
-import path from "path";
-import fse from "fs-extra";
-import Minimist from "minimist";
+import path from 'path';
+import fse from 'fs-extra';
+import Minimist from 'minimist';
 
 const argv = Minimist(process.argv.slice(2));
 
-const files = [
-    './source/css',
-    './source/fonts',
-    'README.md',
-    'CHANGELOG.md',
-    'LICENSE',
-];
-
-Promise.all(
-    files.map((file) => copyFile(file))
-)
-    .then(() => createPackageFile());
-
 function copyFile(file) {
-    const buildPath = resolveBuildPath(file);
+    const buildPath = path.resolve(__dirname, '../apparena-patterns-react/', path.basename(file));
     return new Promise((resolve) => {
         fse.copy(
             file,
@@ -31,10 +18,6 @@ function copyFile(file) {
         );
     })
         .then(() => console.log(`Copied ${file} to ${buildPath}`));
-}
-
-function resolveBuildPath(file) {
-    return path.resolve(__dirname, '../apparena-patterns-react/', path.basename(file));
 }
 
 function createPackageFile() {
@@ -58,16 +41,16 @@ function createPackageFile() {
                 bugs,
                 homepage,
                 peerDependencies,
-                dependencies,
+                dependencies
             } = packageData;
 
-            var {version}  = packageData;
+            var {version} = packageData;
             if (argv._.length) {
                 version = argv._[0];
             }
 
             const minimalPackage = {
-                name: "apparena-patterns-react",
+                name: 'apparena-patterns-react',
                 author,
                 version,
                 description,
@@ -78,7 +61,7 @@ function createPackageFile() {
                 bugs,
                 homepage,
                 peerDependencies,
-                dependencies,
+                dependencies
             };
 
             return new Promise((resolve) => {
@@ -92,3 +75,13 @@ function createPackageFile() {
             });
         });
 }
+
+const files = [
+    './source/css',
+    './source/fonts',
+    'README.md',
+    'CHANGELOG.md',
+    'LICENSE'
+];
+
+Promise.all(files.map((file) => copyFile(file))).then(() => createPackageFile());

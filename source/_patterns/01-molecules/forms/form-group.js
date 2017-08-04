@@ -1,19 +1,19 @@
-import React from "react";
-import PropTypes from "prop-types";
-import cx from "classnames";
-import styles from "./form-group.scss";
-import Tooltip from "../tooltip/tooltip";
+import React from 'react';
+import PropTypes from 'prop-types';
+import cx from 'classnames';
+import styles from './form-group.scss';
+import Tooltip from '../tooltip/tooltip';
 
 function FormGroup({className, htmlFor, label, children, validationState, validationFeedback, inlineLabel, ...props}) {
-    props.className = cx(styles["form-group"], validationState && styles[`has-${validationState}`], className);
+    props.className = cx(styles['form-group'], validationState && styles[`has-${validationState}`], className);
 
     const elements = React.Children.map(children, (child) => {
-        if (child.type.name === "Input") {
+        if (child.type.name === 'Input') {
             const input = React.cloneElement(child, {
                 className: validationState ? cx(child.props.className, styles[`form-control-${validationState}`]) : cx(child.props.className),
-                placeholder: inlineLabel ? label : "",
+                placeholder: inlineLabel ? label : ''
             });
-            if (validationState && validationState !== "default" && validationFeedback) {
+            if (validationState && validationState !== 'default' && validationFeedback) {
                 return (
                     <Tooltip
                         label={validationFeedback}
@@ -22,7 +22,7 @@ function FormGroup({className, htmlFor, label, children, validationState, valida
                     >
                         {input}
                     </Tooltip>
-                )
+                );
             }
             return input;
         } else {
@@ -40,7 +40,7 @@ function FormGroup({className, htmlFor, label, children, validationState, valida
 
     return (
         <div {...props}>
-            <label className={styles["form-control-label"]} htmlFor={htmlFor}>{label}</label>
+            <label className={styles['form-control-label']} htmlFor={htmlFor}>{label}</label>
             {elements}
         </div>
     );
@@ -53,12 +53,12 @@ FormGroup.propTypes = {
     id: PropTypes.string,
     label: PropTypes.string,
     validationFeedback: PropTypes.string,
-    validationState: PropTypes.oneOf(["default", "danger", "success", "warning"]),
-    inlineLabel: PropTypes.bool,
+    validationState: PropTypes.oneOf(['default', 'danger', 'success', 'warning']),
+    inlineLabel: PropTypes.bool
 };
 
 FormGroup.defaultProps = {
-    inlineLabel: false,
-}
+    inlineLabel: false
+};
 
 export default FormGroup;

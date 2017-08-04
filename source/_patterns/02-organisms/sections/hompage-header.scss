@@ -1,22 +1,21 @@
 section.section-homepage-header {
-    margin-bottom: -20px;
-    padding-bottom: 0;
-    overflow: visible;
-    z-index: 1; // for SVG overlaying the next section
-    .header-background-row {
-        position: absolute;
-        bottom: 60px;
-        right: 15px;
-        left: 15px;
-    }
-    .header-heading-row {
-        height: 12rem;
-    }
-    .header-objects-row {
-        //transform: translateY(20px);
-    }
+  margin-bottom: -20px;
+  padding-bottom: 0;
+  overflow: visible;
+  z-index: 1; // for SVG overlaying the next section
+  .header-background-row {
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    left: 15px;
+  }
+  .header-heading-row {
+    height: 12rem;
+  }
+  .header-objects-row {
+    //transform: translateY(20px);
+  }
 }
-
 
 /*
 svg#header-background #background #dynamic #row1 {

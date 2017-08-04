@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import styles from "./navbar.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import styles from './navbar.scss';
 
 export default class Navbar extends ReactComponent {
     static propTypes = {
@@ -13,14 +13,14 @@ export default class Navbar extends ReactComponent {
                 PropTypes.element
             )
         ]).isRequired,
-        fixed: PropTypes.oneOf(["top", "bottom"]),
-        colorScheme: PropTypes.oneOf(["light", "inverse"]),
-        bg: PropTypes.oneOf(["primary", "success", "info", "warning", "danger", "inverse", "faded"])
+        fixed: PropTypes.oneOf(['top', 'bottom']),
+        colorScheme: PropTypes.oneOf(['light', 'inverse']),
+        bg: PropTypes.oneOf(['primary', 'success', 'info', 'warning', 'danger', 'inverse', 'faded'])
     };
 
     static defaultProps = {
-        colorScheme: "light",
-        bg: "faded",
+        colorScheme: 'light',
+        bg: 'faded'
     };
 
     render() {

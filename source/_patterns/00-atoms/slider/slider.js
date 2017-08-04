@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
-import Component from "../../react-utils/component";
-import styles from "./slider.scss";
-import cx from "classnames";
+import Component from '../../react-utils/component';
+import styles from './slider.scss';
+import cx from 'classnames';
 
 /**
  * Verifies min/max range.
@@ -127,7 +127,7 @@ class Slider extends Component {
         /**
          * The value of the slider.
          */
-        value: valueInRangePropType,
+        value: valueInRangePropType
     };
 
     static defaultProps = {
@@ -138,7 +138,7 @@ class Slider extends Component {
         min: 0,
         required: true,
         step: 0.01,
-        style: {},
+        style: {}
     };
 
     state = {
@@ -146,48 +146,15 @@ class Slider extends Component {
         dragging: false,
         focused: false,
         hovered: false,
-        value: 0,
+        value: 0
     };
-
-    componentWillMount() {
-        const {
-            defaultValue,
-            min,
-            max,
-        } = this.props;
-
-        let {value} = this.props;
-        if (value === undefined) {
-            value = defaultValue !== undefined ? defaultValue : min;
-        }
-
-        if (value > max) {
-            value = max;
-        } else if (value < min) {
-            value = min;
-        }
-
-        this.setState({
-            value,
-        });
-    }
-
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.value !== undefined && !this.state.dragging) {
-            this.setState({
-                value: nextProps.value,
-            });
-        }
-    }
-
     track = null;
     handle = null;
-
     handleKeyDown = (event) => {
         const {
             min,
             max,
-            step,
+            step
         } = this.props;
 
         let action;
@@ -228,7 +195,7 @@ class Slider extends Component {
 
             if (this.state.value !== newValue) {
                 this.setState({
-                    value: newValue,
+                    value: newValue
                 });
 
                 if (this.props.onChange) {
@@ -237,22 +204,18 @@ class Slider extends Component {
             }
         }
     };
-
     handleDragMouseMove = (event) => {
         this.onDragUpdate(event, 'mouse');
     };
-
     handleTouchMove = (event) => {
         this.onDragUpdate(event, 'touch');
     };
-
     handleMouseEnd = (event) => {
         document.removeEventListener('mousemove', this.handleDragMouseMove);
         document.removeEventListener('mouseup', this.handleMouseEnd);
 
         this.onDragStop(event);
     };
-
     handleTouchEnd = (event) => {
         document.removeEventListener('touchmove', this.handleTouchMove);
         document.removeEventListener('touchup', this.handleTouchEnd);
@@ -261,7 +224,6 @@ class Slider extends Component {
 
         this.onDragStop(event);
     };
-
     handleTouchStart = (event) => {
         if (this.props.disabled) {
             return;
@@ -280,28 +242,25 @@ class Slider extends Component {
         // Cancel scroll and context menu
         event.preventDefault();
     };
-
     handleFocus = (event) => {
         this.setState({
-            focused: true,
+            focused: true
         });
 
         if (this.props.onFocus) {
             this.props.onFocus(event);
         }
     };
-
     handleBlur = (event) => {
         this.setState({
             focused: false,
-            active: false,
+            active: false
         });
 
         if (this.props.onBlur) {
             this.props.onBlur(event);
         }
     };
-
     handleMouseDown = (event) => {
         if (this.props.disabled) {
             return;
@@ -321,26 +280,54 @@ class Slider extends Component {
 
         this.onDragStart(event);
     };
-
     handleMouseUp = () => {
         if (!this.props.disabled) {
             this.setState({
-                active: false,
+                active: false
             });
         }
     };
-
     handleMouseEnter = () => {
         this.setState({
-            hovered: true,
+            hovered: true
+        });
+    };
+    handleMouseLeave = () => {
+        this.setState({
+            hovered: false
         });
     };
 
-    handleMouseLeave = () => {
+    componentWillMount() {
+        const {
+            defaultValue,
+            min,
+            max
+        } = this.props;
+
+        let {value} = this.props;
+        if (value === undefined) {
+            value = defaultValue !== undefined ? defaultValue : min;
+        }
+
+        if (value > max) {
+            value = max;
+        } else if (value < min) {
+            value = min;
+        }
+
         this.setState({
-            hovered: false,
+            value
         });
-    };
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.value !== undefined && !this.state.dragging) {
+            this.setState({
+                value: nextProps.value
+            });
+        }
+    }
 
     getTrackOffset() {
         return this.track.getBoundingClientRect()['left'];
@@ -349,7 +336,7 @@ class Slider extends Component {
     onDragStart(event) {
         this.setState({
             dragging: true,
-            active: true,
+            active: true
         });
 
         if (this.props.onDragStart) {
@@ -378,7 +365,7 @@ class Slider extends Component {
     onDragStop(event) {
         this.setState({
             dragging: false,
-            active: false,
+            active: false
         });
 
         if (this.props.onDragStop) {
@@ -398,7 +385,7 @@ class Slider extends Component {
         const {
             step,
             min,
-            max,
+            max
         } = this.props;
 
         let value;
@@ -414,7 +401,7 @@ class Slider extends Component {
 
         if (this.state.value !== value) {
             this.setState({
-                value,
+                value
             });
 
             if (this.props.onChange) {
@@ -446,7 +433,7 @@ class Slider extends Component {
             active,
             focused,
             hovered,
-            value,
+            value
         } = this.state;
 
         const percent = getPercent(value, min, max);
@@ -483,22 +470,22 @@ class Slider extends Component {
                     onKeyDown={!disabled && this.handleKeyDown}
                 >
                     <div ref={(node) => {
-                        this.track = node
+                        this.track = node;
                     }} className={styles.track}
                     >
                         <div className={styles.filledAndRemainingFill} style={{
                             left: 0,
-                            marginRight: "1px",
+                            marginRight: '1px',
                             width: `${percent * 100}%`
                         }}/>
                         <div className={styles.filledAndRemainingRemain} style={{
                             right: 0,
-                            marginLeft: "1px",
+                            marginLeft: '1px',
                             width: `${(1 - percent) * 100}%`
                         }}/>
                         <div
                             ref={(node) => {
-                                this.handle = node
+                                this.handle = node;
                             }}
                             className={handleStyles}
                             style={{left: percent === 0 ? '0%' : `${(percent * 100)}%`}}

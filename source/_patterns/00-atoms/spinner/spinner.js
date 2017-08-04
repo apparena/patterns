@@ -1,25 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
-import cx from "classnames";
-import ReactComponent from "../../react-utils/component";
-import styles from "./spinner.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import cx from 'classnames';
+import ReactComponent from '../../react-utils/component';
+import styles from './spinner.scss';
 
 const SPINNER_TYPES = [
-    "default",
-    "primary",
-    "secondary",
-    "success",
-    "info",
-    "warning",
-    "danger",
-    "link",
-    "outline-primary",
-    "outline-secondary",
-    "outline-success",
-    "outline-info",
-    "outline-warning",
-    "outline-danger",
-    "inverted"
+    'default',
+    'primary',
+    'secondary',
+    'success',
+    'info',
+    'warning',
+    'danger',
+    'link',
+    'outline-primary',
+    'outline-secondary',
+    'outline-success',
+    'outline-info',
+    'outline-warning',
+    'outline-danger',
+    'inverted'
 ];
 
 export default class Spinner extends ReactComponent {
@@ -44,9 +44,9 @@ export default class Spinner extends ReactComponent {
 
         return (
             <div className={componentClass}>
-                <span className={cx(styles["spinner-dot"], styles["spinner-dot-first"])}/>
-                <span className={cx(styles["spinner-dot"], styles["spinner-dot-second"])}/>
-                <span className={cx(styles["spinner-dot"], styles["spinner-dot-third"])}/>
+                <span className={cx(styles['spinner-dot'], styles['spinner-dot-first'])}/>
+                <span className={cx(styles['spinner-dot'], styles['spinner-dot-second'])}/>
+                <span className={cx(styles['spinner-dot'], styles['spinner-dot-third'])}/>
             </div>
         );
     }

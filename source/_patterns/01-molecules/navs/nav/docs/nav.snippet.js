@@ -1,10 +1,10 @@
 import React from 'react';
 import {Nav, NavItem} from 'apparena-patterns-react';
 
-export default class MyAwesomeClass extends React.Component{
-    render(){
-        return(
-            <Nav >
+export default class MyAwesomeClass extends React.Component {
+    render() {
+        return (
+            <Nav>
                 <NavItem vertical pills>
                     <a>Rock</a>
                 </NavItem>
@@ -14,7 +14,7 @@ export default class MyAwesomeClass extends React.Component{
                 <NavItem>
                     <a>Indie</a>
                 </NavItem>
-            </Nav>  
-        )
+            </Nav>
+        );
     }
 }

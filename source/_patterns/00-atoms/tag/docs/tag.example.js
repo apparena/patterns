@@ -1,5 +1,5 @@
-import React from "react";
-import {Tag} from "apparena-patterns-react";
+import React from 'react';
+import {Tag} from 'apparena-patterns-react';
 
 export default function TagExample() {
     return (

@@ -1,122 +1,122 @@
 {
-    "services-list": {
-        "headline": "Unsere Services.",
-        "more-btn-text": "Nicht genug?",
-        "items": [
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            }
-        ],
-        "items-more": [
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            },
-            {
-                "aa-icon": "aa-icon-aa-analytics",
-                "title": "Leadgenerierung",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                "action-text": "Mehr erfahren",
-                "href": "#"
-            }
-        ]
-    }
+  "services-list": {
+    "headline": "Unsere Services.",
+    "more-btn-text": "Nicht genug?",
+    "items": [
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      }
+    ],
+    "items-more": [
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      },
+      {
+        "aa-icon": "aa-icon-aa-analytics",
+        "title": "Leadgenerierung",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+        "action-text": "Mehr erfahren",
+        "href": "#"
+      }
+    ]
+  }
 }
