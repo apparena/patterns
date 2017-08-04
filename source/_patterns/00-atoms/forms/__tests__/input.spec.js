@@ -5,14 +5,14 @@ import {spy} from "sinon";
 import Input from "../input";
 import {test} from 'ava';
 
-test('Input is focused by default', t =>{
+test('Input is focused by default', (t) => {
     const wrapper = mount(
         <Input autoFocus />
     );
     t.is(wrapper.find('input').node, document.activeElement);
 });
 
-test('Input accepts custom functions', t => {
+test('Input accepts custom functions', (t) => {
     const onChange = spy();
     const wrapper = mount(
         <Input onChange={onChange} />
