@@ -3,11 +3,12 @@ import React from "react";
 import {shallow, mount} from "enzyme";
 import {spy} from "sinon";
 import {test} from 'ava';
-import {expect} from 'chai';
 import Button from "../button";
 
 test('renders a button', t => {
-    const wrapper = shallow(<Button />);
+    const wrapper = shallow(
+    <Button />
+    );
     t.is(wrapper.is('button'), true);
 });
 

@@ -1,26 +1,23 @@
 /* eslint-env mocha */
 import React from "react";
 import {mount} from "enzyme";
-import {expect} from "chai";
 import {spy} from "sinon";
 import Input from "../input";
+import {test} from 'ava';
 
-describe('<Input />', () => {
-    it('is focused by default', () => {
-        const onChange = spy();
-        const wrapper = mount(
-            <Input onChange={onChange} />
-        );
-        expect(wrapper.find('input').node).to.equal(document.activeElement);
-    });
+test('Input is focused by default', t =>{
+    const wrapper = mount(
+        <Input autoFocus />
+    );
+    t.is(wrapper.find('input').node, document.activeElement);
+});
 
-    it('accepts custom functions', () => {
-        const onChange = spy();
-        const wrapper = mount(
-            <Input onChange={onChange} />
-        );
-        wrapper.find('input').simulate('change', {target: {value: 'My old value'}})
-            .simulate('change', {target: {value: 'My new value'}});
-        expect(onChange).to.have.property('callCount', 2);
-    });
+test('Input accepts custom functions', t => {
+    const onChange = spy();
+    const wrapper = mount(
+        <Input onChange={onChange} />
+    );
+    wrapper.find('input').simulate('change',{target: {value: 'My old value'}})
+        .simulate('change', {target: {value:'My new value'}});
+    t.is(onChange.calledTwice, true);
 });

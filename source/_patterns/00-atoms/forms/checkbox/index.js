@@ -37,7 +37,7 @@ export default class Checkbox extends ReactComponent {
 
     static defaultProps = {
         id: '',
-        renderTooltip: true,
+        renderTooltip: false,
         positioning: "top"
     };
 
