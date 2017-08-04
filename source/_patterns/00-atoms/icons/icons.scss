@@ -4,7 +4,6 @@
 @import "../../../css/scss/abstracts/variables";
 @import "../../../css/scss/abstracts/mixins";
 @import "../../../fonts/app-arena-icons.scss";
-
 /*
  Icon Helper Classes
 */
@@ -19,7 +18,6 @@
 @import "./scss/stacked";
 @import "./scss/screen-reader";
 
-
 /*=========================================================================
   Atoms Icons
  ========================================================================== */
@@ -29,8 +27,8 @@
 }
 
 .icon-primary {
-   color: $brand-primary
- }
+  color: $brand-primary
+}
 
 .icon-secondary {
   color: $brand-secondary

@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import cx from "classnames";
-import Animate from "./animate";
-import ReactComponent from "./component";
-import styles from "./scss/stick.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import cx from 'classnames';
+import Animate from './animate';
+import ReactComponent from './component';
+import styles from './scss/stick.scss';
 
 const POSITIONING = [
     'top',
@@ -30,12 +30,12 @@ export default class Stick extends ReactComponent {
         positioning: PropTypes.oneOf(POSITIONING),
         offset: PropTypes.number,
         onClose: PropTypes.func,
-        zIndex: PropTypes.number,
+        zIndex: PropTypes.number
     };
 
     static defaultProps = {
-        transition: "fadeIn",
-        positioning: "top",
+        transition: 'fadeIn',
+        positioning: 'top',
         offset: 0,
         zIndex: 1030,
         overlay: false
@@ -51,13 +51,13 @@ export default class Stick extends ReactComponent {
     }
 
     componentDidMount() {
-        this.mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel";
+        this.mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? 'DOMMouseScroll' : 'mousewheel';
         this.scrollBind = ::this.onScroll;
         this.resizeBind = ::this.onResize;
         this.onCloseBind = ::this.onClose;
         document.body.addEventListener(this.mousewheelevt, this.scrollBind, false);
-        window.addEventListener("resize", this.resizeBind, false);
-        this.props.onClose && document.body.addEventListener("mousedown", this.onCloseBind, false); // eslint-disable-line
+        window.addEventListener('resize', this.resizeBind, false);
+        this.props.onClose && document.body.addEventListener('mousedown', this.onCloseBind, false); // eslint-disable-line
         this.updatePosition();
     }
 
@@ -70,8 +70,8 @@ export default class Stick extends ReactComponent {
     componentWillUnmount() {
         if (this.props.fixed) {
             document.body.removeEventListener(this.mousewheelevt, this.scrollBind);
-            window.removeEventListener("resize", this.resizeBind);
-            this.props.onClose && document.body.removeEventListener("mousedown", this.onCloseBind); // eslint-disable-line
+            window.removeEventListener('resize', this.resizeBind);
+            this.props.onClose && document.body.removeEventListener('mousedown', this.onCloseBind); // eslint-disable-line
         }
     }
 
@@ -134,59 +134,59 @@ export default class Stick extends ReactComponent {
 
         switch (this.props.positioning) {
             // LEFT
-            case "left":
+            case 'left':
                 position.left = left - thisRect.width - this.props.offset;
                 position.top = (top + (rect.height / 2)) - (thisRect.height / 2);
                 break;
-            case "left top":
+            case 'left top':
                 position.left = left - thisRect.width - this.props.offset;
                 position.top = top - (thisRect.height / 2);
                 break;
-            case "left bottom":
+            case 'left bottom':
                 position.left = left - thisRect.width - this.props.offset;
                 position.top = (top + rect.height) - (thisRect.height / 2);
                 break;
             // RIGHT
-            case "right":
+            case 'right':
                 position.left = left + rect.width + this.props.offset;
                 position.top = (top + (rect.height / 2)) - (thisRect.height / 2);
                 break;
-            case "right top":
+            case 'right top':
                 position.left = left + rect.width + this.props.offset;
                 position.top = top - (thisRect.height / 2);
                 break;
-            case "right bottom":
+            case 'right bottom':
                 position.left = left + rect.width + this.props.offset;
                 position.top = (top + rect.height) - (thisRect.height / 2);
                 break;
             // Top
-            case "top":
+            case 'top':
                 position.left = (left + (rect.width / 2)) - (thisRect.width / 2);
                 position.top = top - thisRect.height - this.props.offset;
                 break;
-            case "top left":
+            case 'top left':
                 position.left = left - (thisRect.width / 2);
                 position.top = top - thisRect.height - this.props.offset;
                 break;
-            case "top right":
+            case 'top right':
                 position.left = (left + rect.width) - (thisRect.width / 2);
                 position.top = top - thisRect.height - this.props.offset;
                 break;
             //Bottom
-            case "bottom":
+            case 'bottom':
                 position.left = (left + (rect.width / 2)) - (thisRect.width / 2);
                 position.top = top + rect.height + this.props.offset;
                 break;
-            case "bottom left":
+            case 'bottom left':
                 position.left = left - (thisRect.width / 2);
                 position.top = top + rect.height + this.props.offset;
                 break;
-            case "bottom right":
+            case 'bottom right':
                 position.left = (left + rect.width) - (thisRect.width / 2);
                 position.top = top + rect.height + this.props.offset;
                 break;
             //Overlay
-            case "overlay":
+            case 'overlay':
                 position.top = top;
                 position.left = left;
                 position.width = rect.width;
@@ -217,16 +217,16 @@ export default class Stick extends ReactComponent {
         let style = {
             zIndex: this.props.zIndex,
             left: this.state.left,
-            top: this.state.top,
+            top: this.state.top
         };
 
-        if (positioning === "overlay") {
+        if (positioning === 'overlay') {
             style = {
                 zIndex: this.props.zIndex,
                 left: this.state.left,
                 top: this.state.top,
                 height: this.state.height,
-                width: this.state.width,
+                width: this.state.width
             };
         }
 

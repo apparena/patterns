@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import Portal from "../../react-utils/portal";
-import Stick from "../../react-utils/stick";
-import styles from "./popover.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import Portal from '../../react-utils/portal';
+import Stick from '../../react-utils/stick';
+import styles from './popover.scss';
 
 const POSITIONING = [
     'top',
@@ -34,7 +34,7 @@ export default class PopOver extends ReactComponent {
     };
 
     static defaultProps = {
-        positioning: "top",
+        positioning: 'top',
         open: false,
         zIndex: 1060
     };
@@ -72,9 +72,9 @@ export default class PopOver extends ReactComponent {
                         <div
                             className={cx(styles.popoverRoot, styles.popover, styles[`popover-${this.props.positioning}`])}
                         >
-                            <div className={styles["popover-arrow"]}></div>
-                            {this.props.title && <h3 className={styles["popover-title"]}>{this.props.title}</h3>}
-                            <div className={styles["popover-content"]}>
+                            <div className={styles['popover-arrow']}></div>
+                            {this.props.title && <h3 className={styles['popover-title']}>{this.props.title}</h3>}
+                            <div className={styles['popover-content']}>
                                 {this.props.content}
                             </div>
                         </div>
@@ -91,7 +91,7 @@ export default class PopOver extends ReactComponent {
                 className={className || styles.root}
                 onClick={::this.toggleTooltip}
                 ref={(c) => {
-                    this._handler = c
+                    this._handler = c;
                 }}
             >
                 {this.props.children}

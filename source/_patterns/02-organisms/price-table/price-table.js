@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import styles from "./price-table.scss";
-import Element from "./docs/price-table-element";
-import Checkbox from "../../00-atoms/forms/checkbox";
-import CustomPackageCreator from "./custom-package-creator/custom-package-creator";
-import Col from "../../00-atoms/grid/col";
-import Row from "../../00-atoms/grid/row";
-import Button from "../../00-atoms/button/button";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import styles from './price-table.scss';
+import Element from './docs/price-table-element';
+import Checkbox from '../../00-atoms/forms/checkbox';
+import CustomPackageCreator from './custom-package-creator/custom-package-creator';
+import Col from '../../00-atoms/grid/col';
+import Row from '../../00-atoms/grid/row';
+import Button from '../../00-atoms/button/button';
 
 export default class PriceTable extends ReactComponent {
     static propTypes = {
@@ -17,7 +17,7 @@ export default class PriceTable extends ReactComponent {
         plans: PropTypes.object.isRequired,
         onClick: PropTypes.oneOfType([
             PropTypes.string,
-            PropTypes.func,
+            PropTypes.func
         ]).isRequired
     };
 
@@ -26,14 +26,14 @@ export default class PriceTable extends ReactComponent {
         this.handleCustomPackageButton = ::this.onCustomPackageButton;
 
         return {
-            showPlans: "single",
-            showCustomPackageCreator: false,
+            showPlans: 'single',
+            showCustomPackageCreator: false
         };
     }
 
     onCheckbox() {
         this.setState({
-            showPlans: (this.state.showPlans === "single") ? "flatrate" : "single"
+            showPlans: (this.state.showPlans === 'single') ? 'flatrate' : 'single'
         });
     }
 
@@ -57,7 +57,7 @@ export default class PriceTable extends ReactComponent {
                     return (
                         <Element
                             onClick={onClick}
-                            discount={(showPlans === "single") ? plans.payment.terms.single.discount : plans.payment.terms.yearly.discount}
+                            discount={(showPlans === 'single') ? plans.payment.terms.single.discount : plans.payment.terms.yearly.discount}
                             plans={plans}
                             key={`element${i}`}
                             element={element}
@@ -68,7 +68,7 @@ export default class PriceTable extends ReactComponent {
                             title={element.title}
                             articles={element.articles}
                             isPopular={element.popular}
-                            isFlatrate={showPlans === "flatrate"}
+                            isFlatrate={showPlans === 'flatrate'}
                         />
                     );
                 })}
@@ -86,22 +86,22 @@ export default class PriceTable extends ReactComponent {
         if (this.state.showCustomPackageCreator) {
             return (
                 <CustomPackageCreator templateId={templateId} onClick={onClick} data={plans}/>
-            )
+            );
         }
         return (
             <Row justifyContent="center">
                 <Col xs="10" md="6" lg="4" className={cx(styles.customPackage)}>
                     <p>
-                        {this.t("customPackage.info1")}
-                        <br />
-                        {this.t("customPackage.info2")}
+                        {this.t('customPackage.info1')}
+                        <br/>
+                        {this.t('customPackage.info2')}
                     </p>
                     <Button className={styles.customPackageButton}
                             onClick={this.handleCustomPackageButton}
                             type="primary"
                             rounded
                     >
-                        {this.t("customPackage.buttonPrompt")}
+                        {this.t('customPackage.buttonPrompt')}
                     </Button>
                 </Col>
             </Row>
@@ -116,22 +116,22 @@ export default class PriceTable extends ReactComponent {
                 <div className={styles.selectorTable}>
                     <div className={styles.selectorTableRow}>
                         <div
-                            className={cx(styles.selectorTableCellLeft, showPlans === "single" && styles.selectorTableCellSelected)}
+                            className={cx(styles.selectorTableCellLeft, showPlans === 'single' && styles.selectorTableCellSelected)}
                         >
-                            {this.t("priceTable.leftText")}
+                            {this.t('priceTable.leftText')}
                         </div>
                         <div className={styles.selectorTableCellMiddle}>
                             <Checkbox
                                 className={styles.checkBoxFix}
                                 renderTooltip={false}
                                 onChange={this.handleCheckbox}
-                                checked={showPlans === "flatrate"}
+                                checked={showPlans === 'flatrate'}
                             />
                         </div>
                         <div
-                            className={cx(styles.selectorTableCellRight, showPlans === "flatrate" && styles.selectorTableCellSelected)}
+                            className={cx(styles.selectorTableCellRight, showPlans === 'flatrate' && styles.selectorTableCellSelected)}
                         >
-                            {this.t("priceTable.rightText")}
+                            {this.t('priceTable.rightText')}
                         </div>
                     </div>
                 </div>

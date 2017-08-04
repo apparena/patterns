@@ -1,15 +1,32 @@
 {
-    "navSecondary": false,
-    "focusedTaskSize": "col-sm-8 offset-sm-2",
-    "content": "<h1>FORM</h1>",
-    "footer": "<a href=\"#\" class=\"btn btn-primary\">Call to action</a>",
-    "header": "Title of the task",
-    "progressTracker": {
-        "items": [
-            {"text":"Step 1", "href":"#step1", "id": "step1", "class": "step1" },
-            {"text":"Step 2", "href":"#step2", "id": "step2", "class": "step2", "isActive": true },
-            {"text":"Step 3", "href":"#step3" },
-            {"text":"Step 4", "href":"#step4" }
-        ]
-    }
+  "navSecondary": false,
+  "focusedTaskSize": "col-sm-8 offset-sm-2",
+  "content": "<h1>FORM</h1>",
+  "footer": "<a href=\"#\" class=\"btn btn-primary\">Call to action</a>",
+  "header": "Title of the task",
+  "progressTracker": {
+    "items": [
+      {
+        "text": "Step 1",
+        "href": "#step1",
+        "id": "step1",
+        "class": "step1"
+      },
+      {
+        "text": "Step 2",
+        "href": "#step2",
+        "id": "step2",
+        "class": "step2",
+        "isActive": true
+      },
+      {
+        "text": "Step 3",
+        "href": "#step3"
+      },
+      {
+        "text": "Step 4",
+        "href": "#step4"
+      }
+    ]
+  }
 }

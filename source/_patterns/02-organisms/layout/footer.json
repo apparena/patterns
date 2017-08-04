@@ -13,10 +13,26 @@
     },
     "socialMedia": {
       "items": [
-        {"icon":"<i class=\"aa-icon aa-icon-facebook\"></i>", "url":"https://www.facebook.com", "title": "App-Arena auf Facebook"},
-        {"icon":"<i class=\"aa-icon aa-icon-youtube\"></i>", "url":"https://www.youtube.com", "title": "App-Arena auf Youtube"},
-        {"icon":"<i class=\"aa-icon aa-icon-twitter\"></i>", "url":"https://www.twitter.com", "title": "App-Arena auf Twitter"},
-        {"icon":"<i class=\"aa-icon aa-icon-github\"></i>", "url":"https://github.com/orgs/apparena", "title": "App-Arena auf Github"}
+        {
+          "icon": "<i class=\"aa-icon aa-icon-facebook\"></i>",
+          "url": "https://www.facebook.com",
+          "title": "App-Arena auf Facebook"
+        },
+        {
+          "icon": "<i class=\"aa-icon aa-icon-youtube\"></i>",
+          "url": "https://www.youtube.com",
+          "title": "App-Arena auf Youtube"
+        },
+        {
+          "icon": "<i class=\"aa-icon aa-icon-twitter\"></i>",
+          "url": "https://www.twitter.com",
+          "title": "App-Arena auf Twitter"
+        },
+        {
+          "icon": "<i class=\"aa-icon aa-icon-github\"></i>",
+          "url": "https://github.com/orgs/apparena",
+          "title": "App-Arena auf Github"
+        }
       ]
     },
     "navigation": {
@@ -51,7 +67,7 @@
       },
       "secondary": {
         "navFooter": {
-          "class" : "justify-content-center",
+          "class": "justify-content-center",
           "navs": {
             "items": [
               {

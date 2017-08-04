@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import Button from "../../00-atoms/button/button";
-import Icon from "../../00-atoms/icons";
-import cx from "classnames";
-import styles from "./intro.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import Button from '../../00-atoms/button/button';
+import Icon from '../../00-atoms/icons';
+import cx from 'classnames';
+import styles from './intro.scss';
 
 const NO_OP = () => undefined;
 
@@ -17,7 +17,7 @@ export default class Copy extends ReactComponent {
         headline: PropTypes.string.isRequired,
         text: PropTypes.string,
         btnText: PropTypes.string,
-        onClick: PropTypes.func,
+        onClick: PropTypes.func
     };
 
     renderContent() {
@@ -27,7 +27,7 @@ export default class Copy extends ReactComponent {
             headline,
             text,
             btnText,
-            onClick,
+            onClick
         } = this.props;
         return (
             <div>
@@ -52,7 +52,7 @@ export default class Copy extends ReactComponent {
                 </Button>
                 }
             </div>
-        )
+        );
     }
 
     render() {
@@ -71,7 +71,7 @@ export default class Copy extends ReactComponent {
                 >
                     {this.renderContent()}
                 </a>
-            )
+            );
         }
         return (
             <div className={cx(styles.root, (onClick && !btnText) && styles.clickable, className)}
@@ -79,6 +79,6 @@ export default class Copy extends ReactComponent {
             >
                 {this.renderContent()}
             </div>
-        )
+        );
     }
 };

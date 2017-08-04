@@ -12,6 +12,7 @@ source/styleguide/*
 /public/styleguide/
 /public/latest-change.txt
 
+.idea
 .idea/*
 !.idea/codeStyleSettings.xml
 

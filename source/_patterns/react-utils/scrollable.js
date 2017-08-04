@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "./component";
-import cx from "classnames";
-import GeminiScrollbar from "react-gemini-scrollbar";
-import styles from "./scss/scrollable.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from './component';
+import cx from 'classnames';
+import GeminiScrollbar from 'react-gemini-scrollbar';
+import styles from './scss/scrollable.scss';
 
 export default class Scrollable extends ReactComponent {
     static propTypes = {
@@ -60,7 +60,7 @@ export default class Scrollable extends ReactComponent {
                 <GeminiScrollbar
                     autoshow={this.props.autoshow}
                     forceGemini
-                    ref={(c) => {this.gemini = c}}
+                    ref={(c) => {this.gemini = c;}}
                 >
                     {this.props.children}
                 </GeminiScrollbar>

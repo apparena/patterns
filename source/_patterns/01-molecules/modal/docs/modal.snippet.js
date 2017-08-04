@@ -1,9 +1,9 @@
 import React from 'react';
 import {Modal} from 'apparena-patterns-react';
 
-export default class MyAwesomeClass extends React.Component{
-    render(){
-        return(
+export default class MyAwesomeClass extends React.Component {
+    render() {
+        return (
             <Modal type="secondary" scrollable>
                 <div className="modal-header">
                     <h4>The place for a title</h4>
@@ -13,8 +13,8 @@ export default class MyAwesomeClass extends React.Component{
                 </div>
                 <div className="modal-footer">
                     <p>Some place for a little footnote</p>
-                </div> 
+                </div>
             </Modal>
-        )
+        );
     }
 }

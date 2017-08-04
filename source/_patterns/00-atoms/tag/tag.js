@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import styles from "./tag.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import styles from './tag.scss';
 
 const TAG_TYPES = [
-    "default",
-    "primary",
-    "success",
-    "info",
-    "warning",
-    "danger",
+    'default',
+    'primary',
+    'success',
+    'info',
+    'warning',
+    'danger'
 ];
 
 export default class Tag extends ReactComponent {
@@ -20,7 +20,7 @@ export default class Tag extends ReactComponent {
         pill: PropTypes.bool
     };
     static defaultProps = {
-        type: 'default',
+        type: 'default'
     };
 
     render() {

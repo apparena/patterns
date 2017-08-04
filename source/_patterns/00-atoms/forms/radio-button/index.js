@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../../react-utils/component";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../../react-utils/component';
 
 export default class RadioButton extends ReactComponent {
     static PropTypes = {
@@ -11,9 +11,9 @@ export default class RadioButton extends ReactComponent {
     };
 
     static defaultProps = {
-        text: "identifier missing!",
+        text: 'identifier missing!',
         checked: false,
-        name: "radioButton"
+        name: 'radioButton'
     };
 
     render() {
@@ -21,11 +21,11 @@ export default class RadioButton extends ReactComponent {
             <div className="form-check">
                 <div className="radio">
                     <label className="form-check-label">
-                        <input type="radio" onChange={this.props.onClick} checked={this.props.checked} name={this.props.name} />
+                        <input type="radio" onChange={this.props.onClick} checked={this.props.checked} name={this.props.name}/>
                         {this.props.text}
                     </label>
                 </div>
             </div>
-        )
+        );
     };
 }

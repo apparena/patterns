@@ -12,7 +12,6 @@
       "id": "mySlider",
       "settings": {
         "dots": true,
-
         "slidesToScroll": 1,
         "slidesToShow": 1,
         "autoplaySpeed": 3000

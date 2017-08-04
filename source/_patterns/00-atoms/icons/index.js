@@ -1,17 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import styles from "./icons.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import styles from './icons.scss';
 
 const ICON_TYPES = [
-    "default",
-    "primary",
-    "secondary",
-    "success",
-    "info",
-    "warning",
-    "danger",
+    'default',
+    'primary',
+    'secondary',
+    'success',
+    'info',
+    'warning',
+    'danger'
 ];
 
 export default class Icon extends ReactComponent {
@@ -27,7 +27,7 @@ export default class Icon extends ReactComponent {
         rotate: PropTypes.oneOf([90, 180, 270]),
         size: PropTypes.oneOf(['lg', '2x', '3x', '4x', '5x']),
         spin: PropTypes.bool,
-        stack: PropTypes.oneOf(['1x', '2x']),
+        stack: PropTypes.oneOf(['1x', '2x'])
     };
 
     render() {
@@ -68,6 +68,6 @@ export default class Icon extends ReactComponent {
                 {...props}
                 className={componentClass}
             />
-        )
+        );
     }
 }

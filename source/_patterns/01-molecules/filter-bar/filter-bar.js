@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import {ReactComponent} from "apparena-patterns-react";
-import Dropdown from "../../../01-molecules/dropdown/dropdown";
-import ButtonGroup from "../../../01-molecules/button-group/button-group";
-import Icon from "../../../00-atoms/icons";
-import Input from "../../../00-atoms/forms/input";
-import Button from "../../../00-atoms/button/button";
-import CheckBox from "../../../00-atoms/forms/checkbox";
-import RadioButton from "../../../00-atoms/forms/radio-button";
-import cx from "classnames";
+import React from 'react';
+import PropTypes from 'prop-types';
+import {ReactComponent} from 'apparena-patterns-react';
+import Dropdown from '../../../01-molecules/dropdown/dropdown';
+import ButtonGroup from '../../../01-molecules/button-group/button-group';
+import Icon from '../../../00-atoms/icons';
+import Input from '../../../00-atoms/forms/input';
+import Button from '../../../00-atoms/button/button';
+import CheckBox from '../../../00-atoms/forms/checkbox';
+import RadioButton from '../../../00-atoms/forms/radio-button';
+import cx from 'classnames';
 
 export default class FilterBar extends ReactComponent {
     static PropTypes = {
@@ -41,7 +41,7 @@ export default class FilterBar extends ReactComponent {
             default: PropTypes.oneOf(['cards', 'table']),
             status: PropTypes.shape({
                 listStyle: PropTypes.bool.isRequired,
-                sort: PropTypes.object,
+                sort: PropTypes.object
             }).isRequired,
             table: PropTypes.shape({
                 text: PropTypes.string.isRequired,
@@ -51,7 +51,7 @@ export default class FilterBar extends ReactComponent {
                     sortable: PropTypes.bool.isRequired,
                     identifier: PropTypes.string,
                     default: PropTypes.oneOf(['ASC', 'DESC'])
-                })).isRequired,
+                })).isRequired
             }),
             cards: PropTypes.shape({
                 text: PropTypes.string.isRequired,
@@ -60,7 +60,7 @@ export default class FilterBar extends ReactComponent {
                     text: PropTypes.string.isRequired,
                     identifier: PropTypes.string.isRequired,
                     default: PropTypes.oneOf(['ASC', 'DESC'])
-                })),
+                }))
             })
         }).isRequired
     };
@@ -77,8 +77,8 @@ export default class FilterBar extends ReactComponent {
                         container.push(<h6 className="dropdown-header">{item.text}</h6>);
                         break;
                     case 1:
-                        if (this.props.listStyle.status.sort[item.identifier] === null) classNameString = "dropdown-item";
-                        else classNameString = cx("dropdown-item", this.props.listStyle.status.sort[item.identifier] ? '' : "active");
+                        if (this.props.listStyle.status.sort[item.identifier] === null) classNameString = 'dropdown-item';
+                        else classNameString = cx('dropdown-item', this.props.listStyle.status.sort[item.identifier] ? '' : 'active');
                         container.push(
                             <li className={classNameString}>
                                 <a href="#"
@@ -92,8 +92,8 @@ export default class FilterBar extends ReactComponent {
                         );
                         break;
                     case 2:
-                        if (this.props.listStyle.status.sort[item.identifier] === null) classNameString = "dropdown-item";
-                        else classNameString = cx("dropdown-item", this.props.listStyle.status.sort[item.identifier] ? "active" : '');
+                        if (this.props.listStyle.status.sort[item.identifier] === null) classNameString = 'dropdown-item';
+                        else classNameString = cx('dropdown-item', this.props.listStyle.status.sort[item.identifier] ? 'active' : '');
                         container.push(
                             <li className="dropdown-item">
                                 <a href="#"
@@ -118,12 +118,12 @@ export default class FilterBar extends ReactComponent {
             }
         });
         return (
-            <ul className={this.props.listStyle.cards.menuClass ? this.props.listStyle.cards.menuClass : "dropdown-menu dropdown-menu-right"}
+            <ul className={this.props.listStyle.cards.menuClass ? this.props.listStyle.cards.menuClass : 'dropdown-menu dropdown-menu-right'}
 
             >
                 {container}
             </ul>
-        )
+        );
     };
 
     onFilterChangeHandler(identifier, event) {
@@ -189,7 +189,7 @@ export default class FilterBar extends ReactComponent {
 
         return (
             container
-        )
+        );
     }
 
     createStyleButtons() {
@@ -199,14 +199,14 @@ export default class FilterBar extends ReactComponent {
                     <ButtonGroup>
                         <Button
                             type="secondary"
-                            onClick={this.onStyleChangeHandler.bind(this, "cards")}
+                            onClick={this.onStyleChangeHandler.bind(this, 'cards')}
                             active={this.props.listStyle.status.type}
                         >
                             <Icon name="th"/>
                         </Button>
                         <Button
                             type="secondary"
-                            onClick={this.onStyleChangeHandler.bind(this, "table")}
+                            onClick={this.onStyleChangeHandler.bind(this, 'table')}
                             active={!this.props.listStyle.status.type}
                         >
                             <Icon name="th-list"/>
@@ -223,12 +223,12 @@ export default class FilterBar extends ReactComponent {
                 <div className="filter-bar p-1">
                     {(this.props.filter.groups.length >= 1) &&
                     <div className="filter-bar-filter mr-1">
-                        <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : "btn btn-primary collapsed"}
-                           onClick={this.onFilterChangeHandler.bind(this, "toggle")}
+                        <a className={this.props.filter.buttonClass ? this.props.filter.buttonClass : 'btn btn-primary collapsed'}
+                           onClick={this.onFilterChangeHandler.bind(this, 'toggle')}
                            href="#collapseFilter"
                         >
                             <Icon name="filter"/>
-                            {this.props.filter.buttonText ? this.props.filter.buttonText : " Filter"}
+                            {this.props.filter.buttonText ? this.props.filter.buttonText : ' Filter'}
                         </a>
                     </div>}
                     <div className="filter-bar-search mr-1">
@@ -259,7 +259,7 @@ export default class FilterBar extends ReactComponent {
                             <Dropdown
                                 dropdownClass="dropdown dropdown"
                                 buttonClass="btn btn-secondary dropdown-toggle"
-                                buttonText={this.props.listStyle.cards.buttonText ? this.props.listStyle.cards.buttonText : "Sortierung"}
+                                buttonText={this.props.listStyle.cards.buttonText ? this.props.listStyle.cards.buttonText : 'Sortierung'}
                             >
                                 {this.createDropdownItems()}
                             </Dropdown>
@@ -269,7 +269,7 @@ export default class FilterBar extends ReactComponent {
                     {this.createStyleButtons()}
                 </div>
                 {this.props.filter &&
-                <div className={cx("collapse", this.props.filter.status.expanded ? "in" : "")} id="collapseFilter"
+                <div className={cx('collapse', this.props.filter.status.expanded ? 'in' : '')} id="collapseFilter"
                      style={this.props.filter.status.expanded ? {} : {height: 0}}
 
                 >
@@ -280,6 +280,6 @@ export default class FilterBar extends ReactComponent {
                     </div>
                 </div>}
             </div>
-        )
+        );
     }
 }

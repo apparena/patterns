@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import styles from "./progress-tracker.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import styles from './progress-tracker.scss';
 
 export default class ProgressTracker extends ReactComponent {
     static propTypes = {
@@ -25,11 +25,11 @@ export default class ProgressTracker extends ReactComponent {
         });
 
         return (
-            <div className={styles["progress-tracker"]}>
-                <ol className={styles["progress-tracker"]}>
+            <div className={styles['progress-tracker']}>
+                <ol className={styles['progress-tracker']}>
                     {steps}
                 </ol>
             </div>
-        )
+        );
     }
 }

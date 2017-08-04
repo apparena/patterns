@@ -17,7 +17,7 @@
         "input": {
           "value": "",
           "class": "",
-          "placeholder":"z.B. App-Arena GmbH"
+          "placeholder": "z.B. App-Arena GmbH"
         }
       },
       {
@@ -35,7 +35,7 @@
         "input": {
           "value": "",
           "class": "form-control-success",
-          "placeholder":"email@meinedomain.de"
+          "placeholder": "email@meinedomain.de"
         }
       },
       {
@@ -53,7 +53,7 @@
         "input": {
           "class": "",
           "value": "",
-          "placeholder":"Mindestens 8 Zeichen"
+          "placeholder": "Mindestens 8 Zeichen"
         }
       }
     ]

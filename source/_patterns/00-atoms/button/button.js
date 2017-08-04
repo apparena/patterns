@@ -1,30 +1,30 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactComponent from "../../react-utils/component";
-import cx from "classnames";
-import styles from "./button.scss";
-import Spinner from "../spinner/spinner";
-import Icon from "../icons";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactComponent from '../../react-utils/component';
+import cx from 'classnames';
+import styles from './button.scss';
+import Spinner from '../spinner/spinner';
+import Icon from '../icons';
 
-const BUTTON_SIZES = ["lg", "sm", "xs"];
+const BUTTON_SIZES = ['lg', 'sm', 'xs'];
 
-const BUTTON_STATES = ["default", "loading", "success", "error", "warning"];
+const BUTTON_STATES = ['default', 'loading', 'success', 'error', 'warning'];
 
 const BUTTON_TYPES = [
-    "default",
-    "primary",
-    "secondary",
-    "success",
-    "info",
-    "warning",
-    "danger",
-    "link",
-    "outline-primary",
-    "outline-secondary",
-    "outline-success",
-    "outline-info",
-    "outline-warning",
-    "outline-danger",
+    'default',
+    'primary',
+    'secondary',
+    'success',
+    'info',
+    'warning',
+    'danger',
+    'link',
+    'outline-primary',
+    'outline-secondary',
+    'outline-success',
+    'outline-info',
+    'outline-warning',
+    'outline-danger'
 ];
 
 export default class Button extends ReactComponent {
@@ -32,7 +32,7 @@ export default class Button extends ReactComponent {
         className: PropTypes.string,
         type: PropTypes.oneOf(BUTTON_TYPES),
         size: PropTypes.oneOf(BUTTON_SIZES),
-        target: PropTypes.oneOf(["blank", "top", "self"]),
+        target: PropTypes.oneOf(['blank', 'top', 'self']),
         block: PropTypes.bool,
         rounded: PropTypes.bool,
         href: PropTypes.string,
@@ -40,11 +40,11 @@ export default class Button extends ReactComponent {
         isDisabled: PropTypes.bool,
         onClick: PropTypes.func,
         submit: PropTypes.bool,
-        state: PropTypes.oneOf(BUTTON_STATES),
+        state: PropTypes.oneOf(BUTTON_STATES)
     };
     static defaultProps = {
-        type: "secondary",
-        state: "default",
+        type: 'secondary',
+        state: 'default',
         isDisabled: false
     };
 
@@ -53,37 +53,37 @@ export default class Button extends ReactComponent {
     }
 
     componentDidMount() {
-        this.setButtonWidth(this.props.state)
+        this.setButtonWidth(this.props.state);
     }
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.state !== this.props.state) {
-            this.setButtonWidth(nextProps.state)
+            this.setButtonWidth(nextProps.state);
         }
     }
 
     setButtonWidth(state) {
-        if (state === "default" && this.button) {
+        if (state === 'default' && this.button) {
             this.btnWidth = this.button.getBoundingClientRect().width;
         }
     }
 
     ref(node) {
-        this.button = node
+        this.button = node;
     }
 
     renderState() {
         const {state, children, type} = this.props;
         switch (state) {
-            case "loading":
+            case 'loading':
                 return (
                     <Spinner size="sm" type={type}/>
                 );
-            case "success":
+            case 'success':
                 return (
                     <Icon type="success" name="check"/>
                 );
-            case "error":
+            case 'error':
                 return (
                     <Icon type="error" name="close"/>
                 );
@@ -106,7 +106,7 @@ export default class Button extends ReactComponent {
             isDisabled,
             target,
             submit,
-            rounded,
+            rounded
         } = this.props;
         // classes
         const componentClass = cx(
