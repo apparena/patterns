@@ -28,7 +28,12 @@
     "start": "node build/webpack/server.js",
     "test": "cross-env NODE_ENV=test nyc ava",
     "test:coverage": "nyc report --reporter=lcov --reporter=json --reporter=text-lcov",
+<<<<<<< HEAD
     "test:coverage:html": "nyc report --reporter=html"
+=======
+    "test:coverage:html": "nyc report --reporter=html",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+>>>>>>> 9847adc05ba94c58a0cab46fca64faf6fb075b69
   },
   "repository": {
     "type": "git",
@@ -190,11 +195,12 @@
     "webpack-assets-manifest": "^0.6.1",
     "webpack-combine-loaders": "^2.0.3",
     "webpack-dev-server": "1.14.1",
-    "webpack-merge": "^2.6.1"
+    "webpack-merge": "^2.6.1",
+    "semantic-release": "^6.3.6"
   },
   "ava": {
     "files": [
-      "source/**/button.spec.js"
+      "source/**/*.spec.js"
     ],
     "source": [
       "source/**/*.{js,jsx}",
