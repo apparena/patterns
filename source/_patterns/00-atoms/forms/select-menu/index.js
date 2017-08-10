@@ -7,6 +7,7 @@ import styles from './select-menu.scss';
 
 export default class SelectMenu extends ReactComponent {
     static propTypes = {
+        /** **/
         id: PropTypes.string,
         defaultValue: PropTypes.oneOfType([
             PropTypes.number,

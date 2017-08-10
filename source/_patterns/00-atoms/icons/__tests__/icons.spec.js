@@ -1,14 +1,13 @@
 /* eslint-env mocha */
-import React from 'react';
-import {test} from 'ava';
-import {shallow} from 'enzyme';
-import {expect} from 'chai';
-import Icon from '../index';
+import React from "react";
+import {test} from "ava";
+import {shallow} from "enzyme";
+import Icon from "../index";
 
-test('renders an icon', () => {
+test ('Icon renders an icon', (t) => {
     const wrapper = shallow(
-        <Icon iconClass="custom-icon-class"/>
+        <Icon name="customer" className="customer" />
     );
-    expect(wrapper.find('i')).to.have.length(1);
-    expect(wrapper.find('i.custom-icon-class')).to.have.length(1);
-});
+    t.is(wrapper.find('i').length, 1);
+    t.is(wrapper.find('i.customer').length,1 )
+})

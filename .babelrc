@@ -6,7 +6,16 @@
   ],
   "env": {
     "test": {
-      "sourceMaps": "both"
+      "sourceMaps": "both",
+      "plugins": [
+        [
+          "babel-plugin-webpack-loaders",
+          {
+            "config": "build/webpack/webpack.config.ava.js",
+            "verbose": false
+          }
+        ]
+      ]
     },
     "docs-production": {
       "plugins": [

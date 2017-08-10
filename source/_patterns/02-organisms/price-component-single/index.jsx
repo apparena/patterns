@@ -91,13 +91,13 @@ export default class PriceComponentSingle extends ReactComponent {
         return (
             <div>
                 <Row className={styles.header}>
-                    <Col xs="4" className={styles.price}>
+                    <Col xs="3" className={styles.priceHeader}>
                         <sup>€</sup>
                         <span>{this.state.hours * this.props.articles[0].price}</span>
                         <sup>*</sup>
                     </Col>
-                    <Col xs="6" className={styles.leftAlign}>
-                        <h3>{this.props.header}</h3>
+                    <Col xs="6">
+                        <h3 className={styles.priceHeader}>{this.props.header}</h3>
                     </Col>
                 </Row>
                 <p className={styles.priceServicePrompt}>

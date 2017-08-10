@@ -33,13 +33,13 @@ module.exports = {
         preLoaders: [
             {
                 test: /\.(js|jsx)$/,
-                loader: 'eslint',
+                loader: 'eslint'
             }
         ],
         loaders: [
             {
                 test: /\.less$/,
-                loader: "style!css!less"
+                loader: 'style!css!less'
             },
             {
                 test: /\.scss$/,
@@ -52,13 +52,13 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: "style-loader!css-loader"
+                loader: 'style-loader!css-loader'
             },
             {
                 test: /\.(js|jsx)$/,
                 loader: 'babel',
                 query: require('./babel.prod'),
-                exclude: [nodeModulesPath],
+                exclude: [nodeModulesPath]
             },
             {
                 test: /\.json$/,
@@ -66,7 +66,7 @@ module.exports = {
             },
             {
                 test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
-                loader: 'file',
+                loader: 'file'
             },
             {
                 test: /\.(mp4|webm)$/,

@@ -3,8 +3,9 @@ import {Checkbox} from 'apparena-patterns-react';
 
 export default function CheckboxExample() {
     return (
-        <Checkbox onChange={() => {
-        }}>s
+        <Checkbox
+            onChange={() => { }}
+        >
             Test
         </Checkbox>
     );
