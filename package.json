@@ -27,8 +27,8 @@
     "publish": "cd build/apparena-patterns-react && npm publish",
     "start": "node build/webpack/server.js",
     "test": "cross-env NODE_ENV=test nyc ava",
-    "test:coverage": "nyc report --reporter=lcov --reporter=json --reporter=text-lcov",
-    "test:coverage:html": "nyc report --reporter=html"
+    "test:coverage": "nyc report --reporter=lcov --reporter=json --reporter=text-lcov --reporter=html",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -67,7 +67,6 @@
     "react-router": "^3.0.0",
     "react-select": "^1.0.0-rc.2",
     "react-toggle": "^2.1.1",
-    "sass-loader": "^4.1.1",
     "simple-assign": "^0.1.0",
     "velocity-animate": "^1.2.3"
   },
@@ -120,7 +119,7 @@
     "eslint-plugin-import": "1.10.3",
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-mocha": "^4.0.0",
-    "eslint-plugin-react": "5.2.2",
+    "eslint-plugin-react": "^7.1.0",
     "extract-text-webpack-plugin": "^2.0.0-beta",
     "file-loader": "0.9.0",
     "generator-apparena-react-component": "latest",
@@ -177,6 +176,7 @@
     "resolve-url-loader": "^1.6.0",
     "rimraf": "2.5.3",
     "sass-loader": "^4.0.0",
+    "semantic-release": "^6.3.6",
     "simple-assign": "^0.1.0",
     "sinon": "^2.4.1",
     "slick-carousel": "^1.6",
@@ -186,13 +186,15 @@
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
     "url-search-params": "^0.10.0",
-    "webpack": "^2.2.1",
+    "webpack": "3",
     "webpack-assets-manifest": "^0.6.1",
     "webpack-combine-loaders": "^2.0.3",
     "webpack-dev-server": "1.14.1",
     "webpack-merge": "^2.6.1"
   },
   "ava": {
+    "failFast": true,
+    "verbose": true,
     "files": [
       "source/**/button.spec.js"
     ],
@@ -202,7 +204,6 @@
     ],
     "require": [
       "babel-register",
-      "ignore-styles",
       "./source/test/test-setup"
     ],
     "babel": "inherit"
