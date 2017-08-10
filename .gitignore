@@ -102,3 +102,4 @@ jspm_packages
 /build/apparena-patterns-react/
 /public/
 dist/
+/.github/
