@@ -1,4 +1,3 @@
-import 'velocity-animate/velocity.ui';
 import React, {PropTypes} from 'react';
 import ReactComponent from './component';
 import {VelocityComponent} from 'velocity-react';
