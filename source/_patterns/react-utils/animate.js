@@ -1,8 +1,7 @@
-import velocity from 'velocity-animate/velocity';
 import 'velocity-animate/velocity.ui';
-import {PropTypes} from 'react';
-import {findDOMNode} from 'react-dom';
+import React, {PropTypes} from 'react';
 import ReactComponent from './component';
+import {VelocityComponent} from 'velocity-react';
 
 export default class Animate extends ReactComponent {
     static propTypes = {
@@ -20,28 +19,13 @@ export default class Animate extends ReactComponent {
         initial: true
     };
 
-    componentDidMount() {
-        if (this.props.initial) {
-            this.makeTransition(this.props);
-        }
-    }
-
-    componentWillReceiveProps(nextProps) {
-        if (this.props.transition !== nextProps.transition) {
-            this.makeTransition(nextProps);
-        }
-    }
-
-    makeTransition(props) {
-        const dom = findDOMNode(this);
-        const transition = `transition.${props.transition}`;
-        velocity(dom, transition, Object.assign({
-            duration: props.duration,
-            display: null
-        }, props.options));
-    }
-
     render() {
-        return this.props.children;
+        const {initial, transition, duration, children, options} = this.props;
+        const animation = `transition.${transition}`;
+        return (
+            <VelocityComponent {...options} runOnMount={initial} duration={duration} animation={animation}>
+                {children}
+            </VelocityComponent>
+        );
     }
 }
