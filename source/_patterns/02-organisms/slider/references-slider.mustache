@@ -86,9 +86,10 @@
                 useCSS: true,
                 initialSlide: 0,
                 draggable: false,
-                autoplay: true,
-                autoplaySpeed: 4000,
-                /*variableWidths: false,*/
+                {{#autoplay}}
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                {{/autoplay}}
                 responsive: [
                     {
                         breakpoint: 1200,
