@@ -1,6 +1,18 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import {findDOMNode} from 'react-dom';
 import ReactComponent from './component';
-import {VelocityComponent} from 'velocity-react';
+
+let velocity;
+if (typeof window !== 'undefined') {
+    velocity = require('velocity-animate');
+    require('velocity-animate/velocity.ui');
+} else {
+    // mocked velocity library
+    velocity = function () {
+        return new Promise().resolve(true);
+    };
+}
 
 export default class Animate extends ReactComponent {
     static propTypes = {
@@ -18,13 +30,28 @@ export default class Animate extends ReactComponent {
         initial: true
     };
 
+    componentDidMount() {
+        if (this.props.initial) {
+            this.makeTransition(this.props);
+        }
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (this.props.transition !== nextProps.transition) {
+            this.makeTransition(nextProps);
+        }
+    }
+
+    makeTransition(props) {
+        const dom = findDOMNode(this);
+        const transition = `transition.${props.transition}`;
+        velocity(dom, transition, Object.assign({
+            duration: props.duration,
+            display: null
+        }, props.options));
+    }
+
     render() {
-        const {initial, transition, duration, children, options} = this.props;
-        const animation = `transition.${transition}`;
-        return (
-            <VelocityComponent {...options} runOnMount={initial} duration={duration} animation={animation}>
-                {children}
-            </VelocityComponent>
-        );
+        return this.props.children;
     }
 }
