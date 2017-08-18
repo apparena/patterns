@@ -16,8 +16,6 @@ before_script:
   - npm prune
 script:
   - ./build/scripts/run-travis-tests.sh
-after_success:
-  - npm run semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
