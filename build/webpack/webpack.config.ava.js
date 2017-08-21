@@ -1,4 +1,5 @@
 /// / webpack.config.js css-modules loader example
+process.noDeprecation = true;
 module.exports = {
     output: {
         // YOU NEED TO SET libraryTarget: 'commonjs2'
