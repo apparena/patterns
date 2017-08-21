@@ -36,7 +36,8 @@
   },
   "peerDependencies": {
     "react": "^15.6",
-    "react-dom": "^15.6"
+    "react-dom": "^15.6",
+    "webpack": ">=1.12.9 <3.0.0"
   },
   "dependencies": {
     "apparena-patterns-react": "^1.1.3",

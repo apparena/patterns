@@ -3,19 +3,10 @@ language: node_js
 cache:
   directories:
     - node_modules
-notifications:
-  email: false
 node_js:
-  - '7'
-  - '6'
-  - '4'
+  - "stable"
 sudo: false
 before_install:
   - chmod +x build/scripts/run-travis-tests.sh
-before_script:
-  - npm prune
 script:
   - ./build/scripts/run-travis-tests.sh
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
