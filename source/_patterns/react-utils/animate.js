@@ -4,7 +4,9 @@ import {findDOMNode} from 'react-dom';
 import ReactComponent from './component';
 
 let velocity;
+let browser = false;
 if (typeof window !== 'undefined') {
+    browser = true;
     velocity = require('velocity-animate');
     require('velocity-animate/velocity.ui');
 } else {
@@ -43,12 +45,14 @@ export default class Animate extends ReactComponent {
     }
 
     makeTransition(props) {
-        const dom = findDOMNode(this);
-        const transition = `transition.${props.transition}`;
-        velocity(dom, transition, Object.assign({
-            duration: props.duration,
-            display: null
-        }, props.options));
+        if (browser) {
+            const dom = findDOMNode(this);
+            const transition = `transition.${props.transition}`;
+            velocity(dom, transition, Object.assign({
+                duration: props.duration,
+                display: null
+            }, props.options));
+        }
     }
 
     render() {
