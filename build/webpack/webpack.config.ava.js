@@ -1,11 +1,9 @@
-var path = require('path');
+var path = require('path')
 
 /// / webpack.config.js css-modules loader example
 process.noDeprecation = true;
 module.exports = {
     output: {
-        path: path.join(__dirname),
-        filename: '[name].js',
         // YOU NEED TO SET libraryTarget: 'commonjs2'
         libraryTarget: 'commonjs2'
     },
