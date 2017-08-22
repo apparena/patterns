@@ -199,7 +199,7 @@
     "failFast": true,
     "verbose": true,
     "files": [
-      "source/**/button.spec.js"
+      "source/**/*.spec.js"
     ],
     "source": [
       "source/**/*.{js,jsx}",
