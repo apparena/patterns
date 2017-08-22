@@ -3,7 +3,6 @@ import React from 'react';
 import {test} from 'ava';
 import {mount, shallow} from 'enzyme';
 import {spy} from 'sinon';
-import {expect} from 'chai';
 import Button from '../button';
 import styles from '../button.scss';
 
