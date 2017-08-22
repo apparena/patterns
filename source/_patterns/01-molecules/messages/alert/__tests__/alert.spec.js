@@ -2,44 +2,43 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow} from 'enzyme';
-import {expect} from 'chai';
 import Alert from '../index';
 
-test('alerts with custom text', () => {
+test('alerts with custom text', (t) => {
     const wrapper = shallow(
         <Alert text="Hello World" type="danger"/>
     );
-    expect(wrapper.contains('Hello World')).to.equal(true);
-    expect(wrapper.find('.alert-danger')).to.have.length(1);
+    t.is(wrapper.contains('Hello World'), true);
+    t.is(wrapper.find('.alert-danger').length, 1);
 });
 
-test('respects the type', () => {
+test('respects the type', (t) => {
     const wrapper = shallow(
         <Alert text="Hello World" type="info"/>
     );
-    expect(wrapper.find('.alert-info')).to.have.length(1);
+    t.is(wrapper.find('.alert-info').length, 1);
 });
 
-test('allows me to insert custom classes as a string', () => {
+test('allows me to insert custom classes as a string', (t) => {
     const wrapper = shallow(
         <Alert text="Hello World" type="info" classNames="custom-class-1 custom-class-2"/>
     );
-    expect(wrapper.find('.custom-class-1')).to.have.length(1);
-    expect(wrapper.find('.custom-class-2')).to.have.length(1);
+    t.is(wrapper.find('.custom-class-1').length, 1);
+    t.is(wrapper.find('.custom-class-2').length, 1);
 });
 
-test('is dismissable at will', () => {
+test('is dismissable at will', (t) => {
     const wrapper = shallow(
         <Alert text="Hello World" type="danger" dismissible/>
     );
-    expect(wrapper.find('button')).to.have.length(1);
-    expect(wrapper.find('.alert-danger')).to.have.length(1);
+    t.is(wrapper.find('button').length, 1);
+    t.is(wrapper.find('.alert-danger').length, 1);
 });
 
-test('is not dismissable by default', () => {
+test('is not dismissable by default', (t) => {
     const wrapper = shallow(
         <Alert text="Hello World" type="danger"/>
     );
-    expect(wrapper.find('button')).to.have.length(0);
-    expect(wrapper.find('.alert-danger')).to.have.length(1);
+    t.is(wrapper.find('button').length, 0);
+    t.is(wrapper.find('.alert-danger').length, 1);
 });
