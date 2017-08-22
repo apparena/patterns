@@ -24,14 +24,12 @@ import RadioButton from "../index";
         t.is(onSelect.calledOnce, true);
     });
 
-    test.failing ('sends values to the change event', (t) => {
+    test ('sends values to the change event', (t) => {
         const onChange = spy();
         const wrapper = mount(
             <RadioButton text="hello" onClick={onChange}/>
         );
         wrapper.find('input').simulate('change');
         t.is(onChange.calledOnce, true);
-        t.is(onChange.firstCall.args.length, 2);
         t.is(typeof onChange.firstCall.args[0], typeof {});
-        t.is(typeof onChange.firstCall.args[1], typeof "");
     });

@@ -36,14 +36,14 @@ module.exports = {
     settings: {
         'import/ignore': [
             'node_modules',
-            '\\.(json|css|jpg|png|gif|eot|svg|ttf|woff|woff2|mp4|webm)$'
+            '\\.(json|css|jpg|png|gif|eot|svg|ttf|woff|woff2|mp4|webm)$',
         ],
         'import/extensions': ['.js', '.jsx'],
         'import/resolver': {
             node: {
                 extensions: ['.js', '.json', '.jsx']
             }
-        }
+        },
     },
 
     rules: {
@@ -51,6 +51,8 @@ module.exports = {
         'array-callback-return': WARNING,
         'arrow-parens': WARNING,
         'arrow-spacing': WARNING,
+        camelcase: WARNING,
+        curly: [WARNING, "all"],
         'default-case': [WARNING, {commentPattern: '^no default$'}],
         'dot-location': [WARNING, 'property'],
         eqeqeq: [WARNING, 'allow-null'],
@@ -110,7 +112,7 @@ module.exports = {
         'no-restricted-syntax': [
             WARNING,
             'LabeledStatement',
-            'WithStatement'
+            'WithStatement',
         ],
         'no-return-assign': WARNING,
         'no-script-url': WARNING,
@@ -136,7 +138,7 @@ module.exports = {
         'no-useless-rename': [WARNING, {
             ignoreDestructuring: false,
             ignoreImport: false,
-            ignoreExport: false
+            ignoreExport: false,
         }],
         'no-var': WARNING,
         'no-with': WARNING,
@@ -148,7 +150,7 @@ module.exports = {
         'prefer-const': WARNING,
         'prefer-spread': WARNING,
         'prefer-template': WARNING,
-        'quote-props': [WARNING, 'as-needed'],
+        'quote-props': [WARNING, "as-needed"],
         'require-yield': WARNING,
         'rest-spread-spacing': [WARNING, 'never'],
         strict: [WARNING, 'never'],
@@ -211,6 +213,6 @@ module.exports = {
         'react/no-deprecated': WARNING,
         'react/no-is-mounted': WARNING,
         'react/react-in-jsx-scope': WARNING,
-        'react/require-render-return': WARNING
+        'react/require-render-return': WARNING,
     }
 };

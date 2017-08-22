@@ -9,5 +9,5 @@ test ('Icon renders an icon', (t) => {
         <Icon name="customer" className="customer" />
     );
     t.is(wrapper.find('i').length, 1);
-    t.is(wrapper.find('i.customer').length,1 )
+    t.is(wrapper.find('i.customer').length, 1);
 })

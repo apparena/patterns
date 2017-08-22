@@ -3,19 +3,10 @@ language: node_js
 cache:
   directories:
     - node_modules
-notifications:
-  email: false
 node_js:
-  - '7'
-  - '6'
-  - '4'
+  - "stable"
 sudo: false
 before_script:
-  - npm prune
+  - chmod +x build/scripts/run-travis-tests.sh
 script:
   - ./build/scripts/run-travis-tests.sh
-after_success:
-  - npm run semantic-release
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/

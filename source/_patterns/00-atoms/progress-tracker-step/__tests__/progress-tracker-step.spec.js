@@ -1,43 +1,44 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-import {shallow} from 'enzyme';
-import {expect} from 'chai';
+import {shallow, mount} from 'enzyme';
+import {spy} from 'sinon';
 import ProgressTrackerStep from '../progress-tracker-step';
 import style from '../progress-tracker-step.scss';
 
-test('one inactive step', () => {
+test('one inactive step', (t) => {
     const wrapper = shallow(
         <ProgressTrackerStep/>
     );
-    expect(wrapper.find(`.${style['progress-tracker-step-active']}`)).to.have.length(0);
+    t.is(wrapper.find(`.${style['progress-tracker-step-active']}`).length, 0);
 });
 
-test('one active step', () => {
+test('one active step', (t) => {
     const wrapper = shallow(
         <ProgressTrackerStep active/>
     );
-    expect(wrapper.find(`.${style['progress-tracker-step-active']}`)).to.have.length(1);
+    t.is(wrapper.find(`.${style['progress-tracker-step-active']}`).length, 1);
 });
 
-test('two steps one active', () => {
+test('two steps one active', (t) => {
     const wrapper = shallow(
         <div>
             <ProgressTrackerStep active/>
             <ProgressTrackerStep/>
         </div>
     );
-    expect(wrapper.html().includes('progress-tracker-step"')).to.equal(true);
-    expect(wrapper.html().includes('progress-tracker-step-active"')).to.equal(true);
+    t.is(wrapper.html().includes('progress-tracker-step'), true);
+    t.is(wrapper.html().includes('progress-tracker-step-active'), true);
 });
 
-test('two active steps', () => {
-    const wrapper = shallow(
+test('reacts on change', (t) => {
+    const onClick = spy();
+    const wrapper = mount(
         <div>
-            <ProgressTrackerStep active/>
-            <ProgressTrackerStep active/>
+            <ProgressTrackerStep onClick={onClick}/>
         </div>
     );
-    expect(wrapper.html().includes('progress-tracker-step"')).to.equal(false);
-    expect(wrapper.html().includes('progress-tracker-step-active"')).to.equal(true);
+    t.is(wrapper.html().includes('progress-tracker-step'), true);
+    wrapper.find('li').simulate('click');
+    t.is(onClick.calledOnce, true)
 });

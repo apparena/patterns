@@ -1,8 +1,20 @@
-import velocity from 'velocity-animate/velocity';
-import 'velocity-animate/velocity.ui';
-import {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import {findDOMNode} from 'react-dom';
 import ReactComponent from './component';
+
+let velocity;
+let browser = false;
+if (typeof window !== 'undefined') {
+    browser = true;
+    velocity = require('velocity-animate');
+    require('velocity-animate/velocity.ui');
+} else {
+    // mocked velocity library
+    velocity = function () {
+        return new Promise().resolve(true);
+    };
+}
 
 export default class Animate extends ReactComponent {
     static propTypes = {
@@ -33,12 +45,14 @@ export default class Animate extends ReactComponent {
     }
 
     makeTransition(props) {
-        const dom = findDOMNode(this);
-        const transition = `transition.${props.transition}`;
-        velocity(dom, transition, Object.assign({
-            duration: props.duration,
-            display: null
-        }, props.options));
+        if (browser) {
+            const dom = findDOMNode(this);
+            const transition = `transition.${props.transition}`;
+            velocity(dom, transition, Object.assign({
+                duration: props.duration,
+                display: null
+            }, props.options));
+        }
     }
 
     render() {

@@ -1,22 +1,25 @@
 /* eslint-env mocha */
 import React from "react";
 import test from 'ava';
-import {shallow} from "enzyme";
-import {expect} from "chai";
+import {mount} from "enzyme";
 import Table from "../table";
 
-test('Table renders a table', t => {
-    const wrapper = shallow(
+test('Table renders a table', (t) => {
+    const wrapper = mount(
         <Table tableData={[
             { cols: ['Left', 'Right'] },
             {rows: { 0: ['25%', '75%'],
                 1: ['50%', '50%'],
                 2: ['66%', '33%']
-            }}
+            }
+            }
         ]}/>
     );
+    console.log(wrapper.find('tr'));
     t.is(wrapper.find('table').length, 1);
-    expect(wrapper.find('tr')).to.have.length(4);
+    t.is(wrapper.find('tr').length, 4);
+    t.is(wrapper.find('th').length, 2);
+    t.is(wrapper.find('td').length, 6);
 })
 
 /*describe('<Table />', () => {

@@ -1,9 +1,12 @@
+var path = require('path')
+
 /// / webpack.config.js css-modules loader example
+process.noDeprecation = true;
 module.exports = {
-    output: {
-        // YOU NEED TO SET libraryTarget: 'commonjs2'
-        libraryTarget: 'commonjs2'
-    },
+    // output: {
+    //     YOU NEED TO SET libraryTarget: 'commonjs2'
+    //     libraryTarget: 'commonjs2'
+    // },
     resolve: {
         extensions: ['.js', '.jsx', '.es6'],
         modules: [
@@ -45,9 +48,9 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: `vendor/[name].[ext]`,
+                        name: `vendor/[name].[ext]`
                     }
-                }],
+                }]
             }
         ]
     }
