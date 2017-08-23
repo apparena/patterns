@@ -19,6 +19,5 @@ test('renders Pricetable', (t) => {
             onClick={onClick}
         />
     );
-    console.log(wrapper);
     t.is(wrapper.find(`.${styles.priceTable}`).length, 1);
 });
