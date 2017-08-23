@@ -5,13 +5,6 @@ import {spy} from "sinon";
 import CheckBox  from "../index";
 import {test} from 'ava';
 
-test('check default Tooltip options', (t) => {
-    const wrapper = shallow(
-        <CheckBox />
-    );
-    t.is(wrapper.instance().props.tooltip, true);
-});
-
 test('listens to the change', (t) => {
     const onSelect = spy();
     const wrapper = mount(
@@ -21,7 +14,7 @@ test('listens to the change', (t) => {
     t.is(onSelect.calledOnce, true);
 });
 
-test.failing('CheckBox without Tooltip', (t) => {
+test('CheckBox without Tooltip', (t) => {
     const wrapper = shallow(
         <CheckBox renderTooltip={false}/>
     )

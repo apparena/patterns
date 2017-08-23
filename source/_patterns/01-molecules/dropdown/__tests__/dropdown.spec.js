@@ -13,6 +13,7 @@ test('renders a dropdown', (t) => {
             </ul>
         </Dropdown>
     );
-    t.is(wrapper.find('div.dropdown').length, 1);
+    console.log(wrapper.html())
+    t.is(wrapper.find('span').length, 1);
     t.is(wrapper.find('li').length, 2);
 });
