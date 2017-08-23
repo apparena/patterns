@@ -5,13 +5,12 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow} from 'enzyme';
-import {expect} from 'chai';
 import PriceTable from '../price-table';
 
 
-test('renders Pricetable', () => {
+test('renders Pricetable', (t) => {
     const wrapper = shallow(
-        <PriceTable/>
+        <PriceTable plans={"test-plan"} />
     );
-    expect(wrapper.find('div')).to.have.length(1);
+    t.is(wrapper.find('div').length, 1);
 });

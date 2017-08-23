@@ -2,10 +2,9 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow} from 'enzyme';
-import {expect} from 'chai';
 import Dropdown from '../dropdown';
 
-test('renders a dropdown', () => {
+test('renders a dropdown', (t) => {
     const wrapper = shallow(
         <Dropdown>
             <ul className="dropdown-menu">
@@ -14,6 +13,6 @@ test('renders a dropdown', () => {
             </ul>
         </Dropdown>
     );
-    expect(wrapper.find('div.dropdown')).to.have.length(1);
-    expect(wrapper.find('li')).to.have.length(2);
+    t.is(wrapper.find('div.dropdown').length, 1);
+    t.is(wrapper.find('li').length, 2);
 });
