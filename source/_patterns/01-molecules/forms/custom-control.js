@@ -27,7 +27,7 @@ function CustomControl({className, type, label, children, validationState, ...pr
 }
 
 CustomControl.propTypes = {
-    children: PropTypes.node,
+    children: PropTypes.node.isRequired,
     className: PropTypes.string,
     label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
     type: PropTypes.oneOf(['checkbox', 'radio']),
