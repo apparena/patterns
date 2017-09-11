@@ -2,12 +2,11 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow} from 'enzyme';
-import {expect} from 'chai';
 import Card from '../card';
 
-test('renders a card', () => {
+test('renders a card', (t) => {
     const wrapper = shallow(
         <Card/>
     );
-    expect(wrapper.is('div')).toBeTruthy();
+    t.is(wrapper.is('div'), true);
 });

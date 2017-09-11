@@ -5,13 +5,19 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow} from 'enzyme';
-import {expect} from 'chai';
+import {spy} from 'sinon';
 import PriceTable from '../price-table';
+import Plans from '../price-table.json';
+import styles from '../price-table.scss';
 
 
-test('renders Pricetable', () => {
+test('renders Pricetable', (t) => {
+    const onClick = spy();
     const wrapper = shallow(
-        <PriceTable/>
+        <PriceTable
+            plans={Plans}
+            onClick={onClick}
+        />
     );
-    expect(wrapper.find('div')).to.have.length(1);
+    t.is(wrapper.find(`.${styles.priceTable}`).length, 1);
 });

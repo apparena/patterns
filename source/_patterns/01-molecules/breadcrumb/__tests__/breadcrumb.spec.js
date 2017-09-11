@@ -2,26 +2,25 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow} from 'enzyme';
-import {expect} from 'chai';
 import Breadcrumb from '../breadcrumb';
 
-test('renders breadcrumbs', () => {
+test('renders breadcrumbs', (t) => {
     const wrapper = shallow(
         <Breadcrumb crumbNames={['One', 'Two', 'Three']} crumbLocations={['/one', '/one/two', '']}/>
     );
-    expect(wrapper.find('ol.breadcrumb')).to.have.length(1);
-    expect(wrapper.find('li')).to.have.length(3);
-    expect(wrapper.find('.breadcrumb-item')).to.have.length(3);
-    expect(wrapper.find('.active')).to.have.length(1);
+    t.is(wrapper.find('ol.breadcrumb').length, 1);
+    t.is(wrapper.find('li').length, 3);
+    t.is(wrapper.find('.breadcrumb-item').length, 3);
+    t.is(wrapper.find('.active').length, 1);
 });
 
-test('renders custom classes', () => {
+test('renders custom classes', (t) => {
     const wrapper = shallow(
         <Breadcrumb classNames="custom-breadcrumb" crumbNames={['One', 'Two', 'Three', 'Four']} crumbLocations={['/one', '/one/two', '/one/two/three', '']}/>
     );
-    expect(wrapper.find('ol.breadcrumb')).to.have.length(1);
-    expect(wrapper.find('.custom-breadcrumb')).to.have.length(1);
-    expect(wrapper.find('li')).to.have.length(4);
-    expect(wrapper.find('.breadcrumb-item')).to.have.length(4);
-    expect(wrapper.find('.active')).to.have.length(1);
+    t.is(wrapper.find('ol.breadcrumb').length, 1);
+    t.is(wrapper.find('.custom-breadcrumb').length, 1);
+    t.is(wrapper.find('li').length, 4);
+    t.is(wrapper.find('.breadcrumb-item').length, 4);
+    t.is(wrapper.find('.active').length, 1);
 });

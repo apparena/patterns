@@ -9,7 +9,6 @@ test('renders a spinner', (t) => {
     const wrapper = shallow(
         <Spinner />
     );
-    console.log(wrapper.html())
     t.is(wrapper.html().includes('spinner'), true);
     t.is(wrapper.html().includes('spinner-default'), true);
     t.is(wrapper.html().includes('spinner-sm'), true);

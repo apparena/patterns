@@ -2,26 +2,21 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow} from 'enzyme';
-import {expect} from 'chai';
 import Nav from '../index';
+import NavItem from '../../nav-item/index';
 
-test('renders nav', () => {
+test('renders nav', (t) => {
     const wrapper = shallow(
-        <Nav classNames="custom-nav" listItems={{
-            'this is a test': ['#', 'custom-a', 'li-li'],
-            'and another test': ['dashboard', 'custom-a', 'la-li']
-        }}/>
+        <Nav classNames="custom-nav">
+            <NavItem>
+                <a>Hello</a>
+            </NavItem>
+            <NavItem>
+                <a>World</a>
+            </NavItem>
+        </Nav>
     );
-    expect(wrapper.find('ul.nav')).to.have.length(1);
-    expect(wrapper.find('li')).to.have.length(2);
-    expect(wrapper.find('a.custom-a')).to.have.length(2);
-    expect(wrapper.find('li.la-li')).to.have.length(1);
-
-    // You can't find complex hrefs like ' # '
-    // https://github.com/airbnb/enzyme/issues/283
-    expect(wrapper.find({href: '#'})).to.have.length(1);
-    expect(wrapper.find('a[href=\'dashboard\']')).to.have.length(1);
-    expect(wrapper.find('li > a')).to.have.length(2);
-    expect(wrapper.find({href: '#'}).contains('this is a test')).to.equal(true);
-    expect(wrapper.find('a[href=\'dashboard\']').contains('and another test')).to.equal(true);
+    t.is(wrapper.find('ul').length, 1);
+    t.is(wrapper.html().includes('li'), true);
+    t.is(wrapper.html().includes('a'), true);
 });
