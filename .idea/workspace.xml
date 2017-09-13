@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -37,18 +37,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="tag-input.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -295,17 +284,6 @@
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -592,14 +570,7 @@
       <workItem from="1503661566198" duration="384000" />
       <workItem from="1503972064756" duration="1279000" />
       <workItem from="1504163892562" duration="2086000" />
-      <workItem from="1505113927257" duration="7260000" />
-    </task>
-    <task id="LOCAL-00028" summary="change generator script for new folder structur">
-      <created>1499940832657</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1499940832657</updated>
+      <workItem from="1505113927257" duration="7671000" />
     </task>
     <task id="LOCAL-00029" summary="change generator">
       <created>1499955701353</created>
@@ -937,15 +908,21 @@
       <option name="project" value="LOCAL" />
       <updated>1505211733648</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="change tag-input variables to rem to work with bootstrap 4">
+      <created>1505301578290</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1505301578292</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331409000" />
+    <option name="totallyTimeSpent" value="331820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30995935" sideWeight="0.51277953" order="9" side_tool="true" content_ui="tabs" />
@@ -1022,7 +999,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="update of some components" />
     <MESSAGE value="quick fix of bg color of search input" />
     <MESSAGE value="fix &quot;stripe&quot; navbar" />
     <MESSAGE value="fix z-index of notifications" />
@@ -1047,7 +1023,8 @@
     <MESSAGE value="fix last tests" />
     <MESSAGE value="use fixed bootstrap alpha 6 version" />
     <MESSAGE value="change placeholder color for form input" />
-    <option name="LAST_COMMIT_MESSAGE" value="change placeholder color for form input" />
+    <MESSAGE value="change tag-input variables to rem to work with bootstrap 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="change tag-input variables to rem to work with bootstrap 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1397,8 +1374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
           <folding />
         </state>
       </provider>
