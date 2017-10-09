@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.mustache" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.mustache" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -36,19 +36,20 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="tag-input.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="480">
               <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
@@ -58,10 +59,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="vertical-tabs.mustache" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.mustache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="select-menu.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="700">
               <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
               <folding />
             </state>
@@ -72,16 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ARRAYof</find>
-      <find>expect(wrapper.find('input').node).to.equal(document.activeElement);</find>
-      <find>expect\(([a-zA-Z]+ )\)\.to\.equal\(document\.activeElement\)\;</find>
-      <find>expect\(([^]*)\)\.to\.equal\(document\.activeElement\)\;</find>
-      <find>expect\(([^]\)\.to\.equal\(document\.activeElement\)\;</find>
-      <find>expect\(([\s\S]*)\)\.to\.equal\(</find>
-      <find>styles</find>
-      <find>eslint-</find>
-      <find>config</find>
-      <find>assetsFilenames</find>
       <find>eslint-plugin-react</find>
       <find>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</find>
       <find>animate</find>
@@ -102,6 +103,16 @@
       <find>placeho</find>
       <find>raw!</find>
       <find>react-select</find>
+      <find>v</find>
+      <find>ver</find>
+      <find>vert</find>
+      <find>vertica</find>
+      <find>vertical-ta</find>
+      <find>vertical-t</find>
+      <find>vertical-</find>
+      <find>vertical</find>
+      <find>vertical_</find>
+      <find>o-vertical-tabs</find>
     </findStrings>
     <replaceStrings>
       <replace>}</replace>
@@ -143,6 +154,7 @@
       <dir>$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns</dir>
       <dir>$PROJECT_DIR$/source/_patterns</dir>
       <dir>$PROJECT_DIR$/build/storybook</dir>
+      <dir>$PROJECT_DIR$/source/_patterns/01-molecules</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -159,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build/generator/templates/component.hbs" />
         <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/forms/search/docs/info.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.jsx" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.jsx" />
@@ -210,6 +221,7 @@
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.mustache" />
       </list>
     </option>
   </component>
@@ -245,19 +257,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
   <component name="PhpDebugGeneral" break_at_first_line="true" />
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1001" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1345" />
+    <option name="y" value="-4" />
+    <option name="width" value="1615" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -309,19 +318,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,26 +418,44 @@
     </option>
   </component>
   <component name="RunManager" selected="npm.test:debug">
-    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+    <configuration default="false" name="build:docs" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:docs" />
+      </scripts>
       <node-interpreter value="project" />
+      <node-options value="--debug" />
       <envs />
+      <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
+    <configuration default="false" name="build:docs:all" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:docs:all" />
+      </scripts>
+      <node-interpreter value="/usr/local/bin/node" />
       <envs />
+      <method />
     </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
+    <configuration default="false" name="test:coverage" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:coverage" />
+      </scripts>
+      <node-interpreter value="/usr/local/bin/node" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -406,12 +468,6 @@
       <working-dir value="" />
       <envs />
       <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -444,6 +500,20 @@
     <configuration default="true" type="docker-deploy" factoryName="Docker Deployment">
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -464,44 +534,7 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration name="build:docs" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:docs" />
-      </scripts>
-      <node-interpreter value="project" />
-      <node-options value="--debug" />
-      <envs />
-    </configuration>
-    <configuration name="build:docs:all" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:docs:all" />
-      </scripts>
-      <node-interpreter value="/usr/local/bin/node" />
-      <envs />
-    </configuration>
-    <configuration name="test" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-    </configuration>
-    <configuration name="test:coverage" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test:coverage" />
-      </scripts>
-      <node-interpreter value="/usr/local/bin/node" />
-      <envs />
-    </configuration>
-    <configuration name="test:debug" type="js.build_tools.npm" factoryName="npm">
+    <configuration default="false" name="test:debug" type="js.build_tools.npm" factoryName="npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -510,6 +543,7 @@
       <node-interpreter value="project" />
       <node-options value="--inspect" />
       <envs />
+      <method />
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="npm.test:debug" />
@@ -602,13 +636,7 @@
       <workItem from="1503972064756" duration="1279000" />
       <workItem from="1504163892562" duration="2086000" />
       <workItem from="1505113927257" duration="8855000" />
-    </task>
-    <task id="LOCAL-00031" summary="change Example Structur to ease up documentation">
-      <created>1500366131566</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1500366131566</updated>
+      <workItem from="1507558579925" duration="260000" />
     </task>
     <task id="LOCAL-00032" summary="change Example Structur to ease up documentation">
       <created>1500366215826</created>
@@ -946,14 +974,21 @@
       <option name="project" value="LOCAL" />
       <updated>1505302503268</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="added modal to vertical taabs button">
+      <created>1507558780184</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1507558780186</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333004000" />
+    <option name="totallyTimeSpent" value="333264000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="1345" y="-4" width="1615" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -963,9 +998,8 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13897763" sideWeight="0.5435816" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37592593" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1315229" sideWeight="0.4564184" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13320586" sideWeight="0.4564184" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.48935038" order="1" side_tool="false" content_ui="tabs" />
@@ -978,16 +1012,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/node_modules/karma/config.tpl.js" />
-      </list>
-    </option>
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -1031,7 +1061,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="quick fix of bg color of search input" />
     <MESSAGE value="fix &quot;stripe&quot; navbar" />
     <MESSAGE value="fix z-index of notifications" />
     <MESSAGE value="add doc generator to patternlab" />
@@ -1056,7 +1085,8 @@
     <MESSAGE value="use fixed bootstrap alpha 6 version" />
     <MESSAGE value="change placeholder color for form input" />
     <MESSAGE value="change tag-input variables to rem to work with bootstrap 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="change tag-input variables to rem to work with bootstrap 4" />
+    <MESSAGE value="added modal to vertical taabs button" />
+    <option name="LAST_COMMIT_MESSAGE" value="added modal to vertical taabs button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1092,7 +1122,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_functions.scss" />
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/bootstrap.scss" />
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_mixins.scss" />
     <entry file="file://$PROJECT_DIR$/node_modules/apparena-patterns-react/css/scss/abstracts/_mixins.scss" />
@@ -1112,13 +1141,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_27.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="114" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_27.json" />
     <entry file="file://$PROJECT_DIR$/build/webpack/babel.dev.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1126,13 +1149,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/package.json" />
     <entry file="file://$PROJECT_DIR$/build/scripts/copy-files.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1182,13 +1199,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/7.8.0/core-modules/os.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/7.8.0/core-modules/os.js" />
     <entry file="file://$PROJECT_DIR$/build/scripts/run-travis-tests.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1225,13 +1236,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.yml" />
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1239,13 +1244,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="370" column="18" lean-forward="false" selection-start-line="370" selection-start-column="18" selection-end-line="370" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml" />
     <entry file="file://$PROJECT_DIR$/source/_patterns/react-utils/stick.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1316,20 +1315,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/_patterns/00-atoms/button/button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/_patterns/00-atoms/button/button.js" />
     <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/button-group/button-group.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1337,9 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1351,14 +1338,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="429" column="0" lean-forward="true" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss" />
     <entry file="file://$PROJECT_DIR$/source/css/scss/abstracts/_variables_bootstrap.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1373,9 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,39 +1360,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="104" column="20" lean-forward="false" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/package.json" />
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="480">
           <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="700">
           <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
           <folding />
         </state>
@@ -1425,6 +1385,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding />
         </state>
       </provider>
