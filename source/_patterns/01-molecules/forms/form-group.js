@@ -8,7 +8,7 @@ function FormGroup({className, htmlFor, label, children, validationState, valida
     props.className = cx(styles['form-group'], validationState && styles[`has-${validationState}`], className);
 
     const elements = React.Children.map(children, (child) => {
-        if (child.type.name === 'Input') {
+        if (child.type.displayName === 'Input') {
             const input = React.cloneElement(child, {
                 className: validationState ? cx(child.props.className, styles[`form-control-${validationState}`]) : cx(child.props.className),
                 placeholder: inlineLabel ? label : ''
