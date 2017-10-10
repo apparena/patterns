@@ -45,4 +45,6 @@ Input.defaultProps = {
     isDisabled: false
 };
 
+Input.displayName = 'Input';
+
 export default Input;

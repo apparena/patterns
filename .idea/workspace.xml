@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
+    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="add displayname to Input to fix problem of minfy names.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -37,32 +39,24 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="tag-input.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="input.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="196">
+              <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="form-group.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="select-menu.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+            <state relative-caret-position="64">
+              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -72,7 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ARRAYof</find>
       <find>expect(wrapper.find('input').node).to.equal(document.activeElement);</find>
       <find>expect\(([a-zA-Z]+ )\)\.to\.equal\(document\.activeElement\)\;</find>
       <find>expect\(([^]*)\)\.to\.equal\(document\.activeElement\)\;</find>
@@ -102,6 +95,7 @@
       <find>placeho</find>
       <find>raw!</find>
       <find>react-select</find>
+      <find>logo_ringe_bg_section_divider.svg</find>
     </findStrings>
     <replaceStrings>
       <replace>}</replace>
@@ -159,9 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build/generator/templates/component.hbs" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/forms/search/docs/info.json" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.jsx" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.jsx" />
         <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/docs/info.json" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/step/index.jsx" />
@@ -210,6 +201,9 @@
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js" />
       </list>
     </option>
   </component>
@@ -254,10 +248,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1001" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -309,6 +301,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,12 +310,15 @@
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,7 +335,7 @@
     <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="select&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;tag&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/tag-input/tag-input.scss&#10;tag-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/tag-input/tag-input.scss&#10;step/.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;butt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;input.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;price-table.s&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js&#10;price-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-component-single/__tests__/price-component-single.spec.js&#10;custo&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/__tests__/custom-control.spec.js&#10;modal.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;modalCon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/modalContainer.js&#10;anima&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;stick&#9;null&#9;null&#10;checkboxes.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/__tests__/checkboxes.spec.js&#10;select-menu.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/__tests__/select-menu.spec.js&#10;but&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;run-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/run-travis-tests.sh&#10;we&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.ava.js&#10;test-s&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/test/test-setup.js&#10;NotificationContainer&#9;null&#9;null&#10;web&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.ava.js&#10;butto.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.ava.js&#10;ani&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;Modal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/modal-body.js&#10;button.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;anim&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;es&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/eslint.js&#10;grid/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;checkbox.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js&#10;step/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;select-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.input.js&#10;packa&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;modal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;input.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/__tests__/input.spec.js&#10;col/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col/index.js&#10;.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;trav&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/run-travis-tests.sh&#10;navbar.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;step.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;button.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;alert.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js&#10;progress-tracker.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js&#10;modal.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js" />
+    <property name="SearchEverywhereHistoryKey" value="form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;col/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col/index.js&#10;dropdown&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.js&#10;form-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;portal&#9;null&#9;null&#10;FormG&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;copy/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/copy/index.js&#10;deploy&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/deploy.sh&#10;select&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;tag&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/tag-input/tag-input.scss&#10;tag-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/tag-input/tag-input.scss&#10;step/.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;butt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;input.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;price-table.s&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js&#10;price-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-component-single/__tests__/price-component-single.spec.js&#10;custo&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/__tests__/custom-control.spec.js&#10;modal.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;modalCon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/modalContainer.js&#10;anima&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;stick&#9;null&#9;null&#10;checkboxes.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/__tests__/checkboxes.spec.js&#10;select-menu.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/__tests__/select-menu.spec.js&#10;but&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;run-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/run-travis-tests.sh&#10;we&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.ava.js&#10;test-s&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/test/test-setup.js&#10;NotificationContainer&#9;null&#9;null&#10;web&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.ava.js&#10;butto.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.ava.js&#10;ani&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;Modal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/modal-body.js&#10;button.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;anim&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;es&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/eslint.js&#10;grid/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;checkbox.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js&#10;step/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;select-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.input.js&#10;packa&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;modal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;input.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/__tests__/input.spec.js&#10;col/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col/index.js" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="/usr/local/lib/node_modules/eslint" />
@@ -601,14 +598,18 @@
       <workItem from="1503661566198" duration="384000" />
       <workItem from="1503972064756" duration="1279000" />
       <workItem from="1504163892562" duration="2086000" />
-      <workItem from="1505113927257" duration="8855000" />
-    </task>
-    <task id="LOCAL-00031" summary="change Example Structur to ease up documentation">
-      <created>1500366131566</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1500366131566</updated>
+      <workItem from="1505113927257" duration="13097000" />
+      <workItem from="1505483598350" duration="594000" />
+      <workItem from="1505741383914" duration="596000" />
+      <workItem from="1505896529341" duration="322000" />
+      <workItem from="1505897079082" duration="814000" />
+      <workItem from="1506063930222" duration="765000" />
+      <workItem from="1506436588931" duration="2461000" />
+      <workItem from="1506610525488" duration="2031000" />
+      <workItem from="1507031852418" duration="202000" />
+      <workItem from="1507111588858" duration="1114000" />
+      <workItem from="1507151361888" duration="2198000" />
+      <workItem from="1507631425284" duration="1303000" />
     </task>
     <task id="LOCAL-00032" summary="change Example Structur to ease up documentation">
       <created>1500366215826</created>
@@ -946,14 +947,21 @@
       <option name="project" value="LOCAL" />
       <updated>1505302503268</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="remove dependencies">
+      <created>1505303389314</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1505303389314</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333004000" />
+    <option name="totallyTimeSpent" value="349646000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -961,14 +969,13 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35873982" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7693089" sideWeight="0.48722044" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13897763" sideWeight="0.5435816" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37592593" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37421384" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1315229" sideWeight="0.4564184" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14713065" sideWeight="0.4564184" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.48935038" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36890244" sideWeight="0.47763577" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -978,6 +985,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.48935038" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1031,7 +1039,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="quick fix of bg color of search input" />
     <MESSAGE value="fix &quot;stripe&quot; navbar" />
     <MESSAGE value="fix z-index of notifications" />
     <MESSAGE value="add doc generator to patternlab" />
@@ -1056,7 +1063,8 @@
     <MESSAGE value="use fixed bootstrap alpha 6 version" />
     <MESSAGE value="change placeholder color for form input" />
     <MESSAGE value="change tag-input variables to rem to work with bootstrap 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="change tag-input variables to rem to work with bootstrap 4" />
+    <MESSAGE value="remove dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove dependencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1092,26 +1100,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_functions.scss" />
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/bootstrap.scss" />
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_mixins.scss" />
-    <entry file="file://$PROJECT_DIR$/node_modules/apparena-patterns-react/css/scss/abstracts/_mixins.scss" />
-    <entry file="file://$PROJECT_DIR$/node_modules/apparena-patterns-react/css/scss/abstracts/_variables_bootstrap.scss" />
-    <entry file="file://$PROJECT_DIR$/node_modules/apparena-patterns-react/css/scss/abstracts/_variables.scss" />
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/styles/home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="57" lean-forward="true" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/eslint.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="166" column="29" lean-forward="true" selection-start-line="166" selection-start-column="29" selection-end-line="166" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_27.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1239,13 +1227,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="370" column="18" lean-forward="false" selection-start-line="370" selection-start-column="18" selection-end-line="370" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml" />
     <entry file="file://$PROJECT_DIR$/source/_patterns/react-utils/stick.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1327,19 +1309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1347,7 +1316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,7 +1323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="429" column="0" lean-forward="true" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1363,9 +1330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="e#3280#3829#2" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1373,9 +1337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,9 +1344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="104" column="20" lean-forward="false" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1393,23 +1351,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
+    <entry file="file://$USER_HOME$/Downloads/artifact (1)/node_modules/apparena-patterns-react/_patterns/00-atoms/forms/select-menu/select-menu.scss" />
+    <entry file="file://$USER_HOME$/Downloads/artifact (1)/node_modules/apparena-patterns-react/node_modules/apparena-patterns-react/_patterns/00-atoms/forms/select-menu/select-menu.scss" />
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1417,15 +1368,73 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/copy/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="40" column="48" lean-forward="true" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/react-utils/portal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+        <state relative-caret-position="848">
+          <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="127" column="23" lean-forward="true" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
