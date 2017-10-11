@@ -37,3 +37,57 @@
 .progress-bar-danger {
   background-color: $brand-danger
 }
+
+.progress-circle {
+  transform: rotate(-90deg);
+
+  .progressMeter,
+  .progressValue {
+    fill: none;
+  }
+
+  .progressMeter {
+    stroke: $progress-bg;
+  }
+
+  .progressValue {
+    stroke: $brand-primary;
+    stroke-linecap: round;
+  }
+
+  &.progress-circle-primary {
+    .progressValue {
+      stroke: $brand-primary;
+    }
+  }
+
+  &.progress-circle-secondary {
+    .progressValue {
+      stroke: $brand-secondary;
+    }
+  }
+
+  &.progress-circle-success {
+    .progressValue {
+      stroke: $brand-success;
+    }
+  }
+
+  &.progress-circle-info {
+    .progressValue {
+      stroke: $brand-info;
+    }
+  }
+
+  &.progress-circle-warning {
+    .progressValue {
+      stroke: $brand-warning;
+    }
+  }
+
+  &.progress-circle-danger {
+    .progressValue {
+      stroke: $brand-danger;
+    }
+  }
+}
