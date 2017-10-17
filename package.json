@@ -42,7 +42,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-polyfill": "^6.16.0",
-    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap": "^4.0.0-beta",
     "classnames": "^2.2.5",
     "clipboard": "^1.6.1",
     "copy-webpack-plugin": "^4.0.1",
