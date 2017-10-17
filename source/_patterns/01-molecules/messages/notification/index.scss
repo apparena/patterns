@@ -7,21 +7,23 @@
   Organism Navigation Sidebar
  ========================================================================== */
 
-.m-notification {
-  &.fixed {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    pointer-events: none;
-    z-index: 2050;
-  }
-
-  .content {
+.notification-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 2050;
+  > div {
     position: fixed;
     top: 20px;
     right: 20px;
+  }
+}
+
+.m-notification {
+  .content {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -32,6 +34,7 @@
     visibility: visible;
     pointer-events: auto;
     z-index: 1040;
+    margin-bottom: 1rem;
     &:before {
       content: '';
       bottom: 0;
@@ -39,6 +42,8 @@
       top: 0;
       width: 40px;
       position: absolute;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
     }
 
     .close {
