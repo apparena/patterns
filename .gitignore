@@ -13,7 +13,7 @@ source/styleguide/*
 /public/latest-change.txt
 
 .idea
-.idea/*
+.idea/
 !.idea/codeStyleSettings.xml
 
 ### Ignore bower components
