@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from './component';
-import Notification from '../01-molecules/messages/notification';
+import ReactComponent from '../../../react-utils/component';
+import Notification from './index';
+import styles from './index.scss';
 
 export default class NotificationContainer extends ReactComponent {
     static propTypes = {
@@ -18,8 +19,10 @@ export default class NotificationContainer extends ReactComponent {
 
     render() {
         return (
-            <div>
-                {this.props.notifications.map(this.renderNotification, this)}
+            <div className={styles.notificationContainer}>
+                <div>
+                    {this.props.notifications.map(this.renderNotification, this)}
+                </div>
             </div>
         );
     }

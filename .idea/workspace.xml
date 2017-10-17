@@ -1,284 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="enable scss styling in ava tests">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/styleguide.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/annotations/annotations.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/app-arena-styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/pattern-scaffolding.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/bootstrapthumb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/bootstrapthumb64.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/favicon_16x16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/favicon_32x32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/fpo_16x9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/fpo_4x3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/fpo_avatar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/fpo_hero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/fpo_square.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/icon-arrowhead.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/avatar1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/avatar2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/avatar3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/avatar4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/avatar5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/avatar6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/blog-hiker.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/blog-trees.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/blog-trees2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/hero-forest.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/hero-mountains.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/hiking.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/landscape-16x9-mountains.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/logo-reversed.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-fire.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-gear.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-ivy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-river.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-yosemite.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/tout-4x3-climber.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/tout-4x3-climbers.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/tout-4x3-stream.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/tout-leaves.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/tout-mountains.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/tout-winter-hiker.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/sample/waterfall.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/fitvids.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/nav.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/overlay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/progress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/dist/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/dist/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/change-version.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/configBridge.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/npm-shrinkwrap.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/sauce_browsers.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/alert.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/button.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/carousel.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/collapse.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/dropdown.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/modal.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/popover.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/scrollspy.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/tab.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/tooltip.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/util.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/nuget/MyGet.ps1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/nuget/bootstrap.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/nuget/bootstrap.sass.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/package.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/sache.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/HELP-US-OUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/AUTHORS.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/dist/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/dist/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/dist/jquery.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/external/sizzle/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/external/sizzle/dist/sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/external/sizzle/dist/sizzle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/external/sizzle/dist/sizzle.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/jsonp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/load.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/parseJSON.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/parseXML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/var/location.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/var/nonce.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/var/rquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/xhr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/attr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/classes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/prop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/val.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/callbacks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/access.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/parseHTML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/ready.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/var/rsingleTag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/addGetHookIf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/adjustCSS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/curCSS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/defaultDisplay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/hiddenVisibleSelectors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/showHide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/cssExpand.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/getStyles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/isHidden.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/rmargin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/rnumnonpx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/swap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data/Data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data/var/acceptData.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data/var/dataPriv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data/var/dataUser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/deferred.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/deprecated.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/dimensions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/effects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/effects/Tween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/effects/animatedSelector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/alias.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/focusin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/trigger.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/exports/amd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/exports/global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/intro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/_evalUrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/buildFragment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/getAll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/setGlobalEval.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/var/rcheckableType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/var/rscriptType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/var/rtagName.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/wrapMap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/offset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/outro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/queue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/queue/delay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/selector-native.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/selector-sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/selector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/serialize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing/findFilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing/var/dir.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing/var/rneedsContext.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing/var/siblings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/arr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/class2type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/concat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/document.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/documentElement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/hasOwn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/indexOf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/pnum.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/push.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/rcssNum.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/rnotwhite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/slice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/toString.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/wrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/latest-change.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/bower_components/EventEmitter.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/bower_components/classList.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/bower_components/hogan-3.0.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/bower_components/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/bower_components/jwerty.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/bower_components/prism.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/bower_components/script.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/bower_components/typeahead.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/css/prism-typeahead.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/css/prism-typeahead.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/css/styleguide.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/css/styleguide.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/data/patternlab-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/fonts/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/fonts/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/fonts/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/fonts/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/html/styleguide.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/js/patternlab-pattern.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/js/patternlab-pattern.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/js/patternlab-viewer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styleguide/js/patternlab-viewer.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.json" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.mustache" afterPath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.mustache" />
-    </list>
+    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="" />
     <list id="94a9903a-75a3-46c4-9192-681605a3196d" name="Revert: " comment="" />
-    <list id="6bd07fcc-a0ef-43bb-b549-72d6f4ca267c" name="do-not-commit" comment="" />
+    <list id="6bd07fcc-a0ef-43bb-b549-72d6f4ca267c" name="do-not-commit" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/change-version.js" afterPath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/change-version.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
     <ignored path="$PROJECT_DIR$/public/" />
@@ -312,32 +40,10 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="references-slider.mustache" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.mustache">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
-              <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="references-slider.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>enzyme</find>
       <find>it(</find>
       <find>() =&gt; {</find>
       <find>redux</find>
@@ -367,6 +73,7 @@
       <find>assetsFilenames</find>
       <find>eslint-plugin-react</find>
       <find>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</find>
+      <find>none</find>
     </findStrings>
     <replaceStrings>
       <replace>}</replace>
@@ -425,8 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/index.jsx" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/step/docs/step.example.jsx" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/step/index.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/step/docs/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/build/generator/frontend/src/styles/darcula.css" />
@@ -475,6 +180,8 @@
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/table/__tests__/table.spec.js" />
         <option value="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.mustache" />
       </list>
     </option>
@@ -520,10 +227,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
+    <option name="x" value="-5771" />
     <option name="y" value="-11" />
-    <option name="width" value="1834" />
-    <option name="height" value="1102" />
+    <option name="width" value="2902" />
+    <option name="height" value="1597" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -576,6 +283,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -590,7 +298,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -607,7 +314,7 @@
     <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/s.buckpesch/Projects/styleguide/source/_patterns/02-organisms/slider/references-slider.json&#10;checkbox.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js&#10;step/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;select-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.input.js&#10;packa&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;modal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;test-s&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/test/test-setup.js&#10;input.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/__tests__/input.spec.js&#10;col/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col/index.js&#10;.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;trav&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/run-travis-tests.sh&#10;navbar.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;step.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;button.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;alert.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js&#10;progress-tracker.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js&#10;modal.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;stick.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;card.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;price-table.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js&#10;tooltip.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;button.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;example&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;checkbox/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/index.js&#10;navbar.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;step/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;step/inde.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;home.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/home.jsx&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;checkbox.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;copy-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/copy-files.js&#10;button.ex&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/docs/button.example.js&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;main.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/main.jsx&#10;step.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;build/generator/templates/component.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;intro&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/box/intro.jsx&#10;prict&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/price-table.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;form.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/s.buckpesch/Projects/styleguide/source/_patterns/02-organisms/slider/references-slider.mustache&#10;refere&#9;FILE&#9;file://C:/Users/s.buckpesch/Projects/styleguide/source/_patterns/02-organisms/slider/references-slider.scss&#10;checkbox.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js&#10;step/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;select-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.input.js&#10;packa&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;modal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;test-s&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/test/test-setup.js&#10;input.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/__tests__/input.spec.js&#10;col/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col/index.js&#10;.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;trav&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/run-travis-tests.sh&#10;navbar.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;step.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;button.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;alert.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js&#10;progress-tracker.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js&#10;modal.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;stick.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;card.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;price-table.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js&#10;tooltip.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;button.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;example&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;checkbox/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/index.js&#10;navbar.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;step/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;step/inde.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;home.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/home.jsx&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;checkbox.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;copy-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/copy-files.js&#10;button.ex&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/docs/button.example.js&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;main.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/main.jsx&#10;step.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;build/generator/templates/component.hbs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;intro&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/box/intro.jsx&#10;prict&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/price-table.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="/usr/local/lib/node_modules/eslint" />
@@ -864,21 +571,8 @@
       <workItem from="1501697313773" duration="26361000" />
       <workItem from="1501837239537" duration="2983000" />
       <workItem from="1508137328773" duration="90000" />
-      <workItem from="1508185852352" duration="2115000" />
-    </task>
-    <task id="LOCAL-00006" summary="update nav styling">
-      <created>1494832327730</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1494832327730</updated>
-    </task>
-    <task id="LOCAL-00007" summary="update nav styling">
-      <created>1494832663556</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1494832663556</updated>
+      <workItem from="1508185852352" duration="2905000" />
+      <workItem from="1508245588300" duration="2243000" />
     </task>
     <task id="LOCAL-00008" summary="AA-1322, update nav styling">
       <created>1494834688130</created>
@@ -1209,24 +903,37 @@
       <option name="project" value="LOCAL" />
       <updated>1508137803442</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Update JS settings and improve button rendering by add a class attribute for all slides">
+      <created>1508189318095</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1508189318096</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Update JS settings and improve button rendering by add a class attribute for all slides">
+      <created>1508248540478</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1508248540479</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280113000" />
+    <option name="totallyTimeSpent" value="283146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1834" height="1102" extended-state="6" />
-    <editor active="true" />
+    <frame x="-5771" y="-11" width="2902" height="1597" extended-state="7" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30995935" sideWeight="0.51277953" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34857723" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30862832" sideWeight="0.48722044" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1991404" sideWeight="0.48722044" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13791268" sideWeight="0.53822154" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42581302" sideWeight="0.4744409" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14179105" sideWeight="0.46177846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15088968" sideWeight="0.46177846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1314,7 +1021,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="update login styling" />
     <MESSAGE value="update nav styling" />
     <MESSAGE value="AA-1322, update nav styling" />
     <MESSAGE value="AA-1306" />
@@ -1339,7 +1045,8 @@
     <MESSAGE value="add ISSUE_TEMPLATE.md&#10;    PULL_REQUEST_TEMPLATE.md" />
     <MESSAGE value="update readme" />
     <MESSAGE value="enable scss styling in ava tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="enable scss styling in ava tests" />
+    <MESSAGE value="Update JS settings and improve button rendering by add a class attribute for all slides" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update JS settings and improve button rendering by add a class attribute for all slides" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1372,7 +1079,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/storybook/styles.less" />
     <entry file="file://$PROJECT_DIR$/build/storybook/.eslintrc" />
     <entry file="file://$PROJECT_DIR$/build/storybook/MonitoredStory.js" />
     <entry file="file://$PROJECT_DIR$/build/storybook/config.js" />
@@ -1464,13 +1170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1606,14 +1305,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state relative-caret-position="250">
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="223" column="27" lean-forward="false" selection-start-line="223" selection-start-column="27" selection-end-line="223" selection-end-column="27" />
           <folding />
         </state>
       </provider>

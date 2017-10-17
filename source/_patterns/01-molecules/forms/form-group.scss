@@ -16,11 +16,6 @@
   }
 }
 
-// Form validation states
-.has-success {
-  @include form-control-validation($body-color);
-}
-
 .form-control-success,
 .form-control-warning,
 .form-control-danger {
