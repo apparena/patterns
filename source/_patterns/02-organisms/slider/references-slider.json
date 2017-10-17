@@ -17,12 +17,14 @@
                 "title": "Titel der Kunden-Referenz",
                 "buttons": {
                     "primary": {
-                        "caption": "Jetzt testen!",
-                        "url": "#"
+                      "caption": "Jetzt testen!",
+                      "class": "btn btn-primary",
+                      "url": "#"
                     },
                     "secondary": {
-                        "caption": "mehr erfahren",
-                        "url": "#"
+                      "caption": "mehr erfahren",
+                      "class": "btn btn-secondary",
+                      "url": "#"
                     }
                 }
             },
