@@ -64,7 +64,7 @@
 
   .slick-prev,
   .slick-next {
-    z-index: 999;
+    z-index: 9999;
     position: absolute;
     display: block;
     height: auto;
@@ -198,8 +198,6 @@
 
   .reference-slider {
 
-    height: $reference-height;
-
     .slick-prev, .slick-next {
       // position arrows in the middle of relevant image
       top: 300px; // half of mobile image height
@@ -216,7 +214,6 @@
         width: 100%;
         overflow: hidden;
         @media (min-width: map_get($grid-breakpoints, 'lg')) {
-          height: $reference-height;
           width: 100% - percentage($reference-quote-width);
           float: right;
         }
@@ -249,7 +246,6 @@
         display: table;
         overflow: hidden;
         @media (min-width: map_get($grid-breakpoints, 'lg')) {
-          height: $reference-height;
           width: percentage($reference-quote-width);
           float: left;
         }
@@ -331,7 +327,7 @@
     //display: table; // center vertical-alignment of client logos - doesn't work though
     .references-slider-logo {
       padding: 1rem;
-      height: 90px;
+      max-height: 90px;
       //display: table-cell;
       //vertical-align: middle;
       text-align: center;

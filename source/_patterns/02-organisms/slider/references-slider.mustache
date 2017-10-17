@@ -11,7 +11,7 @@
                             <img class="reference-screen-mobile" data-lazy="{{screens.mobile}}" alt="{{#title}}{{title}}{{/title}}">
                         {{/screens.mobile}}
                     </div>
-                    <div class="reference-quote text-center">
+                    <div class="reference-quote text-center hidden-xs-down">
                         <blockquote>
                             {{#title}}<h3>{{title}}</h3>{{/title}}
                             <p class="quote">" {{quote}} "</p>
@@ -55,6 +55,7 @@
         jQuery(document).ready(function () {
             jQuery('.o-references-slider .reference-slider').slick({
                 accessibility: false,
+                adaptiveHeight: true,
                 arrows: true,
                 asNavFor: '.references-slider-logo-slider',
                 cssEase: 'ease',
@@ -76,6 +77,7 @@
             });
             jQuery('.references-slider-logo-slider').slick({
                 accessibility: false,
+                adaptiveHeight: true,
                 arrows: false,
                 asNavFor: '.reference-slider',
                 centerMode: false,
