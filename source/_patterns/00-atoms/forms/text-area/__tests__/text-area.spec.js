@@ -16,3 +16,4 @@ test('TextArea listens to change', (t) => {
     t.is(wrapper.find('#custom-text-area').length, 1);
     t.is(onChange.calledOnce, true);
 });
+

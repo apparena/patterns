@@ -16,7 +16,9 @@ export default class Portal extends ReactComponent {
     };
 
     componentDidMount() {
-        if (this.props.replace) this.props.attachToNode.innerHTML = '';
+        if (this.props.replace) {
+            this.props.attachToNode.innerHTML = '';
+        }
         this._target = this.props.attachToNode ? this.props.attachToNode.appendChild(document.createElement('div')) : document.body.appendChild(document.createElement('div'));
         this._portal = renderSubtreeIntoContainer(this, this.props.children, this._target);
     }

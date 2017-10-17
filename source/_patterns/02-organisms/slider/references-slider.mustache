@@ -5,13 +5,13 @@
                 <div class="reference">
                     <div class="reference-screens">
                         {{#screens.desktop}}
-                            <img class="reference-screen-desktop" src="{{screens.desktop}}" alt="{{#title}}{{title}}{{/title}}">
+                            <img class="reference-screen-desktop" data-lazy="{{screens.desktop}}" alt="{{#title}}{{title}}{{/title}}">
                         {{/screens.desktop}}
                         {{#screens.mobile}}
-                            <img class="reference-screen-mobile" src="{{screens.mobile}}" alt="{{#title}}{{title}}{{/title}}">
+                            <img class="reference-screen-mobile" data-lazy="{{screens.mobile}}" alt="{{#title}}{{title}}{{/title}}">
                         {{/screens.mobile}}
                     </div>
-                    <div class="reference-quote text-center">
+                    <div class="reference-quote text-center hidden-xs-down">
                         <blockquote>
                             {{#title}}<h3>{{title}}</h3>{{/title}}
                             <p class="quote">" {{quote}} "</p>
@@ -28,10 +28,10 @@
                             <div class="buttons">
                                 {{#buttons}}
                                     {{#secondary}}
-                                        <a href="{{url}}" class="btn btn-outline-primary">{{caption}}</a>
+                                        <a href="{{url}}" class="{{class}}" {{{data}}}>{{caption}}</a>
                                     {{/secondary}}
                                     {{#primary}}
-                                        <a href="{{url}}" class="btn btn-success">{{caption}}</a>
+                                        <a href="{{url}}" class="{{class}}" {{{data}}}>{{caption}}</a>
                                     {{/primary}}
                                 {{/buttons}}
                             </div>
@@ -46,7 +46,7 @@
         <div class="references-slider-logo-slider">
             {{#items}}
                 <div class="references-slider-logo">
-                    <img src="{{logo}}" alt="{{#company}}{{company}}{{/company}}">
+                    <img data-lazy="{{logo}}" alt="{{company}}">
                 </div>
             {{/items}}
         </div>
@@ -54,16 +54,18 @@
     <script>
         jQuery(document).ready(function () {
             jQuery('.o-references-slider .reference-slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                accessibility: false,
+                adaptiveHeight: true,
                 arrows: true,
-                fade: true,
                 asNavFor: '.references-slider-logo-slider',
-                useCSS: true,
                 cssEase: 'ease',
+                cssTransitions: true,
+                fade: true,
                 infinite: true,
                 lazyLoad: 'ondemand',
-                cssTransitions: true,
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                useCSS: true,
                 responsive: [
                     {
                         breakpoint: 480,
@@ -74,18 +76,20 @@
                 ]
             });
             jQuery('.references-slider-logo-slider').slick({
-                slidesToShow: 5,
-                slidesToScroll: 1,
+                accessibility: false,
+                adaptiveHeight: true,
                 arrows: false,
-                fade: false,
-                infinite: true,
                 asNavFor: '.reference-slider',
-                dots: false,
                 centerMode: false,
-                focusOnSelect: true,
-                useCSS: true,
-                initialSlide: 0,
+                dots: false,
                 draggable: false,
+                fade: false,
+                focusOnSelect: true,
+                infinite: true,
+                lazyLoad: 'ondemand',
+                slidesToScroll: 1,
+                slidesToShow: 5,
+                useCSS: true,
                 {{#autoplay}}
                     autoplay: true,
                     autoplaySpeed: 4000,
