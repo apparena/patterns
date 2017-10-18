@@ -2,27 +2,34 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import styles from './form-group.scss';
-import Tooltip from '../tooltip/tooltip';
 
 function FormGroup({className, htmlFor, label, children, validationState, validationFeedback, inlineLabel, ...props}) {
-    props.className = cx(styles['form-group'], validationState && styles[`has-${validationState}`], className);
+    props.className = cx(styles['form-group'], className);
 
     const elements = React.Children.map(children, (child) => {
         if (child.type.displayName === 'Input') {
+            let validClass = '';
+            switch (validationState) {
+                case 'success':
+                    validClass = 'is-valid';
+                    break;
+                case 'danger':
+                    validClass = 'is-invalid';
+                    break;
+                default:
+                    break;
+            }
             const input = React.cloneElement(child, {
-                className: validationState ? cx(child.props.className, styles[`form-control`], styles[`form-control-${validationState}`]) : cx(child.props.className),
+                className: validationState ? cx(child.props.className, styles[`form-control`], styles[validClass]) : cx(child.props.className),
                 placeholder: inlineLabel ? label : ''
             });
             if (validationState && validationState !== 'default' && validationFeedback) {
-                return (
-                    <Tooltip
-                        label={validationFeedback}
-                        zIndex={2050}
-                        className={styles.tooltip}
-                    >
-                        {input}
-                    </Tooltip>
-                );
+                return [
+                    input,
+                    <div className={styles['invalid-feedback']}>
+                        {validationFeedback}
+                    </div>
+                ];
             }
             return input;
         } else {

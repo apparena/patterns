@@ -1,8 +1,7 @@
-import {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import ReactComponent from './component';
-
-const renderSubtreeIntoContainer = ReactDOM.unstable_renderSubtreeIntoContainer;
 
 export default class Portal extends ReactComponent {
     static propTypes = {
@@ -15,12 +14,11 @@ export default class Portal extends ReactComponent {
         replace: false
     };
 
-    componentDidMount() {
+    componentWillMount() {
         if (this.props.replace) {
             this.props.attachToNode.innerHTML = '';
         }
         this._target = this.props.attachToNode ? this.props.attachToNode.appendChild(document.createElement('div')) : document.body.appendChild(document.createElement('div'));
-        this._portal = renderSubtreeIntoContainer(this, this.props.children, this._target);
     }
 
     componentWillUpdate(nextProps, nextState, nextContext) {
@@ -36,10 +34,6 @@ export default class Portal extends ReactComponent {
     }
 
 
-    componentDidUpdate() {
-        this._portal = renderSubtreeIntoContainer(this, this.props.children, this._target);
-    }
-
     componentWillUnmount() {
         ReactDOM.unmountComponentAtNode(this._target);
         if (this.props.attachToNode) {
@@ -50,6 +44,9 @@ export default class Portal extends ReactComponent {
     }
 
     render() {
-        return null;
+        return ReactDOM.createPortal(
+            this.props.children,
+            this._target,
+        );
     }
 }

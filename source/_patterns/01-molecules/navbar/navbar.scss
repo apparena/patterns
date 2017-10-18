@@ -163,14 +163,14 @@
     position: absolute;
     top: 35px;
     left: 0;
-    background: #fff;
     width: 100%;
     padding: 20px;
-    border-bottom: 1px solid #e6ebf1;
   }
 
   &.nav-open .morph-dropdown-wrapper {
     display: block;
+    background: #fff;
+    border-bottom: 1px solid #e6ebf1;
   }
 
   .label {
@@ -209,7 +209,7 @@
   }
 
   @media only screen and (min-width: 768px) {
-    &::before {
+    &:before {
       content: 'desktop';
     }
 
@@ -299,13 +299,10 @@
       }
     }
 
-    .morph-dropdown-wrapper {
+    &.dropdown-visible .morph-dropdown-wrapper {
       /* dropdown wrapper - used to create the slide up/slide down effect when dropdown is revealed/hidden */
       display: block;
       top: 58px;
-    }
-
-    &.dropdown-visible .morph-dropdown-wrapper {
       transform: translateY(0);
     }
 
@@ -329,7 +326,7 @@
         content: '';
         position: absolute;
         bottom: 100%;
-        left: 47%;
+        left: 50%;
         right: auto;
         transform: translateX(-50%);
         height: 0;
