@@ -89,9 +89,11 @@ export default class Dropdown extends ReactComponent {
     }
 
     renderDropdownMenu() {
-        if (!this.state.isOpen) return null;
+        if (!this.state.isOpen) {
+            return null;
+        }
         return (
-            <ul className={cx(styles['dropdown-menu'], this.props.align && styles[`dropdown-menu-${this.props.align}`])} role="menu">
+            <ul className={cx(styles['dropdown-menu'], this.props.align && styles[`dropdown-menu-${this.props.align}`], this.state.isOpen && styles['show'])} role="menu">
                 {React.Children.map(this.props.items, (child, index) => {
                     if (React.isValidElement(child)) {
                         return (
@@ -109,14 +111,17 @@ export default class Dropdown extends ReactComponent {
     }
 
     renderDropdownMenuBackground() {
-        if (!this.state.isOpen) return null;
-        return <div className={styles['dropdown-backdrop']} onClick={::this.closeDropdown}/>;
+        if (!this.state.isOpen) {
+            return null;
+        }
+        return (
+            <div className={styles['dropdown-backdrop']} onClick={::this.closeDropdown}/>
+        );
     }
 
     render() {
         // classes
         const componentClass = cx(styles['dropdown'],
-            this.state.isOpen && styles['show'],
             this.props.className
         );
         if (!this.props.dropup) {

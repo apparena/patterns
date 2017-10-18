@@ -116,7 +116,7 @@
     span, span::after, span::before {
       /* these are the 3 lines of the menu icon */
       position: absolute;
-      background-color: #fff;
+      background-color: theme-color('primary');
       height: 2px;
       width: 26px;
     }
@@ -162,7 +162,11 @@
     z-index: 2050;
     position: absolute;
     top: 35px;
-    left: 20px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #e6ebf1;
   }
 
   &.nav-open .morph-dropdown-wrapper {
