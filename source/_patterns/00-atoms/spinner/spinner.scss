@@ -44,7 +44,7 @@
 }
 
 .spinner-primary > .spinner-dot {
-  background-color: $btn-primary-color;
+  background-color: theme-color("primary");
 }
 
 .spinner-secondary > .spinner-dot {
@@ -52,19 +52,19 @@
 }
 
 .spinner-info > .spinner-dot {
-  background-color: $btn-info-color;
+  background-color: theme-color("info");
 }
 
 .spinner-success > .spinner-dot {
-  background-color: $btn-success-color;
+  background-color: theme-color("success");
 }
 
 .spinner-warning > .spinner-dot {
-  background-color: $btn-warning-color;
+  background-color: theme-color("warning");
 }
 
 .spinner-danger > .spinner-dot {
-  background-color: $btn-danger-color;
+  background-color: theme-color("danger");
 }
 
 .spinner-inverted > .spinner-dot {
@@ -72,27 +72,27 @@
 }
 
 .spinner-outline-primary > .spinner-dot {
-  background-color: $btn-primary-bg;
+  background-color: theme-color("primary");
 }
 
 .spinner-outline-secondary > .spinner-dot {
-  background-color: $btn-secondary-border;
+  background-color: theme-color("secondary");
 }
 
 .spinner-outline-info > .spinner-dot {
-  background-color: $btn-info-bg;
+  background-color: theme-color("info");
 }
 
 .spinner-outline-success > .spinner-dot {
-  background-color: $btn-success-bg;
+  background-color: theme-color("success");
 }
 
 .spinner-outline-warning > .spinner-dot {
-  background-color: $btn-warning-bg;
+  background-color: theme-color("warning");
 }
 
 .spinner-outline-danger > .spinner-dot {
-  background-color: $btn-danger-bg;
+  background-color: theme-color("danger");
 }
 
 /* Sizes */

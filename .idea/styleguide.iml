@@ -7,6 +7,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/generator/frontend/src/dist" />
       <excludeFolder url="file://$MODULE_DIR$/export" />
       <excludeFolder url="file://$MODULE_DIR$/public" />
+      <excludeFolder url="file://$MODULE_DIR$/source/js/vendor" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/alchemy/zippy" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/collections" />

@@ -30,11 +30,11 @@
   }
   &.active {
     .container {
-      border: 1px solid $brand-primary;
+      border: 1px solid theme-color("primary");
       border-radius: 5px;
       background: #fff;
       .header {
-        background: $brand-primary;
+        background: theme-color("primary");
         color: #fff;
         border: none;
         border-radius: 0;
@@ -49,7 +49,7 @@
       .header {
         .icon {
           i {
-            color: $brand-success;
+            color: theme-color("success");
           }
         }
       }

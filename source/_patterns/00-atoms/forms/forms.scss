@@ -22,7 +22,7 @@
     color: initial;
     background: initial;
     box-shadow: initial;
-    border-color: $brand-primary;
+    border-color: theme-color("primary");
   }
 }
 

@@ -271,7 +271,7 @@
           font-size: 1.1rem;
           font-weight: lighter;
           font-style: italic;
-          color: $gray-dark;
+          color: $gray-900;
         }
 
         blockquote {
@@ -283,7 +283,7 @@
           max-width: 110px;
           text-align: left;
           margin: 2rem auto 2rem 0;
-          border-top: solid 5px $brand-primary;
+          border-top: solid 5px theme-color("primary");
           &.left {
             text-align: left;
             margin-left: 0;
@@ -305,7 +305,7 @@
   }
   .reference-slider-divider {
     width: 100%;
-    background-color: $gray-lightest;
+    background-color: $gray-200;
     .reference-slider-divider-arrow {
       margin-left: percentage($reference-quote-width) / 2;
       transform: translateX(-50%);
@@ -321,7 +321,7 @@
       margin-bottom: 0;
     }
     width: 100%;
-    background-color: $gray-lightest;
+    background-color: $gray-200;
     padding: 0 10%;
     cursor: pointer;
     //display: table; // center vertical-alignment of client logos - doesn't work though

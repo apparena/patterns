@@ -1,11 +1,11 @@
 section.section-counter {
   output {
-    color: $brand-primary;
+    color: theme-color("primary");
     font-size: 2.842rem;
     font-weight: map_get($font-weights, 'bold');
   }
   hr {
-    border-top: solid 2px $gray-lighter;
+    border-top: solid 2px $gray-400;
     width: 100%;
     max-width: 100%;
     text-align: inherit;

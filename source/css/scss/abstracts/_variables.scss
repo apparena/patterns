@@ -16,35 +16,8 @@ $font-weights: (
         bold: 700
 );
 
-// Icons
-//$icomoon-font-path: "../../../iconsets/app-arena-website/icomoon-font/fonts";
-
-// Brand colors
-$color-brand-blue-light: #478AB8;
-$color-brand-blue-dark: #2D343D;
-
-$brand-primary-80: lighten($brand-primary, lightness($brand-primary) * 0.2);
-$brand-primary-60: lighten($brand-primary, lightness($brand-primary) * 0.4);
-$brand-primary-40: lighten($brand-primary, lightness($brand-primary) * 0.6);
-
-$brand-secondary-80: lighten($brand-secondary, lightness($brand-secondary) * 0.2);
-$brand-secondary-60: lighten($brand-secondary, lightness($brand-secondary) * 0.4);
-$brand-secondary-40: lighten($brand-secondary, lightness($brand-secondary) * 0.6);
-
-$brand-success-80: lighten($brand-success, lightness($brand-success) * 0.2);
-$brand-success-60: lighten($brand-success, lightness($brand-success) * 0.4);
-$brand-success-40: lighten($brand-success, lightness($brand-success) * 0.6);
-
-$brand-warning-80: lighten($brand-warning, lightness($brand-warning) * 0.2);
-$brand-warning-60: lighten($brand-warning, lightness($brand-warning) * 0.4);
-$brand-warning-40: lighten($brand-warning, lightness($brand-warning) * 0.6);
-
-$brand-danger-80: lighten($brand-danger, lightness($brand-danger) * 0.2);
-$brand-danger-60: lighten($brand-danger, lightness($brand-danger) * 0.4);
-$brand-danger-40: lighten($brand-danger, lightness($brand-danger) * 0.6);
-
 // Components
-$spinner-dot-bg:               $gray-light;
+$spinner-dot-bg:               $gray-600;
 $spinner-dot-size:             8px;
 $spinner-dot-size-sm:          $spinner-dot-size / 2;
 $spinner-dot-size-lg:          $spinner-dot-size * 2;

@@ -28,7 +28,7 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     background-color: white;
-    border: 1px solid $brand-info;
+    border: 1px solid theme-color("info");
     overflow-wrap: break-word;
     padding: 10px 40px 10px 60px;
     visibility: visible;
@@ -71,7 +71,7 @@
 
   .info {
     &:before {
-      background-color: $brand-info;
+      background-color: theme-color("info");
     }
     .icon .info {
       display: block;
@@ -79,9 +79,9 @@
   }
 
   .success {
-    border-color: $brand-success;
+    border-color: theme-color("success");
     &:before {
-      background-color: $brand-success;
+      background-color: theme-color("success");
     }
     .icon .success {
       display: block;
@@ -90,9 +90,9 @@
   }
 
   .warning {
-    border-color: $brand-warning;
+    border-color: theme-color("warning");
     &:before {
-      background-color: $brand-warning;
+      background-color: theme-color("warning");
     }
     .icon .warning {
       display: block;
@@ -100,9 +100,9 @@
   }
 
   .danger {
-    border-color: $brand-danger;
+    border-color: theme-color("danger");
     &:before {
-      background-color: $brand-danger;
+      background-color: theme-color("danger");
     }
     .icon .danger {
       display: block;

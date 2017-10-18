@@ -4,7 +4,7 @@ section {
   position: relative;
   overflow: hidden;
   &.section-dark {
-    background-color: $gray-lightest;
+    background-color: $gray-200;
   }
   &.section-divider-bottom {
     overflow: visible;

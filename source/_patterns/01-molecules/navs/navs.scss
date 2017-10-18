@@ -19,11 +19,11 @@
     margin-right: 3px;
   }
   .nav-link:hover {
-    color: lighten($brand-primary, 10%);
-    border-bottom: 2px solid lighten($brand-primary, 10%);
+    color: lighten(theme-color("primary"), 10%);
+    border-bottom: 2px solid lighten(theme-color("primary"), 10%);
   }
   .nav-link.active {
-    color: $brand-primary;
-    border-bottom: 2px solid $brand-primary;
+    color: theme-color("primary");
+    border-bottom: 2px solid theme-color("primary");
   }
 }

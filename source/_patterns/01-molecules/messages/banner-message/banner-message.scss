@@ -21,32 +21,32 @@
 
 .m-banner-message-success {
   a {
-    color: $alert-success-bg;
+    color: theme-color("success");
     text-decoration: underline;
   }
-  @include alert-variant($brand-success, $brand-success, #fff);
+  @include alert-variant(theme-color("success"), theme-color("success"), #fff);
 }
 
 .m-banner-message-info {
   a {
-    color: $alert-info-bg;
+    color: theme-color("info");
     text-decoration: underline;
   }
-  @include alert-variant($brand-info, $brand-info, #fff);
+  @include alert-variant(theme-color("info"), theme-color("info"), #fff);
 }
 
 .m-banner-message-warning {
   a {
-    color: $alert-warning-bg;
+    color: theme-color("warning");
     text-decoration: underline;
   }
-  @include alert-variant($brand-warning, $brand-warning, #fff);
+  @include alert-variant(theme-color("warning"), theme-color("warning"), #fff);
 }
 
 .m-banner-message-danger {
   a {
-    color: $alert-danger-bg;
+    color: theme-color("danger");
     text-decoration: underline;
   }
-  @include alert-variant($brand-danger, $brand-danger, #fff);
+  @include alert-variant(theme-color("danger"), theme-color("danger"), #fff);
 }

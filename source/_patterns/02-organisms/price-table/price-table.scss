@@ -6,12 +6,12 @@
     .react-toggle {
       .react-toggle-track {
         background: rgba(0, 0, 0, 0);
-        border: 2px solid $brand-primary;
+        border: 2px solid theme-color("primary");
       }
       .react-toggle-thumb {
         border: none;
         box-shadow: none;
-        background: $brand-primary;
+        background: theme-color("primary");
         width: 28px;
         height: 28px;
         top: 3px;
@@ -47,7 +47,7 @@
       display: table-row;
 
       .selectorTableCellSelected {
-        color: $brand-focus;
+        color: theme-color("primary");
       }
 
       .selectorTableCellLeft {
@@ -80,12 +80,12 @@
   .priceTableHeader {
     text-align: center;
     font-size: 31pt;
-    color: $brand-grey-dark;
+    color: $gray-900;
     margin-bottom: 30px;
     margin-top: 30px;
 
     hr.blueDivider {
-      border: 2px solid $brand-focus;
+      border: 2px solid theme-color("primary");
       width: 25%
     }
   }
@@ -108,7 +108,7 @@
       }
 
       .discountText {
-        color: $brand-success;
+        color: theme-color("success");
       }
 
       h3 {
@@ -121,7 +121,7 @@
 
       &.popularElement {
         box-shadow: 0 0 30px  -1px rgba(200, 200, 200, 0.5);
-        border: 1px solid darken($gray-lightest, 10%);
+        border: 1px solid darken($gray-200, 10%);
       }
 
       .tagContainer {
@@ -142,12 +142,12 @@
 
       .horizontalDividerShort {
         width: 33%;
-        border-color: $gray-lightest;
+        border-color: $gray-200;
       }
 
       .horizontalDividerLong {
         width: 95%;
-        border-color: $gray-lightest;
+        border-color: $gray-200;
       }
 
       p {
