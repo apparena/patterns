@@ -48,7 +48,7 @@
 }
 
 .spinner-secondary > .spinner-dot {
-  background-color: $btn-secondary-color;
+  background-color: theme-color("secondary");
 }
 
 .spinner-info > .spinner-dot {
