@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import {Icon, ReactComponent} from 'apparena-patterns-react';
 import styles from './styles.scss';
 import Highlight from 'react-highlight';
