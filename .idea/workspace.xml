@@ -5,7 +5,8 @@
     <list id="94a9903a-75a3-46c4-9192-681605a3196d" name="Revert: " comment="" />
     <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -40,11 +41,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="card.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js">
+      <file leaf-file-name="dropdown.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+            <state relative-caret-position="260">
+              <caret line="96" column="73" lean-forward="true" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="73" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="125" column="15" lean-forward="true" selection-start-line="125" selection-start-column="15" selection-end-line="125" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -54,11 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ARRAYof</find>
-      <find>expect(wrapper.find('input').node).to.equal(document.activeElement);</find>
-      <find>expect\(([a-zA-Z]+ )\)\.to\.equal\(document\.activeElement\)\;</find>
-      <find>expect\(([^]*)\)\.to\.equal\(document\.activeElement\)\;</find>
-      <find>expect\(([^]\)\.to\.equal\(document\.activeElement\)\;</find>
       <find>expect\(([\s\S]*)\)\.to\.equal\(</find>
       <find>styles</find>
       <find>eslint-</find>
@@ -84,6 +92,11 @@
       <find>c</find>
       <find>navbar-toggl</find>
       <find>card-block</find>
+      <find>divider</find>
+      <find>caret</find>
+      <find>right</find>
+      <find>dropdown-menu</find>
+      <find>morph-dropdown-wrapper</find>
     </findStrings>
     <replaceStrings>
       <replace>}</replace>
@@ -143,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.jsx" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.jsx" />
         <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/docs/info.json" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/step/index.jsx" />
         <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/step/docs/info.json" />
@@ -194,6 +205,8 @@
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss" />
         <option value="$PROJECT_DIR$/source/css/app-arena-styles.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" />
       </list>
     </option>
   </component>
@@ -336,6 +349,14 @@
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dropdown" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -359,7 +380,7 @@
     <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="progress-tracker-step.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;spinner.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/spinner/spinner.scss&#10;navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;card.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/card.scss&#10;progr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;styles.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/styles.scss&#10;a&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/css/scss/abstracts/_variables_bootstrap.scss&#10;progress-tracker.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/css/app-arena-styles.scss&#10;refere&#9;FILE&#9;file://C:/Users/s.buckpesch/Projects/styleguide/source/_patterns/02-organisms/slider/references-slider.scss&#10;checkbox.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js&#10;step/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;select-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.input.js&#10;packa&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;modal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;test-s&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/test/test-setup.js&#10;input.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/__tests__/input.spec.js&#10;col/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col/index.js&#10;.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;trav&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/run-travis-tests.sh&#10;navbar.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;step.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;button.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;alert.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js&#10;progress-tracker.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js&#10;modal.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;stick.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;card.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;price-table.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js&#10;tooltip.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;button.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;example&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;checkbox/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/index.js&#10;navbar.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;step/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;step/inde.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;home.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/home.jsx&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;checkbox.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js&#10;copy-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/copy-files.js" />
+    <property name="SearchEverywhereHistoryKey" value="navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;dropdown&#9;null&#9;null&#10;progress-tracker-step.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;spinner.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/spinner/spinner.scss&#10;card.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/card.scss&#10;progr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;styles.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/styles.scss&#10;a&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/css/scss/abstracts/_variables_bootstrap.scss&#10;progress-tracker.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/css/app-arena-styles.scss&#10;refere&#9;FILE&#9;file://C:/Users/s.buckpesch/Projects/styleguide/source/_patterns/02-organisms/slider/references-slider.scss&#10;checkbox.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js&#10;step/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;select-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.input.js&#10;packa&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;modal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;test-s&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/test/test-setup.js&#10;input.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/__tests__/input.spec.js&#10;col/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col/index.js&#10;.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;trav&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/run-travis-tests.sh&#10;navbar.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;step.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/docs/step.example.jsx&#10;button.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;alert.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js&#10;progress-tracker.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js&#10;modal.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/modal/__tests__/modal.spec.js&#10;stick.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;card.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/__tests__/card.spec.js&#10;price-table.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js&#10;tooltip.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js&#10;button.sp&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;button.spe&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/__tests__/button.spec.js&#10;example&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/example-container.jsx&#10;checkbox/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/index.js&#10;navbar.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.js&#10;step/inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;step/inde.jsx&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;home.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/home.jsx&#10;props-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/props-container.jsx&#10;compon&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/templates/component.hbs&#10;checkbox.spec.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/checkbox.spec.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/index.js" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="/usr/local/lib/node_modules/eslint" />
@@ -622,13 +643,6 @@
       <workItem from="1508137328773" duration="90000" />
       <workItem from="1508185852352" duration="2905000" />
       <workItem from="1508245588300" duration="2243000" />
-    </task>
-    <task id="LOCAL-00011" summary="fix bug">
-      <created>1496242229363</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1496242229363</updated>
     </task>
     <task id="LOCAL-00012" summary="fix bug">
       <created>1496242336111</created>
@@ -966,11 +980,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508327338649</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="refactoring to bootstrap-4-beta">
+      <created>1508327395602</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1508327395602</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292157000" />
+    <option name="totallyTimeSpent" value="294162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -1142,28 +1163,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/scripts/run-travis-tests.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/scripts/copy-files.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/props-container.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md" />
     <entry file="file://$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md" />
     <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -1333,6 +1332,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1380,14 +1380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="228" column="78" lean-forward="false" selection-start-line="228" selection-start-column="78" selection-end-line="228" selection-end-column="78" />
           <folding />
         </state>
       </provider>
@@ -1482,8 +1474,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        <state relative-caret-position="200">
+          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_dropdown.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="115" column="21" lean-forward="true" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="96" column="73" lean-forward="true" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="125" column="15" lean-forward="true" selection-start-line="125" selection-start-column="15" selection-end-line="125" selection-end-column="15" />
           <folding />
         </state>
       </provider>
