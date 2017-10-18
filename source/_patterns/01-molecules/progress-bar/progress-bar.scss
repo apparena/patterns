@@ -15,27 +15,27 @@
 }
 
 .progress-bar-primary {
-  background-color: $brand-primary
+  background-color: theme-color("primary")
 }
 
 .progress-bar-secondary {
-  background-color: $brand-secondary
+  background-color: theme-color("secondary")
 }
 
 .progress-bar-success {
-  background-color: $brand-success
+  background-color: theme-color("success")
 }
 
 .progress-bar-info {
-  background-color: $brand-info
+  background-color: theme-color("info")
 }
 
 .progress-bar-warning {
-  background-color: $brand-warning
+  background-color: theme-color("warning")
 }
 
 .progress-bar-danger {
-  background-color: $brand-danger
+  background-color: theme-color("danger")
 }
 
 .progress-circle {
@@ -51,43 +51,43 @@
   }
 
   .progressValue {
-    stroke: $brand-primary;
+    stroke: theme-color("primary");
     stroke-linecap: round;
   }
 
   &.progress-circle-primary {
     .progressValue {
-      stroke: $brand-primary;
+      stroke: theme-color("primary");
     }
   }
 
   &.progress-circle-secondary {
     .progressValue {
-      stroke: $brand-secondary;
+      stroke: theme-color("secondary");
     }
   }
 
   &.progress-circle-success {
     .progressValue {
-      stroke: $brand-success;
+      stroke: theme-color("success");
     }
   }
 
   &.progress-circle-info {
     .progressValue {
-      stroke: $brand-info;
+      stroke: theme-color("info");
     }
   }
 
   &.progress-circle-warning {
     .progressValue {
-      stroke: $brand-warning;
+      stroke: theme-color("warning");
     }
   }
 
   &.progress-circle-danger {
     .progressValue {
-      stroke: $brand-danger;
+      stroke: theme-color("danger");
     }
   }
 }

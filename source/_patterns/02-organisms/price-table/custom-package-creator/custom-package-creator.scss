@@ -33,13 +33,13 @@
       .removeLanguageButton {
         margin-left: 5px;
         font-size: 18px;
-        color: $brand-danger;
+        color: theme-color("danger");
       }
       .addLanguageButton {
-        color: $brand-focus;
+        color: theme-color("primary");
         cursor: pointer;
         &:active {
-          color: darken($brand-focus, 15%);
+          color: darken(theme-color("primary"), 15%);
         }
         .icon {
           font-size: 18px;
@@ -55,7 +55,7 @@
     .advisorText {
       margin-top: 20px;
       width: 80%;
-      color: $gray-light;
+      color: $gray-600;
     }
 
     .serviceHours {
@@ -63,7 +63,7 @@
       width: 50%;
 
       .serviceHourNumber {
-        background-color: $brand-success;
+        background-color: theme-color("success");
         width: 32px;
         height: 32px;
         line-height: 32px;
@@ -86,10 +86,10 @@
       .column {
         padding: 20px 40px 40px;
         @include media-breakpoint-down(md) {
-          border-bottom: 1px solid $brand-grey-light;
+          border-bottom: 1px solid $gray-600;
         }
         @include media-breakpoint-up(lg) {
-          border-right: 1px solid $brand-grey-light;
+          border-right: 1px solid $gray-600;
         }
         &:first-child {
           padding-left: 20px;
@@ -114,9 +114,9 @@
     .checkbox-icon {
       font-size: 18px;
       margin-right: 5px;
-      color: $gray-lighter;
+      color: $gray-400;
       &.cbChecked {
-        color: $brand-success;
+        color: theme-color("success");
       }
     }
   }

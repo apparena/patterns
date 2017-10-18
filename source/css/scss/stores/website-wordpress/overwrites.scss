@@ -54,7 +54,7 @@ p {
   h1 & {
     font-weight: map_get($font-weights, 'regular');
     text-transform: uppercase;
-    color: $brand-primary;
+    color: theme-color("primary");
     text-decoration: underline
   }
 
@@ -76,19 +76,19 @@ p {
 
 // Icons
 .usp-icon, .service-icon {
-  color: $brand-primary;
+  color: theme-color("primary");
   font-size: 3.6rem;
 }
 
 .bg-blue {
-  background-color: $brand-primary;
+  background-color: theme-color("primary");
   color: #ffffff;
   .btn {
     &.btn-primary {
-      @include button-variant($brand-primary, #ffffff, transparent);
+      @include button-variant(theme-color("primary"), #ffffff, transparent);
     }
     &.btn-outline-primary {
-      @include button-outline-variant(#ffffff, $brand-primary);
+      @include button-outline-variant(#ffffff, theme-color("primary"));
     }
   }
 }
@@ -103,7 +103,7 @@ hr {
   text-align: left;
   margin-left: 0;
   margin-right: auto;
-  border-top: solid 5px $brand-primary;
+  border-top: solid 5px theme-color("primary");
   &.left {
     text-align: left;
     margin-left: 0;

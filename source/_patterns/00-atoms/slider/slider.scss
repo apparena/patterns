@@ -26,7 +26,7 @@
   position: absolute;
   top: 0;
   height: 100%;
-  background-color: $brand-success;
+  background-color: theme-color("success");
 }
 
 .filledAndRemainingRemain {
@@ -48,7 +48,7 @@
   margin: 1px 0 0 0;
   width: 12px;
   height: 12px;
-  background-color: $brand-success;
+  background-color: theme-color("success");
   background-clip: padding-box;
   border: 0 solid transparent;
   border-radius: 50%;

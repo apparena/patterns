@@ -1,15 +1,15 @@
 /* Custom bootstrap cards */
 .card-secondary {
-  @include card-variant($brand-secondary, $brand-secondary);
+  @include card-variant(theme-color("secondary"), theme-color("secondary"));
 }
 .card-focus {
-  @include card-variant($brand-focus, $brand-focus);
+  @include card-variant(theme-color("primary"), theme-color("primary"));
 }
 .card-grey-dark {
-  @include card-variant($brand-grey-dark, $brand-grey-dark);
+  @include card-variant($gray-900, $gray-900);
 }
 .card-grey-light {
-  @include card-variant($brand-grey-light, $brand-grey-light);
+  @include card-variant($gray-600, $gray-600);
 }
 
 // Fix bootstrap img-overlay bug, when using a card header

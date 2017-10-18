@@ -8,15 +8,15 @@ $react-dates-width-tooltip-arrow: 20px !default;
 $react-dates-width-day-picker: 300px !default;
 $react-dates-spacing-vertical-picker: 72px !default;
 
-$react-dates-color-primary: $brand-primary !default;
+$react-dates-color-primary: theme-color("primary") !default;
 $react-dates-color-primary-dark: $input-bg !default;
 $react-dates-color-primary-shade-1: $input-bg !default;
 $react-dates-color-primary-shade-2: lighten($input-bg, 10%) !default;
 $react-dates-color-primary-shade-3: lighten($input-bg, 20%) !default;
 $react-dates-color-primary-shade-4: lighten($input-bg, 30%) !default;
-$react-dates-color-secondary: $brand-secondary !default;
+$react-dates-color-secondary: theme-color("secondary") !default;
 $react-dates-color-white: #fff !default;
-$react-dates-color-gray: $gray !default;
+$react-dates-color-gray: $gray-700 !default;
 $react-dates-color-gray-dark: darken($react-dates-color-gray, 10.5%) !default;
 $react-dates-color-gray-light: lighten($react-dates-color-gray, 17.8%) !default; // #82888a
 $react-dates-color-gray-lighter: lighten($react-dates-color-gray, 45%) !default; // #cacccd
@@ -24,9 +24,9 @@ $react-dates-color-gray-lighter: lighten($react-dates-color-gray, 45%) !default;
 $react-dates-color-border: $input-bg !default;
 $react-dates-color-border-light: lighten($input-bg, 10%) !default;
 $react-dates-color-border-medium: lighten($input-bg, 20%) !default;
-$react-dates-color-placeholder-text: $input-color-placeholder !default;
+$react-dates-color-placeholder-text: $input-placeholder-color !default;
 $react-dates-color-text: $input-color !default;
-$react-dates-color-text-focus: $input-color-focus !default;
+$react-dates-color-text-focus: $input-focus-color !default;
 $react-dates-color-focus: $input-bg !default;
 
 :global {

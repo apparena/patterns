@@ -39,21 +39,28 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark: #373a3c !default;
-$gray: #777582 !default;
-$gray-light: #818a91 !default;
-$gray-lighter: #ccc !default;
-$gray-lightest: #f6f8fa !default;
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #f6f8fa !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ccc !default;
+$gray-500: #adb5bd !default;
+$gray-600: #818a91 !default;
+$gray-700: #777582 !default;
+$gray-800: #343a40 !default;
+$gray-900: #373a3c !default;
+$black:  #000 !default;
 
-$brand-primary: #478AB8 !default;
-$brand-secondary: #2d3d4a !default;
-$brand-focus: #2c82c9 !default;
-$brand-success: #2dcc56 !default;
-$brand-info: #67C6EB !default;
-$brand-warning: #DB6B3A !default;
-$brand-danger: #CF3D30 !default;
-$brand-grey-light: #f6f8fa !default;
-$brand-grey-dark: #666666 !default;
+$theme-colors: (
+        primary: #478AB8,
+        secondary: #2d3d4a,
+        success: #2dcc56,
+        info: #67C6EB,
+        warning: #DB6B3A,
+        danger: #CF3D30,
+        light: $gray-100,
+        dark: $gray-800
+) !default;
 
 // Options
 //
@@ -75,19 +82,13 @@ $font-family-sans-serif: 'Open Sans', Arial, sans-serif !default;
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
-$body-color: $gray !default;
-
-//Buttons
-$btn-primary-bg: $brand-focus !default;
-$btn-secondary-color: #7A838D !default;
-$btn-secondary-bg: #EEF2F8 !default;
-$btn-secondary-border: #EEF2F8 !default;
+$body-color: $gray-700 !default;
 
 //Cards
 $card-bg: #fff !default;
 $card-cap-bg: #fff !default;
 $card-border-width: 0 !default;
-$card-border-color: $gray-lightest !default;
+$card-border-color: $gray-200 !default;
 $card-spacer-x: 1.25rem !default;
 $card-spacer-y: 1.5rem !default;
 
@@ -101,7 +102,7 @@ $input-box-shadow: none !default;
 $input-box-shadow-focus: none !default;
 $input-btn-border-width: 0.1rem !default;
 $input-border-color: transparent !default;
-$input-color-placeholder: $gray-lighter !default;
+$input-color-placeholder: $gray-400 !default;
 
 // Navbar
 $navbar-border-radius: 0 !default;
@@ -110,20 +111,20 @@ $navbar-border-radius: 0 !default;
 $nav-pills-border-radius: 0 !default;
 
 // Modals
-$modal-backdrop-bg: transparentize($brand-secondary, 0.2);
+$modal-backdrop-bg: transparentize(theme-color("secondary"), 0.2);
 $modal-lg:                    1000px !default;
 $modal-md:                    500px !default;
 $modal-sm:                    300px !default;
 
 // Form Validation
 // Form validation icons
-$form-icon-success-color: $brand-success !default;
+$form-icon-success-color: theme-color("success") !default;
 $form-icon-success: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$form-icon-success-color}' d='M12 .3C5.5.3.3 5.5.3 12c0 6.5 5.3 11.8 11.8 11.8 6.5 0 11.8-5.3 11.8-11.8C23.8 5.5 18.5.3 12 .3zm0 22C6.3 22.3 1.8 17.7 1.8 12 1.8 6.3 6.3 1.8 12 1.8c5.7 0 10.3 4.6 10.3 10.3 0 5.6-4.6 10.2-10.3 10.2z'/%3E%3Cpath fill='#{$form-icon-success-color}' d='M16.2 8.3l-5.8 5.8-2.6-2.6c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l3.3 3.3c.2.2.4.3.7.3.2 0 .5-.1.7-.3l6.5-6.5c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z'/%3E%3C/svg%3E"), "#", "%23") !default;
 
-$form-icon-warning-color: $brand-warning !default;
+$form-icon-warning-color: theme-color("warning") !default;
 $form-icon-warning: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$form-icon-warning-color}' d='M12 .3C5.5.3.3 5.5.3 12c0 6.5 5.3 11.8 11.8 11.8 6.5 0 11.8-5.3 11.8-11.8C23.8 5.5 18.5.3 12 .3zm0 22C6.3 22.3 1.8 17.7 1.8 12 1.8 6.3 6.3 1.8 12 1.8c5.7 0 10.3 4.6 10.3 10.3 0 5.6-4.6 10.2-10.3 10.2z'/%3E%3Cpath fill='#{$form-icon-warning-color}' d='M12 15.2c-.5 0-.8.1-1 .3s-.4.6-.4 1 .1.8.4 1c.2.2.6.4 1 .4s.8-.1 1-.4c.2-.2.4-.6.4-1s-.1-.8-.4-1c-.2-.2-.6-.3-1-.3zM11 13.9h2l.4-7.8h-2.8z'/%3E%3C/svg%3E"), "#", "%23") !default;
 
-$form-icon-danger-color: $brand-danger !default;
+$form-icon-danger-color: theme-color("danger") !default;
 $form-icon-danger: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$form-icon-danger-color}' d='M12 .3C5.5.3.3 5.5.3 12c0 6.5 5.3 11.8 11.8 11.8 6.5 0 11.8-5.3 11.8-11.8C23.8 5.5 18.5.3 12 .3zm0 22C6.3 22.3 1.8 17.7 1.8 12 1.8 6.3 6.3 1.8 12 1.8c5.7 0 10.3 4.6 10.3 10.3 0 5.6-4.6 10.2-10.3 10.2z'/%3E%3Cpath fill='#{$form-icon-danger-color}' d='M15.9 8.2c-.4-.4-1-.4-1.4 0L12 10.8 9.4 8.2c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l2.6 2.6L8 14.8c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l2.6-2.6 2.6 2.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-2.6-2.6L16 9.6c.3-.4.3-1-.1-1.4z'/%3E%3C/svg%3E"), "#", "%23") !default;
 
 

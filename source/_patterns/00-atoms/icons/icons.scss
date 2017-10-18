@@ -27,25 +27,25 @@
 }
 
 .icon-primary {
-  color: $brand-primary
+  color: theme-color("primary")
 }
 
 .icon-secondary {
-  color: $brand-secondary
+  color: theme-color("secondary")
 }
 
 .icon-success {
-  color: $brand-success
+  color: theme-color("success")
 }
 
 .icon-info {
-  color: $brand-info
+  color: theme-color("info")
 }
 
 .icon-warning {
-  color: $brand-warning
+  color: theme-color("warning")
 }
 
 .icon-danger {
-  color: $brand-danger
+  color: theme-color("danger")
 }
