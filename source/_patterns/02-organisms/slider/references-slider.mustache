@@ -28,10 +28,14 @@
                             <div class="buttons">
                                 {{#buttons}}
                                     {{#secondary}}
-                                        <a href="{{url}}" class="{{class}}" {{{data}}}>{{caption}}</a>
+                                        <div class="btn-group" role="group">
+                                            <a href="{{url}}" class="{{class}}" {{{data}}}>{{caption}}</a>
+                                        </div>
                                     {{/secondary}}
                                     {{#primary}}
-                                        <a href="{{url}}" class="{{class}}" {{{data}}}>{{caption}}</a>
+                                        <div class="btn-group" role="group">
+                                            <a href="{{url}}" class="{{class}}" {{{data}}}>{{caption}}</a>
+                                        </div>
                                     {{/primary}}
                                 {{/buttons}}
                             </div>
