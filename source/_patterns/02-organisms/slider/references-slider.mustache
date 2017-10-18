@@ -3,7 +3,7 @@
         <div class="reference-slider">
             {{#items}}
                 <div class="reference">
-                    <div class="reference-screens">
+                    <div class="col reference-screens">
                         {{#screens.desktop}}
                             <img class="reference-screen-desktop" data-lazy="{{screens.desktop}}" alt="{{#title}}{{title}}{{/title}}">
                         {{/screens.desktop}}
@@ -11,7 +11,7 @@
                             <img class="reference-screen-mobile" data-lazy="{{screens.mobile}}" alt="{{#title}}{{title}}{{/title}}">
                         {{/screens.mobile}}
                     </div>
-                    <div class="reference-quote text-center d-none d-sm-block">
+                    <div class="col reference-quote d-none d-sm-block">
                         <blockquote>
                             {{#title}}<h3>{{title}}</h3>{{/title}}
                             <p class="quote">" {{quote}} "</p>
