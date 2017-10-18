@@ -212,7 +212,6 @@
       .reference-screens {
         position: relative;
         width: 100%;
-        overflow: hidden;
         @media (min-width: map_get($grid-breakpoints, 'lg')) {
           width: 100% - percentage($reference-quote-width);
           float: right;
