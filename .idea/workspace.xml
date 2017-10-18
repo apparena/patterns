@@ -3,21 +3,9 @@
   <component name="ChangeListManager">
     <list id="6bd07fcc-a0ef-43bb-b549-72d6f4ca267c" name="do-not-commit" comment="" />
     <list id="94a9903a-75a3-46c4-9192-681605a3196d" name="Revert: " comment="" />
-    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="refactoring to bootstrap-4-beta">
+    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/home.jsx" afterPath="$PROJECT_DIR$/build/generator/frontend/src/home.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/props-container.jsx" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/props-container.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/test-result.jsx" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/test-result.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/templates/component.hbs" afterPath="$PROJECT_DIR$/build/generator/templates/component.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/slider/slider.js" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/slider/slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -55,8 +43,8 @@
       <file leaf-file-name="form-group.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="282">
+              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -68,7 +56,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>variables_bootstrap</find>
       <find>card-secondary</find>
       <find>cards</find>
       <find>c</find>
@@ -98,6 +85,7 @@
       <find>{PropTypes}</find>
       <find>{PropTypes</find>
       <find>PropTypes</find>
+      <find>validationFeedback</find>
     </findStrings>
     <replaceStrings>
       <replace>}</replace>
@@ -605,14 +593,7 @@
       <workItem from="1508185852352" duration="2905000" />
       <workItem from="1508245588300" duration="2243000" />
       <workItem from="1508336181068" duration="249000" />
-      <workItem from="1508336534212" duration="5123000" />
-    </task>
-    <task id="LOCAL-00013" summary="add styling of form validation">
-      <created>1496410147110</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1496410147111</updated>
+      <workItem from="1508336534212" duration="5497000" />
     </task>
     <task id="LOCAL-00014" summary="add styling of form validation">
       <created>1496416107732</created>
@@ -950,11 +931,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508330209489</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="refactoring to bootstrap-4-beta and react 16">
+      <created>1508345801976</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1508345801977</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304223000" />
+    <option name="totallyTimeSpent" value="304597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -962,9 +950,9 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30995935" sideWeight="0.51277953" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34857723" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34857723" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15388711" sideWeight="0.5444618" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18902439" sideWeight="0.48722044" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18902439" sideWeight="0.48722044" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42581302" sideWeight="0.4744409" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15388711" sideWeight="0.4555382" order="0" side_tool="false" content_ui="combo" />
@@ -1055,7 +1043,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="AA-1322, update nav styling" />
     <MESSAGE value="AA-1306" />
     <MESSAGE value="add Tabs" />
     <MESSAGE value="add styling of form validation" />
@@ -1080,7 +1067,8 @@
     <MESSAGE value="enable scss styling in ava tests" />
     <MESSAGE value="Update JS settings and improve button rendering by add a class attribute for all slides" />
     <MESSAGE value="refactoring to bootstrap-4-beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring to bootstrap-4-beta" />
+    <MESSAGE value="refactoring to bootstrap-4-beta and react 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring to bootstrap-4-beta and react 16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1491,8 +1479,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="282">
+          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

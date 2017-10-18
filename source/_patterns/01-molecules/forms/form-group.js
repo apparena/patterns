@@ -27,7 +27,7 @@ function FormGroup({className, htmlFor, label, children, validationState, valida
                 return [
                     input,
                     <div className={styles['invalid-feedback']}>
-                        Please provide a valid city.
+                        {validationFeedback}
                     </div>
                 ];
             }
