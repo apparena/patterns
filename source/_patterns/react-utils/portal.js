@@ -21,6 +21,14 @@ export default class Portal extends ReactComponent {
         this._target = this.props.attachToNode ? this.props.attachToNode.appendChild(document.createElement('div')) : document.body.appendChild(document.createElement('div'));
     }
 
+    componentWillUnmount() {
+        if (this.props.attachToNode) {
+            this.props.attachToNode.removeChild(this._target);
+        } else {
+            document.body.removeChild(this._target);
+        }
+    }
+
     render() {
         return ReactDOM.createPortal(
             this.props.children,
