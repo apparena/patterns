@@ -335,7 +335,7 @@
         max-width: 100%;
         margin: auto;
         transition: filter 1s, opacity 1s;
-        filter: grayscale(100%);
+        filter: #{"grayscale(100%)"};
         opacity: 0.5;
       }
       &:hover img {
@@ -343,7 +343,7 @@
       }
       &.slick-current {
         img {
-          filter: grayscale(0%);
+          filter: #{"grayscale(0%)"};
           opacity: 1;
         }
       }
