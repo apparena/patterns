@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list id="6bd07fcc-a0ef-43bb-b549-72d6f4ca267c" name="do-not-commit" comment="" />
     <list id="94a9903a-75a3-46c4-9192-681605a3196d" name="Revert: " comment="" />
-    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="refactoring to bootstrap-4-beta">
+    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/css/app-arena-styles.scss" afterPath="$PROJECT_DIR$/source/css/app-arena-styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -45,13 +39,21 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="card.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cross-env</find>
-      <find>react-docgen</find>
-      <find>docs</find>
       <find>ARRAYof</find>
       <find>expect(wrapper.find('input').node).to.equal(document.activeElement);</find>
       <find>expect\(([a-zA-Z]+ )\)\.to\.equal\(document\.activeElement\)\;</find>
@@ -79,6 +81,9 @@
       <find>variables_bootstrap</find>
       <find>card-secondary</find>
       <find>cards</find>
+      <find>c</find>
+      <find>navbar-toggl</find>
+      <find>card-block</find>
     </findStrings>
     <replaceStrings>
       <replace>}</replace>
@@ -117,10 +122,10 @@
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/build/generator</dir>
       <dir>$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns</dir>
-      <dir>$PROJECT_DIR$/source/_patterns</dir>
       <dir>$PROJECT_DIR$/build/storybook</dir>
       <dir>$PROJECT_DIR$/node_modules/bootstrap/scss</dir>
       <dir>$PROJECT_DIR$/source</dir>
+      <dir>$PROJECT_DIR$/source/_patterns</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -138,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/forms/search/docs/info.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.jsx" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.jsx" />
         <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/docs/info.json" />
@@ -189,6 +193,7 @@
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss" />
         <option value="$PROJECT_DIR$/source/css/app-arena-styles.scss" />
+        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" />
       </list>
     </option>
   </component>
@@ -305,6 +310,27 @@
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="card" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
@@ -596,20 +622,6 @@
       <workItem from="1508137328773" duration="90000" />
       <workItem from="1508185852352" duration="2905000" />
       <workItem from="1508245588300" duration="2243000" />
-    </task>
-    <task id="LOCAL-00009" summary="AA-1306">
-      <created>1494844951573</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1494844951573</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add Tabs">
-      <created>1496051857600</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1496051857600</updated>
     </task>
     <task id="LOCAL-00011" summary="fix bug">
       <created>1496242229363</created>
@@ -940,14 +952,29 @@
       <option name="project" value="LOCAL" />
       <updated>1508320045968</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="refactoring to bootstrap-4-beta">
+      <created>1508324523021</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1508324523023</updated>
+    </task>
+    <task id="LOCAL-00059" summary="refactoring to bootstrap-4-beta">
+      <created>1508327338649</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1508327338649</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290367000" />
+    <option name="totallyTimeSpent" value="292157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1001" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -957,7 +984,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35873982" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39727464" sideWeight="0.47863248" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15335463" sideWeight="0.45007923" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15335463" sideWeight="0.45007923" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
@@ -1115,14 +1142,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coverage/coverage-final.json" />
     <entry file="file://$PROJECT_DIR$/build/scripts/run-travis-tests.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1321,6 +1340,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="223" column="27" lean-forward="false" selection-start-line="223" selection-start-column="27" selection-end-line="223" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1448,6 +1468,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="120" column="39" lean-forward="false" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/card/card@inreview.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding />
         </state>
       </provider>

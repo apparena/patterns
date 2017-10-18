@@ -50,6 +50,7 @@ export default class Card extends ReactComponent {
                         let newClassName = "";
                         switch (type) {
                             case 'card-block':
+                            case 'card-body':
                                 newClassName = cx(styles['card-body'], className);
                                 return React.cloneElement(child, {...props, className: newClassName});
                             case 'card-header':
