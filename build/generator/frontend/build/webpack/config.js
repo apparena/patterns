@@ -34,6 +34,7 @@ const config = merge({
     },
     watch: [],
     browsers: [],
+    languages: [],
 }, userConfig);
 
 config.watch.push(`${path.basename(config.paths.assets)}/${config.copy}`);
