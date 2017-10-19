@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import Animate from './animate';
 import ReactComponent from './component';
 import styles from './scss/stick.scss';
 
@@ -51,51 +50,51 @@ export default class Stick extends ReactComponent {
     }
 
     componentDidMount() {
-        this.mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? 'DOMMouseScroll' : 'mousewheel';
-        this.scrollBind = ::this.onScroll;
-        this.resizeBind = ::this.onResize;
-        this.onCloseBind = ::this.onClose;
-        document.body.addEventListener(this.mousewheelevt, this.scrollBind, false);
-        window.addEventListener('resize', this.resizeBind, false);
-        this.props.onClose && document.body.addEventListener('mousedown', this.onCloseBind, false); // eslint-disable-line
+        // this.mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? 'DOMMouseScroll' : 'mousewheel';
+        // this.scrollBind = ::this.onScroll;
+        // this.resizeBind = ::this.onResize;
+        // this.onCloseBind = ::this.onClose;
+        // document.body.addEventListener(this.mousewheelevt, this.scrollBind, false);
+        // window.addEventListener('resize', this.resizeBind, false);
+        // this.props.onClose && document.body.addEventListener('mousedown', this.onCloseBind, false); // eslint-disable-line
         this.updatePosition();
     }
 
-    componentDidUpdate(prevProps, prevState, prevContext) {
-        if (prevProps.element !== this.props.element) {
-            this.setState(this.getPosition());
-        }
-    }
+    // componentDidUpdate(prevProps, prevState, prevContext) {
+    //     if (prevProps.element !== this.props.element) {
+    //         this.setState(this.getPosition());
+    //     }
+    // }
 
-    componentWillUnmount() {
-        if (this.props.fixed) {
-            document.body.removeEventListener(this.mousewheelevt, this.scrollBind);
-            window.removeEventListener('resize', this.resizeBind);
-            this.props.onClose && document.body.removeEventListener('mousedown', this.onCloseBind); // eslint-disable-line
-        }
-    }
+    // componentWillUnmount() {
+    //     if (this.props.fixed) {
+    //         document.body.removeEventListener(this.mousewheelevt, this.scrollBind);
+    //         window.removeEventListener('resize', this.resizeBind);
+    //         this.props.onClose && document.body.removeEventListener('mousedown', this.onCloseBind); // eslint-disable-line
+    //     }
+    // }
 
-    onClose(event) {
-        const rect = this.props.element.getBoundingClientRect();
-        const thisRect = this.holder.getBoundingClientRect();
-
-        const outOfElement = (event.pageX < rect.left || event.pageX > rect.left + rect.width) ||
-            (event.pageY < rect.top || event.pageY > rect.top + rect.height);
-        const outOfThis = (event.pageX < thisRect.left || event.pageX > thisRect.left + thisRect.width) ||
-            (event.pageY < thisRect.top || event.pageY > thisRect.top + thisRect.height);
-
-        if (outOfElement && outOfThis) {
-            this.props.onClose();
-        }
-    }
-
-    onScroll() {
-        this.updatePosition();
-    }
-
-    onResize() {
-        this.updatePosition();
-    }
+    // onClose(event) {
+    //     const rect = this.props.element.getBoundingClientRect();
+    //     const thisRect = this.holder.getBoundingClientRect();
+    //
+    //     const outOfElement = (event.pageX < rect.left || event.pageX > rect.left + rect.width) ||
+    //         (event.pageY < rect.top || event.pageY > rect.top + rect.height);
+    //     const outOfThis = (event.pageX < thisRect.left || event.pageX > thisRect.left + thisRect.width) ||
+    //         (event.pageY < thisRect.top || event.pageY > thisRect.top + thisRect.height);
+    //
+    //     if (outOfElement && outOfThis) {
+    //         this.props.onClose();
+    //     }
+    // }
+    //
+    // onScroll() {
+    //     this.updatePosition();
+    // }
+    //
+    // onResize() {
+    //     this.updatePosition();
+    // }
 
     updatePosition() {
         if (this.holder) {
@@ -128,6 +127,7 @@ export default class Stick extends ReactComponent {
         const thisRect = this.getActualBoundingClientRect(this.holder);
         const windowHeight = window.innerHeight;
         const windowWidth = window.innerWidth;
+        const scrollTop = window.scrollY;
 
         const top = rect.top + document.body.scrollTop;
         const left = rect.left + document.body.scrollLeft;
@@ -199,9 +199,12 @@ export default class Stick extends ReactComponent {
         }
 
         /** Overflows */
-        if (position.top + thisRect.height > windowHeight) {
-            position.top = top - thisRect.height - this.props.offset;
-        }
+
+        position.top += scrollTop;
+
+        // if (position.top + thisRect.height > windowHeight) {
+        //     position.top = top - thisRect.height - this.props.offset;
+        // }
         if (position.left + thisRect.width > windowWidth) {
             position.left = (left + rect.width) - thisRect.width;
         }
@@ -213,7 +216,7 @@ export default class Stick extends ReactComponent {
     }
 
     render() {
-        const {transition, className, positioning} = this.props;
+        const {className, positioning} = this.props;
         let style = {
             zIndex: this.props.zIndex,
             left: this.state.left,
@@ -231,14 +234,12 @@ export default class Stick extends ReactComponent {
         }
 
         return (
-            <Animate transition={transition}>
-                <div className={cx(styles.stick, className)}
-                     style={style}
-                     ref={(c) => (this.holder = c)}
-                >
-                    {this.props.children}
-                </div>
-            </Animate>
+            <div className={cx(styles.stick, className)}
+                 style={style}
+                 ref={(c) => (this.holder = c)}
+            >
+                {this.props.children}
+            </div>
         );
     }
 }
