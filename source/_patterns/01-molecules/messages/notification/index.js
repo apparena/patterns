@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ReactComponent from '../../../react-utils/component';
 import cx from 'classnames';
 import styles from './index.scss';
-import Animate from '../../../react-utils/animate';
 import Icon from '../../../00-atoms/icons';
 
 const typeIcons = {
@@ -25,7 +24,6 @@ export default class Notification extends ReactComponent {
     };
 
     static defaultProps = {
-        transition: 'slideDownIn',
         fixed: true
     };
 
@@ -38,21 +36,19 @@ export default class Notification extends ReactComponent {
     }
 
     render() {
-        const {transition, className, type, header, children, fixed} = this.props;
+        const {className, type, header, children, fixed} = this.props;
         let iconName = typeIcons[type];
 
         return (
-            <Animate transition={transition}>
-                <div className={cx(styles['m-notification'], fixed && styles.fixed, className)}>
-                    <div className={cx(styles.content, styles[type])}>
-                        {this.renderDismissibleIcon()}
-                        <Icon name={iconName} className={styles.icon}/>
-                        <div className={cx(styles['title-messages'])}>
-                            <strong>{header}</strong> {children}
-                        </div>
+            <div className={cx(styles['m-notification'], fixed && styles.fixed, className)}>
+                <div className={cx(styles.content, styles[type])}>
+                    {this.renderDismissibleIcon()}
+                    <Icon name={iconName} className={styles.icon}/>
+                    <div className={cx(styles['title-messages'])}>
+                        <strong>{header}</strong> {children}
                     </div>
                 </div>
-            </Animate>
+            </div>
         );
     }
 }

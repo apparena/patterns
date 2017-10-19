@@ -19,18 +19,18 @@ const assetsFilenames = (config.env.production) ? '[name].min' : '[name]';
 let extractAssets = new ExtractTextPlugin({
     filename: `styles/${assetsFilenames}.css`,
     allChunks: true,
-    disable: (config.enabled.watcher),
+    disable: (config.enabled.watcher)
 });
 let extractComponentCSS = new ExtractTextPlugin({
     filename: `styles/${assetsFilenames}.css`,
     allChunks: true,
-    disable: (config.enabled.watcher),
+    disable: (config.enabled.watcher)
 });
 
 let extractComponentMJML = new ExtractTextPlugin({
     filename: `../../module/[name].phtml`,
     allChunks: true,
-    disable: (config.enabled.watcher),
+    disable: (config.enabled.watcher)
 });
 
 const jsRule = {
@@ -71,9 +71,9 @@ let webpackConfig = {
                             options: {
                                 onlyHtml: true
                             }
-                        },
-                    ],
-                }),
+                        }
+                    ]
+                })
             },
             {
                 test: /\.scss$/,
@@ -103,23 +103,23 @@ let webpackConfig = {
                                 sourceMap: true
                             }
                         }
-                    ],
-                }),
+                    ]
+                })
             },
             {
                 test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: `vendor/[name].[ext]`,
+                        name: `vendor/[name].[ext]`
                     }
-                }],
-            },
-        ],
+                }]
+            }
+        ]
     },
     stats: {
         colors: {
-            green: '\u001b[32m',
+            green: '\u001b[32m'
         }
     },
     resolve: {
@@ -127,9 +127,9 @@ let webpackConfig = {
         modules: [
             config.paths.assets,
             'node_modules',
-            'bower_components',
+            'bower_components'
         ],
-        enforceExtension: false,
+        enforceExtension: false
     },
     plugins: [
         new webpack.DefinePlugin({
@@ -140,7 +140,7 @@ let webpackConfig = {
         new webpack.IgnorePlugin(/^props$/),
         new CleanPlugin([config.paths.dist], {
             root: config.paths.root,
-            verbose: false,
+            verbose: false
         }),
         /**
          * It would be nice to switch to copy-webpack-plugin, but
@@ -150,11 +150,11 @@ let webpackConfig = {
         new CopyGlobsPlugin({
             pattern: config.copy,
             output: `[path]${assetsFilenames}.[ext]`,
-            manifest: config.manifest,
+            manifest: config.manifest
         }),
 
         new CopyWebpackPlugin([
-            {from: "styles/darcula.css", to: "styles/darcula.css"}
+            {from: 'styles/darcula.css', to: 'styles/darcula.css'}
         ]),
 
         extractAssets,
@@ -165,7 +165,7 @@ let webpackConfig = {
         new webpack.LoaderOptionsPlugin({
             // minimize: true,
             debug: config.enabled.watcher,
-            stats: {colors: true},
+            stats: {colors: true}
         }),
         new webpack.LoaderOptionsPlugin({
             test: /\.s?css$/,
@@ -173,9 +173,9 @@ let webpackConfig = {
                 output: {path: config.paths.dist},
                 context: config.paths.assets,
                 postcss: [
-                    autoprefixer({browsers: config.browsers}),
-                ],
-            },
+                    autoprefixer({browsers: config.browsers})
+                ]
+            }
         }),
         new webpack.LoaderOptionsPlugin({
             test: /\.(js|jsx)$/,
@@ -184,22 +184,27 @@ let webpackConfig = {
                     configFile: './build/webpack/eslint.js',
                     useEslintrc: false,
                     failOnWarning: false,
-                    failOnError: true,
-                },
-            },
+                    failOnError: true
+                }
+            }
         }),
-    ],
+        /**
+         * Remove momentjs languages you do not need
+         */
+        new webpack.ContextReplacementPlugin(/moment[\\\/]locale$/, new RegExp(`^\.\/(${config.languages.join('|')})$`))
+    ]
 };
 
 webpackConfig.plugins.push(
     new webpack.optimize.CommonsChunkPlugin({
         name: 'vendor',
         filename: `scripts/shared${(config.env.production) ? '.min' : ''}.js`,
-        minChunks: Infinity, // (with more entries, this ensures that no other module goes into the vendor chunk)
+        minChunks: Infinity // (with more entries, this ensures that no other module goes into the vendor chunk)
     })
 );
 
-/* eslint-disable global-require */ /** Let's only load dependencies as needed */
+/* eslint-disable global-require */
+/** Let's only load dependencies as needed */
 
 if (config.enabled.optimize) {
     webpackConfig = mergeWithConcat(webpackConfig, require('./webpack.config.optimize'));
@@ -209,7 +214,7 @@ if (config.env.production) {
     webpackConfig.plugins.push(new webpack.NoEmitOnErrorsPlugin());
     webpackConfig.plugins.push(new webpack.NormalModuleReplacementPlugin(
         /^console.log$/,
-        "./bundle/debug-noop"
+        './bundle/debug-noop'
     ));
     // const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
     // webpackConfig.recordsPath = './.webpack-cache/client-records.json';
@@ -225,7 +230,7 @@ if (config.enabled.cacheBusting) {
             space: 2,
             writeToDisk: false,
             assets: config.manifest,
-            replacer: require('./util/assetManifestsFormatter'),
+            replacer: require('./util/assetManifestsFormatter')
         })
     );
 }
@@ -236,7 +241,7 @@ if (config.enabled.eslint) {
         {
             test: /\.(js|jsx)$/,
             loader: 'eslint-loader',
-            enforce: "pre",
+            enforce: 'pre',
             options: {
                 configFile: './build/webpack/eslint.js',
                 useEslintrc: false
