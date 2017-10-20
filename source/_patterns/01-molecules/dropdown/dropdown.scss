@@ -2,7 +2,6 @@
  * Pattern Dependencies
  */
 @import "../../../css/scss/abstracts/variables";
-@import "../../../css/scss/abstracts/variables";
 @import "../../00-atoms/icons/icons";
 @import "~bootstrap/scss/dropdown";
 @import "~bootstrap/scss/navbar";
@@ -40,6 +39,14 @@
     content: initial;
     border: none;
   }
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .dropdown-menu-right {
