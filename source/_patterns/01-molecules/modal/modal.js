@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactComponent from '../../react-utils/component';
-import Animate from '../../react-utils/animate';
 import Draggable from '../../react-utils/draggable';
 import cx from 'classnames';
 import styles from './modal.scss';
@@ -32,13 +31,11 @@ export default class Modal extends ReactComponent {
         modalBackdrop: PropTypes.bool,
         children: PropTypes.node.isRequired,
         draggable: PropTypes.bool,
-        scrollable: PropTypes.bool,
-        transition: PropTypes.string
+        scrollable: PropTypes.bool
     };
 
     static defaultProps = {
         type: 'default',
-        transition: 'expandIn',
         saveText: 'Speichern',
         closeText: 'Abbrechen',
         visible: true,
@@ -118,19 +115,17 @@ export default class Modal extends ReactComponent {
     }
 
     render() {
-        const {visible, draggable, transition, modalBackdrop} = this.props;
+        const {visible, draggable, modalBackdrop} = this.props;
         return (
             <div>
-                <Animate transition={transition}>
-                    <div
-                        className={cx(styles.modal, (visible) && styles.show)}
-                    >
-                        {draggable ? this.renderDragableWrapper() : this.renderModalContent()}
-                    </div>
-                </Animate>
-                {(!draggable && modalBackdrop) && <Animate transition={'fadeIn'}>
-                    <div className={cx(visible && styles['modal-backdrop'])}></div>
-                </Animate>}
+                <div
+                    className={cx(styles.modal, (visible) && styles.show)}
+                >
+                    {draggable ? this.renderDragableWrapper() : this.renderModalContent()}
+                </div>
+                {(!draggable && modalBackdrop) &&
+                <div className={cx(visible && styles['modal-backdrop'])}/>
+                }
             </div>
         );
     }

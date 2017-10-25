@@ -88,7 +88,7 @@ module.exports = {
         useEslintrc: false
     },
     plugins: [
-        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.DefinePlugin({'process.env.NODE_ENV': '"development"'}),
         // new webpack.optimize.CommonsChunkPlugin('vendors', 'shared/vendors.js'),
         // Note: only CSS is currently hot reloaded

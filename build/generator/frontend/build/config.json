@@ -20,5 +20,9 @@
   "devUrl": "http://example.dev",
   "jsonpFunction": "am_webpackJsonp",
   "proxyUrl": "http://localhost:3000",
-  "publicPath": "/"
+  "publicPath": "/",
+  "languages": [
+    "de",
+    "en"
+  ]
 }
