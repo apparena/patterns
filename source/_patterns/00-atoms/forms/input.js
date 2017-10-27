@@ -13,7 +13,7 @@ function Input({className, style, refCallback, defaultValue, isDisabled, ...prop
     props.value = defaultValue; // eslint-disable-line
     props.className = cx(
         styles['form-control'],
-        styles['input-ie-fix'],
+        ((navigator.userAgent.indexOf("MSIE") !== -1 ) || (!!document.documentMode === true )) && styles['input-ie-fix'],
         style && styles[`form-${style}`],
         className
     );

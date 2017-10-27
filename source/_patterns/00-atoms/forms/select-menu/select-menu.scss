@@ -16,7 +16,7 @@ $select-input-border-radius: $input-border-radius !default;
 $select-input-border-focus: $input-focus-border-color !default; // blue
 $select-input-border-width: $input-btn-border-width !default;
 $select-input-height: $input-height !default;
-$select-input-internal-height: ($input-height - ($select-input-border-width * 2)) !default;
+$select-input-internal-height: calc(#{$input-height} - #{$select-input-border-width * 2}) !default;
 $select-input-placeholder: $input-color-placeholder !default;
 $select-text-color: $input-color !default;
 $select-link-hover-color: $select-input-border-focus !default;
