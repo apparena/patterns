@@ -27,6 +27,23 @@ const BUTTON_TYPES = [
     'outline-danger'
 ];
 
+const SPINNER_TYPES = {
+    default: 'primary',
+    primary: 'inverted',
+    secondary: 'inverted',
+    success: 'inverted',
+    info: 'inverted',
+    warning: 'inverted',
+    danger: 'inverted',
+    link: 'primary',
+    'outline-primary': 'primary',
+    'outline-secondary': 'secondary',
+    'outline-success': 'success',
+    'outline-info': 'info',
+    'outline-warning': 'warning',
+    'outline-danger': 'danger'
+};
+
 export default class Button extends ReactComponent {
     static propTypes = {
         className: PropTypes.string,
@@ -77,7 +94,7 @@ export default class Button extends ReactComponent {
         switch (state) {
             case 'loading':
                 return (
-                    <Spinner size="sm" type={type}/>
+                    <Spinner size="sm" type={SPINNER_TYPES[type]}/>
                 );
             case 'success':
                 return (
