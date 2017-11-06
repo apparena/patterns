@@ -8,6 +8,7 @@ export default class Col extends ReactComponent {
     static propTypes = {
         children: PropTypes.node,
         className: PropTypes.string,
+        xl: PropTypes.string, // The number of columns you wish to span
         lg: PropTypes.string, // The number of columns you wish to span
         md: PropTypes.string, // The number of columns you wish to span
         sm: PropTypes.string, // The number of columns you wish to span
@@ -53,6 +54,7 @@ export default class Col extends ReactComponent {
 
         // classes
         const componentClass = cx(
+            this.props.xl && styles[`col-xl-${this.props.xl}`],
             this.props.lg && styles[`col-lg-${this.props.lg}`],
             this.props.md && styles[`col-md-${this.props.md}`],
             this.props.sm && styles[`col-sm-${this.props.sm}`],
