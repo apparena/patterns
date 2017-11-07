@@ -16,5 +16,47 @@
 .popoverRoot {
   &.popover {
     position: relative;
+    .arrow {
+      left: calc(50% - 10px);
+    }
+    &.right {
+      .arrow {
+        right: calc(2px + 10px);
+        left: auto;
+      }
+    }
+    &.left {
+      .arrow {
+        left: calc(2px + 10px);
+        right: auto;
+      }
+    }
+    @each $color, $value in $theme-colors {
+      &.popover-#{$color} {
+        .popover-header {
+          background-color: $value;
+          border-color: $value;
+          @include color-yiq($value);
+        }
+        &.bs-popover-top {
+          .arrow::before {
+            border-top-color: $value;
+          }
+
+          .arrow::after {
+            border-top-color: $value;
+          }
+        }
+        &.bs-popover-bottom {
+          .arrow::before {
+            border-bottom-color: $value;
+          }
+
+          .arrow::after {
+            border-bottom-color: $value;
+          }
+        }
+      }
+    }
   }
 }

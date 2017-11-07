@@ -22,6 +22,17 @@ const POSITIONING = [
     'overlay'
 ];
 
+const TYPE = [
+    'primary',
+    'secondary',
+    'success',
+    'info',
+    'warning',
+    'danger',
+    'light',
+    'dark'
+];
+
 export default class PopOver extends ReactComponent {
     static propTypes = {
         children: PropTypes.element.isRequired,
@@ -30,12 +41,14 @@ export default class PopOver extends ReactComponent {
         content: PropTypes.element,
         open: PropTypes.bool,
         positioning: PropTypes.oneOf(POSITIONING),
+        type: PropTypes.oneOf(TYPE),
         zIndex: PropTypes.number
     };
 
     static defaultProps = {
         positioning: 'top',
         open: false,
+        type: 'light',
         zIndex: 1060
     };
 
@@ -70,11 +83,11 @@ export default class PopOver extends ReactComponent {
                         offset={10}
                     >
                         <div
-                            className={cx(styles.popoverRoot, styles.popover, styles[`popover-${this.props.positioning}`])}
+                            className={cx(styles.popoverRoot, styles.popover, styles[`popover-${this.props.type}`], styles[`bs-popover-${this.props.positioning.split(' ')[0]}`], styles[this.props.positioning.split(' ')[1]])}
                         >
-                            <div className={styles['popover-arrow']}></div>
-                            {this.props.title && <h3 className={styles['popover-title']}>{this.props.title}</h3>}
-                            <div className={styles['popover-content']}>
+                            <div className={styles['arrow']}/>
+                            {this.props.title && <h3 className={styles['popover-header']}>{this.props.title}</h3>}
+                            <div className={styles['popover-body']}>
                                 {this.props.content}
                             </div>
                         </div>
