@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="6bd07fcc-a0ef-43bb-b549-72d6f4ca267c" name="do-not-commit" comment="" />
-    <list id="94a9903a-75a3-46c4-9192-681605a3196d" name="Revert: " comment="" />
-    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="update button style">
+    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.scss" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/react-utils/stick.js" afterPath="$PROJECT_DIR$/source/_patterns/react-utils/stick.js" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -42,23 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="button.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js">
+      <file leaf-file-name="popover.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_buttons.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_buttons.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="54" column="29" lean-forward="false" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+            <state relative-caret-position="192">
+              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -67,50 +51,28 @@
       <file leaf-file-name="popover.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popover.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            <state relative-caret-position="127">
+              <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_buttons.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_buttons.scss">
+      <file leaf-file-name="stick.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/react-utils/stick.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="291">
+              <caret line="187" column="21" lean-forward="true" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_functions.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_functions.scss">
+      <file leaf-file-name="tooltip.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_popover.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_popover.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+            <state relative-caret-position="-622">
+              <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -249,7 +211,6 @@
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.js" />
         <option value="$PROJECT_DIR$/source/_patterns/react-utils/scss/portal.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/react-utils/stick.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_15.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.sql" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.scss" />
@@ -262,6 +223,7 @@
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.scss" />
+        <option value="$PROJECT_DIR$/source/_patterns/react-utils/stick.js" />
       </list>
     </option>
   </component>
@@ -306,10 +268,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-1001" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1680" />
+    <option name="width" value="2560" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -396,7 +357,7 @@
     <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="varia&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/bootstrap/scss/_variables.scss&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;pop&#9;null&#9;null&#10;datepicker/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/datepicker&#10;nav-item/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item/index.js&#10;Col&#9;null&#9;null&#10;icon/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/icons/index.js&#10;copy/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/copy/index.js&#10;navitem/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item&#10;tooltip&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/tooltip.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;forms&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.scss&#10;select&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;select-me&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;row&#9;null&#9;null&#10;col&#9;null&#9;null&#10;dropdown&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;config.json&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/config.json&#10;config&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/config.js&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/webpack.config.js&#10;toolt&#9;null&#9;null&#10;webpack.config.dev.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.dev.js&#10;datepicker&#9;null&#9;null&#10;animate.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;form.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;portal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/portal.js&#10;form-gr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;slider.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/slider/slider.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;tag-input.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/tag-input/tag-input.scss&#10;tag&#9;null&#9;null&#10;progress-tracker-step.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;spinner.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/spinner/spinner.scss&#10;card.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/card.scss&#10;progr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;styles.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/styles.scss&#10;a&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/css/scss/abstracts/_variables_bootstrap.scss&#10;progress-tracker.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/css/app-arena-styles.scss&#10;refere&#9;FILE&#9;file://C:/Users/s.buckpesch/Projects/styleguide/source/_patterns/02-organisms/slider/references-slider.scss&#10;checkbox.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js&#10;step/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx&#10;select-&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.input.js&#10;packa&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json" />
+    <property name="SearchEverywhereHistoryKey" value="stick&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;Toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/tooltip.js&#10;pop&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/popover/popover.js&#10;varia&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/bootstrap/scss/_variables.scss&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;datepicker/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/datepicker&#10;nav-item/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item/index.js&#10;Col&#9;null&#9;null&#10;icon/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/icons/index.js&#10;copy/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/copy/index.js&#10;navitem/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item&#10;tooltip&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/tooltip.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;forms&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.scss&#10;select&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;select-me&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;row&#9;null&#9;null&#10;col&#9;null&#9;null&#10;dropdown&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;config.json&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/config.json&#10;config&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/config.js&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/webpack.config.js&#10;toolt&#9;null&#9;null&#10;webpack.config.dev.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.dev.js&#10;datepicker&#9;null&#9;null&#10;animate.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;form.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;portal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/portal.js&#10;form-gr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;slider.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/slider/slider.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;tag-input.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/tag-input/tag-input.scss&#10;tag&#9;null&#9;null&#10;progress-tracker-step.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;spinner.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/spinner/spinner.scss&#10;card.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/card.scss&#10;progr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;styles.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/styles.scss&#10;a&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/css/scss/abstracts/_variables_bootstrap.scss&#10;progress-tracker.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/css/app-arena-styles.scss&#10;refere&#9;FILE&#9;file://C:/Users/s.buckpesch/Projects/styleguide/source/_patterns/02-organisms/slider/references-slider.scss&#10;checkbox.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js&#10;step/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/step/index.jsx" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="/usr/local/lib/node_modules/eslint" />
@@ -1018,20 +979,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343630000" />
+    <option name="totallyTimeSpent" value="345728000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1116" y="-1080" width="1920" height="1080" extended-state="6" />
+    <frame x="1680" y="0" width="2560" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30995935" sideWeight="0.51277953" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42581302" sideWeight="0.522637" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37002096" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16347177" sideWeight="0.55625993" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18902439" sideWeight="0.48722044" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42581302" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18902439" sideWeight="0.48296058" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42581302" sideWeight="0.477363" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1687966" sideWeight="0.4437401" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12589356" sideWeight="0.4437401" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
@@ -1041,12 +1003,28 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36890244" sideWeight="0.47763577" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30995935" sideWeight="0.51277953" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37002096" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18902439" sideWeight="0.48722044" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16347177" sideWeight="0.55625993" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42581302" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1687966" sideWeight="0.4437401" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.48935038" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36890244" sideWeight="0.47763577" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1177,13 +1155,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_patterns/react-utils/stick.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="197" column="22" lean-forward="true" selection-start-line="197" selection-start-column="22" selection-end-line="197" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/react-utils/portal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1424,13 +1395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -1473,7 +1437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1514,17 +1477,7 @@
         <state relative-caret-position="80">
           <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1571,16 +1524,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/css/scss/abstracts/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        <state relative-caret-position="192">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-622">
+          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/react-utils/stick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="187" column="21" lean-forward="true" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="21" />
           <folding />
         </state>
       </provider>
