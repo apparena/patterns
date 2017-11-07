@@ -8,6 +8,46 @@
 /*=========================================================================
   Molecules Popover
  ========================================================================== */
+// Color contrast
+@mixin color-yiq($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($yiq >= 150) {
+    color: #111;
+  } @else {
+    color: #fff;
+  }
+}
+
+@mixin popover-variant($background, $border) {
+  .popover-header {
+    background-color: $background;
+    border-color: $border;
+    @include color-yiq($background);
+  }
+  &.bs-popover-top {
+    .arrow::before {
+      border-top-color: $border;
+    }
+
+    .arrow::after {
+      border-top-color: $border;
+    }
+  }
+  &.bs-popover-bottom {
+    .arrow::before {
+      border-bottom-color: $border;
+    }
+
+    .arrow::after {
+      border-bottom-color: $border;
+    }
+  }
+}
 
 .root {
   display: inline-block;
@@ -33,29 +73,7 @@
     }
     @each $color, $value in $theme-colors {
       &.popover-#{$color} {
-        .popover-header {
-          background-color: $value;
-          border-color: $value;
-          @include color-yiq($value);
-        }
-        &.bs-popover-top {
-          .arrow::before {
-            border-top-color: $value;
-          }
-
-          .arrow::after {
-            border-top-color: $value;
-          }
-        }
-        &.bs-popover-bottom {
-          .arrow::before {
-            border-bottom-color: $value;
-          }
-
-          .arrow::after {
-            border-bottom-color: $value;
-          }
-        }
+        @include popover-variant($value, $value);
       }
     }
   }
