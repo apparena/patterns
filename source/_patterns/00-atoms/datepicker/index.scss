@@ -1,15 +1,13 @@
 @import "../../../css/scss/abstracts/variables";
 
 //overriding default sass variables with my project's colors
-//$react-dates-color-primary: $some-color-specific-to-my-project;
 $react-dates-width-input: 130px !default;
 $react-dates-width-arrow: 24px !default;
 $react-dates-width-tooltip-arrow: 20px !default;
-$react-dates-width-day-picker: 300px !default;
 $react-dates-spacing-vertical-picker: 72px !default;
 
 $react-dates-color-primary: theme-color("primary") !default;
-$react-dates-color-primary-dark: $input-bg !default;
+$react-dates-color-primary-dark: theme-color("primary") !default;
 $react-dates-color-primary-shade-1: $input-bg !default;
 $react-dates-color-primary-shade-2: lighten($input-bg, 10%) !default;
 $react-dates-color-primary-shade-3: lighten($input-bg, 20%) !default;
@@ -20,6 +18,8 @@ $react-dates-color-gray: $gray-700 !default;
 $react-dates-color-gray-dark: darken($react-dates-color-gray, 10.5%) !default;
 $react-dates-color-gray-light: lighten($react-dates-color-gray, 17.8%) !default; // #82888a
 $react-dates-color-gray-lighter: lighten($react-dates-color-gray, 45%) !default; // #cacccd
+$react-dates-color-gray-lightest: lighten($react-dates-color-gray, 60%) !default;
+$react-dates-color-highlighted: #ffe8bc !default;
 
 $react-dates-color-border: $input-bg !default;
 $react-dates-color-border-light: lighten($input-bg, 10%) !default;
@@ -29,8 +29,24 @@ $react-dates-color-text: $input-color !default;
 $react-dates-color-text-focus: $input-focus-color !default;
 $react-dates-color-focus: $input-bg !default;
 
+$react-dates-z-index: 300 !default;
+
+$react-dates-input-font-size: 18px !default;
+$react-dates-input-line-height: 24px !default;
+$react-dates-input-padding: 8px !default;
+$react-dates-input-displaytext-padding-horizontal: 8px !default;
+$react-dates-input-displaytext-padding-vertical: 4px !default;
+
 :global {
   @import '~react-dates/css/styles.scss';
+  .DayPickerKeyboardShortcuts__show,
+  .DayPickerKeyboardShortcuts__close {
+    border-radius: 0;
+  }
+  .CalendarDay--hovered {
+    background: none;
+    border: 1px double darken(theme-color("primary"), 3);
+  }
   .CalendarMonth__caption {
     caption-side: top;
   }
