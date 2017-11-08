@@ -182,7 +182,7 @@ export default class Stick extends ReactComponent {
                 position.top = top + rect.height + this.props.offset;
                 break;
             case 'bottom right':
-                position.left = (left - rect.width) + thisRect.width;
+                position.left = (left + rect.width) - thisRect.width;
                 position.top = top + rect.height + this.props.offset;
                 break;
             //Overlay
