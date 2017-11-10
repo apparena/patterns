@@ -1,0 +1,37 @@
+.div {
+  position: relative;
+  width: 100%;
+}
+
+.color {
+  height: 38px;
+  width: 38px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.swatch {
+  margin-right: 20px;
+  float: left;
+  cursor: pointer;
+}
+
+.popover {
+  position: absolute;
+  z-index: 1040;
+  width: 270px;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+
+.wrapper {
+  position: inherit;
+  width: 100%;
+  z-index: 100;
+}
