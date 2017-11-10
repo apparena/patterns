@@ -1,0 +1,67 @@
+.picker {
+  padding: 10px 10px 0;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 8px 16px rgba(0, 0, 0, .15);
+  margin-bottom: 10px;
+}
+
+.saturation {
+  width: 100%;
+  padding-bottom: 75%;
+  position: relative;
+  overflow: hidden;
+}
+
+.Saturation {
+  radius: 3px;
+  shadow: inset 0 0 0 1px rgba(0, 0, 0, .15), inset 0 0 4px rgba(0, 0, 0, .25);
+}
+
+.controls {
+  display: flex;
+}
+
+.sliders {
+  padding: 4px 0;
+  flex: 1;
+}
+
+.color {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.activeColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .15), inset 0 0 4px rgba(0, 0, 0, .25);
+}
+
+.hue {
+  position: relative;
+  height: 10px;
+  overflow: hidden;
+}
+
+.Hue {
+  radius: 2px;
+  shadow: inset 0 0 0 1px rgba(0, 0, 0, .15), inset 0 0 4px rgba(0, 0, 0, .25);
+}
+
+.alpha {
+  position: relative;
+  height: 10px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.Alpha {
+  radius: 2px;
+  shadow: inset 0 0 0 1px rgba(0, 0, 0, .15), inset 0 0 4px rgba(0, 0, 0, .25);
+}

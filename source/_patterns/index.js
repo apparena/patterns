@@ -8,6 +8,7 @@ import Card from './01-molecules/card/card';
 import CardsList from './02-organisms/lists/cards-list';
 import Checkbox from './00-atoms/forms/checkbox';
 import Col from './00-atoms/grid/col';
+import ColorPicker from './00-atoms/forms/color';
 import Container from './00-atoms/grid/container';
 import Copy from './00-atoms/copy';
 import CustomControl from './01-molecules/forms/custom-control';
@@ -65,6 +66,7 @@ export {
     CardsList,
     Checkbox,
     Col,
+    ColorPicker,
     Container,
     Copy,
     CustomControl,

@@ -57,6 +57,7 @@
     "react": "^16.0.0",
     "react-addons-update": "^15.3.0",
     "react-animated-number": "^0.4.2",
+    "react-color": "^2.13.8",
     "react-dates": "12",
     "react-dom": "^16.0.0",
     "react-draggable": "^2.2.2",
