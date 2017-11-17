@@ -49,16 +49,16 @@ function generateComponentDocumentation(directory) {
         } else if (file.match(/.example.?(js|jsx)/)) {
             exampleFileName = `${_.camelCase(path.basename(file, path.extname(file)))}${path.extname(file)}`;
             fse.copySync(file, `build/generator/frontend/src/components/${directory}/docs/${exampleFileName}`);
-        } else if (file.match(/.?(js|jsx)/)) {
-            const componentContent = fse.readFileSync(file, 'utf8');
-            const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
-            if (componentMatch)
-                componentClassName = componentMatch[2];
         }
     });
 
     glob.sync(`${directory}/*.?(js|jsx)`).forEach((component) => {
         const componentContent = fse.readFileSync(component, 'utf8');
+        const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
+        if (componentMatch) {
+            componentClassName = componentMatch[2];
+        }
+
         try {
             const infos = reactDocs.parse(componentContent);
             const infosString = JSON.stringify(infos);
@@ -128,11 +128,26 @@ glob('source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
             categories[cf] = {visible: true, components: []};
         });
 
+
     /**
      * Generate documentation for each component
      */
     console.log('Generating documentation...');
     each(componentDirectories, (directory, callback) => {
+        if (!fse.existsSync(directory + '/docs')) {
+            callback();
+            return;
+        }
+
+        const component = directory.split('/').slice(-1);
+        const exportedComponents = fse.readFileSync('source/_patterns/index.js', 'utf8');
+
+        if (!exportedComponents.includes(`/${component}';`)) {
+            callback();
+            return;
+        }
+
+
         const components = glob.sync(`${directory}/*.?(js|jsx)`).map((component) => {
             return path.basename(component);
         });

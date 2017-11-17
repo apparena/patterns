@@ -1,9 +1,12 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-import {shallow, mount} from 'enzyme';
+import {shallow, mount, configure} from 'enzyme';
 import Spinner from '../spinner';
 import style from '../spinner.scss'
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test('renders a spinner', (t) => {
     const wrapper = shallow(

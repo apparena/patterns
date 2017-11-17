@@ -1,8 +1,11 @@
 /* eslint-env mocha */
 import React from "react";
 import test from 'ava';
-import {mount} from "enzyme";
+import {mount, configure} from "enzyme";
 import Table from "../table";
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test('Table renders a table', (t) => {
     const wrapper = mount(

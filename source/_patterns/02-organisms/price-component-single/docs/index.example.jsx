@@ -3,6 +3,6 @@ import {PriceTableSingle} from 'apparena-patterns-react';
 
 export default function PriceTableSingleExample() {
     return (
-        <PriceTableSingle/>
+        <div></div>
     );
 }

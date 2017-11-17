@@ -1,14 +1,14 @@
 import React from 'react';
-import {Button, PopOver} from 'apparena-patterns-react';
+import {Button, Popover} from 'apparena-patterns-react';
 
-export default function PopOverExample() {
+export default function PopoverExample() {
     return (
-        <PopOver
+        <Popover
             title="OverPop"
-            content="Suprise, you opened the Popover, to close it just press the button again"
-            positioning="left">
+            content={<p>Suprise, you opened the Popover, to close it just press the button again</p>}
+            positioning="top">
             <Button>Just Push Me</Button>
-        </PopOver>
+        </Popover>
     );
 }
 

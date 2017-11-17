@@ -4,12 +4,14 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-import {shallow} from 'enzyme';
+import {shallow, configure} from 'enzyme';
 import {spy} from 'sinon';
 import PriceTable from '../price-table';
 import Plans from '../price-table.json';
 import styles from '../price-table.scss';
+import Adapter from 'enzyme-adapter-react-16';
 
+configure({adapter: new Adapter()});
 
 test('renders Pricetable', (t) => {
     const onClick = spy();

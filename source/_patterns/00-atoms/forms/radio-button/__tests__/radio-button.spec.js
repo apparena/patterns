@@ -1,10 +1,12 @@
 /* eslint-env mocha */
 import React from "react";
-import {shallow, mount} from "enzyme";
+import {shallow, mount, configure} from "enzyme";
 import {spy} from "sinon";
 import {test} from "ava";
 import RadioButton from "../index";
+import Adapter from 'enzyme-adapter-react-16';
 
+configure({adapter: new Adapter()});
 
 test('renders with default text', (t) => {
     const wrapper = shallow(

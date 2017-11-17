@@ -27,6 +27,7 @@
     "publish": "cd build/apparena-patterns-react && npm publish",
     "start": "node build/webpack/server.js",
     "test": "BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava",
+    "test:generator": "webpack --progress --config build/webpack/webpack.tests.js && BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava build/generator/_build/*.js",
     "test:coverage": "BABEL_DISABLE_CACHE=1 nyc report --reporter=lcov --reporter=json --reporter=text-lcov --reporter=html",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -106,7 +107,8 @@
     "css-modules-require-hook": "^4.0.2",
     "cssnano": "^3.10.0",
     "element-closest": "^2.0.2",
-    "enzyme": "^2.9.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "es6-promise": "^4.1.1",
     "eslint": "3.1.1",
     "eslint-find-rules": "^1.11.0",
@@ -160,6 +162,7 @@
     "postcss-loader": "0.9.1",
     "postcss-omit-import-tilde": "^1.0.1",
     "raw-loader": "^0.5.1",
+    "react-addons-shallow-compare": "^15.6.2",
     "react-docgen": "^2.17.0",
     "react-dom": "^16.0.0",
     "react-highlight": "^0.10.0",
@@ -184,11 +187,13 @@
     "webpack-assets-manifest": "^0.6.1",
     "webpack-combine-loaders": "^2.0.3",
     "webpack-dev-server": "1.14.1",
-    "webpack-merge": "^2.6.1"
+    "webpack-merge": "^2.6.1",
+    "webpack-node-externals": "^1.6.0"
   },
   "ava": {
     "failFast": true,
     "verbose": true,
+    "failWithoutAssertions": false,
     "files": [
       "source/**/*.spec.js"
     ],
@@ -198,6 +203,7 @@
     ],
     "require": [
       "babel-register",
+      "ignore-styles",
       "./source/test/test-setup"
     ],
     "babel": "inherit"

@@ -1,9 +1,12 @@
 /* eslint-env mocha */
 import React from 'react';
-import {mount} from 'enzyme';
+import {mount, configure} from 'enzyme';
 import {spy} from 'sinon';
 import {test} from 'ava';
 import SelectMenu from '../index';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test('Select Menu renders elements correctly', (t) => {
     const onChange = spy();
