@@ -2,7 +2,7 @@
 
 # build & deploy react patterns
 yarn build:light
-SEMVER_LAST_TAG=$(git describe --abbrev=0 --tags 2>/dev/null)
+SEMVER_LAST_TAG=$(npm view apparena-patterns-react version)
 SEMVER_RELEASE_LEVEL=$(git log --oneline -1 --pretty=%B | cat | tr -d '\n' | cut -d "[" -f2 | cut -d "]" -f1)
 ROOT_DIR=$(pwd)
 
