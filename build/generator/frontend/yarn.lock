@@ -158,9 +158,8 @@ aphrodite@^1.2.5:
     inline-style-prefixer "^3.0.1"
     string-hash "^1.1.3"
 
-apparena-patterns-react@^1.2.17:
+apparena-patterns-react@../../apparena-patterns-react/:
   version "1.2.17"
-  resolved "https://registry.yarnpkg.com/apparena-patterns-react/-/apparena-patterns-react-1.2.17.tgz#ad421cb1b3f7eb675ec1eaa243f54c77ccdf1186"
   dependencies:
     axios "^0.15.3"
     babel-polyfill "^6.16.0"

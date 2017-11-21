@@ -8,9 +8,30 @@ node_js:
 sudo: false
 before_install:
   - chmod +x build/scripts/install-travis-dependencies.sh
+  - pip install --user awscli
+  - export PATH=$PATH:$HOME/.local/bin
 install:
   - ./build/scripts/install-travis-dependencies.sh
 before_script:
   - chmod +x build/scripts/run-travis-tests.sh
 script:
-  - ./build/scripts/run-travis-tests.sh
+  - if [ "$TRAVIS_BRANCH" = "develop" ]; then ./build/scripts/run-travis-tests.sh; fi
+before_deploy:
+  - chmod +x build/scripts/travis-deployment.sh
+  - ./build/scripts/travis-deployment.sh
+deploy:
+  provider: s3
+  access_key_id:
+    secure: "E2a+khXn4FNZ1yDYYfpz2gsdyRK2m7BQMxHKI/q/+2eGmKTDlty8P9tVyMRm2IdgIZ24N5XVPNYq5+4Bgyc8564oi3ce/Wl5Zx7BDYNYcU7nc+MxIiEHbC6aKei1ayhQ1CiNHtVLheTwmDNxndBI1GaU6neW+2vxErAjX65VQxOeBEc4sqydf0U1r38ojSFVZxP++RrDv0l1/0PuDm8DG3ZXkEvRAI2E/kRppF8LQaPEYctZqhQi3zrqiq5y0gL2BV1e2urW3F3z+kc+AAgLyNy7ZinqB9EPXp+6rSKTiMwtimeX+xcPGzvR+bbk2UQiFoKkcPSsS48yXoG/kAxZqFDXU8yw+jXHNrNtrgUF1mSvzmWSoP5cPURwvTMFyN+v2TKJDx0Q+xNKIwzduy2XKjQQnrOc6f+9vChQjh19O+FpnLkrjkIYDZV4HtnhpxdbMaBMUlX1znLaL0Ut4iTAWZopLSrYlSKMP/Cv+qiqqLui0xuSjXgGcNGq5DPjR0ZYZ2xpypXKwIRXXsThTuoDATWD864P50R/AOP0sFgdxwmUEDQIiqWW0YLmkkaINfNUois/0mcFg5cFOhc6hOHQBFOIDILjduEKyx8TFh9QwvhdtdC+BZbUa4p5vfFNQACrAT9FoiMUaWlKj1Elgtn9EIEFPJacYoEUB+7ML5dT+2w="
+  secret_access_key:
+    secure: "QGvQ9vS7j70nKYGYCzLNL2OhnQIXyCWCZjK4kIuo3BtgnWt86T/mQReVqXKgfFl8dzZmy+ifOKpO18OHfrQtkd2NhWulLC5eYnMRYWZFfzXfppp/x5ULiZLQ1+7mltGmJfl5HQZXSlk+UQmvxz87bW1gYTZPOUH6oH4+MwcWN1HauVCH47HbGTKS+DGOjslRAAWS8zl1O3HzCidJuutlBjKX/Uys6mwWoWu86i/SCyqnbiu3vBf2J/qbxkek30k/3O0/Z66/lmhCIXZLfAsoA6soFbyRLKtvvn5eJ82QerYOICL/2kNmeGmViSPob8jmEtx11i+7hE6DOSANdzQH7vXOeS71n85mM94UuulCRrWheYzJN+peBVcJSptCRoblukUB1O/+W9Nmb6dKzGhwpP/8MJbuchPXJWv4W25CpBhLd9dD/vpaOYJV5EVRas/i2bKYgES9819oru8y2eE5ABTCdo58Sd19kOEVw0E3ZSZRY1nv1HEZQTAwZ9X2utKYEuU1m2qStx++IX7dAp2Avf2Cvo9JenjAZADrxFCtPk1HmKdjjjdhMFPqwn1duzmXLdzN3cyqOp2BbfAdp3qYJy0giENWPrYmP4MJVcZ1DS2EyPZoSTdSBZ86qh66vGU1+UvcsCNgSS7nN6rtfxaYYOuT41E9S8lzf2GR+FBEzPk="
+  bucket: "aa-manager-20"
+  skip_cleanup: true
+  region: eu-central-1
+  local_dir: build/generator/frontend/src
+  upload-dir: cdn/documentation
+after_deploy:
+  - aws cloudfront create-invalidation --distribution-id ${CF_DISTRIBUTION} --paths /documentation/*
+env:
+  global:
+    secure: "jb5mgc50GnyE5bMIGoaryU2+wSMJQIhegMbhmJQrWu1+Vr0L8GxQGiDb12KOCKUp605PHORGAcdIWMA1BPPF4E3Qw16LTWfcuVbIwAxo9fte64AgZsZp4ZLcLtepCbpW7cjOx3cJ4eKkM79/3nFLwzJwp8OtAeD3bUDW6612vG2I/VSSr8Nc1TIybfZTu/Ep/ESyLcoXSASUpT1hxzq5kggiqpi4AcjjFOQql4gwGiyHHLI54sKhRuny/P4ZGVD/B7gKmk3RZ1WwnEoEr8mJLepLAPx9bXPFvBGAFgAG+0MSkZXWZduR9knmv9J0YRGBECDPZ5KCgtHc9cgJVxht2azR261eV+eKrnwTstwxh1PoBMA7hMQLNvjhbTyyJsap2B0cpbHDa0+TvcbX/7tP/8kFznX0OJ5hIFHn80Ql7L8fBXxS6tCGnBXe6bomfB1ISvuC1IvdME0agsgQEp9t5eXIbBc0qz3rpdBm2V/iO35t8qIzKZ5Y/FMJrsT80zFA83TYlUqRTz9cpqikv478apCxvJbMNjqLjJuzuCV8JcgoW19XYA5OTEMND3YhbAkzdk8BdOt1xOyU9jMxv8EKHhFz97ExGCojXwUYJOkWa2IPZOy/OHKBxrFDPpvP7xJ11bTbP/OOOP+Uouwtj/IPgBEHnqeYCPAP9f87YToe4Lw="
