@@ -1,8 +1,11 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-import {shallow} from 'enzyme';
+import {shallow, configure} from 'enzyme';
 import Dropdown from '../dropdown';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test('renders a dropdown', (t) => {
     const wrapper = shallow(

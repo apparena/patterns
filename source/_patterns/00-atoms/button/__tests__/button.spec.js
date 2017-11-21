@@ -1,9 +1,12 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-import {mount, shallow} from 'enzyme';
+import {mount, shallow, configure} from 'enzyme';
 import {spy} from 'sinon';
 import Button from '../button';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test('renders a button', (t) => {
     const wrapper = shallow(<Button/>);

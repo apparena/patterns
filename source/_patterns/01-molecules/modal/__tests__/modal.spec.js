@@ -1,11 +1,14 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-import {mount, shallow} from 'enzyme';
+import {mount, shallow, configure} from 'enzyme';
 import {spy} from 'sinon';
 import Modal from '../modal';
 import ModalHeader from '../modal-header';
 import styles from '../modal.scss';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test('shows a modal', (t) => {
     const wrapper = shallow(

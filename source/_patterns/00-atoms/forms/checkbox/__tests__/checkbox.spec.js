@@ -1,9 +1,12 @@
 /* eslint-env mocha */
 import React from "react";
-import {shallow, mount} from "enzyme";
+import {shallow, mount, configure} from "enzyme";
 import {spy} from "sinon";
 import CheckBox  from "../index";
 import {test} from 'ava';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test('listens to the change', (t) => {
     const onSelect = spy();

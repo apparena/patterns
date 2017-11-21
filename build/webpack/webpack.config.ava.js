@@ -1,4 +1,4 @@
-var path = require('path')
+const path = require('path');
 
 /// / webpack.config.js css-modules loader example
 process.noDeprecation = true;
@@ -10,12 +10,22 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.es6'],
         modules: [
-            'node_modules'
+            'node_modules',
+            path.resolve(__dirname, '../generator/frontend/src'),
+            path.resolve(__dirname, '../generator/frontend/node_modules'),
         ],
         enforceExtension: false
     },
     module: {
         rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: [/(node_modules|bower_components)(?![/|\\](bootstrap|foundation-sites))/],
+                use: [{
+                    loader: 'babel-loader',
+                    options: require('./babel.dev')
+                }]
+            },
             {
                 test: /\.scss$/,
                 use: [

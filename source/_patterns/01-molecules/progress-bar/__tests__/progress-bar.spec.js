@@ -1,12 +1,15 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-import {shallow} from 'enzyme';
+import {shallow, configure} from 'enzyme';
 import ProgressBar from '../progress-bar';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test('respects custom class names', (t) => {
     const wrapper = shallow(
-        <ProgressBar classNames="custom-progress-bar custom-progress-bar-2" value="25" maxValue="100" minWidth="4" type="danger"/>
+        <ProgressBar classNames="custom-progress-bar custom-progress-bar-2" value={25} maxValue={100} minWidth={4} type="danger"/>
     );
     t.is(wrapper.find('.custom-progress-bar').length, 1);
     t.is(wrapper.find('.custom-progress-bar-2').length, 1);
@@ -14,7 +17,7 @@ test('respects custom class names', (t) => {
 
 test('renders text without hiding it by default', (t) => {
     const wrapper = shallow(
-        <ProgressBar value="25" maxValue="100" minWidth="4" type="danger" text="Hello World"/>
+        <ProgressBar value={25} maxValue={100} minWidth={4} type="danger" text="Hello World"/>
     );
     t.is(wrapper.find('#progress-bar-caption').length, 1);
     t.is(wrapper.contains('Hello World'), true);
@@ -22,7 +25,7 @@ test('renders text without hiding it by default', (t) => {
 
 test('can use a custom ID for the caption', (t) => {
     const wrapper = shallow(
-        <ProgressBar value="25" maxValue="100" minWidth="4" type="danger" text="Hello World" captionID="custom-caption-id"/>
+        <ProgressBar value={25} maxValue={100} minWidth={4} type="danger" text="Hello World" captionID="custom-caption-id"/>
     );
     t.is(wrapper.find('#custom-caption-id').length, 1);
     t.is(wrapper.contains('Hello World'), true);
