@@ -1,10 +1,37 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import Markdown from "react-markdown";
+import Markdown from 'react-markdown';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import {darcula} from 'react-syntax-highlighter/styles/prism';
+
+class CodeBlock extends React.PureComponent {
+    static propTypes = {
+        literal: PropTypes.string,
+        language: PropTypes.string,
+        inline: PropTypes.bool
+    };
+
+    render() {
+        return (
+            <SyntaxHighlighter
+                language={this.props.language || 'javascript'}
+                style={darcula}
+            >
+                {this.props.literal}
+            </SyntaxHighlighter>
+        );
+    }
+
+}
 
 function Description({description}) {
     return (
-        <Markdown source={description}/>
+        <Markdown
+            source={description}
+            renderers={{
+                codeBlock: CodeBlock
+            }}
+        />
     );
 }
 
