@@ -1,6 +1,3 @@
-Navbar
----
-
 Main responsive navigation bar. It can be customized using bootstrap classes. The responsive version of the navbar is 
 implemented using [mmenu](http://mmenu.frebsite.nl/).
 

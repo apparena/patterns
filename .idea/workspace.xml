@@ -1,65 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/generator/frontend/src/styles/darcula.css" afterPath="" />
+    <list default="true" id="65d4f6b0-4324-4ed2-979d-27e36db50ee1" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/build/config.json" afterPath="$PROJECT_DIR$/build/generator/frontend/build/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/package.json" afterPath="$PROJECT_DIR$/build/generator/frontend/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/home.jsx" afterPath="$PROJECT_DIR$/build/generator/frontend/src/home.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/props-container.jsx" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/props-container.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/styles.scss" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/index.html" afterPath="$PROJECT_DIR$/build/generator/frontend/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/yarn.lock" afterPath="$PROJECT_DIR$/build/generator/frontend/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/styles/home.scss" afterPath="$PROJECT_DIR$/build/generator/frontend/src/styles/home.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/templates/component.hbs" afterPath="$PROJECT_DIR$/build/generator/templates/component.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.md" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.md" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.md" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.md" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.md" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/website/usp.md" afterPath="$PROJECT_DIR$/source/_patterns/01-molecules/website/usp.md" />
     </list>
-    <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
-    <ignored path="$PROJECT_DIR$/export/" />
-    <ignored path="$PROJECT_DIR$/public/" />
-    <ignored path="$PROJECT_DIR$/vendor/alchemy/zippy/" />
-    <ignored path="$PROJECT_DIR$/vendor/composer/" />
-    <ignored path="$PROJECT_DIR$/vendor/doctrine/collections/" />
-    <ignored path="$PROJECT_DIR$/vendor/kevinlebrun/colors.php/" />
-    <ignored path="$PROJECT_DIR$/vendor/michelf/php-markdown/" />
-    <ignored path="$PROJECT_DIR$/vendor/mustache/mustache/" />
-    <ignored path="$PROJECT_DIR$/vendor/pattern-lab/core/" />
-    <ignored path="$PROJECT_DIR$/vendor/pattern-lab/patternengine-mustache/" />
-    <ignored path="$PROJECT_DIR$/vendor/pattern-lab/plugin-data-inheritance/" />
-    <ignored path="$PROJECT_DIR$/vendor/pattern-lab/styleguidekit-assets-default/" />
-    <ignored path="$PROJECT_DIR$/vendor/pattern-lab/styleguidekit-mustache-default/" />
-    <ignored path="$PROJECT_DIR$/vendor/seld/jsonlint/" />
-    <ignored path="$PROJECT_DIR$/vendor/shudrum/array-finder/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/event-dispatcher/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/filesystem/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/finder/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/process/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/yaml/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+            <state relative-caret-position="426">
+              <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+              <folding>
+                <marker date="1511364279862" expanded="true" signature="1813:2689" ph="{&quot;axios&quot;: &quot;^0.15.3&quot;...}" />
+                <marker date="1511364279862" expanded="true" signature="2712:6890" ph="{&quot;@kadira/react-split-pane&quot;: &quot;^1.4.7&quot;...}" />
+                <marker date="1511364279862" expanded="true" signature="6901:7234" ph="{&quot;failFast&quot;: true...}" />
+                <marker date="1511364279862" expanded="true" signature="6995:7030" ph="[...]" />
+                <marker date="1511364279862" expanded="true" signature="7046:7102" ph="[...]" />
+                <marker date="1511364279862" expanded="true" signature="7119:7206" ph="[...]" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="progress-tracker.example.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.example.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".istanbul.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.istanbul.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkbox.example.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/index.html">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownHtmlPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="187">
+                <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modal.example.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.example.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -67,62 +92,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/index.js">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/generator/frontend/build/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="description.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="20" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example-container.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/home.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="53" column="11" lean-forward="false" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="price-table.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-602">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,33 +105,34 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/generator/frontend/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            <state relative-caret-position="1377">
+              <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select-menu.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.md">
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modal.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="505">
-                <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-                <folding>
-                  <marker date="1511358452207" expanded="true" signature="840:964" ph="[...]" />
-                  <marker date="1511358452207" expanded="true" signature="1094:1150" ph="{...}" />
-                  <marker date="1511358452207" expanded="true" signature="1114:1146" ph="{&quot;value&quot;: obj.value...}" />
-                  <marker date="1511358452207" expanded="true" signature="1230:1332" ph="&lt;Select/&gt;" />
-                  <marker date="1511358452207" expanded="true" signature="1673:1828" ph="{...}" />
-                  <marker date="1511358452207" expanded="true" signature="1729:1745" ph="{...}" />
-                  <marker date="1511358452207" expanded="true" signature="1729:1768" ph="{...}" />
-                  <marker date="1511358452207" expanded="true" signature="1794:1824" ph="{&quot;values&quot;: values...}" />
-                </folding>
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
               </first_editor>
               <second_editor>
                 <js_state>
-                  <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:684.00000868}" />
+                  <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:101.5}" />
                 </js_state>
               </second_editor>
             </state>
@@ -165,227 +141,23 @@
       </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Check if the schema for deleting one comapnycustomer is right</find>
-      <find>state</find>
-      <find>enzyme</find>
-      <find>circleci</find>
-      <find>resolve</find>
-      <find>dates</find>
-      <find>histor</find>
-      <find>RootPath</find>
-      <find>build:docs:all</find>
-      <find>SEMVER_LAST_TAG</find>
-      <find>input</find>
-      <find>input.js</find>
-      <find>express</find>
-      <find>circle</find>
-      <find>dismissible</find>
-      <find>items</find>
-      <find>size</find>
-      <find>&lt;Icon</find>
-      <find>{1}</find>
-      <find>&lt;p&gt;(.*)&lt;/p&gt;</find>
-      <find>&lt;p&gt;</find>
-      <find>&lt;ro</find>
-      <find>xsVerticalAlignment</find>
-      <find>javascript 1.8</find>
-      <find>darcula</find>
-      <find>```js[^o]</find>
-      <find>&lt;</find>
-      <find>```j</find>
-      <find>darc</find>
-      <find>CopyWebpackPlugin</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>import React from \&quot;react\&quot;\;\nimport PropTypes from &quot;prop-types&quot;;</replace>
-      <replace>import PropTypes from &quot;prop-types&quot;;\nimport</replace>
-      <replace>import React, { Component } from 'react';</replace>
-      <replace>import React from 'react'; \n import React</replace>
-      <replace>import React from 'react'; \n import ReactComponent from &quot;../../../react-utils/component&quot;;</replace>
-      <replace>extends ReactComponent {</replace>
-      <replace>import {ReactComponent} from &quot;apparena-patterns-react&quot;;</replace>
-      <replace>&lt;Table bordered inverse&gt;</replace>
-      <replace>import {ReactComponent, Table} from &quot;apparena-patterns-react&quot;;</replace>
-      <replace>&lt;/Table&gt;</replace>
-      <replace>render</replace>
-      <replace>/00-atoms/icons</replace>
-      <replace>ReactComponent</replace>
-      <replace>&lt;Table bordered&gt;</replace>
-      <replace>&lt;Table bordered hover&gt;</replace>
-      <replace />
-      <replace>test</replace>
-      <replace>import React from \&quot;react\&quot;\;\nimport \{test\} from \'ava\'\;\n</replace>
-      <replace>test\(\'\&lt;([a-zA-Z]+) \/\&gt;\'\, \(t\) \=\&gt; \{</replace>
-      <replace>test\(\'\&lt;$1 \/\&gt;\'\, \(t\) \=\&gt; \{</replace>
-      <replace>t.test(</replace>
-      <replace>t\.te</replace>
-      <replace>\}\)\;</replace>
-      <replace>test(</replace>
-      <replace>&lt;Icon size=&quot;3x&quot;</replace>
-      <replace>&quot;1&quot;</replace>
-      <replace>&lt;p&gt;&lt;b&gt;$1&lt;/b&gt;&lt;/p&gt;</replace>
-      <replace>js</replace>
-      <replace>```javascript</replace>
-      <replace>&lt;p style={{marginTop: &quot;20px&quot;}}&gt;</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/node_modules/bootstrap</dir>
-      <dir>$PROJECT_DIR$/source/_patterns/02-organisms/price-table</dir>
-      <dir>$PROJECT_DIR$/build</dir>
-      <dir>$PROJECT_DIR$/source/_patterns/01-molecules/card</dir>
-      <dir>$PROJECT_DIR$/build/apparena-patterns-react</dir>
-      <dir>$PROJECT_DIR$/build/test</dir>
-      <dir>$PROJECT_DIR$/build/generator</dir>
-      <dir>$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns</dir>
-      <dir>$PROJECT_DIR$/build/storybook</dir>
-      <dir>$PROJECT_DIR$/source</dir>
-      <dir>$PROJECT_DIR$/node_modules/react-select/scss</dir>
-      <dir>$PROJECT_DIR$/node_modules/bootstrap/scss/mixins</dir>
-      <dir>$PROJECT_DIR$/node_modules/bootstrap/scss</dir>
-      <dir>$PROJECT_DIR$/build/scripts</dir>
-      <dir>$PROJECT_DIR$</dir>
-      <dir>$PROJECT_DIR$/build/generator/frontend</dir>
-      <dir>$PROJECT_DIR$/source/_patterns</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/index.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/index.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/react-utils/stick.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/index.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/index.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/sketchPicker.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/colorPicker.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/sketchPicker.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/build/webpack/config.js" />
-        <option value="$PROJECT_DIR$/build/generator/build.sh" />
-        <option value="$PROJECT_DIR$/build/scripts/travis-deployment.sh" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/build/config.json" />
-        <option value="$PROJECT_DIR$/build/scripts/travis-aws-deploy.sh" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/progress-tracker/index.jsx" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/progress-tracker/docs/progressTrackerExample.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.example.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/progress-bar/docs/progressBarExample.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.example.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/list-group.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/dropdown/docs/dropdownExample.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.example.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/icons/docs/iconsExample.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.example.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/col/docs/colExample.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.example.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/select-menu/docs/selectMenuExample.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/main.jsx" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/tag-input/docs/tagInput.md" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.md" />
-        <option value="$PROJECT_DIR$/build/generator/build_dev.sh" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/select-menu/docs/selectMenu.md" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/col/docs/col.md" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.md" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.md" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.md" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/index.html" />
         <option value="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/package.json" />
-        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER">
-    <gruntfile path="$PROJECT_DIR$/Gruntfile.js" />
-  </component>
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>false</service-enabled>
-    <exe-path />
-    <annotation-enable>false</annotation-enable>
-    <other-services-enabled>false</other-services-enabled>
-    <auto-save>true</auto-save>
-  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/build/generator/frontend/node_modules" />
-    <handled-path value="$PROJECT_DIR$/coverage/build/generator/_build/webpack:/build/generator/frontend/node_modules" />
-    <handled-path value="$PROJECT_DIR$/coverage/lcov-report/build/generator/_build/webpack:/build/generator/frontend/node_modules" />
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="PhpDebugGeneral" break_at_first_line="true" />
-  <component name="PhpServers">
-    <servers />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1600" />
-    <option name="width" value="1920" />
-    <option name="height" value="1050" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>CompatibilityPhp Inspections (EA Extended)PHP</id>
-          </State>
-          <State>
-            <id>Data flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Error handlingJavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript validity issuesJavaScript</id>
-          </State>
-          <State>
-            <id>PHP</id>
-          </State>
-          <State>
-            <id>Php Inspections (EA Extended)PHP</id>
-          </State>
-          <State>
-            <id>Probable bugsPhp Inspections (EA Extended)PHP</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -401,8 +173,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -447,104 +219,7 @@
               <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webpack" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="button" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="button" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="docs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
@@ -586,33 +261,23 @@
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="forms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="forms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="checkbox" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="forms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="checkbox" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="docs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -620,15 +285,17 @@
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="02-organisms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="progress-tracker" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="02-organisms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="price-table" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="progress-tracker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -637,41 +304,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../app-manager-js-lib" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="js.eslint.eslintPackage" value="$PROJECT_DIR$/node_modules/eslint" />
-    <property name="js.eslint.nodeInterpreter" value="project" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
-    <property name="javascript.nodejs.core.library.configured.version" value="7.8.0" />
-    <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v6.4.0/bin/node" />
-    <property name="node.js.path.for.package.eslint" value="/usr/bin/node" />
-    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
-    <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="col/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;form.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;colorp&#9;null&#9;null&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;build&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/build.sh&#10;copy-files.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/copy-files.js&#10;stick.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;stick&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;Toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/tooltip.js&#10;pop&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/popover/popover.js&#10;varia&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/bootstrap/scss/_variables.scss&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;datepicker/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/datepicker&#10;nav-item/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item/index.js&#10;Col&#9;null&#9;null&#10;icon/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/icons/index.js&#10;copy/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/copy/index.js&#10;navitem/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item&#10;tooltip&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/tooltip.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;forms&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.scss&#10;select&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;select-me&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;row&#9;null&#9;null&#10;col&#9;null&#9;null&#10;dropdown&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;config.json&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/config.json&#10;config&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/config.js&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/webpack.config.js&#10;toolt&#9;null&#9;null&#10;webpack.config.dev.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.dev.js&#10;datepicker&#9;null&#9;null&#10;animate.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;form.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;portal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/portal.js&#10;form-gr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;slider.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/slider/slider.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;tag-input.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/tag-input/tag-input.scss&#10;tag&#9;null&#9;null&#10;progress-tracker-step.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;spinner.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/spinner/spinner.scss&#10;card.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/card.scss&#10;progr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;styles.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/styles.scss" />
-    <property name="node.js.path.for.package.standard" value="/usr/bin/node" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="TEXT&#10;SQL&#10;JSX Harmony&#10;JavaScript" />
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/build/scripts" />
-      <recent name="$PROJECT_DIR$/build/generator" />
-      <recent name="$PROJECT_DIR$/source/_patterns/00-atoms/forms" />
-      <recent name="$PROJECT_DIR$/source/_patterns/react-utils/scss" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/__tests__" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/__tests__" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/__tests__" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/__tests__" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/modal/__tests__" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -685,164 +318,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.test:debug">
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
-      <node-interpreter value="project" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
-    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="Docker Deployment">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
-    <configuration name="build:docs" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:docs" />
-      </scripts>
-      <node-interpreter value="project" />
-      <node-options value="--debug" />
-      <envs />
-    </configuration>
-    <configuration name="build:docs:all" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:docs:all" />
-      </scripts>
-      <node-interpreter value="/usr/local/bin/node" />
-      <envs />
-    </configuration>
-    <configuration name="build:light" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:light" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-    </configuration>
-    <configuration name="test" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-    </configuration>
-    <configuration name="test:coverage" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test:coverage" />
-      </scripts>
-      <node-interpreter value="/usr/local/bin/node" />
-      <envs />
-    </configuration>
-    <configuration name="test:debug" type="js.build_tools.npm" factoryName="npm">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test:debug" />
-      </scripts>
-      <node-interpreter value="project" />
-      <node-options value="--inspect" />
-      <envs />
-    </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="npm.test:debug" />
-      <item index="1" class="java.lang.String" itemvalue="npm.build:docs" />
-      <item index="2" class="java.lang.String" itemvalue="npm.build:docs:all" />
-      <item index="3" class="java.lang.String" itemvalue="npm.test:coverage" />
-      <item index="4" class="java.lang.String" itemvalue="npm.test" />
-      <item index="5" class="java.lang.String" itemvalue="npm.build:light" />
-    </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="npm.build:light" />
-        <item index="1" class="java.lang.String" itemvalue="npm.build:docs:all" />
-        <item index="2" class="java.lang.String" itemvalue="npm.build:docs" />
-        <item index="3" class="java.lang.String" itemvalue="npm.test" />
-        <item index="4" class="java.lang.String" itemvalue="npm.test:coverage" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -850,442 +325,13 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="" />
-      <created>1490192140503</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1490192140503</updated>
-      <workItem from="1490192143084" duration="17696000" />
-      <workItem from="1490346409830" duration="7240000" />
-      <workItem from="1490624306856" duration="186000" />
-      <workItem from="1490624816614" duration="1943000" />
-      <workItem from="1490704386797" duration="5858000" />
-      <workItem from="1490772329976" duration="70000" />
-      <workItem from="1491312448037" duration="6115000" />
-      <workItem from="1491377247286" duration="16727000" />
-      <workItem from="1491466069452" duration="57000" />
-      <workItem from="1491466184106" duration="617000" />
-      <workItem from="1491466853053" duration="587000" />
-      <workItem from="1491482924468" duration="567000" />
-      <workItem from="1491489771212" duration="1652000" />
-      <workItem from="1491567621478" duration="1212000" />
-      <workItem from="1491829993784" duration="567000" />
-      <workItem from="1491999695170" duration="626000" />
-      <workItem from="1492000477226" duration="1564000" />
-      <workItem from="1493205201751" duration="2759000" />
-      <workItem from="1493813878812" duration="590000" />
-      <workItem from="1494246746865" duration="192000" />
-      <workItem from="1494314294064" duration="1399000" />
-      <workItem from="1494323545322" duration="665000" />
-      <workItem from="1494397771820" duration="598000" />
-      <workItem from="1494406379852" duration="155000" />
-      <workItem from="1494407116515" duration="1935000" />
-      <workItem from="1494485155373" duration="598000" />
-      <workItem from="1494504795729" duration="492000" />
-      <workItem from="1494554477908" duration="5116000" />
-      <workItem from="1494829637432" duration="6193000" />
-      <workItem from="1494919134817" duration="2676000" />
-      <workItem from="1495091907127" duration="3752000" />
-      <workItem from="1495782515637" duration="5242000" />
-      <workItem from="1496240660644" duration="4010000" />
-      <workItem from="1496386674417" duration="6202000" />
-      <workItem from="1496841009058" duration="3685000" />
-      <workItem from="1497250999424" duration="586000" />
-      <workItem from="1497360014530" duration="3377000" />
-      <workItem from="1497940615345" duration="1287000" />
-      <workItem from="1497962551467" duration="2485000" />
-      <workItem from="1498037139240" duration="13724000" />
-      <workItem from="1498461478161" duration="597000" />
-      <workItem from="1498651372954" duration="8317000" />
-      <workItem from="1499173724907" duration="6704000" />
-      <workItem from="1499769294953" duration="595000" />
-      <workItem from="1499792429738" duration="602000" />
-      <workItem from="1499855652062" duration="18721000" />
-      <workItem from="1499930027929" duration="16740000" />
-      <workItem from="1500296572455" duration="44778000" />
-      <workItem from="1501226791783" duration="17865000" />
-      <workItem from="1501518004882" duration="271000" />
-      <workItem from="1501599982499" duration="1172000" />
-      <workItem from="1501697313773" duration="26361000" />
-      <workItem from="1501837239537" duration="2983000" />
-      <workItem from="1508137328773" duration="90000" />
-      <workItem from="1508185852352" duration="2905000" />
-      <workItem from="1508245588300" duration="2243000" />
-      <workItem from="1508336181068" duration="249000" />
-      <workItem from="1508336534212" duration="9307000" />
-      <workItem from="1508405082070" duration="275000" />
-      <workItem from="1508415568327" duration="19323000" />
-      <workItem from="1508745997148" duration="36000" />
-      <workItem from="1508924867236" duration="1876000" />
-      <workItem from="1509094320597" duration="4077000" />
-      <workItem from="1509454177859" duration="5067000" />
-      <workItem from="1509897225731" duration="29000" />
-      <workItem from="1509974378779" duration="39000" />
-      <workItem from="1510048231846" duration="4501000" />
-      <workItem from="1510243051412" duration="147000" />
-      <workItem from="1510243672801" duration="3496000" />
-      <workItem from="1511256931979" duration="42010000" />
-    </task>
-    <task id="LOCAL-00026" summary="change generator script for new folder structur">
-      <created>1499939558385</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1499939558385</updated>
-    </task>
-    <task id="LOCAL-00027" summary="change generator script for new folder structur">
-      <created>1499939901116</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1499939901116</updated>
-    </task>
-    <task id="LOCAL-00028" summary="change generator script for new folder structur">
-      <created>1499940832657</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1499940832657</updated>
-    </task>
-    <task id="LOCAL-00029" summary="change generator">
-      <created>1499955701353</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1499955701353</updated>
-    </task>
-    <task id="LOCAL-00030" summary="change Example Structur to ease up documentation">
-      <created>1500365729766</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1500365729766</updated>
-    </task>
-    <task id="LOCAL-00031" summary="change Example Structur to ease up documentation">
-      <created>1500366131566</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1500366131566</updated>
-    </task>
-    <task id="LOCAL-00032" summary="change Example Structur to ease up documentation">
-      <created>1500366215826</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1500366215826</updated>
-    </task>
-    <task id="LOCAL-00033" summary="change Example Structur to ease up documentation">
-      <created>1500534082842</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1500534082842</updated>
-    </task>
-    <task id="LOCAL-00034" summary="change Example Structur to ease up documentation">
-      <created>1500540245409</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1500540245409</updated>
-    </task>
-    <task id="LOCAL-00035" summary="change structur of singlePriceTable">
-      <created>1500542306618</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1500542306618</updated>
-    </task>
-    <task id="LOCAL-00036" summary="relases 1.1.0">
-      <created>1500546531197</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1500546531197</updated>
-    </task>
-    <task id="LOCAL-00037" summary="relases 1.1.0">
-      <created>1500546747447</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1500546747447</updated>
-    </task>
-    <task id="LOCAL-00038" summary="relases 1.1.0">
-      <created>1500565192665</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1500565192665</updated>
-    </task>
-    <task id="LOCAL-00039" summary="change docs generation, and add step component">
-      <created>1501166788137</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1501166788137</updated>
-    </task>
-    <task id="LOCAL-00040" summary="change docs generation, and add step component">
-      <created>1501167462455</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1501167462455</updated>
-    </task>
-    <task id="LOCAL-00041" summary="fix bug">
-      <created>1501168954766</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1501168954766</updated>
-    </task>
-    <task id="LOCAL-00042" summary="refactor docs">
-      <created>1501252363359</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1501252363359</updated>
-    </task>
-    <task id="LOCAL-00043" summary="refactor code and testing cases">
-      <created>1501769844855</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1501769844855</updated>
-    </task>
-    <task id="LOCAL-00044" summary="enable travis-ci">
-      <created>1501787266462</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1501787266462</updated>
-    </task>
-    <task id="LOCAL-00045" summary="enable travis-ci">
-      <created>1501788762680</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1501788762680</updated>
-    </task>
-    <task id="LOCAL-00046" summary="enable travis-ci">
-      <created>1501789220919</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1501789220919</updated>
-    </task>
-    <task id="LOCAL-00047" summary="enable travis-ci">
-      <created>1501796271550</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1501796271550</updated>
-    </task>
-    <task id="LOCAL-00048" summary="add ISSUE_TEMPLATE.md&#10;    PULL_REQUEST_TEMPLATE.md">
-      <created>1501797637649</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1501797637649</updated>
-    </task>
-    <task id="LOCAL-00049" summary="update readme">
-      <created>1501830800612</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1501830800612</updated>
-    </task>
-    <task id="LOCAL-00050" summary="update readme">
-      <created>1501830902060</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1501830902062</updated>
-    </task>
-    <task id="LOCAL-00051" summary="update readme">
-      <created>1501830920838</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1501830920838</updated>
-    </task>
-    <task id="LOCAL-00052" summary="enable scss styling in ava tests">
-      <created>1501835520927</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1501835520928</updated>
-    </task>
-    <task id="LOCAL-00053" summary="enable scss styling in ava tests">
-      <created>1501836040760</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1501836040760</updated>
-    </task>
-    <task id="LOCAL-00054" summary="enable scss styling in ava tests">
-      <created>1508137803441</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1508137803442</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Update JS settings and improve button rendering by add a class attribute for all slides">
-      <created>1508189318095</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1508189318096</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Update JS settings and improve button rendering by add a class attribute for all slides">
-      <created>1508248540478</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1508248540479</updated>
-    </task>
-    <task id="LOCAL-00057" summary="refactoring to bootstrap-4-beta">
-      <created>1508320045955</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1508320045968</updated>
-    </task>
-    <task id="LOCAL-00058" summary="refactoring to bootstrap-4-beta">
-      <created>1508324523021</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1508324523023</updated>
-    </task>
-    <task id="LOCAL-00059" summary="refactoring to bootstrap-4-beta">
-      <created>1508327338649</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1508327338649</updated>
-    </task>
-    <task id="LOCAL-00060" summary="refactoring to bootstrap-4-beta">
-      <created>1508327395602</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1508327395602</updated>
-    </task>
-    <task id="LOCAL-00061" summary="refactoring to bootstrap-4-beta">
-      <created>1508330209488</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1508330209489</updated>
-    </task>
-    <task id="LOCAL-00062" summary="refactoring to bootstrap-4-beta and react 16">
-      <created>1508345801976</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1508345801977</updated>
-    </task>
-    <task id="LOCAL-00063" summary="refactoring to bootstrap-4-beta and react 16">
-      <created>1508346172021</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1508346172021</updated>
-    </task>
-    <task id="LOCAL-00064" summary="refactoring to bootstrap-4-beta and react 16">
-      <created>1508346609937</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1508346609937</updated>
-    </task>
-    <task id="LOCAL-00065" summary="refactoring to bootstrap-4-beta and react 16">
-      <created>1508346979950</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1508346979950</updated>
-    </task>
-    <task id="LOCAL-00066" summary="remove velocity-animate and just import react-date needed scripts">
-      <created>1508422171666</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1508422171666</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Tooltip: Fix positioning">
-      <created>1508439148035</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1508439148036</updated>
-    </task>
-    <task id="LOCAL-00068" summary="fix dropdown position">
-      <created>1508508715030</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1508508715030</updated>
-    </task>
-    <task id="LOCAL-00069" summary="fix dropdown position">
-      <created>1508509793477</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1508509793479</updated>
-    </task>
-    <task id="LOCAL-00070" summary="update button style">
-      <created>1508938253360</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1508938253361</updated>
-    </task>
-    <task id="LOCAL-00071" summary="update button style">
-      <created>1509096117249</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1509096117250</updated>
-    </task>
-    <task id="LOCAL-00072" summary="update button style">
-      <created>1509897237848</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1509897237851</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Stick positinion fix">
-      <created>1510066038717</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1510066038729</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Stick positinion fix">
-      <created>1510158861411</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1510158861416</updated>
-    </task>
-    <task id="LOCAL-00075" summary="add Colorpicker">
-      <created>1510327561984</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1510327561984</updated>
-    </task>
-    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="395325000" />
+    <option name="totallyTimeSpent" value="61000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1596" y="0" width="1928" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3097826" sideWeight="0.51277953" order="9" side_tool="true" content_ui="tabs" />
@@ -1294,7 +340,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3619565" sideWeight="0.48722044" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34860557" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20864461" sideWeight="0.46413043" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20864461" sideWeight="0.46413043" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16595517" sideWeight="0.53586954" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1337,78 +383,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix z-index of notifications" />
-    <MESSAGE value="add doc generator to patternlab" />
-    <MESSAGE value="add build.sh and deploy.sh" />
-    <MESSAGE value="change generator script for new folder structur" />
-    <MESSAGE value="change generator" />
-    <MESSAGE value="change Example Structur to ease up documentation" />
-    <MESSAGE value="change structur of singlePriceTable" />
-    <MESSAGE value="relases 1.1.0" />
-    <MESSAGE value="change docs generation, and add step component" />
-    <MESSAGE value="fix bug" />
-    <MESSAGE value="refactor docs" />
-    <MESSAGE value="refactor code and testing cases" />
-    <MESSAGE value="enable travis-ci" />
-    <MESSAGE value="add ISSUE_TEMPLATE.md&#10;    PULL_REQUEST_TEMPLATE.md" />
-    <MESSAGE value="update readme" />
-    <MESSAGE value="enable scss styling in ava tests" />
-    <MESSAGE value="Update JS settings and improve button rendering by add a class attribute for all slides" />
-    <MESSAGE value="refactoring to bootstrap-4-beta" />
-    <MESSAGE value="refactoring to bootstrap-4-beta and react 16" />
-    <MESSAGE value="remove velocity-animate and just import react-date needed scripts" />
-    <MESSAGE value="Tooltip: Fix positioning" />
-    <MESSAGE value="fix dropdown position" />
-    <MESSAGE value="update button style" />
-    <MESSAGE value="Stick positinion fix" />
-    <MESSAGE value="add Colorpicker" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Colorpicker" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -1418,116 +392,11 @@
           <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="88" />
+      <option name="time" value="89" />
     </breakpoint-manager>
     <watches-manager />
   </component>
-  <component name="atlassian-ide-plugin-workspace-issues">
-    <option name="view">
-      <JiraViewConfigurationBean>
-        <option name="viewFilterId" value="" />
-      </JiraViewConfigurationBean>
-    </option>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state>
-              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:101.5}" />
-            </js_state>
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.example.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/dropdown/docs/dropdownExample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/icons/icons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.example.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/icons/docs/iconsExample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10506">
-          <caret line="618" column="24" lean-forward="true" selection-start-line="618" selection-start-column="24" selection-end-line="618" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="109" column="10" lean-forward="true" selection-start-line="109" selection-start-column="10" selection-end-line="109" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/icons/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/row/docs/rowExample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/select-menu/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1922,15 +791,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="627">
             <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-            <folding>
-              <marker date="1511358503307" expanded="true" signature="840:964" ph="[...]" />
-              <marker date="1511358503307" expanded="true" signature="1094:1150" ph="{...}" />
-              <marker date="1511358503307" expanded="true" signature="1114:1146" ph="{&quot;value&quot;: obj.value...}" />
-              <marker date="1511358503307" expanded="true" signature="1230:1332" ph="&lt;Select/&gt;" />
-              <marker date="1511358503307" expanded="true" signature="1673:1828" ph="{...}" />
-              <marker date="1511358503307" expanded="true" signature="1729:1768" ph="{...}" />
-              <marker date="1511358503307" expanded="true" signature="1794:1824" ph="{&quot;values&quot;: values...}" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor>
             <js_state>
@@ -1953,13 +814,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="323">
             <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-            <folding>
-              <marker date="1511358503373" expanded="true" signature="1171:1226" ph="&lt;Row/&gt;" />
-              <marker date="1511358503373" expanded="true" signature="1171:1334" ph="{...}" />
-              <marker date="1511358503373" expanded="true" signature="1181:1215" ph="&lt;Col/&gt;" />
-              <marker date="1511358503373" expanded="true" signature="1231:1265" ph="&lt;Col/&gt;" />
-              <marker date="1511358503373" expanded="true" signature="1281:1315" ph="&lt;Col/&gt;" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor>
             <js_state>
@@ -1975,10 +830,10 @@
           <first_editor relative-caret-position="340">
             <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
             <folding>
-              <marker date="1511358343122" expanded="true" signature="1171:1226" ph="&lt;Row/&gt;" />
-              <marker date="1511358343122" expanded="true" signature="1181:1215" ph="&lt;Col/&gt;" />
-              <marker date="1511358343122" expanded="true" signature="1231:1265" ph="&lt;Col/&gt;" />
-              <marker date="1511358343122" expanded="true" signature="1281:1315" ph="&lt;Col/&gt;" />
+              <marker date="1511364279852" expanded="true" signature="1162:1217" ph="&lt;Row/&gt;" />
+              <marker date="1511364279852" expanded="true" signature="1172:1206" ph="&lt;Col/&gt;" />
+              <marker date="1511364279852" expanded="true" signature="1222:1256" ph="&lt;Col/&gt;" />
+              <marker date="1511364279852" expanded="true" signature="1272:1306" ph="&lt;Col/&gt;" />
             </folding>
           </first_editor>
           <second_editor>
@@ -2020,14 +875,14 @@
           <first_editor relative-caret-position="505">
             <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
             <folding>
-              <marker date="1511358452207" expanded="true" signature="840:964" ph="[...]" />
-              <marker date="1511358452207" expanded="true" signature="1094:1150" ph="{...}" />
-              <marker date="1511358452207" expanded="true" signature="1114:1146" ph="{&quot;value&quot;: obj.value...}" />
-              <marker date="1511358452207" expanded="true" signature="1230:1332" ph="&lt;Select/&gt;" />
-              <marker date="1511358452207" expanded="true" signature="1673:1828" ph="{...}" />
-              <marker date="1511358452207" expanded="true" signature="1729:1745" ph="{...}" />
-              <marker date="1511358452207" expanded="true" signature="1729:1768" ph="{...}" />
-              <marker date="1511358452207" expanded="true" signature="1794:1824" ph="{&quot;values&quot;: values...}" />
+              <marker date="1511364279849" expanded="true" signature="823:947" ph="[...]" />
+              <marker date="1511364279849" expanded="true" signature="1077:1133" ph="{...}" />
+              <marker date="1511364279849" expanded="true" signature="1097:1129" ph="{&quot;value&quot;: obj.value...}" />
+              <marker date="1511364279849" expanded="true" signature="1213:1315" ph="&lt;Select/&gt;" />
+              <marker date="1511364279849" expanded="true" signature="1656:1811" ph="{...}" />
+              <marker date="1511364279849" expanded="true" signature="1712:1728" ph="{...}" />
+              <marker date="1511364279849" expanded="true" signature="1712:1751" ph="{...}" />
+              <marker date="1511364279849" expanded="true" signature="1777:1807" ph="{&quot;values&quot;: values...}" />
             </folding>
           </first_editor>
           <second_editor>
@@ -2035,17 +890,6 @@
               <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:684.00000868}" />
             </js_state>
           </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/index.html">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownHtmlPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -2062,17 +906,7 @@
         <state relative-caret-position="850">
           <caret line="53" column="11" lean-forward="false" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2080,6 +914,50 @@
     <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/docs/buttonExample.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1683">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-602">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="false" />
@@ -2097,72 +975,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/styles.scss">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/progress-bar/docs/progressBarExample.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1683">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="19" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/modal/docs/modalExample.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+        <state relative-caret-position="374">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:101.5}" />
+            </js_state>
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/modal/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/index.js">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/generator/frontend/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        <state relative-caret-position="1377">
+          <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.istanbul.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/index.html">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownHtmlPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/build/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="426">
+          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+          <folding>
+            <marker date="1511364279862" expanded="true" signature="1813:2689" ph="{&quot;axios&quot;: &quot;^0.15.3&quot;...}" />
+            <marker date="1511364279862" expanded="true" signature="2712:6890" ph="{&quot;@kadira/react-split-pane&quot;: &quot;^1.4.7&quot;...}" />
+            <marker date="1511364279862" expanded="true" signature="6901:7234" ph="{&quot;failFast&quot;: true...}" />
+            <marker date="1511364279862" expanded="true" signature="6995:7030" ph="[...]" />
+            <marker date="1511364279862" expanded="true" signature="7046:7102" ph="[...]" />
+            <marker date="1511364279862" expanded="true" signature="7119:7206" ph="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/index.jsx">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="544">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.js">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.example.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-602">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

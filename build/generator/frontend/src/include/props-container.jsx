@@ -95,7 +95,6 @@ export default class Props extends ReactComponent {
         const {infos} = this.props;
         return (
             <div>
-                <h3>Props</h3>
                 {this.renderProps(infos)}
             </div>
         );

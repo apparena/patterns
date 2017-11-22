@@ -1,6 +1,3 @@
-Select Menu
----
-
 ### What problem does this solve?
 
 Implementing a select menu in React is a quite lengthy process if you do it from scratch.
