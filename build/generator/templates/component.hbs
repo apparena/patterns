@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {ReactComponent} from "apparena-patterns-react";
+import {ReactComponent, Card} from "apparena-patterns-react";
 import Description from "include/description";
 import ExampleContainer from "include/example-container";
 import PropsContainer from "include/props-container";
@@ -16,20 +16,41 @@ import InfoJson from "./docs/info.json";
 import DescriptionContent from "!raw-loader!./docs/{{ mdFileName }}";
 {{/if}}
 
-export default class {{ componentClassName }} extends ReactComponent {
+export default class {{ componentClassName }}Component extends ReactComponent {
     render() {
         return (
             <div>
                 {{#if mdFileName}}
-                <Description description={DescriptionContent} />
+                <Card>
+                    <div type="card-header">
+                        {{componentClassName}}
+                    </div>
+                    <div type="card-body">
+                        <Description description={DescriptionContent} />
+                    </div>
+                </Card>
                 {{/if}}
                 {{#if exampleFileName}}
-                <ExampleContainer code={ExampleSrc}>
-                    <Example/>
-                </ExampleContainer>
+                    <Card>
+                        <div type="card-header">
+                            Examples
+                        </div>
+                        <div type="card-body">
+                            <ExampleContainer code={ExampleSrc}>
+                                <Example/>
+                            </ExampleContainer>
+                        </div>
+                    </Card>
                 {{/if}}
                 {{#if propsFileName}}
-                <PropsContainer infos={InfoJson}/>
+                    <Card>
+                        <div type="card-header">
+                            Props
+                        </div>
+                        <div type="card-body">
+                            <PropsContainer infos={InfoJson}/>
+                        </div>
+                    </Card>
                 {{/if}}
             </div>
         );

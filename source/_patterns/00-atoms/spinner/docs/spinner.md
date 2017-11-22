@@ -1,6 +1,3 @@
-Spinner
----
-
 ### What problem does this solve?
 
 Spinners are used for showing a system process of unknown length going on that ends with the system displaying results to the user.

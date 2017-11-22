@@ -1,6 +1,3 @@
-Col
----
-
 ### What problem does this solve?
 
 Bootstrap columns (and by extension the entire bootstrap grid system) are simply amazing

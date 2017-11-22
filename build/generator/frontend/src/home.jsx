@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 import * as components from './components/index';
 import componentsList from './components/list.json';
 import cloneDeep from 'lodash/cloneDeep';
-import {Col, Container, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from 'apparena-patterns-react';
+import {Card, Col, Container, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from 'apparena-patterns-react';
 import styles from './styles/home.scss';
 
 export default class Home extends ReactComponent {
@@ -138,12 +138,12 @@ export default class Home extends ReactComponent {
                     <Col xs="12">
                         <Navbar className={styles.navbarLight}>
                             <Row>
-                                <Col xs="2">
+                                <Col autoWidth xsAutoContent>
                                     <a className={styles.navbarBrand} href="/">
                                         <img className={styles.logo} src="assets/logo.png" role="presentation"/>
                                     </a>
                                 </Col>
-                                <Col xs="9">
+                                <Col autoWidth>
                                     <Nav>
                                         <NavItem>
                                             <Link to="/">App-Arena Components</Link>
@@ -173,14 +173,19 @@ export default class Home extends ReactComponent {
                         <Row>
                             <Col xs="12">
                                 {this.state.currentComponent !== undefined ? <this.state.currentComponent/> : (
-                                    <div>
-                                        <h2>Components</h2>
-                                        <p>
-                                            These React components will help you build App-Arena applications and
-                                            add-ons.
-                                        </p>
-                                        {this.state.categories.map(this.renderTable)}
-                                    </div>
+                                    <Card>
+                                        <div type="card-header">
+                                            Components
+                                        </div>
+                                        <div type="card-body">
+                                            <p>
+                                                These React components will help you build App-Arena applications
+                                                and
+                                                add-ons.
+                                            </p>
+                                            {this.state.categories.map(this.renderTable)}
+                                        </div>
+                                    </Card>
                                 )}
                             </Col>
                         </Row>

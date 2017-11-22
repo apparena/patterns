@@ -1,6 +1,3 @@
-USP item
----
-
 Molecule to present a usp to a user.
  
 ## Dependencies
