@@ -35,20 +35,20 @@ export default class Example extends ReactComponent {
                         <title id="title-xoyg1rk">Show Code Snippet</title>
                         <Icon name="html"/>
                     </div>
-                    {this.state.showCode &&
-                    <div className={styles.codeBlock}>
-                        <SyntaxHighlighter
-                            language={'jsx'}
-                            style={darcula}
-                        >
-                            {code}
-                        </SyntaxHighlighter>
-                    </div>
-                    }
-                    <div className={styles.body}>
-                        <div>
-                            {children}
-                        </div>
+                </div>
+                {this.state.showCode &&
+                <div className={styles.codeBlock}>
+                    <SyntaxHighlighter
+                        language={'jsx'}
+                        style={darcula}
+                    >
+                        {code}
+                    </SyntaxHighlighter>
+                </div>
+                }
+                <div className={styles.body}>
+                    <div>
+                        {children}
                     </div>
                 </div>
             </div>
