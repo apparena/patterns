@@ -1,9 +1,9 @@
 import React from 'react';
-import {Breadcrumb} from 'apparena-patterns-react';
+import {BreadCrumb} from 'apparena-patterns-react';
 
-export default function BreadcrumbExample() {
+export default function BreadCrumbExample() {
     return (
-        <Breadcrumb
+        <BreadCrumb
             crumbNames={[
                 'Home',
                 'Calendar',

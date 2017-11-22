@@ -1,10 +1,12 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-import {shallow, mount} from 'enzyme';
+import {shallow, mount, configure} from 'enzyme';
 import ProgressTracker from '../progress-tracker';
 import ProgressTrackerStep from '../../../00-atoms/progress-tracker-step/progress-tracker-step';
+import Adapter from 'enzyme-adapter-react-16';
 
+configure({adapter: new Adapter()});
 
 test('one inactive step', (t) => {
     const wrapper = mount(

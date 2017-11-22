@@ -1,15 +1,19 @@
 /* eslint-env mocha */
 import React from "react";
-import {mount} from "enzyme";
+import {mount, configure} from "enzyme";
 import {spy} from "sinon";
 import Input from "../input";
 import {test} from 'ava';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test('Input is focused by default', (t) => {
+    const onChange = spy();
     const wrapper = mount(
-        <Input autoFocus />
+        <Input autoFocus onChange={onChange} />
     );
-    t.is(wrapper.find('input').node, document.activeElement);
+    t.is(wrapper.find('input').instance(), document.activeElement);
 });
 
 test('Input accepts custom functions', (t) => {

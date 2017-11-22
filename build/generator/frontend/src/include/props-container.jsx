@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {ReactComponent} from 'apparena-patterns-react';
 import styles from './styles.scss';
 
-export default class Example extends ReactComponent {
+export default class Props extends ReactComponent {
     static defaultProps = {
         code: PropTypes.string.isRequired,
         children: PropTypes.node.isRequired
@@ -80,11 +80,15 @@ export default class Example extends ReactComponent {
     }
 
     renderProps(infos) {
-        return (
-            <div>
-                {Object.keys(infos.props).map(::this.renderProp)}
-            </div>
-        );
+        if (infos.props) {
+            return (
+                <div>
+                    {Object.keys(infos.props).map(::this.renderProp)}
+                </div>
+            );
+        }
+
+        return null;
     }
 
     render() {

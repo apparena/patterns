@@ -1,10 +1,13 @@
 /* eslint-env mocha */
 import React from "react";
-import {shallow, mount} from "enzyme";
+import {shallow, mount, configure} from "enzyme";
 import {spy} from "sinon";
 import {test} from 'ava';
 import {expect} from 'chai';
 import PriceTableSingle from "../index.jsx";
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 test("it renders the price component single with a onClick URL", t => {
     spy(PriceTableSingle.prototype, 'getInitState');

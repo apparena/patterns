@@ -103,3 +103,5 @@ jspm_packages
 /public/
 dist/
 /.github/
+/build/generator/_build/
+artifact.tar.gz
