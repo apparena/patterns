@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Icon, ReactComponent} from 'apparena-patterns-react';
 import styles from './styles.scss';
-import Highlight from 'react-highlight';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import {darcula} from 'react-syntax-highlighter/styles/prism';
 
 export default class Example extends ReactComponent {
     static defaultProps = {
@@ -39,9 +40,12 @@ export default class Example extends ReactComponent {
                     </div>
                     {this.state.showCode &&
                     <div className={styles.codeBlock}>
-                        <Highlight className="language-js">
+                        <SyntaxHighlighter
+                            language={'jsx'}
+                            style={darcula}
+                        >
                             {code}
-                        </Highlight>
+                        </SyntaxHighlighter>
                     </div>
                     }
                     <div className={styles.body}>

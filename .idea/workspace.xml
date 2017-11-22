@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/generator/frontend/src/styles/darcula.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss" afterPath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/build/config.json" afterPath="$PROJECT_DIR$/build/generator/frontend/build/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js" afterPath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/package.json" afterPath="$PROJECT_DIR$/build/generator/frontend/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" afterPath="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/src/index.html" afterPath="$PROJECT_DIR$/build/generator/frontend/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generator/frontend/yarn.lock" afterPath="$PROJECT_DIR$/build/generator/frontend/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/build/apparena-patterns-react/" />
     <ignored path="$PROJECT_DIR$/export/" />
@@ -38,12 +45,120 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+            <state relative-caret-position="493">
+              <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkbox.example.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="description.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="20" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example-container.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/home.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="53" column="11" lean-forward="false" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="price-table.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-602">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/generator/frontend/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select-menu.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="505">
+                <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+                <folding>
+                  <marker date="1511358452207" expanded="true" signature="840:964" ph="[...]" />
+                  <marker date="1511358452207" expanded="true" signature="1094:1150" ph="{...}" />
+                  <marker date="1511358452207" expanded="true" signature="1114:1146" ph="{&quot;value&quot;: obj.value...}" />
+                  <marker date="1511358452207" expanded="true" signature="1230:1332" ph="&lt;Select/&gt;" />
+                  <marker date="1511358452207" expanded="true" signature="1673:1828" ph="{...}" />
+                  <marker date="1511358452207" expanded="true" signature="1729:1745" ph="{...}" />
+                  <marker date="1511358452207" expanded="true" signature="1729:1768" ph="{...}" />
+                  <marker date="1511358452207" expanded="true" signature="1794:1824" ph="{&quot;values&quot;: values...}" />
+                </folding>
+              </first_editor>
+              <second_editor>
+                <js_state>
+                  <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:684.00000868}" />
+                </js_state>
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -52,39 +167,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.dropdown-list</find>
-      <find>updatePosition</find>
-      <find>autoAdjustOverflow</find>
-      <find>react-dates/</find>
-      <find>Date</find>
-      <find>margin-bottom: 1rem</find>
-      <find>-right</find>
-      <find>dropdown-menu-right</find>
-      <find>alig</find>
-      <find>dropdown-backdrop</find>
-      <find>renderDropdownMenuBackground</find>
-      <find>calc</find>
-      <find>line-height</find>
-      <find>.Select-value</find>
-      <find>.Select-value {</find>
-      <find>.Select-control {</find>
-      <find>ie</find>
-      <find>input-ie-fix</find>
-      <find>$popover-arrow-width:</find>
-      <find>theme-color</find>
-      <find>color-yiq</find>
-      <find>theme-colors</find>
-      <find>$popover-arrow-width</find>
-      <find>shado</find>
-      <find>$popover-box-shadow</find>
-      <find>icon-font-generator</find>
-      <find>font</find>
       <find>Check if the schema for deleting one comapnycustomer is right</find>
       <find>state</find>
-      <find>libraryTarget</find>
+      <find>enzyme</find>
+      <find>circleci</find>
+      <find>resolve</find>
+      <find>dates</find>
+      <find>histor</find>
+      <find>RootPath</find>
+      <find>build:docs:all</find>
+      <find>SEMVER_LAST_TAG</find>
+      <find>input</find>
+      <find>input.js</find>
+      <find>express</find>
+      <find>circle</find>
+      <find>dismissible</find>
+      <find>items</find>
+      <find>size</find>
+      <find>&lt;Icon</find>
+      <find>{1}</find>
+      <find>&lt;p&gt;(.*)&lt;/p&gt;</find>
+      <find>&lt;p&gt;</find>
+      <find>&lt;ro</find>
+      <find>xsVerticalAlignment</find>
+      <find>javascript 1.8</find>
+      <find>darcula</find>
+      <find>```js[^o]</find>
+      <find>&lt;</find>
+      <find>```j</find>
+      <find>darc</find>
+      <find>CopyWebpackPlugin</find>
     </findStrings>
     <replaceStrings>
-      <replace>}</replace>
       <replace>import React from \&quot;react\&quot;\;\nimport PropTypes from &quot;prop-types&quot;;</replace>
       <replace>import PropTypes from &quot;prop-types&quot;;\nimport</replace>
       <replace>import React, { Component } from 'react';</replace>
@@ -109,6 +223,12 @@
       <replace>t\.te</replace>
       <replace>\}\)\;</replace>
       <replace>test(</replace>
+      <replace>&lt;Icon size=&quot;3x&quot;</replace>
+      <replace>&quot;1&quot;</replace>
+      <replace>&lt;p&gt;&lt;b&gt;$1&lt;/b&gt;&lt;/p&gt;</replace>
+      <replace>js</replace>
+      <replace>```javascript</replace>
+      <replace>&lt;p style={{marginTop: &quot;20px&quot;}}&gt;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/node_modules/bootstrap</dir>
@@ -120,12 +240,14 @@
       <dir>$PROJECT_DIR$/build/generator</dir>
       <dir>$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns</dir>
       <dir>$PROJECT_DIR$/build/storybook</dir>
-      <dir>$PROJECT_DIR$/source/_patterns</dir>
       <dir>$PROJECT_DIR$/source</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/node_modules/react-select/scss</dir>
       <dir>$PROJECT_DIR$/node_modules/bootstrap/scss/mixins</dir>
       <dir>$PROJECT_DIR$/node_modules/bootstrap/scss</dir>
+      <dir>$PROJECT_DIR$/build/scripts</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/build/generator/frontend</dir>
+      <dir>$PROJECT_DIR$/source/_patterns</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -143,41 +265,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/css/scss/abstracts/_variables_bootstrap.scss" />
-        <option value="$PROJECT_DIR$/source/css/scss/abstracts/_variables.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss" />
-        <option value="$PROJECT_DIR$/source/css/app-arena-styles.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/include/props-container.jsx" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/home.jsx" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/src/include/test-result.jsx" />
-        <option value="$PROJECT_DIR$/build/generator/templates/component.hbs" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/slider/slider.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/react-utils/animate.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.jsx" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/build/config.json" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/build/webpack/config.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js" />
-        <option value="$PROJECT_DIR$/build/webpack/webpack.config.dev.js" />
-        <option value="$PROJECT_DIR$/build/generator/frontend/package.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/react-utils/scss/stick.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/placements.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/react-utils/scss/portal.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_15.txt" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.sql" />
         <option value="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/index.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.scss" />
@@ -193,27 +280,46 @@
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/sketchPicker.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/colorPicker.js" />
         <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/sketchPicker.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/build/webpack/config.js" />
+        <option value="$PROJECT_DIR$/build/generator/build.sh" />
+        <option value="$PROJECT_DIR$/build/scripts/travis-deployment.sh" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/build/config.json" />
+        <option value="$PROJECT_DIR$/build/scripts/travis-aws-deploy.sh" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/progress-tracker/index.jsx" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/progress-tracker/docs/progressTrackerExample.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.example.js" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/progress-bar/docs/progressBarExample.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.example.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/list-group.js" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/dropdown/docs/dropdownExample.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.example.js" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/icons/docs/iconsExample.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.example.js" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/col/docs/colExample.js" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.example.js" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/select-menu/docs/selectMenuExample.js" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/main.jsx" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/tag-input/docs/tagInput.md" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.md" />
+        <option value="$PROJECT_DIR$/build/generator/build_dev.sh" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/select-menu/docs/selectMenu.md" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/col/docs/col.md" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.md" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.md" />
+        <option value="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.md" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/index.html" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" />
+        <option value="$PROJECT_DIR$/build/generator/frontend/package.json" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER">
-    <gruntfile path="$PROJECT_DIR$/Gruntfile.js">
-      <alias-task name="default" info="Alias for &quot;run&quot;, &quot;sass&quot;, &quot;filenamesToJson&quot; tasks." file-path="$PROJECT_DIR$/Gruntfile.js">
-        <dependency value="run" />
-        <dependency value="sass" />
-        <dependency value="filenamesToJson" />
-      </alias-task>
-      <core-task name="run" info="used to start external processes (like servers)" file-path="$PROJECT_DIR$/node_modules/grunt-run/tasks/run.js" multi="true">
-        <target value="icon_generator" />
-      </core-task>
-      <core-task name="stop" info="stop a process started with &quot;run&quot; (only works for tasks that use wait:false)" file-path="$PROJECT_DIR$/node_modules/grunt-run/tasks/run.js" multi="true" />
-      <core-task name="wait" info="wait for a process started with &quot;run&quot; to close (only works for tasks that use wait:false)" file-path="$PROJECT_DIR$/node_modules/grunt-run/tasks/run.js" multi="true" />
-      <core-task name="filenamesToJson" info="Custom task." file-path="build/scripts/grunt/filenamesToJson.js" multi="false" />
-      <core-task name="sass" info="Compile Sass to CSS" file-path="build/scripts/grunt/sass.js" multi="true">
-        <target value="dist" />
-      </core-task>
-    </gruntfile>
+    <gruntfile path="$PROJECT_DIR$/Gruntfile.js" />
   </component>
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
     <package-json value="$PROJECT_DIR$/package.json" />
@@ -231,6 +337,8 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/build/generator/frontend/node_modules" />
+    <handled-path value="$PROJECT_DIR$/coverage/build/generator/_build/webpack:/build/generator/frontend/node_modules" />
+    <handled-path value="$PROJECT_DIR$/coverage/lcov-report/build/generator/_build/webpack:/build/generator/frontend/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpDebugGeneral" break_at_first_line="true" />
@@ -238,11 +346,10 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1160" />
-    <option name="y" value="-1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1600" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -306,6 +413,11 @@
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name=".nyc_output" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -320,6 +432,23 @@
               <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webpack" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
@@ -332,6 +461,118 @@
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="button" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="button" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="include" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -362,7 +603,7 @@
               <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="forms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="color" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="checkbox" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
@@ -371,30 +612,23 @@
               <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="forms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="text-field" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="checkbox" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="grid" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="02-organisms" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="grid" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="col" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="02-organisms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="price-table" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -404,7 +638,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../app-manager-js-lib" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="$PROJECT_DIR$/node_modules/eslint" />
@@ -412,31 +646,31 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="javascript.nodejs.core.library.configured.version" value="7.8.0" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v6.4.0/bin/node" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
+    <property name="node.js.path.for.package.eslint" value="/usr/bin/node" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="date/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/datepicker/index.scss&#10;frontend/build/webpack/webpack.config.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/webpack.config.js&#10;build.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/build.sh&#10;package&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;portal&#9;null&#9;null&#10;stick&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;date&#9;null&#9;null&#10;card.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/card.scss&#10;col/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;form.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;colorp&#9;null&#9;null&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;build&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/build.sh&#10;copy-files.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/copy-files.js&#10;stick.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;Toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/tooltip.js&#10;pop&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/popover/popover.js&#10;varia&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/bootstrap/scss/_variables.scss&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;datepicker/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/datepicker&#10;nav-item/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item/index.js&#10;Col&#9;null&#9;null&#10;icon/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/icons/index.js&#10;copy/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/copy/index.js&#10;navitem/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item&#10;tooltip&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/tooltip.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;forms&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.scss&#10;select&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;select-me&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;row&#9;null&#9;null&#10;col&#9;null&#9;null&#10;dropdown&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;config.json&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/config.json&#10;config&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/config.js&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/webpack.config.js&#10;toolt&#9;null&#9;null&#10;webpack.config.dev.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.dev.js&#10;datepicker&#9;null&#9;null&#10;animate.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;form.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;form-gr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;slider.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/slider/slider.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;tag-input.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/tag-input/tag-input.scss&#10;tag&#9;null&#9;null" />
-    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="SearchEverywhereHistoryKey" value="col/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/grid/col&#10;button&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;form.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;colorp&#9;null&#9;null&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/index.js&#10;build&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/build.sh&#10;copy-files.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/scripts/copy-files.js&#10;stick.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;stick&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/stick.js&#10;Toolt&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/tooltip.js&#10;pop&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/popover/popover.js&#10;varia&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/node_modules/bootstrap/scss/_variables.scss&#10;button.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;datepicker/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/datepicker&#10;nav-item/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item/index.js&#10;Col&#9;null&#9;null&#10;icon/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/icons/index.js&#10;copy/in&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/copy/index.js&#10;navitem/&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navs/nav-item&#10;tooltip&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/tooltip/tooltip.js&#10;input&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/input.js&#10;forms&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.scss&#10;select&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;button.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.scss&#10;select-me&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;row&#9;null&#9;null&#10;col&#9;null&#9;null&#10;dropdown&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/dropdown/dropdown.js&#10;button.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/button/button.js&#10;config.json&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/config.json&#10;config&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/config.js&#10;webpack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/build/webpack/webpack.config.js&#10;toolt&#9;null&#9;null&#10;webpack.config.dev.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/webpack/webpack.config.dev.js&#10;datepicker&#9;null&#9;null&#10;animate.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/animate.js&#10;navbar.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/navbar/navbar.scss&#10;form.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/02-organisms/forms/form.js&#10;portal&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/react-utils/portal.js&#10;form-gr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/forms/form-group.js&#10;slider.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/slider/slider.js&#10;pack&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/package.json&#10;tag-input.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/tag-input/tag-input.scss&#10;tag&#9;null&#9;null&#10;progress-tracker-step.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss&#10;select-menu.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/forms/select-menu/select-menu.scss&#10;spinner.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/00-atoms/spinner/spinner.scss&#10;card.scss&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/card/card.scss&#10;progr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss&#10;styles.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Apps/patterns/build/generator/frontend/src/include/styles.scss" />
+    <property name="node.js.path.for.package.standard" value="/usr/bin/node" />
     <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.selected.package.standard" value="/usr/local/lib/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="TEXT&#10;SQL&#10;JSX Harmony&#10;JavaScript" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build/scripts" />
+      <recent name="$PROJECT_DIR$/build/generator" />
+      <recent name="$PROJECT_DIR$/source/_patterns/00-atoms/forms" />
+      <recent name="$PROJECT_DIR$/source/_patterns/react-utils/scss" />
+      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/__tests__" />
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/__tests__" />
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/__tests__" />
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/__tests__" />
       <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/modal/__tests__" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/_patterns/00-atoms/forms" />
-      <recent name="$PROJECT_DIR$/source/_patterns/react-utils/scss" />
-      <recent name="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/build/webpack" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -452,6 +686,16 @@
     </option>
   </component>
   <component name="RunManager" selected="npm.test:debug">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+    </configuration>
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
       <envs />
@@ -463,17 +707,6 @@
       <tasks />
       <arguments />
       <envs />
-    </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-      <method />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
@@ -691,14 +924,15 @@
       <workItem from="1509974378779" duration="39000" />
       <workItem from="1510048231846" duration="4501000" />
       <workItem from="1510243051412" duration="147000" />
-      <workItem from="1510243672801" duration="4101000" />
-      <workItem from="1510736317192" duration="3132000" />
-      <workItem from="1510837246451" duration="347000" />
-      <workItem from="1510859017281" duration="811000" />
-      <workItem from="1510933632482" duration="705000" />
-      <workItem from="1511263620981" duration="446000" />
-      <workItem from="1511343137868" duration="630000" />
-      <workItem from="1511360555470" duration="208000" />
+      <workItem from="1510243672801" duration="3496000" />
+      <workItem from="1511256931979" duration="42010000" />
+    </task>
+    <task id="LOCAL-00026" summary="change generator script for new folder structur">
+      <created>1499939558385</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1499939558385</updated>
     </task>
     <task id="LOCAL-00027" summary="change generator script for new folder structur">
       <created>1499939901116</created>
@@ -1047,34 +1281,34 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360199000" />
+    <option name="totallyTimeSpent" value="395325000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1160" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="1596" y="0" width="1928" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30995935" sideWeight="0.51277953" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3097826" sideWeight="0.51277953" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37002096" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16347177" sideWeight="0.55625993" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18902439" sideWeight="0.48722044" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.273374" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16347177" sideWeight="0.55625993" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3619565" sideWeight="0.48722044" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34860557" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16187434" sideWeight="0.4437401" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20864461" sideWeight="0.46413043" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25933832" sideWeight="0.503792" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16595517" sideWeight="0.53586954" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.48935038" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36890244" sideWeight="0.47763577" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.48935038" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1179,22 +1413,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/build/generator/index.js</url>
-          <line>191</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/build/generator/index.js</url>
-          <line>193</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/build/test/index.js</url>
           <line>44</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="87" />
+      <option name="time" value="88" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1206,364 +1430,742 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-select/scss/mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-select/scss/multi.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:101.5}" />
+            </js_state>
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-select/scss/spinner.scss">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.example.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-select/scss/select.scss">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/01-molecules/dropdown/docs/dropdownExample.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-select/scss/default.scss">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/icons/icons.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        <state relative-caret-position="85">
+          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/forms/form.scss">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.example.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="17">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/forms.scss">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/icons/docs/iconsExample.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="10506">
+          <caret line="618" column="24" lean-forward="true" selection-start-line="618" selection-start-column="24" selection-end-line="618" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="109" column="10" lean-forward="true" selection-start-line="109" selection-start-column="10" selection-end-line="109" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/icons/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="412">
+          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/copy/index.js">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/row/docs/rowExample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/select-menu/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:161.99999896}" />
+            </js_state>
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/fonts/app-arena-icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3638">
+          <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="21" />
+          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="22" />
+          <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="19" />
+          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="20" />
+          <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="19" />
+          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="19" />
+          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="17" />
+          <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="19" />
+          <caret line="38" column="15" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="19" />
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="27" />
+          <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="20" />
+          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="17" />
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="16" />
+          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="22" />
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="18" />
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="13" />
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="13" />
+          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="15" />
+          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="13" />
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="12" />
+          <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="21" />
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="16" />
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="14" />
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="17" />
+          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="17" />
+          <caret line="55" column="15" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="19" />
+          <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="19" />
+          <caret line="57" column="15" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="20" />
+          <caret line="58" column="15" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="17" />
+          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="14" />
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="14" />
+          <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="21" />
+          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="21" />
+          <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="23" />
+          <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="23" />
+          <caret line="65" column="19" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="24" />
+          <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="21" />
+          <caret line="67" column="17" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="22" />
+          <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="19" />
+          <caret line="69" column="18" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="23" />
+          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="15" />
+          <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="18" />
+          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="14" />
+          <caret line="73" column="15" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="21" />
+          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="13" />
+          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="17" />
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="12" />
+          <caret line="77" column="15" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="16" />
+          <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="14" />
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="15" />
+          <caret line="80" column="17" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="22" />
+          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="21" />
+          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="16" />
+          <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="19" />
+          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="13" />
+          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="12" />
+          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="17" />
+          <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="16" />
+          <caret line="88" column="17" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="22" />
+          <caret line="89" column="9" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="15" />
+          <caret line="90" column="20" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="21" />
+          <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="17" />
+          <caret line="92" column="14" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="15" />
+          <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="17" />
+          <caret line="94" column="21" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="27" />
+          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="15" />
+          <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="22" />
+          <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="12" />
+          <caret line="98" column="18" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="21" />
+          <caret line="99" column="18" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="22" />
+          <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="17" />
+          <caret line="101" column="14" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="17" />
+          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="13" />
+          <caret line="103" column="14" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="23" />
+          <caret line="104" column="9" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="13" />
+          <caret line="105" column="9" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="15" />
+          <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="16" />
+          <caret line="107" column="9" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="15" />
+          <caret line="108" column="15" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="21" />
+          <caret line="109" column="9" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="14" />
+          <caret line="110" column="16" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="20" />
+          <caret line="111" column="20" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="23" />
+          <caret line="112" column="14" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="18" />
+          <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="17" />
+          <caret line="114" column="15" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="21" />
+          <caret line="115" column="9" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="14" />
+          <caret line="116" column="9" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="13" />
+          <caret line="117" column="15" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="16" />
+          <caret line="118" column="23" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="24" />
+          <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="14" />
+          <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="15" />
+          <caret line="121" column="14" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="20" />
+          <caret line="122" column="9" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="15" />
+          <caret line="123" column="9" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="12" />
+          <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="14" />
+          <caret line="125" column="16" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="17" />
+          <caret line="126" column="19" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="20" />
+          <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="18" />
+          <caret line="128" column="14" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="18" />
+          <caret line="129" column="14" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="19" />
+          <caret line="130" column="9" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="13" />
+          <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="17" />
+          <caret line="132" column="14" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="16" />
+          <caret line="133" column="14" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="16" />
+          <caret line="134" column="9" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="13" />
+          <caret line="135" column="9" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="13" />
+          <caret line="136" column="13" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="15" />
+          <caret line="137" column="13" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="16" />
+          <caret line="138" column="14" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="15" />
+          <caret line="139" column="9" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="13" />
+          <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="19" />
+          <caret line="141" column="9" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="12" />
+          <caret line="142" column="14" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="20" />
+          <caret line="143" column="9" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="14" />
+          <caret line="144" column="16" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="21" />
+          <caret line="145" column="9" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="15" />
+          <caret line="146" column="19" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="20" />
+          <caret line="147" column="15" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="20" />
+          <caret line="148" column="15" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="21" />
+          <caret line="149" column="9" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="19" />
+          <caret line="150" column="19" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="20" />
+          <caret line="151" column="9" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="16" />
+          <caret line="152" column="9" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="18" />
+          <caret line="153" column="15" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="16" />
+          <caret line="154" column="15" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="20" />
+          <caret line="155" column="21" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="22" />
+          <caret line="156" column="9" lean-forward="true" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="14" />
+          <caret line="157" column="16" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="22" />
+          <caret line="158" column="9" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="15" />
+          <caret line="159" column="9" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="14" />
+          <caret line="160" column="14" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="20" />
+          <caret line="161" column="9" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="13" />
+          <caret line="162" column="9" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="13" />
+          <caret line="163" column="9" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="16" />
+          <caret line="164" column="9" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="19" />
+          <caret line="165" column="9" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="16" />
+          <caret line="166" column="25" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="31" />
+          <caret line="167" column="18" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="24" />
+          <caret line="168" column="15" lean-forward="true" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="19" />
+          <caret line="169" column="9" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="16" />
+          <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="15" />
+          <caret line="171" column="9" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="19" />
+          <caret line="172" column="9" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="14" />
+          <caret line="173" column="16" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="22" />
+          <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="15" />
+          <caret line="175" column="9" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="15" />
+          <caret line="176" column="9" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="14" />
+          <caret line="177" column="9" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="15" />
+          <caret line="178" column="22" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="26" />
+          <caret line="179" column="22" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="27" />
+          <caret line="180" column="21" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="24" />
+          <caret line="181" column="21" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="25" />
+          <caret line="182" column="9" lean-forward="true" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="16" />
+          <caret line="183" column="9" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="13" />
+          <caret line="184" column="9" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="22" />
+          <caret line="185" column="9" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="15" />
+          <caret line="186" column="9" lean-forward="true" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="15" />
+          <caret line="187" column="9" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="17" />
+          <caret line="188" column="19" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="20" />
+          <caret line="189" column="14" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="15" />
+          <caret line="190" column="9" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="13" />
+          <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="20" />
+          <caret line="192" column="9" lean-forward="true" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="15" />
+          <caret line="193" column="9" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="15" />
+          <caret line="194" column="14" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="20" />
+          <caret line="195" column="9" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="13" />
+          <caret line="196" column="9" lean-forward="true" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="14" />
+          <caret line="197" column="9" lean-forward="true" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="13" />
+          <caret line="198" column="9" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="14" />
+          <caret line="199" column="9" lean-forward="true" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="15" />
+          <caret line="200" column="9" lean-forward="true" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="16" />
+          <caret line="201" column="13" lean-forward="true" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="18" />
+          <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="18" />
+          <caret line="203" column="9" lean-forward="true" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="13" />
+          <caret line="204" column="9" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="15" />
+          <caret line="205" column="9" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="15" />
+          <caret line="206" column="14" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="20" />
+          <caret line="207" column="14" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="19" />
+          <caret line="208" column="14" lean-forward="true" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="21" />
+          <caret line="209" column="14" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="16" />
+          <caret line="210" column="9" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="13" />
+          <caret line="211" column="9" lean-forward="true" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="14" />
+          <caret line="212" column="9" lean-forward="true" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="17" />
+          <caret line="213" column="9" lean-forward="true" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="13" />
+          <caret line="214" column="9" lean-forward="true" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/select-menu/docs/selectMenuExample.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_alert.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="54" column="29" lean-forward="false" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_functions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_popover.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="664" column="19" lean-forward="false" selection-start-line="664" selection-start-column="0" selection-end-line="664" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/css/scss/abstracts/_variables_bootstrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="130" column="29" lean-forward="true" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/css/scss/abstracts/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-622">
-          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/scripts/copy-files.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/colorPicker.scss">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/tag-input/docs/tagInputExample.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/sketchPicker.scss">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/routes.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/index.scss">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:143.9999916}" />
+            </js_state>
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/tag-input/docs/info.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/colorPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/sketchPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/forms/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/tag-input/docs/tagInput.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:160.99999686}" />
+            </js_state>
+          </second_editor>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/01-molecules/card/card.scss">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dates/lib/components/SingleDatePicker.js">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/grid/container/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dates/src/components/SingleDatePicker.jsx">
+    <entry file="file://$PROJECT_DIR$/build/generator/build_dev.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dates/src/shapes/SingleDatePickerShape.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/react-utils/stick.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="126" column="28" lean-forward="true" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/react-utils/portal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/webpack.config.prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/col/docs/colExample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/col/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/dist/styles/darcula.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1988">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/dist/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/forms/select-menu/docs/selectMenu.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="627">
+            <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+            <folding>
+              <marker date="1511358503307" expanded="true" signature="840:964" ph="[...]" />
+              <marker date="1511358503307" expanded="true" signature="1094:1150" ph="{...}" />
+              <marker date="1511358503307" expanded="true" signature="1114:1146" ph="{&quot;value&quot;: obj.value...}" />
+              <marker date="1511358503307" expanded="true" signature="1230:1332" ph="&lt;Select/&gt;" />
+              <marker date="1511358503307" expanded="true" signature="1673:1828" ph="{...}" />
+              <marker date="1511358503307" expanded="true" signature="1729:1768" ph="{...}" />
+              <marker date="1511358503307" expanded="true" signature="1794:1824" ph="{&quot;values&quot;: values...}" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:561.9999848}" />
+            </js_state>
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/grid/col/docs/col.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <folding>
+              <marker date="1511358503373" expanded="true" signature="1171:1226" ph="&lt;Row/&gt;" />
+              <marker date="1511358503373" expanded="true" signature="1171:1334" ph="{...}" />
+              <marker date="1511358503373" expanded="true" signature="1181:1215" ph="&lt;Col/&gt;" />
+              <marker date="1511358503373" expanded="true" signature="1231:1265" ph="&lt;Col/&gt;" />
+              <marker date="1511358503373" expanded="true" signature="1281:1315" ph="&lt;Col/&gt;" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:304.99999268}" />
+            </js_state>
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="340">
+            <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <folding>
+              <marker date="1511358343122" expanded="true" signature="1171:1226" ph="&lt;Row/&gt;" />
+              <marker date="1511358343122" expanded="true" signature="1181:1215" ph="&lt;Col/&gt;" />
+              <marker date="1511358343122" expanded="true" signature="1231:1265" ph="&lt;Col/&gt;" />
+              <marker date="1511358343122" expanded="true" signature="1281:1315" ph="&lt;Col/&gt;" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:304.99999268}" />
+            </js_state>
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="476">
+            <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <folding>
+              <marker date="1511358343125" expanded="true" signature="335:390" ph="&lt;Row/&gt;" />
+              <marker date="1511358343125" expanded="true" signature="345:379" ph="&lt;Col/&gt;" />
+              <marker date="1511358343125" expanded="true" signature="395:429" ph="&lt;Col/&gt;" />
+              <marker date="1511358343125" expanded="true" signature="445:479" ph="&lt;Col/&gt;" />
+              <marker date="1511358343125" expanded="true" signature="518:573" ph="&lt;div/&gt;" />
+              <marker date="1511358343125" expanded="true" signature="528:562" ph="&lt;Col/&gt;" />
+              <marker date="1511358343125" expanded="true" signature="578:612" ph="&lt;Col/&gt;" />
+              <marker date="1511358343125" expanded="true" signature="628:662" ph="&lt;Col/&gt;" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:199}" />
+            </js_state>
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="505">
+            <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <folding>
+              <marker date="1511358452207" expanded="true" signature="840:964" ph="[...]" />
+              <marker date="1511358452207" expanded="true" signature="1094:1150" ph="{...}" />
+              <marker date="1511358452207" expanded="true" signature="1114:1146" ph="{&quot;value&quot;: obj.value...}" />
+              <marker date="1511358452207" expanded="true" signature="1230:1332" ph="&lt;Select/&gt;" />
+              <marker date="1511358452207" expanded="true" signature="1673:1828" ph="{...}" />
+              <marker date="1511358452207" expanded="true" signature="1729:1745" ph="{...}" />
+              <marker date="1511358452207" expanded="true" signature="1729:1768" ph="{...}" />
+              <marker date="1511358452207" expanded="true" signature="1794:1824" ph="{&quot;values&quot;: values...}" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:684.00000868}" />
+            </js_state>
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/index.html">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownHtmlPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="204">
+            <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="680">
+          <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="53" column="11" lean-forward="false" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/docs/buttonExample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1683">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="89" lean-forward="false" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="129" />
+        <state relative-caret-position="493">
+          <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss">
+    <entry file="file://$PROJECT_DIR$/build/generator/frontend/src/components/source/_patterns/00-atoms/button/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-602">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
