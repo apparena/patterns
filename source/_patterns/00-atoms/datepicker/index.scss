@@ -53,6 +53,9 @@ $react-dates-input-displaytext-padding-vertical: 4px !default;
   .SingleDatePicker__tether--show {
     z-index: 1600;
   }
+  .SingleDatePicker__picker--portal {
+    z-index: 1060;
+  }
 }
 
 .underlay {

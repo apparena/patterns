@@ -17,8 +17,8 @@ test('main frontend is rendered correctly', (t) => {
     expect(home.find("input#searchInput").props().value).to.equal("");
     expect(home.find("ul").length).to.be.at.least(2);
     expect(home.find("div > h3").length).to.be.at.least(1);
-    expect(home.find("div > h2").props().children).to.equal("Components");
-    expect(home.find("div > h2 + p").props().children).to.equal("These React components will help you build App-Arena applications and add-ons.");
+    expect(home.find('div[type="card-header"]').props().children).to.equal("Components");
+    expect(home.find('div[type="card-body"] > p').props().children).to.equal("These React components will help you build App-Arena applications and add-ons.");
 });
 
 test('search finds correct results when there are some', (t) => {

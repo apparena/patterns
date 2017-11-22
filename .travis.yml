@@ -18,6 +18,7 @@ script:
   - if [ "$TRAVIS_BRANCH" = "develop" ]; then ./build/scripts/run-travis-tests.sh; fi
 before_deploy:
   - chmod +x build/scripts/travis-deployment.sh
+  - chmod +x build/scripts/travis-aws-deploy.sh
   - if [ "$TRAVIS_BRANCH" = "master" ]; then ./build/scripts/travis-deployment.sh; fi
 deploy:
   provider: s3
@@ -29,11 +30,13 @@ deploy:
   skip_cleanup: true
   region: eu-central-1
   local_dir: build/generator/frontend/src
-  upload-dir: cdn/documentation
+  upload-dir: documentation
   on:
     branch: master
 after_deploy:
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then aws cloudfront create-invalidation --distribution-id ${CF_DISTRIBUTION} --paths /documentation/*; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then DIST_ID=${CF_DISTRIBUTION} KEY=${AWS_ACCESS_KEY} SECRET=${AWS_SECRET_KEY} ./build/scripts/travis-aws-deploy.sh; fi
 env:
   global:
     secure: "jb5mgc50GnyE5bMIGoaryU2+wSMJQIhegMbhmJQrWu1+Vr0L8GxQGiDb12KOCKUp605PHORGAcdIWMA1BPPF4E3Qw16LTWfcuVbIwAxo9fte64AgZsZp4ZLcLtepCbpW7cjOx3cJ4eKkM79/3nFLwzJwp8OtAeD3bUDW6612vG2I/VSSr8Nc1TIybfZTu/Ep/ESyLcoXSASUpT1hxzq5kggiqpi4AcjjFOQql4gwGiyHHLI54sKhRuny/P4ZGVD/B7gKmk3RZ1WwnEoEr8mJLepLAPx9bXPFvBGAFgAG+0MSkZXWZduR9knmv9J0YRGBECDPZ5KCgtHc9cgJVxht2azR261eV+eKrnwTstwxh1PoBMA7hMQLNvjhbTyyJsap2B0cpbHDa0+TvcbX/7tP/8kFznX0OJ5hIFHn80Ql7L8fBXxS6tCGnBXe6bomfB1ISvuC1IvdME0agsgQEp9t5eXIbBc0qz3rpdBm2V/iO35t8qIzKZ5Y/FMJrsT80zFA83TYlUqRTz9cpqikv478apCxvJbMNjqLjJuzuCV8JcgoW19XYA5OTEMND3YhbAkzdk8BdOt1xOyU9jMxv8EKHhFz97ExGCojXwUYJOkWa2IPZOy/OHKBxrFDPpvP7xJ11bTbP/OOOP+Uouwtj/IPgBEHnqeYCPAP9f87YToe4Lw="
+    secure: "vxPeGmCMTLueS6aG9DI7ljfhMPL6LqGREsnFWvmzt0repSlqUjxclOeqiy3ZWsucoYk4fMe2mACmr2GqEfdWiPrqYZohF5ilN4Sk5dItKmSQcKiO2Vs98slZ8jzkrdw7tnfAryJlxfiUbnQZEdoiv33RF1uU/JxPj4kQ1Dyy42w57XXHWQ/MeZtp+4wsGCJ+gATOJtgD/pWppbaH50ZgkQgHOEkzn52sUzdtVFb23DtOS1NqrUNcjEx11m2lU72kAzdWd2oeF0A+EXjWNd36JnVeWRab9AGnEVNekZhcxAdnUWDceKpQ/W/+26t7u4sfuidsVwU7ljIFHTPeEBHd15I5eSsdbjWlx7ZZjxAcu+0Hb4RrU4nnk0dDA48cxYf5zTKP/c7n4FsXLXduTdKxpDmv2qdYXycyfT/FzZ0bKGWw3nczYW/0s8jwaIbRar6bFV3QmyqJMOm2Y2Z4gCHtZ0T98hj8M9WTuq/HvSrp20BEUp9yPz0djZXoBXqfUAG+OiqrU6SuIlR68A76lmAoyzZ5zY5TZtSOP2IsAlyc/NjYKpB8no9pTaeMCn52RYT2JeBRBZCp9OJb8ZNDKGnjEACg0NhazQGfsI82CNakTnbFAzRo2IvMDuGs66+AHcZXeY6d+eZDRIveM+bSS3nDG61rKhYB4w9kt3P+UZHpPqU="
+    secure: "eU+aiQhxHKcvZfO7Apw6IifRw6+T25UAbtKa7uAx5W7Ew2Lhoy40WctePa+AIiiyAxqommZFyszqpE3Q2Vgv5hevATs2BxnGQhpZHXhKnUpAob2vrgnc3ps39ieayn/auztGoTuWJId7AsXkJJ+QG2bnZ/EbAjcZEN9CqUFfmolKleAdMDeGHMYGD/HPGl3ksaUOFauMG8RihV72k6E4mXkqDMSQ0A/zjJgCBBUp9LIzN6Ge4Pwp5CceYkhQxPn46oLx5RXxLIPDjlodaBo9OmrAbFuj2OB0HVRyL+3he8ZZizr21aL3eLEeNBESMF7KCJFq9TJOqthplUpsbBzrV3PEhcHMFlzVzxLjBit0HliWhxWPciJcI2rQZod0pTanTnUAZWw7pB4RFvqJOqdgmBwOtmTD9XnQj8srEpk/NbeA1Z9C8htQXZLY3cWc5UV8ZoxU8x2Y4HEA2MZOsdozkQlLNbVZ6RwEZW8RHcLRu0cL9nHzGug3iu8wtT95oqO1K9jbEwPG+PvhKWlqE6HyXIFGp0FRvhJCmV5gdMt2H86jWuLs7OO3PpwOY3gdHwmoEda+R4Ndt6GZ2qbnOVa9lsHHB4ab5/4hsNvKcIXJuyU0QFU/C3JIjloqpNr9EPac3NV6FyYgq4rzbZeGzeHV7z8kU2zrqzQ47u4wd1fkjKM="

@@ -1,6 +1,3 @@
-Progress Tracker
----
-
 ### What problem does this solve?
 
 A progress tracker guides users through a number of steps across multiple screens in order to complete a task flow. It shows users where they are in the process, and also offers navigation within the process.

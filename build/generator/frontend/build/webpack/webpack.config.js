@@ -8,7 +8,6 @@ const qs = require('qs');
 const autoprefixer = require('autoprefixer');
 const CleanPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const CopyGlobsPlugin = require('./webpack.plugin.copyglobs');
 const mergeWithConcat = require('./util/mergeWithConcat');
@@ -152,10 +151,6 @@ let webpackConfig = {
             output: `[path]${assetsFilenames}.[ext]`,
             manifest: config.manifest
         }),
-
-        new CopyWebpackPlugin([
-            {from: 'styles/darcula.css', to: 'styles/darcula.css'}
-        ]),
 
         extractAssets,
         extractComponentCSS,
