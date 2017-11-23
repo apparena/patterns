@@ -1,6 +1,3 @@
-Row
----
-
 The `Row` component needs to be wrapped around one or more \<Col\>s.
 Please see the [documentation for `Cols`](/#/Col) if you need to know how to use them.
 

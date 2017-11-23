@@ -367,14 +367,14 @@ export default class CustomPackageCreator extends ReactComponent {
                         <Row>
                             <Col md="6" className={styles.titleLeft}>
                                 <img src={data.plans.custom.img} alt="Logo"
-                                     className={!data.plans.custom.img && styles.invisible}
+                                     className={!data.plans.custom.img ? styles.invisible : ''}
                                 />
                                 <p>{data.plans.custom.title}</p>
                             </Col>
                             <Col md="4" mdOffset={2} className={styles.sumContainer}>
                             <span id="sum" className={styles.sumDisplay}>
                                 <sup>€</sup>
-                                <AnimatedNumber component="text" value={this.state.price}
+                                <AnimatedNumber component="span" value={this.state.price}
                                                 style={{
                                                     transition: '0.8s ease-out',
                                                     transitionProperty: 'background-color, color, opacity'
