@@ -7,14 +7,38 @@ import Toggle from 'react-toggle';
 import styles from './checkbox.scss';
 
 export default class Checkbox extends ReactComponent {
-    static PropTypes = {
+    static propTypes = {
+        /**
+         * Additional classNames for the checkbox
+         */
         className: PropTypes.string,
+        /**
+         * The css z-index attribute
+         */
         zIndex: PropTypes.number,
+        /**
+         * Should this checkbox be disabled?
+         */
         disabled: PropTypes.bool,
+        /**
+         * Is this checkbox checked?
+         */
         checked: PropTypes.bool,
+        /**
+         * Function that's called whenever this checkbox changes its state
+         */
         onChange: PropTypes.func.isRequired,
+        /**
+         * ID of the checkbox
+         */
         id: PropTypes.string,
+        /**
+         * Should a tooltip be rendered as well?
+         */
         renderTooltip: PropTypes.bool,
+        /**
+         * Sets the position of the tooltip
+         */
         positioning: PropTypes.oneOf([
             'top',
             'bottom',
