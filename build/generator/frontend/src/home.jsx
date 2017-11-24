@@ -5,7 +5,7 @@ import componentsList from './components/list.json';
 import cloneDeep from 'lodash/cloneDeep';
 import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from 'apparena-patterns-react';
 import styles from './styles/home.scss';
-import {Route, Link, Switch} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 import {AnimatedSwitch} from "react-router-transition"
 import pages from './pages';
 
@@ -28,7 +28,6 @@ const transitionStyles = {
 };
 
 function mapStyles(styles) {
-    console.log(styles.x, `translateX(${styles.x * 500})`);
     return {
         opacity: styles.opacity,
         transform: `translateX(${styles.x * 1000}px)`,
