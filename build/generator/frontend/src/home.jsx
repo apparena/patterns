@@ -1,57 +1,56 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router';
 import * as components from './components/index';
 import componentsList from './components/list.json';
 import cloneDeep from 'lodash/cloneDeep';
 import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from 'apparena-patterns-react';
 import styles from './styles/home.scss';
+import {Route, Link, Switch} from 'react-router-dom';
+import {AnimatedSwitch} from "react-router-transition"
+import pages from './pages';
+
+const transitionStyles = {
+    atEnter: {
+        opacity: .25,
+        x: 1,
+        position: 1,
+    },
+    atLeave: {
+        opacity: .25,
+        x: 1,
+        position: 1,
+    },
+    atActive: {
+        opacity: 1,
+        x: 0,
+        position: 0,
+    }
+};
+
+function mapStyles(styles) {
+    console.log(styles.x, `translateX(${styles.x * 500})`);
+    return {
+        opacity: styles.opacity,
+        transform: `translateX(${styles.x * 1000}px)`,
+        position: styles.position === 0 ? 'relative' : 'absolute',
+        width: '100%'
+    };
+}
 
 export default class Home extends ReactComponent {
     static propTypes = {
-        location: PropTypes.object
+        history: PropTypes.object,
+        location: PropTypes.object,
+        match: PropTypes.object,
     };
 
     getInitState() {
         const categories = componentsList;
         this.backupCategories = categories;
         return {
-            active: '',
-            currentComponent: undefined,
             searchQuery: '',
             categories
         };
-    }
-
-    componentWillMount() {
-        if (this.props.params.component) {
-            this.setState({
-                active: this.props.params.component,
-                currentComponent: components[this.props.params.component]
-            });
-        }
-    }
-
-    componentWillReceiveProps(nextProps, nextContext) {
-        if (nextProps.params && nextProps.params.component) {
-            this.setState({
-                active: nextProps.params.component,
-                currentComponent: components[nextProps.params.component]
-            });
-        } else if (nextProps.route && nextProps.route.path === '/') {
-            this.setState({
-                active: '',
-                currentComponent: undefined
-            });
-        }
-    }
-
-    toggleVisibility(index) {
-        const state = this.state;
-        state.categories[index].visible = !state.categories[index].visible;
-        this.setState({
-            state
-        });
     }
 
     search(e) {
@@ -81,11 +80,11 @@ export default class Home extends ReactComponent {
 
     renderCategories(category, index) {
         return (
-            <NavSecondaryGroup title={category.name} key={index} onClick={this.toggleVisibility.bind(this, index)}>
+            <NavSecondaryGroup title={category.name} key={index}>
                 <Nav pills stacked vertical>
                     {category.componentList.map((component, i) => {
                         return (
-                            <NavItem key={i} active={this.state.active === component}>
+                            <NavItem key={i} active={this.props.location.pathname.split('/')[1] === component}>
                                 <Link to={`/${component}`}>{component}</Link>
                             </NavItem>
                         );
@@ -131,6 +130,34 @@ export default class Home extends ReactComponent {
         );
     }
 
+    renderContentContainer() {
+        return (
+            <Card>
+                <div type="card-header">
+                    Components
+                </div>
+                <div type="card-body">
+                    <p>
+                        These React components will help you build App-Arena applications
+                        and
+                        add-ons.
+                    </p>
+                    {this.state.categories.map(this.renderTable)}
+                </div>
+            </Card>
+        );
+    }
+
+    renderPageLinks() {
+        return pages.map((page, i) => {
+            return (
+                <NavItem key={i}>
+                    <Link to={page.route}>{page.name}</Link>
+                </NavItem>
+            );
+        });
+    }
+
     render() {
         return (
             <div className={styles.root}>
@@ -148,6 +175,7 @@ export default class Home extends ReactComponent {
                                         <NavItem>
                                             <Link to="/">App-Arena Components</Link>
                                         </NavItem>
+                                        {this.renderPageLinks()}
                                     </Nav>
                                 </Col>
                             </Row>
@@ -170,21 +198,21 @@ export default class Home extends ReactComponent {
                         </div>
                     </Col>
                     <Col lg="10" sm="8" xs="7" className={styles.container}>
-                        {this.state.currentComponent !== undefined ? <this.state.currentComponent/> : (
-                            <Card>
-                                <div type="card-header">
-                                    Components
-                                </div>
-                                <div type="card-body">
-                                    <p>
-                                        These React components will help you build App-Arena applications
-                                        and
-                                        add-ons.
-                                    </p>
-                                    {this.state.categories.map(this.renderTable)}
-                                </div>
-                            </Card>
-                        )}
+                        <AnimatedSwitch
+                            atEnter={transitionStyles.atEnter}
+                            atLeave={transitionStyles.atLeave}
+                            atActive={transitionStyles.atActive}
+                            mapStyles={mapStyles}
+                        >
+                            {Object.keys(components).map((component, i) => {
+                                return <Route exact path={`/${component}`} component={components[component]} key={component + i}/>
+                            })}
+                            {pages.map((page, i) => {
+                                return <Route exact path={`/${page.route}`} component={page.component} key={page.route + i} />
+                            })}
+                        </AnimatedSwitch>
+
+                        {this.props.location.pathname === '/' ? this.renderContentContainer() : null}
                     </Col>
                 </Row>
             </div>

@@ -1,14 +1,13 @@
 import "babel-polyfill";
 import React from "react";
 import {render} from "react-dom";
-import {hashHistory, Router} from "react-router";
-import routes from "./routes";
+import Router from "./router";
 
 const MOUNT_NODE = document.getElementById('root');
 
 (function () {
     render(
-        <Router history={hashHistory} routes={routes}/>,
+        <Router />,
         MOUNT_NODE
     )
 }());

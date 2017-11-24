@@ -86,7 +86,8 @@
     "react-dates": "^15.1.0",
     "react-dom": "^16.0.0",
     "react-markdown": "^2.4.6",
-    "react-router": "^3.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-transition": "^1.1.2",
     "react-syntax-highlighter": "^6.0.4",
     "simple-assign": "^0.1.0"
   }
