@@ -105,3 +105,5 @@ dist/
 /.github/
 /build/generator/_build/
 artifact.tar.gz
+html2xhtml
+/build/generator/frontend/src/staticPages

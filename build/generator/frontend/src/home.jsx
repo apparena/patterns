@@ -7,7 +7,7 @@ import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, Re
 import styles from './styles/home.scss';
 import {Route, Link} from 'react-router-dom';
 import {AnimatedSwitch} from "react-router-transition"
-import pages from './pages';
+import staticPages from './staticPages';
 
 const transitionStyles = {
     atEnter: {
@@ -46,9 +46,22 @@ export default class Home extends ReactComponent {
     getInitState() {
         const categories = componentsList;
         this.backupCategories = categories;
+        const minimizedCategories = categories.map((_) => {
+            return true;
+        });
+        minimizedCategories[-1] = true;
+
+        const hiddenStaticPages = {};
+        staticPages.forEach((page) => {
+            hiddenStaticPages[page.name] = false;
+        });
+        this.backupHiddenStaticPages = hiddenStaticPages;
+
         return {
             searchQuery: '',
-            categories
+            categories,
+            minimizedCategories,
+            hiddenStaticPages,
         };
     }
 
@@ -58,6 +71,8 @@ export default class Home extends ReactComponent {
         }, () => {
             if (this.state.searchQuery !== '') {
                 const categories = cloneDeep(this.backupCategories);
+                const hiddenStaticPages = cloneDeep(this.backupHiddenStaticPages);
+
                 Object.keys(categories).forEach((cat) => {
                     categories[cat].componentList = categories[cat].componentList.filter((comp) => {
                         return comp.toLowerCase().includes(this.state.searchQuery.toLowerCase());
@@ -66,31 +81,57 @@ export default class Home extends ReactComponent {
                     categories[cat].visible = categories[cat].componentList.length !== 0;
                 });
 
+                staticPages.forEach((page) => {
+                    if (!page.name.toLowerCase().includes(this.state.searchQuery.toLowerCase())) {
+                        hiddenStaticPages[page.name] = true;
+                    } else {
+                        hiddenStaticPages[page.name] = false;
+                    }
+                });
+
                 this.setState({
-                    categories
+                    categories,
+                    hiddenStaticPages
                 });
             } else {
                 this.setState({
-                    categories: this.backupCategories
+                    categories: this.backupCategories,
+                    hiddenStaticPages: this.backupHiddenStaticPages,
                 });
             }
         });
     }
 
+    toggleCategory(index) {
+        const minimizedCategories = this.state.minimizedCategories;
+        minimizedCategories[index] = !minimizedCategories[index];
+
+        this.setState({
+            minimizedCategories
+        });
+    }
+
     renderCategories(category, index) {
-        return (
-            <NavSecondaryGroup title={category.name} key={index}>
-                <Nav pills stacked vertical>
-                    {category.componentList.map((component, i) => {
-                        return (
-                            <NavItem key={i} active={this.props.location.pathname.split('/')[1] === component}>
-                                <Link to={`/${component}`}>{component}</Link>
-                            </NavItem>
-                        );
-                    })}
-                </Nav>
-            </NavSecondaryGroup>
-        );
+        if (category.visible) {
+            return (
+                <NavSecondaryGroup
+                    title={category.name}
+                    key={index}
+                    onClick={this.toggleCategory.bind(this, index)}
+                    className={styles.categoryNavTitle}
+                >
+                    <Nav pills stacked vertical>
+                        {this.state.minimizedCategories[index] === true ? category.componentList.map((component, i) => {
+                            return (
+                                <NavItem key={i} active={this.props.location.pathname.split('/')[1] === component}>
+                                    <Link to={`/${component}`}>{component}</Link>
+                                </NavItem>
+                            );
+                        }) : null}
+                    </Nav>
+                </NavSecondaryGroup>
+            );
+        }
     }
 
     renderTable(category, index) {
@@ -147,14 +188,32 @@ export default class Home extends ReactComponent {
         );
     }
 
-    renderPageLinks() {
-        return pages.map((page, i) => {
+    renderStaticPageLinks() {
+        if (!Object.keys(this.state.hiddenStaticPages).reduce((a, b) => {
+                return a & this.state.hiddenStaticPages[b] === true;
+            }, true)) {
             return (
-                <NavItem key={i}>
-                    <Link to={page.route}>{page.name}</Link>
-                </NavItem>
+                <NavSecondaryGroup
+                    title="Pages"
+                    onClick={this.toggleCategory.bind(this, -1)}
+                    className={styles.categoryNavTitle}
+                >
+                    <Nav pills stacked vertical>
+                        {this.state.minimizedCategories[-1] === true ? staticPages.map((page, i) => {
+                            if (!this.state.hiddenStaticPages[page.name]) {
+                                return (
+                                    <NavItem key={i} active={this.props.location.pathname.split('/')[1] === page.name}>
+                                        <Link to={page.route}>{page.name}</Link>
+                                    </NavItem>
+                                );
+                            }
+
+                            return null
+                        }) : null}
+                    </Nav>
+                </NavSecondaryGroup>
             );
-        });
+        }
     }
 
     render() {
@@ -174,7 +233,6 @@ export default class Home extends ReactComponent {
                                         <NavItem>
                                             <Link to="/">App-Arena Components</Link>
                                         </NavItem>
-                                        {this.renderPageLinks()}
                                     </Nav>
                                 </Col>
                             </Row>
@@ -193,6 +251,7 @@ export default class Home extends ReactComponent {
                                     />
                                 </FormGroup>
                             </div>
+                            {this.renderStaticPageLinks()}
                             {this.state.categories.map(::this.renderCategories)}
                         </div>
                     </Col>
@@ -206,7 +265,7 @@ export default class Home extends ReactComponent {
                             {Object.keys(components).map((component, i) => {
                                 return <Route exact path={`/${component}`} component={components[component]} key={component + i}/>
                             })}
-                            {pages.map((page, i) => {
+                            {staticPages.map((page, i) => {
                                 return <Route exact path={`/${page.route}`} component={page.component} key={page.route + i} />
                             })}
                         </AnimatedSwitch>

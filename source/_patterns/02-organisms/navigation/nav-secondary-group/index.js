@@ -11,12 +11,12 @@ export default class NavSecondaryGroup extends ReactComponent {
     };
 
     render() {
-        const {children, title} = this.props;
+        const {children, title, ...props} = this.props;
         return (
             <div className={cx(styles['o-nav-sidebar'])}>
                 <div className={styles['o-nav-sidebar-secondaryGroup']}>
                     {title &&
-                    <div className={styles['title']}>
+                    <div className={styles['title']} {...props}>
                         {title}
                     </div>
                     }
