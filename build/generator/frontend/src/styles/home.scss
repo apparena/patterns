@@ -11,6 +11,8 @@ body {
 }
 
 .root {
+  overflow: hidden;
+
   .navbar-light {
     background: #fff;
     border-bottom: 1px solid #e4e9f2;

@@ -111,6 +111,13 @@ export default class Home extends ReactComponent {
         });
     }
 
+    scrollToTop() {
+        window.scrollBy({
+            top: -2000,
+            behavior: 'smooth'
+        });
+    }
+
     renderCategories(category, index) {
         if (category.visible) {
             return (
@@ -124,7 +131,7 @@ export default class Home extends ReactComponent {
                         {this.state.minimizedCategories[index] === true ? category.componentList.map((component, i) => {
                             return (
                                 <NavItem key={i} active={this.props.location.pathname.split('/')[1] === component}>
-                                    <Link to={`/${component}`}>{component}</Link>
+                                    <Link to={`/${component}`} onClick={::this.scrollToTop}>{component}</Link>
                                 </NavItem>
                             );
                         }) : null}
@@ -203,7 +210,7 @@ export default class Home extends ReactComponent {
                             if (!this.state.hiddenStaticPages[page.name]) {
                                 return (
                                     <NavItem key={i} active={this.props.location.pathname.split('/')[1] === page.name}>
-                                        <Link to={page.route}>{page.name}</Link>
+                                        <Link to={page.route} onClick={::this.scrollToTop}>{page.name}</Link>
                                     </NavItem>
                                 );
                             }
@@ -240,7 +247,7 @@ export default class Home extends ReactComponent {
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg="2" sm="4" xs="5">
+                    <Col lg="3" sm="4" xs="5" id="sidebar-menu">
                         <div className={styles.sidebar}>
                             <div className={styles.searchBox}>
                                 <FormGroup label={'Suchen'}>
@@ -255,7 +262,7 @@ export default class Home extends ReactComponent {
                             {this.state.categories.map(::this.renderCategories)}
                         </div>
                     </Col>
-                    <Col lg="10" sm="8" xs="7" className={styles.container}>
+                    <Col lg="9" sm="8" xs="7" className={styles.container}>
                         <AnimatedSwitch
                             atEnter={transitionStyles.atEnter}
                             atLeave={transitionStyles.atLeave}

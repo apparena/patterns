@@ -25,7 +25,6 @@ export default function NotificationContainerExample() {
     return (
         <NotificationContainer
             notifications={notifications}
-            header="boo"
         />
     );
 }
