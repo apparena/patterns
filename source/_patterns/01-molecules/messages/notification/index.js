@@ -14,12 +14,33 @@ const typeIcons = {
 
 export default class Notification extends ReactComponent {
     static propTypes = {
+        /**
+         * Text to display as a heading for the notification
+         */
         header: PropTypes.string.isRequired,
+        /**
+         * Content of the notification
+         */
         children: PropTypes.node,
+        /**
+         * Set the default styling
+         */
         type: PropTypes.oneOf(['info', 'success', 'warning', 'danger']).isRequired,
+        /**
+         * Deprecated
+         */
         duration: PropTypes.number,
+        /**
+         * Additional classNames for the notification
+         */
         className: PropTypes.string,
+        /**
+         * Function that's executed when the notification's close button is pushed. Additionally renders a close button
+         */
         onClose: PropTypes.func,
+        /**
+         * Deprecated
+         */
         fixed: PropTypes.bool
     };
 
@@ -37,7 +58,7 @@ export default class Notification extends ReactComponent {
 
     render() {
         const {className, type, header, children, fixed} = this.props;
-        let iconName = typeIcons[type];
+        const iconName = typeIcons[type];
 
         return (
             <div className={cx(styles['m-notification'], fixed && styles.fixed, className)}>

@@ -6,11 +6,29 @@ import styles from './progress-tracker-step.scss';
 
 export default class ProgressTrackerStep extends ReactComponent {
     static propTypes = {
+        /**
+         * Additional classNames for the step
+         */
         className: PropTypes.string,
+        /**
+         * Should this step be activated?
+         */
         active: PropTypes.bool,
+        /**
+         * ID for the HTML element
+         */
         id: PropTypes.string,
+        /**
+         * Deprecated
+         */
         href: PropTypes.string,
+        /**
+         * Function to execute when the step is clicked
+         */
         onClick: PropTypes.func,
+        /**
+         * Text do display beneath the step
+         */
         text: PropTypes.string
     };
 

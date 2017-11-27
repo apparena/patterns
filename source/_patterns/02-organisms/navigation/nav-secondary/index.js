@@ -6,6 +6,9 @@ import styles from './nav-secondary.scss';
 
 export default class SecondNav extends ReactComponent {
     static propTypes = {
+        /**
+         * Contents of the nav
+         */
         children: PropTypes.node.isRequired
     };
 

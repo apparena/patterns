@@ -6,6 +6,9 @@ import styles from './navbar.scss';
 
 export default class Navbar extends ReactComponent {
     static propTypes = {
+        /**
+         * Contents of the navbar
+         */
         children: PropTypes.oneOfType([
             PropTypes.string,
             PropTypes.element,
@@ -13,8 +16,17 @@ export default class Navbar extends ReactComponent {
                 PropTypes.element
             )
         ]).isRequired,
+        /**
+         * Makes the navbar always visible either at the top or at the bottom of the page
+         */
         fixed: PropTypes.oneOf(['top', 'bottom']),
+        /**
+         * Color scheme of the navbar
+         */
         colorScheme: PropTypes.oneOf(['light', 'inverse']),
+        /**
+         * Background color selection of the navbar
+         */
         bg: PropTypes.oneOf(['primary', 'success', 'info', 'warning', 'danger', 'inverse', 'faded'])
     };
 

@@ -6,7 +6,13 @@ import styles from '../nav-sidebar.scss';
 
 export default class NavSecondaryGroup extends ReactComponent {
     static propTypes = {
+        /**
+         * Contents of the nav group
+         */
         children: PropTypes.node.isRequired,
+        /**
+         * Title of the nav group
+         */
         title: PropTypes.string
     };
 

@@ -6,9 +6,21 @@ import styles from '../navs.scss';
 
 export default class Nav extends ReactComponent {
     static propTypes = {
+        /**
+         * Additional classNames
+         */
         className: PropTypes.string,
+        /**
+         * Contents of the nav item
+         */
         children: PropTypes.node.isRequired,
+        /**
+         * Is the nav item a dropdown?
+         */
         dropdown: PropTypes.bool,
+        /**
+         * Is the nav item currently activated?
+         */
         active: PropTypes.bool
     };
 

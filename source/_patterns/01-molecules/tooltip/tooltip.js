@@ -24,11 +24,29 @@ const POSITIONING = [
 
 export default class Tooltip extends ReactComponent {
     static propTypes = {
+        /**
+         * Defines the element which should get the tooltip
+         */
         children: PropTypes.node.isRequired,
+        /**
+         * Sets the text of the tooltip
+         */
         label: PropTypes.string.isRequired,
+        /**
+         * Deprecated
+         */
         transition: PropTypes.string,
+        /**
+         * Additional classNames
+         */
         className: PropTypes.string,
+        /**
+         * Set the position of the tooltip
+         */
         positioning: PropTypes.oneOf(POSITIONING),
+        /**
+         * Set the HTML zIndex property
+         */
         zIndex: PropTypes.number
     };
 

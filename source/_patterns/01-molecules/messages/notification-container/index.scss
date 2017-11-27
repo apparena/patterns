@@ -1,0 +1,23 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../../css/scss/abstracts/variables";
+
+/*=========================================================================
+  Organism Navigation Sidebar
+ ========================================================================== */
+
+.notification-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 2050;
+  > div {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+}

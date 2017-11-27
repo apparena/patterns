@@ -7,7 +7,7 @@ export default function IconsExample() {
         <Row>
             {icons.map((icon, i) => {
                 return (
-                    <Col xs="6" key={i} xsVerticalAlignment="center">
+                    <Col xs="4" key={i} xsVerticalAlignment="center">
                         <Icon name={icon} type="primary"/>
                         <span style={{marginLeft: "20px"}}><b>{icon}</b></span>
                     </Col>

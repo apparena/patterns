@@ -5,8 +5,17 @@ import cx from 'classnames';
 
 export default class Breadcrumb extends ReactComponent {
     static propTypes = {
+        /**
+         * An array of the breadcrumb names
+         */
         crumbNames: PropTypes.array.isRequired,
+        /**
+         * The URLs that the breadcrumbs should link to
+         */
         crumbLocations: PropTypes.array.isRequired,
+        /**
+         * Additional classNames for the breadcrumbs
+         */
         classNames: PropTypes.string
     };
 

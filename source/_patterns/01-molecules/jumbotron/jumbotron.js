@@ -5,10 +5,16 @@ import cx from 'classnames';
 
 export default class Jumbotron extends ReactComponent {
     static propTypes = {
+        /**
+         * Child elements that should be within the jumbotron
+         */
         children: PropTypes.oneOfType([
             PropTypes.element,
             PropTypes.arrayOf(PropTypes.element)
         ]).isRequired,
+        /**
+         * Additional classNames for the jumbotron
+         */
         classNames: PropTypes.string
     };
 
@@ -17,7 +23,7 @@ export default class Jumbotron extends ReactComponent {
     };
 
     render() {
-        let classes = cx(
+        const classes = cx(
             'jumbotron',
             this.props.classNames
         );

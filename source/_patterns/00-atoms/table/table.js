@@ -6,13 +6,37 @@ import styles from './table.scss';
 
 export default class Table extends ReactComponent {
     static propTypes = {
+        /**
+         * The HTML table structure
+         */
         children: PropTypes.node.isRequired,
+        /**
+         * Additional classNames for the table
+         */
         classNames: PropTypes.string,
+        /**
+         * Highlight odd rows?
+         */
         striped: PropTypes.bool,
+        /**
+         * Draw borders around table cells?
+         */
         bordered: PropTypes.bool,
+        /**
+         * Make the table more compact by cutting cell padding in half?
+         */
         condensed: PropTypes.bool,
+        /**
+         * Should rows be highlighted when hovering over them?
+         */
         hover: PropTypes.bool,
+        /**
+         * Enable horizontal scrolling when the table exceeds the display size?
+         */
         responsive: PropTypes.bool,
+        /**
+         * Invert the table colors?
+         */
         inverse: PropTypes.bool
     };
 
@@ -30,10 +54,10 @@ export default class Table extends ReactComponent {
         const componentClass = cx(
             styles.table,
             this.props.bordered && styles['table-bordered'],
-            this.props.condensed && styles['table-condensed'],
+            this.props.condensed && styles['table-sm'],
             this.props.hover && styles['table-hover'],
             this.props.striped && styles['table-striped'],
-            this.props.inverse && styles['table-inverse'],
+            this.props.inverse && styles['table-dark'],
             this.props.className
         );
 
