@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Markdown from 'react-markdown';
 import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import {darcula} from 'react-syntax-highlighter/styles/prism';
+import {tomorrow} from 'react-syntax-highlighter/styles/prism';
 
 class CodeBlock extends React.PureComponent {
     static propTypes = {
@@ -15,7 +15,8 @@ class CodeBlock extends React.PureComponent {
         return (
             <SyntaxHighlighter
                 language={this.props.language || 'javascript'}
-                style={darcula}
+                style={tomorrow}
+                showLineNumbers
             >
                 {this.props.literal}
             </SyntaxHighlighter>

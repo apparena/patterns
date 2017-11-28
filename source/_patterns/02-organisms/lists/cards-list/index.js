@@ -4,6 +4,9 @@ import ReactComponent from '../../../react-utils/component';
 
 export default class CardsList extends ReactComponent {
     static propTypes = {
+        /**
+         * The cards that should be shown within this list
+         */
         children: PropTypes.oneOfType([
             PropTypes.element,
             PropTypes.arrayOf(PropTypes.element)

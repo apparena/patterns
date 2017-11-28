@@ -1,6 +1,7 @@
 import glob from 'glob';
 import each from 'async/each';
 import fse from 'fs-extra';
+import child_process from 'child_process';
 import handlebars from 'handlebars';
 import path from 'path';
 import _ from 'lodash';
@@ -12,6 +13,7 @@ _.mixin({pascalCase: _.flow(_.camelCase, _.upperFirst)});
 
 console.log('Cleaning directories...');
 fse.removeSync('build/generator/frontend/src/components');
+fse.removeSync('build/generator/frontend/src/staticPages');
 
 /**
  * Get the path + the base name of a component. The base name is the entire name without the extension. This helps
@@ -214,5 +216,48 @@ glob('source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
     const renderedIndexTemplate = indexTemplate(indexTemplateData);
     fse.outputFileSync('build/generator/frontend/src/components/index.jsx', renderedIndexTemplate, 'utf8');
 
+});
+
+glob('build/generator/frontend/pages/*', (err, files) => {
+    console.log('Creating static pages');
+
+    const staticPageHTMLSource = fse.readFileSync('build/generator/templates/staticPageHTML.hbs', 'utf8');
+    const staticPageHTMLTemplate = handlebars.compile(staticPageHTMLSource);
+    const staticPageIndexSource = fse.readFileSync('build/generator/templates/staticPageIndex.hbs', 'utf8');
+    const staticPageIndexTemplate = handlebars.compile(staticPageIndexSource);
+    const index = {
+        exports: [],
+        imports: []
+    };
+
+    files.forEach((file) => {
+        if (file.endsWith('.html')) {
+            if (!fse.existsSync('html2xhtml')) {
+                console.log("Fetching html2xhmtl");
+                child_process.execSync('bash getH2X.sh', {stdio: [0, 1, 2]});
+                console.log("Built html2xhtml");
+            }
+
+            const xhtml = child_process.execSync(`./html2xhtml ${file} -b 4 --generate-snippet`);
+            const renderedTemplate = staticPageHTMLTemplate({html: xhtml});
+            const newFileName = getBaseName(file).split('/').slice(-1);
+
+            fse.outputFileSync(`build/generator/frontend/src/staticPages/${newFileName}.jsx`, renderedTemplate, 'utf8');
+            index.exports.push({route: newFileName, component: newFileName, name: newFileName});
+            index.imports.push({component: newFileName});
+        } else if (file.endsWith('.jsx')) {
+            const jsx = fse.readFileSync(file, 'utf8');
+            const newFileName = getBaseName(file).split('/').slice(-1);
+
+            fse.copySync(file, `build/generator/frontend/src/staticPages/${newFileName}.jsx`);
+            index.exports.push({route: newFileName, component: newFileName, name: newFileName});
+            index.imports.push({component: newFileName});
+        }
+    });
+
+    const renderedIndex = staticPageIndexTemplate({imports: index.imports, exports: index.exports});
+    fse.outputFileSync(`build/generator/frontend/src/staticPages/index.jsx`, renderedIndex, 'utf8');
+
+    console.log("Finished creating static pages");
 });
 

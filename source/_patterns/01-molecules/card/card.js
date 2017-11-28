@@ -21,11 +21,20 @@ const CARD_TYPES = [
 
 export default class Card extends ReactComponent {
     static propTypes = {
+        /**
+         * Content of the card
+         */
         children: PropTypes.oneOfType([
             PropTypes.element,
             PropTypes.arrayOf(PropTypes.element)
         ]).isRequired,
+        /**
+         * Deprecated
+         */
         type: PropTypes.oneOf(CARD_TYPES),
+        /**
+         * Deprecated
+         */
         inverse: PropTypes.bool
     };
 

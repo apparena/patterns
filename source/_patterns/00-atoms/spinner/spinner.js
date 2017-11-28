@@ -24,8 +24,17 @@ const SPINNER_TYPES = [
 
 export default class Spinner extends ReactComponent {
     static propTypes = {
+        /**
+         * Additional classNames for the spinner
+         */
         className: PropTypes.string,
+        /**
+         * Sets the size of the spinner
+         */
         size: PropTypes.oneOf(['sm', 'md', 'lg']),
+        /**
+         * Sets the default styling
+         */
         type: PropTypes.oneOf(SPINNER_TYPES)
     };
 

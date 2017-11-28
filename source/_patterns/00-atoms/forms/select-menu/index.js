@@ -7,24 +7,65 @@ import styles from './select-menu.scss';
 
 export default class SelectMenu extends ReactComponent {
     static propTypes = {
-        /** **/
+        /**
+         * The id of the component
+         */
         id: PropTypes.string,
+        /**
+         * The selected option
+         */
         defaultValue: PropTypes.oneOfType([
             PropTypes.number,
             PropTypes.string,
             PropTypes.array
         ]).isRequired,
+        /**
+         * The selectable options as an array of objects. Each object should have a label and a value, i.e. {label: "An example", value: "example"}
+         */
         options: PropTypes.array.isRequired,
+        /**
+         * Function that gets executed when a different option is selected
+         */
         onChange: PropTypes.func.isRequired,
+        /**
+         * Allow the selection of multiple options simultaneously?
+         */
         multi: PropTypes.bool,
+        /**
+         * Allow clearing all selected options simultaneously?
+         */
         clearable: PropTypes.bool,
+        /**
+         * Disable the component?
+         */
         disabled: PropTypes.bool,
+        /**
+         * Autofocus the component on mount?
+         */
         autofocus: PropTypes.bool,
+        /**
+         * Title for the "clear" control when multi is true
+         */
         clearAllText: PropTypes.string,
+        /**
+         * Title for the "clear" control
+         */
         clearValueText: PropTypes.string,
+        /**
+         * Placeholder that is displayed when there's no value
+         */
         placeholder: PropTypes.string,
+        /**
+         * Prompt for the search input
+         */
         searchingText: PropTypes.string,
+        /**
+         * Placeholder that is displayed when there are no matching search results or a falsy value to hide it (can also be a react component)
+         */
         noResultsText: PropTypes.string,
+        /**
+         * Prompt shown in input when at least one option in a multiselect is shown, set to '' to clear
+         */
         backspaceToRemoveMessage: PropTypes.string
     };
 

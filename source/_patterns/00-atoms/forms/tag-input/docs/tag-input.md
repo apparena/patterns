@@ -1,6 +1,3 @@
-Tag Input
----
-
 The 'Tag Input' component behaves almost exactly like the 'Select Menu' component,
 thus it is [advised to get familiar with it first](/#/SelectMenu).
 

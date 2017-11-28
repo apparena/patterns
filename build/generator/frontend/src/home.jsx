@@ -1,57 +1,68 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router';
 import * as components from './components/index';
 import componentsList from './components/list.json';
 import cloneDeep from 'lodash/cloneDeep';
-import {Card, Col, Container, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from 'apparena-patterns-react';
+import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from 'apparena-patterns-react';
 import styles from './styles/home.scss';
+import {Route, Link} from 'react-router-dom';
+import {AnimatedSwitch} from "react-router-transition"
+import staticPages from './staticPages';
+
+const transitionStyles = {
+    atEnter: {
+        opacity: .25,
+        x: 1,
+        position: 1,
+    },
+    atLeave: {
+        opacity: .25,
+        x: 1,
+        position: 1,
+    },
+    atActive: {
+        opacity: 1,
+        x: 0,
+        position: 0,
+    }
+};
+
+function mapStyles(styles) {
+    return {
+        opacity: styles.opacity,
+        transform: `translateX(${styles.x * 1000}px)`,
+        position: styles.position === 0 ? 'relative' : 'absolute',
+        width: '100%'
+    };
+}
 
 export default class Home extends ReactComponent {
     static propTypes = {
-        location: PropTypes.object
+        history: PropTypes.object,
+        location: PropTypes.object,
+        match: PropTypes.object,
     };
 
     getInitState() {
         const categories = componentsList;
         this.backupCategories = categories;
-        return {
-            active: '',
-            currentComponent: undefined,
-            searchQuery: '',
-            categories
-        };
-    }
-
-    componentWillMount() {
-        if (this.props.params.component) {
-            this.setState({
-                active: this.props.params.component,
-                currentComponent: components[this.props.params.component]
-            });
-        }
-    }
-
-    componentWillReceiveProps(nextProps, nextContext) {
-        if (nextProps.params && nextProps.params.component) {
-            this.setState({
-                active: nextProps.params.component,
-                currentComponent: components[nextProps.params.component]
-            });
-        } else if (nextProps.route && nextProps.route.path === '/') {
-            this.setState({
-                active: '',
-                currentComponent: undefined
-            });
-        }
-    }
-
-    toggleVisibility(index) {
-        const state = this.state;
-        state.categories[index].visible = !state.categories[index].visible;
-        this.setState({
-            state
+        const minimizedCategories = categories.map((_) => {
+            return true;
         });
+        minimizedCategories[-1] = true;
+
+        const hiddenStaticPages = {};
+        staticPages.forEach((page) => {
+            hiddenStaticPages[page.name] = false;
+        });
+        this.backupHiddenStaticPages = hiddenStaticPages;
+
+        return {
+            searchQuery: '',
+            categories,
+            minimizedCategories,
+            hiddenStaticPages,
+        };
     }
 
     search(e) {
@@ -60,6 +71,8 @@ export default class Home extends ReactComponent {
         }, () => {
             if (this.state.searchQuery !== '') {
                 const categories = cloneDeep(this.backupCategories);
+                const hiddenStaticPages = cloneDeep(this.backupHiddenStaticPages);
+
                 Object.keys(categories).forEach((cat) => {
                     categories[cat].componentList = categories[cat].componentList.filter((comp) => {
                         return comp.toLowerCase().includes(this.state.searchQuery.toLowerCase());
@@ -68,31 +81,64 @@ export default class Home extends ReactComponent {
                     categories[cat].visible = categories[cat].componentList.length !== 0;
                 });
 
+                staticPages.forEach((page) => {
+                    if (!page.name.toLowerCase().includes(this.state.searchQuery.toLowerCase())) {
+                        hiddenStaticPages[page.name] = true;
+                    } else {
+                        hiddenStaticPages[page.name] = false;
+                    }
+                });
+
                 this.setState({
-                    categories
+                    categories,
+                    hiddenStaticPages
                 });
             } else {
                 this.setState({
-                    categories: this.backupCategories
+                    categories: this.backupCategories,
+                    hiddenStaticPages: this.backupHiddenStaticPages,
                 });
             }
         });
     }
 
+    toggleCategory(index) {
+        const minimizedCategories = this.state.minimizedCategories;
+        minimizedCategories[index] = !minimizedCategories[index];
+
+        this.setState({
+            minimizedCategories
+        });
+    }
+
+    scrollToTop() {
+        window.scrollBy({
+            top: -2000,
+            behavior: 'smooth'
+        });
+    }
+
     renderCategories(category, index) {
-        return (
-            <NavSecondaryGroup title={category.name} key={index} onClick={this.toggleVisibility.bind(this, index)}>
-                <Nav pills stacked vertical>
-                    {category.componentList.map((component, i) => {
-                        return (
-                            <NavItem key={i} active={this.state.active === component}>
-                                <Link to={`/${component}`}>{component}</Link>
-                            </NavItem>
-                        );
-                    })}
-                </Nav>
-            </NavSecondaryGroup>
-        );
+        if (category.visible) {
+            return (
+                <NavSecondaryGroup
+                    title={category.name}
+                    key={index}
+                    onClick={this.toggleCategory.bind(this, index)}
+                    className={styles.categoryNavTitle}
+                >
+                    <Nav pills stacked vertical>
+                        {this.state.minimizedCategories[index] === true ? category.componentList.map((component, i) => {
+                            return (
+                                <NavItem key={i} active={this.props.location.pathname.split('/')[1] === component}>
+                                    <Link to={`/${component}`} onClick={::this.scrollToTop}>{component}</Link>
+                                </NavItem>
+                            );
+                        }) : null}
+                    </Nav>
+                </NavSecondaryGroup>
+            );
+        }
     }
 
     renderTable(category, index) {
@@ -131,6 +177,52 @@ export default class Home extends ReactComponent {
         );
     }
 
+    renderContentContainer() {
+        return (
+            <Card>
+                <div type="card-header">
+                    Components
+                </div>
+                <div type="card-body">
+                    <p>
+                        These React components will help you build App-Arena applications
+                        and
+                        add-ons.
+                    </p>
+                    {this.state.categories.map(this.renderTable)}
+                </div>
+            </Card>
+        );
+    }
+
+    renderStaticPageLinks() {
+        if (!Object.keys(this.state.hiddenStaticPages).reduce((a, b) => {
+                return a & this.state.hiddenStaticPages[b] === true;
+            }, true)) {
+            return (
+                <NavSecondaryGroup
+                    title="Pages"
+                    onClick={this.toggleCategory.bind(this, -1)}
+                    className={styles.categoryNavTitle}
+                >
+                    <Nav pills stacked vertical>
+                        {this.state.minimizedCategories[-1] === true ? staticPages.map((page, i) => {
+                            if (!this.state.hiddenStaticPages[page.name]) {
+                                return (
+                                    <NavItem key={i} active={this.props.location.pathname.split('/')[1] === page.name}>
+                                        <Link to={page.route} onClick={::this.scrollToTop}>{page.name}</Link>
+                                    </NavItem>
+                                );
+                            }
+
+                            return null
+                        }) : null}
+                    </Nav>
+                </NavSecondaryGroup>
+            );
+        }
+    }
+
     render() {
         return (
             <div className={styles.root}>
@@ -155,7 +247,7 @@ export default class Home extends ReactComponent {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs="2">
+                    <Col lg="3" sm="4" xs="5">
                         <div className={styles.sidebar}>
                             <div className={styles.searchBox}>
                                 <FormGroup label={'Suchen'}>
@@ -166,30 +258,27 @@ export default class Home extends ReactComponent {
                                     />
                                 </FormGroup>
                             </div>
+                            {this.renderStaticPageLinks()}
                             {this.state.categories.map(::this.renderCategories)}
                         </div>
                     </Col>
-                    <Container className={styles.container}>
-                        <Row>
-                            <Col xs="12">
-                                {this.state.currentComponent !== undefined ? <this.state.currentComponent/> : (
-                                    <Card>
-                                        <div type="card-header">
-                                            Components
-                                        </div>
-                                        <div type="card-body">
-                                            <p>
-                                                These React components will help you build App-Arena applications
-                                                and
-                                                add-ons.
-                                            </p>
-                                            {this.state.categories.map(this.renderTable)}
-                                        </div>
-                                    </Card>
-                                )}
-                            </Col>
-                        </Row>
-                    </Container>
+                    <Col lg="9" sm="8" xs="7" className={styles.container}>
+                        <AnimatedSwitch
+                            atEnter={transitionStyles.atEnter}
+                            atLeave={transitionStyles.atLeave}
+                            atActive={transitionStyles.atActive}
+                            mapStyles={mapStyles}
+                        >
+                            {Object.keys(components).map((component, i) => {
+                                return <Route exact path={`/${component}`} component={components[component]} key={component + i}/>
+                            })}
+                            {staticPages.map((page, i) => {
+                                return <Route exact path={`/${page.route}`} component={page.component} key={page.route + i} />
+                            })}
+                        </AnimatedSwitch>
+
+                        {this.props.location.pathname === '/' ? this.renderContentContainer() : null}
+                    </Col>
                 </Row>
             </div>
         );

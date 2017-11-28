@@ -5,7 +5,13 @@ import cx from 'classnames';
 
 export default class ListGroup extends ReactComponent {
     static propTypes = {
+        /**
+         * Additional classNames for the list-group
+         */
         classNames: PropTypes.string,
+        /**
+         * An array of items to display as list items
+         */
         listItems: PropTypes.array.isRequired
     };
 

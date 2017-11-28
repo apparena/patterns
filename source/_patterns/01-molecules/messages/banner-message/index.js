@@ -14,9 +14,21 @@ const ALERT_TYPES = [
 
 export default class Alert extends ReactComponent {
     static propTypes = {
+        /**
+         * Content of the banner message
+         */
         children: PropTypes.node.isRequired,
+        /**
+         * Sets the default styling of the banner message
+         */
         type: PropTypes.oneOf(ALERT_TYPES).isRequired,
+        /**
+         * Additional classNames for the banner
+         */
         className: PropTypes.string,
+        /**
+         * Which icon to display in the center of the banner
+         */
         icon: PropTypes.string.isRequired
     };
 

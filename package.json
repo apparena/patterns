@@ -1,6 +1,6 @@
 {
   "name": "apparena-patterns",
-  "version": "1.2.19",
+  "version": "1.2.20",
   "license": "MIT",
   "description": "Styleguide and patterns of App-Arena.com",
   "keywords": [
@@ -63,7 +63,7 @@
     "react-dom": "^16.0.0",
     "react-draggable": "^2.2.2",
     "react-gemini-scrollbar": "^2.1.5",
-    "react-router": "^3.2.0",
+    "react-router-dom": "^4.2.2",
     "react-select": "^1.0.0-rc.2",
     "react-syntax-highlighter": "^6.0.4",
     "react-toggle": "4.0.2"

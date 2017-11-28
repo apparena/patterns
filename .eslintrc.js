@@ -182,7 +182,7 @@ module.exports = {
         'react/jsx-curly-spacing': WARNING,
         'react/jsx-boolean-value': WARNING,
         'react/self-closing-comp': WARNING,
-        'react/wrap-multilines': WARNING,
+        'react/jsx-wrap-multilines': WARNING,
         'react/no-multi-comp': WARNING,
         'react/prefer-es6-class': WARNING,
         'react/prefer-stateless-function': WARNING,

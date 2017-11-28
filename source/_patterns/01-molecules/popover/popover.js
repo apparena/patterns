@@ -35,13 +35,37 @@ const TYPE = [
 
 export default class PopOver extends ReactComponent {
     static propTypes = {
+        /**
+         * Content that can trigger the popover on click
+         */
         children: PropTypes.element.isRequired,
+        /**
+         * Additional classNames
+         */
         className: PropTypes.string,
+        /**
+         * Heading of the popover
+         */
         title: PropTypes.string,
+        /**
+         * Contents within the popover
+         */
         content: PropTypes.element,
+        /**
+         * Should the popover be open by default?
+         */
         open: PropTypes.bool,
+        /**
+         * Sets the position of the popover
+         */
         positioning: PropTypes.oneOf(POSITIONING),
+        /**
+         * Color scheme of the popover
+         */
         type: PropTypes.oneOf(TYPE),
+        /**
+         * Set the HTML zIndex property
+         */
         zIndex: PropTypes.number
     };
 

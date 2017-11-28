@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactComponent from '../../../react-utils/component';
-import Notification from './index';
+import Notification from '../notification';
 import styles from './index.scss';
 
 export default class NotificationContainer extends ReactComponent {
     static propTypes = {
+        /**
+         * An array of notifications
+         */
         notifications: PropTypes.array.isRequired
     };
 

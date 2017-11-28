@@ -6,11 +6,29 @@ import styles from '../navs.scss';
 
 export default class Nav extends ReactComponent {
     static propTypes = {
+        /**
+         * Content of the navigation
+         */
         children: PropTypes.node.isRequired,
+        /**
+         * Display the navigation inline?
+         */
         inline: PropTypes.bool,
+        /**
+         * Display the navigation tabbed?
+         */
         tabs: PropTypes.bool,
+        /**
+         * Display the navigation as pills?
+         */
         pills: PropTypes.bool,
+        /**
+         * Deprecated
+         */
         stacked: PropTypes.bool,
+        /**
+         * Display the navigation vertically?
+         */
         vertical: PropTypes.bool
     };
 

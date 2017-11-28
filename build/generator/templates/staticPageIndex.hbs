@@ -1,0 +1,9 @@
+{{#imports}}
+import {{component}} from './{{component}}';
+{{/imports}}
+
+export default [
+{{#exports}}
+    {route: '{{route}}', component: {{component}}, name: '{{name}}'},
+{{/exports}}
+];

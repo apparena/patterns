@@ -15,8 +15,17 @@ const TAG_TYPES = [
 
 export default class Tag extends ReactComponent {
     static propTypes = {
+        /**
+         * Additional classNames for the tag
+         */
         className: PropTypes.string,
+        /**
+         * Determines the default styling of the tag
+         */
         type: PropTypes.oneOf(TAG_TYPES),
+        /**
+         * Should the tag be displayed as a pill rather than a rectangle?
+         */
         pill: PropTypes.bool
     };
     static defaultProps = {

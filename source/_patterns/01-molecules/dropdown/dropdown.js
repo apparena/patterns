@@ -10,16 +10,49 @@ const NO_OP = () => undefined;
 
 export default class Dropdown extends ReactComponent {
     static propTypes = {
+        /**
+         * Determines on which side the dropdown menu is shown
+         */
         align: PropTypes.oneOf(['left', 'right']),
+        /**
+         * Label to show when no children are present
+         */
         buttonLabel: PropTypes.string,
+        /**
+         * Determines the size of the button that's shown when no children are present. See the button documentation for valid sizes
+         */
         buttonSize: PropTypes.string,
+        /**
+         * Sets the default styling of the button. See the button documentation for valid
+         */
         buttonType: PropTypes.string,
+        /**
+         * Child elements to render instead of a button. The previous 'button-' props have no effect when there are children
+         */
         children: PropTypes.node,
+        /**
+         * Additional classNames
+         */
         className: PropTypes.string,
+        /**
+         * Open the dropdown by default?
+         */
         isOpen: PropTypes.bool,
+        /**
+         * Show a dropdown arrow?
+         */
         arrow: PropTypes.bool,
+        /**
+         * Open the dropdown upwards instead of downwards?
+         */
         dropup: PropTypes.bool,
+        /**
+         * The selectable items
+         */
         items: PropTypes.node.isRequired,
+        /**
+         * Function that's executed whenever an item is selected
+         */
         onSelect: PropTypes.func
     };
 

@@ -2,15 +2,19 @@ import test from 'ava';
 import React from 'react';
 import {mount, configure} from 'enzyme';
 import {expect} from 'chai';
-import {hashHistory, Router} from 'react-router';
-import routes from '../frontend/src/routes';
+import {HashRouter, Route} from "react-router-dom";
+import Home from "../frontend/src/home";
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
 test('main frontend is rendered correctly', (t) => {
     const home = mount(
-        <Router history={hashHistory} routes={routes}/>
+        <HashRouter>
+            <div>
+                <Route path="/" component={Home}/>
+            </div>
+        </HashRouter>
     );
 
     expect(home.find("input#searchInput")).to.have.length(1);
@@ -23,7 +27,11 @@ test('main frontend is rendered correctly', (t) => {
 
 test('search finds correct results when there are some', (t) => {
     const home = mount(
-        <Router history={hashHistory} routes={routes}/>
+        <HashRouter>
+            <div>
+                <Route path="/" component={Home}/>
+            </div>
+        </HashRouter>
     );
 
     expect(home.find("input#searchInput")).to.have.length(1);
@@ -40,7 +48,11 @@ test('search finds correct results when there are some', (t) => {
 
 test('search finds no results when there are none', (t) => {
     const home = mount(
-        <Router history={hashHistory} routes={routes}/>
+        <HashRouter>
+            <div>
+                <Route path="/" component={Home}/>
+            </div>
+        </HashRouter>
     );
 
     expect(home.find("input#searchInput")).to.have.length(1);
@@ -52,11 +64,18 @@ test('search finds no results when there are none', (t) => {
 
 test('components are displayed properly', (t) => {
     const home = mount(
-        <Router history={hashHistory} routes={routes} />
+        <HashRouter>
+            <div>
+                <Route path="/" component={Home}/>
+            </div>
+        </HashRouter>
     );
 
-    const buttonListItem = home.find("li > Link > a").at(1);
+    let buttonListItem = home.find("li > Link[to='/Button'] > a");
     buttonListItem.simulate("click", {button: 0});
+    buttonListItem = home.find("li > Link[to='/Col'] > a");
+    buttonListItem.simulate("click", {button: 0});
+
     expect(home.find("Example")).to.have.length(1);
     expect(home.find("ReactMarkdown")).to.have.length(1);
     expect(home.find("Props")).to.have.length(1);

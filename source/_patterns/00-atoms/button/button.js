@@ -46,17 +46,53 @@ const SPINNER_TYPES = {
 
 export default class Button extends ReactComponent {
     static propTypes = {
+        /**
+         * The CSS className for this component
+         */
         className: PropTypes.string,
+        /**
+         * Determines the default styling of the button
+         */
         type: PropTypes.oneOf(BUTTON_TYPES),
+        /**
+         * Sets the size of the button
+         */
         size: PropTypes.oneOf(BUTTON_SIZES),
+        /**
+         * Set the target prop for the <a> tag
+         */
         target: PropTypes.oneOf(['blank', 'top', 'self']),
+        /**
+         * Display the button as a block?
+         */
         block: PropTypes.bool,
+        /**
+         * Use rounded edges for the button?
+         */
         rounded: PropTypes.bool,
+        /**
+         * URL to redirect to on click. Will render a <a> tag instead of a <button> tag.
+         */
         href: PropTypes.string,
+        /**
+         * Set the button as active?
+         */
         isActive: PropTypes.bool,
+        /**
+         * Should the button be disabled?
+         */
         isDisabled: PropTypes.bool,
+        /**
+         * Function that's executed when someone clicks the button
+         */
         onClick: PropTypes.func,
+        /**
+         * Should the button be a submit button instead?
+         */
         submit: PropTypes.bool,
+        /**
+         * Sets the state of the button.
+         */
         state: PropTypes.oneOf(BUTTON_STATES)
     };
     static defaultProps = {

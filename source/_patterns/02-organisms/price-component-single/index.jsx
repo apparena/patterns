@@ -9,14 +9,32 @@ import Slider from '../../00-atoms/slider/slider';
 
 export default class PriceComponentSingle extends ReactComponent {
     static propTypes = {
+        /**
+         * Set the App-Manager template ID
+         */
         templateId: PropTypes.string,
+        /**
+         * Set the App-Manager product ID
+         */
         productId: PropTypes.string,
+        /**
+         * Define an onClick handler as either a custom function or an URL
+         */
         onClick: PropTypes.oneOfType([
             PropTypes.string,
             PropTypes.func
         ]).isRequired,
+        /**
+         * The text that's shown above the slider
+         */
         hoursPrompt: PropTypes.string,
+        /**
+         * The header of the component
+         */
         header: PropTypes.string,
+        /**
+         * Sets the price for one slider step (see the example code if you want to know how)
+         */
         articles: PropTypes.array
     };
 

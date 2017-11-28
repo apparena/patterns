@@ -17,15 +17,45 @@ const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
 export default class ProgressBar extends ReactComponent {
     static propTypes = {
+        /**
+         * Additional classNames
+         */
         classNames: PropTypes.string,
+        /**
+         * The current progress
+         */
         value: PropTypes.number.isRequired,
+        /**
+         * Display the progress bar striped instead of solid?
+         */
         striped: PropTypes.bool,
+        /**
+         * Display the progress bar as a circle instead?
+         */
         circle: PropTypes.bool,
+        /**
+         * Animate the stripes?
+         */
         animated: PropTypes.bool,
+        /**
+         * The maximum possible value for the 'value' prop
+         */
         maxValue: PropTypes.number.isRequired,
+        /**
+         * Deprecated
+         */
         minWidth: PropTypes.number.isRequired,
+        /**
+         * A text that can be displayed above the progress bar
+         */
         text: PropTypes.string,
+        /**
+         * Set the type and color scheme of the progress bar
+         */
         type: PropTypes.oneOf(PROGRESS_TYPES).isRequired,
+        /**
+         * Set the HTML ID of the text prop
+         */
         captionID: PropTypes.string
     };
 
