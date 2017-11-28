@@ -247,7 +247,7 @@ export default class Home extends ReactComponent {
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg="3" sm="4" xs="5" id="sidebar-menu">
+                    <Col lg="3" sm="4" xs="5">
                         <div className={styles.sidebar}>
                             <div className={styles.searchBox}>
                                 <FormGroup label={'Suchen'}>
