@@ -105,6 +105,7 @@ export default class SelectMenu extends ReactComponent {
                         backspaceToRemoveMessage={this.props.backspaceToRemoveMessage}
                         noResultsText={this.props.noResultsText}
                         disabled={this.props.disabled}
+                        {...this.props}
                     />
                 </div>
             );
@@ -128,6 +129,7 @@ export default class SelectMenu extends ReactComponent {
                     backspaceToRemoveMessage={this.props.backspaceToRemoveMessage}
                     noResultsText={this.props.noResultsText}
                     disabled={this.props.disabled}
+                    {...this.props}
                 />
             </div>
         );
