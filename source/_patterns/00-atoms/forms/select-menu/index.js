@@ -86,50 +86,55 @@ export default class SelectMenu extends ReactComponent {
     };
 
     render() {
-        if (this.props.creatable) {
+        const {creatable, name, id, defaultValue, options, onChange, multi, clearable, autoBlur, clearAllText,
+            clearValueText, placeholder, searchingText, backspaceToRemoveMessage, noResultsText, disabled, autofocus,
+            ...props} = this.props;
+
+        if (creatable) {
             return (
                 <div className={cx('input-group', styles.select)}>
                     <Select.Creatable
-                        name={this.props.name}
-                        id={this.props.id}
-                        value={this.props.defaultValue}
-                        options={this.props.options}
-                        onChange={this.props.onChange}
-                        multi={this.props.multi}
-                        clearable={this.props.clearable}
-                        autoBlur={this.props.autoBlur}
-                        clearAllText={this.props.clearAllText}
-                        clearValueText={this.props.clearValueText}
-                        placeholder={this.props.placeholder}
-                        searchingText={this.props.searchingText}
-                        backspaceToRemoveMessage={this.props.backspaceToRemoveMessage}
-                        noResultsText={this.props.noResultsText}
-                        disabled={this.props.disabled}
-                        {...this.props}
+                        name={name}
+                        id={id}
+                        value={defaultValue}
+                        options={options}
+                        onChange={onChange}
+                        multi={multi}
+                        clearable={clearable}
+                        autoBlur={autoBlur}
+                        clearAllText={clearAllText}
+                        clearValueText={clearValueText}
+                        placeholder={placeholder}
+                        searchingText={searchingText}
+                        backspaceToRemoveMessage={backspaceToRemoveMessage}
+                        noResultsText={noResultsText}
+                        disabled={disabled}
+                        {...props}
                     />
                 </div>
             );
         }
+
         return (
             <div className={cx('input-group', styles.select)}>
                 <Select
-                    name={this.props.name}
-                    id={this.props.id}
-                    value={this.props.defaultValue}
-                    options={this.props.options}
-                    onChange={this.props.onChange}
-                    multi={this.props.multi}
-                    autofocus={this.props.autofocus}
-                    clearable={this.props.clearable}
-                    autoBlur={this.props.autoBlur}
-                    clearAllText={this.props.clearAllText}
-                    clearValueText={this.props.clearValueText}
-                    placeholder={this.props.placeholder}
-                    searchingText={this.props.searchingText}
-                    backspaceToRemoveMessage={this.props.backspaceToRemoveMessage}
-                    noResultsText={this.props.noResultsText}
-                    disabled={this.props.disabled}
-                    {...this.props}
+                    name={name}
+                    id={id}
+                    value={defaultValue}
+                    options={options}
+                    onChange={onChange}
+                    multi={multi}
+                    autofocus={autofocus}
+                    clearable={clearable}
+                    autoBlur={autoBlur}
+                    clearAllText={clearAllText}
+                    clearValueText={clearValueText}
+                    placeholder={placeholder}
+                    searchingText={searchingText}
+                    backspaceToRemoveMessage={backspaceToRemoveMessage}
+                    noResultsText={noResultsText}
+                    disabled={disabled}
+                    {...props}
                 />
             </div>
         );
