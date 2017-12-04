@@ -1,6 +1,6 @@
 {
   "name": "apparena-patterns",
-  "version": "1.2.21",
+  "version": "1.2.22",
   "license": "MIT",
   "description": "Styleguide and patterns of App-Arena.com",
   "keywords": [
@@ -42,7 +42,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-polyfill": "^6.16.0",
-    "bootstrap": "^4.0.0-beta",
+    "bootstrap": "4.0.0-beta",
     "classnames": "^2.2.5",
     "clipboard": "^1.6.1",
     "copy-webpack-plugin": "^4.0.1",
