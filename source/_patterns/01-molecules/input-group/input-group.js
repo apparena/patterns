@@ -6,7 +6,7 @@ import styles from './input-group.scss';
 function InputGroup({className, children, addon, addonPosition, id, ...props}) {
     props.className = cx(styles['input-group'], className);
 
-    if (addonPosition === undefined || addonPosition === 'left') {
+    if (addonPosition === 'left') {
         return (
             <div {...props} >
                 <span className={styles['input-group-addon']} id={id}>{addon}</span>
@@ -34,6 +34,10 @@ InputGroup.propTypes = {
     addon: PropTypes.node,
     addonPosition: PropTypes.oneOf(ADDON_POSITIONS),
     id: PropTypes.string
+};
+
+InputGroup.defaultProps = {
+    addonPosition: 'left'
 };
 
 export default InputGroup;
