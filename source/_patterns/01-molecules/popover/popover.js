@@ -123,7 +123,7 @@ export default class PopOver extends ReactComponent {
 
     render() {
         const {className} = this.props;
-        return (
+        return [
             <div
                 className={className || styles.root}
                 onClick={::this.toggleTooltip}
@@ -132,8 +132,8 @@ export default class PopOver extends ReactComponent {
                 }}
             >
                 {this.props.children}
-                {this.renderPopOver()}
-            </div>
-        );
+            </div>,
+            this.renderPopOver()
+        ];
     }
 }
