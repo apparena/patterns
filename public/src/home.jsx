@@ -72,7 +72,11 @@ export default class Home extends ReactComponent {
             return staticPage.route === props.location.pathname.slice(1);
         });
 
-        if (match.length === 1 && this.state.currentStaticPage === false) {
+        if (match.length === 1 && match[0].page !== this.state.currentStaticPage.page) {
+            this.setState({
+                currentStaticPage: match[0]
+            });
+        } else if (match.length === 1 && this.state.currentStaticPage === false) {
             this.setState({
                 currentStaticPage: match[0]
             });
@@ -163,7 +167,7 @@ export default class Home extends ReactComponent {
                                     <Link to={`/${component}`} onClick={::this.scrollToTop}>{component}</Link>
                                 </NavItem>
                             );
-                        }) : null}
+                        }) : []}
                     </Nav>
                 </NavSecondaryGroup>
             );
@@ -172,7 +176,7 @@ export default class Home extends ReactComponent {
 
     renderTable(category, index) {
         return (
-            <div>
+            <div key={index}>
                 <h3>{category.name}</h3>
                 <Table hover key={index}>
                     <thead>
@@ -267,15 +271,17 @@ export default class Home extends ReactComponent {
                 <Row>
                     <Col lg="3" sm="4" xs="5">
                         <div className={styles.sidebar}>
-                            <div className={styles.searchBox}>
-                                <FormGroup label={'Suchen'}>
-                                    <Input
-                                        id="searchInput"
-                                        onChange={::this.search}
-                                        defaultValue={this.state.searchQuery}
-                                    />
-                                </FormGroup>
-                            </div>
+                            {!this.state.currentStaticPage && (
+                                <div className={styles.searchBox}>
+                                    <FormGroup label={'Suchen'}>
+                                        <Input
+                                            id="searchInput"
+                                            onChange={::this.search}
+                                            defaultValue={this.state.searchQuery}
+                                        />
+                                    </FormGroup>
+                                </div>
+                            )}
                             {this.state.currentStaticPage === false && this.state.categories.map(::this.renderCategories)}
                             {this.state.currentStaticPage !== false && this.renderStaticPageSidebar()}
                         </div>
