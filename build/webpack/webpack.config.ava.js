@@ -11,10 +11,13 @@ module.exports = {
         extensions: ['.js', '.jsx', '.es6'],
         modules: [
             'node_modules',
-            path.resolve(__dirname, '../generator/frontend/src'),
-            path.resolve(__dirname, '../generator/frontend/node_modules'),
+            path.resolve(__dirname, '../../public/src'),
         ],
-        enforceExtension: false
+        enforceExtension: false,
+        alias: {
+            "apparena-patterns-react$": path.resolve(__dirname, '../../source/patterns/index.js'),
+            "apparena-patterns-react": path.resolve(__dirname, '../../source/')
+        }
     },
     module: {
         rules: [

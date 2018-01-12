@@ -1,12 +1,33 @@
 const webpack = require('webpack');
-const WebpackDevServer = require('webpack-dev-server');
+const webpackMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
 const config = require('./webpack.config.dev');
+const app = require('express')();
+const path = require('path');
 
-new WebpackDevServer(webpack(config), {
+const compiler = webpack(config);
+const middleware = webpackMiddleware(compiler, {
     publicPath: config.output.publicPath,
     hot: true,
-    historyApiFallback: true
-}).listen(3001, 'localhost', (err, result) => {
+    historyApiFallback: true,
+});
+
+app.use(middleware);
+app.use(webpackHotMiddleware(compiler));
+
+app.get("/src/*", (req, res) => {
+    const opt = {
+        root: path.resolve(__dirname, '../..', 'public/src')
+    };
+
+    res.sendFile(req.params['0'], opt);
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../..', 'public/index_dev.html'));
+});
+
+app.listen(3001, 'localhost', (err, result) => {
     if (err) {
         return console.log(err);
     }

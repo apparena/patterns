@@ -10,6 +10,7 @@ module.exports = {
         'babel-plugin-syntax-trailing-function-commas',
         'babel-plugin-transform-class-properties',
         'babel-plugin-transform-object-rest-spread',
-        'babel-plugin-transform-decorators-legacy'
+        'babel-plugin-transform-decorators-legacy',
+        'react-hot-loader/babel'
     ].map(require.resolve)
 };

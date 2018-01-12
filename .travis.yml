@@ -4,18 +4,18 @@ cache:
   directories:
     - node_modules
 node_js:
-  - 8
+  - 9
 sudo: false
 before_install:
-  - chmod +x build/scripts/install-travis-dependencies.sh
   - pip install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
 install:
-  - ./build/scripts/install-travis-dependencies.sh
+  - yarn
+  - yarn build:frontend:prod
 before_script:
   - chmod +x build/scripts/run-travis-tests.sh
 script:
-  - if [ "$TRAVIS_BRANCH" = "develop" ]; then ./build/scripts/run-travis-tests.sh; fi
+  - if [ "$TRAVIS_BRANCH" != "master" ]; then ./build/scripts/run-travis-tests.sh; fi
 before_deploy:
   - chmod +x build/scripts/travis-deployment.sh
   - chmod +x build/scripts/travis-aws-deploy.sh
@@ -29,7 +29,7 @@ deploy:
   bucket: "aa-documentation"
   skip_cleanup: true
   region: eu-central-1
-  local_dir: build/generator/frontend/src
+  local_dir: public
   upload-dir: documentation
   on:
     branch: master

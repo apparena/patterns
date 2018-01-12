@@ -1,4 +1,4 @@
-#[App-Arena Patterns](https://design.app-arena.com/)
+# [App-Arena Patterns](https://components.app-arena.com/)
 
 [![npm package](https://img.shields.io/npm/v/apparena-patterns-react.svg)](https://www.npmjs.org/package/apparena-patterns-react)
 [![PeerDependencies](https://img.shields.io/david/peer/apparena/patterns.svg)](https://david-dm.org/apparena/patterns#info=peerDependencies&view=list)
@@ -10,18 +10,18 @@
 
 App-Arena Patterns is a set of [React](http://facebook.github.io/react/) components that implement the App-Arena CI.
 
-Check out our [documentation site](http://design.app-arena.com/) for live examples.
+Check out our [documentation site](http://components.app-arena.com/) for live examples.
 It's still a work in progress, but hopefully you can see where we're headed.
 
 **Recently Updated?** Please read the [changelog](https://github.com/apparena/patterns/releases), this README and the documentation before posting an issue.
 
-## Required Knowledge
+## Getting Started
 
 We recommend that you get to know [React](http://facebook.github.io/react/)
 before diving into apparena-patterns-react. App-Arena Patterns is a set of React components,
 so understanding how React fits into web development is important.
 
-## Installation
+### Installation
 
 App-Arena Patterns are available as an [npm package](https://www.npmjs.org/package/apparena-patterns-react).
 
@@ -65,6 +65,19 @@ export default MyAwesomeReactComponent;
 
 Please refer to each component's documentation page to see how they should be imported.
 
+## Pattern documentation
+
+This repository also contains the code for the pattern documentation. You can view
+the documentation at [https://components.app-arena.com/](https://components.app-arena.com/).
+
+### Contributing
+
+If you would like to contribute to the documentation or write documentation
+for a new component please have a look at [our guide to writing documentation!](/docs/WRITING_DOCUMENTATION.md)
+If you want to start hacking away at the frontend, which can be found at [https://components.app-arena.com/](https://components.app-arena.com/),
+please read [our guide to working on the frontend.](/docs/FRONTEND_DEVELOPMENT.md)
+
+
 ## Roadmap
 
 The future plans and high priority features and enhancements can be found
@@ -72,7 +85,7 @@ in the [ROADMAP.md](https://github.com/apparena/patterns/blob/master/ROADMAP.md)
 
 ## Contribute
 
-[App-Arena Patterns](http://design.app-arena.com/) came about from our love of
+[App-Arena Patterns](http://components.app-arena.com/) came about from our love of
 [React](http://facebook.github.io/react/)
 
 ## License

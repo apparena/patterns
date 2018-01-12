@@ -3,53 +3,66 @@ var combineLoaders = require('webpack-combine-loaders');
 var path = require('path');
 var relativePath = '../../';
 var nodeModulesPath = path.resolve(__dirname, relativePath, 'node_modules');
-var buildPath = path.resolve(__dirname, relativePath, 'build/apparena-patterns-react/dist');
+var buildPath = path.resolve(__dirname, relativePath, 'public/dist/hot');
 
 module.exports = {
     devtool: 'source-map',
-    entry: [
-        'webpack-dev-server/client?http://localhost:3001',
-        'webpack/hot/only-dev-server',
-        path.resolve(__dirname, relativePath + 'build/test/', 'component.js')
-    ],
+    entry: {
+        app: [
+            'react-hot-loader/patch',
+            'webpack-hot-middleware/client?name=app',
+            path.resolve(__dirname, relativePath, 'public/src', 'main.jsx')
+        ]
+    },
     output: {
         path: buildPath,
-        publicPath: '/',
-        pathinfo: true,
-        filename: '[name].js'
+        filename: '[name].js',
+        publicPath: '/public'
         // library: 'apparena',
         // libraryTarget: 'umd'
     },
+    devServer: {
+        hot: true,
+        contentBase: buildPath,
+        publicPath: '/public'
+    },
     resolve: {
-        modulesDirectories: ['node_modules'],
-        extensions: ['', '.js', '.jsx'],
-        fallback: path.join(nodeModulesPath)
+        modules: [
+            'node_modules',
+            path.resolve(__dirname, relativePath, 'public/src'),
+            path.join(nodeModulesPath),
+        ],
+        extensions: ['.js', '.jsx'],
+        alias: {
+            "apparena-patterns-react$": path.resolve(__dirname, relativePath, 'source/patterns/index.js'),
+            "apparena-patterns-react": path.resolve(__dirname, relativePath, 'source/')
+        }
     },
     resolveLoader: {
-        modulesDirectories: [
-            nodeModulesPath
-        ],
-        fallback: path.join(nodeModulesPath)
+        modules: [nodeModulesPath, path.join(nodeModulesPath)],
     },
     module: {
-        preLoaders: [
+        rules: [
             {
+                enforce: 'pre',
                 test: /\.(js|jsx)$/,
-                loader: 'eslint'
-            }
-        ],
-        loaders: [
+                loader: 'eslint-loader',
+                options: {
+                    configFile: path.join(__dirname, 'eslint.js'),
+                    useEslintrc: false
+                }
+            },
             {
                 test: /\.less$/,
-                loader: 'style!css!less'
+                loader: 'style-loader!css!less'
             },
             {
                 test: /\.scss$/,
                 loaders: [
-                    'style',
-                    'css?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]&camelCase&sourceMap',
-                    'resolve-url',
-                    'sass?sourceMap'
+                    'style-loader',
+                    'css-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]&camelCase&sourceMap',
+                    'resolve-url-loader',
+                    'sass-loader?sourceMap'
                 ]
             },
             {
@@ -58,40 +71,29 @@ module.exports = {
             },
             {
                 test: /\.(js|jsx)$/,
-                loader: combineLoaders([
+                exclude: [nodeModulesPath],
+                use: [
                     {
-                        loader: 'react-hot'
-                    },
-                    {
-                        loader: 'babel',
-                        query: require('./babel.dev')
+                        loader: 'babel-loader',
+                        options: require('./babel.dev')
                     }
-                ]),
-                exclude: [nodeModulesPath]
-            },
-            {
-                test: /\.json$/,
-                loader: 'json'
+                ],
             },
             {
                 test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
-                loader: 'file'
+                loader: 'file-loader'
             },
             {
                 test: /\.(mp4|webm)$/,
-                loader: 'url?limit=10000'
+                loader: 'url-loader?limit=10000'
             }
         ]
     },
-    eslint: {
-        configFile: path.join(__dirname, 'eslint.js'),
-        useEslintrc: false
-    },
     plugins: [
+        new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(),
-        new webpack.DefinePlugin({'process.env.NODE_ENV': '"development"'}),
         // new webpack.optimize.CommonsChunkPlugin('vendors', 'shared/vendors.js'),
         // Note: only CSS is currently hot reloaded
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.DefinePlugin({'process.env.NODE_ENV': '"development"'})
     ]
 };

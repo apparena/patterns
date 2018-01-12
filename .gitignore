@@ -1,32 +1,9 @@
 .DS_Store
 export/*
-# public/*
-source/styleguide/*
-/public/patterns/
-/public/js/vendor/
-/public/css/
-/public/fonts/
-/public/images/
-/public/js/
-/public/annotations/
-/public/styleguide/
-/public/latest-change.txt
 
 .idea
 .idea/
 !.idea/codeStyleSettings.xml
-
-### Ignore bower components
-source/js/vendor/
-
-# Created by .ignore support plugin (hsz.mobi)
-### Composer template
-composer.phar
-/vendor/
-
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
 
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
@@ -100,10 +77,11 @@ jspm_packages
 *.css.map
 /source/css/.sass-cache/
 /build/apparena-patterns-react/
-/public/
-dist/
+/public/dist/
 /.github/
 /build/generator/_build/
 artifact.tar.gz
 html2xhtml
-/build/generator/frontend/src/staticPages
+/public/src/staticPages
+
+/public/src/components

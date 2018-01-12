@@ -30,7 +30,7 @@ module.exports = function (grunt) {
             options: {},
             // Runt the icon generator https://github.com/Workshape/icon-font-generator
             icon_generator: {
-                cmd: 'icon-font-generator',
+                cmd: './node_modules/.bin/icon-font-generator',
                 args: [
                     'source/icons/svg/*.svg',
                     '--out=source/fonts',

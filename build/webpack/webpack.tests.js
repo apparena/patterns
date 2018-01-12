@@ -3,7 +3,7 @@ const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const baseDir = path.resolve(__dirname, '../generator/');
+const baseDir = path.resolve(__dirname, '../../');
 
 let extractComponentCSS = new ExtractTextPlugin({
     filename: `styles/[name].css`,
@@ -11,22 +11,24 @@ let extractComponentCSS = new ExtractTextPlugin({
 });
 
 module.exports = {
-    entry: [path.resolve(baseDir, 'tests/tests.js')],
+    entry: [path.resolve(baseDir, 'build/generator/tests/tests.js')],
     target: 'node',
     devtool: '#source-map',
     output: {
-        path: path.resolve(baseDir, '_build'),
+        path: path.resolve(baseDir, 'build/generator/_build'),
         filename: 'test.js'
     },
     resolve: {
         extensions: ['.js', '.jsx', '.es6'],
         modules: [
             'node_modules',
-            path.resolve(__dirname, '../../node_modules'),
-            path.resolve(baseDir, 'frontend/src'),
-            path.resolve(baseDir, 'frontend/node_modules'),
+            path.resolve(baseDir, 'public/src'),
         ],
-        enforceExtension: false
+        enforceExtension: false,
+        alias: {
+            "apparena-patterns-react$": path.resolve(baseDir, 'source/patterns/index.js'),
+            "apparena-patterns-react": path.resolve(baseDir, 'source/')
+        }
     },
     externals: [nodeExternals()],
     module: {
