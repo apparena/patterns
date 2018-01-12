@@ -3,7 +3,7 @@ import React from 'react';
 import {mount, configure} from 'enzyme';
 import {expect} from 'chai';
 import {HashRouter, Route} from "react-router-dom";
-import Home from "../frontend/src/home";
+import Home from "../../../public/src/home";
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
@@ -39,11 +39,14 @@ test('search finds correct results when there are some', (t) => {
     home.find("input#searchInput").simulate("change", {target: {value: "Button"}});
     expect(home.find("input#searchInput").props().value).to.equal("Button");
     expect(home.find("li").length).to.be.at.least(2);
+
+    let liItems = 0;
     home.find("li").forEach((li) => {
-        if (li.children().children().props().children !== 'App-Arena Components') {
-            expect(li.children().children().props().children).to.match(/[bB]utton/);
+        if (li.children().children().props().children.match(/[bB]utton/) !== null) {
+            liItems++;
         }
     });
+    expect(liItems).to.be.at.least(1);
 });
 
 test('search finds no results when there are none', (t) => {

@@ -23,12 +23,12 @@ test('getBaseName works as expected', (t) => {
 
 test('category initialization works', (t) => {
     const categories = {};
-    glob.sync("source/_patterns/!(react-utils|corporate-identity)/")
+    glob.sync("source/patterns/!(react-utils|corporate-identity)/")
         .map((cf) => {return cf.split("/").slice(-2)[0]})
         .forEach((cf) => {categories[cf] = {visible: true, components: []}});
 
     /**
-     * Look at source/_patterns to check which folders should be here
+     * Look at source/patterns to check which folders should be here
      */
     const comparator = {
         '00-atoms': { visible: true, components: [] },
@@ -42,7 +42,7 @@ test('category initialization works', (t) => {
 });
 
 test('Generator ignores subdirectories without documentation', (t) => {
-    const files = glob.sync('source/_patterns/*/**/!(__tests__|docs)/*.?(js|jsx)');
+    const files = glob.sync('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)');
 
     const componentDirectories = [], excludedDirectories = [];
 
@@ -60,7 +60,7 @@ test('Generator ignores subdirectories without documentation', (t) => {
     });
 
     const actualDirectories = componentDirectories.filter((dir) => !excludedDirectories.includes(dir));
-    const docDirs = glob.sync('source/_patterns/**/docs');
+    const docDirs = glob.sync('source/patterns/**/docs');
     let matches = 0;
 
     docDirs.forEach((dir) => {
@@ -76,10 +76,10 @@ test('Generator ignores subdirectories without documentation', (t) => {
 });
 
 test('Generator does not include non-exported components', (t) => {
-    const files = glob.sync('source/_patterns/**/!(__tests__|docs)/*.?(js|jsx)');
+    const files = glob.sync('source/patterns/**/!(__tests__|docs)/*.?(js|jsx)');
     const componentDirectories = [];
     const actualComponentDirs = [];
-    const exportedComponents = fse.readFileSync('source/_patterns/index.js', 'utf8');
+    const exportedComponents = fse.readFileSync('source/patterns/index.js', 'utf8');
 
     files.forEach((file) => {
         const dir = path.dirname(file);
@@ -101,9 +101,9 @@ test('Generator does not include non-exported components', (t) => {
 });
 
 test('Generator generates proper documentation', (t) => {
-    const files = glob.sync('source/_patterns/**/!(__tests__|docs)/*.?(js|jsx)');
+    const files = glob.sync('source/patterns/**/!(__tests__|docs)/*.?(js|jsx)');
     const componentDirectories = [];
-    const exportedComponents = fse.readFileSync('source/_patterns/index.js', 'utf8');
+    const exportedComponents = fse.readFileSync('source/patterns/index.js', 'utf8');
 
     files.forEach((file) => {
         const dir = path.dirname(file);

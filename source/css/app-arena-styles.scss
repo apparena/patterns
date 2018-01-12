@@ -55,33 +55,33 @@
 \*------------------------------------*/
 
 // Atoms
-@import "../_patterns/00-atoms/spinner/spinner";
-@import "../_patterns/00-atoms/button/button";
-@import "../_patterns/00-atoms/icons/icons";
+@import "../patterns/00-atoms/spinner/spinner";
+@import "../patterns/00-atoms/button/button";
+@import "../patterns/00-atoms/icons/icons";
 
 // Molecules
-@import "../_patterns/01-molecules/breadcrumb/breadcrumb";
-@import "../_patterns/01-molecules/card/card";
-@import "../_patterns/01-molecules/dropdown/dropdown";
-@import "../_patterns/01-molecules/forms/form-group";
-@import "../_patterns/01-molecules/forms/select";
-@import "../_patterns/01-molecules/input-group/input-group";
-@import "../_patterns/01-molecules/modal/modal";
-@import "../_patterns/01-molecules/navbar/navbar";
-@import "../_patterns/01-molecules/navbar/navbar-form";
-@import "../_patterns/01-molecules/messages/notification/index";
-@import "../_patterns/01-molecules/messages/banner-message/banner-message";
-@import "../_patterns/01-molecules/page-header/page-header";
-@import "../_patterns/01-molecules/progress-tracker/progress-tracker";
-@import "../_patterns/01-molecules/website/usp";
+@import "../patterns/01-molecules/breadcrumb/breadcrumb";
+@import "../patterns/01-molecules/card/card";
+@import "../patterns/01-molecules/dropdown/dropdown";
+@import "../patterns/01-molecules/forms/form-group";
+@import "../patterns/01-molecules/forms/select";
+@import "../patterns/01-molecules/input-group/input-group";
+@import "../patterns/01-molecules/modal/modal";
+@import "../patterns/01-molecules/navbar/navbar";
+@import "../patterns/01-molecules/navbar/navbar-form";
+@import "../patterns/01-molecules/messages/notification/index";
+@import "../patterns/01-molecules/messages/banner-message/banner-message";
+@import "../patterns/01-molecules/page-header/page-header";
+@import "../patterns/01-molecules/progress-tracker/progress-tracker";
+@import "../patterns/01-molecules/website/usp";
 
 // Organisms
-@import "../_patterns/02-organisms/auth/login";
-@import "../_patterns/02-organisms/layout/footer";
-@import "../_patterns/02-organisms/navigation/nav-secondary";
-@import "../_patterns/02-organisms/navigation/nav-sidebar";
-@import "../_patterns/02-organisms/slider/references-slider";
-@import "../_patterns/02-organisms/tabs/vertical-tabs";
+@import "../patterns/02-organisms/auth/login";
+@import "../patterns/02-organisms/layout/footer";
+@import "../patterns/02-organisms/navigation/nav-secondary/nav-secondary";
+@import "../patterns/02-organisms/navigation/nav-sidebar";
+@import "../patterns/02-organisms/slider/references-slider";
+@import "../patterns/02-organisms/tabs/vertical-tabs";
 
 
 /*------------------------------------*\
