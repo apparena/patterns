@@ -11,6 +11,7 @@ before_install:
   - export PATH=$PATH:$HOME/.local/bin
 install:
   - yarn
+  - yarn build:frontend:prod
 before_script:
   - chmod +x build/scripts/run-travis-tests.sh
 script:

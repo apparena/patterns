@@ -17,6 +17,3 @@ else
 fi
 
 cd ${ROOT_DIR}
-
-# build & deploy documentation frontend
-yarn build:frontend:prod
