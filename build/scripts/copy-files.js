@@ -54,7 +54,7 @@ function createPackageFile() {
                 author,
                 version,
                 description,
-                main: './_patterns/index.js',
+                main: './patterns/index.js',
                 keywords,
                 repository,
                 license,
@@ -80,7 +80,7 @@ const files = [
     './source/css',
     './source/fonts',
     'README.md',
-    'CHANGELOG.md',
+    'docs/',
     'LICENSE'
 ];
 

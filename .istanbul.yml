@@ -1,5 +1,5 @@
 instrumentation:
-  root: source/_patterns
+  root: source/patterns
   default-excludes: true
   excludes:
     - "**/*.spec.js"
