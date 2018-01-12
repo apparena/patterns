@@ -219,7 +219,7 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
 
 });
 
-glob('source/pages/**/*.?(js|jsx)', (err, files) => {
+glob('source/pages/**/*.?(js|jsx|scss)', (err, files) => {
     console.log('Creating static pages');
 
     const pages = [];
@@ -251,7 +251,7 @@ glob('source/pages/**/*.?(js|jsx)', (err, files) => {
         const filename = path.basename(file, ext);
         const page = path.basename(path.dirname(file));
 
-        // Ignore non-JavaScript files
+        // Don't process non-JavaScript files
         if (ext === '.js' || ext === '.jsx') {
             // The file is the main page content file
             if (pages.includes(filename)) {
@@ -276,6 +276,10 @@ glob('source/pages/**/*.?(js|jsx)', (err, files) => {
 
             index.imports.push({componentName: camelcase(filename), componentFile: filename, page});
             fse.copySync(file, `public/src/staticPages/${page}/${filename}.jsx`);
+        }
+        // Non-JavaScript files should still be copied to the target directory (for example for custom styling)
+        else {
+            fse.copySync(file, `public/src/staticPages/${page}/${filename}${ext}`);
         }
     });
 

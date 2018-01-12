@@ -9,7 +9,7 @@ ROOT_DIR=$(pwd)
 if [ -n $SEMVER_RELEASE_LEVEL ]; then
     git clone https://github.com/fsaintjacques/semver-tool /tmp/semver &> /dev/null
     SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump $SEMVER_RELEASE_LEVEL $SEMVER_LAST_TAG)
-    npm --no-git-tag-version version ${SEMVER_NEW_TAG}
+    npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
     cd build/apparena-patterns-react
     npm publish
 else
