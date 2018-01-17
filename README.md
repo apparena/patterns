@@ -70,13 +70,30 @@ Please refer to each component's documentation page to see how they should be im
 This repository also contains the code for the pattern documentation. You can view
 the documentation at [https://components.app-arena.com/](https://components.app-arena.com/).
 
-### Contributing
+## Contributing
 
 If you would like to contribute to the documentation or write documentation
 for a new component please have a look at [our guide to writing documentation!](/docs/WRITING_DOCUMENTATION.md)
 If you want to start hacking away at the frontend, which can be found at [https://components.app-arena.com/](https://components.app-arena.com/),
 please read [our guide to working on the frontend.](/docs/FRONTEND_DEVELOPMENT.md)
 
+### Preparing for the pull request
+
+You commits leading up to the pull request should be named properly.
+Each commit should begin with the name of the component that you have worked on
+in square brackets followed by a quick summary of what was done.  
+Example: `[Component] Added documentation`
+
+If you want to have your changes published to NPM as well then you
+should prefix the pull request message with the semver release level
+in square brackets, these are: [major], [minor], or [patch].
+If you add the component name into the message it has to come after
+the semver release level (e.g. "[patch][Component] Added documentation").  
+Omitting the semver release level, or using an invalid one, skips the
+NPM deployment and only updates the documentation.
+
+Always run the tests and the linter prior to opening a pull request and fix
+any issues, errors and warnings that occur.
 
 ## Roadmap
 

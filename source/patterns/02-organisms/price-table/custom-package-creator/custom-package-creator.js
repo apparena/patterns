@@ -42,8 +42,9 @@ export default class CustomPackageCreator extends ReactComponent {
                     switch (article.key) {
                         case 'validity':
                         case 'participants':
-                            if (state[article.key].price === undefined)
+                            if (state[article.key].price === undefined) {
                                 state[article.key].price = article.options[state[article.key].value].price;
+                            }
                             break;
                         case 'languages':
                             if (state[article.key].price === undefined) {
@@ -52,17 +53,24 @@ export default class CustomPackageCreator extends ReactComponent {
                                 } else {
                                     state[article.key].price = state[article.key].value.reduce((a, b) => {
                                         if (a.price) {
-                                            if (a.language === data.defaultLanguage)
+                                            if (a.language === data.defaultLanguage) {
                                                 return b.price;
-                                            else if (b.language === data.defaultLanguage)
+                                            }
+                                            else if (b.language === data.defaultLanguage) {
                                                 return a.price;
-                                            else
+                                            }
+                                            else {
                                                 return a.price + b.price;
+                                            }
                                         }
-                                        else return a + b.price;
+                                        else {
+                                            return a + b.price;
+                                        }
                                     });
                                 }
                             }
+                            break;
+                        default:
                             break;
                     }
 

@@ -35,6 +35,10 @@ const phpSdkDescription = `
 Use this SDK to setup the connection to your App-Manager Project.
 `;
 
+const componentDocsDescription = `
+The App-Arena patterns are a collection of react components built specifically around the App-Arena CI.
+`;
+
 export const title = 'Software documentation';
 
 export default function SoftwareDocs() {
@@ -192,6 +196,29 @@ export default function SoftwareDocs() {
                         />
                         <Button type="outline-primary"
                                 href="https://github.com/apparena/php-sdk"
+                                className={styles.readMoreButton}
+                        >
+                            Read more
+                        </Button>
+                    </Col>
+                </Row>
+            </div>
+        </Card>,
+        <Card key={"8"}>
+            <div type="card-header">
+                App-Arena Patterns
+            </div>
+            <div type="card-body">
+                <Row>
+                    <Col xs="3">
+                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                    </Col>
+                    <Col xs="9">
+                        <Markdown
+                            source={componentDocsDescription}
+                        />
+                        <Button type="outline-primary"
+                                href="https://github.com/apparena/patterns"
                                 className={styles.readMoreButton}
                         >
                             Read more
