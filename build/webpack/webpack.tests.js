@@ -22,7 +22,7 @@ module.exports = {
         extensions: ['.js', '.jsx', '.es6'],
         modules: [
             'node_modules',
-            path.resolve(baseDir, 'public/src'),
+            path.resolve(baseDir, 'source/frontend'),
         ],
         enforceExtension: false,
         alias: {
