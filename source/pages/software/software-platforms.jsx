@@ -19,6 +19,11 @@ const phpSdkDescription = `
 Use this SDK to setup the connection to your App-Manager Project.
 `;
 
+const clientSdkDescription = `
+This libary provides the code to dynamically load customer widgets.  
+The SDK is always loaded via analytics.js App-Arena Integration.
+`;
+
 const componentDocsDescription = `
 The App-Arena patterns are a collection of react components built specifically around the App-Arena CI.
 `;
@@ -88,6 +93,29 @@ export default function SoftwarePlatformDocs() {
                         />
                         <Button type="outline-primary"
                                 href="https://github.com/apparena/php-sdk"
+                                className={styles.readMoreButton}
+                        >
+                            Read more
+                        </Button>
+                    </Col>
+                </Row>
+            </div>
+        </Card>,
+        <Card key={"3"}>
+            <div type="card-header">
+                Client-SDK
+            </div>
+            <div type="card-body">
+                <Row>
+                    <Col xs="3">
+                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                    </Col>
+                    <Col xs="9">
+                        <Markdown
+                            source={clientSdkDescription}
+                        />
+                        <Button type="outline-primary"
+                                href="https://github.com/apparena/client-sdk#readme"
                                 className={styles.readMoreButton}
                         >
                             Read more
