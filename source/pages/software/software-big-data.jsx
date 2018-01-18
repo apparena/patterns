@@ -4,19 +4,19 @@ import styles from './software.scss';
 import Markdown from 'react-markdown';
 
 const analyticsjsDescription = `
-Analytics.js makes it easy to collect customer data and send it to many different tools using a single, unified API.</br>
+Analytics.js makes it easy to collect customer data and send it to many different tools using a single, unified API.  
 This libary allows you to build a analytics.js for our customers, which includes the Analytics.js Core and the Integrations.
 `;
 
 const analyticsIntegrationDescription = `
-AppArena integration for Analytics.js.</br>
-Provides the possibility to send Analytics.js Events (track, page, identify, group, screen) to App-Arena Data Cluster.</br>
+AppArena integration for Analytics.js.  
+Provides the possibility to send Analytics.js Events (track, page, identify, group, screen) to App-Arena Data Cluster.  
 Also loads the JS-Client-SDK for dynamically loading of customer widgets.
 `;
 
 const analyticsCoreDescription = `
-This is the core of Analytics.js, the open-source library that powers data collection at Segment.</br>
-To build this into a full, usable library, see the Analytics.js repository.</br>
+This is the core of Analytics.js, the open-source library that powers data collection at Segment.  
+To build this into a full, usable library, see the Analytics.js repository.  
 (We at App-Arena uses the full Core of Segments Analytics.js without changes.)
 `;
 
@@ -97,7 +97,7 @@ export default function AnalyticsDocs() {
                 </Row>
             </div>
         </Card>,
-        <Card key={"3"}>
+        <Card key={"4"}>
             <div type="card-header">
                 Serverless Cluster Configuration
             </div>

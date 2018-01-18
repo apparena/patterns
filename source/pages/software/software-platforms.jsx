@@ -20,7 +20,7 @@ Use this SDK to setup the connection to your App-Manager Project.
 `;
 
 const clientSdkDescription = `
-This libary provides the code to dynamically load customer widgets.</br>
+This libary provides the code to dynamically load customer widgets.  
 The SDK is always loaded via analytics.js App-Arena Integration.
 `;
 
