@@ -11,7 +11,7 @@ module.exports = {
         app: [
             'react-hot-loader/patch',
             'webpack-hot-middleware/client?name=app',
-            path.resolve(__dirname, relativePath, 'public/src', 'main.jsx')
+            path.resolve(__dirname, relativePath, 'source/frontend', 'main.jsx')
         ]
     },
     output: {
@@ -29,7 +29,7 @@ module.exports = {
     resolve: {
         modules: [
             'node_modules',
-            path.resolve(__dirname, relativePath, 'public/src'),
+            path.resolve(__dirname, relativePath, 'source/frontend'),
             path.join(nodeModulesPath),
         ],
         extensions: ['.js', '.jsx'],

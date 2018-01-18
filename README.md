@@ -72,6 +72,15 @@ the documentation at [https://components.app-arena.com/](https://components.app-
 
 ## Contributing
 
+Before getting started make sure to install the dependencies with
+`npm install` or `yarn`.
+
+To see your changes in the frontend:
+
+* use `npm run build:frontend:dev` (or `npm run build:frontend:watch` if you want a watcher) and open public/index_dev.html in your browser
+* use `npm run start` and open localhost:3001 in your browser
+
+Now you're ready and you can get to work!  
 If you would like to contribute to the documentation or write documentation
 for a new component please have a look at [our guide to writing documentation!](/docs/WRITING_DOCUMENTATION.md)
 If you want to start hacking away at the frontend, which can be found at [https://components.app-arena.com/](https://components.app-arena.com/),
@@ -79,7 +88,7 @@ please read [our guide to working on the frontend.](/docs/FRONTEND_DEVELOPMENT.m
 
 ### Preparing for the pull request
 
-You commits leading up to the pull request should be named properly.
+Your commits leading up to the pull request should be named properly.
 Each commit should begin with the name of the component that you have worked on
 in square brackets followed by a quick summary of what was done.  
 Example: `[Component] Added documentation`
@@ -99,11 +108,6 @@ any issues, errors and warnings that occur.
 
 The future plans and high priority features and enhancements can be found
 in the [ROADMAP.md](https://github.com/apparena/patterns/blob/master/ROADMAP.md) file.
-
-## Contribute
-
-[App-Arena Patterns](http://components.app-arena.com/) came about from our love of
-[React](http://facebook.github.io/react/)
 
 ## License
 This project is licensed under the terms of the

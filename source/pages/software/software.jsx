@@ -50,7 +50,7 @@ export default function SoftwareDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/am-thumb.png" className={styles.imgThumbnail}/>
+                        <img src="assets/am-thumb.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -73,7 +73,7 @@ export default function SoftwareDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/wizard-thumb.png" className={styles.imgThumbnail}/>
+                        <img src="assets/wizard-thumb.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -165,7 +165,7 @@ export default function SoftwareDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/widget.png" className={styles.imgThumbnail}/>
+                        <img src="assets/widget.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -188,7 +188,7 @@ export default function SoftwareDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -211,7 +211,7 @@ export default function SoftwareDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown

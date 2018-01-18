@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import * as components from './components/index';
 import componentsList from './components/list.json';
 import cloneDeep from 'lodash/cloneDeep';
-import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from 'apparena-patterns-react';
+import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from '../patterns';
 import styles from './styles/home.scss';
 import {Route, Link} from 'react-router-dom';
 import {AnimatedSwitch} from "react-router-transition"
-import staticPages from './staticPages';
+import staticPages from '../pages';
 
 const transitionStyles = {
     atEnter: {
@@ -253,7 +253,7 @@ export default class Home extends ReactComponent {
                             <Row>
                                 <Col autoWidth xsAutoContent>
                                     <a className={styles.navbarBrand} href="/">
-                                        <img className={styles.logo} src="src/assets/logo.png" role="presentation"/>
+                                        <img className={styles.logo} src="assets/logo.png" role="presentation"/>
                                     </a>
                                 </Col>
                                 <Col autoWidth>

@@ -81,7 +81,4 @@ jspm_packages
 /.github/
 /build/generator/_build/
 artifact.tar.gz
-html2xhtml
-/public/src/staticPages
-
-/public/src/components
+/source/frontend/components/

@@ -24,7 +24,7 @@ app.get("/src/*", (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../..', 'public/index_dev.html'));
+    res.sendFile(path.resolve(__dirname, '../..', 'public/index_hot.html'));
 });
 
 app.listen(3001, 'localhost', (err, result) => {

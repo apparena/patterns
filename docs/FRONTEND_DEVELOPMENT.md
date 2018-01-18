@@ -1,37 +1,12 @@
-# Before you start
+# Frontend source code
 
-During development make sure to change the paths in the *public/index.html* file to point
-to the development versions of those files. To do that simply rename 'main.min.css' to 'main.css',
-'main.min.js' to 'main.js' and 'shared.min.js' to 'shared.js'. Make sure you do **not** commit these
-changes since the production version has to point to the production files (i.e. those with a '.min.' in their name).
-
-# Development using the built-in server
-
-Use `npm start` to start the server with hot module replacement enabled.
-Visit localhost:3001 in your browser to access the frontend.
-
-### Caveats
-
-When using the development server you can only see your changes if you're working in the *public/* directory.
-If you make changes to a component you have to copy the final code to the correct file in the *source/patterns/* directory.
-
-# Development using your own server
-
-The preferred way of developing is to serve the *index.html* file using your own web server and
-running `npm run build:frontend:dev` or `npm run build:frontend:watch` to see your changes.  
-If you change the documentation of a pattern you have to restart the build/watcher.
-Updating the documentation in another terminal with the watcher still running seems to cause
-an error with webpack.
-
-The *src/main.jsx* file serves as the entry point for the frontend while the file
-*src/home.jsx* contains the actual frontend code.
+The source code for the frontend resides in the *source/frontend/* directory.  
+The heart of the frontend lies within *source/frontend/home.jsx*.  
+Run `npm run build:frontend:dev` again if you add new documentation.
+Changing existing documentation doesn't require a restart for
+`npm run build:frontend:watch` or `npm run start`
 
 # Adding static pages
-
-The frontend mainly acts as a documentation for the existing patterns but it
-can also serve static pages that are defined in the *source/pages/* directory.
-Every static page consists of a folder containing any number of JavaScript files.
-Creating a new static page is really easy, just follow these steps:
 
 1. Create a new folder in the *source/pages/* directory with a name of your choosing
 (The name will not be visible in the frontend but it has to be unique)
@@ -39,11 +14,29 @@ Creating a new static page is really easy, just follow these steps:
 (See the existing example. If you prefix any folder with a dot it will be ignored in the frontend)
 3. Add the necessary content into this main file
 4. Optionally: Add any number of additional JavaScript files that will be accessible via the sidebar.
+5. Insert your new page into the *pages/index.js* file if not present
 
-Re-run the documentation generator to see the changes. You can also run the watcher and
-directly change the page in the *public/src/staticPages/* directory, just don't forget to
-make these changes permanent by copying them back into the source folder, otherwise they'll
-be lost when you generate the documentation again!
+Follow these steps to add a new page into the index.js file:
+
+1. At the top insert a new import statement like so:
+```javascript
+import * as <name of your choosing> from './<page>/<js file>';
+```
+
+1. Add a new block to the exports array:
+```javascript
+{
+    route: '<page>/<js file>',
+    component: <name of your choosing,
+    position: '<position>',
+    page: '<page>'
+}
+```
+
+*Position* can be one of these:
+* `top` The page is visible in the top navbar
+* `sidebar` The page is a sidebar item on <page>
+
 
 ### What's necessary to make a working static page
 
@@ -74,7 +67,7 @@ or like this:
 
 ```javascript
 // Stateful component
-export default class ...
+export default class ... [extends ...]
 ```
 
 Everything else is up to you. It is recommended to read the example files in the *.example* static

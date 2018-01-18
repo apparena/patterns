@@ -99,7 +99,7 @@ export default function SoftwareAppDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/widget.png" className={styles.imgThumbnail}/>
+                        <img src="assets/widget.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown

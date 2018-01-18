@@ -1,9 +1,0 @@
-{{#imports}}
-import * as {{componentName}} from './{{page}}/{{componentFile}}';
-{{/imports}}
-
-export default [
-{{#exports}}
-    {route: '{{route}}', component: {{component}}, name: '{{name}}', position: '{{position}}', page: '{{page}}'},
-{{/exports}}
-];

@@ -6,14 +6,14 @@ import ExampleContainer from "include/example-container";
 import PropsContainer from "include/props-container";
 import TestResult from "include/test-result";
 {{#if exampleFileName}}
-import Example from "./docs/{{ exampleFileName }}";
-import ExampleSrc from "!raw-loader!./docs/{{ exampleFileName }}";
+import Example from "apparena-patterns-react/patterns/{{ patternDir }}/docs/{{ exampleFileName }}";
+import ExampleSrc from "!raw-loader!apparena-patterns-react/patterns/{{ patternDir }}/docs/{{ exampleFileName }}";
 {{/if}}
 {{#if propsFileName}}
-import InfoJson from "./docs/info.json";
+import InfoJson from "./info.json";
 {{/if}}
 {{#if mdFileName}}
-import DescriptionContent from "!raw-loader!./docs/{{ mdFileName }}";
+import DescriptionContent from "!raw-loader!apparena-patterns-react/patterns/{{ patternDir }}/docs/{{ mdFileName }}";
 {{/if}}
 
 export default class {{ componentClassName }}Component extends ReactComponent {
