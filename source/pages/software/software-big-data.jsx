@@ -35,7 +35,7 @@ export default function AnalyticsDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -58,7 +58,7 @@ export default function AnalyticsDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -81,7 +81,7 @@ export default function AnalyticsDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -104,7 +104,7 @@ export default function AnalyticsDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
