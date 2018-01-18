@@ -3,50 +3,46 @@ import {Card, Row, Col, Button} from 'apparena-patterns-react';
 import styles from './software.scss';
 import Markdown from 'react-markdown';
 
-const appManagerDescription = `
-The *App-Manager* is the central CMS powering all other projects. It is built to be fast and
-easy to use by customers and developers alike.
+const analyticsjsDescription = `
+Analytics.js makes it easy to collect customer data and send it to many different tools using a single, unified API.</br>
+This libary allows you to build a analytics.js for our customers, which includes the Analytics.js Core and the Integrations.
 `;
 
-const wizardDescription = `
-The *App-Manager Wizard* powers the configuration tools of the App-Manager. It provides numerous
-React components that are used to configure all apps, templates and versions that exist in the App-Manager.  
-Using Redux it offers a single-page-application experience that enables editing dozens or even hundreds of
-configuration values without requiring a page reload.
+const analyticsIntegrationDescription = `
+AppArena integration for Analytics.js.</br>
+Provides the possibility to send Analytics.js Events (track, page, identify, group, screen) to App-Arena Data Cluster.</br>
+Also loads the JS-Client-SDK for dynamically loading of customer widgets.
 `;
 
-const phpSdkDescription = `
-Use this SDK to setup the connection to your App-Manager Project.
+const analyticsCoreDescription = `
+This is the core of Analytics.js, the open-source library that powers data collection at Segment.</br>
+To build this into a full, usable library, see the Analytics.js repository.</br>
+(We at App-Arena uses the full Core of Segments Analytics.js without changes.)
 `;
 
-const clientSdkDescription = `
-This libary provides the code to dynamically load customer widgets.</br>
-The SDK is always loaded via analytics.js App-Arena Integration.
+const clusterCoreDescription = `
+This repo includes all serverless configuration for the Big-Data Cluster hosted on AWS.
 `;
 
-const componentDocsDescription = `
-The App-Arena patterns are a collection of react components built specifically around the App-Arena CI.
-`;
+export const title = 'Analytics';
 
-export const title = 'Platforms';
-
-export default function SoftwarePlatformDocs() {
+export default function AnalyticsDocs() {
     return [
         <Card key={"1"}>
             <div type="card-header">
-                App-Manager 2.5
+                Analytics.js
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/am-thumb.png" className={styles.imgThumbnail}/>
+                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={appManagerDescription}
+                            source={analyticsjsDescription}
                         />
                         <Button type="outline-primary"
-                                href="https://bitbucket.org/apparena/appmanager2.5/src"
+                                href="https://github.com/apparena/analytics.js#readme"
                                 className={styles.readMoreButton}
                         >
                             Read more
@@ -57,19 +53,19 @@ export default function SoftwarePlatformDocs() {
         </Card>,
         <Card key={"2"}>
             <div type="card-header">
-                App-Manager Wizard & Inline editing
+                analytics.js-integration-apparena
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/wizard-thumb.png" className={styles.imgThumbnail}/>
+                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={wizardDescription}
+                            source={analyticsIntegrationDescription}
                         />
                         <Button type="outline-primary"
-                                href="https://bitbucket.org/apparena/app-manager-js-lib/src"
+                                href="https://github.com/apparena/analytics.js-integration-apparena#readme"
                                 className={styles.readMoreButton}
                         >
                             Read more
@@ -80,7 +76,7 @@ export default function SoftwarePlatformDocs() {
         </Card>,
         <Card key={"3"}>
             <div type="card-header">
-                PHP-SDK
+                Analytics.js Core
             </div>
             <div type="card-body">
                 <Row>
@@ -89,10 +85,10 @@ export default function SoftwarePlatformDocs() {
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={phpSdkDescription}
+                            source={analyticsCoreDescription}
                         />
                         <Button type="outline-primary"
-                                href="https://github.com/apparena/php-sdk"
+                                href="https://github.com/apparena/analytics.js-core#readme"
                                 className={styles.readMoreButton}
                         >
                             Read more
@@ -103,7 +99,7 @@ export default function SoftwarePlatformDocs() {
         </Card>,
         <Card key={"3"}>
             <div type="card-header">
-                Client-SDK
+                Serverless Cluster Configuration
             </div>
             <div type="card-body">
                 <Row>
@@ -112,33 +108,10 @@ export default function SoftwarePlatformDocs() {
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={clientSdkDescription}
+                            source={clusterCoreDescription}
                         />
                         <Button type="outline-primary"
-                                href="https://github.com/apparena/client-sdk#readme"
-                                className={styles.readMoreButton}
-                        >
-                            Read more
-                        </Button>
-                    </Col>
-                </Row>
-            </div>
-        </Card>,
-        <Card key={"8"}>
-            <div type="card-header">
-                App-Arena Patterns
-            </div>
-            <div type="card-body">
-                <Row>
-                    <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
-                    </Col>
-                    <Col xs="9">
-                        <Markdown
-                            source={componentDocsDescription}
-                        />
-                        <Button type="outline-primary"
-                                href="https://github.com/apparena/patterns"
+                                href="https://bitbucket.org/apparena/serverless-lambda-services"
                                 className={styles.readMoreButton}
                         >
                             Read more
