@@ -43,12 +43,6 @@ The markdown file for the component should cover these two questions at least:
 By answering these two questions in your markdown file a user of the patterns
 should be able to tell whether he needs the pattern and how to use it.
 
-# Creating a new component using the pattern generator
-
-The pattern generator can be executed from the root directory like this:
-`./patternGenerator.sh`  
-Follow the on-screen prompts to create a basic skeleton of a component.
-
 # Important note
 
 In the example JS file you can import any pattern from the npm module *'apparena-patterns-react'*,
