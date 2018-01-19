@@ -26,7 +26,8 @@
     "start": "npm run build:docs && node build/webpack/server.js",
     "test": "BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava",
     "test:generator": "webpack --progress --config build/webpack/webpack.tests.js && BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava build/generator/_build/*.js",
-    "test:coverage": "BABEL_DISABLE_CACHE=1 nyc report --reporter=lcov --reporter=json --reporter=text-lcov --reporter=html"
+    "test:coverage": "BABEL_DISABLE_CACHE=1 nyc report --reporter=lcov --reporter=json --reporter=text-lcov --reporter=html",
+    "publish:generator:apparena-pattern": "npm publish build/yeoman/generator-apparena-pattern"
   },
   "repository": {
     "type": "git",
