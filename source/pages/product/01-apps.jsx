@@ -21,7 +21,7 @@ This widget is very easy to embed and offers a small but concise survey embeddab
 
 export const title = 'Apps';
 
-export default function SoftwareAppDocs() {
+export default function Apps() {
     return [
         <Card key={"1"}>
             <div type="card-header">

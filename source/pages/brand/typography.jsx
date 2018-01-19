@@ -3,16 +3,16 @@ import {Card} from 'apparena-patterns-react';
 import Markdown from 'react-markdown';
 
 const exampleText = `
-Corporate identity
+Corporate communication
 `;
 
-export const title = 'Corporate identity';
+export const title = 'Typography';
 
-export default function CIDocs() {
+export default function Typography() {
     return (
         <Card>
             <div type="card-header">
-                Corporate identity
+                Typography
             </div>
             <div type="card-body">
                 <Markdown

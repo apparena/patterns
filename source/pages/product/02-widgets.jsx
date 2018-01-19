@@ -9,7 +9,7 @@ You can host your own photo or video contests using the *Multimedia Contest* app
 
 export const title = 'Widgets';
 
-export default function SoftwareAppDocs() {
+export default function Widgets() {
     return [
         <Card key={"1"}>
             <div type="card-header">

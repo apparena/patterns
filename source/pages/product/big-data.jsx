@@ -24,9 +24,9 @@ const clusterCoreDescription = `
 This repo includes all serverless configuration for the Big-Data Cluster hosted on AWS.
 `;
 
-export const title = 'Analytics';
+export const title = 'BigData';
 
-export default function AnalyticsDocs() {
+export default function BigData() {
     return [
         <Card key={"1"}>
             <div type="card-header">

@@ -2,21 +2,21 @@ import React from 'react';
 import {Card} from 'apparena-patterns-react';
 import Markdown from 'react-markdown';
 
-const exampleText = `
-Corporate communication
-`;
+export const title = 'Icons';
 
-export const title = 'Corporate communication';
-
-export default function CCDocs() {
+export default function Icons() {
     return (
         <Card>
             <div type="card-header">
-                Corporate communication
+                Corporate identity
             </div>
             <div type="card-body">
                 <Markdown
-                    source={exampleText}
+                    source={`
+# Design an APP-ARENA Experience
+
+## Principles, guidelines and assets for designing and building App-Arena experiences
+                    `}
                 />
             </div>
         </Card>
