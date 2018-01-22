@@ -57,8 +57,14 @@ export default class PriceTableElement extends ReactComponent {
      */
     processInformation(element, i) {
         let text = element.text;
-        if (element.style.includes('bold')) text = <b>{text}</b>;
-        if (element.style.includes('italic')) text = <i>{text}</i>;
+        if (element.style.includes('bold')) {
+            text = <b>{text}</b>;
+        }
+
+        if (element.style.includes('italic')) {
+            text = <i>{text}</i>;
+        }
+
         if (element.key) {
             this.purchaseData.articles.push(element);
         }
@@ -112,14 +118,14 @@ export default class PriceTableElement extends ReactComponent {
                 </Button>
             );
         }
-        const utf8_to_b64 = (str) => {
+        const utf8ToB64 = (str) => {
             return window.btoa(encodeURIComponent(str));
         };
 
         if (templateId) {
-            href = `${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+            href = `${onClick}?templateId=${templateId}&orderData=${utf8ToB64(JSON.stringify(this.purchaseData))}`;
         } else if (productId) {
-            href = `${onClick}?productId=${productId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`;
+            href = `${onClick}?productId=${productId}&orderData=${utf8ToB64(JSON.stringify(this.purchaseData))}`;
         }
 
         return (

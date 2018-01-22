@@ -6,9 +6,9 @@ const exampleText = `
 Corporate communication
 `;
 
-export const title = 'Writing style';
+const title = 'Writing style';
 
-export default function WritingStyle() {
+function render() {
     return (
         <Card>
             <div type="card-header">
@@ -21,4 +21,9 @@ export default function WritingStyle() {
             </div>
         </Card>
     );
+}
+
+export default {
+    title,
+    render
 }

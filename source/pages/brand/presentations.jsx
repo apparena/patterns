@@ -6,9 +6,9 @@ const exampleText = `
 Corporate communication
 `;
 
-export const title = 'Presentations';
+const title = 'Presentations';
 
-export default function Presentations() {
+function render() {
     return (
         <Card>
             <div type="card-header">
@@ -21,4 +21,9 @@ export default function Presentations() {
             </div>
         </Card>
     );
+}
+
+export default {
+    title,
+    render
 }

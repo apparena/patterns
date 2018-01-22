@@ -149,7 +149,7 @@ class Slider extends Component {
         hovered: false,
         value: 0
     };
-    track = null;
+    track = null; // eslint-disable-line react/sort-comp
     handle = null;
     handleKeyDown = (event) => {
         const {
@@ -478,12 +478,14 @@ class Slider extends Component {
                             left: 0,
                             marginRight: '1px',
                             width: `${percent * 100}%`
-                        }}/>
+                        }}
+                        />
                         <div className={styles.filledAndRemainingRemain} style={{
                             right: 0,
                             marginLeft: '1px',
                             width: `${(1 - percent) * 100}%`
-                        }}/>
+                        }}
+                        />
                         <div
                             ref={(node) => {
                                 this.handle = node;
@@ -491,8 +493,7 @@ class Slider extends Component {
                             className={handleStyles}
                             style={{left: percent === 0 ? '0%' : `${(percent * 100)}%`}}
                             tabIndex={0}
-                        >
-                        </div>
+                        />
                     </div>
                 </div>
                 <input

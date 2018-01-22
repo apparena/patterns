@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import * as components from './components/index';
 import componentsList from './components/list.json';
 import cloneDeep from 'lodash/cloneDeep';
-import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from '../patterns';
+import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from '../patterns/index';
 import styles from './styles/home.scss';
 import {Route, Link} from 'react-router-dom';
 import {AnimatedSwitch} from "react-router-transition"
-import staticPages from '../pages';
+import staticPages from '../pages/index';
 
 const transitionStyles = {
     atEnter: {
@@ -297,7 +297,7 @@ export default class Home extends ReactComponent {
                                 return <Route exact path={`/${component}`} component={components[component]} key={component + i}/>
                             })}
                             {staticPages.map((page, i) => {
-                                return <Route exact path={`/${page.route}`} component={page.component.default} key={page.route + i} />
+                                return <Route exact path={`/${page.route}`} component={page.component.render} key={page.route + i} />
                             })}
                         </AnimatedSwitch>
 

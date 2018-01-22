@@ -129,16 +129,17 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
      * Generate documentation for each component
      */
     console.log('Generating documentation...');
+    const exportedComponents = fse.readFileSync('source/patterns/index.js', 'utf8');
+
     each(componentDirectories, (directory, callback) => {
         if (!fse.existsSync(`${directory}/docs`)) {
             callback();
             return;
         }
 
-        const component = directory.split('/').slice(-1);
-        const exportedComponents = fse.readFileSync('source/patterns/index.js', 'utf8');
+        const component = directory.split('/').slice(2).join('/');
 
-        if (!exportedComponents.includes(`/${component}';`)) {
+        if (!exportedComponents.includes(`/${component}`)) {
             callback();
             return;
         }
@@ -185,7 +186,7 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
                     }
                     className = _.pascalCase(className);
                     category.components.push(className);
-                    indexFiles.push({name: className, directory});
+                    indexFiles.push({name: className, directory: path.join(directory, 'index')});
                 });
             }
         });

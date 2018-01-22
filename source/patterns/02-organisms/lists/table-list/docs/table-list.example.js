@@ -1,5 +1,5 @@
 import React from 'react';
-import {Table, TableList} from 'apparena-patterns-react';
+import {TableList} from 'apparena-patterns-react';
 
 export default function TableListExample() {
     return [

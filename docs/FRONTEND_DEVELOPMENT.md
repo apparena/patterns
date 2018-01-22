@@ -10,33 +10,26 @@ Changing existing documentation doesn't require a restart for
 
 1. Create a new folder in the *source/pages/* directory with a name of your choosing
 (The name will not be visible in the frontend but it has to be unique)
-2. Create a new JavaScript file (*.js or *.jsx) file in the new folder that has the same name as that folder.
-(See the existing example. If you prefix any folder with a dot it will be ignored in the frontend)
+2. Create a new JavaScript file (*.js or *.jsx) file in the new folder that starts with a low number (e.g. 00- or 01-).
 3. Add the necessary content into this main file
 4. Optionally: Add any number of additional JavaScript files that will be accessible via the sidebar.
+Give them higher numbers (like 02-) to dictate their order in the sidebar.
 5. Insert your new page into the *pages/index.js* file if not present
 
 Follow these steps to add a new page into the index.js file:
 
 1. At the top insert a new import statement like so:
 ```javascript
-import * as <name of your choosing> from './<page>/<js file>';
+import * as <folder name in pascal case> from './<page folder>';
 ```
 
-1. Add a new block to the exports array:
+1. Add a new block to the `pagesToInclude` array:
 ```javascript
 {
-    route: '<page>/<js file>',
-    component: <name of your choosing,
-    position: '<position>',
-    page: '<page>'
+    components: <folder name in pascal case>,
+    title: '<title to be displayed in the frontend>',
 }
 ```
-
-*Position* can be one of these:
-* `top` The page is visible in the top navbar
-* `sidebar` The page is a sidebar item on <page>
-
 
 ### What's necessary to make a working static page
 
@@ -47,29 +40,37 @@ Every file has to consist of two things:
 1. A title
 2. A react component
 
-The title has to be inserted like this into every file:
+The title has to be inserted like this into every file at the top level:
 
 ```javascript
-export const title = '';
+const title = '';
 ```
 
 For the react component you have more freedom; both functional (stateless) and stateful
 components work just fine. The only requirement for the react component is that it
-has to be the default export.
+has to be called `render`.
 You can either create your component like this:
 
 ```javascript
 // Functional component
-export default function ...
+export default function render() { ...
 ```
 
 or like this:
 
 ```javascript
 // Stateful component
-export default class ... [extends ...]
+export default class render [extends ...] { ...
 ```
 
-Everything else is up to you. It is recommended to read the example files in the *.example* static
-page folder to get an idea of how to make your static page look good. If you remove the dot prefix
-and run the documentation generator you can see it live in action.
+Finally both the title and the render function/class have to be the default export.
+Insert this code snippet at the bottom of your pages:
+
+```javascript
+export default {
+    title,
+    render
+}
+```
+
+and you're done!

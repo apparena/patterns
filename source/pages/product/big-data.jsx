@@ -24,9 +24,9 @@ const clusterCoreDescription = `
 This repo includes all serverless configuration for the Big-Data Cluster hosted on AWS.
 `;
 
-export const title = 'BigData';
+const title = 'BigData';
 
-export default function BigData() {
+function render() {
     return [
         <Card key={"1"}>
             <div type="card-header">
@@ -35,7 +35,7 @@ export default function BigData() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -58,7 +58,7 @@ export default function BigData() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -81,7 +81,7 @@ export default function BigData() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -104,7 +104,7 @@ export default function BigData() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -121,4 +121,9 @@ export default function BigData() {
             </div>
         </Card>
     ];
+}
+
+export default {
+    title,
+    render
 }

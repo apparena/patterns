@@ -6,9 +6,9 @@ const exampleText = `
 Corporate communication
 `;
 
-export const title = 'Typography';
+const title = 'Typography';
 
-export default function Typography() {
+function render() {
     return (
         <Card>
             <div type="card-header">
@@ -21,4 +21,9 @@ export default function Typography() {
             </div>
         </Card>
     );
+}
+
+export default {
+    title,
+    render
 }

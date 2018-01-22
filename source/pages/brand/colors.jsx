@@ -2,9 +2,9 @@ import React from 'react';
 import {Card} from 'apparena-patterns-react';
 import Markdown from 'react-markdown';
 
-export const title = 'Colors';
+const title = 'Colors';
 
-export default function Colors() {
+function render() {
     return (
         <Card>
             <div type="card-header">
@@ -20,4 +20,9 @@ export default function Colors() {
             </div>
         </Card>
     );
+}
+
+export default {
+    title,
+    render
 }

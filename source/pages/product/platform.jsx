@@ -28,9 +28,9 @@ const componentDocsDescription = `
 The App-Arena patterns are a collection of react components built specifically around the App-Arena CI.
 `;
 
-export const title = 'Platform';
+const title = 'Platform';
 
-export default function Platform() {
+function render() {
     return [
         <Card key={"1"}>
             <div type="card-header">
@@ -39,7 +39,7 @@ export default function Platform() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/am-thumb.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/am-thumb.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -62,7 +62,7 @@ export default function Platform() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/wizard-thumb.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/wizard-thumb.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -85,7 +85,7 @@ export default function Platform() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -108,7 +108,7 @@ export default function Platform() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -131,7 +131,7 @@ export default function Platform() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -148,4 +148,9 @@ export default function Platform() {
             </div>
         </Card>
     ];
+}
+
+export default {
+    title,
+    render
 }

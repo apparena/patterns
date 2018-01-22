@@ -70,7 +70,10 @@ export default class Dropdown extends ReactComponent {
     }
 
     componentWillUpdate(nextProps, nextState) {
-        if (typeof window === 'undefined') return;
+        if (typeof window === 'undefined') {
+            return;
+        }
+
         if (nextState.isOpen) {
             window.addEventListener('keydown', ::this.handleKeyDown);
         } else {

@@ -19,9 +19,9 @@ const surveyWidgetDescription = `
 This widget is very easy to embed and offers a small but concise survey embeddable on any website.
 `;
 
-export const title = 'Apps';
+const title = 'Apps';
 
-export default function Apps() {
+function render() {
     return [
         <Card key={"1"}>
             <div type="card-header">
@@ -30,7 +30,7 @@ export default function Apps() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="https://www.app-arena.com/app/uploads/2016/09/Fotowettbewerb_desktop-2-300x203.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="https://www.app-arena.com/app/uploads/2016/09/Fotowettbewerb_desktop-2-300x203.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -53,7 +53,7 @@ export default function Apps() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="https://www.app-arena.com/app/uploads/2016/09/EM-Tippspiel_desktop-1-300x203.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="https://www.app-arena.com/app/uploads/2016/09/EM-Tippspiel_desktop-1-300x203.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -76,7 +76,7 @@ export default function Apps() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="https://www.app-arena.com/app/uploads/2016/09/online-adventskalender-app-arena-desktop-browser.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="https://www.app-arena.com/app/uploads/2016/09/online-adventskalender-app-arena-desktop-browser.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -99,7 +99,7 @@ export default function Apps() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="assets/widget.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/widget.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -116,4 +116,9 @@ export default function Apps() {
             </div>
         </Card>
     ];
+}
+
+export default {
+    title,
+    render
 }

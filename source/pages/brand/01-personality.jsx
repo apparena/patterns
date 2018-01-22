@@ -3,9 +3,9 @@ import {Card, Button} from 'apparena-patterns-react';
 import Markdown from 'react-markdown';
 
 // Title defines the caption in the sidebar navigation
-export const title = 'Personality';
+const title = 'Personality';
 
-export default function Personality() {
+function render() {
     return [
         <Card key={'1'}>
             <div type="card-header">
@@ -22,7 +22,6 @@ digital marketing and commerce!
                 />
                 <Button type="outline-primary"
                         href="https://bitbucket.org/apparena/multimedia-contest/src"
-                        className={styles.readMoreButton}
                 >
                     Read more
                 </Button>
@@ -30,4 +29,9 @@ digital marketing and commerce!
         </Card>,
 
     ];
+}
+
+export default {
+    title,
+    render
 }

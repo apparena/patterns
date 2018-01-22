@@ -6,7 +6,8 @@ export default function AlertExample() {
         <Alert
             text="Hey this is a dismissible alert"
             type="warning"
-            dismissible/>
+            dismissible
+        />
     );
 }
 

@@ -2,9 +2,9 @@ import React from 'react';
 import {Card} from 'apparena-patterns-react';
 import Markdown from 'react-markdown';
 
-export const title = 'Icons';
+const title = 'Icons';
 
-export default function Icons() {
+function render() {
     return (
         <Card>
             <div type="card-header">
@@ -21,4 +21,9 @@ export default function Icons() {
             </div>
         </Card>
     );
+}
+
+export default {
+    title,
+    render
 }

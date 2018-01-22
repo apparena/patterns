@@ -131,14 +131,18 @@ export default class CustomPackageCreator extends ReactComponent {
                                     });
                                     const newPrice = newState.length === 1 ? 0 : newState.reduce((a, b) => {
                                         if (a.price) {
-                                            if (a.language === this.props.data.defaultLanguage)
+                                            if (a.language === this.props.data.defaultLanguage) {
                                                 return b.price;
-                                            else if (b.language === this.props.data.defaultLanguage)
+                                            } else if (b.language === this.props.data.defaultLanguage) {
                                                 return a.price;
-                                            else
+                                            } else {
                                                 return a.price + b.price;
-                                        } else if (a.price === undefined && b === undefined) return a;
-                                        else return a + b.price;
+                                            }
+                                        } else if (a.price === undefined && b === undefined) {
+                                            return a;
+                                        } else {
+                                            return a + b.price;
+                                        }
                                     });
 
                                     this.setState({
@@ -171,7 +175,9 @@ export default class CustomPackageCreator extends ReactComponent {
                         const exclude = this.state[article.key].value.filter((obj) => {
                             return obj.language === e.key;
                         });
-                        if (exclude.length > 0) return null;
+                        if (exclude.length > 0) {
+                            return null;
+                        }
 
                         return (
                             <div key={i} className={styles.addLanguageButton}
@@ -215,7 +221,7 @@ export default class CustomPackageCreator extends ReactComponent {
         this.purchaseData.articles = this.purchaseData.articles.filter((purchase) => {
             return (purchase.key !== article.key);
         });
-        const {includedIf, options, ...rest} = article;
+        const {includedIf, options, ...rest} = article; // eslint-disable-line no-unused-vars
         if (article.key && ((!article.includedIf && this.state[article.key] !== false) || (includedIf && this.state.service >= includedIf.value))) {
             this.purchaseData.articles.push({
                 ...rest,
@@ -341,14 +347,14 @@ export default class CustomPackageCreator extends ReactComponent {
                 </Button>
             );
         }
-        const utf8_to_b64 = (str) => {
+        const utf8ToB64 = (str) => {
             return window.btoa(encodeURIComponent(str));
         };
         return (
             <Button className={styles.purchase_button}
                     type="primary"
                     rounded
-                    href={`${onClick}?templateId=${templateId}&orderData=${utf8_to_b64(JSON.stringify(this.purchaseData))}`}
+                    href={`${onClick}?templateId=${templateId}&orderData=${utf8ToB64(JSON.stringify(this.purchaseData))}`}
             >
                 {this.t('priceTableElement.button.caption')}
             </Button>
