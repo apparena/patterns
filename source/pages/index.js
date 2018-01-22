@@ -1,6 +1,8 @@
+import camelcase from 'camelcase';
 // Add a new folder here to add a new tp navigation item
 import * as Brand from './brand';
 import * as Product from './product';
+import * as CI from './corporate-identity';
 
 const pagesToInclude = [
     {
@@ -10,6 +12,10 @@ const pagesToInclude = [
     {
         components: Product,
         title: 'Product',
+    },
+    {
+        components: CI,
+        title: 'Corporate Identity',
     }
 ];
 
@@ -17,27 +23,23 @@ const pagesToInclude = [
 const pageTree = [];
 
 pagesToInclude.forEach((page) => {
-    const pageName = page.title.replace(/^\d+\-\s*!/, '');
     const componentKeys = Object.keys(page.components).sort();
     const componentName = componentKeys[0];
-    page.components[componentName].title = page.title;
 
     pageTree.push({
-        route: `${page.title.toLowerCase()}/${componentName}`,
+        route: `${camelcase(page.title)}/${componentName.replace(/^\d+/, '')}`,
         component: page.components[componentName],
         position: 'top',
-        page: pageName
+        page: page.title,
+        title: page.title
     });
-
-    delete page.components[componentName];
-    delete componentKeys[0];
 
     componentKeys.forEach((component) => {
         pageTree.push({
-            route: `${page.title.toLowerCase()}/${component}`,
+            route: `${camelcase(page.title)}/${component.replace(/^\d+/, '')}`,
             component: page.components[component],
             position: 'sidebar',
-            page: pageName
+            page: page.title
         });
     });
 });

@@ -72,15 +72,15 @@ export default class Home extends ReactComponent {
             return staticPage.route === props.location.pathname.slice(1);
         });
 
-        if (match.length === 1 && match[0].page !== this.state.currentStaticPage.page) {
+        if (match.length >= 1 && match[0].page !== this.state.currentStaticPage.page) {
             this.setState({
                 currentStaticPage: match[0]
             });
-        } else if (match.length === 1 && this.state.currentStaticPage === false) {
+        } else if (match.length >= 1 && this.state.currentStaticPage === false) {
             this.setState({
                 currentStaticPage: match[0]
             });
-        } else if (match.length !== 1 && this.state.currentStaticPage !== false) {
+        } else if (match.length === 0 && this.state.currentStaticPage !== false) {
             this.setState({
                 currentStaticPage: false
             });
@@ -235,7 +235,7 @@ export default class Home extends ReactComponent {
                 // seems to be a bug where the URL will become 'example/example/example-item'
                 return (
                     <NavItem key={i}>
-                        <Link to={`/${page.route}`} onClick={::this.scrollToTop}>{page.component.title}</Link>
+                        <Link to={`/${page.route}`} onClick={::this.scrollToTop}>{page.title}</Link>
                     </NavItem>
                 );
             } else {
