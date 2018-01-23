@@ -72,7 +72,7 @@ export default class Home extends ReactComponent {
             return staticPage.route === props.location.pathname.slice(1);
         });
 
-        if (match.length >= 1 && match[0].page !== this.state.currentStaticPage.page) {
+        if (match.length >= 1 && (match[0].page !== this.state.currentStaticPage.page || match[0].route !== this.state.currentStaticPage.route)) {
             this.setState({
                 currentStaticPage: match[0]
             });
@@ -134,7 +134,7 @@ export default class Home extends ReactComponent {
             const items = staticPages.map((page, i) => {
                 if (page.position === 'sidebar' && page.page === this.state.currentStaticPage.page) {
                     return (
-                        <NavItem key={i}>
+                        <NavItem key={i} active={this.state.currentStaticPage.route === page.route}>
                             <Link to={`/${page.route}`}>{page.component.title}</Link>
                         </NavItem>
                     );
