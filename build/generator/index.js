@@ -186,7 +186,7 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
                     }
                     className = _.pascalCase(className);
                     category.components.push(className);
-                    indexFiles.push({name: className, directory: path.join(directory, 'index')});
+                    indexFiles.push({name: className, directory: path.posix.join(directory, 'index')});
                 });
             }
         });
