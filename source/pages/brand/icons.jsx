@@ -1,24 +1,23 @@
 import React from 'react';
 import {Card} from 'apparena-patterns-react';
-import Markdown from 'react-markdown';
+import Icons from '../../patterns/00-atoms/icons/docs/icons.example'
 
-const exampleText = `
-Corporate identity
-`;
+const title = 'Icons';
 
-export const title = 'Corporate identity';
-
-export default function CIDocs() {
+function render() {
     return (
         <Card>
             <div type="card-header">
                 Corporate identity
             </div>
             <div type="card-body">
-                <Markdown
-                    source={exampleText}
-                />
+                <Icons/>
             </div>
         </Card>
     );
 }
+
+export default {
+    title,
+    render
+};

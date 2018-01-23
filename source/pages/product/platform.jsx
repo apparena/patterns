@@ -28,9 +28,9 @@ const componentDocsDescription = `
 The App-Arena patterns are a collection of react components built specifically around the App-Arena CI.
 `;
 
-export const title = 'Platforms';
+const title = 'Platform';
 
-export default function SoftwarePlatformDocs() {
+function render() {
     return [
         <Card key={"1"}>
             <div type="card-header">
@@ -39,7 +39,7 @@ export default function SoftwarePlatformDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/am-thumb.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/am-thumb.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -62,7 +62,7 @@ export default function SoftwarePlatformDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/wizard-thumb.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/wizard-thumb.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -85,7 +85,7 @@ export default function SoftwarePlatformDocs() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -101,14 +101,14 @@ export default function SoftwarePlatformDocs() {
                 </Row>
             </div>
         </Card>,
-        <Card key={"3"}>
+        <Card key={"4"}>
             <div type="card-header">
                 Client-SDK
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -124,14 +124,14 @@ export default function SoftwarePlatformDocs() {
                 </Row>
             </div>
         </Card>,
-        <Card key={"8"}>
+        <Card key={"5"}>
             <div type="card-header">
                 App-Arena Patterns
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
@@ -148,4 +148,9 @@ export default function SoftwarePlatformDocs() {
             </div>
         </Card>
     ];
+}
+
+export default {
+    title,
+    render
 }

@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import * as components from './components/index';
 import componentsList from './components/list.json';
 import cloneDeep from 'lodash/cloneDeep';
-import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from 'apparena-patterns-react';
+import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from '../patterns/index';
 import styles from './styles/home.scss';
 import {Route, Link} from 'react-router-dom';
 import {AnimatedSwitch} from "react-router-transition"
-import staticPages from './staticPages';
+import staticPages from '../pages/index';
 
 const transitionStyles = {
     atEnter: {
@@ -72,15 +72,15 @@ export default class Home extends ReactComponent {
             return staticPage.route === props.location.pathname.slice(1);
         });
 
-        if (match.length === 1 && match[0].page !== this.state.currentStaticPage.page) {
+        if (match.length >= 1 && (match[0].page !== this.state.currentStaticPage.page || match[0].route !== this.state.currentStaticPage.route)) {
             this.setState({
                 currentStaticPage: match[0]
             });
-        } else if (match.length === 1 && this.state.currentStaticPage === false) {
+        } else if (match.length >= 1 && this.state.currentStaticPage === false) {
             this.setState({
                 currentStaticPage: match[0]
             });
-        } else if (match.length !== 1 && this.state.currentStaticPage !== false) {
+        } else if (match.length === 0 && this.state.currentStaticPage !== false) {
             this.setState({
                 currentStaticPage: false
             });
@@ -134,7 +134,7 @@ export default class Home extends ReactComponent {
             const items = staticPages.map((page, i) => {
                 if (page.position === 'sidebar' && page.page === this.state.currentStaticPage.page) {
                     return (
-                        <NavItem key={i}>
+                        <NavItem key={i} active={this.state.currentStaticPage.route === page.route}>
                             <Link to={`/${page.route}`}>{page.component.title}</Link>
                         </NavItem>
                     );
@@ -235,7 +235,7 @@ export default class Home extends ReactComponent {
                 // seems to be a bug where the URL will become 'example/example/example-item'
                 return (
                     <NavItem key={i}>
-                        <Link to={`/${page.route}`} onClick={::this.scrollToTop}>{page.component.title}</Link>
+                        <Link to={`/${page.route}`} onClick={::this.scrollToTop}>{page.title}</Link>
                     </NavItem>
                 );
             } else {
@@ -253,13 +253,13 @@ export default class Home extends ReactComponent {
                             <Row>
                                 <Col autoWidth xsAutoContent>
                                     <a className={styles.navbarBrand} href="/">
-                                        <img className={styles.logo} src="src/assets/logo.png" role="presentation"/>
+                                        <img className={styles.logo} src="assets/logo.png" role="presentation"/>
                                     </a>
                                 </Col>
                                 <Col autoWidth>
                                     <Nav>
                                         <NavItem>
-                                            <Link to="/">App-Arena Components</Link>
+                                            <Link to="/">UI Patterns</Link>
                                         </NavItem>
                                         {this.renderStaticPageLinks()}
                                     </Nav>
@@ -297,7 +297,7 @@ export default class Home extends ReactComponent {
                                 return <Route exact path={`/${component}`} component={components[component]} key={component + i}/>
                             })}
                             {staticPages.map((page, i) => {
-                                return <Route exact path={`/${page.route}`} component={page.component.default} key={page.route + i} />
+                                return <Route exact path={`/${page.route}`} component={page.component.render} key={page.route + i} />
                             })}
                         </AnimatedSwitch>
 

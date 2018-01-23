@@ -3,41 +3,46 @@ import {Card, Row, Col, Button} from 'apparena-patterns-react';
 import styles from './software.scss';
 import Markdown from 'react-markdown';
 
-const mmContestDescription = `
-You can host your own photo or video contests using the *Multimedia Contest* app. 
+const analyticsjsDescription = `
+Analytics.js makes it easy to collect customer data and send it to many different tools using a single, unified API.  
+This libary allows you to build a analytics.js for our customers, which includes the Analytics.js Core and the Integrations.
 `;
 
-const tippspielDescription = `
-Generate leads with this betting game.
+const analyticsIntegrationDescription = `
+AppArena integration for Analytics.js.  
+Provides the possibility to send Analytics.js Events (track, page, identify, group, screen) to App-Arena Data Cluster.  
+Also loads the JS-Client-SDK for dynamically loading of customer widgets.
 `;
 
-const adventCalendarDescription = `
-The advent calendar is easily customizable and offers a built-in quiz to make your advent calendar even more interesting.
+const analyticsCoreDescription = `
+This is the core of Analytics.js, the open-source library that powers data collection at Segment.  
+To build this into a full, usable library, see the Analytics.js repository.  
+(We at App-Arena uses the full Core of Segments Analytics.js without changes.)
 `;
 
-const surveyWidgetDescription = `
-This widget is very easy to embed and offers a small but concise survey embeddable on any website.
+const clusterCoreDescription = `
+This repo includes all serverless configuration for the Big-Data Cluster hosted on AWS.
 `;
 
-export const title = 'Apps';
+const title = 'BigData';
 
-export default function SoftwareAppDocs() {
+function render() {
     return [
         <Card key={"1"}>
             <div type="card-header">
-                Multimedia Contest
+                Analytics.js
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="https://www.app-arena.com/app/uploads/2016/09/Fotowettbewerb_desktop-2-300x203.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={mmContestDescription}
+                            source={analyticsjsDescription}
                         />
                         <Button type="outline-primary"
-                                href="https://bitbucket.org/apparena/multimedia-contest/src"
+                                href="https://github.com/apparena/analytics.js#readme"
                                 className={styles.readMoreButton}
                         >
                             Read more
@@ -48,19 +53,19 @@ export default function SoftwareAppDocs() {
         </Card>,
         <Card key={"2"}>
             <div type="card-header">
-                Tippspiel
+                analytics.js-integration-apparena
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="https://www.app-arena.com/app/uploads/2016/09/EM-Tippspiel_desktop-1-300x203.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={tippspielDescription}
+                            source={analyticsIntegrationDescription}
                         />
                         <Button type="outline-primary"
-                                href="https://bitbucket.org/apparena/tippspiel/src"
+                                href="https://github.com/apparena/analytics.js-integration-apparena#readme"
                                 className={styles.readMoreButton}
                         >
                             Read more
@@ -71,19 +76,19 @@ export default function SoftwareAppDocs() {
         </Card>,
         <Card key={"3"}>
             <div type="card-header">
-                Advent calendar
+                Analytics.js Core
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="https://www.app-arena.com/app/uploads/2016/09/online-adventskalender-app-arena-desktop-browser.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={adventCalendarDescription}
+                            source={analyticsCoreDescription}
                         />
                         <Button type="outline-primary"
-                                href="https://bitbucket.org/apparena/advent/src"
+                                href="https://github.com/apparena/analytics.js-core#readme"
                                 className={styles.readMoreButton}
                         >
                             Read more
@@ -94,19 +99,19 @@ export default function SoftwareAppDocs() {
         </Card>,
         <Card key={"4"}>
             <div type="card-header">
-                Survey Widget
+                Serverless Cluster Configuration
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img src="src/assets/widget.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={surveyWidgetDescription}
+                            source={clusterCoreDescription}
                         />
                         <Button type="outline-primary"
-                                href="https://bitbucket.org/apparena/surveywidget/src"
+                                href="https://bitbucket.org/apparena/serverless-lambda-services"
                                 className={styles.readMoreButton}
                         >
                             Read more
@@ -116,4 +121,9 @@ export default function SoftwareAppDocs() {
             </div>
         </Card>
     ];
+}
+
+export default {
+    title,
+    render
 }

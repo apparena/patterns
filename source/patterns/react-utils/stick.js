@@ -125,7 +125,7 @@ export default class Stick extends ReactComponent {
         };
         const rect = this.getActualBoundingClientRect(this.props.element);
         const thisRect = this.getActualBoundingClientRect(this.holder);
-        const windowHeight = window.innerHeight;
+        // const windowHeight = window.innerHeight;
         const windowWidth = window.innerWidth;
         const scrollTop = window.scrollY;
 

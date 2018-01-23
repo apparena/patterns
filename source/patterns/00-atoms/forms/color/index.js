@@ -58,7 +58,8 @@ export default class Color extends ReactComponent {
                         <div className={styles.swatch} onClick={this.props.handleClick}>
                             <div className={styles.color} style={{
                                 backgroundColor: this.props.value
-                            }}/>
+                            }}
+                            />
                         </div>
                         <Button
                             type="outline-primary"

@@ -1,38 +1,16 @@
 # Documentation generator for the App-Arena React Components  
 
-This program generates the documentation for the App-Arena React Components
-automatically. Simply run `npm run build:docs` to execute it.
-The results will be stored in the public/ directory
-which contains everything related to the frontend of the documentation.  
-Alternatively run `npm run build:frontend:dev` or `npm run build:frontend:watch` if you're working locally
-and want to see your changes in the frontend.  
 Please read the [important note](#important-note) at the bottom before creating your own documentation.
 
 ### Documenting a component
 
-The documentation generator requires several files, which have to be created manually,
-in order to generate proper documentation. The documentation files have to reside
-in the `docs` directory of your component.
-Here's an overview of what the directory structure of a component named *"MyComponent"* 
-might look like:  
+1. Add a new *docs/* directory to the component if there isn't one already
+2. Create a new markdown file (\*.md) with the same name as the component directory if it doesn't exist yet (only one per component)
+3. Write any description in markdown format in that file
+4. Create a new JS file (\*.example.js) with the same name as the component directory if it doesn't exist yet (only one per component)
+5. Create a working react component inside the \*.example.js file
 
-MyComponent/  
-├ MyComponent.js  
-├ MyComponent.scss  
-├ docs/  
-│ ├ MyComponent.md  
-│ ├ MyComponent.example.js
-
-
-Of course you still need your main component's *.js* file.
-Additionally a Markdown file of the same name with the extension *.md*
-has to be created which contains your entire documentation.  
-A file with the extension *.example.js* is also required.
-This file needs to contain a working react component that uses the pattern.
-The component will be included in the frontend as-is and the source code
-of the entire component can be viewed there as well.
-
-**A working example (a button):**  
+**A working example (a button):**
 
 The *.example.js* file for the button looks like this:  
 ```javascript
@@ -67,7 +45,7 @@ should be able to tell whether he needs the pattern and how to use it.
 
 # Important note
 
-You can import any pattern from the npm module *'apparena-patterns-react'*,
+In the example JS file you can import any pattern from the npm module *'apparena-patterns-react'*,
 webpack will use the source/patterns directory and it is **not** necessary to install
 the patterns as a dependency. You can also use subdirectories, e.g. *'apparena-patterns-react/fonts/app-arena-icons.svg'*  
 If you use subdirectories like that *apparena-patterns-react* will be treated as the *source/* folder,

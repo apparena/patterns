@@ -33,6 +33,11 @@ let extractComponentMJML = new ExtractTextPlugin({
     disable: (config.enabled.watcher)
 });
 
+let extractCIStyles = new ExtractTextPlugin({
+    filename: 'styles/corporate-identity.css',
+    allChunks: true
+});
+
 const jsRule = {
     test: /\.(js|jsx)$/,
     exclude: [/(node_modules|bower_components)(?![/|\\](bootstrap|foundation-sites))/],
@@ -70,6 +75,37 @@ let webpackConfig = {
                             loader: 'mjml-with-images-loader',
                             options: {
                                 onlyHtml: true
+                            }
+                        }
+                    ]
+                })
+            },
+            {
+                test: /\.ci$/,
+                loader: extractCIStyles.extract({
+                    fallback: 'style-loader',
+                    publicPath: '../',
+                    loader: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                modules: true,
+                                importLoaders: 1,
+                                localIdentName: '[local]__ci',
+                                camelCase: true,
+                                sourceMap: config.enabled.sourceMaps
+                            }
+                        },
+                        {
+                            loader: 'resolve-url-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: true
                             }
                         }
                     ]
@@ -160,6 +196,7 @@ let webpackConfig = {
         extractAssets,
         extractComponentCSS,
         extractComponentMJML,
+        extractCIStyles,
         /*new webpack.ProvidePlugin({
         }),*/
         new webpack.LoaderOptionsPlugin({

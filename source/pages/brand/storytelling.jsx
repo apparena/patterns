@@ -6,13 +6,13 @@ const exampleText = `
 Corporate communication
 `;
 
-export const title = 'Corporate communication';
+const title = 'Storytelling';
 
-export default function CCDocs() {
+function render() {
     return (
         <Card>
             <div type="card-header">
-                Corporate communication
+                Storytelling
             </div>
             <div type="card-body">
                 <Markdown
@@ -21,4 +21,9 @@ export default function CCDocs() {
             </div>
         </Card>
     );
+}
+
+export default {
+    title,
+    render
 }

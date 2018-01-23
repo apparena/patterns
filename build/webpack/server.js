@@ -15,16 +15,16 @@ const middleware = webpackMiddleware(compiler, {
 app.use(middleware);
 app.use(webpackHotMiddleware(compiler));
 
-app.get("/src/*", (req, res) => {
+app.get("/assets/*", (req, res) => {
     const opt = {
-        root: path.resolve(__dirname, '../..', 'public/src')
+        root: path.resolve(__dirname, '../..', 'public/assets')
     };
 
     res.sendFile(req.params['0'], opt);
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../..', 'public/index_dev.html'));
+    res.sendFile(path.resolve(__dirname, '../..', 'public/index_hot.html'));
 });
 
 app.listen(3001, 'localhost', (err, result) => {

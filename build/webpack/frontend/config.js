@@ -20,7 +20,7 @@ const config = merge({
     cacheBusting: '[name]',
     paths: {
         root: path.resolve(rootPath, ''),
-        assets: path.resolve(rootPath, 'src'),
+        assets: path.resolve(rootPath, '../source/frontend'),
         dist: path.resolve(rootPath, 'dist'),
     },
     enabled: {

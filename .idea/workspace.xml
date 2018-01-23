@@ -1,869 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="[patch] [Datepicker] fix z-index for use with bootstrap modal">
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/WRITING_DOCUMENTATION.md" />
-      <change beforePath="$PROJECT_DIR$/.bowerrc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" afterPath="$PROJECT_DIR$/.eslintrc.js" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/styleguide.iml" afterPath="$PROJECT_DIR$/.idea/styleguide.iml" />
+    <list default="true" id="059c2bdf-3cec-4792-8d35-92e7c660240d" name="Default" comment="Remove .idea folder from repo, replace script ENV vars with cross-env library">
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/pages/brand/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/pages/product/api.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/pages/product/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/pages/product/sdk.jsx" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.istanbul.yml" afterPath="$PROJECT_DIR$/.istanbul.yml" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/docs/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/docker/apache-vhost.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/docker/env" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/docker/php.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/build.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/build_dev.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/.eslintrc.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/README.md" afterPath="$PROJECT_DIR$/docs/FRONTEND_DEVELOPMENT.md" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/config.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/babel.dev.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/babel.prod.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/babel-plugin-transform-async/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/babel-plugin-transform-async/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/babel-plugin-transform-async/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/babel-plugin-transform-async/test/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/bundle/debug-noop/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/config.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/eslint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/flow/css.js.flow" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/flow/file.js.flow" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/public-path.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/addHotMiddleware.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/assetManifestsFormatter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/interpolateName.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/mergeWithConcat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/util/promisify.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.optimize.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.config.watch.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/build/webpack/webpack.plugin.copyglobs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/pages/intro.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/assets/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/home.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/description.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/example-container.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/props-container.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/styles.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/include/test-result.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/main.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/src/styles/home.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/frontend/yarn.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/index.js" afterPath="$PROJECT_DIR$/build/generator/index.js" />
-      <change beforePath="$PROJECT_DIR$/build/generator/templates/staticPageHTML.hbs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/generator/templates/staticPageIndex.hbs" afterPath="$PROJECT_DIR$/build/generator/templates/staticPageIndex.hbs" />
-      <change beforePath="$PROJECT_DIR$/build/generator/tests/frontend.spec.js" afterPath="$PROJECT_DIR$/build/generator/tests/frontend.spec.js" />
-      <change beforePath="$PROJECT_DIR$/build/generator/tests/generator.spec.js" afterPath="$PROJECT_DIR$/build/generator/tests/generator.spec.js" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/copy-files.js" afterPath="$PROJECT_DIR$/build/scripts/copy-files.js" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/install-travis-dependencies.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/travis-deployment.sh" afterPath="$PROJECT_DIR$/build/scripts/travis-deployment.sh" />
-      <change beforePath="$PROJECT_DIR$/build/webpack/babel.dev.js" afterPath="$PROJECT_DIR$/build/webpack/babel.dev.js" />
       <change beforePath="$PROJECT_DIR$/build/webpack/server.js" afterPath="$PROJECT_DIR$/build/webpack/server.js" />
-      <change beforePath="$PROJECT_DIR$/build/webpack/webpack.config.ava.js" afterPath="$PROJECT_DIR$/build/webpack/webpack.config.ava.js" />
-      <change beforePath="$PROJECT_DIR$/build/webpack/webpack.config.dev.js" afterPath="$PROJECT_DIR$/build/webpack/webpack.config.dev.js" />
-      <change beforePath="$PROJECT_DIR$/build/webpack/webpack.config.prod.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/webpack/webpack.tests.js" afterPath="$PROJECT_DIR$/build/webpack/webpack.tests.js" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/config.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/listeners.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/patternengines.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/console" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/server/router.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/src/PatternLab/Installer.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/getH2X.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/installer" afterPath="" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/public/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/annotations/annotations.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/app-arena-styles.css" afterPath="$PROJECT_DIR$/public/css/app-arena-styles.css" />
-      <change beforePath="$PROJECT_DIR$/public/css/pattern-scaffolding.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/ajax-loader.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/bootstrapthumb.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/bootstrapthumb64.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/favicon_16x16.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/favicon_32x32.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/fpo_16x9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/fpo_4x3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/fpo_avatar.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/fpo_hero.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/fpo_square.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/icon-arrowhead.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/avatar1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/avatar2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/avatar3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/avatar4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/avatar5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/avatar6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/blog-hiker.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/blog-mtns6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/blog-trees.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/blog-trees2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/hero-forest.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/hero-mountains.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/hiking.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/landscape-16x9-mountains.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/logo-reversed.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-fire.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-gear.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-ivy.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-river.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/thumb-square-yosemite.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/tout-4x3-climber.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/tout-4x3-climbers.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/tout-4x3-stream.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/tout-leaves.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/tout-mountains.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/tout-winter-hiker.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/sample/waterfall.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/fitvids.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/init.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/modernizr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/nav.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/overlay.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/progress.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/.bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/CHANGELOG.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/Gemfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/Gemfile.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/Gruntfile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/dist/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/dist/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/change-version.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/configBridge.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/npm-shrinkwrap.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/grunt/sauce_browsers.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/alert.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/alert.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/button.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/button.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/carousel.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/carousel.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/collapse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/collapse.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/dropdown.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/dropdown.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/modal.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/modal.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/popover.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/popover.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/scrollspy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/scrollspy.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/tab.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/tab.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/tooltip.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/tooltip.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/util.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/dist/util.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/alert.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/button.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/carousel.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/collapse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/dropdown.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/modal.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/popover.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/scrollspy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/tab.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/tooltip.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/js/src/util.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/nuget/MyGet.ps1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/nuget/bootstrap.nuspec" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/nuget/bootstrap.sass.nuspec" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/package.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/bootstrap/sache.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/.bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/.npmignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/HELP-US-OUT.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/css/font-awesome.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/.bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/AUTHORS.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/dist/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/dist/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/dist/jquery.min.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/external/sizzle/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/external/sizzle/dist/sizzle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/external/sizzle/dist/sizzle.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/external/sizzle/dist/sizzle.min.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/.jshintrc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/jsonp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/load.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/parseJSON.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/parseXML.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/script.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/var/location.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/var/nonce.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/var/rquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/ajax/xhr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/attr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/classes.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/prop.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/support.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/attributes/val.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/callbacks.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/access.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/init.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/parseHTML.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/ready.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/core/var/rsingleTag.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/addGetHookIf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/adjustCSS.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/curCSS.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/defaultDisplay.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/hiddenVisibleSelectors.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/showHide.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/support.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/cssExpand.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/getStyles.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/isHidden.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/rmargin.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/rnumnonpx.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/css/var/swap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data/Data.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data/var/acceptData.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data/var/dataPriv.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/data/var/dataUser.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/deferred.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/deprecated.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/dimensions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/effects.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/effects/Tween.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/effects/animatedSelector.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/ajax.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/alias.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/focusin.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/support.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/event/trigger.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/exports/amd.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/exports/global.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/intro.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/_evalUrl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/buildFragment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/getAll.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/setGlobalEval.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/support.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/var/rcheckableType.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/var/rscriptType.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/var/rtagName.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/manipulation/wrapMap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/offset.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/outro.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/queue.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/queue/delay.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/selector-native.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/selector-sizzle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/selector.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/serialize.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing/findFilter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing/var/dir.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing/var/rneedsContext.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/traversing/var/siblings.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/arr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/class2type.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/concat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/document.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/documentElement.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/hasOwn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/indexOf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/pnum.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/push.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/rcssNum.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/rnotwhite.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/slice.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/support.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/var/toString.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery/src/wrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/latest-change.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/bower_components/EventEmitter.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/bower_components/classList.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/bower_components/hogan-3.0.2.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/bower_components/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/bower_components/jwerty.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/bower_components/prism.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/bower_components/script.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/bower_components/typeahead.bundle.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/css/prism-typeahead.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/css/prism-typeahead.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/css/styleguide.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/css/styleguide.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/data/patternlab-data.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/fonts/icomoon.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/fonts/icomoon.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/fonts/icomoon.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/fonts/icomoon.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/html/styleguide.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/js/patternlab-pattern.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/js/patternlab-pattern.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/js/patternlab-viewer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/styleguide/js/patternlab-viewer.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_annotations/annotations.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_data/data.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_data/listitems.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_meta/_00-head.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_meta/_01-foot.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/00-atoms.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/animations/animations.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/animations/animations@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/__tests__/button.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/button-variants@complete.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/button.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/button@complete.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/button/docs/button.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/copy/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/copy/index.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/counter/counter.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/counter/counter.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/datepicker/index.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/__tests__/input.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/__tests__/checkbox.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/checkbox.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/checkbox.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/checkbox@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/docs/checkbox.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/checkbox/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/colorPicker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/colorPicker.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/index.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/pointer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/sketchPicker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/color/sketchPicker.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/forms.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/input@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/__tests__/radio-button.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/docs/radio-button.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/radio-button.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/radio-button/radio-button@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/__tests__/select-menu.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/docs/select-menu.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/select-menu/select-menu@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/docs/tag-input.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/tag-input/tag-input.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/__tests__/text-area.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/docs/text-area.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/docs/text-area.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/text-area.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-area/text-area@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/__tests__/text-field.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/docs/text-field.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/docs/text-field.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/forms/text-field/text-field@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/docs/col.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/col/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/container/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/grid.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/docs/row.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/grid/row/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/__tests__/icons.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/docs/icons.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/icons.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/icons.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_animated.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_bordered-pulled.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_fixed-width.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_larger.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_list.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_mixins.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_rotated-flipped.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_screen-reader.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_stacked.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/icons/scss/_variables.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/image/image.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/image/image@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo-inverse.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo-inverse@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/logo/logo.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/media/03-image@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/navbar/action.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/navbar/action.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/__tests__/progress-tracker-step.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/docs/progress-tracker-step.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/progress-tracker-step/progress-tracker-step@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/search-box/search-box.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/search-box/search-box.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/slider/slider.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/slider/slider.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/__tests__/spinner.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/docs/spinner.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/spinner/spinner.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/step/docs/CHANGELOG.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/step/docs/step.example.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/step/docs/step.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/step/index.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/step/index.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/svgs/header-background-svg.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/svgs/header-objects-svg.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/__tests__/table.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/docs/table.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/docs/table.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/table.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/table.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/table.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/table/table@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/docs/tag.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/docs/tag.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/tag-variants@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/tag.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/tag.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/tag.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/tag/tag@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/blockquote.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/blockquote@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/definition.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/definition@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/headings.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/headings@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/inline-elements.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/inline-elements@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/list-ordered.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/list-ordered@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/list-unordered.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/list-unordered@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/paragraph.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/00-atoms/typography/paragraph@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/00-molecules.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/ajax-loader.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/docs/ajax-loader.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/ajax-loader/docs/ajax-loader.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/box/intro.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/box/intro.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/box/intro.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/box/intro.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/__tests__/breadcrumb.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/breadcrumb@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/docs/breadcrumb.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/breadcrumb/docs/breadcrumb.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/__tests__/button-group.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/button-group.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/button-group.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/button-group.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/button-group@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/docs/button-group.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/button-group/docs/button-group.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/__tests__/card.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/card@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/docs/card.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/card/docs/card.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/chart.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/docs/chart.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/chart/docs/chart.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/__tests__/dropdown.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/docs/dropdown.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/dropdown/dropdown.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/docs/filter-bar.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/filter-bar/filter-bar@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/__tests__/custom-control.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/checkboxes.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/checkboxes@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/custom-control.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/form-group@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/radio-buttons.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/radio-buttons@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/__tests__/search.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/docs/search.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/docs/search.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/search/search@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/select.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/select.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/select@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/textarea.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/forms/textarea@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/__tests__/input-group.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-button.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-button@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-checkbox.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-checkbox@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-dropdown.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-dropdown@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-radio.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-radio@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-segmented.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-segmented@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-variants.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group-variants@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/input-group/input-group@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/__tests__/jumbotron.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/docs/jumbotron.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/docs/jumbotron.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/jumbotron.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/jumbotron/jumbotron@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/__tests__/list-group.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/docs/list-group.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/docs/list-group.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/list-group.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/list-group.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/list-group/list-group@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/__tests__/media.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/docs/media.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/docs/media.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/feature-object.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/feature-object@complete.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media-object-variants.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media-object-variants@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media-object.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media-object@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/media.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/responsive-embed.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/media/responsive-embed@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/__tests__/alert.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/alert.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/alert@reactpending.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/docs/alert.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/docs/alert.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/alert/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/banner-message.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/banner-message.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/banner-message@reactpending.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/docs/banner-message.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/docs/banner-message.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/banner-message/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification-container/docs/notificationContainer.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification-container/docs/notificationContainer.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification-container/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification-container/index.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/docs/notification.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/docs/notification.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/index.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/notification.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/messages/notification/notification@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/__tests__/modal.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/docs/modal.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal-body.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal-footer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal-header.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modal@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/modal/modalContainer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/docs/navbar.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar-form.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar-form.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar-form.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar-form.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar-variants@complete.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navbar/navbar.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/docs/nav-item.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/docs/nav-item.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav-item/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/__tests__/nav.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/docs/nav.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/docs/nav.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/nav/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs-variants.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs-variants@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/navs/navs.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/page-header/page-header.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/page-header/page-header.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/page-header/page-header.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/page-header/page-header@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/pagination/pagination.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/pagination/pagination.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/pagination/pagination@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/docs/popover.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/docs/popover.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/popover/popover.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/__tests__/progress-bar.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/docs/progress-bar.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar-variants.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar-variants@complete.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-bar/progress-bar@complete.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/__tests__/progress-tracker.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/docs/progress-tracker.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/progress-tracker/progress-tracker@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/testimonial/testemonial-client.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/testimonial/testemonial-client.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/__tests__/tooltip.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/docs/tooltip.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/docs/tooltip.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/tooltip/tooltip@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/website/service.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/website/service.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/website/usp.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/website/usp.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/website/usp.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/01-molecules/website/usp.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/00-organisms.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/auth.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/docs/auth.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/docs/auth.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/login.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/login.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/auth/login@complete.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/forms/form.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/forms/form.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/footer.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/header.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/header.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/layout/header.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/cards-list@inprogress.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/docs/cards-list.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/docs/cards-list.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/cards-list/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/counter-list.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/counter-list.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/counter-list.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/services-list.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/services-list.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/services-list.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/docs/table-list.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/docs/table-list.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/table-list/table-list.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/lists/usp-list.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/modules/features.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/modules/features@complete.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-footer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-footer.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-footer.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-footer.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-primary.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-primary@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/docs/nav-secondary-group.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary-group/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/docs/nav-secondary.example.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/docs/nav-secondary.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/nav-secondary.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/nav-secondary.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-secondary/nav-secondary@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-sidebar.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-sidebar.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/navigation/nav-sidebar@inreview.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/__tests__/price-component-single.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/docs/index.example.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/docs/price-component-single.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/index.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-component-single/index.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/__tests__/price-table.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/custom-package-creator/custom-package-creator.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/custom-package-creator/custom-package-creator.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/docs/price-table-element.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/docs/price-table.example.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/docs/price-table.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/price-table/price-table.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/about.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/about.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/footer-cto.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/footer-cto.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/footer-cto.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/hompage-header.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/hompage-header.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/hompage-header.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/productofthemonth.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/productofthemonth.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/productofthemonth.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/sections/sections.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/references-slider.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/slider.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/slider.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/slider.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/slider/slider@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/02-organisms/tabs/vertical-tabs.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/00-templates.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/00-templates/void.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/01-manager/focused-task.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/01-manager/focused-task@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/01-manager/focused-task~large.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/blog-index@inprogress.mustache.old" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/blogs.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/blogs@complete.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/category.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/category@complete.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/detail.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/detail@complete.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/form@inprogress.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/homepage.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/homepage.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/partner.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/partner@complete.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/service.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/03-templates/02-website/service@complete.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/00-pages.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/00-pages/void.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create-step2.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create-step2@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create-step3.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create-step3@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-create@inreview.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/app-detail@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login~create-app.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/01-manager/login~register.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/about.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/about@inprogress.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/blog-detail@inprogress.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/blog-index.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/blog-index@inprogress.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/contact.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/contact@inprogress.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/detail.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/detail@complete.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/homepage.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/04-pages/02-website/homepage.mustache.testme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/00-index.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/00-index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/00-index.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/01-brand.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/01-brand.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/colors.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/colors@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/fonts.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/fonts@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/images" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/logos.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/logos@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/powerpoint@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/corporate-identity/word@inprogress.mustache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/react-utils/animate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/react-utils/component.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/react-utils/draggable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/react-utils/portal.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/react-utils/scrollable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/react-utils/scss/portal.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/react-utils/scss/scrollable.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/react-utils/scss/stick.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/react-utils/stick.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/css/app-arena-styles.css" afterPath="$PROJECT_DIR$/source/css/app-arena-styles.css" />
-      <change beforePath="$PROJECT_DIR$/source/css/app-arena-styles.scss" afterPath="$PROJECT_DIR$/source/css/app-arena-styles.scss" />
+      <change beforePath="$PROJECT_DIR$/source/frontend/home.jsx" afterPath="$PROJECT_DIR$/source/frontend/home.jsx" />
+      <change beforePath="$PROJECT_DIR$/source/pages/brand/documents.jsx" afterPath="$PROJECT_DIR$/source/pages/brand/documents.jsx" />
+      <change beforePath="$PROJECT_DIR$/source/pages/brand/icons.jsx" afterPath="$PROJECT_DIR$/source/pages/brand/icons.jsx" />
+      <change beforePath="$PROJECT_DIR$/source/pages/brand/logos.jsx" afterPath="$PROJECT_DIR$/source/pages/brand/logos.jsx" />
+      <change beforePath="$PROJECT_DIR$/source/pages/brand/presentations.jsx" afterPath="$PROJECT_DIR$/source/pages/brand/presentations.jsx" />
+      <change beforePath="$PROJECT_DIR$/source/pages/brand/typography.jsx" afterPath="$PROJECT_DIR$/source/pages/brand/typography.jsx" />
+      <change beforePath="$PROJECT_DIR$/source/pages/brand/writing-style.jsx" afterPath="$PROJECT_DIR$/source/pages/brand/writing-style.jsx" />
+      <change beforePath="$PROJECT_DIR$/source/pages/corporate-identity/00-corporate-identity.jsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/pages/corporate-identity/01-brand.jsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/pages/corporate-identity/02-logos.jsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/pages/corporate-identity/03-fonts.jsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/pages/corporate-identity/04-word.jsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/pages/corporate-identity/05-powerpoint.jsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/pages/corporate-identity/styles.ci" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/pages/index.js" afterPath="$PROJECT_DIR$/source/pages/index.js" />
+      <change beforePath="$PROJECT_DIR$/source/pages/product/01-apps.jsx" afterPath="$PROJECT_DIR$/source/pages/product/apps.jsx" />
+      <change beforePath="$PROJECT_DIR$/source/pages/product/02-widgets.jsx" afterPath="$PROJECT_DIR$/source/pages/product/widgets.jsx" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -897,100 +62,113 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+    <leaf>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="128" column="8" lean-forward="false" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
+            <state relative-caret-position="276">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <folding>
+                <element signature="e#92#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icons.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/pages/brand/icons.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_hot.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index_hot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app-arena-styles.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/css/app-arena-styles.scss">
+      <file leaf-file-name="home.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/frontend/home.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="75" column="47" lean-forward="false" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
+            <state relative-caret-position="391">
+              <caret line="266" column="34" lean-forward="true" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <file leaf-file-name="typography.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/pages/brand/typography.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="-298">
+              <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+              <folding>
+                <marker date="1516718225443" expanded="true" signature="608:1417" ph="..." />
+                <marker date="1516718225443" expanded="true" signature="645:686" ph="..." />
+                <marker date="1516718225443" expanded="true" signature="721:1401" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".babelrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/pages/brand/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="500">
+              <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/pages/product/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="275">
+              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownHtmlPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="272">
-                <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="big-data.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/pages/product/big-data.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2498">
+              <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run-travis-tests.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/scripts/run-travis-tests.sh">
+      <file leaf-file-name="apps.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/pages/product/apps.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.ava.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/webpack/webpack.config.ava.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scrollable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/patterns/react-utils/scrollable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="-2448">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -999,14 +177,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pages</find>
-      <find>staticPages</find>
-      <find>staticpa</find>
-      <find>renderTable</find>
-      <find>react-se</find>
-      <find>autofocus</find>
-      <find>renderCategories</find>
-      <find>test</find>
       <find>search f</find>
       <find>renderStaticPageLinks</find>
       <find>currentStaticPage</find>
@@ -1029,6 +199,14 @@
       <find>reactcompo</find>
       <find>webpack.config.ava.js</find>
       <find>deploy.sh</find>
+      <find>.github</find>
+      <find>wil</find>
+      <find>alias</find>
+      <find>b</find>
+      <find>babel</find>
+      <find>wildcar</find>
+      <find>log(</find>
+      <find>App-Arena Com</find>
     </findStrings>
     <replaceStrings>
       <replace>childProcess</replace>
@@ -1036,33 +214,18 @@
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
+      <dir>C:\Users\sbuck\projects\patterns\build\webpack</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/patterns/00-atoms/icons/docs/icons.example.js" />
-        <option value="$PROJECT_DIR$/build/webpack/frontend/webpack.config.js" />
-        <option value="$PROJECT_DIR$/.eslintrc.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/public/package.json" />
-        <option value="$PROJECT_DIR$/build/webpack/frontend/config.js" />
-        <option value="$PROJECT_DIR$/.istanbul.yml" />
-        <option value="$PROJECT_DIR$/build/generator/tests/generator.spec.js" />
-        <option value="$PROJECT_DIR$/build/scripts/copy-files.js" />
-        <option value="$PROJECT_DIR$/docs/GENERATOR_README.md" />
-        <option value="$PROJECT_DIR$/source/patterns/00-atoms/button/button.js" />
-        <option value="$PROJECT_DIR$/build/webpack/babel.dev.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/public/index_dev.html" />
-        <option value="$PROJECT_DIR$/source/patterns/00-atoms/forms/checkbox/index.js" />
-        <option value="$PROJECT_DIR$/public/src/components/source/patterns/00-atoms/forms/checkbox/docs/checkboxExample.js" />
         <option value="$PROJECT_DIR$/source/patterns/00-atoms/forms/checkbox/docs/checkbox.example.js" />
         <option value="$PROJECT_DIR$/build/webpack/webpack.config.dev.js" />
-        <option value="$PROJECT_DIR$/build/webpack/server.js" />
         <option value="$PROJECT_DIR$/source/patterns/00-atoms/button/docs/button.example.js" />
         <option value="$PROJECT_DIR$/public/src/staticPages/intro.jsx" />
         <option value="$PROJECT_DIR$/source/pages/test.md" />
@@ -1081,20 +244,37 @@
         <option value="$PROJECT_DIR$/build/generator/index.js" />
         <option value="$PROJECT_DIR$/source/pages/example/example.jsx" />
         <option value="$PROJECT_DIR$/docs/FRONTEND_DEVELOPMENT.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/build/generator/tests/frontend.spec.js" />
         <option value="$PROJECT_DIR$/build/webpack/webpack.config.prod.js" />
         <option value="$PROJECT_DIR$/build/apparena-patterns-react/package.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/build/scripts/install-travis-dependencies.sh" />
         <option value="$PROJECT_DIR$/build/scripts/travis-deployment.sh" />
         <option value="$PROJECT_DIR$/docs/CHANGELOG.md" />
-        <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/build/webpack/webpack.config.ava.js" />
         <option value="$PROJECT_DIR$/source/css/app-arena-styles.scss" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/build/webpack/babel.dev.js" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/build/webpack/frontend/babel.dev.js" />
+        <option value="$PROJECT_DIR$/build/webpack/frontend/babel.prod.js" />
+        <option value="$PROJECT_DIR$/source/pages/brand/presentations.jsx" />
+        <option value="$PROJECT_DIR$/source/pages/home.jsx" />
+        <option value="$PROJECT_DIR$/source/pages/brand/documents.jsx" />
+        <option value="$PROJECT_DIR$/source/pages/brand/logos.jsx" />
+        <option value="$PROJECT_DIR$/source/pages/brand/writing-style.jsx" />
+        <option value="$PROJECT_DIR$/source/pages/brand/typography.jsx" />
+        <option value="$PROJECT_DIR$/build/webpack/server.js" />
+        <option value="$PROJECT_DIR$/source/pages/product/index.js" />
+        <option value="$PROJECT_DIR$/source/pages/brand/index.js" />
+        <option value="$PROJECT_DIR$/source/pages/brand/icons.jsx" />
+        <option value="$PROJECT_DIR$/source/frontend/home.jsx" />
+        <option value="$PROJECT_DIR$/source/pages/index.js" />
       </list>
     </option>
   </component>
@@ -1113,11 +293,15 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1599" />
-    <option name="width" value="1922" />
-    <option name="height" value="1051" />
+    <option name="x" value="-2891" />
+    <option name="y" value="-11" />
+    <option name="width" value="2902" />
+    <option name="height" value="1597" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -1155,63 +339,33 @@
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="grunt" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webpack" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webpack" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="docs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="brand" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app-arena-styles.scss" type="620a8d5e:NestingTreeNode" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="product" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -1231,12 +385,15 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../appmanager2.5" />
-    <property name="SearchEverywhereHistoryKey" value="bundle.js&#9;FILE&#9;file:///srv/http/patterns/node_modules/react-toggle/dist/docs/bundle.js" />
+    <property name="SearchEverywhereHistoryKey" value="portal&#9;null&#9;null&#10;bundle.js&#9;FILE&#9;file:///srv/http/patterns/node_modules/react-toggle/dist/docs/bundle.js" />
     <property name="javascript.nodejs.core.library.configured.version" value="9.4.0" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="TF_FMT" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sbuck\projects\patterns\source\pages\product" />
+      <recent name="C:\Users\sbuck\projects\patterns\source\pages\corporate-identity" />
       <recent name="$PROJECT_DIR$/source/pages/example" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -1247,6 +404,116 @@
       <recent name="$PROJECT_DIR$/public/dev" />
       <recent name="$PROJECT_DIR$/docs" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/generator/index.js</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1291,41 +558,55 @@
       <updated>1515669047328</updated>
       <workItem from="1515669070494" duration="11874000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove .idea folder from repo, replace script ENV vars with cross-env library">
+      <created>1516704842648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1516704842648</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="73572000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1599" y="0" width="1922" height="1051" extended-state="6" />
+    <frame x="-2891" y="-11" width="2902" height="1597" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3091892" sideWeight="0.51277953" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3619565" sideWeight="0.48722044" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37002096" sideWeight="0.46964857" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34860557" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36063218" sideWeight="0.48722044" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37931034" sideWeight="0.4744409" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21077909" sideWeight="0.46413043" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22241993" sideWeight="0.46413043" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.48935038" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2049822" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36890244" sideWeight="0.47763577" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16347177" sideWeight="0.55625993" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16347177" sideWeight="0.55625993" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16595517" sideWeight="0.53586954" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16595517" sideWeight="0.53586954" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -1340,11 +621,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove .idea folder from repo, replace script ENV vars with cross-env library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove .idea folder from repo, replace script ENV vars with cross-env library" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1354,8 +633,14 @@
           <line>44</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/source/frontend/home.jsx</url>
+          <line>268</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="90" />
+      <option name="time" value="91" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1367,153 +652,130 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/_build/test.js.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/source/patterns/02-organisms/layout/footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/_build/test.js">
+    <entry file="file://$PROJECT_DIR$/build/scripts/grunt/sass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/patterns/00-atoms/grid/col/index.js">
+    <entry file="file://$PROJECT_DIR$/source/css/app-arena-styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="1875">
+          <caret line="75" column="47" lean-forward="false" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/patterns/01-molecules/navbar/navbar.js">
+    <entry file="file://$PROJECT_DIR$/public/dist/scripts/main.min.js" />
+    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/css/app-arena-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/css/app-arena-styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/patterns/01-molecules/navbar/navbar.js">
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/css/app-arena-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="3360" column="19" lean-forward="false" selection-start-line="3360" selection-start-column="19" selection-end-line="3360" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;MarkdownHtmlPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_functions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3060">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/css/scss/abstracts/_variables_bootstrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="130" column="29" lean-forward="true" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/css/scss/abstracts/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/patterns/01-molecules/navbar/navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="131" column="37" lean-forward="false" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/patterns/01-molecules/navbar/navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/patterns/00-atoms/button/button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/webpack.config.prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/patterns/00-atoms/step/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#26#52#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/frontend/public-path.js">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/frontend/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        <state relative-caret-position="187">
+          <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+    <entry file="file://$PROJECT_DIR$/source/frontend/components/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/templates/components_index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generator/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1525,280 +787,308 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/dist/assets.json">
+    <entry file="file://$PROJECT_DIR$/source/patterns/react-utils/portal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="475">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yarn-error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225365">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/build_dev.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/i18n-js/app/assets/javascripts/i18n.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/CHANGELOG.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <first_editor relative-caret-position="403">
+            <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
-            <js_state>
-              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:192.00000107}" />
-            </js_state>
+            <js_state />
           </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/package.json">
+    <entry file="file://$PROJECT_DIR$/source/pages/brand/colors.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/patterns/react-utils/component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/patterns/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="179" column="31" lean-forward="false" selection-start-line="179" selection-start-column="31" selection-end-line="179" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/scripts/copy-files.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
-            <element signature="e#32#56#0" expanded="false" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/scripts/install-travis-dependencies.sh">
+    <entry file="file://$PROJECT_DIR$/build/webpack/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/scripts/travis-deployment.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/scripts/travis-aws-deploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/patterns/react-utils/scrollable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/babel.prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="250">
+          <caret line="62" column="86" lean-forward="false" selection-start-line="62" selection-start-column="85" selection-end-line="62" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/webpack/babel.dev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="325">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/webpack.config.dev.js">
+    <entry file="file://$PROJECT_DIR$/build/webpack/frontend/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="276">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack/webpack.config.ava.js">
+    <entry file="file://$PROJECT_DIR$/build/webpack/frontend/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/scripts/run-travis-tests.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generator/deploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/patterns/02-organisms/layout/footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/scripts/grunt/sass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="128" column="8" lean-forward="false" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/css/app-arena-styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="75" column="47" lean-forward="false" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
+        <state relative-caret-position="250">
+          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        <state relative-caret-position="150">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/dist/scripts/main.min.js">
+    <entry file="file://$PROJECT_DIR$/build/webpack/frontend/babel.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack/frontend/babel.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/corporate-identity/05-powerpoint.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/brand/presentations.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/corporate-identity/04-word.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="101" column="6" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="101" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/corporate-identity/03-fonts.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="35" column="6" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="35" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/corporate-identity/02-logos.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/frontend/main.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/corporate-identity/00-corporate-identity.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="672" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/css/app-arena-styles.css">
+    <entry file="file://$PROJECT_DIR$/source/pages/home.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="16800">
+          <caret line="672" column="1" lean-forward="false" selection-start-line="672" selection-start-column="1" selection-end-line="672" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/apparena-patterns-react/css/app-arena-styles.scss">
+    <entry file="file://$PROJECT_DIR$/source/pages/corporate-identity/01-brand.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
+        <state relative-caret-position="1527">
+          <caret line="111" column="26" lean-forward="true" selection-start-line="109" selection-start-column="16" selection-end-line="111" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/brand/documents.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/brand/logos.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/brand/writing-style.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/brand/typography.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-298">
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding>
+            <marker date="1516718225443" expanded="true" signature="608:1417" ph="..." />
+            <marker date="1516718225443" expanded="true" signature="645:686" ph="..." />
+            <marker date="1516718225443" expanded="true" signature="721:1401" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/brand/01-personality.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/product/big-data.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2498">
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/product/apps.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2448">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/source/pages/brand/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="500">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/css/app-arena-styles.css">
+    <entry file="file://$PROJECT_DIR$/source/pages/product/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="3360" column="19" lean-forward="false" selection-start-line="3360" selection-start-column="19" selection-end-line="3360" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="275">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/public/index_hot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="325">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownHtmlPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="272">
-            <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/source/frontend/home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="266" column="34" lean-forward="true" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/brand/icons.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="e#92#125#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

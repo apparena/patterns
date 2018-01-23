@@ -4,7 +4,6 @@ import fse from 'fs-extra';
 import handlebars from 'handlebars';
 import path from 'path';
 import _ from 'lodash'
-import camelcase from 'camelcase';
 
 const reactDocs = require('react-docgen');
 
@@ -12,8 +11,7 @@ const reactDocs = require('react-docgen');
 _.mixin({pascalCase: _.flow(_.camelCase, _.upperFirst)});
 
 console.log('Cleaning directories...');
-fse.removeSync('public/src/components');
-fse.removeSync('public/src/staticPages');
+fse.removeSync('source/frontend/components');
 
 /**
  * Get the path + the base name of a component. The base name is the entire name without the extension. This helps
@@ -43,14 +41,12 @@ function generateComponentDocumentation(directory) {
 
     glob.sync(`${directory}/**/?(docs)/**`).forEach((file) => {
         if (file.endsWith('.md')) {
-            mdFileName = `${_.camelCase(path.basename(file, path.extname(file)))}${path.extname(file)}`;
-            fse.copySync(file, `public/src/components/${directory}/docs/${mdFileName}`);
+            mdFileName = `${path.basename(file, path.extname(file))}${path.extname(file)}`;
         } else if (file.match(/.spec.?(js|jsx)/)) {
             // TODO: Figure out testing
 
         } else if (file.match(/.example.?(js|jsx)/)) {
-            exampleFileName = `${_.camelCase(path.basename(file, path.extname(file)))}${path.extname(file)}`;
-            fse.copySync(file, `public/src/components/${directory}/docs/${exampleFileName}`);
+            exampleFileName = `${path.basename(file, path.extname(file))}${path.extname(file)}`;
         }
     });
 
@@ -64,10 +60,9 @@ function generateComponentDocumentation(directory) {
         try {
             const infos = reactDocs.parse(componentContent);
             const infosString = JSON.stringify(infos);
-            if (fse.existsSync(`public/src/components/${directory}/docs/`)) {
-                propsFileName = 'info.json';
-                fse.writeFileSync(`public/src/components/${directory}/docs/info.json`, infosString);
-            }
+
+            propsFileName = 'info.json';
+            fse.outputFileSync(`source/frontend/components/${directory}/info.json`, infosString);
         }
         catch (err) {
             // Example error won't be caught here... crashing our app
@@ -75,17 +70,17 @@ function generateComponentDocumentation(directory) {
         }
     });
 
-
     const componentTemplateSource = fse.readFileSync('build/generator/templates/component.hbs', 'utf8');
     const componentTemplate = handlebars.compile(componentTemplateSource);
     const data = {
         mdFileName,
         exampleFileName,
         propsFileName,
-        componentClassName
+        componentClassName,
+        patternDir: directory.replace('source/patterns/', '')
     };
     const renderedTemplate = componentTemplate(data);
-    fse.outputFileSync(`public/src/components/${directory}/index.jsx`, renderedTemplate, 'utf8');
+    fse.outputFileSync(`source/frontend/components/${directory}/index.jsx`, renderedTemplate, 'utf8');
 }
 
 function createComponentsList(categories) {
@@ -98,9 +93,8 @@ function createComponentsList(categories) {
     });
     const liststring = JSON.stringify(list);
 
-    fse.writeFileSync('public/src/components/list.json', liststring);
+    fse.writeFileSync('source/frontend/components/list.json', liststring);
 }
-
 
 /**
  * Iterate through the component sources
@@ -135,16 +129,17 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
      * Generate documentation for each component
      */
     console.log('Generating documentation...');
+    const exportedComponents = fse.readFileSync('source/patterns/index.js', 'utf8');
+
     each(componentDirectories, (directory, callback) => {
         if (!fse.existsSync(`${directory}/docs`)) {
             callback();
             return;
         }
 
-        const component = directory.split('/').slice(-1);
-        const exportedComponents = fse.readFileSync('source/patterns/index.js', 'utf8');
+        const component = directory.split('/').slice(2).join('/');
 
-        if (!exportedComponents.includes(`/${component}';`)) {
+        if (!exportedComponents.includes(`/${component}`)) {
             callback();
             return;
         }
@@ -191,7 +186,7 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
                     }
                     className = _.pascalCase(className);
                     category.components.push(className);
-                    indexFiles.push({name: className, directory});
+                    indexFiles.push({name: className, directory: path.posix.join(directory, 'index')});
                 });
             }
         });
@@ -215,77 +210,6 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
         components: indexFiles
     };
     const renderedIndexTemplate = indexTemplate(indexTemplateData);
-    fse.outputFileSync('public/src/components/index.jsx', renderedIndexTemplate, 'utf8');
+    fse.outputFileSync('source/frontend/components/index.jsx', renderedIndexTemplate, 'utf8');
 
 });
-
-glob('source/pages/**/*.?(js|jsx|scss)', (err, files) => {
-    console.log('Creating static pages');
-
-    const pages = [];
-
-    // Categorize each JavaScript file into their respective pages
-    files.forEach((file) => {
-        // Get the name of the directory that each jsx file resides in. That way we don't have to split the string manually.
-        const dir = path.basename(path.dirname(file));
-
-        if (!pages.includes(dir)) {
-            pages.push(dir);
-        }
-    });
-
-    // Prepare the handlebars templates
-    const staticPageIndexSource = fse.readFileSync('build/generator/templates/staticPageIndex.hbs', 'utf8');
-    const staticPageIndexTemplate = handlebars.compile(staticPageIndexSource);
-    const index = {
-        exports: [],
-        imports: []
-    };
-
-    /**
-     * Generate the index file so that the pages can be imported and copy the files into the public directory
-     * so they can be served statically.
-     */
-    files.forEach((file) => {
-        const ext = path.extname(file);
-        const filename = path.basename(file, ext);
-        const page = path.basename(path.dirname(file));
-
-        // Don't process non-JavaScript files
-        if (ext === '.js' || ext === '.jsx') {
-            // The file is the main page content file
-            if (pages.includes(filename)) {
-                index.exports.push({
-                    route: `${page}/${filename}`,
-                    component: camelcase(filename),
-                    name: `${page}/${filename}`,
-                    position: 'top',
-                    page
-                });
-            }
-            // The file is a sidebar item
-            else {
-                index.exports.push({
-                    route: `${page}/${filename}`,
-                    component: camelcase(filename),
-                    name: `${page}/${filename}`,
-                    position: 'sidebar',
-                    page
-                });
-            }
-
-            index.imports.push({componentName: camelcase(filename), componentFile: filename, page});
-            fse.copySync(file, `public/src/staticPages/${page}/${filename}.jsx`);
-        }
-        // Non-JavaScript files should still be copied to the target directory (for example for custom styling)
-        else {
-            fse.copySync(file, `public/src/staticPages/${page}/${filename}${ext}`);
-        }
-    });
-
-    const renderedIndex = staticPageIndexTemplate({imports: index.imports, exports: index.exports});
-    fse.outputFileSync(`public/src/staticPages/index.jsx`, renderedIndex, 'utf8');
-
-    console.log("Finished creating static pages");
-});
-

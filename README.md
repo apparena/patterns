@@ -72,14 +72,34 @@ the documentation at [https://components.app-arena.com/](https://components.app-
 
 ## Contributing
 
+Before getting started make sure to install the dependencies with
+`npm install` or `yarn`.
+
+To see your changes in the frontend:
+
+* use `npm run build:frontend:dev` (or `npm run build:frontend:watch` if you want a watcher) and open public/index_dev.html in your browser
+* If you want hot-reloading you can use the Node Webserver by running `npm run start` and open localhost:3001 in your browser
+
+Now you're ready and you can get to work!  
 If you would like to contribute to the documentation or write documentation
 for a new component please have a look at [our guide to writing documentation!](/docs/WRITING_DOCUMENTATION.md)
 If you want to start hacking away at the frontend, which can be found at [https://components.app-arena.com/](https://components.app-arena.com/),
 please read [our guide to working on the frontend.](/docs/FRONTEND_DEVELOPMENT.md)
 
+### Creating a new pattern
+
+We provide a yeoman generator that requires 2 clicks to create a new pattern.
+
+1. Install the generator: `npm install -g generator-apparena-pattern`
+2. Run the generator: `yo apparena-pattern`
+3. Follow the onscreen prompts
+4. Overwrite the file *source/patterns/index.js* if prompted (make a backup of your changes!)
+
+Done! Now edit your newly created pattern under *source/patterns/...*
+
 ### Preparing for the pull request
 
-You commits leading up to the pull request should be named properly.
+Your commits leading up to the pull request should be named properly.
 Each commit should begin with the name of the component that you have worked on
 in square brackets followed by a quick summary of what was done.  
 Example: `[Component] Added documentation`
@@ -95,16 +115,7 @@ NPM deployment and only updates the documentation.
 Always run the tests and the linter prior to opening a pull request and fix
 any issues, errors and warnings that occur.
 
-## Roadmap
-
-The future plans and high priority features and enhancements can be found
-in the [ROADMAP.md](https://github.com/apparena/patterns/blob/master/ROADMAP.md) file.
-
-## Contribute
-
-[App-Arena Patterns](http://components.app-arena.com/) came about from our love of
-[React](http://facebook.github.io/react/)
 
 ## License
 This project is licensed under the terms of the
-[MIT license](https://github.com/callemall/apparena-patterns-react/blob/master/LICENSE)
+[MIT license](LICENSE.md)

@@ -4,7 +4,7 @@ cache:
   directories:
     - node_modules
 node_js:
-  - 9
+  - 9.3
 sudo: false
 before_install:
   - pip install --user awscli
