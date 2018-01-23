@@ -28,6 +28,32 @@ const title = 'BigData';
 
 function render() {
     return [
+        <Card key={"4"}>
+            <div type="card-header">
+                Client-SDK
+            </div>
+            <div type="card-body">
+                <Row>
+                    <Col xs="3">
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
+                    </Col>
+                    <Col xs="9">
+                        <Markdown
+                            source={`
+This libary provides the code to dynamically load customer widgets.
+The SDK is always loaded via analytics.js App-Arena Integration.
+`}
+                        />
+                        <Button type="outline-primary"
+                                href="https://github.com/apparena/client-sdk#readme"
+                                className={styles.readMoreButton}
+                        >
+                            Read more
+                        </Button>
+                    </Col>
+                </Row>
+            </div>
+        </Card>,
         <Card key={"1"}>
             <div type="card-header">
                 Analytics.js

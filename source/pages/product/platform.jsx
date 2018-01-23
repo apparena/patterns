@@ -15,23 +15,39 @@ Using Redux it offers a single-page-application experience that enables editing 
 configuration values without requiring a page reload.
 `;
 
-const phpSdkDescription = `
-Use this SDK to setup the connection to your App-Manager Project.
-`;
-
-const clientSdkDescription = `
-This libary provides the code to dynamically load customer widgets.  
-The SDK is always loaded via analytics.js App-Arena Integration.
-`;
-
 const componentDocsDescription = `
 The App-Arena patterns are a collection of react components built specifically around the App-Arena CI.
 `;
 
-const title = 'Platform';
+const title = 'Platform & SDKs';
 
 function render() {
     return [
+        <Card key={"3"}>
+            <div type="card-header">
+                PHP-SDK
+            </div>
+            <div type="card-body">
+                <Row>
+                    <Col xs="3">
+                        <img alt="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png" className={styles.imgThumbnail}/>
+                    </Col>
+                    <Col xs="9">
+                        <Markdown
+                            source={`
+Use this SDK to setup the connection to your App-Manager Project.
+`}
+                        />
+                        <Button type="outline-primary"
+                                href="https://github.com/apparena/php-sdk"
+                                className={styles.readMoreButton}
+                        >
+                            Read more
+                        </Button>
+                    </Col>
+                </Row>
+            </div>
+        </Card>,
         <Card key={"1"}>
             <div type="card-header">
                 App-Manager 2.5
@@ -70,52 +86,6 @@ function render() {
                         />
                         <Button type="outline-primary"
                                 href="https://bitbucket.org/apparena/app-manager-js-lib/src"
-                                className={styles.readMoreButton}
-                        >
-                            Read more
-                        </Button>
-                    </Col>
-                </Row>
-            </div>
-        </Card>,
-        <Card key={"3"}>
-            <div type="card-header">
-                PHP-SDK
-            </div>
-            <div type="card-body">
-                <Row>
-                    <Col xs="3">
-                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
-                    </Col>
-                    <Col xs="9">
-                        <Markdown
-                            source={phpSdkDescription}
-                        />
-                        <Button type="outline-primary"
-                                href="https://github.com/apparena/php-sdk"
-                                className={styles.readMoreButton}
-                        >
-                            Read more
-                        </Button>
-                    </Col>
-                </Row>
-            </div>
-        </Card>,
-        <Card key={"4"}>
-            <div type="card-header">
-                Client-SDK
-            </div>
-            <div type="card-body">
-                <Row>
-                    <Col xs="3">
-                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
-                    </Col>
-                    <Col xs="9">
-                        <Markdown
-                            source={clientSdkDescription}
-                        />
-                        <Button type="outline-primary"
-                                href="https://github.com/apparena/client-sdk#readme"
                                 className={styles.readMoreButton}
                         >
                             Read more
