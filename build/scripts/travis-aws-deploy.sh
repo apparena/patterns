@@ -7,4 +7,4 @@ eu-central-1
 text
 EOM
 
-aws --profile cfdoc cloudfront create-invalidation --distribution-id ${DIST_ID} --paths *
+aws --profile cfdoc cloudfront create-invalidation --distribution-id ${DIST_ID} --paths '/*'

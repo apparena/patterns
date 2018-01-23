@@ -39,9 +39,9 @@ function render() {
                         <td>
                             <Button type="link"
                                     href="https://s3.app-arena.com/marketing/corporate-identity/vorlagen/brief-vorlage.docx"
-                        >
-                            Download
-                        </Button>
+                            >
+                                Download
+                            </Button>
                         </td>
                     </tr>
                     <tr>
