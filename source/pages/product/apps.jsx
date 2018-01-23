@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Row, Col, Button} from 'apparena-patterns-react';
+import {Card, Row, Col, Button, Tag} from 'apparena-patterns-react';
 import styles from './software.scss';
 import Markdown from 'react-markdown';
 
@@ -10,6 +10,9 @@ function render() {
         <Card key={"1"}>
             <div type="card-header">
                 Multimedia Contest
+                <Tag type="secondary" pill>
+                    Private
+                </Tag>
             </div>
             <div type="card-body">
                 <Row>
@@ -26,7 +29,7 @@ You can host your own photo or video contests using the *Multimedia Contest* app
                                 href="https://bitbucket.org/apparena/multimedia-contest/src"
                                 className={styles.readMoreButton}
                         >
-                            Read more
+                            View on Bitbucket
                         </Button>
                     </Col>
                 </Row>
@@ -35,6 +38,9 @@ You can host your own photo or video contests using the *Multimedia Contest* app
         <Card key={"2"}>
             <div type="card-header">
                 Tippspiel
+                <Tag type="secondary" pill>
+                    Private
+                </Tag>
             </div>
             <div type="card-body">
                 <Row>
@@ -51,7 +57,7 @@ Betting game for sports. Mainly focused on football worldcup.
                                 href="https://bitbucket.org/apparena/tippspiel/src"
                                 className={styles.readMoreButton}
                         >
-                            Read more
+                            View on Bitbucket
                         </Button>
                         <Button type="outline-primary"
                                 href="https://wm.tippspiel.cc/docs/index.html"
@@ -66,6 +72,9 @@ Betting game for sports. Mainly focused on football worldcup.
         <Card key={"3"}>
             <div type="card-header">
                 Advent calendar
+                <Tag type="secondary" pill>
+                    Private
+                </Tag>
             </div>
             <div type="card-body">
                 <Row>
@@ -82,7 +91,7 @@ The advent calendar is easily customizable and offers a built-in quiz to make yo
                                 href="https://bitbucket.org/apparena/advent/src"
                                 className={styles.readMoreButton}
                         >
-                            Read more
+                            View on Bitbucket
                         </Button>
                     </Col>
                 </Row>
