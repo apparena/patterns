@@ -4,6 +4,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const cssnano = require('cssnano');
 const webpack = require('webpack');
 const config = require('./config');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     plugins: [
@@ -15,25 +16,27 @@ module.exports = {
             },
             canPrint: true,
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false,
-                screw_ie8: true,
-                conditionals: true,
-                unused: true,
-                comparisons: true,
-                sequences: true,
-                dead_code: true,
-                evaluate: true,
-                if_return: true,
-                join_vars: true,
-            },
-            mangle: {
-                screw_ie8: true
-            },
-            output: {
-                comments: false,
-                screw_ie8: true
+        new UglifyJsPlugin({
+            test: /\.js$/,
+            parallel: true,
+            uglifyOptions: {
+                ie8: false,
+                compress: {
+                    arrows: true,
+                    booleans: true,
+                    warnings: false,
+                    conditionals: true,
+                    unused: true,
+                    comparisons: true,
+                    sequences: true,
+                    dead_code: true,
+                    evaluate: true,
+                    if_return: true,
+                    join_vars: true,
+                },
+                output: {
+                    comments: false,
+                }
             }
         })
     ],
