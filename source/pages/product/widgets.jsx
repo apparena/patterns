@@ -33,7 +33,7 @@ Use this **Yeoman generator** to create new widgets within minutes.
                     </Row>
                 </div>
             </Card>,
-            <Card key={"1"}>
+            <Card key={"2"}>
                 <div type="card-header">
                     Survey Widget
                 </div>
@@ -52,7 +52,7 @@ This widget is very easy to embed and offers a small but concise survey embeddab
                                     href="https://bitbucket.org/apparena/surveywidget/src"
                                     className={styles.readMoreButton}
                             >
-                                Read more
+                                View on Bitbucket
                             </Button>
                         </Col>
                     </Row>
