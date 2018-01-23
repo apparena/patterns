@@ -3,9 +3,6 @@ import {Card, Row, Col, Button} from 'apparena-patterns-react';
 import styles from './software.scss';
 import Markdown from 'react-markdown';
 
-const surveyWidget = `
-You can host your own photo or video contests using the *Multimedia Contest* app. 
-`;
 
 const title = 'Widgets';
 
@@ -18,14 +15,16 @@ function render() {
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img alt="thumbnail" src="https://www.app-arena.com/app/uploads/2016/09/Fotowettbewerb_desktop-2-300x203.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="/assets/widget.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={surveyWidget}
+                            source={`
+This widget is very easy to embed and offers a small but concise survey embeddable on any website.
+`}
                         />
                         <Button type="outline-primary"
-                                href="https://bitbucket.org/apparena/multimedia-contest/src"
+                                href="https://bitbucket.org/apparena/surveywidget/src"
                                 className={styles.readMoreButton}
                         >
                             Read more

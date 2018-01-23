@@ -20,11 +20,11 @@ We do everything to make our client successful! We are fast, professional and ha
 digital marketing and commerce!
                             `}
                 />
-                <Button type="outline-primary"
+                {/*<Button type="outline-primary"
                         href="https://bitbucket.org/apparena/multimedia-contest/src"
                 >
                     Read more
-                </Button>
+                </Button>*/}
             </div>
         </Card>,
 

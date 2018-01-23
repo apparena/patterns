@@ -1,12 +1,17 @@
 import camelcase from 'camelcase';
 // Add a new folder here to add a new tp navigation item
 import * as Brand from './brand';
+import * as Communication from './communication';
 import * as Product from './product';
 
 const pagesToInclude = [
     {
         components: Brand,
         title: 'Brand',
+    },
+    {
+        components: Communication,
+        title: 'Communication',
     },
     {
         components: Product,
