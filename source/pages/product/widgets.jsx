@@ -33,7 +33,7 @@ Use this **Yeoman generator** to create new widgets within minutes.
                     </Row>
                 </div>
             </Card>,
-            <Card key={"1"}>
+            <Card key={"2"}>
                 <div type="card-header">
                     Survey Widget
                 </div>
