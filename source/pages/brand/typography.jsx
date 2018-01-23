@@ -21,7 +21,7 @@ function render() {
     return (
         <Card>
             <div type="card-header">
-                Logos
+                Typography
             </div>
             <div type="card-body">
                 <h1>Open Sans</h1>

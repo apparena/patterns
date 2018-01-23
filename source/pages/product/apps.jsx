@@ -53,6 +53,12 @@ Betting game for sports. Mainly focused on football worldcup.
                         >
                             Read more
                         </Button>
+                        <Button type="outline-primary"
+                                href="https://wm.tippspiel.cc/docs/index.html"
+                                className={styles.readMoreButton}
+                        >
+                            View API Docs
+                        </Button>
                     </Col>
                 </Row>
             </div>
