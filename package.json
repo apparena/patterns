@@ -187,6 +187,7 @@
     "stats.js": "^0.17.0",
     "storybook-addon-i18n-tools": "^1.0.0",
     "style-loader": "0.13.1",
+    "uglifyjs-webpack-plugin": "^1.1.6",
     "url-loader": "0.5.7",
     "url-search-params": "^0.10.0",
     "webpack": "3",
