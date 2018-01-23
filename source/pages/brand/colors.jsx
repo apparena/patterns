@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card, Col, Row} from 'apparena-patterns-react';
-import {SketchPicker, SwatchesPicker, BlockPicker} from 'react-color';
+import {SwatchesPicker, BlockPicker} from 'react-color';
 
 const title = 'Colors';
 
@@ -25,7 +25,8 @@ function render() {
                         <BlockPicker color={'#0e85f4'}
                                      width={'300px'}
                                      colors={[]}
-                                     triangle={'hide'}/>
+                                     triangle={'hide'}
+                        />
                     </Col>
                     <Col autoWidth>
 
@@ -33,7 +34,8 @@ function render() {
                         <BlockPicker color={'#f8f9fa'}
                                      width={'300px'}
                                      colors={[]}
-                                     triangle={'hide'}/>
+                                     triangle={'hide'}
+                        />
                     </Col>
                     <Col autoWidth>
 
@@ -41,7 +43,8 @@ function render() {
                         <BlockPicker color={'#ffffff'}
                                      width={'300px'}
                                      colors={[]}
-                                     triangle={'hide'}/>
+                                     triangle={'hide'}
+                        />
                     </Col>
                 </Row>
 
@@ -64,9 +67,10 @@ function render() {
                                     ['#2DCC56', '#53d976', '#7ee298', '#a9ecba', '#d4f5dc'],
                                     ['#67C6EB', '#85d1ef', '#a3dcf3', '#c2e8f7', '#e0f3fa'],
                                     ['#DB6B3A', '#e28861', '#e9a688', '#f0c3b0', '#f7e1d7'],
-                                    ['#FF141A', '#ff4247', '#ff7175', '#ffa1a3', '#fed0d1'],
+                                    ['#FF141A', '#ff4247', '#ff7175', '#ffa1a3', '#fed0d1']
                                 ]}
-                                triangle={'hide'}/>
+                                triangle={'hide'}
+                />
 
             </div>
         </Card>
