@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card} from 'apparena-patterns-react';
-import Markdown from 'react-markdown';
+import Icons from '../../patterns/00-atoms/icons/docs/icons.example'
 
 const title = 'Icons';
 
@@ -11,13 +11,7 @@ function render() {
                 Corporate identity
             </div>
             <div type="card-body">
-                <Markdown
-                    source={`
-# Design an APP-ARENA Experience
-
-## Principles, guidelines and assets for designing and building App-Arena experiences
-                    `}
-                />
+                <Icons/>
             </div>
         </Card>
     );
@@ -26,4 +20,4 @@ function render() {
 export default {
     title,
     render
-}
+};

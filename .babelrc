@@ -5,11 +5,6 @@
     "transform-dev-warning"
   ],
   "env": {
-    "wildCard": {
-      "plugins": [
-        "wildcard"
-      ]
-    },
     "test": {
       "sourceMaps": "both",
       "plugins": [

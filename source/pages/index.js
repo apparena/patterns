@@ -2,7 +2,6 @@ import camelcase from 'camelcase';
 // Add a new folder here to add a new tp navigation item
 import * as Brand from './brand';
 import * as Product from './product';
-import * as CI from './corporate-identity';
 
 const pagesToInclude = [
     {
@@ -12,10 +11,6 @@ const pagesToInclude = [
     {
         components: Product,
         title: 'Product',
-    },
-    {
-        components: CI,
-        title: 'Corporate Identity',
     }
 ];
 
@@ -28,7 +23,7 @@ pagesToInclude.forEach((page) => {
 
     pageTree.push({
         route: `${camelcase(page.title)}/${componentName.replace(/^\d+/, '')}`,
-        component: page.components[componentName],
+        component: page.components[componentName].default,
         position: 'top',
         page: page.title,
         title: page.title
@@ -37,7 +32,7 @@ pagesToInclude.forEach((page) => {
     componentKeys.forEach((component) => {
         pageTree.push({
             route: `${camelcase(page.title)}/${component.replace(/^\d+/, '')}`,
-            component: page.components[component],
+            component: page.components[component].default,
             position: 'sidebar',
             page: page.title
         });

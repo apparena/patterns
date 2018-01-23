@@ -1,23 +1,30 @@
 import React from 'react';
 import {Card} from 'apparena-patterns-react';
-import Markdown from 'react-markdown';
-
-const exampleText = `
-Corporate communication
-`;
 
 const title = 'Presentations';
 
 function render() {
+    const head = document.getElementsByTagName('head')[0];
+    const alreadyInserted = Array.from(head.children).filter((child) => {
+        return child.id === 'aa-css';
+    }).length;
+
+    if (!alreadyInserted) {
+        const link = document.createElement('link');
+        link.id = 'aa-css';
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/dist/styles/corporate-identity.css';
+        head.appendChild(link);
+    }
+
     return (
         <Card>
             <div type="card-header">
-                Corporate communication
+                Logos
             </div>
             <div type="card-body">
-                <Markdown
-                    source={exampleText}
-                />
+                <h1>Powerpoint presentation templates</h1>
             </div>
         </Card>
     );

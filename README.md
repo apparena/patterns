@@ -78,7 +78,7 @@ Before getting started make sure to install the dependencies with
 To see your changes in the frontend:
 
 * use `npm run build:frontend:dev` (or `npm run build:frontend:watch` if you want a watcher) and open public/index_dev.html in your browser
-* use `npm run start` and open localhost:3001 in your browser
+* If you want hot-reloading you can use the Node Webserver by running `npm run start` and open localhost:3001 in your browser
 
 Now you're ready and you can get to work!  
 If you would like to contribute to the documentation or write documentation
@@ -115,11 +115,7 @@ NPM deployment and only updates the documentation.
 Always run the tests and the linter prior to opening a pull request and fix
 any issues, errors and warnings that occur.
 
-## Roadmap
-
-The future plans and high priority features and enhancements can be found
-in the [ROADMAP.md](https://github.com/apparena/patterns/blob/master/ROADMAP.md) file.
 
 ## License
 This project is licensed under the terms of the
-[MIT license](https://github.com/callemall/apparena-patterns-react/blob/master/LICENSE)
+[MIT license](LICENSE.md)

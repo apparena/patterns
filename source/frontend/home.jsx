@@ -259,7 +259,7 @@ export default class Home extends ReactComponent {
                                 <Col autoWidth>
                                     <Nav>
                                         <NavItem>
-                                            <Link to="/">App-Arena Components</Link>
+                                            <Link to="/">UI Patterns</Link>
                                         </NavItem>
                                         {this.renderStaticPageLinks()}
                                     </Nav>

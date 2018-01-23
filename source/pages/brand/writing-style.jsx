@@ -2,10 +2,6 @@ import React from 'react';
 import {Card} from 'apparena-patterns-react';
 import Markdown from 'react-markdown';
 
-const exampleText = `
-Corporate communication
-`;
-
 const title = 'Writing style';
 
 function render() {
@@ -16,7 +12,9 @@ function render() {
             </div>
             <div type="card-body">
                 <Markdown
-                    source={exampleText}
+                    source={`
+Corporate communication
+`}
                 />
             </div>
         </Card>
@@ -26,4 +24,4 @@ function render() {
 export default {
     title,
     render
-}
+};
