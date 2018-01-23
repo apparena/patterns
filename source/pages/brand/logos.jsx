@@ -1,5 +1,6 @@
 import React from 'react';
-import {Card} from 'apparena-patterns-react';
+import {Card, Row, Col, Button} from 'apparena-patterns-react';
+import styles from './brand.scss';
 
 const title = 'Logos';
 
@@ -24,7 +25,22 @@ function render() {
                 Logos
             </div>
             <div type="card-body">
-                <img src="/assets/logo.svg" className="logo" alt="App Arena GmbH"/>
+                <Row>
+                    <Col xs="3">
+                        <img alt="thumbnail" src="/assets/logo.svg"/>
+                    </Col>
+                    <Col xs="9">
+                        <p>
+                            SVG Logo - bright background
+                        </p>
+                        <Button type="outline-primary"
+                                href="/assets/logo.svg"
+                                className={styles.readMoreButton}
+                        >
+                            Download
+                        </Button>
+                    </Col>
+                </Row>
             </div>
         </Card>
     );

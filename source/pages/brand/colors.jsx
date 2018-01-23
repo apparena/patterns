@@ -23,7 +23,7 @@ function render() {
 
                         <h2>CTA-Buttons</h2>
                         <BlockPicker color={'#0e85f4'}
-                                     width={'300px'}
+                                     width={'100%'}
                                      colors={[]}
                                      triangle={'hide'}
                         />
@@ -32,7 +32,7 @@ function render() {
 
                         <h2>???</h2>
                         <BlockPicker color={'#f8f9fa'}
-                                     width={'300px'}
+                                     width={'100%'}
                                      colors={[]}
                                      triangle={'hide'}
                         />
@@ -41,7 +41,7 @@ function render() {
 
                         <h2>???</h2>
                         <BlockPicker color={'#ffffff'}
-                                     width={'300px'}
+                                     width={'100%'}
                                      colors={[]}
                                      triangle={'hide'}
                         />
