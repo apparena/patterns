@@ -78,7 +78,6 @@ jspm_packages
 /source/css/.sass-cache/
 /build/apparena-patterns-react/
 /public/dist/
-/.github/
 /build/generator/_build/
 artifact.tar.gz
 /source/frontend/components/
