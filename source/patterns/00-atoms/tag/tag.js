@@ -7,6 +7,7 @@ import styles from './tag.scss';
 const TAG_TYPES = [
     'default',
     'primary',
+    'secondary',
     'success',
     'info',
     'warning',

@@ -7,7 +7,7 @@ const title = 'BigData';
 
 function render() {
     return [
-        <Card key={'4'}>
+        <Card key={'1'}>
             <div type="card-header">
                 Client-SDK
             </div>
@@ -33,7 +33,7 @@ The SDK is always loaded via analytics.js App-Arena Integration.
                 </Row>
             </div>
         </Card>,
-        <Card key={'1'}>
+        <Card key={'2'}>
             <div type="card-header">
                 Analytics.js
             </div>
@@ -59,7 +59,7 @@ This libary allows you to build a analytics.js for our customers, which includes
                 </Row>
             </div>
         </Card>,
-        <Card key={'2'}>
+        <Card key={'3'}>
             <div type="card-header">
                 analytics.js-integration-apparena
             </div>
@@ -86,7 +86,7 @@ Also loads the JS-Client-SDK for dynamically loading of customer widgets.
                 </Row>
             </div>
         </Card>,
-        <Card key={'3'}>
+        <Card key={'4'}>
             <div type="card-header">
                 Analytics.js Core
             </div>
@@ -113,7 +113,7 @@ To build this into a full, usable library, see the Analytics.js repository.
                 </Row>
             </div>
         </Card>,
-        <Card key={'4'}>
+        <Card key={'5'}>
             <div type="card-header">
                 Serverless Cluster Configuration
                 <Tag type="secondary" pill>
