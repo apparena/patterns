@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
-import ReactComponent from './component';
+import ReactComponent from '../component';
 
 export default class Animate extends ReactComponent {
     static propTypes = {
+        /**
+         * Animate is Deprecated. Will just display the children
+         */
         children: PropTypes.node.isRequired
     };
 

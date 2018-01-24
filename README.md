@@ -91,9 +91,10 @@ please read [our guide to working on the frontend.](/docs/FRONTEND_DEVELOPMENT.m
 We provide a yeoman generator that requires 2 clicks to create a new pattern.
 
 1. Install the generator: `npm install -g generator-apparena-pattern`
-2. Run the generator: `yo apparena-pattern`
-3. Follow the onscreen prompts
-4. Overwrite the file *source/patterns/index.js* if prompted (make a backup of your changes!)
+2. `cd` into the App-Arena patterns root directory (it contains a `.yo-rc.json` file)
+3. Run the generator: `yo apparena-pattern`
+4. Follow the onscreen prompts
+5. Overwrite the file *source/patterns/index.js* if prompted (make a backup of your changes!)
 
 Done! Now edit your newly created pattern under *source/patterns/...*
 

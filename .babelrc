@@ -2,7 +2,8 @@
   "presets": ["es2015", "stage-1", "react", "stage-0"],
   "plugins": [
     ["transform-replace-object-assign", "simple-assign"],
-    "transform-dev-warning"
+    "transform-dev-warning",
+    "react-hot-loader/babel"
   ],
   "env": {
     "test": {

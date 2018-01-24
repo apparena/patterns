@@ -116,7 +116,7 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
      */
     console.log('Initializing categories...');
     const categories = {}, indexFiles = [];
-    glob.sync('source/patterns/!(react-utils|corporate-identity)/')
+    glob.sync('source/patterns/!(corporate-identity)/')
         .map((cf) => {
             return cf.split('/').slice(-2)[0];
         })

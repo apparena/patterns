@@ -10,11 +10,6 @@ let extractComponentCSS = new ExtractTextPlugin({
     allChunks: true
 });
 
-let extractCIStyles = new ExtractTextPlugin({
-    filename: 'styles/corporate-identity.css',
-    allChunks: true
-});
-
 module.exports = {
     entry: [path.resolve(baseDir, 'build/generator/tests/tests.js')],
     target: 'node',
@@ -77,37 +72,6 @@ module.exports = {
                 })
             },
             {
-                test: /\.ci$/,
-                loader: extractCIStyles.extract({
-                    fallback: 'style-loader',
-                    publicPath: '../',
-                    loader: [
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                modules: true,
-                                importLoaders: 1,
-                                localIdentName: '[local]__ci',
-                                camelCase: true,
-                                sourceMap: false
-                            }
-                        },
-                        {
-                            loader: 'resolve-url-loader',
-                            options: {
-                                sourceMap: true
-                            }
-                        },
-                        {
-                            loader: 'sass-loader',
-                            options: {
-                                sourceMap: true
-                            }
-                        }
-                    ]
-                })
-            },
-            {
                 test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg)$/,
                 use: [{
                     loader: 'file-loader',
@@ -120,6 +84,5 @@ module.exports = {
     },
     plugins: [
         extractComponentCSS,
-        extractCIStyles,
     ]
 };

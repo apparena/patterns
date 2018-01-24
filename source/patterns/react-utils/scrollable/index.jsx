@@ -1,18 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from './component';
+import ReactComponent from '../component';
 import cx from 'classnames';
 import GeminiScrollbar from 'react-gemini-scrollbar';
-import styles from './scss/scrollable.scss';
+import styles from './scrollable.scss';
 
 export default class Scrollable extends ReactComponent {
     static propTypes = {
+        /**
+         * Children show inside the scrollbox
+         */
         children: PropTypes.node,
+        /**
+         * Show scrollbars upon hovering
+         */
         autoshow: PropTypes.bool,
+        /**
+         * Addionital Classname
+         */
         className: PropTypes.string,
+        /**
+         * Enable Lazy Loading
+         */
         lazyLoad: PropTypes.bool,
+        /**
+         * Function called when the load more trigger is called
+         */
         loadMore: PropTypes.func,
+        /**
+         * Position when the loadMore Function should be called
+         */
         loadMoreTrigger: PropTypes.number,
+        /**
+         * Function called on scroll
+         */
         onScroll: PropTypes.func
     };
 
