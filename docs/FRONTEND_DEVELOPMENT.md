@@ -10,13 +10,13 @@ Changing existing documentation doesn't require a restart for
 
 1. Create a new folder in the *source/pages/* directory with a name of your choosing
 (The name will not be visible in the frontend but it has to be unique)
-2. Create a new JavaScript file (*.js or *.jsx) file in the new folder that starts with a low number (e.g. 00- or 01-).
-3. Add the necessary content into this main file
-4. Optionally: Add any number of additional JavaScript files that will be accessible via the sidebar.
-Give them higher numbers (like 02-) to dictate their order in the sidebar.
-5. Insert your new page into the *pages/index.js* file if not present
+2. Create a new JavaScript file (*.js or *.jsx) file in the new folder
+3. Add the necessary content into this file (See "[What's necessary to make a working static page](#whats-necessary-to-make-a-working-static-page)")
+4. Optionally: Add any number of additional JavaScript files
+5. Add a `index.js` file into your folder (See "[Putting your pages together in the index.js file](#putting-your-pages-together-in-the-indexjs-file)")
+6. Insert your new page into the *pages/index.js* file if not present
 
-Follow these steps to add a new page into the index.js file:
+Follow these steps to add a new page into the *pages/index.js* file:
 
 1. At the top insert a new import statement like so:
 ```javascript
@@ -30,6 +30,43 @@ import * as <folder name in pascal case> from './<page folder>';
     title: '<title to be displayed in the frontend>',
 }
 ```
+
+### Putting your pages together in the index.js file
+
+Your page's directory needs a `index.js` file which will put your page together.
+It needs to export all pages that you've created.  
+Here's an example:
+
+```javascript
+import * as MyPage from './my-page';
+import * as Page1 from './page1';
+import * as Page2 from './page2';
+
+export {
+    MyPage,
+    Page1,
+    Page2
+}
+```
+
+Note: If you want to re-order your pages in the sidebar you have to give them different names in this file so that they'll
+be sorted into your desired order (sorting is always alphabetical).  
+If you wanted Page2 to be the second sidebar item, for example, you can do it like this:
+
+```javascript
+import * as P00MyPage from './my-page';
+import * as P02Page1 from './page1';
+import * as P01Page2 from './page2';
+
+export {
+    P00MyPage,
+    P02Page1,
+    P01Page2
+}
+```
+
+**Important:** The alphabetically first page will be the page that's shown if you click on the top
+navigation item while all others will be sidebar items.
 
 ### What's necessary to make a working static page
 

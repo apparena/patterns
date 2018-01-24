@@ -94,7 +94,7 @@ class render extends ReactComponent {
                             />
                         </Col>
                         <Col xs="4">
-                            <Input defaultValue={this.state.color} />
+                            <Input defaultValue={this.state.color} onChange={() => {}} />
                         </Col>
                     </Row>
                 </div>
