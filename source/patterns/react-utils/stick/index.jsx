@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import ReactComponent from './component';
-import styles from './scss/stick.scss';
+import ReactComponent from '../component';
+import styles from './stick.scss';
 
 const POSITIONING = [
     'top',
@@ -22,13 +22,37 @@ const POSITIONING = [
 
 export default class Stick extends ReactComponent {
     static propTypes = {
+        /**
+         * Element the children should stick to
+         */
         element: PropTypes.object.isRequired,
+        /**
+         * Children which should be display at the element
+         */
         children: PropTypes.node.isRequired,
+        /**
+         * Additional classNames
+         */
         className: PropTypes.string,
+        /**
+         * Transition animation of the element
+         */
         transition: PropTypes.string,
+        /**
+         * Positioning of the element
+         */
         positioning: PropTypes.oneOf(POSITIONING),
+        /**
+         * Offset of the element
+         */
         offset: PropTypes.number,
+        /**
+         * Function to remove the stick element
+         */
         onClose: PropTypes.func,
+        /**
+         * Z-Index of the element
+         */
         zIndex: PropTypes.number
     };
 

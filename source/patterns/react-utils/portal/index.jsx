@@ -1,11 +1,20 @@
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
-import ReactComponent from './component';
+import ReactComponent from '../component';
 
 export default class Portal extends ReactComponent {
     static propTypes = {
+        /**
+         * Children which should be shown in the portal
+         */
         children: PropTypes.node.isRequired,
+        /**
+         * DOM-Node where the portal should be rendered to
+         */
         attachToNode: PropTypes.object,
+        /**
+         * Should the DOM-Node be replaced by the children?
+         */
         replace: PropTypes.bool
     };
 
