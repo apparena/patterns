@@ -21,15 +21,16 @@ function render() {
     return (
         <Card>
             <div type="card-header">
-                Logos
+                Typography
             </div>
             <div type="card-body">
-                <div>Primary font: 'Ubuntu', Arial, sans-serif !default;</div>
-                <div><em>Primary font italic: 'Ubuntu', Arial, sans-serif !default;</em></div>
-                <div><strong>Primary font bold: 'Ubuntu', Arial, sans-serif !default;</strong></div>
-                <div className="font-secondary__ci">Secondary font: Georgia, Times, "Times New Roman", serif;</div>
-                <div className="font-secondary__ci"><em>Secondary font italic: Georgia, Times, "Times New Roman", serif;</em></div>
-                <div className="font-secondary__ci"><strong>Secondary font bold; Georgia, Times, "Times New Roman", serif;</strong></div>
+                <h1>Open Sans</h1>
+                <p>
+                    Our main type
+                    is <a href={'https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans'} target={'_blank'}>
+                    Open Sans
+                </a>
+                </p>
             </div>
         </Card>
     );
@@ -38,4 +39,4 @@ function render() {
 export default {
     title,
     render
-}
+};

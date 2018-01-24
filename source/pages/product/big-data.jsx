@@ -1,34 +1,39 @@
 import React from 'react';
-import {Card, Row, Col, Button} from 'apparena-patterns-react';
+import {Card, Row, Col, Button, Tag} from 'apparena-patterns-react';
 import styles from './software.scss';
 import Markdown from 'react-markdown';
-
-const analyticsjsDescription = `
-Analytics.js makes it easy to collect customer data and send it to many different tools using a single, unified API.  
-This libary allows you to build a analytics.js for our customers, which includes the Analytics.js Core and the Integrations.
-`;
-
-const analyticsIntegrationDescription = `
-AppArena integration for Analytics.js.  
-Provides the possibility to send Analytics.js Events (track, page, identify, group, screen) to App-Arena Data Cluster.  
-Also loads the JS-Client-SDK for dynamically loading of customer widgets.
-`;
-
-const analyticsCoreDescription = `
-This is the core of Analytics.js, the open-source library that powers data collection at Segment.  
-To build this into a full, usable library, see the Analytics.js repository.  
-(We at App-Arena uses the full Core of Segments Analytics.js without changes.)
-`;
-
-const clusterCoreDescription = `
-This repo includes all serverless configuration for the Big-Data Cluster hosted on AWS.
-`;
 
 const title = 'BigData';
 
 function render() {
     return [
-        <Card key={"1"}>
+        <Card key={'4'}>
+            <div type="card-header">
+                Client-SDK
+            </div>
+            <div type="card-body">
+                <Row>
+                    <Col xs="3">
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
+                    </Col>
+                    <Col xs="9">
+                        <Markdown
+                            source={`
+This libary provides the code to dynamically load customer widgets.
+The SDK is always loaded via analytics.js App-Arena Integration.
+`}
+                        />
+                        <Button type="outline-primary"
+                                href="https://github.com/apparena/client-sdk#readme"
+                                className={styles.readMoreButton}
+                        >
+                            View on Github
+                        </Button>
+                    </Col>
+                </Row>
+            </div>
+        </Card>,
+        <Card key={'1'}>
             <div type="card-header">
                 Analytics.js
             </div>
@@ -39,19 +44,22 @@ function render() {
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={analyticsjsDescription}
+                            source={`
+Analytics.js makes it easy to collect customer data and send it to many different tools using a single, unified API.
+This libary allows you to build a analytics.js for our customers, which includes the Analytics.js Core and the Integrations.
+`}
                         />
                         <Button type="outline-primary"
                                 href="https://github.com/apparena/analytics.js#readme"
                                 className={styles.readMoreButton}
                         >
-                            Read more
+                            View on Github
                         </Button>
                     </Col>
                 </Row>
             </div>
         </Card>,
-        <Card key={"2"}>
+        <Card key={'2'}>
             <div type="card-header">
                 analytics.js-integration-apparena
             </div>
@@ -62,59 +70,72 @@ function render() {
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={analyticsIntegrationDescription}
+                            source={`
+AppArena integration for Analytics.js.
+Provides the possibility to send Analytics.js Events (track, page, identify, group, screen) to App-Arena Data Cluster.
+Also loads the JS-Client-SDK for dynamically loading of customer widgets.
+`}
                         />
                         <Button type="outline-primary"
                                 href="https://github.com/apparena/analytics.js-integration-apparena#readme"
                                 className={styles.readMoreButton}
                         >
-                            Read more
+                            View on Github
                         </Button>
                     </Col>
                 </Row>
             </div>
         </Card>,
-        <Card key={"3"}>
+        <Card key={'3'}>
             <div type="card-header">
                 Analytics.js Core
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="https://www.mattlayman.com/2016/segment.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={analyticsCoreDescription}
+                            source={`
+This is the core of Analytics.js, the open-source library that powers data collection at Segment.
+To build this into a full, usable library, see the Analytics.js repository.
+(We at App-Arena uses the full Core of Segments Analytics.js without changes.)
+`}
                         />
                         <Button type="outline-primary"
                                 href="https://github.com/apparena/analytics.js-core#readme"
                                 className={styles.readMoreButton}
                         >
-                            Read more
+                            View on Github
                         </Button>
                     </Col>
                 </Row>
             </div>
         </Card>,
-        <Card key={"4"}>
+        <Card key={'4'}>
             <div type="card-header">
                 Serverless Cluster Configuration
+                <Tag type="secondary" pill>
+                    Private
+                </Tag>
             </div>
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="https://user-images.githubusercontent.com/2752551/30404912-d5781a00-989d-11e7-8d25-5ebca177326a.png" className={styles.imgThumbnail}/>
                     </Col>
                     <Col xs="9">
                         <Markdown
-                            source={clusterCoreDescription}
+                            source={`
+This repo includes all serverless configuration for the Big-Data Cluster hosted on AWS.
+`}
                         />
                         <Button type="outline-primary"
                                 href="https://bitbucket.org/apparena/serverless-lambda-services"
                                 className={styles.readMoreButton}
                         >
-                            Read more
+                            View on Bitbucket
                         </Button>
                     </Col>
                 </Row>
@@ -126,4 +147,4 @@ function render() {
 export default {
     title,
     render
-}
+};

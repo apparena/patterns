@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Button} from 'apparena-patterns-react';
+import {Card} from 'apparena-patterns-react';
 import Markdown from 'react-markdown';
 
 // Title defines the caption in the sidebar navigation
@@ -20,11 +20,11 @@ We do everything to make our client successful! We are fast, professional and ha
 digital marketing and commerce!
                             `}
                 />
-                <Button type="outline-primary"
+                {/*<Button type="outline-primary"
                         href="https://bitbucket.org/apparena/multimedia-contest/src"
                 >
                     Read more
-                </Button>
+                </Button>*/}
             </div>
         </Card>,
 
