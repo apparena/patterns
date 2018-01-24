@@ -8,6 +8,7 @@ import styles from './styles/home.scss';
 import {Route, Link} from 'react-router-dom';
 import {AnimatedSwitch} from "react-router-transition"
 import staticPages from '../pages/index';
+import {hot} from 'react-hot-loader';
 
 const transitionStyles = {
     atEnter: {
@@ -36,7 +37,7 @@ function mapStyles(styles) {
     };
 }
 
-export default class Home extends ReactComponent {
+class Home extends ReactComponent {
     static propTypes = {
         history: PropTypes.object,
         location: PropTypes.object,
@@ -308,3 +309,5 @@ export default class Home extends ReactComponent {
         );
     }
 }
+
+export default hot(module)(Home);

@@ -1,15 +1,14 @@
-var webpack = require('webpack');
-var combineLoaders = require('webpack-combine-loaders');
-var path = require('path');
-var relativePath = '../../';
-var nodeModulesPath = path.resolve(__dirname, relativePath, 'node_modules');
-var buildPath = path.resolve(__dirname, relativePath, 'public/dist/hot');
+const webpack = require('webpack');
+const combineLoaders = require('webpack-combine-loaders');
+const path = require('path');
+const relativePath = '../../';
+const nodeModulesPath = path.resolve(__dirname, relativePath, 'node_modules');
+const buildPath = path.resolve(__dirname, relativePath, 'public/dist/hot');
 
 module.exports = {
     devtool: 'source-map',
     entry: {
         app: [
-            'react-hot-loader/patch',
             'webpack-hot-middleware/client?name=app',
             path.resolve(__dirname, relativePath, 'source/frontend', 'main.jsx')
         ]
@@ -17,7 +16,7 @@ module.exports = {
     output: {
         path: buildPath,
         filename: '[name].js',
-        publicPath: '/public'
+        publicPath: '/'
         // library: 'apparena',
         // libraryTarget: 'umd'
     },
@@ -94,6 +93,7 @@ module.exports = {
         new webpack.optimize.OccurrenceOrderPlugin(),
         // new webpack.optimize.CommonsChunkPlugin('vendors', 'shared/vendors.js'),
         // Note: only CSS is currently hot reloaded
-        new webpack.DefinePlugin({'process.env.NODE_ENV': '"development"'})
+        new webpack.DefinePlugin({'process.env.NODE_ENV': '"development"'}),
+        new webpack.NamedModulesPlugin(),
     ]
 };
