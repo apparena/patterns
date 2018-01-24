@@ -9,6 +9,40 @@ function render() {
     return [
         <Card key={'1'}>
             <div type="card-header">
+                Analytics.js | Main library to integrate to your web-app
+            </div>
+            <div type="card-body">
+                <Row>
+                    <Col xs="3">
+                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
+                    </Col>
+                    <Col xs="9">
+
+                        <h3>Compile library of 'Analytics.js core' + 'Analytics.js App-Arena Integration'</h3>
+
+                        <ul>
+                            <li></li>
+                        </ul>
+
+                        <p>
+                            Analytics.js makes it easy to collect customer data and send it to many different tools using a single, unified API.
+                            This libary allows you to build a analytics.js for our customers, which includes the Analytics.js Core and the Integrations.
+                        </p>
+
+
+
+                        <Button type="outline-primary"
+                                href="https://github.com/apparena/analytics.js#readme"
+                                className={styles.readMoreButton}
+                        >
+                            View on Github
+                        </Button>
+                    </Col>
+                </Row>
+            </div>
+        </Card>,
+        <Card key={'4'}>
+            <div type="card-header">
                 Client-SDK
             </div>
             <div type="card-body">
@@ -35,32 +69,6 @@ The SDK is always loaded via analytics.js App-Arena Integration.
         </Card>,
         <Card key={'2'}>
             <div type="card-header">
-                Analytics.js
-            </div>
-            <div type="card-body">
-                <Row>
-                    <Col xs="3">
-                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
-                    </Col>
-                    <Col xs="9">
-                        <Markdown
-                            source={`
-Analytics.js makes it easy to collect customer data and send it to many different tools using a single, unified API.
-This libary allows you to build a analytics.js for our customers, which includes the Analytics.js Core and the Integrations.
-`}
-                        />
-                        <Button type="outline-primary"
-                                href="https://github.com/apparena/analytics.js#readme"
-                                className={styles.readMoreButton}
-                        >
-                            View on Github
-                        </Button>
-                    </Col>
-                </Row>
-            </div>
-        </Card>,
-        <Card key={'3'}>
-            <div type="card-header">
                 analytics.js-integration-apparena
             </div>
             <div type="card-body">
@@ -86,7 +94,7 @@ Also loads the JS-Client-SDK for dynamically loading of customer widgets.
                 </Row>
             </div>
         </Card>,
-        <Card key={'4'}>
+        <Card key={'3'}>
             <div type="card-header">
                 Analytics.js Core
             </div>
@@ -109,11 +117,17 @@ To build this into a full, usable library, see the Analytics.js repository.
                         >
                             View on Github
                         </Button>
+                        <Button type="outline-primary"
+                                href="https://github.com/segment-integrations"
+                                className={styles.readMoreButton}
+                        >
+                            View integrations
+                        </Button>
                     </Col>
                 </Row>
             </div>
         </Card>,
-        <Card key={'5'}>
+        <Card key={'4'}>
             <div type="card-header">
                 Serverless Cluster Configuration
                 <Tag type="secondary" pill>

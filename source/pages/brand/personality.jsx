@@ -12,19 +12,15 @@ function render() {
                 Personality
             </div>
             <div type="card-body">
-                <Markdown
-                    source={`
-# We are digital gladiators!
 
-We do everything to make our client successful! We are fast, professional and have a deep knowledge on
-digital marketing and commerce!
-                            `}
-                />
-                {/*<Button type="outline-primary"
-                        href="https://bitbucket.org/apparena/multimedia-contest/src"
-                >
-                    Read more
-                </Button>*/}
+                <h2>We are digital gladiators!</h2>
+
+                <p>
+                    We do everything to make our client successful! We are fast, professional and have a deep knowledge on
+                    digital marketing and commerce!
+                </p>
+
+
             </div>
         </Card>,
 
