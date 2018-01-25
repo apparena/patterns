@@ -18,8 +18,8 @@ function render() {
                             <img alt="thumbnail" src="https://randomuser.me/api/portraits/women/83.jpg" className={styles.imgThumbnail}/>
                         </Col>
                         <Col xs="9">
-                            <blockquote className="blockquote">
-                                <h4 className="mb-0">"I want to be a successful project manager. I'm happy to show my success to my boss and gain recognition!"</h4>
+                            <blockquote className={styles.blockquote}>
+                                <p className="mb-0">"I want to be a successful project manager. I'm happy to show my success to my boss and gain recognition!"</p>
                             </blockquote>
                         </Col>
                     </Row>
@@ -95,8 +95,8 @@ function render() {
                             <img alt="thumbnail" src="https://randomuser.me/api/portraits/men/79.jpg" className={styles.imgThumbnail}/>
                         </Col>
                         <Col xs="9">
-                            <blockquote className="{styles.blockquote}">
-                                <h4 className="mb-0">"??????????????????"</h4>
+                            <blockquote className={styles.blockquote}>
+                                "??????????????????"
                             </blockquote>
                         </Col>
                     </Row>
@@ -171,8 +171,8 @@ function render() {
                             <img alt="thumbnail" src="https://randomuser.me/api/portraits/men/64.jpg" className={styles.imgThumbnail}/>
                         </Col>
                         <Col xs="9">
-                            <blockquote className="{styles.blockquote}">
-                                <h4 className="mb-0">"??????????????????"</h4>
+                            <blockquote className={styles.blockquote}>
+                                "??????????????????"
                             </blockquote>
                         </Col>
                     </Row>
@@ -247,8 +247,8 @@ function render() {
                             <img alt="thumbnail" src="https://randomuser.me/api/portraits/women/64.jpg" className={styles.imgThumbnail}/>
                         </Col>
                         <Col xs="9">
-                            <blockquote className="{styles.blockquote}">
-                                <h4 className="mb-0">"??????????????????"</h4>
+                            <blockquote className={styles.blockquote}>
+                                "??????????????????"
                             </blockquote>
                         </Col>
                     </Row>
@@ -325,8 +325,8 @@ function render() {
                             <img alt="thumbnail" src="https://randomuser.me/api/portraits/women/3.jpg" className={styles.imgThumbnail}/>
                         </Col>
                         <Col xs="9">
-                            <blockquote className="{styles.blockquote}">
-                                <h4 className="mb-0">"??????????????????"</h4>
+                            <blockquote className={styles.blockquote}>
+                                "??????????????????"
                             </blockquote>
                         </Col>
                     </Row>

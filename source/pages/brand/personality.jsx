@@ -1,6 +1,5 @@
 import React from 'react';
 import {Card} from 'apparena-patterns-react';
-import Markdown from 'react-markdown';
 
 // Title defines the caption in the sidebar navigation
 const title = 'Personality';

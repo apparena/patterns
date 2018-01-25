@@ -20,10 +20,6 @@ function render() {
 
                         <h3>Compile library of 'Analytics.js core' + 'Analytics.js App-Arena Integration'</h3>
 
-                        <ul>
-                            <li></li>
-                        </ul>
-
                         <p>
                             Analytics.js makes it easy to collect customer data and send it to many different tools using a single, unified API.
                             This libary allows you to build a analytics.js for our customers, which includes the Analytics.js Core and the Integrations.
