@@ -1,12 +1,21 @@
 import React from 'react';
-import {Card, Row, Col, Button} from 'apparena-patterns-react';
+import {Card, Row, Col, Button, Alert} from 'apparena-patterns-react';
 import styles from './software.scss';
 import Markdown from 'react-markdown';
+import Link from 'react-router-dom/es/Link';
 
 const title = 'Widgets';
 
 function render() {
     return [
+
+        <Alert
+            text=""
+            type="info"
+            dismissible
+        >
+            Do you want to create your own widget? Head to our <Link to={'/platform/WidgetDevelopment'} >Platform-Section for Widget Development</Link>
+        </Alert>,
         <Card key={"1"}>
             <div type="card-header">
                 Widget Architecture
