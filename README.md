@@ -78,7 +78,7 @@ Before getting started make sure to install the dependencies with
 To see your changes in the frontend:
 
 * use `npm run build:frontend:dev` (or `npm run build:frontend:watch` if you want a watcher) and open public/index_dev.html in your browser
-* If you want hot-reloading you can use the Node Webserver by running `npm run start` and open localhost:3001 in your browser
+* If you want hot-reloading you can use the Node Webserver by running `npm run start` and open localhost:3099 in your browser
 
 Now you're ready and you can get to work!  
 If you would like to contribute to the documentation or write documentation

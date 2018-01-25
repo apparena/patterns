@@ -9,6 +9,15 @@ function render() {
     return [
         <Card key={"1"}>
             <div type="card-header">
+                Widget Architecture
+            </div>
+            <div type="card-body">
+                The basic architecture of the Widget technology can be found in the following graphic:
+                <img alt="thumbnail" src="https://s3.app-arena.com/patterns/assets/widget-architecture.jpg" className={styles.imgThumbnail}/>
+            </div>
+        </Card>,
+        <Card key={"1"}>
+            <div type="card-header">
                 Widget Generator
             </div>
             <div type="card-body">
