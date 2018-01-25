@@ -163,7 +163,7 @@ function render() {
             </Card>,
             <Card>
                 <div type="card-header">
-                    Technik Tom
+                    Mr. Branding
                 </div>
                 <div type="card-body">
                     <Row>
@@ -182,7 +182,7 @@ function render() {
                         <tr>
                             <th>Position</th>
                             <td>
-                                Leitender Angestelter
+                                Leitender Angestellter
                             </td>
                         </tr>
                         <tr>

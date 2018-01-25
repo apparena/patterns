@@ -6,25 +6,26 @@ import cloneDeep from 'lodash/cloneDeep';
 import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from '../patterns/index';
 import styles from './styles/home.scss';
 import {Route, Link} from 'react-router-dom';
-import {AnimatedSwitch} from "react-router-transition"
+import {AnimatedSwitch} from 'react-router-transition';
 import staticPages from '../pages/index';
 import {hot} from 'react-hot-loader';
+import HomePage from '../pages/home';
 
 const transitionStyles = {
     atEnter: {
         opacity: .25,
         x: 1,
-        position: 1,
+        position: 1
     },
     atLeave: {
         opacity: .25,
         x: 1,
-        position: 1,
+        position: 1
     },
     atActive: {
         opacity: 1,
         x: 0,
-        position: 0,
+        position: 0
     }
 };
 
@@ -41,7 +42,7 @@ class Home extends ReactComponent {
     static propTypes = {
         history: PropTypes.object,
         location: PropTypes.object,
-        match: PropTypes.object,
+        match: PropTypes.object
     };
 
     getInitState() {
@@ -56,7 +57,7 @@ class Home extends ReactComponent {
             searchQuery: '',
             categories,
             minimizedCategories,
-            currentStaticPage: false,
+            currentStaticPage: false
         };
     }
 
@@ -104,11 +105,11 @@ class Home extends ReactComponent {
                 });
 
                 this.setState({
-                    categories,
+                    categories
                 });
             } else {
                 this.setState({
-                    categories: this.backupCategories,
+                    categories: this.backupCategories
                 });
             }
         });
@@ -165,7 +166,7 @@ class Home extends ReactComponent {
                         {this.state.minimizedCategories[index] === true ? category.componentList.map((component, i) => {
                             return (
                                 <NavItem key={i} active={this.props.location.pathname.split('/')[1] === component}>
-                                    <Link to={`/${component}`} onClick={::this.scrollToTop}>{component}</Link>
+                                    <Link to={`/ui-patterns/${component}`} onClick={::this.scrollToTop}>{component}</Link>
                                 </NavItem>
                             );
                         }) : []}
@@ -211,7 +212,7 @@ class Home extends ReactComponent {
         );
     }
 
-    renderContentContainer() {
+    renderUIPatternsContainer() {
         return (
             <Card>
                 <div type="card-header">
@@ -245,6 +246,49 @@ class Home extends ReactComponent {
         });
     }
 
+    renderContent(){
+        if (this.props.location.pathname === '/') {
+            return <HomePage/>
+        } else {
+            return <Row>
+                <Col lg="3" sm="4" xs="5">
+                    <div className={styles.sidebar}>
+                        {!this.state.currentStaticPage && (
+                            <div className={styles.searchBox}>
+                                <FormGroup label={'Suchen'}>
+                                    <Input
+                                        id="searchInput"
+                                        onChange={::this.search}
+                                        defaultValue={this.state.searchQuery}
+                                    />
+                                </FormGroup>
+                            </div>
+                        )}
+                        {this.state.currentStaticPage === false && this.state.categories.map(::this.renderCategories)}
+                        {this.state.currentStaticPage !== false && this.renderStaticPageSidebar()}
+                    </div>
+                </Col>
+                <Col lg="9" sm="8" xs="7" className={styles.container}>
+                    <AnimatedSwitch
+                        atEnter={transitionStyles.atEnter}
+                        atLeave={transitionStyles.atLeave}
+                        atActive={transitionStyles.atActive}
+                        mapStyles={mapStyles}
+                    >
+                        {Object.keys(components).map((component, i) => {
+                            return <Route exact path={`/ui-patterns/${component}`} component={components[component]} key={component + i}/>;
+                        })}
+                        {staticPages.map((page, i) => {
+                            return <Route exact path={`/${page.route}`} component={page.component.render} key={page.route + i}/>;
+                        })}
+                    </AnimatedSwitch>
+
+                    {this.props.location.pathname === '/ui-patterns' ? this.renderUIPatternsContainer() : null}
+                </Col>
+            </Row>
+        }
+    }
+
     render() {
         return (
             <div className={styles.root}>
@@ -253,14 +297,14 @@ class Home extends ReactComponent {
                         <Navbar className={styles.navbarLight}>
                             <Row>
                                 <Col autoWidth xsAutoContent>
-                                    <a className={styles.navbarBrand} href="/">
+                                    <Link className={styles.navbarBrand} to="/">
                                         <img className={styles.logo} src="assets/logo.png" role="presentation"/>
-                                    </a>
+                                    </Link>
                                 </Col>
                                 <Col autoWidth>
                                     <Nav>
                                         <NavItem>
-                                            <Link to="/">UI Patterns</Link>
+                                            <Link to="/ui-patterns">UI Patterns</Link>
                                         </NavItem>
                                         {this.renderStaticPageLinks()}
                                     </Nav>
@@ -269,42 +313,7 @@ class Home extends ReactComponent {
                         </Navbar>
                     </Col>
                 </Row>
-                <Row>
-                    <Col lg="3" sm="4" xs="5">
-                        <div className={styles.sidebar}>
-                            {!this.state.currentStaticPage && (
-                                <div className={styles.searchBox}>
-                                    <FormGroup label={'Suchen'}>
-                                        <Input
-                                            id="searchInput"
-                                            onChange={::this.search}
-                                            defaultValue={this.state.searchQuery}
-                                        />
-                                    </FormGroup>
-                                </div>
-                            )}
-                            {this.state.currentStaticPage === false && this.state.categories.map(::this.renderCategories)}
-                            {this.state.currentStaticPage !== false && this.renderStaticPageSidebar()}
-                        </div>
-                    </Col>
-                    <Col lg="9" sm="8" xs="7" className={styles.container}>
-                        <AnimatedSwitch
-                            atEnter={transitionStyles.atEnter}
-                            atLeave={transitionStyles.atLeave}
-                            atActive={transitionStyles.atActive}
-                            mapStyles={mapStyles}
-                        >
-                            {Object.keys(components).map((component, i) => {
-                                return <Route exact path={`/${component}`} component={components[component]} key={component + i}/>
-                            })}
-                            {staticPages.map((page, i) => {
-                                return <Route exact path={`/${page.route}`} component={page.component.render} key={page.route + i} />
-                            })}
-                        </AnimatedSwitch>
-
-                        {this.props.location.pathname === '/' ? this.renderContentContainer() : null}
-                    </Col>
-                </Row>
+                {this.renderContent()}
             </div>
         );
     }
