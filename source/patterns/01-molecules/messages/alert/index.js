@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactComponent from '../../../react-utils/component';
 import cx from 'classnames';
+import styles from './index.scss';
 
 const ALERT_TYPES = [
     'danger',
@@ -12,7 +13,7 @@ const ALERT_TYPES = [
 
 export default class Alert extends ReactComponent {
     static propTypes = {
-        text: PropTypes.string.isRequired,
+        children: PropTypes.element.isRequired,
         type: PropTypes.oneOf(ALERT_TYPES).isRequired,
         classNames: PropTypes.string,
         dismissible: PropTypes.bool
@@ -26,7 +27,7 @@ export default class Alert extends ReactComponent {
     renderButton() {
         if (this.props.dismissible) {
             return (
-                <button type="button" className="close">
+                <button type="button" className={styles.close}>
                     <span>&times;</span>
                 </button>
             );
@@ -35,14 +36,14 @@ export default class Alert extends ReactComponent {
 
     render() {
         const classes = cx(
-            'alert',
-            `alert-${this.props.type}`,
+            styles.alert,
+            styles[`alert-${this.props.type}`],
             this.props.classNames
         );
 
         return (
             <div className={classes}>
-                {this.props.text}
+                {this.props.children}
                 {this.renderButton()}
             </div>
         );
