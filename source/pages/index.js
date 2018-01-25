@@ -3,6 +3,7 @@ import camelcase from 'camelcase';
 import * as Brand from './brand';
 import * as Communication from './communication';
 import * as Product from './product';
+import * as Platform from './platform';
 
 const pagesToInclude = [
     {
@@ -16,6 +17,10 @@ const pagesToInclude = [
     {
         components: Product,
         title: 'Product',
+    },
+    {
+        components: Platform,
+        title: 'Platform',
     }
 ];
 
