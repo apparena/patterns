@@ -1,5 +1,6 @@
 import React from 'react';
-import {ReactComponent, Container, Col, Row, Button} from '../patterns';
+import {ReactComponent, Container, Col, Row, Button, Icon} from '../patterns';
+import icons from 'apparena-patterns-react/fonts/app-arena-icons.json';
 import {Link} from 'react-router-dom';
 import styles from './home.scss';
 
@@ -10,23 +11,20 @@ export default class Home extends ReactComponent {
         return (
             <div>
                 <Container className={styles['my-3']}>
-                    <img src="assets/logo.png" role="presentation" width={200}/>
-                    <h1>App-Arena Brand Guidelines</h1>
+
+                    <div className={styles.textCenter}>
+                        <img src="assets/logo.png" role="presentation" width={300} className={styles['my-5']}/>
+                    </div>
 
                     <Row>
-                        <Col md={6} className={styles['my-3']}>
+                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+
+                            <Icon name={'dot-circle-o'} size="5x" type="primary" />
+
                             <h2>Brand</h2>
-                            <p>
-                                Read about App-Arena.com
-                                <ul>
-                                    <li>Personality</li>
-                                    <li>Colors</li>
-                                    <li>Documents</li>
-                                    <li>Icons</li>
-                                    <li>Logos</li>
-                                    <li>Presentations</li>
-                                    <li>Typography</li>
-                                </ul>
+
+                            <p className={styles.lead}>
+                                Who are we and how do we look like. Brand related infos and downloads.
                             </p>
 
                             <Link to={`/brand/P01Personality`}>
@@ -35,16 +33,14 @@ export default class Home extends ReactComponent {
                                 </Button>
                             </Link>
                         </Col>
-                        <Col md={6} className={styles['my-3']}>
+                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+
+                            <Icon name={'comment-text'} size="5x" type="primary" />
+
                             <h2>Communication</h2>
-                            <p>
-                                <ul>
-                                    <li>Blog & Newsletter</li>
-                                    <li>Personas</li>
-                                    <li>Storytelling</li>
-                                    <li>Video production</li>
-                                    <li>Writing Style</li>
-                                </ul>
+
+                            <p className={styles.lead}>
+                                How do we communicate with customers. Learn our basic rules.
                             </p>
 
                             <Link to={`/communication/Personas`}>
@@ -53,15 +49,14 @@ export default class Home extends ReactComponent {
                                 </Button>
                             </Link>
                         </Col>
-                        <Col md={6} className={styles['my-3']}>
+                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+
+                            <Icon name={'box'} size="5x" type="primary" />
+
                             <h2>Product</h2>
-                            <p>
-                                <ul>
-                                    <li>Apps</li>
-                                    <li>BigData</li>
-                                    <li>Platform & SDKs</li>
-                                    <li>Widgets</li>
-                                </ul>
+
+                            <p className={styles.lead}>
+                                APIs, Code and documentation for all software products
                             </p>
 
                             <Link to={`/product/Apps`}>
@@ -70,8 +65,30 @@ export default class Home extends ReactComponent {
                                 </Button>
                             </Link>
                         </Col>
-                        <Col md={6} className={styles['my-3']}>
+                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+
+                            <Icon name={'code'} size="5x" type="primary" />
+
+                            <h2>Platform</h2>
+
+                            <p className={styles.lead}>
+                                Learn how to develop Web-Apps and Widgets for App-Arena Platform
+                            </p>
+
+                            <Link to={`/ui-patterns`}>
+                                <Button type="outline-primary">
+                                    View Platform Guides
+                                </Button>
+                            </Link>
+                        </Col>
+                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+                            <Icon name={'atoms-l'} size="5x" type="primary" />
+
                             <h2>UI Patterns</h2>
+
+                            <p className={styles.lead}>
+                                Open-Source React JS Pattern collection used in our products
+                            </p>
 
                             <Link to={`/ui-patterns`}>
                                 <Button type="outline-primary">

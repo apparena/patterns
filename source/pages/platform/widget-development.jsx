@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card, Row, Col, Button, Tag} from 'apparena-patterns-react';
-import Markdown from 'react-markdown';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import {tomorrow} from 'react-syntax-highlighter/styles/prism';
 
 const title = 'Widget development';
 
@@ -37,11 +38,15 @@ function render() {
 
                 <h4>2. Generate widget</h4>
 
-                <pre>
+                <SyntaxHighlighter
+                    language={'bash'}
+                    style={tomorrow}
+                    showLineNumbers
+                >
                     npm install -g yo
                     npm install -g generator-apparena-widget
                     yo apparena-widget
-                </pre>
+                </SyntaxHighlighter>
 
                 Answer all questions of the generator.
 
