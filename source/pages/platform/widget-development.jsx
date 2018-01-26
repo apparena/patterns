@@ -43,9 +43,9 @@ function render() {
                     style={tomorrow}
                     showLineNumbers
                 >
-                    npm install -g yo
-                    npm install -g generator-apparena-widget
-                    yo apparena-widget
+                    {`npm install -g yo
+npm install -g generator-apparena-widget
+yo apparena-widget`}
                 </SyntaxHighlighter>
 
                 Answer all questions of the generator.
@@ -57,9 +57,14 @@ function render() {
 
                 Start the node server including hot-reloading.
 
-                <pre>
-                    npm run start
-                </pre>
+
+                <SyntaxHighlighter
+                    language={'bash'}
+                    style={tomorrow}
+                    showLineNumbers
+                >
+                    {`npm run start`}
+                </SyntaxHighlighter>
 
                 <p>
                     Edit the widget. E.g. <code>src/config/aa_config.json</code> or make some changes to
@@ -71,9 +76,13 @@ function render() {
                 The widget template contains variables, which will be replaces for each customer later. This template
                 can be generated using a NPM script.
 
-                <pre>
-                    npm run build:production
-                </pre>
+                <SyntaxHighlighter
+                    language={'bash'}
+                    style={tomorrow}
+                    showLineNumbers
+                >
+                    {`npm run build:production`}
+                </SyntaxHighlighter>
 
                 <p>
                     This will generate your widget template, which you need to upload to a public host and add it to your

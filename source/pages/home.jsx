@@ -17,7 +17,7 @@ export default class Home extends ReactComponent {
                     </div>
 
                     <Row>
-                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+                        <Col md={'4'} className={`${styles['my-3']} ${styles.textCenter}`}>
 
                             <Icon name={'dot-circle-o'} size="5x" type="primary" />
 
@@ -33,7 +33,7 @@ export default class Home extends ReactComponent {
                                 </Button>
                             </Link>
                         </Col>
-                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+                        <Col md={'4'} className={`${styles['my-3']} ${styles.textCenter}`}>
 
                             <Icon name={'comment-text'} size="5x" type="primary" />
 
@@ -49,7 +49,7 @@ export default class Home extends ReactComponent {
                                 </Button>
                             </Link>
                         </Col>
-                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+                        <Col md={'4'} className={`${styles['my-3']} ${styles.textCenter}`}>
 
                             <Icon name={'box'} size="5x" type="primary" />
 
@@ -65,7 +65,7 @@ export default class Home extends ReactComponent {
                                 </Button>
                             </Link>
                         </Col>
-                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+                        <Col md={'4'} className={`${styles['my-3']} ${styles.textCenter}`}>
 
                             <Icon name={'code'} size="5x" type="primary" />
 
@@ -81,7 +81,7 @@ export default class Home extends ReactComponent {
                                 </Button>
                             </Link>
                         </Col>
-                        <Col md={4} className={`${styles['my-3']} ${styles.textCenter}`}>
+                        <Col md={'4'} className={`${styles['my-3']} ${styles.textCenter}`}>
                             <Icon name={'atoms-l'} size="5x" type="primary" />
 
                             <h2>UI Patterns</h2>
