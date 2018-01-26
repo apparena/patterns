@@ -75,7 +75,7 @@ export default class Home extends ReactComponent {
                                 Learn how to develop Web-Apps and Widgets for App-Arena Platform
                             </p>
 
-                            <Link to={`/ui-patterns`}>
+                            <Link to={`/platform/WidgetDevelopment`}>
                                 <Button type="outline-primary">
                                     View Platform Guides
                                 </Button>
