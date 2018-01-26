@@ -4,10 +4,11 @@ import {Alert} from 'apparena-patterns-react';
 export default function AlertExample() {
     return (
         <Alert
-            text="Hey this is a dismissible alert"
             type="warning"
             dismissible
-        />
+        >
+            Hey this is a dismissible alert
+        </Alert>
     );
 }
 
