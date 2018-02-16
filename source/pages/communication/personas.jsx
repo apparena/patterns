@@ -96,7 +96,7 @@ function render() {
                         </Col>
                         <Col xs="9">
                             <blockquote className={styles.blockquote}>
-                                "??????????????????"
+
                             </blockquote>
                         </Col>
                     </Row>
@@ -172,7 +172,7 @@ function render() {
                         </Col>
                         <Col xs="9">
                             <blockquote className={styles.blockquote}>
-                                "??????????????????"
+
                             </blockquote>
                         </Col>
                     </Row>
@@ -248,7 +248,7 @@ function render() {
                         </Col>
                         <Col xs="9">
                             <blockquote className={styles.blockquote}>
-                                "??????????????????"
+
                             </blockquote>
                         </Col>
                     </Row>
@@ -326,7 +326,7 @@ function render() {
                         </Col>
                         <Col xs="9">
                             <blockquote className={styles.blockquote}>
-                                "??????????????????"
+
                             </blockquote>
                         </Col>
                     </Row>
