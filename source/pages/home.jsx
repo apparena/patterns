@@ -27,7 +27,7 @@ export default class Home extends ReactComponent {
                                 Who are we and how do we look like. Brand related infos and downloads.
                             </p>
 
-                            <Link to={`/brand/P01Personality`}>
+                            <Link to={`/brand/AppArenaPersonality`}>
                                 <Button type="outline-primary">
                                     View Brand section
                                 </Button>

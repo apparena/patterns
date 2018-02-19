@@ -75,6 +75,10 @@ export default class Button extends ReactComponent {
          */
         href: PropTypes.string,
         /**
+         * The DOM elements ID.
+         */
+        id: PropTypes.string,
+        /**
          * Set the button as active?
          */
         isActive: PropTypes.bool,
@@ -147,19 +151,20 @@ export default class Button extends ReactComponent {
 
     render() {
         const {
-            type,
-            state,
-            size,
             block,
-            isActive,
+            children,
             className,
             href,
-            children,
-            onClick,
+            id,
+            isActive,
             isDisabled,
-            target,
+            onClick,
+            rounded,
+            size,
+            state,
             submit,
-            rounded
+            target,
+            type,
         } = this.props;
         // classes
         const componentClass = cx(
@@ -173,13 +178,16 @@ export default class Button extends ReactComponent {
             className
         );
         const style = (state !== 'default' && this.btnWidth) ? {width: `${this.btnWidth}px`} : {};
+
+        // If a link is available, then render the button as A tag
         if (href) {
             return (
                 <a
+                    className={componentClass}
+                    href={href}
+                    id={id}
                     ref={this.refBind}
                     style={style}
-                    href={href}
-                    className={componentClass}
                     target={`_${target}`}
                 >
                     {(state === 'default') ? children : this.renderState()}
@@ -188,12 +196,13 @@ export default class Button extends ReactComponent {
         }
         return (
             <button
-                role="button"
-                ref={this.refBind}
-                style={style}
-                onClick={onClick}
-                disabled={isDisabled || (state !== 'default')}
                 className={componentClass}
+                disabled={isDisabled || (state !== 'default')}
+                id={id}
+                onClick={onClick}
+                ref={this.refBind}
+                role="button"
+                style={style}
                 type={submit ? 'submit' : 'button'}
             >
                 {(state === 'default') ? children : this.renderState()}

@@ -13,6 +13,10 @@ export default function ButtonExample() {
             <Button type="link">
                 Link
             </Button>
+            <hr/>
+            <Button id="withId" type="secondary">
+                Button with ID
+            </Button>
         </div>
     );
 }
