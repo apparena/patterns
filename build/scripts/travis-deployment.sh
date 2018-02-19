@@ -28,6 +28,7 @@ case ${SEMVER_RELEASE_LEVEL} in
             echo "Semver New Tag: ${SEMVER_NEW_TAG}"
             #yarn config set version-tag-prefix ""
             #yarn version --no-git-tag-version ${SEMVER_NEW_TAG}
+            npm config set version-tag-prefix ""
             npm version ${SEMVER_NEW_TAG} --no-git-tag-version # --allow-same-version
             #git tag ${SEMVER_NEW_TAG}
             #git push origin --tags
