@@ -26,12 +26,14 @@ case ${SEMVER_RELEASE_LEVEL} in
             echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
             git clone https://github.com/fsaintjacques/semver-tool /tmp/semver &> /dev/null
             SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump ${SEMVER_RELEASE_LEVEL} ${SEMVER_LAST_TAG})
-            npm config set version-tag-prefix ""
 
+            echo "Publish new version on NPM"
+            npm config set version-tag-prefix ""
             npm version ${SEMVER_NEW_TAG} --allow-same-version
             npm publish build/apparena-patterns-react
 
-            # Push Git Tag to Github
+            echo "Add tag to git repo"
+            git tag ${SEMVER_NEW_TAG}
             git remote rm origin
             git remote add origin GIT_REMOTE
             git push origin --tags
