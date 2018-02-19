@@ -10,6 +10,9 @@ export default function ButtonExample() {
             <Button type="secondary">
                 Secondary
             </Button>
+            <Button type="success">
+                Success
+            </Button>
             <Button type="link">
                 Link
             </Button>
