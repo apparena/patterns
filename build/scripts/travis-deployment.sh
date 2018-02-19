@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # build & deploy react patterns.
-yarn build
+npm build
 SEMVER_LAST_TAG=$(npm view apparena-patterns-react version)
 SEMVER_RELEASE_LEVEL=$(git log --oneline -1 --pretty=%B | cat | tr -d '\n' | cut -d "[" -f2 | cut -d "]" -f1)
 ROOT_DIR=$(pwd)
@@ -26,13 +26,14 @@ case ${SEMVER_RELEASE_LEVEL} in
             git clone https://github.com/fsaintjacques/semver-tool /tmp/semver &> /dev/null
             SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump ${SEMVER_RELEASE_LEVEL} ${SEMVER_LAST_TAG})
             echo "Semver New Tag: ${SEMVER_NEW_TAG}"
-            yarn config set version-tag-prefix ""
-            yarn version --no-git-tag-version ${SEMVER_NEW_TAG}
-            #npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
+            #yarn config set version-tag-prefix ""
+            #yarn version --no-git-tag-version ${SEMVER_NEW_TAG}
+            npm config set version-tag-prefix ""
+            npm version ${SEMVER_NEW_TAG} --no-git-tag-version # --allow-same-version
             #git tag ${SEMVER_NEW_TAG}
             #git push origin --tags
             cd build/apparena-patterns-react
-            yarn publish
+            npm publish
             ;;
         *)
             >&2 echo "Specified release level invalid"
