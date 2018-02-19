@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# build & deploy react patterns
+# build & deploy react patterns.
 yarn build
 SEMVER_LAST_TAG=$(npm view apparena-patterns-react version)
 SEMVER_RELEASE_LEVEL=$(git log --oneline -1 --pretty=%B | cat | tr -d '\n' | cut -d "[" -f2 | cut -d "]" -f1)
@@ -27,7 +27,7 @@ case ${SEMVER_RELEASE_LEVEL} in
             SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump ${SEMVER_RELEASE_LEVEL} ${SEMVER_LAST_TAG})
             echo "Semver New Tag: ${SEMVER_NEW_TAG}"
             yarn config set version-tag-prefix ""
-            yarn version --new-version ${SEMVER_NEW_TAG}
+            yarn version --no-git-tag-version ${SEMVER_NEW_TAG}
             #npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
             #git tag ${SEMVER_NEW_TAG}
             #git push origin --tags
