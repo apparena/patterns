@@ -26,7 +26,9 @@ case ${SEMVER_RELEASE_LEVEL} in
             git clone https://github.com/fsaintjacques/semver-tool /tmp/semver &> /dev/null
             SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump ${SEMVER_RELEASE_LEVEL} ${SEMVER_LAST_TAG})
             echo "Semver New Tag: ${SEMVER_NEW_TAG}"
-            npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
+            yarn config set version-tag-prefix ""
+            yarn version --new-version ${SEMVER_NEW_TAG}
+            #npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
             #git tag ${SEMVER_NEW_TAG}
             #git push origin --tags
             cd build/apparena-patterns-react
