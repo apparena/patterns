@@ -29,7 +29,7 @@ case ${SEMVER_RELEASE_LEVEL} in
             #yarn config set version-tag-prefix ""
             #yarn version --no-git-tag-version ${SEMVER_NEW_TAG}
             npm config set version-tag-prefix ""
-            npm version ${SEMVER_NEW_TAG} --no-git-tag-version # --allow-same-version
+            npm version ${SEMVER_NEW_TAG} --allow-same-version #--no-git-tag-version
             #git tag ${SEMVER_NEW_TAG}
             #git push origin --tags
             cd build/apparena-patterns-react
