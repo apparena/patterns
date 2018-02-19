@@ -10,7 +10,6 @@ echo "---------------------------------------------------"
 echo "Publish a new version on NPM and tag the repository"
 echo "Semver Last version : ${SEMVER_LAST_TAG}"
 echo "Semver Release Level: ${SEMVER_RELEASE_LEVEL}"
-echo "Publish a new version on NPM and tag the repository"
 echo "---------------------------------------------------"
 
 case ${SEMVER_RELEASE_LEVEL} in
@@ -26,6 +25,7 @@ case ${SEMVER_RELEASE_LEVEL} in
             echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
             git clone https://github.com/fsaintjacques/semver-tool /tmp/semver &> /dev/null
             SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump ${SEMVER_RELEASE_LEVEL} ${SEMVER_LAST_TAG})
+            echo "Semver New Tag: ${SEMVER_RELEASE_LEVEL}"
             npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
             cd build/apparena-patterns-react
             npm publish
