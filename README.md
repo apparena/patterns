@@ -96,23 +96,22 @@ We provide a yeoman generator that requires 2 clicks to create a new pattern.
 
 Done! Now edit your newly created pattern under *source/patterns/...*
 
-### Preparing for the pull request
+### Publish a new version
 
-Your commits leading up to the pull request should be named properly.
-Each commit should begin with the name of the component that you have worked on
-in square brackets followed by a quick summary of what was done.  
-Example: `[Component] Added documentation`
+The following steps have to be performed to publish a new version on NPM
+and add a tag to this Git repository:
 
-If you want to have your changes published to NPM as well then you
-should **prefix the message when mergin the pull request into master
+1. Each commit should begin with the name of the component that you have worked on
+   in square brackets followed by a quick summary of what was done.  
+   Example: `[Component] Added documentation`
+2. If you are finished, send a pull request
+3. We will check the changes of the pull-request
+4. We will **prefix the message when merging the pull request into master
  branch with the semver release level in square brackets**,
- these are: [major], [minor], or [patch].
-If you add the component name into the message it has to come after
-the semver release level (e.g. "[patch][Component] Added documentation").  
-Omitting the semver release level, or using an invalid one, skips the
-NPM deployment and only updates the documentation.
+ these are: [major], [minor], or [patch]. (Example: `[patch][Button] Added documentation to the button component`).
 
-Always run the tests and the linter prior to opening a pull request and fix
+
+> Always run the tests and the linter prior to opening a pull request and fix
 any issues, errors and warnings that occur.
 
 
