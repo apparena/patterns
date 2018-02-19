@@ -7,12 +7,6 @@ SEMVER_LAST_TAG=$(npm view apparena-patterns-react version)
 SEMVER_RELEASE_LEVEL=$(git log --oneline -1 --pretty=%B | cat | tr -d '\n' | cut -d "[" -f2 | cut -d "]" -f1)
 ROOT_DIR=$(pwd)
 
-echo "---------------------------------------------------"
-echo "Publish a new version on NPM and tag the repository"
-echo "Semver Last version : ${SEMVER_LAST_TAG}"
-echo "Semver Release Level: ${SEMVER_RELEASE_LEVEL}"
-echo "---------------------------------------------------"
-
 case ${SEMVER_RELEASE_LEVEL} in
 *\ *)
     >&2 echo "Specified release level invalid"
@@ -27,15 +21,24 @@ case ${SEMVER_RELEASE_LEVEL} in
             git clone https://github.com/fsaintjacques/semver-tool /tmp/semver &> /dev/null
             SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump ${SEMVER_RELEASE_LEVEL} ${SEMVER_LAST_TAG})
 
-            echo "Publish new version on NPM"
+            echo "---------------------------------------------------"
+            echo "Publish a new version on NPM and tag the repository"
+            echo "Semver Release Level: ${SEMVER_RELEASE_LEVEL}"
+            echo "Semver last version : ${SEMVER_LAST_TAG}"
+            echo "Semver next version : ${SEMVER_NEW_TAG}"
+            echo "---------------------------------------------------"
+            cd build/apparena-patterns-react
             npm config set version-tag-prefix ""
             npm version ${SEMVER_NEW_TAG} --no-git-tag-version --allow-same-version
-            npm publish build/apparena-patterns-react
+            npm publish
 
+            echo "---------------------------------------------------"
             echo "Add tag to git repo"
+            echo "Tag : ${SEMVER_NEW_TAG}"
+            echo "---------------------------------------------------"
             git tag ${SEMVER_NEW_TAG}
             git remote rm origin
-            git remote add origin GIT_REMOTE
+            git remote add origin ${GIT_REMOTE}
             git push origin --tags
             ;;
         *)
