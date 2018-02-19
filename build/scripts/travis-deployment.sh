@@ -29,7 +29,7 @@ case ${SEMVER_RELEASE_LEVEL} in
 
             echo "Publish new version on NPM"
             npm config set version-tag-prefix ""
-            npm version ${SEMVER_NEW_TAG} --allow-same-version
+            npm version ${SEMVER_NEW_TAG} --no-git-tag-version --allow-same-version
             npm publish build/apparena-patterns-react
 
             echo "Add tag to git repo"
