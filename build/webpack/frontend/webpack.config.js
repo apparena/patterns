@@ -64,23 +64,16 @@ let webpackConfig = {
             jsRule,
             {
                 test: /\.mjml$/,
-                loader: extractComponentMJML.extract({
-                    loader: [
-                        {
-                            loader: 'mjml-with-images-loader',
-                            options: {
-                                onlyHtml: true
-                            }
-                        }
-                    ]
+                use: extractComponentMJML.extract({
+                    use: ['mjml-with-images-loader']
                 })
             },
             {
                 test: /\.scss$/,
-                loader: extractComponentCSS.extract({
+                use: extractComponentCSS.extract({
                     fallback: 'style-loader',
                     publicPath: '../',
-                    loader: [
+                    use: [
                         {
                             loader: 'css-loader',
                             options: {
@@ -108,7 +101,7 @@ let webpackConfig = {
             },
             {
                 test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg)$/,
-                use: [{
+                loader: [{
                     loader: 'file-loader',
                     options: {
                         name: `vendor/[name].[ext]`
@@ -240,7 +233,7 @@ if (config.enabled.eslint) {
     webpackConfig.module.rules.push(
         {
             test: /\.(js|jsx)$/,
-            loader: 'eslint-loader',
+            use: 'eslint-loader',
             enforce: 'pre',
             options: {
                 configFile: './build/webpack/eslint.js',

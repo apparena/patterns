@@ -45,9 +45,9 @@ module.exports = {
                 loader: extractComponentCSS.extract({
                     fallback: 'style-loader',
                     publicPath: '../',
-                    loader: [
+                    use: [
                         {
-                            loader: 'css-loader',
+                            use: 'css-loader',
                             options: {
                                 modules: true,
                                 importLoaders: 1,
@@ -57,13 +57,13 @@ module.exports = {
                             }
                         },
                         {
-                            loader: 'resolve-url-loader',
+                            use: 'resolve-url-loader',
                             options: {
                                 sourceMap: true
                             }
                         },
                         {
-                            loader: 'sass-loader',
+                            use: 'sass-loader',
                             options: {
                                 sourceMap: true
                             }

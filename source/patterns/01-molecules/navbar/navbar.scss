@@ -6,8 +6,8 @@
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/utilities/background";
 @import "~bootstrap/scss/utilities/position";
-@import "~jquery.mmenu/src/css/jquery.mmenu.oncanvas";
-@import "~jquery.mmenu/src/addons/offcanvas/jquery.mmenu.offcanvas.scss";
+@import "~jquery.mmenu/src/core/oncanvas/jquery.mmenu.oncanvas";
+@import "~jquery.mmenu/src/core/offcanvas/jquery.mmenu.offcanvas.scss";
 
 /*=========================================================================
   Molecules Modal
