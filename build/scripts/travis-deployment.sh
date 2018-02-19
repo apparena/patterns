@@ -28,6 +28,8 @@ case ${SEMVER_RELEASE_LEVEL} in
             npm config set version-tag-prefix ""
             npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
             npm publish build/apparena-patterns-react
+            git tag ${SEMVER_NEW_TAG}
+            git push origin --tags
             ;;
         *)
             >&2 echo "Specified release level invalid"
