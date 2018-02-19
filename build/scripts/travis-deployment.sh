@@ -2,6 +2,7 @@
 
 # build & deploy react patterns.
 npm run build
+GIT_REMOTE="https://sbuckpesch:${GITHUB_TOKEN}@github.com/apparena/patterns.git"
 SEMVER_LAST_TAG=$(npm view apparena-patterns-react version)
 SEMVER_RELEASE_LEVEL=$(git log --oneline -1 --pretty=%B | cat | tr -d '\n' | cut -d "[" -f2 | cut -d "]" -f1)
 ROOT_DIR=$(pwd)
@@ -31,6 +32,8 @@ case ${SEMVER_RELEASE_LEVEL} in
             npm publish build/apparena-patterns-react
 
             # Push Git Tag to Github
+            git remote rm origin
+            git remote add origin GIT_REMOTE
             git push origin --tags
             ;;
         *)
