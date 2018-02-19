@@ -104,8 +104,9 @@ in square brackets followed by a quick summary of what was done.
 Example: `[Component] Added documentation`
 
 If you want to have your changes published to NPM as well then you
-should **prefix the pull request message with the semver release level
-in square brackets**, these are: [major], [minor], or [patch].
+should **prefix the message when mergin the pull request into master
+ branch with the semver release level in square brackets**,
+ these are: [major], [minor], or [patch].
 If you add the component name into the message it has to come after
 the semver release level (e.g. "[patch][Component] Added documentation").  
 Omitting the semver release level, or using an invalid one, skips the

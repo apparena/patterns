@@ -13,24 +13,34 @@ echo "Semver Release Level: ${SEMVER_RELEASE_LEVEL}"
 echo "Publish a new version on NPM and tag the repository"
 echo "---------------------------------------------------"
 
-if [ -n ${SEMVER_RELEASE_LEVEL} ]; then
+case ${SEMVER_RELEASE_LEVEL} in
+*\ *)
+    >&2 echo "Specified release level invalid"
+    echo "Specified release level invalid"
+    ;;
+*)
+    if [ -n ${SEMVER_RELEASE_LEVEL} ]; then
         case ${SEMVER_RELEASE_LEVEL} in
         major|minor|patch)
             cp ~/.npmrc ~/.npmrc.bak
             echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
             git clone https://github.com/fsaintjacques/semver-tool /tmp/semver &> /dev/null
             SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump ${SEMVER_RELEASE_LEVEL} ${SEMVER_LAST_TAG})
-            echo "Semver New tag: ${SEMVER_NEW_TAG}"
             npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
             cd build/apparena-patterns-react
             npm publish
             ;;
         *)
             >&2 echo "Specified release level invalid"
+            echo "Specified release level invalid"
             ;;
         esac
     else
         >&2 echo "No release level specified"
+        echo "No release level specified"
     fi
+    ;;
+esac
+
 
 cd ${ROOT_DIR}
