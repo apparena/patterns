@@ -25,6 +25,7 @@ case ${SEMVER_RELEASE_LEVEL} in
             echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
             git clone https://github.com/fsaintjacques/semver-tool /tmp/semver &> /dev/null
             SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump ${SEMVER_RELEASE_LEVEL} ${SEMVER_LAST_TAG})
+            npm config set version-tag-prefix ""
             npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
             npm publish build/apparena-patterns-react
             ;;
