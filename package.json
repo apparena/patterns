@@ -22,11 +22,12 @@
     "build:frontend:dev": "npm run build:docs && webpack --progress --config build/webpack/frontend/webpack.config.js",
     "build:frontend:watch": "npm run build:docs && webpack -w --progress --config build/webpack/frontend/webpack.config.js",
     "build:frontend:prod": "npm run build:docs && cross-env NODE_ENV=production webpack --progress --config build/webpack/frontend/webpack.config.js",
+    "build:production": "cross-env NODE_ENV=production npm run clean:build:all && npm run build:babel && npm run build:copy-files",
     "clean:build:all": "rimraf build/apparena-patterns-react",
     "start": "npm run build:docs && node build/webpack/hot-reload-server.js",
-    "test": "BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava",
-    "test:generator": "webpack --progress --config build/webpack/webpack.config.tests.js && BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava build/generator/_build/*.js",
-    "test:coverage": "BABEL_DISABLE_CACHE=1 nyc report --reporter=lcov --reporter=json --reporter=text-lcov --reporter=html",
+    "test": "cross-env BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava",
+    "test:generator": "webpack --progress --config build/webpack/webpack.config.tests.js && cross-env BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava build/generator/_build/*.js",
+    "test:coverage": "cross-env BABEL_DISABLE_CACHE=1 nyc report --reporter=lcov --reporter=json --reporter=text-lcov --reporter=html",
     "publish:generator:apparena-pattern": "npm publish build/yeoman/generator-apparena-pattern"
   },
   "repository": {
