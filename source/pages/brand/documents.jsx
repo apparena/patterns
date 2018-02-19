@@ -139,6 +139,20 @@ function render() {
                                 </Button>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <img src="https://s3.app-arena.com/patterns/atoms/icons/file-docx.svg" alt="Word document"/>
+                            </td>
+                            <td>Empfangsbestätigung ADV-Vertrag</td>
+                            <td>Rückschreiben mit der Bestätigung des Erhalts eines ADV-Vertrages.</td>
+                            <td>
+                                <Button type="link"
+                                        href="https://s3.app-arena.com/brand/documents/datenschutz/ADV-Erhalt_und_Ruecksendung.docx"
+                                >
+                                    Download
+                                </Button>
+                            </td>
+                        </tr>
                         </tbody>
                     </Table>
                 </div>
