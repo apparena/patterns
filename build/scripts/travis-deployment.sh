@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # build & deploy react patterns.
-npm build
+npm run build
 SEMVER_LAST_TAG=$(npm view apparena-patterns-react version)
 SEMVER_RELEASE_LEVEL=$(git log --oneline -1 --pretty=%B | cat | tr -d '\n' | cut -d "[" -f2 | cut -d "]" -f1)
 ROOT_DIR=$(pwd)
