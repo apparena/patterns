@@ -21,17 +21,11 @@ case ${SEMVER_RELEASE_LEVEL} in
     if [ -n ${SEMVER_RELEASE_LEVEL} ]; then
         case ${SEMVER_RELEASE_LEVEL} in
         major|minor|patch)
-            cp ~/.npmrc ~/.npmrc.bak
+             cp ~/.npmrc ~/.npmrc.bak
             echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
             git clone https://github.com/fsaintjacques/semver-tool /tmp/semver &> /dev/null
             SEMVER_NEW_TAG=$(/tmp/semver/src/semver bump ${SEMVER_RELEASE_LEVEL} ${SEMVER_LAST_TAG})
-            echo "Semver New Tag: ${SEMVER_NEW_TAG}"
-            #yarn config set version-tag-prefix ""
-            #yarn version --no-git-tag-version ${SEMVER_NEW_TAG}
-            npm config set version-tag-prefix ""
-            npm version ${SEMVER_NEW_TAG} --allow-same-version #--no-git-tag-version
-            #git tag ${SEMVER_NEW_TAG}
-            #git push origin --tags
+            npm --no-git-tag-version version ${SEMVER_NEW_TAG} --allow-same-version
             cd build/apparena-patterns-react
             npm publish
             ;;
