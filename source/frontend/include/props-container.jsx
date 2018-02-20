@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {ReactComponent} from 'apparena-patterns-react';
+import {ReactComponent, Table} from 'apparena-patterns-react';
 import styles from './styles.scss';
 
 export default class Props extends ReactComponent {
@@ -28,23 +28,23 @@ export default class Props extends ReactComponent {
                 }
                 return (
                     <code className={styles.enum}>
-                                <span>
-                                    <span className={styles.header}>One of
-                                        <span className={styles.brac}>(</span>
-                                    </span>
-                                    <div style={{paddingLeft: '10px'}}>
-                                        {values.map((value, index) => {
-                                            return (
-                                                <span key={index} className={styles.item}>
-                                                    <span className={styles.title}>{typeof value === 'string' && value}</span>
-                                                </span>
-                                            );
-                                        })}
-                                    </div>
-                                    <span className={styles.footer}>
-                                        <span className={styles.brac}>)</span>
-                                    </span>
-                                </span>
+                        <span>
+                            <span className={styles.header}>One of
+                                <span className={styles.brac}>(</span>
+                            </span>
+                            <div style={{paddingLeft: '10px'}}>
+                                {values.map((value, index) => {
+                                    return (
+                                        <span key={index} className={styles.item}>
+                                            <span className={styles.title}>{typeof value === 'string' && value}</span>
+                                        </span>
+                                    );
+                                })}
+                            </div>
+                            <span className={styles.footer}>
+                                <span className={styles.brac}>)</span>
+                            </span>
+                        </span>
                     </code>
                 );
             default:
@@ -63,19 +63,27 @@ export default class Props extends ReactComponent {
             type = type.type;
         }
         return (
-            <div key={i} className={styles.prop}>
-                <h3 className={styles.header}>
+            <tr key={i} className={styles.prop}>
+                <th className={'key'}>
+                    {key}
+                </th>
+                <td className={'type'}>
                     <code>
                         <span className={styles.type}>{type.name}</span>
-                        {key}
-                        {prop.defaultValue &&
-                        <span className={styles.defaultValue}> = {prop.defaultValue.value}</span>
-                        }
                     </code>
-                </h3>
-                <div className={styles.description}>{prop.description}</div>
-                {this.generatePropType(type)}
-            </div>
+                </td>
+                <td className={'default'}>
+                    {prop.defaultValue &&
+                    <span className={styles.defaultValue}>{prop.defaultValue.value}</span>
+                    }
+                </td>
+                <td className="description">
+                    {prop.description}
+                </td>
+                <td>
+                    {this.generatePropType(type)}
+                </td>
+            </tr>
         );
     }
 
@@ -83,7 +91,28 @@ export default class Props extends ReactComponent {
         if (infos.props) {
             return (
                 <div>
-                    {Object.keys(infos.props).map(::this.renderProp)}
+                    <Table bordered hover responsive>
+                        <thead>
+                        <tr className={styles.prop}>
+                            <th className={'key'}>
+                                Key
+                            </th>
+                            <th className={'type'}>
+                                Type
+                            </th>
+                            <th className={'default'}>
+                                Default
+                            </th>
+                            <th className="description">
+                                Description
+                            </th>
+                            <th className="options">
+                                Options
+                            </th>
+                        </tr>
+                        </thead>
+                        {Object.keys(infos.props).map(::this.renderProp)}
+                    </Table>
                 </div>
             );
         }
