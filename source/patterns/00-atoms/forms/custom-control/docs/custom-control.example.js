@@ -1,69 +1,53 @@
 import React from 'react';
-import { CustomControl } from 'apparena-patterns-react';
+import {CustomControl} from 'apparena-patterns-react';
 
 export default function FormCustomControlExample() {
     return (
         <div>
             <h3>Checkboxes</h3>
             <CustomControl
+                label="Simple Checkbox"
+                name="simple-checkbox"
                 type="checkbox"
-                label="Default checkbox"
-            >
-                <input
-                    type="checkbox"
-                    name="terms"
-                />
-            </CustomControl>
+                value="off"
+            />
             <CustomControl
+                checked
+                label="Simple Checkbox checked"
+                name="simple-checkbox-checked"
                 type="checkbox"
-                label="DOES NOT WORK YET Checkbox in danger validation state"
-                validationState={"danger"}
-            >
-                <input
-                    type="checkbox"
-                    name="terms"
-                />
-            </CustomControl>
+                value="on"
+            />
             <CustomControl
+                checked
+                disabled
+                label="Simple Checkbox disabled"
+                name="simple-checkbox-disabled"
                 type="checkbox"
-                label="DOES NOT WORK YET Checkbox in success validation state"
-                validationState={"success"}
-            >
-                <input
-                    type="checkbox"
-                    name="terms"
-                />
-            </CustomControl>
+                value="on"
+            />
             <h3>Radio buttons</h3>
             <CustomControl
+                label="Simple Radio"
+                name="simple-radio"
                 type="radio"
-                label="Default checkbox"
-            >
-                <input
-                    type="checkbox"
-                    name="terms"
-                />
-            </CustomControl>
+                value="off"
+            />
             <CustomControl
+                checked
+                label="Simple Radio checked"
+                name="simple-radio-checked"
                 type="radio"
-                label="DOES NOT WORK YET Checkbox in danger validation state"
-                validationState={"danger"}
-            >
-                <input
-                    type="checkbox"
-                    name="terms"
-                />
-            </CustomControl>
+                value="on"
+            />
             <CustomControl
+                checked
+                disabled
+                label="Simple Radio disabled"
+                name="simple-radio-disabled"
                 type="radio"
-                label="DOES NOT WORK YET Checkbox in success validation state"
-                validationState={"success"}
-            >
-                <input
-                    type="checkbox"
-                    name="terms"
-                />
-            </CustomControl>
+                value="on"
+            />
         </div>
     );
 }
