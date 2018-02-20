@@ -19,7 +19,7 @@ export default class Home extends ReactComponent {
                     <Row>
                         <Col md={'4'} className={`${styles['my-3']} ${styles.textCenter}`}>
 
-                            <img height="90" src="https://s3.app-arena.com/brand/logos/AA_Logo_circle_dark.svg" alt=""/>
+                            <img height="90" src="https://s3.app-arena.com/brand/logos/AA_Logo_circle_bright.svg" alt=""/>
 
                             <h2>Brand</h2>
 
