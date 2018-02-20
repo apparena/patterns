@@ -1,2 +1,7 @@
 {
+  "generator-apparena-pattern": {
+    "promptValues": {
+      "type": "Atom"
+    }
+  }
 }

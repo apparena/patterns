@@ -233,7 +233,7 @@ if (config.enabled.eslint) {
     webpackConfig.module.rules.push(
         {
             test: /\.(js|jsx)$/,
-            use: 'eslint-loader',
+            loader: 'eslint-loader',
             enforce: 'pre',
             options: {
                 configFile: './build/webpack/eslint.js',

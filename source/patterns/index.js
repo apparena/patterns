@@ -11,7 +11,7 @@ import Col from './00-atoms/grid/col/index';
 import ColorPicker from './00-atoms/forms/color/index';
 import Container from './00-atoms/grid/container/index';
 import Copy from './00-atoms/copy/index';
-import CustomControl from './01-molecules/forms/custom-control';
+import CustomControl from './00-atoms/forms/custom-control';
 import DatePicker from './00-atoms/datepicker/index';
 import Dropdown from './01-molecules/dropdown/dropdown';
 import Form from './02-organisms/forms/form';
@@ -54,7 +54,6 @@ import TableList from './02-organisms/lists/table-list/index';
 import Tag from './00-atoms/tag/tag';
 import TagInput from './00-atoms/forms/tag-input/index';
 import Tooltip from './01-molecules/tooltip/tooltip';
-
 export {
     Alert,
     Animate,

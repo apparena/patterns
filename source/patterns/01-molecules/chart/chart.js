@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../../react-utils/component';
+import {ReactComponent} from 'apparena-patterns-react';
 
 var Highcharts = require('highcharts');
 
@@ -51,5 +51,4 @@ export default class Chart extends ReactComponent {
     render() {
         return <div ref={(c) => {this._chart = c;}}/>;
     }
-
 }
