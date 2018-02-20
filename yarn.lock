@@ -6613,9 +6613,9 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-i18n-js@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/i18n-js/-/i18n-js-3.0.3.tgz#f537b2bd1e2801eee4f4728a17189ef0991c0270"
+"i18n-js@http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz":
+  version "0.0.0"
+  resolved "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz#05cc030241eaaafb29318bc6651fc464b8b5f5ac"
 
 icon-font-generator@^1.1.1:
   version "1.1.1"
