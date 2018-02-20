@@ -30,10 +30,9 @@ export default class Example extends ReactComponent {
         return (
             <div className={styles.exampleRoot}>
                 <div title="Show Code Snippet" className={styles.header} onClick={::this.toggleCodeSnippet}>
-                    <h4 className={styles.title}>Appearance Options</h4>
+                    <h4 className={styles.title}>Example</h4>
                     <div className={styles.toggle} onClick={::this.toggleCodeSnippet}>
-                        <title id="title-xoyg1rk">Show Code Snippet</title>
-                        <Icon name="html"/>
+                        Show Code
                     </div>
                 </div>
                 {this.state.showCode &&
