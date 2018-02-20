@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import styles from './form-group.scss';
+import styles from './component.scss';
 
 function CustomControl({className, type, label, children, validationState, ...props}) {
     props.className = cx(
@@ -17,20 +17,35 @@ function CustomControl({className, type, label, children, validationState, ...pr
 
     return (
         <div className={formGroupClass}>
-            <label {...props}>
+            <div {...props}>
                 {input}
                 <span className={styles['custom-control-indicator']}/>
-                <span className={styles['custom-control-description']}>{label}</span>
-            </label>
+                <label className={styles['custom-control-label']}>{label}</label>
+            </div>
         </div>
     );
 }
 
 CustomControl.propTypes = {
+    /**
+     * Children
+     */
     children: PropTypes.node.isRequired,
+    /**
+     * CSS classes
+     */
     className: PropTypes.string,
+    /**
+     * Label for the input field
+     */
     label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+    /**
+     * Is it a checkbox or a radio button
+     */
     type: PropTypes.oneOf(['checkbox', 'radio']),
+    /**
+     * Validation state the input field is currently in
+     */
     validationState: PropTypes.oneOf(['default', 'danger', 'success', 'warning'])
 };
 

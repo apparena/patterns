@@ -108,7 +108,7 @@ and add a tag to this Git repository:
 3. We will check the changes of the pull-request
 4. We will **prefix the message when merging the pull request into master
  branch with the semver release level in square brackets**,
- these are: [major], [minor], or [patch]. (Example: `[patch][Button] Added documentation to the button component`).
+ these are: [major], [minor], or [patch]. (Example: `[patch][Button] Added documentation to the button componenty`).
 
 
 > Always run the tests and the linter prior to opening a pull request and fix

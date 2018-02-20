@@ -3,6 +3,11 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/images";
 
-.read-more-button {
-  font-size: .88rem !important;
+.logoContainer {
+  margin-bottom: 3rem;
+
+  img {
+    max-width: 100%;
+    border: 1px solid #efefef;
+  }
 }
