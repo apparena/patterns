@@ -45,7 +45,7 @@
     "clipboard": "^1.7.1",
     "express": "^4.16.2",
     "history": "^4.7.2",
-    "i18n-js": "^3.0.3",
+    "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
     "inert": "^5.1.0",
     "install": "^0.10.4",
     "jquery": "^3.3.1",

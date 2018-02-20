@@ -11,8 +11,8 @@ i18n.fallbacks = true;
 i18n.translations = {
     en:{
         priceTable: {
-            leftText: "Single packages",
-            rightText: "Flatrates",
+            leftText: "One time usage",
+            rightText: "Flatrate",
             header: "Prices",
             articles: {
                 intro_webinar: "Introduction webinar",
