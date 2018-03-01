@@ -30,6 +30,11 @@ export default class CustomControl extends ReactComponent {
          * Name of the input field
          */
         name: PropTypes.string.isRequired,
+
+        /**
+         * Is it a checkbox or a radio button
+         */
+        onChange: PropTypes.func,
         /**
          * Is it a checkbox or a radio button
          */
@@ -39,16 +44,18 @@ export default class CustomControl extends ReactComponent {
          */
         validationState: PropTypes.oneOf(['default', 'valid', 'invalid'])
     };
+
     static defaultProps = {
         checked: false,
         disabled: false,
         type: 'checkbox',
         validationState: 'default',
-        value: ''
+        value: '',
+        onChange: () => {}
     };
 
-    constructor(props, context) {
-        super(props, context);
+    constructor(props) {
+        super(props);
 
         //this.handleChange = this.handleChange.bind(this);
 
@@ -57,7 +64,7 @@ export default class CustomControl extends ReactComponent {
         };
     }
 
-    toggleCheckbox = () => {
+    toggleCheckbox = (event) => {
         if(!this.props.disabled) {
             this.setState(({checked}) => (
                 {
@@ -65,24 +72,27 @@ export default class CustomControl extends ReactComponent {
                 }
             ));
         }
+        event.target.value = !this.state.checked;
+        this.props.onChange(event);
     };
 
     render() {
         const typeClassName = this.props.type === 'checkbox' ? 'custom-checkbox' : 'custom-radio';
         return (
             <div className={this.state.formGroupClass}>
-                <div className={cx(styles['custom-control'], styles[typeClassName])}                >
+                <div className={cx(styles['custom-control'], styles[typeClassName])}>
                     <input checked={this.state.checked}
                            className={styles['custom-control-input']}
                            disabled={this.props.disabled}
                            id={this.props.id}
                            name={this.props.name}
                            type={this.props.type}
-                           onChange={this.toggleCheckbox}
+                           onClick={this.toggleCheckbox.bind(this)}
                     />
                     <label className={styles['custom-control-label']}
                            htmlFor={this.props.id}
-                           onClick={this.toggleCheckbox}
+                           onClick={this.toggleCheckbox.bind(this)}
+                           value={this.state.checked}
                     >
                         {this.props.label}
                     </label>

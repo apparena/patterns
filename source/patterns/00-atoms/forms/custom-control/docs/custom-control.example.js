@@ -10,7 +10,6 @@ export default class FormCustomControlExample extends React.Component {
 
     handleClick(event) {
         const { target: { value } } = event;
-
         this.setState({
             clickHandlerText: `Checkbox is ${value}`
         });
