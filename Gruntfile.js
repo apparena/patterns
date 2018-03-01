@@ -33,7 +33,7 @@ module.exports = function (grunt) {
                 cmd: './node_modules/.bin/icon-font-generator',
                 args: [
                     'source/icons/svg/*.svg',
-                    '--out=source/fonts',
+                    '--out=public/fonts',
                     '--fontspath=#{$aa-font-path}',
                     '--name=app-arena-icons',
                     '--prefix=aa-icon',
