@@ -27,12 +27,11 @@ function render() {
 </head>
 ...
 <h1>Hey, here is an icon: <i class="aa-icon aa-icon-heart"></i></h1>
-
 `}
                     </SyntaxHighlighter>
 
-                    You can download as well the SCSSS
-                    file <a href="https://brand.app-arena.com/fonts/app-arena-icons.css">https://brand.app-arena.com/fonts/app-arena-icons.css</a>
+                    You can download as well the SCSS
+                    file <a href="https://brand.app-arena.com/fonts/app-arena-icons.scss">https://brand.app-arena.com/fonts/app-arena-icons.scss</a>
                     or use all icons using the corresponding <a href="https://brand.app-arena.com/#/ui-patterns/Icons">React
                     Icon component</a>.
 
