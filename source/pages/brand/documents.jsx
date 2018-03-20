@@ -41,6 +41,22 @@ function render() {
                                 </Button>
                             </td>
                         </tr>
+
+                        <tr>
+                            <td>
+                                <img src="https://s3.app-arena.com/patterns/atoms/icons/file-docx.svg" alt="Word document"/>
+                            </td>
+                            <td>Partner-Vertrag Vorlage</td>
+                            <td>Kooperationsvertrag zum Vertrieb von Apps mit einem Partner/Reseller</td>
+                            <td>
+                                <Button type="link"
+                                        href="https://s3.app-arena.com/brand/documents/Partnervertrag-Vorlage.docx"
+                                >
+                                    Download
+                                </Button>
+                            </td>
+                        </tr>
+
                         <tr>
                             <td>
                                 <img src="https://s3.app-arena.com/patterns/atoms/icons/file-docx.svg" alt="Word document"/>
