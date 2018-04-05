@@ -1,1 +1,1 @@
-[Insert description here]
+A sortable and searchable table component.

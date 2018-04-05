@@ -1,8 +1,0 @@
-{{> 02-organisms/layout/header }}
-<main role="main">
-
-    {{!> molecules-page-header }}
-
-    <div class="push"></div>
-</main>
-{{> organisms-footer }}

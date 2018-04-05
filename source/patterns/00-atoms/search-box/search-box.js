@@ -17,11 +17,11 @@ function SearchBox({typeData, className, refCallback, value, onChangeHandler, ..
         <InputGroup
             {...props}
             id="top-search"
-            addon={<Icon name="search"/>}
+            addon={<Icon className={styles.searchBoxIcon} name="search"/>}
         >
             <Input
                 placeholder={i18n.t('search.placeholder', {entity: i18n.t(`entities.${typeData.entityType}`)})}
-                id="top-search"
+                id="top-search-input"
                 className={styles.input}
                 refCallback={refCallback}
                 defaultValue={value}

@@ -1,4 +1,0 @@
-Footer
----
-
-[Insert description here]
