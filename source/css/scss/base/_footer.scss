@@ -1,0 +1,87 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../css/scss/abstracts/variables";
+
+/*=========================================================================
+  Organism Footer
+ ========================================================================== */
+
+.o-footer {
+  clear: both;
+  overflow: hidden;
+  background: theme-color("secondary");
+  color: #ffffff;
+  line-height: 1.2;
+  padding: $spacer;
+  font-size: 90%;
+
+  hr {
+    border-color: $gray-600;
+  }
+
+  .nav-link {
+    color: $gray-400;
+  }
+  .nav-link:hover {
+    color: lighten($gray-400, 10%);
+  }
+}
+
+.o-footer-social-media {
+  margin-top: -10px;
+  a {
+    color: $gray-400;
+    font-size: 2rem;
+  }
+  a:hover {
+    color: lighten($gray-400, 10%);
+  }
+
+  .list-inline {
+    margin-bottom: 0;
+  }
+}
+
+.o-footer-nav-primary {
+  padding-left: 5px;
+  margin-top: -5px;
+}
+
+.o-footer-contact {
+  margin-top: 3rem;
+  margin-bottom: 5px;
+  font-size: 90%;
+}
+
+.o-footer-copyright {
+  color: #ccc;
+}
+
+.o-footer-nav-secondary {
+  margin-bottom: 0.5rem;
+  padding-left: 5px;
+  .footer-nav {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .nav-link {
+    font-size: 90%;
+    color: $gray-600;
+  }
+  .nav-link:hover {
+    color: lighten($gray-600, 10%);
+  }
+}
+
+.o-footer-logo {
+
+  display: block;
+
+  > img {
+    max-width: 160px;
+
+  }
+}
+
