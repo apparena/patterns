@@ -13,11 +13,11 @@ install:
   - yarn
   - yarn build:frontend:prod
 before_script:
-  - npm install grunt-cli -g
+#  - npm install grunt-cli -g
   - chmod +x build/scripts/run-travis-tests.sh
 script:
   - if [ "$TRAVIS_BRANCH" != "master" ]; then ./build/scripts/run-travis-tests.sh; fi
-  - grunt
+#  - grunt
 before_deploy:
   - chmod +x build/scripts/travis-deployment.sh
   - chmod +x build/scripts/travis-aws-deploy.sh

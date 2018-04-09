@@ -1,22 +1,22 @@
 // List Icons
 // -------------------------
 
-.#{$aa-icon-css-prefix}-ul {
+.icon-ul {
   padding-left: 0;
-  margin-left: $aa-icon-li-width;
+  margin-left: $icon-li-width;
   list-style-type: none;
   > li {
     position: relative;
   }
 }
 
-.#{$aa-icon-css-prefix}-li {
+.icon-li {
   position: absolute;
-  left: -$aa-icon-li-width;
-  width: $aa-icon-li-width;
+  left: -$icon-li-width;
+  width: $icon-li-width;
   top: (2em / 14);
   text-align: center;
-  &.#{$aa-icon-css-prefix}-lg {
-    left: -$aa-icon-li-width + (4em / 14);
+  &.icon-lg {
+    left: -$icon-li-width + (4em / 14);
   }
 }

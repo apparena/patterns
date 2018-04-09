@@ -2,24 +2,24 @@
 // -------------------------
 
 /* makes the font 33% larger relative to the icon container */
-.#{$aa-icon-css-prefix}-lg {
+.icon-lg {
   font-size: (4em / 3);
   line-height: (3em / 4);
   vertical-align: -15%;
 }
 
-.#{$aa-icon-css-prefix}-2x {
+.icon-2x {
   font-size: 2em;
 }
 
-.#{$aa-icon-css-prefix}-3x {
+.icon-3x {
   font-size: 3em;
 }
 
-.#{$aa-icon-css-prefix}-4x {
+.icon-4x {
   font-size: 4em;
 }
 
-.#{$aa-icon-css-prefix}-5x {
+.icon-5x {
   font-size: 5em;
 }

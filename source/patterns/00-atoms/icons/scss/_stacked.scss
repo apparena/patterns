@@ -1,7 +1,7 @@
 // Stacked Icons
 // -------------------------
 
-.#{$aa-icon-css-prefix}-stack {
+.icon-stack {
   position: relative;
   display: inline-block;
   width: 2em;
@@ -10,21 +10,21 @@
   vertical-align: middle;
 }
 
-.#{$aa-icon-css-prefix}-stack-1x, .#{$aa-icon-css-prefix}-stack-2x {
+.icon-stack-1x, .icon-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
 }
 
-.#{$aa-icon-css-prefix}-stack-1x {
+.icon-stack-1x {
   line-height: inherit;
 }
 
-.#{$aa-icon-css-prefix}-stack-2x {
+.icon-stack-2x {
   font-size: 2em;
 }
 
-.#{$aa-icon-css-prefix}-inverse {
-  color: $aa-icon-inverse;
+.icon-inverse {
+  color: $icon-inverse;
 }
