@@ -2,7 +2,8 @@
  * Import icons from S3 bucket
  *
  */
-
+@import "../../../css/scss/abstracts/variables";
+@import "../../../css/scss/abstracts/mixins";
 @import url("https://aa-fonts.s3.amazonaws.com/app-arena/app-arena.css");
 
 .icon-primary {
