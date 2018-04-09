@@ -1,25 +1,25 @@
 // Bordered & Pulled
 // -------------------------
 
-.#{$aa-icon-css-prefix}-border {
+.icon-border {
   padding: .2em .25em .15em;
-  border: solid .08em $aa-icon-border-color;
+  border: solid .08em $icon-border-color;
   border-radius: .1em;
 }
 
-.#{$aa-icon-css-prefix}-pull-left {
+.icon-pull-left {
   float: left;
 }
 
-.#{$aa-icon-css-prefix}-pull-right {
+.icon-pull-right {
   float: right;
 }
 
-.#{$aa-icon-css-prefix} {
-  &.#{$aa-icon-css-prefix}-pull-left {
+.icon {
+  &.icon-pull-left {
     margin-right: .3em;
   }
-  &.#{$aa-icon-css-prefix}-pull-right {
+  &.icon-pull-right {
     margin-left: .3em;
   }
 }
@@ -33,7 +33,7 @@
   float: left;
 }
 
-.#{$aa-icon-css-prefix} {
+.icon {
   &.pull-left {
     margin-right: .3em;
   }

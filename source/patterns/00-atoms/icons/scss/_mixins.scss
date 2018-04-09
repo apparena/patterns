@@ -1,9 +1,9 @@
 // Mixins
 // --------------------------
 
-@mixin aa-icon-icon() {
+@mixin icon() {
   display: inline-block;
-  font: normal normal normal #{$aa-icon-font-size-base}/#{$aa-icon-line-height-base} 'app-arena-icons'; // shortening font declaration
+  font: normal normal normal #{$icon-font-size-base}/#{$icon-line-height-base} 'app-arena-icons'; // shortening font declaration
   font-size: inherit; // can't have font-size inherit on line above, so need to override
   text-rendering: auto; // optimizelegibility throws things off #1094
   -webkit-font-smoothing: antialiased;
@@ -11,14 +11,14 @@
 
 }
 
-@mixin aa-icon-icon-rotate($degrees, $rotation) {
+@mixin icon-rotate($degrees, $rotation) {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})";
   -webkit-transform: rotate($degrees);
   -ms-transform: rotate($degrees);
   transform: rotate($degrees);
 }
 
-@mixin aa-icon-icon-flip($horiz, $vert, $rotation) {
+@mixin icon-flip($horiz, $vert, $rotation) {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation}, mirror=1)";
   -webkit-transform: scale($horiz, $vert);
   -ms-transform: scale($horiz, $vert);

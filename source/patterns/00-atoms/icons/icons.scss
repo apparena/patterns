@@ -1,9 +1,11 @@
 /**
- * Pattern Dependencies
+ * Import CSS styles from S3 bucket
  */
+
+@import url("https://aa-fonts.s3.amazonaws.com/app-arena/app-arena.css");
+
 @import "../../../css/scss/abstracts/variables";
-@import "../../../css/scss/abstracts/mixins";
-@import "../../../fonts/app-arena-icons.scss";
+//@import "../../../css/scss/abstracts/mixins";
 /*
  Icon Helper Classes
 */
@@ -21,10 +23,6 @@
 /*=========================================================================
   Atoms Icons
  ========================================================================== */
-
-.aa-icon {
-  display: inline-block;
-}
 
 .icon-primary {
   color: theme-color("primary")

@@ -1,17 +1,17 @@
 // Spinning Icons
 // --------------------------
 
-.#{$aa-icon-css-prefix}-spin {
-  -webkit-animation: aa-icon-spin 2s infinite linear;
-  animation: aa-icon-spin 2s infinite linear;
+.icon-spin {
+  -webkit-animation: icon-spin 2s infinite linear;
+  animation: icon-spin 2s infinite linear;
 }
 
-.#{$aa-icon-css-prefix}-pulse {
-  -webkit-animation: aa-icon-spin 1s infinite steps(8);
-  animation: aa-icon-spin 1s infinite steps(8);
+.icon-pulse {
+  -webkit-animation: icon-spin 1s infinite steps(8);
+  animation: icon-spin 1s infinite steps(8);
 }
 
-@-webkit-keyframes aa-icon-spin {
+@-webkit-keyframes icon-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -22,7 +22,7 @@
   }
 }
 
-@keyframes aa-icon-spin {
+@keyframes icon-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);

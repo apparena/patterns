@@ -84,18 +84,18 @@ export default class Icon extends ReactComponent {
         } = this.props;
         // classes
         const componentClass = cx(
-            styles.aaIcon,
-            styles[`aa-icon-${name}`],
+           `icon`,
+           `icon-${name}`,
             styles[`icon-${type}`],
-            size && styles[`aa-icon-${size}`],
-            inverse && styles['aa-icon-inverse'],
-            flip && styles[`aa-icon-flip-${flip}`],
-            rotate && styles[`aa-icon-rotate-${rotate}`],
-            stack && styles[`aa-icon-stack`] && styles[`aa-icon-stack-${stack}`],
-            border && styles['aa-icon-border'],
-            pulse && styles['aa-icon-pulse'],
-            spin && styles['aa-icon-spin'],
-            fixedWidth && styles['aa-icon-fw'],
+            size && styles[`icon-${size}`],
+            inverse && styles['icon-inverse'],
+            flip && styles[`icon-flip-${flip}`],
+            rotate && styles[`icon-rotate-${rotate}`],
+            stack && styles[`icon-stack`] && styles[`icon-stack-${stack}`],
+            border && styles['icon-border'],
+            pulse && styles['icon-pulse'],
+            spin && styles['icon-spin'],
+            fixedWidth && styles['icon-fw'],
             className
         );
 
