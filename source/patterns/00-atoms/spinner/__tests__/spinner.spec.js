@@ -12,8 +12,8 @@ test('renders a spinner', (t) => {
     const wrapper = shallow(
         <Spinner />
     );
-    // Check if wrappter contains all classes
-    t.is(wrapper.find(`.${style['spinner']}`).length, 1);
+    // Check if wrapper contains all classes
+    t.is(wrapper.find('Spinner').length === 1, true);
     t.is(wrapper.html().includes('spinner'), true);
     t.is(wrapper.html().includes('spinner-default'), true);
     t.is(wrapper.html().includes('spinner-sm'), true);

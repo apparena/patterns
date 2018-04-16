@@ -14,10 +14,10 @@ test('renders Pricetable', (t) => {
     const onClick = spy();
     const wrapper = shallow(
         <PriceTable
-            className={styles.priceTable}
+            className={styles['price-table']}
             plans={Plans}
             onClick={onClick}
         />
     );
-    t.is(wrapper.find(`.${styles.priceTable}`).length, 1);
+    t.is(wrapper.find(`.${styles['price-table']}`).length, 1);
 });

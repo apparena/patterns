@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {ReactComponent, Card} from "apparena-patterns-react";
-//import Description from "include/description";
-//import ExampleContainer from "include/example-container";
-//import PropsContainer from "include/props-container";
-//import TestResult from "include/test-result";
+import Description from "apparena-patterns-react/frontend/include/description";
+import ExampleContainer from "apparena-patterns-react/frontend/include/example-container";
+import PropsContainer from "apparena-patterns-react/frontend/include/props-container";
+import TestResult from "apparena-patterns-react/frontend/include/test-result";
 {{#if exampleFileName}}
 import Example from "apparena-patterns-react/patterns/{{ patternDir }}/docs/{{ exampleFileName }}";
 import ExampleSrc from "!raw-loader!apparena-patterns-react/patterns/{{ patternDir }}/docs/{{ exampleFileName }}";
@@ -26,8 +26,7 @@ export default class {{ componentClassName }}Component extends ReactComponent {
                         {{componentClassName}}
                     </div>
                     <div type="card-body">
-                        {DescriptionContent}
-                        {{!--<Description description={DescriptionContent} />--}}
+                        <Description description={DescriptionContent} />
                     </div>
                 </Card>
                 {{/if}}
@@ -37,10 +36,9 @@ export default class {{ componentClassName }}Component extends ReactComponent {
                             Examples
                         </div>
                         <div type="card-body">
-                            <Example/>
-                            {{!--<ExampleContainer code={ExampleSrc}>
+                            <ExampleContainer code={ExampleSrc}>
                                 <Example/>
-                            </ExampleContainer>--}}
+                            </ExampleContainer>
                         </div>
                     </Card>
                 {{/if}}
@@ -50,8 +48,7 @@ export default class {{ componentClassName }}Component extends ReactComponent {
                             Props
                         </div>
                         <div type="card-body">
-                            {InfoJson}
-                            {{!--<PropsContainer infos={InfoJson}/>--}}
+                            <PropsContainer infos={InfoJson}/>
                         </div>
                     </Card>
                 {{/if}}

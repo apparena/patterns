@@ -32,7 +32,7 @@ module.exports = {
         assets: rootPath,
         dist: path.resolve(rootPath, 'dist')
     },
-    proxyUrl: 'http://contest.local',
-    publicPath: `/${path.basename(path.resolve(rootPath, 'public', 'dist'))}/`
+    proxyUrl: 'http://localhost:8080/',
+    publicPath: `/${path.basename(path.resolve(rootPath, 'dist', 'frontend'))}/`
 };
 
