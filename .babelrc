@@ -3,12 +3,15 @@
     ["env", {"modules": false}],
     "stage-0",
     "stage-1",
-    "react"
+    "react",
+    "@ava/stage-4",
+    "@ava/transform-test-files"
   ],
   "plugins": [
     "syntax-trailing-function-commas",
     "transform-class-properties",
     "transform-object-rest-spread",
-    "transform-decorators-legacy"
+    "transform-decorators-legacy",
+    "transform-runtime"
   ]
 }

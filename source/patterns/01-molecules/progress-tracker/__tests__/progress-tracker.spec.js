@@ -2,17 +2,17 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow, mount, configure} from 'enzyme';
-import Index from '../index';
-import Index from '../../../00-atoms/progress-tracker-step/index';
+import ProgressTracker from '../index';
+import ProgressTrackerStep from '../../../00-atoms/progress-tracker-step';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
 test('one inactive step', (t) => {
     const wrapper = mount(
-        <Index>
-            <Index/>
-        </Index>
+        <ProgressTracker>
+            <ProgressTrackerStep/>
+        </ProgressTracker>
     );
     t.is(wrapper.html().includes('span'), true);
     t.is(wrapper.html().includes('li'), true);
@@ -22,10 +22,10 @@ test('one inactive step', (t) => {
 
 test('two steps one inactive', (t) => {
     const wrapper = mount(
-        <Index>
-            <Index active/>
-            <Index/>
-        </Index>
+        <ProgressTracker>
+            <ProgressTrackerStep active/>
+            <ProgressTrackerStep/>
+        </ProgressTracker>
     );
     t.is(wrapper.html().includes('span'), true);
     t.is(wrapper.html().includes('li'), true);

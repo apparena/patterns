@@ -2,7 +2,7 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow, mount, configure} from 'enzyme';
-import Index from '../index';
+import Spinner from '../index';
 import style from '../index.scss'
 import Adapter from 'enzyme-adapter-react-16';
 
@@ -10,8 +10,10 @@ configure({adapter: new Adapter()});
 
 test('renders a spinner', (t) => {
     const wrapper = shallow(
-        <Index />
+        <Spinner />
     );
+    // Check if wrappter contains all classes
+    t.is(wrapper.find(`.${style['spinner']}`).length, 1);
     t.is(wrapper.html().includes('spinner'), true);
     t.is(wrapper.html().includes('spinner-default'), true);
     t.is(wrapper.html().includes('spinner-sm'), true);
@@ -22,7 +24,7 @@ test('renders a spinner', (t) => {
 
 test('respects sizes and types', (t) => {
     const wrapper = shallow(
-        <Index size="lg" type="primary"/>
+        <Spinner size="lg" type="primary"/>
     );
 
     t.is(wrapper.html().includes('spinner'), true);
@@ -35,7 +37,7 @@ test('respects sizes and types', (t) => {
 
 test('allows custom classes', (t) => {
     const wrapper = shallow(
-        <Index className="custom-spinner"/>
+        <Spinner className="custom-spinner"/>
     );
 
     t.is(wrapper.html().includes('spinner'), true);

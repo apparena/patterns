@@ -3,7 +3,7 @@ import React from 'react';
 import {test} from 'ava';
 import {shallow, mount, configure} from 'enzyme';
 import {spy} from 'sinon';
-import Index from '../index';
+import ProgressTrackerStep from '../index';
 import style from '../index.scss';
 import Adapter from 'enzyme-adapter-react-16';
 
@@ -11,14 +11,14 @@ configure({adapter: new Adapter()});
 
 test('one inactive step', (t) => {
     const wrapper = shallow(
-        <Index/>
+        <ProgressTrackerStep/>
     );
     t.is(wrapper.find(`.${style['progress-tracker-step-active']}`).length, 0);
 });
 
 test('one active step', (t) => {
     const wrapper = shallow(
-        <Index active/>
+        <ProgressTrackerStep active/>
     );
     t.is(wrapper.find(`.${style['progress-tracker-step-active']}`).length, 1);
 });
@@ -26,8 +26,8 @@ test('one active step', (t) => {
 test('two steps one active', (t) => {
     const wrapper = shallow(
         <div>
-            <Index active/>
-            <Index/>
+            <ProgressTrackerStep active/>
+            <ProgressTrackerStep/>
         </div>
     );
     t.is(wrapper.html().includes('progress-tracker-step'), true);
@@ -38,7 +38,7 @@ test('reacts on change', (t) => {
     const onClick = spy();
     const wrapper = mount(
         <div>
-            <Index onClick={onClick}/>
+            <ProgressTrackerStep onClick={onClick}/>
         </div>
     );
     t.is(wrapper.html().includes('progress-tracker-step'), true);
