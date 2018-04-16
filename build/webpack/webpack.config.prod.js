@@ -6,6 +6,7 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const CopyGlobsPlugin = require('./plugins/webpack.plugin.copyglobs');
 const WebpackAssetsManifest = require('webpack-assets-manifest');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const config = merge(require('./env/common/config'), require('./env/prod/config'));
 console.log(config);
 

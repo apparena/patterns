@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../../react-utils/component/index.jsx';
-import Button from '../../button';
-import Col from '../../grid/col/index';
-import Row from '../../grid/row/index';
+import {Button, Col, ReactComponent, Row} from 'apparena-patterns-react';
 import ColorPicker from './colorPicker';
 import SketchPicker from './sketchPicker';
 import styles from './index.scss';

@@ -9,6 +9,7 @@ const config = merge(require('./env/common/config'), require('./env/dev/config')
 console.log(config);
 
 module.exports = merge(require('./webpack.config.common'), {
+    devtool: 'source-map',
     devServer: {
         contentBase: 'dist',
         historyApiFallback: true,

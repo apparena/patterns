@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import styles from './index.scss';
-import ReactComponent from '../../../react-utils/component/index.jsx';
+import { ReactComponent } from 'apparena-patterns-react';
 
 export default class CustomControl extends ReactComponent {
     static propTypes = {

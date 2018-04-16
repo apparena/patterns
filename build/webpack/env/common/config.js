@@ -8,6 +8,7 @@ module.exports = {
     //babelFile: './env/common/babel',
     browsers: [
         'last 2 versions',
+        'ie 11',
         'android 4',
         'opera 12'
     ],

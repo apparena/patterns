@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../../react-utils/component/index.jsx';
+import {ReactComponent} from 'apparena-patterns-react';
 import {CustomPicker as customPicker} from 'react-color';
 import {Alpha, Checkboard, Hue, Saturation} from 'react-color/lib/components/common';
 import SketchFields from 'react-color/lib/components/sketch/SketchFields';
