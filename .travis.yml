@@ -11,7 +11,7 @@ before_install:
   - export PATH=$PATH:$HOME/.local/bin
 install:
   - yarn
-  - yarn build:frontend:prod
+  - yarn build:prod
 before_script:
 #  - npm install grunt-cli -g
   - chmod +x build/travis/10-tests.sh

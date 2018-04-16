@@ -15,8 +15,8 @@
     "node": ">=7.0"
   },
   "scripts": {
-    "build": "babel-node build/generator/index.js && webpack --config build/webpack/webpack.config.dev.js && babel-node ./build/generator/copy-files.js",
-    "build:production": "babel-node build/generator/index.js && webpack --config build/webpack/webpack.config.prod.js && babel-node ./build/generator/copy-files.js",
+    "build": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.dev.js && babel-node ./build/generator/copy-files.js",
+    "build:prod": "babel-node build/generator/index.js && webpack --config build/webpack/webpack.config.prod.js && babel-node ./build/generator/copy-files.js",
     "publish:generator:apparena-pattern": "npm publish source/generator-apparena-pattern",
     "start": "babel-node build/generator/index.js && node build/webpack/legacy/hot-reload-server.js",
     "test": "cross-env BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava",
