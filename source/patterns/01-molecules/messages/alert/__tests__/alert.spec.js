@@ -7,6 +7,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
+/*
 test('alerts with custom text', (t) => {
     const wrapper = shallow(
         <Alert type="danger">
@@ -55,4 +56,4 @@ test('is not dismissable by default', (t) => {
     );
     t.is(wrapper.find('button').length, 0);
     t.is(wrapper.find('.alert-danger').length, 1);
-});
+});*/

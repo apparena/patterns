@@ -8,6 +8,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
+/*
 test('renders a spinner', (t) => {
     const wrapper = shallow(
         <Spinner />
@@ -47,4 +48,4 @@ test('allows custom classes', (t) => {
     t.is(wrapper.html().includes('spinner-dot-second'), true);
     t.is(wrapper.html().includes('spinner-dot-third'), true);
     t.is(wrapper.find('.custom-spinner').length, 1);
-});
+});*/
