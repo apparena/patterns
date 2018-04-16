@@ -63,7 +63,7 @@ module.exports = {
             filename: `styles/${config.assetsFilenames}.css`
         }),
         new webpack.IgnorePlugin(/^props$/),
-        //new CleanWebpackPlugin(config.paths.dist, {root: config.paths.root})
+        new CleanWebpackPlugin(config.paths.dist, {root: config.paths.root})
     ]
 };
 

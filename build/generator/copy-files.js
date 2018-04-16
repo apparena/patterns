@@ -29,7 +29,7 @@ function copyFile(file, subfolder) {
  * Generates the package.json file
  * @return {Promise<T>}
  */
-function createPackageFile() {
+function createPackageFile(subfolder) {
     return new Promise((resolve) => {
         const packageJson = path.resolve(config.paths.root, 'package.json');
         fse.readFile(packageJson, 'utf8', (err, data) => {
@@ -74,7 +74,7 @@ function createPackageFile() {
             };
 
             return new Promise((resolve) => {
-                const buildPath = path.resolve(config.paths.dist, 'package.json');
+                const buildPath = path.resolve(config.paths.dist, subfolder, 'package.json');
                 const data = JSON.stringify(minimalPackage, null, 2);
                 fse.writeFile(buildPath, data, (err) => {
                     if (err) throw (err);
@@ -90,6 +90,7 @@ function createPackageFile() {
 // Prepare NPM package
 let files = [
     './source/patterns',
+    './source/css',
     'README.md',
     'docs/',
     'LICENSE.md'

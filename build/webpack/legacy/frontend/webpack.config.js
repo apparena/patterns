@@ -120,7 +120,6 @@ let webpackConfig = {
         modules: [
             config.paths.assets,
             'node_modules',
-            'bower_components'
         ],
         enforceExtension: false,
         alias: {
