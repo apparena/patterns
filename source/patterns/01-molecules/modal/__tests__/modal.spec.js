@@ -3,20 +3,20 @@ import React from 'react';
 import {test} from 'ava';
 import {mount, shallow, configure} from 'enzyme';
 import {spy} from 'sinon';
-import Modal from '../modal';
+import Index from '../index';
 import ModalHeader from '../modal-header';
-import styles from '../modal.scss';
+import styles from '../index.scss';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
 test('shows a modal', (t) => {
     const wrapper = shallow(
-        <Modal>
+        <Index>
             <ModalHeader headerText="Hello World">
                 <p>This is a test</p>
             </ModalHeader>
-        </Modal>
+        </Index>
     );
     console.log(wrapper.html())
     t.is(wrapper.html().includes('h5'), true);

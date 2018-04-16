@@ -2,14 +2,14 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
-import ListGroup from '../list-group';
+import Index from '../index';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
 test('renders a ListGroup', (t) => {
     const wrapper = shallow(
-        <ListGroup classNames="custom-list-group" listItems={[
+        <Index classNames="custom-list-group" listItems={[
             {disabled: 'Im disabled'},
             {0: <div>Lines of code</div>},
             {1: 'Im normal'},

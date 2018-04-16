@@ -2,14 +2,14 @@
 import React from "react";
 import test from 'ava';
 import {mount, configure} from "enzyme";
-import Table from "../table";
+import Index from "../index";
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
 test('Table renders a table', (t) => {
     const wrapper = mount(
-        <Table>
+        <Index>
             <tr>
                 <th />
                 <th />
@@ -22,7 +22,7 @@ test('Table renders a table', (t) => {
                 <th />
                 <th />
             </tr>
-        </Table>
+        </Index>
     );
     t.is(wrapper.find('table').length, 1);
     t.is(wrapper.find('tr').length, 3);

@@ -6,9 +6,9 @@ import React from 'react';
 import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
 import {spy} from 'sinon';
-import PriceTable from '../price-table';
+import Index from '../index';
 import Plans from '../price-table.json';
-import styles from '../price-table.scss';
+import styles from '../index.scss';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
@@ -16,7 +16,7 @@ configure({adapter: new Adapter()});
 test('renders Pricetable', (t) => {
     const onClick = spy();
     const wrapper = shallow(
-        <PriceTable
+        <Index
             plans={Plans}
             onClick={onClick}
         />

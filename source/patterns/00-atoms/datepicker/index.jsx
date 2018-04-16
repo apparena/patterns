@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../react-utils/component';
+import ReactComponent from '../../react-utils/component/index.jsx';
 import cx from 'classnames';
 import SingleDatePicker from 'react-dates/lib/components/SingleDatePicker';
 import styles from './index.scss';

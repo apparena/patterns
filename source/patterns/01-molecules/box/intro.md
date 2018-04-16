@@ -1,3 +1,0 @@
-### Organism intro box 
-
-Intro 

@@ -2,14 +2,14 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
-import Media from '../media';
+import Index from '../index';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
 test('renders media', (t) => {
     const wrapper = shallow(
-        <Media classNames="custom-media"
+        <Index classNames="custom-media"
                mediaClassNames="custom-media-element"
                mediaHref="custom-location"
                mediaObject={<img src="../../../../../build/generator/frontend/src" alt="yes"/>}
@@ -34,7 +34,7 @@ test('renders media', (t) => {
 
 test('renders media to the right at will', (t) => {
     const wrapper = shallow(
-        <Media classNames="custom-media"
+        <Index classNames="custom-media"
                mediaPosition="right"
                mediaClassNames="custom-media-element"
                mediaHref="custom-location"

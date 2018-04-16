@@ -2,14 +2,14 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
-import Jumbotron from '../jumbotron';
+import Index from '../index';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
 test('allows a custom child', (t) => {
     const wrapper = shallow(
-        <Jumbotron><h1>Hello World</h1></Jumbotron>
+        <Index><h1>Hello World</h1></Index>
     );
     t.is(wrapper.contains(<h1>Hello World</h1>), true);
     t.is(wrapper.find('.jumbotron').length, 1);
@@ -17,7 +17,7 @@ test('allows a custom child', (t) => {
 
 test('allows multiple custom children', (t) => {
     const wrapper = shallow(
-        <Jumbotron><h1>Hello World</h1><h2>Another hello</h2></Jumbotron>
+        <Index><h1>Hello World</h1><h2>Another hello</h2></Index>
     );
     t.is(wrapper.contains(<h1>Hello World</h1>),true);
     t.is(wrapper.contains(<h2>Another hello</h2>),true);
@@ -26,7 +26,7 @@ test('allows multiple custom children', (t) => {
 
 test('allows custom classnames', (t) => {
     const wrapper = shallow(
-        <Jumbotron classNames="custom-class-1 custom-class-2"><h1>Hello World</h1></Jumbotron>
+        <Index classNames="custom-class-1 custom-class-2"><h1>Hello World</h1></Index>
     );
     t.is(wrapper.contains(<h1>Hello World</h1>), true);
     t.is(wrapper.find('.jumbotron').length, 1);

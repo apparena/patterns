@@ -1,6 +1,5 @@
 import React from 'react';
-import {ReactComponent, Container, Col, Row, Button, Icon} from '../patterns';
-import icons from 'apparena-patterns-react/fonts/app-arena-icons.json';
+import {ReactComponent, Container, Col, Row, Button, Icon} from '../patterns/index';
 import {Link} from 'react-router-dom';
 import styles from './home.scss';
 
@@ -13,7 +12,7 @@ export default class Home extends ReactComponent {
                 <Container className={styles['my-3']}>
 
                     <div className={styles.textCenter}>
-                        <img src="assets/logo.png" role="presentation" width={300} className={styles['my-5']}/>
+                        <img src="https://s3.app-arena.com/brand/logos/AA_Logo_bright.svg" role="presentation" width={300} className={styles['my-5']}/>
                     </div>
 
                     <Row>
