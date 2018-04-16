@@ -33,6 +33,6 @@ module.exports = {
         dist: path.resolve(rootPath, 'dist')
     },
     proxyUrl: 'http://localhost:8080/',
-    publicPath: `/${path.basename(path.resolve(rootPath, 'dist', 'frontend'))}/`
+    publicPath: `/${path.basename(path.resolve(rootPath, 'dist'))}/`
 };
 

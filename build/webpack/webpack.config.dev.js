@@ -4,6 +4,7 @@
 
 const webpack = require('webpack');
 const merge = require('webpack-merge');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 const config = merge(require('./env/common/config'), require('./env/dev/config'));
 console.log(config);
 
@@ -19,9 +20,20 @@ module.exports = merge(require('./webpack.config.common'), {
     },
     entry: config.entry,
     mode: 'development',
-    module: {},
+    module: {
+        rules: [
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
+            }
+        ]
+    },
     output: {},
     plugins: [
+        new HtmlWebPackPlugin({
+            template: "./source/index.html",
+            filename: "./index.html"
+        }),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ]

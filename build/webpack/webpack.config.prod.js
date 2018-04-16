@@ -32,6 +32,7 @@ module.exports = merge(require('./webpack.config.common'), {
             assets: config.manifest,
             replacer: require('./util/assetManifestsFormatter')
         })*/
+        new CleanWebpackPlugin(config.paths.dist, {root: config.paths.root})
     ]
 });
 
