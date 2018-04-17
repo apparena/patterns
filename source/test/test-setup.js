@@ -1,3 +1,4 @@
+import 'raf/polyfill';
 const jsdom = require('jsdom').jsdom;
 
 global.document = jsdom('<body></body>');

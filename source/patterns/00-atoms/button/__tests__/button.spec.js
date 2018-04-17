@@ -38,9 +38,9 @@ test('renders success state', (t) => {
     t.is(wrapper.find('Icon').length === 1, true);
 });
 
-test('renders error state', (t) => {
+test('renders danger state', (t) => {
     const wrapper = shallow(
-        <Button type="primary" state="error"><p>Hello World</p></Button>
+        <Button type="primary" state="danger"><p>Hello World</p></Button>
     );
     t.is(wrapper.is('button'), true);
     t.is(wrapper.find('Icon').length === 1, true);
