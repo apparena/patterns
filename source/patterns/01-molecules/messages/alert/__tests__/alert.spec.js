@@ -7,9 +7,18 @@ import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
+test('DUMMY', (t) => {
+    const wrapper = shallow(
+        <Alert type="danger">
+            Hello world!
+        </Alert>
+    );
+    t.true(true);
+});
+
 /*
 test('alerts with custom text', (t) => {
-    const wrapper = shallow(
+    const wrapbuttper = shallow(
         <Alert type="danger">
             Hello world!
         </Alert>

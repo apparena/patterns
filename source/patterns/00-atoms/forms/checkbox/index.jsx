@@ -27,7 +27,7 @@ export default class Checkbox extends ReactComponent {
         /**
          * Function that's called whenever this checkbox changes its state
          */
-        onChange: PropTypes.func.isRequired,
+        onChange: PropTypes.func,
         /**
          * ID of the checkbox
          */

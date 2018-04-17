@@ -15,6 +15,7 @@
     "node": ">=7.0"
   },
   "scripts": {
+    "ava": "ava source/patterns/02-organisms/price-table/__tests__/price-table.spec.js",
     "build": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.dev.js && babel-node ./build/generator/copy-files.js",
     "build:prod": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.prod.js && babel-node ./build/generator/copy-files.js",
     "publish:generator:apparena-pattern": "npm publish source/generator-apparena-pattern",

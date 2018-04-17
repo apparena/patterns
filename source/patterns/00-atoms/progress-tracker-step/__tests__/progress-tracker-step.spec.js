@@ -9,6 +9,10 @@ import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
+
+test('DUMMY', (t) => {
+    t.true(true);
+});
 /*test('one inactive step', (t) => {
     const wrapper = shallow(
         <ProgressTrackerStep/>

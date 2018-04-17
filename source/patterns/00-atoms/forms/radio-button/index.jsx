@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactComponent from '../../../react-utils/component/index.jsx';
 
 export default class RadioButton extends ReactComponent {
-    static PropTypes = {
+    static propTypes = {
         text: PropTypes.string,
         onClick: PropTypes.func.isRequired,
         checked: PropTypes.bool,

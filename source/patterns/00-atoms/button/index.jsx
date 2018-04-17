@@ -140,9 +140,9 @@ export default class Button extends ReactComponent {
                 return (
                     <Icon type="success" name="check"/>
                 );
-            case 'error':
+            case 'danger':
                 return (
-                    <Icon type="error" name="close"/>
+                    <Icon type="danger" name="close"/>
                 );
             default:
                 return children;
