@@ -93,7 +93,7 @@ let files = [
     './source/assets',
     './source/css',
     './source/patterns',
-    'favicon.ico',
+    './source/favicon.ico',
     'README.md',
     'LICENSE.md'
 ];
