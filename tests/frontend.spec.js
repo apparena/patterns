@@ -3,7 +3,7 @@ import React from 'react';
 import {mount, configure} from 'enzyme';
 import {expect} from 'chai';
 import {HashRouter, Route} from "react-router-dom";
-import Home from "../../../source/frontend/home";
+import Home from "../source/frontend/home";
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});

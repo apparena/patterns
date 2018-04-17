@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Button, Input, ReactComponent} from 'apparena-patterns-react';
+import {Button, Input, ReactComponent} from '../../../index';
 import cx from 'classnames';
 import styles from './colorPicker.scss';
 import {CustomPicker as customPicker} from 'react-color';
