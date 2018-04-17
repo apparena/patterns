@@ -7,7 +7,7 @@ import SketchFields from 'react-color/lib/components/sketch/SketchFields';
 import SketchPresetColors from 'react-color/lib/components/sketch/SketchPresetColors';
 import styles from './sketchPicker.scss';
 
-class SketchPicker extends ReactComponent {
+class SketchPicker extends React.Component {
     static propTypes = {
         width: PropTypes.string,
         presetColors: PropTypes.array,

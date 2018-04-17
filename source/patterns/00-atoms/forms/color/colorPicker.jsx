@@ -8,7 +8,7 @@ import {Hue, Saturation, Swatch} from 'react-color/lib/components/common';
 import ColorHelper from 'react-color/lib/helpers/color';
 import Pointer from './pointer';
 
-class ColorPicker extends ReactComponent {
+class ColorPicker extends React.Component {
     static propTypes = {
         width: PropTypes.string,
         triangle: PropTypes.string,

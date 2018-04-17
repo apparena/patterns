@@ -101,7 +101,7 @@ Use this SDK to setup the connection to your App-Manager Project.
             <div type="card-body">
                 <Row>
                     <Col xs="3">
-                        <img alt="thumbnail" src="assets/logo.png" className={styles.imgThumbnail}/>
+                        <img alt="thumbnail" src="https://s3.app-arena.com/brand/logos/AA_Logo_bright.svg" className={styles['img-thumbnail']}/>
                     </Col>
                     <Col xs="9">
                         <Markdown

@@ -5,7 +5,7 @@ import ColorPicker from './colorPicker';
 import SketchPicker from './sketchPicker';
 import styles from './index.scss';
 
-export default class Color extends ReactComponent {
+export default class Color extends React.Component {
     static propTypes = {
         handleClick: PropTypes.func,
         displayColorPicker: PropTypes.bool,

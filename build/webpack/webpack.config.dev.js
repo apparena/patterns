@@ -11,10 +11,9 @@ console.log(config);
 module.exports = merge(require('./webpack.config.common'), {
     devtool: 'source-map',
     devServer: {
-        contentBase: 'dist',
+        contentBase: config.paths.dist,
         historyApiFallback: true,
         hot: true,
-        inline: true,
         headers: {
             'Access-Control-Allow-Origin': '*'
         }

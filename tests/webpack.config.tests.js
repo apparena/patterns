@@ -22,7 +22,9 @@ module.exports = {
         enforceExtension: false,
         alias: {
             'apparena-patterns-react$': path.resolve(baseDir, 'source/patterns/index.js'),
-            'apparena-patterns-react': path.resolve(baseDir, 'source/')
+            'apparena-patterns-react': path.resolve(baseDir, 'source/'),
+            Frontend: path.resolve(baseDir, 'source/frontend/'),
+            Utils: path.resolve('source/patterns/react-utils/'),
         }
     },
     externals: [nodeExternals()],

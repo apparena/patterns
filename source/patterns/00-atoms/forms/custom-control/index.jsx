@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import styles from './index.scss';
-import { ReactComponent } from 'apparena-patterns-react';
+import BaseComponent from 'Utils/component';
 
-export default class CustomControl extends ReactComponent {
+export default class CustomControl extends BaseComponent {
     static propTypes = {
         /**
          * If the checkbox is checked or not

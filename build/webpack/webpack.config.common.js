@@ -8,6 +8,11 @@ const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const config = require('./env/common/config');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+let extractComponentCSS = new ExtractTextPlugin({
+    filename: `styles/[name].css`,
+    allChunks: true,
+});
 
 module.exports = {
     context: config.paths.assets,
@@ -23,16 +28,56 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                resolve: { extensions: [".scss", ".css"], },
+                use: extractComponentCSS.extract({
+                    fallback: 'style-loader',
+                    publicPath: '../',
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                modules: true,
+                                importLoaders: 1,
+                                localIdentName: '[hash:base64:5]',
+                                camelCase: true,
+                                sourceMap: true
+                            }
+                        },
+                        {
+                            loader: 'resolve-url-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        }
+                    ]
+                })
+            }/*,
+            {
+                test: /\.(scss|css)$/,
+                //resolve: { extensions: [".scss", ".css"], },
                 use: [
                     'style-loader',
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'resolve-url-loader',
-                    'postcss-loader?sourceMap',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            importLoaders: 1,
+                            localIdentName: '[hash:base64:5]', // : '[local]_[hash:base64:5]',
+                            camelCase: true,
+                            sourceMap: true
+                        }
+                    },
+                    'resolve-url-loader?sourceMap',
+                    //'postcss-loader?sourceMap',
                     'sass-loader?sourceMap'
                 ]
-            },
+            }*/,
             {
                 test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg)$/,
                 use: [{
@@ -53,14 +98,18 @@ module.exports = {
     },
     resolve: {
         alias: {
-            "apparena-patterns-react$": path.resolve('source/patterns/index.js'),
-            "apparena-patterns-react": path.resolve('source/')
+            "apparena-patterns-react$": path.resolve(config.paths.root, 'source/patterns/index.js'),
+            "apparena-patterns-react": path.resolve(config.paths.root, 'source/'),
+            Frontend: path.resolve(config.paths.root, 'source/frontend/'),
+            Utils: path.resolve(config.paths.root, 'source/patterns/react-utils/'),
         }
     },
     plugins: [
-        new MiniCssExtractPlugin({
+        extractComponentCSS,
+        /*new MiniCssExtractPlugin({
             filename: `styles/${config.assetsFilenames}.css`
         }),
+        */
         new webpack.IgnorePlugin(/^props$/),
     ]
 };

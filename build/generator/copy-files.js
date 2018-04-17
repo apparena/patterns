@@ -89,10 +89,12 @@ function createPackageFile(subfolder) {
 
 // Prepare NPM package
 let files = [
-    './source/patterns',
-    './source/css',
-    'README.md',
     'docs/',
+    './source/assets',
+    './source/css',
+    './source/patterns',
+    'favicon.ico',
+    'README.md',
     'LICENSE.md'
 ];
 Promise.all(files.map((file) => copyFile(file, 'apparena-patterns-react'))).then(() => createPackageFile('apparena-patterns-react'));
