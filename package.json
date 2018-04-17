@@ -21,12 +21,7 @@
     "start": "webpack-dev-server --progress --color --display-error-details --config build/webpack/webpack.config.dev.js --open",
     "test": "cross-env BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava",
     "test:generator": "webpack  --progress --color --display-error-details --config tests/webpack.config.tests.js && cross-env BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava dist/generator/*.js",
-    "test:coverage": "cross-env BABEL_DISABLE_CACHE=1 nyc report --reporter=lcov --reporter=json --reporter=text-lcov --reporter=html",
-    "legacy:build": "yarn clean:build:all && babel ./source/patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./build/apparena-patterns-react/patterns --copy-files && babel-node ./build/travis/copy-files.js",
-    "legacy:build:production": "cross-env NODE_ENV=production yarn build",
-    "legacy:build:frontend": "babel-node build/generator/index.js && webpack --progress --config build/webpack/legacy/frontend/webpack.config.js",
-    "legacy:build:frontend:watch": "babel-node build/generator/index.js && webpack -w --progress --config build/webpack/legacy/frontend/webpack.config.js",
-    "legacy:build:frontend:prod": "babel-node build/generator/index.js && cross-env NODE_ENV=production webpack --progress --config build/webpack/legacy/frontend/webpack.config.js"
+    "test:coverage": "cross-env BABEL_DISABLE_CACHE=1 nyc report --reporter=lcov --reporter=json --reporter=text-lcov --reporter=html"
   },
   "repository": {
     "type": "git",
@@ -212,7 +207,7 @@
     "require": [
       "babel-register",
       "ignore-styles",
-      "./source/test/test-setup"
+      "./tests/test-setup"
     ],
     "babel": "inherit"
   }

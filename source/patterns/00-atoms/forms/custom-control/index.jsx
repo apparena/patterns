@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import styles from './index.scss';
-import BaseComponent from 'Utils/component';
+//import {ReactComponent} from '../../../index';
 
-export default class CustomControl extends BaseComponent {
+export default class CustomControl extends React.Component {
     static propTypes = {
         /**
          * If the checkbox is checked or not
@@ -65,7 +65,7 @@ export default class CustomControl extends BaseComponent {
     }
 
     toggleCheckbox = (event) => {
-        if(!this.props.disabled) {
+        if (!this.props.disabled) {
             this.setState(({checked}) => (
                 {
                     checked: !checked
