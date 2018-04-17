@@ -32,7 +32,7 @@ deploy:
   skip_cleanup: true
   region: eu-central-1
   local_dir: dist
-  upload-dir: docs/2.2
+  upload-dir: "docs/2.2"
   on:
     branch: master
 after_deploy:
