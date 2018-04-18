@@ -27,11 +27,11 @@ case ${SEMVER_RELEASE_LEVEL} in
             echo "Semver last version : ${SEMVER_LAST_TAG}"
             echo "Semver next version : ${SEMVER_NEW_TAG}"
             echo "---------------------------------------------------"
-            cd dist
+            cd dist/apparena-patterns-react
             echo $(pwd)
-            ../node_modules/.bin/npm config set version-tag-prefix ""
-            ../node_modules/.bin/npm version ${SEMVER_NEW_TAG} --no-git-tag-version --allow-same-version
-            ../node_modules/.bin/npm publish
+            ../../node_modules/.bin/npm config set version-tag-prefix ""
+            ../../node_modules/.bin/npm version ${SEMVER_NEW_TAG} --no-git-tag-version --allow-same-version
+            ../../node_modules/.bin/npm publish
             cd ROOT_DIR
 
             echo "---------------------------------------------------"
