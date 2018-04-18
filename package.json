@@ -15,8 +15,8 @@
     "node": ">=7.0"
   },
   "scripts": {
-    "build": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.dev.js && babel-node ./build/generator/copy-files.js",
-    "build:prod": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.prod.js && babel-node ./build/generator/copy-files.js",
+    "build": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.dev.js && babel ./source/patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
+    "build:prod": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.prod.js && babel ./source/patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
     "publish:generator:apparena-pattern": "npm publish source/generator-apparena-pattern",
     "start": "webpack-dev-server --progress --color --display-error-details --config build/webpack/webpack.config.dev.js --open",
     "test": "cross-env BABEL_DISABLE_CACHE=1 cross-env NODE_ENV=test nyc ava",
@@ -185,18 +185,5 @@
       "./tests/test-setup"
     ],
     "verbose": true
-  },
-  "nyc": {
-    "require": [
-      "babel-register"
-    ],
-    "sourceMap": false,
-    "instrument": false,
-    "reporter": [
-      "lcov",
-      "json",
-      "text-lcov",
-      "html"
-    ]
   }
 }
