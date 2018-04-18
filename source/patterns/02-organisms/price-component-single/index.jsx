@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../react-utils/component/index.jsx';
+import ReactComponent from '../../react-utils/component/index';
 import styles from './index.scss';
 import Col from '../../00-atoms/grid/col/index';
 import Row from '../../00-atoms/grid/row/index';

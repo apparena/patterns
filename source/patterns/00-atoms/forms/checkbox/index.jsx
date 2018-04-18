@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../../react-utils/component/index.jsx';
+import ReactComponent from '../../../react-utils/component/index';
 import Tooltip from '../../../01-molecules/tooltip';
 import cx from 'classnames';
 import Toggle from 'react-toggle';

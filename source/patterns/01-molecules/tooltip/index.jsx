@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../react-utils/component/index.jsx';
+import ReactComponent from '../../react-utils/component/index';
 import cx from 'classnames';
 import Portal from '../../react-utils/portal';
 import Stick from '../../react-utils/stick';
