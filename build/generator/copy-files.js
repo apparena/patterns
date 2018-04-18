@@ -92,7 +92,6 @@ let files = [
     'docs/',
     './source/assets',
     './source/css',
-    './source/patterns',
     './source/favicon.ico',
     'README.md',
     'LICENSE.md'
