@@ -26,7 +26,7 @@ import TagInput from './00-atoms/forms/tag-input';
  * Molecules
  */
 import Alert from './01-molecules/messages/alert';
-import BannerMessage from './01-molecules/messages/banner-message/index';
+import BannerMessage from './01-molecules/messages/banner-message';
 import Breadcrumb from './01-molecules/breadcrumb';
 import ButtonGroup from './01-molecules/button-group';
 import Card from './01-molecules/card';
@@ -43,7 +43,7 @@ import Nav from './01-molecules/navs/nav';
 import Navbar from './01-molecules/navbar';
 import NavItem from './01-molecules/navs/nav-item';
 import Notification from './01-molecules/messages/notification/index';
-import NotificationContainer from './01-molecules/messages/notification-container/index';
+import NotificationContainer from './01-molecules/messages/notification-container';
 import Popover from './01-molecules/popover';
 import ProgressBar from './01-molecules/progress-bar';
 import ProgressTracker from './01-molecules/progress-tracker';
@@ -65,7 +65,7 @@ import TableList from './02-organisms/lists/table-list';
  */
 import Animate from './react-utils/animate';
 import Portal from './react-utils/portal';
-import ReactComponent from './react-utils/component/index.jsx';
+import ReactComponent from './react-utils/component';
 import Scrollable from './react-utils/scrollable';
 import Stick from './react-utils/stick';
 
