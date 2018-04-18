@@ -10,12 +10,11 @@
     }
   },
   "presets": [
-    ["env", {"modules": false}],
+    ["env"],
     "stage-1",
     "react"
   ],
   "plugins": [
-    ["transform-replace-object-assign", "simple-assign"],
     "syntax-trailing-function-commas",
     "transform-class-properties",
     "transform-object-rest-spread",
