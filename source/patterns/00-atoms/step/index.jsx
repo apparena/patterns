@@ -1,7 +1,7 @@
 /* eslint camelcase: 0 */
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Button, Col, Icon, Row} from 'apparena-patterns-react';
+import {Button, Col, Icon, Row} from '../../index';
 import styles from './index.scss';
 import cx from 'classnames';
 

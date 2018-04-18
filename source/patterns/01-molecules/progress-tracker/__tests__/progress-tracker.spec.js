@@ -2,8 +2,8 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow, mount, configure} from 'enzyme';
-import ProgressTracker from '../progress-tracker';
-import ProgressTrackerStep from '../../../00-atoms/progress-tracker-step/progress-tracker-step';
+import ProgressTracker from '../index';
+import ProgressTrackerStep from '../../../00-atoms/progress-tracker-step';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});

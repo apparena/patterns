@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {ReactComponent, Card} from "apparena-patterns-react";
-import Description from "include/description";
-import ExampleContainer from "include/example-container";
-import PropsContainer from "include/props-container";
-import TestResult from "include/test-result";
+import Description from "Frontend/include/description";
+import ExampleContainer from "Frontend/include/example-container";
+import PropsContainer from "Frontend/include/props-container";
+import TestResult from "Frontend/include/test-result";
 {{#if exampleFileName}}
 import Example from "apparena-patterns-react/patterns/{{ patternDir }}/docs/{{ exampleFileName }}";
 import ExampleSrc from "!raw-loader!apparena-patterns-react/patterns/{{ patternDir }}/docs/{{ exampleFileName }}";

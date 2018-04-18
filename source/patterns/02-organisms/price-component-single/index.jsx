@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../react-utils/component';
+import ReactComponent from '../../react-utils/component/index.jsx';
 import styles from './index.scss';
-import Col from '../../00-atoms/grid/col';
-import Row from '../../00-atoms/grid/row';
-import Button from '../../00-atoms/button/button';
-import Slider from '../../00-atoms/slider/slider';
+import Col from '../../00-atoms/grid/col/index';
+import Row from '../../00-atoms/grid/row/index';
+import Button from '../../00-atoms/button';
+import Slider from '../../00-atoms/slider';
 
 export default class PriceComponentSingle extends ReactComponent {
     static propTypes = {

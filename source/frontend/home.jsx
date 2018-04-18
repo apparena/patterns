@@ -160,7 +160,7 @@ class Home extends ReactComponent {
                     title={category.name}
                     key={index}
                     onClick={this.toggleCategory.bind(this, index)}
-                    className={styles.categoryNavTitle}
+                    className={styles['category-nav-title']}
                 >
                     <Nav pills stacked vertical>
                         {this.state.minimizedCategories[index] === true ? category.componentList.map((component, i) => {
@@ -294,11 +294,11 @@ class Home extends ReactComponent {
             <div className={styles.root}>
                 <Row>
                     <Col xs="12">
-                        <Navbar className={styles.navbarLight}>
+                        <Navbar className={styles['navbar-light']}>
                             <Row>
                                 <Col autoWidth xsAutoContent>
                                     <Link className={styles.navbarBrand} to="/">
-                                        <img className={styles.logo} src="assets/logo.png" role="presentation"/>
+                                        <img className={styles.logo} src="https://s3.app-arena.com/brand/logos/AA_Logo_bright.svg" role="presentation"/>
                                     </Link>
                                 </Col>
                                 <Col autoWidth>

@@ -1,7 +1,0 @@
-{
-  "class": "myCheckbox",
-  "id": "myCheckbox",
-  "isChecked": true,
-  "name": "checkbox1",
-  "value": 123
-}

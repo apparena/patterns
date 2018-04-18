@@ -81,3 +81,4 @@ jspm_packages
 /build/generator/_build/
 artifact.tar.gz
 /source/frontend/components/
+/dist/

@@ -3,7 +3,7 @@ import React from 'react';
 import {test} from 'ava';
 import {mount, shallow, configure} from 'enzyme';
 import {spy} from 'sinon';
-import Button from '../button';
+import Button from '../index';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
@@ -38,9 +38,9 @@ test('renders success state', (t) => {
     t.is(wrapper.find('Icon').length === 1, true);
 });
 
-test('renders error state', (t) => {
+test('renders danger state', (t) => {
     const wrapper = shallow(
-        <Button type="primary" state="error"><p>Hello World</p></Button>
+        <Button type="primary" state="danger"><p>Hello World</p></Button>
     );
     t.is(wrapper.is('button'), true);
     t.is(wrapper.find('Icon').length === 1, true);

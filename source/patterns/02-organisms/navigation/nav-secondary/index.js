@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../../react-utils/component';
+import ReactComponent from '../../../react-utils/component/index.jsx';
 import cx from 'classnames';
-import styles from './nav-secondary.scss';
+import styles from './index.scss';
 
 export default class SecondNav extends ReactComponent {
     static propTypes = {

@@ -1,12 +1,11 @@
-import glob from 'glob';
-import each from 'async/each';
-import fse from 'fs-extra';
-import handlebars from 'handlebars';
-import path from 'path';
-import _ from 'lodash'
-
+const glob = require('glob');
+const each = require('async/each');
+const fse = require('fs-extra');
+const handlebars = require('handlebars');
+const path = require('path');
+const _ = require('lodash');
 const reactDocs = require('react-docgen');
-
+const util              = require('util');
 
 _.mixin({pascalCase: _.flow(_.camelCase, _.upperFirst)});
 
@@ -39,6 +38,9 @@ function generateComponentDocumentation(directory) {
     let componentClassName = '';
     let propsFileName = '';
 
+    console.log(`Generating pattern for ${directory}`);
+
+    // Get example file
     glob.sync(`${directory}/**/?(docs)/**`).forEach((file) => {
         if (file.endsWith('.md')) {
             mdFileName = `${path.basename(file, path.extname(file))}${path.extname(file)}`;
@@ -50,6 +52,7 @@ function generateComponentDocumentation(directory) {
         }
     });
 
+    // Get component files
     glob.sync(`${directory}/*.?(js|jsx)`).forEach((component) => {
         const componentContent = fse.readFileSync(component, 'utf8');
         const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
@@ -79,6 +82,8 @@ function generateComponentDocumentation(directory) {
         componentClassName,
         patternDir: directory.replace('source/patterns/', '')
     };
+
+    // Render component index file
     const renderedTemplate = componentTemplate(data);
     fse.outputFileSync(`source/frontend/components/${directory}/index.jsx`, renderedTemplate, 'utf8');
 }
@@ -93,6 +98,7 @@ function createComponentsList(categories) {
     });
     const liststring = JSON.stringify(list);
 
+    //console.log(`Create component list for ${list.length} categories:\n`, util.inspect(list));
     fse.writeFileSync('source/frontend/components/list.json', liststring);
 }
 
@@ -110,6 +116,8 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
         }
     });
 
+    console.log(`Generating ${componentDirectories.length} patterns:\n`, util.inspect(componentDirectories));
+
     /**
      * Initialize and generate categories from component sources and prepare them for the
      * handlebars template
@@ -124,6 +132,7 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
             categories[cf] = {visible: true, components: []};
         });
 
+    console.log(`Generating ${categories.length} categories:\n`, util.inspect(categories));
 
     /**
      * Generate documentation for each component
@@ -148,7 +157,6 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
         const components = glob.sync(`${directory}/*.?(js|jsx)`).map((component) => {
             return path.basename(component);
         });
-
         const componentFiles = [];
 
         /**

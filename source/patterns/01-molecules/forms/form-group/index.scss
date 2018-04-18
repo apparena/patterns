@@ -1,0 +1,27 @@
+/**
+ * Pattern Dependencies
+ */
+@import "../../../../css/scss/abstracts/variables";
+@import "../../../../css/scss/abstracts/mixins";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/custom-forms";
+
+/*=========================================================================
+  Molecules Form group
+ ========================================================================== */
+.form-group {
+  .col-form-label .is-required {
+    position: absolute;
+    right: 5px;
+  }
+}
+
+.form-control-success,
+.form-control-warning,
+.form-control-danger {
+  background-size: ($input-height / 3) ($input-height / 3);
+}
+
+.tooltip {
+  display: block;
+}

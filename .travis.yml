@@ -11,17 +11,17 @@ before_install:
   - export PATH=$PATH:$HOME/.local/bin
 install:
   - yarn
-  - yarn build:frontend:prod
+  - yarn build:prod
 before_script:
 #  - npm install grunt-cli -g
-  - chmod +x build/scripts/run-travis-tests.sh
+  - chmod +x build/travis/10-tests.sh
 script:
-  - if [ "$TRAVIS_BRANCH" != "master" ]; then ./build/scripts/run-travis-tests.sh; fi
+  - if [ "$TRAVIS_BRANCH" != "master" ]; then ./build/travis/10-tests.sh; fi
 #  - grunt
 before_deploy:
-  - chmod +x build/scripts/travis-deployment.sh
-  - chmod +x build/scripts/travis-aws-deploy.sh
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then ./build/scripts/travis-deployment.sh; fi
+  - chmod +x build/travis/50-publish-npm-git.sh
+  - chmod +x build/travis/55-deploy-aws.sh
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then ./build/travis/50-publish-npm-git.sh; fi
 deploy:
   provider: s3
   access_key_id:
@@ -31,12 +31,12 @@ deploy:
   bucket: "aa-documentation"
   skip_cleanup: true
   region: eu-central-1
-  local_dir: public
-  upload-dir: documentation
+  local_dir: dist
+  upload-dir: docs/2.2
   on:
     branch: master
 after_deploy:
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then DIST_ID=${CF_DISTRIBUTION} KEY=${AWS_ACCESS_KEY} SECRET=${AWS_SECRET_KEY} ./build/scripts/travis-aws-deploy.sh; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then DIST_ID=${CF_DISTRIBUTION} KEY=${AWS_ACCESS_KEY} SECRET=${AWS_SECRET_KEY} ./build/travis/55-deploy-aws.sh; fi
 env:
   global:
   # Those are the variables of the after_deploy script in corresponding order

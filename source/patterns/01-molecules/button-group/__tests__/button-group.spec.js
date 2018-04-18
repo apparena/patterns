@@ -2,8 +2,8 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
-import ButtonGroup from '../button-group';
-import Button from '../../../00-atoms/button/button';
+import ButtonGroup from '../index';
+import Button from '../../../00-atoms/button';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});

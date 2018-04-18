@@ -8,35 +8,29 @@
 [![Build Status](https://travis-ci.org/apparena/patterns.svg?branch=master)](https://travis-ci.org/apparena/patterns)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-App-Arena Patterns is a set of [React](http://facebook.github.io/react/) components that implement the App-Arena CI.
+App-Arena Patterns is a set of
+[React](http://facebook.github.io/react/) components that implement the
+App-Arena CI.
 
-Check out our [documentation site](http://brand.app-arena.com/) for live examples.
-It's still a work in progress, but hopefully you can see where we're headed.
+| Title                                                      | Description                                                       |
+|:-----------------------------------------------------------|:------------------------------------------------------------------|
+| [Pattern demos](https://brand.app-arena.com/#/ui-patterns) | Demo of all patterns of this library.                             |
+| [Contributiing](docs/contributing.md)                      | Creating and publishing new patterns or editing the Brand portal. |
+| [Pattern generator](docs/pattern-generator.md)             | How the Yeoman pattern generator works and how it can be edited.  |
 
-**Recently Updated?** Please read the [changelog](https://github.com/apparena/patterns/releases), this README and the documentation before posting an issue.
+## Getting started
 
-## Getting Started
+App-Arena Patterns are available as
+[npm package](https://www.npmjs.org/package/apparena-patterns-react).
 
-We recommend that you get to know [React](http://facebook.github.io/react/)
-before diving into apparena-patterns-react. App-Arena Patterns is a set of React components,
-so understanding how React fits into web development is important.
-
-## Install dependencies and start the server
-
-Install dependencies by running `npm install` or `yarn`.
-
-Run `npm run start` and open localhost:3099 in your browser.
-
-
-### Installation
-
-App-Arena Patterns are available as an [npm package](https://www.npmjs.org/package/apparena-patterns-react).
-
-**Stable channel**
 ```sh
-npm install apparena-patterns-react
 yarn add apparena-patterns-react
 ```
+or
+```sh
+npm install apparena-patterns-react
+```
+to add all components to your app.
 
 ## Usage
 
@@ -70,50 +64,14 @@ const MyAwesomeReactComponent = () => (
 export default MyAwesomeReactComponent;
 ```
 
-Please refer to each component's documentation page to see how they should be imported.
-
-## Pattern documentation
-
-This repository also contains the code for the pattern documentation. You can view
-the documentation at [https://brand.app-arena.com/](https://brand.app-arena.com/).
+Please refer to each
+[component's documentation page](https://brand.app-arena.com/#/ui-patterns)
+to see how they should be imported.
 
 ## Contributing
 
-If you would like to contribute to the documentation or write documentation
-for a new component please have a look at [our guide to writing documentation!](/docs/WRITING_DOCUMENTATION.md)
-If you want to start hacking away at the frontend, which can be found at [https://brand.app-arena.com/](https://brand.app-arena.com/),
-please read [our guide to working on the frontend.](/docs/FRONTEND_DEVELOPMENT.md)
-
-### Creating a new pattern
-
-We provide a yeoman generator that requires 2 clicks to create a new pattern.
-
-1. Install the generator: `npm install -g generator-apparena-pattern`
-2. `cd` into the App-Arena patterns root directory (it contains a `.yo-rc.json` file)
-3. Run the generator: `yo apparena-pattern`
-4. Follow the onscreen prompts
-5. Overwrite the file *source/patterns/index.js* if prompted (make a backup of your changes!)
-
-Done! Now edit your newly created pattern under *source/patterns/...*
-
-### Publish a new version
-
-The following steps have to be performed to publish a new version on NPM
-and add a tag to this Git repository:
-
-1. Each commit should begin with the name of the component that you have worked on
-   in square brackets followed by a quick summary of what was done.  
-   Example: `[Component] Added documentation`
-2. If you are finished, send a pull request
-3. We will check the changes of the pull-request
-4. We will **prefix the message when merging the pull request into master
- branch with the semver release level in square brackets**,
- these are: [major], [minor], or [patch]. (Example: `[patch][Button] Added documentation to the button componenty`).
-
-
-> Always run the tests and the linter prior to opening a pull request and fix
-any issues, errors and warnings that occur.
-
+If you would like to contribute patterns or add patterns to this
+library, head over to our [contributing section](/docs/contributing.md).
 
 ## License
 This project is licensed under the terms of the

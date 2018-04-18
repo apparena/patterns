@@ -31,7 +31,9 @@ h1, h2, h3, h4, h5, h6 {
       justify-content: center;
       .logo {
         @include img-fluid();
-        height: 20px;
+        height: 60px;
+        margin: -15px;
+        padding: 0;
       }
     }
   }

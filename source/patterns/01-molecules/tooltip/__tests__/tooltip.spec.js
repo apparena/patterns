@@ -2,8 +2,8 @@
 import React from 'react';
 import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
-import Tooltip from '../tooltip';
-import Button from '../../../00-atoms/button/button';
+import Tooltip from '../index';
+import Button from '../../../00-atoms/button';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});

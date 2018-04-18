@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../../react-utils/component';
+import ReactComponent from '../../../react-utils/component/index.jsx';
 import cx from 'classnames';
-import styles from '../price-table.scss';
-import Tag from '../../../00-atoms/tag/tag';
+import styles from '../index.scss';
+import Tag from '../../../00-atoms/tag/index';
 import Col from '../../../00-atoms/grid/col/index';
 import Row from '../../../00-atoms/grid/row/index';
-import Button from '../../../00-atoms/button/button';
+import Button from '../../../00-atoms/button';
 
 export default class PriceTableElement extends ReactComponent {
     static propTypes = {
@@ -110,9 +110,9 @@ export default class PriceTableElement extends ReactComponent {
         if (typeof onClick === 'function') {
             return (
                 <Button className={styles.purchase_button}
-                        onClick={::this.onPurchase}
-                        type="primary"
-                        rounded
+                       onClick={::this.onPurchase}
+                       type="primary"
+                       rounded
                 >
                     {this.t('priceTableElement.button.caption')}
                 </Button>
@@ -130,9 +130,9 @@ export default class PriceTableElement extends ReactComponent {
 
         return (
             <Button className={styles.purchase_button}
-                    type="primary"
-                    rounded
-                    href={href}
+                   type="primary"
+                   rounded
+                   href={href}
             >
                 {this.t('priceTableElement.button.caption')}
             </Button>

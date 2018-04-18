@@ -1,11 +1,9 @@
 /* eslint-env mocha */
 import React from 'react';
 import {test} from 'ava';
-import {mount, shallow, configure} from 'enzyme';
-import {spy} from 'sinon';
-import Modal from '../modal';
+import {shallow, configure} from 'enzyme';
+import Modal from '../index';
 import ModalHeader from '../modal-header';
-import styles from '../modal.scss';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
@@ -18,7 +16,6 @@ test('shows a modal', (t) => {
             </ModalHeader>
         </Modal>
     );
-    console.log(wrapper.html())
     t.is(wrapper.html().includes('h5'), true);
     t.is(wrapper.find('p').length,  1);
     t.is(wrapper.find('p').contains('This is a test'), true);

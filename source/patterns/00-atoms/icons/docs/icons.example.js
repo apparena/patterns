@@ -1,11 +1,14 @@
 import React from 'react';
 import {Col, Icon, Row} from 'apparena-patterns-react';
-import icons from 'apparena-patterns-react/fonts/app-arena-icons.json';
 import styles from './styles.scss';
 
 export default function IconsExample() {
+
     return (
-        <Row>
+        <div>
+           Checkout our <a href="https://aa-fonts.s3.amazonaws.com/app-arena/app-arena.html">App-Arena Font</a>.
+        </div>
+        /*<Row>
             {icons.map((icon, i) => {
                 return (
                     <Col xs="4" key={i} xsVerticalAlignment="center" className={styles.iconColumn} >
@@ -14,6 +17,6 @@ export default function IconsExample() {
                     </Col>
                 );
             })}
-        </Row>
+        </Row>*/
     );
 }
