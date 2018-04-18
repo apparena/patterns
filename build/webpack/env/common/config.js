@@ -23,8 +23,6 @@ module.exports = {
             'react-dom'
         ]
     },
-    //jsonpFunction: 'wp_webpackJsonp',
-    //languages: ['de', 'en'],
     manifest: {},
     paths: {
         root: rootPath,

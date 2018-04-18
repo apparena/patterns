@@ -29,9 +29,9 @@ case ${SEMVER_RELEASE_LEVEL} in
             echo "---------------------------------------------------"
             cd dist
             echo $(pwd)
-            ../../../node_modules/.bin/npm config set version-tag-prefix ""
-            ../../../node_modules/.bin/npm version ${SEMVER_NEW_TAG} --no-git-tag-version --allow-same-version
-            ../../../node_modules/.bin/npm publish
+            ../node_modules/.bin/npm config set version-tag-prefix ""
+            ../node_modules/.bin/npm version ${SEMVER_NEW_TAG} --no-git-tag-version --allow-same-version
+            ../node_modules/.bin/npm publish
             cd ROOT_DIR
 
             echo "---------------------------------------------------"
