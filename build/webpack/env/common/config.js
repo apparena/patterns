@@ -5,10 +5,8 @@ const rootPath = process.cwd();
 
 module.exports = {
     assetsFilenames: '[name]',
-    //babelFile: './env/common/babel',
     browsers: [
         'last 2 versions',
-        'ie 11',
         'android 4',
         'opera 12'
     ],
@@ -31,9 +29,11 @@ module.exports = {
     paths: {
         root: rootPath,
         assets: rootPath,
-        dist: path.resolve(rootPath, 'dist')
+        dist: path.resolve(rootPath, 'dist'),
+        scripts: 'scripts',
+        styles: 'styles'
     },
     proxyUrl: 'http://localhost:8080/',
-    publicPath: `/${path.basename(path.resolve(rootPath, 'dist'))}/`
+    publicPath: ``
 };
 
