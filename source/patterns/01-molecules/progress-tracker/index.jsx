@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../react-utils/component/index.jsx';
+import ReactComponent from '../../react-utils/component/index';
 import styles from './index.scss';
 
 export default class ProgressTracker extends ReactComponent {

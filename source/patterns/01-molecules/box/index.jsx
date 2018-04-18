@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../react-utils/component/index.jsx';
+import ReactComponent from '../../react-utils/component/index';
 import Button from '../../00-atoms/button';
 import Icon from '../../00-atoms/icons/index';
 import cx from 'classnames';

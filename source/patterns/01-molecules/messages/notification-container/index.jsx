@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactComponent from '../../../react-utils/component/index.jsx';
+import ReactComponent from '../../../react-utils/component/index';
 import Notification from '../notification/index';
 import styles from './index.scss';
 
