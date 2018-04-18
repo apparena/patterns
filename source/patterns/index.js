@@ -35,6 +35,10 @@ import FormGroup from './01-molecules/forms/form-group';
 import InputGroup from './01-molecules/input-group';
 import ListGroup from './01-molecules/list-group';
 import Modal from './01-molecules/modal';
+import ModalBody from './01-molecules/modal/modal-body';
+import ModalFooter from './01-molecules/modal/modal-footer';
+import ModalHeader from './01-molecules/modal/modal-header';
+import ModalContainer from './01-molecules/modal/modalContainer';
 import Nav from './01-molecules/navs/nav';
 import Navbar from './01-molecules/navbar';
 import NavItem from './01-molecules/navs/nav-item';
@@ -89,6 +93,10 @@ export {
     InputGroup,
     ListGroup,
     Modal,
+    ModalBody,
+    ModalFooter,
+    ModalHeader,
+    ModalContainer,
     Nav,
     Navbar,
     NavItem,
