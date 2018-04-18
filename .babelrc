@@ -1,7 +1,11 @@
 {
+  "env": {
+    "test": {
+      "plugins": [ "istanbul" ]
+    }
+  },
   "presets": [
-    ["env", {"modules": false}],
-    "stage-0",
+    ["env"],
     "stage-1",
     "react",
     "@ava/stage-4",
@@ -12,6 +16,7 @@
     "transform-class-properties",
     "transform-object-rest-spread",
     "transform-decorators-legacy",
+    "transform-function-bind",
     "transform-runtime"
   ]
 }
