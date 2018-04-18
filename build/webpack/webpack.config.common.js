@@ -11,7 +11,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const config = require('./env/common/config');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 let extractComponentCSS = new ExtractTextPlugin({
-    filename: `styles/[name].css`,
+    filename: `${config.paths.styles}/[name].css`,
     allChunks: true,
 });
 
@@ -123,8 +123,8 @@ module.exports = {
     output: {
         path: config.paths.dist,
         publicPath: config.publicPath,
-        filename: `scripts/${config.assetsFilenames}.js`,
-        chunkFilename: `scripts/chunks/${config.assetsFilenames}[chunkhash].js`
+        filename: `${config.paths.scripts}/${config.assetsFilenames}.js`,
+        chunkFilename: `${config.paths.scripts}/chunks/${config.assetsFilenames}[chunkhash].js`
     },
     resolve: {
         alias: {
@@ -141,7 +141,7 @@ module.exports = {
         }),
         extractComponentCSS,
         /*new MiniCssExtractPlugin({
-            filename: `styles/${config.assetsFilenames}.css`
+            filename: `${config.paths.styles}/${config.assetsFilenames}.css`
         }),
         */
         new webpack.IgnorePlugin(/^props$/)

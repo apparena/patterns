@@ -29,9 +29,11 @@ module.exports = {
     paths: {
         root: rootPath,
         assets: rootPath,
-        dist: path.resolve(rootPath, 'dist')
+        dist: path.resolve(rootPath, 'dist'),
+        scripts: 'scripts',
+        styles: 'styles'
     },
     proxyUrl: 'http://localhost:8080/',
-    publicPath: `/${path.basename(path.resolve(rootPath))}/`
+    publicPath: ``
 };
 
