@@ -1,5 +1,5 @@
 'use strict'; // eslint-disable-line
-/* eslint-disable */
+/* eslint-disable  */
 /* eslint-disable no-var */
 
 const webpack = require('webpack');
