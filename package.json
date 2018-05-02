@@ -1,8 +1,8 @@
 {
   "name": "apparena-patterns",
-  "version": "2.3.1",
+  "version": "2.2.2",
   "license": "MIT",
-  "description": "Styleguide and patterns of App-Arena.com",
+  "description": "Corporate identity portal and React pattern library of App-Arena.com",
   "keywords": [
     "apparena",
     "styleguide",
@@ -106,6 +106,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-find-rules": "^3.2.2",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-babel": "^5.0.0",
