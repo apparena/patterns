@@ -7,13 +7,8 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-//const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const config = require('./env/common/config');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-let extractComponentCSS = new ExtractTextPlugin({
-    filename: `${config.paths.styles}/[name].css`,
-    allChunks: true,
-});
 
 module.exports = {
     context: config.paths.assets,
@@ -27,42 +22,9 @@ module.exports = {
                     'babel-loader'
                 ]
             },
-            {
-                test: /\.scss$/,
-                use: extractComponentCSS.extract({
-                    fallback: 'style-loader',
-                    publicPath: '../',
-                    use: [
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                modules: true,
-                                importLoaders: 1,
-                                localIdentName: '[hash:base64:5]',
-                                camelCase: true,
-                                sourceMap: true
-                            }
-                        },
-                        {
-                            loader: 'resolve-url-loader',
-                            options: {
-                                sourceMap: true
-                            }
-                        },
-                        {
-                            loader: 'sass-loader',
-                            options: {
-                                sourceMap: true
-                            }
-                        }
-                    ]
-                })
-            },
-           /* {
+           {
                 test: /\.(scss|css)$/,
-                //resolve: { extensions: [".scss", ".css"], },
                 use: [
-                    'style-loader',
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
@@ -73,26 +35,17 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             modules: true,
-                            importLoaders: 1,
-                            localIdentName: '[hash:base64:5]',
+                            importLoaders: 2,
+                            //localIdentName: '[path]----[name]----[local]----[hash:base64:5]',
+                            localIdentName: '[local]--[hash:base64:5]',
                             camelCase: true,
                             sourceMap: true
                         }
                     },
-                    {
-                        loader: 'resolve-url-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    }
+                    'resolve-url-loader?sourceMap',
+                    'sass-loader?sourceMap'
                 ]
-            },*/
+            },
             {
                 test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg)$/,
                 use: [{
@@ -108,18 +61,7 @@ module.exports = {
             }
         ]
     },
-    optimization: {
-       /* splitChunks: {
-            cacheGroups: {
-                styles: {
-                    name: 'styles',
-                    test: /\.css$/,
-                    chunks: 'all',
-                    enforce: true
-                }
-            }
-        }*/
-    },
+    optimization: {},
     output: {
         path: config.paths.dist,
         publicPath: config.publicPath,
@@ -139,11 +81,9 @@ module.exports = {
             template: './source/index.html',
             filename: './index.html'
         }),
-        extractComponentCSS,
-        /*new MiniCssExtractPlugin({
+        new MiniCssExtractPlugin({
             filename: `${config.paths.styles}/${config.assetsFilenames}.css`
         }),
-        */
         new webpack.IgnorePlugin(/^props$/)
     ]
 };
