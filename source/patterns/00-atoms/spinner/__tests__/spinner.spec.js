@@ -1,6 +1,5 @@
 /* eslint-env mocha */
 import React from 'react';
-import {test} from 'ava';
 import {shallow, mount, configure} from 'enzyme';
 import Spinner from '../index';
 import style from '../index.scss'
@@ -8,8 +7,8 @@ import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
-test('DUMMY', (t) => {
-    t.true(true);
+test('DUMMY', () => {
+    expect(true).toBe(true);
 });
 /*
 test('renders a spinner', (t) => {

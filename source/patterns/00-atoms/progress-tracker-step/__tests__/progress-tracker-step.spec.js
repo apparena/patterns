@@ -1,6 +1,5 @@
 /* eslint-env mocha */
 import React from 'react';
-import {test} from 'ava';
 import {shallow, mount, configure} from 'enzyme';
 import {spy} from 'sinon';
 import ProgressTrackerStep from '../index';
@@ -10,8 +9,8 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({adapter: new Adapter()});
 
 
-test('DUMMY', (t) => {
-    t.true(true);
+test('DUMMY', () => {
+    expect(true).toBe(true);
 });
 /*test('one inactive step', (t) => {
     const wrapper = shallow(
