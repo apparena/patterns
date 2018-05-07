@@ -1,20 +1,19 @@
 /* eslint-env mocha */
 import React from 'react';
-import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
 import Search from '../index';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
-test('renders search', (t) => {
+test('renders search', () => {
     const wrapper = shallow(
         <Search formClassNames="custom-form" labelClassNames="custom-label" inputClassNames="custom-input" id="custom-search-id" method="POST" prompt="Please search" placeholder="Type now"/>
     );
-    t.is(wrapper.find('form.custom-form').length, 1);
-    t.is(wrapper.find('label.custom-label').length, 1);
-    t.is(wrapper.find('input.custom-input').length, 1);
-    t.is(wrapper.find('form[method="POST"]').length, 1);
-    t.is(wrapper.find('input[placeholder="Type now"]').length, 1);
-    t.is(wrapper.find('label').contains('Please search'), true);
+    expect(wrapper.find('form.custom-form').length).toBe(1);
+    expect(wrapper.find('label.custom-label').length).toBe(1);
+    expect(wrapper.find('input.custom-input').length).toBe(1);
+    expect(wrapper.find('form[method="POST"]').length).toBe(1);
+    expect(wrapper.find('input[placeholder="Type now"]').length).toBe(1);
+    expect(wrapper.find('label').contains('Please search')).toBe(true);
 });

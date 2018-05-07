@@ -18,7 +18,6 @@ module.exports = merge(require('./webpack.config.common'), {
         }
     },
     entry: config.entry,
-    mode: 'development',
     module: {},
     output: {},
     plugins: [

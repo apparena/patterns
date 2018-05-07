@@ -1,13 +1,12 @@
 /* eslint-env mocha */
 import React from "react";
-import test from 'ava';
 import {mount, configure} from "enzyme";
 import Index from "../index";
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
-test('Table renders a table', (t) => {
+test('Table renders a table', () => {
     const wrapper = mount(
         <Index>
             <tr>
@@ -24,8 +23,8 @@ test('Table renders a table', (t) => {
             </tr>
         </Index>
     );
-    t.is(wrapper.find('table').length, 1);
-    t.is(wrapper.find('tr').length, 3);
-    t.is(wrapper.find('th').length, 6);
+    expect(wrapper.find('table').length).toBe(1);
+    expect(wrapper.find('tr').length).toBe(3);
+    expect(wrapper.find('th').length).toBe(6);
 })
 

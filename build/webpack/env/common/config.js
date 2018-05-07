@@ -24,6 +24,7 @@ module.exports = {
         ]
     },
     manifest: {},
+    mode: 'development',
     paths: {
         root: rootPath,
         assets: rootPath,

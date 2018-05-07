@@ -22,6 +22,16 @@ deployment process:
 |:-----------|:---------|
 | yarn build |          |
 
+## Tests
+
+Before you commit or push any changes run
+
+```
+yarn test
+```
+
+and ensure that all Jest tests run successfully.
+
 ## Publish a new version
 
 The following steps have to be performed to publish a new version on NPM

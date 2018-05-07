@@ -12,6 +12,7 @@ const config = require('./env/common/config');
 
 module.exports = {
     context: config.paths.assets,
+    mode: config.mode,
     module: {
         rules: [
             {
@@ -25,18 +26,12 @@ module.exports = {
            {
                 test: /\.(scss|css)$/,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            publicPath: '../'
-                        }
-                    },
+                    config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
                     {
                         loader: 'css-loader',
                         options: {
                             modules: true,
                             importLoaders: 2,
-                            //localIdentName: '[path]----[name]----[local]----[hash:base64:5]',
                             localIdentName: '[local]--[hash:base64:5]',
                             camelCase: true,
                             sourceMap: true

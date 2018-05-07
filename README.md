@@ -15,7 +15,7 @@ App-Arena CI.
 | Title                                                      | Description                                                       |
 |:-----------------------------------------------------------|:------------------------------------------------------------------|
 | [Pattern demos](https://brand.app-arena.com/#/ui-patterns) | Demo of all patterns of this library.                             |
-| [Contributiing](docs/contributing.md)                      | Creating and publishing new patterns or editing the Brand portal. |
+| [Contributing](docs/contributing.md)                       | Creating and publishing new patterns or editing the Brand portal. |
 | [Pattern generator](docs/pattern-generator.md)             | How the Yeoman pattern generator works and how it can be edited.  |
 
 ## Getting started

@@ -11,10 +11,15 @@
   Molecules Form group
  ========================================================================== */
 .form-group {
+
   .col-form-label .is-required {
     position: absolute;
     right: 5px;
   }
+}
+
+.custom-control-label {
+  cursor: pointer;
 }
 
 .form-control-success,

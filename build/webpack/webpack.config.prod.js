@@ -12,7 +12,6 @@ console.log(config);
 
 module.exports = merge(require('./webpack.config.common'), {
     entry: config.entry,
-    mode: 'production',
     module: {},
     output: {},
     optimization: {},

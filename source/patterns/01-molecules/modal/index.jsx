@@ -24,9 +24,21 @@ const MODAL_SIZES = [
 
 export default class Modal extends ReactComponent {
     static propTypes = {
+        /**
+         * The CSS className for this component
+         */
         className: PropTypes.string,
+        /**
+         * Sets the size of the button. Available sizes: xl, lg, md, sm, xs
+         */
         size: PropTypes.oneOf(MODAL_SIZES),
+        /**
+         * Determines the default styling of the button. Available primary, secondary, danger, info, success, warning, default
+         */
         type: PropTypes.oneOf(MODAL_TYPES),
+        /**
+         * Is the modal visible?
+         */
         visible: PropTypes.bool,
         modalBackdrop: PropTypes.bool,
         children: PropTypes.node.isRequired,
