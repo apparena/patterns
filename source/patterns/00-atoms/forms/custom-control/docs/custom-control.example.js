@@ -7,10 +7,12 @@ export default class FormCustomControlExample extends React.Component {
     this.state = { clickHandlerText: '' };
   }
 
-  handleClick(event) {
-    const { target: { value } } = event;
+  /*
+   * Receives the state of the checkbox
+   */
+  handleClick(state) {
     this.setState({
-      clickHandlerText: `Checkbox is ${value}`,
+      clickHandlerText: `Checkbox is ${state.checked ? 'checked' : 'not checked'}`,
     });
   }
 
@@ -46,7 +48,22 @@ export default class FormCustomControlExample extends React.Component {
           type="checkbox"
           onChange={this.handleClick.bind(this)}
         />
-        <input className="form-control" type="text" value={this.state.clickHandlerText} />
+          <input className="form-control" type="text" value={this.state.clickHandlerText} />
+          <CustomControl
+              checked
+              label="Invalid"
+              name="test5"
+              validationState="invalid"
+              type="checkbox"
+          />
+          <CustomControl
+              checked
+              label="Valid"
+              name="test6"
+              validationState="valid"
+              type="checkbox"
+          />
+
 
         <hr />
 
@@ -72,6 +89,20 @@ export default class FormCustomControlExample extends React.Component {
           type="radio"
           value="on"
         />
+          <CustomControl
+              checked
+              label="Invalid"
+              name="test5"
+              validationState="invalid"
+              type="radio"
+          />
+          <CustomControl
+              checked
+              label="Valid"
+              name="test6"
+              validationState="valid"
+              type="radio"
+          />
       </div>
     );
   }

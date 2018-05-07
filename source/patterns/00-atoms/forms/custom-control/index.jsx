@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import styles from './index.scss';
-//import {ReactComponent} from '../../../index';
 
 export default class CustomControl extends React.Component {
     static propTypes = {
@@ -42,7 +41,11 @@ export default class CustomControl extends React.Component {
         /**
          * Validation state the input field is currently in
          */
-        validationState: PropTypes.oneOf(['default', 'valid', 'invalid'])
+        validationState: PropTypes.oneOf(['default', 'valid', 'invalid']),
+        /**
+         * the value of the input field, which will be submitted
+         */
+        value: PropTypes.string,
     };
 
     static defaultProps = {
@@ -57,44 +60,58 @@ export default class CustomControl extends React.Component {
     constructor(props) {
         super(props);
 
-        //this.handleChange = this.handleChange.bind(this);
-
         this.state = {
             checked: this.props.checked
         };
     }
 
+    /**
+     * Function which will be called every time the checkbox state changes
+     * @param event
+     */
     toggleCheckbox = (event) => {
         if (!this.props.disabled) {
-            const isChecked = !this.state.checked;
-
-            this.setState(({prevState}) => ({
-                checked: !prevState.checked
-            }), () => {
+            this.setState({
+                checked: !this.state.checked
+            }, () => {
                 // Callback
                 this.props.onChange(this.state);
             });
         }
-        
+
     };
 
     render() {
         const typeClassName = this.props.type === 'checkbox' ? 'custom-checkbox' : 'custom-radio';
+
+        // Get validation state
+        let inputStyle = styles['custom-control-input'];
+        let labelStyle = styles['custom-control-label'];
+        if (this.props.validationState === 'valid') {
+            inputStyle = cx(styles['custom-control-input'], styles['is-valid']);
+            labelStyle = cx(styles['custom-control-label'], styles['is-valid']);
+        }
+        if (this.props.validationState === 'invalid') {
+            inputStyle = cx(styles['custom-control-input'], styles['is-invalid']);
+            labelStyle = cx(styles['custom-control-label'], styles['is-invalid']);
+        }
+
         return (
-            <div className={this.state.formGroupClass}>
-                <div className={cx(styles['custom-control'], styles[typeClassName])}>
+            <div className={styles['form-group']}>
+                <div
+                    className={cx(styles['custom-control'], styles[typeClassName])}
+                    onClick={this.toggleCheckbox.bind(this)}
+                >
                     <input checked={this.state.checked}
-                           className={styles['custom-control-input']}
+                           className={inputStyle}
                            disabled={this.props.disabled}
                            id={this.props.id}
                            name={this.props.name}
                            type={this.props.type}
-                           onClick={this.toggleCheckbox.bind(this)}
+                           value={this.props.value}
                     />
-                    <label className={styles['custom-control-label']}
+                    <label className={labelStyle}
                            htmlFor={this.props.id}
-                           onClick={this.toggleCheckbox.bind(this)}
-                           value={this.state.checked}
                     >
                         {this.props.label}
                     </label>

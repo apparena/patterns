@@ -13,12 +13,12 @@ test('main frontend is rendered correctly', () => {
     </div>
                      </HashRouter>);
 
-  expect(home.find('input#searchInput')).to.have.length(1);
-  expect(home.find('input#searchInput').props().value).to.equal('');
-  expect(home.find('ul').length).to.be.at.least(2);
-  expect(home.find('div > h3').length).to.be.at.least(1);
-  expect(home.find('div[type="card-header"]').props().children).to.equal('Components');
-  expect(home.find('div[type="card-body"] > p').props().children).to.equal('These React components will help you build App-Arena applications and add-ons.');
+  expect(home.find('input#searchInput')).toHaveLength(1);
+  expect(home.find('input#searchInput').props().value).toEqual('');
+  expect(home.find('ul').length).toBeGreaterThanOrEqual(2);
+  expect(home.find('div > h3').length).toBeGreaterThanOrEqual(1);
+  expect(home.find('div[type="card-header"]').props().children).toEqual('Components');
+  expect(home.find('div[type="card-body"] > p').props().children).toEqual('These React components will help you build App-Arena applications and add-ons.');
 });
 
 test('search finds correct results when there are some', () => {
@@ -28,11 +28,11 @@ test('search finds correct results when there are some', () => {
     </div>
                      </HashRouter>);
 
-  expect(home.find('input#searchInput')).to.have.length(1);
-  expect(home.find('input#searchInput').props().value).to.equal('');
+  expect(home.find('input#searchInput')).toHaveLength(1);
+  expect(home.find('input#searchInput').props().value).toEqual('');
   home.find('input#searchInput').simulate('change', { target: { value: 'Button' } });
-  expect(home.find('input#searchInput').props().value).to.equal('Button');
-  expect(home.find('li').length).to.be.at.least(2);
+  expect(home.find('input#searchInput').props().value).toEqual('Button');
+  expect(home.find('li').length).toBeGreaterThanOrEqual(2);
 
   let liItems = 0;
   home.find('li').forEach((li) => {
@@ -40,7 +40,7 @@ test('search finds correct results when there are some', () => {
       liItems++;
     }
   });
-  expect(liItems).to.be.at.least(1);
+  expect(liItems).toBeGreaterThanOrEqual(1);
 });
 
 test('search finds no results when there are none', () => {
@@ -50,12 +50,12 @@ test('search finds no results when there are none', () => {
     </div>
   </HashRouter>);
 
-  expect(home.find('input#searchInput')).to.have.length(1);
-  expect(home.find('input#searchInput').props().value).to.equal('');
+  expect(home.find('input#searchInput')).toHaveLength(1);
+  expect(home.find('input#searchInput').props().value).toEqual('');
   home.find('input#searchInput').simulate('change', { target: { value: 'asdfghjklqwerty' } });
-  expect(home.find('input#searchInput').props().value).to.equal('asdfghjklqwerty');
+  expect(home.find('input#searchInput').props().value).toEqual('asdfghjklqwerty');
   // TODO: Figure out how to ignore static pages
-  // expect(home.find("li")).to.have.length(1);
+  // expect(home.find("li")).toHaveLength(1);
 });
 
 test('components are displayed properly', () => {
@@ -70,10 +70,10 @@ test('components are displayed properly', () => {
   buttonListItem = home.find("li > Link[to='/Col'] > a");
   buttonListItem.simulate('click', { button: 0 });
 
-  expect(home.find('Example')).to.have.length(1);
-  expect(home.find('ReactMarkdown')).to.have.length(1);
-  expect(home.find('Props')).to.have.length(1);
-  expect(home.find('Description')).to.have.length(1);
-  expect(home.find('div > h3')).not.to.have.length(1);
-  expect(home.find('h3 + p')).to.have.length(0);
+  expect(home.find('Example')).toHaveLength(1);
+  expect(home.find('ReactMarkdown')).toHaveLength(1);
+  expect(home.find('Props')).toHaveLength(1);
+  expect(home.find('Description')).toHaveLength(1);
+  expect(home.find('div > h3')).not.toHaveLength(1);
+  expect(home.find('h3 + p')).toHaveLength(0);
 });
