@@ -32,7 +32,7 @@ export default class CustomControl extends React.Component {
         name: PropTypes.string.isRequired,
 
         /**
-         * Is it a checkbox or a radio button
+         * Callback function called with the updated state
          */
         onChange: PropTypes.func,
         /**
@@ -66,14 +66,16 @@ export default class CustomControl extends React.Component {
 
     toggleCheckbox = (event) => {
         if (!this.props.disabled) {
-            this.setState(({checked}) => (
-                {
-                    checked: !checked
-                }
-            ));
+            const isChecked = !this.state.checked;
+
+            this.setState(({prevState}) => ({
+                checked: !prevState.checked
+            }), () => {
+                // Callback
+                this.props.onChange(this.state);
+            });
         }
-        event.target.value = !this.state.checked;
-        this.props.onChange(event);
+        
     };
 
     render() {
