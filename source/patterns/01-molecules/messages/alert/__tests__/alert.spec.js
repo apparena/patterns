@@ -1,19 +1,18 @@
 /* eslint-env mocha */
 import React from 'react';
-import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
 import Alert from '../index';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
-test('DUMMY', (t) => {
+test('DUMMY', () => {
     const wrapper = shallow(
         <Alert type="danger">
             Hello world!
         </Alert>
     );
-    t.true(true);
+    expect(true).toBe(true);
 });
 
 /*

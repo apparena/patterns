@@ -1,13 +1,12 @@
 /* eslint-env mocha */
 import React from 'react';
-import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
 import Index from '../index';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
-test('renders media', (t) => {
+test('renders media', () => {
     const wrapper = shallow(
         <Index classNames="custom-media"
                mediaClassNames="custom-media-element"
@@ -19,20 +18,24 @@ test('renders media', (t) => {
                mediaBody="Testing is as successful as ever"
         />
     );
-    t.is(wrapper.find('div.media').length, 1);
-    t.is(wrapper.find('img').length, 1);
-    t.is(wrapper.find('a + div').length, 1);
-    t.is(wrapper.find('a[href=\'custom-location\']').length, 1);
-    t.is(wrapper.find('.custom-media').length, 1);
-    t.is(wrapper.find('.custom-media-element').length, 1);
-    t.is(wrapper.find('.custom-media-body').length, 1);
-    t.is(wrapper.find('.custom-media-heading').length, 1);
-    t.is(wrapper.find('.custom-media-heading').contains('this is a test'), true);
-    t.is(wrapper.find('.custom-media-body').contains('Testing is as successful as ever'), true);
-    t.is(wrapper.find('.custom-media-body').contains('Testing is as successful as ever'), true);
+    expect(wrapper.find('div.media').length).toBe(1);
+    expect(wrapper.find('img').length).toBe(1);
+    expect(wrapper.find('a + div').length).toBe(1);
+    expect(wrapper.find('a[href=\'custom-location\']').length).toBe(1);
+    expect(wrapper.find('.custom-media').length).toBe(1);
+    expect(wrapper.find('.custom-media-element').length).toBe(1);
+    expect(wrapper.find('.custom-media-body').length).toBe(1);
+    expect(wrapper.find('.custom-media-heading').length).toBe(1);
+    expect(wrapper.find('.custom-media-heading').contains('this is a test')).toBe(true);
+    expect(
+        wrapper.find('.custom-media-body').contains('Testing is as successful as ever')
+    ).toBe(true);
+    expect(
+        wrapper.find('.custom-media-body').contains('Testing is as successful as ever')
+    ).toBe(true);
 });
 
-test('renders media to the right at will', (t) => {
+test('renders media to the right at will', () => {
     const wrapper = shallow(
         <Index classNames="custom-media"
                mediaPosition="right"
@@ -45,15 +48,19 @@ test('renders media to the right at will', (t) => {
                mediaBody="Testing is as successful as ever"
         />
     );
-    t.is(wrapper.find('div.media').length, 1);
-    t.is(wrapper.find('img').length, 1);
-    t.is(wrapper.find('div + a').length, 1);
-    t.is(wrapper.find('a[href=\'custom-location\']').length, 1);
-    t.is(wrapper.find('.custom-media').length, 1);
-    t.is(wrapper.find('.custom-media-element').length, 1);
-    t.is(wrapper.find('.custom-media-body').length, 1);
-    t.is(wrapper.find('.custom-media-heading').length, 1);
-    t.is(wrapper.find('.custom-media-heading').contains('this is a test'), true);
-    t.is(wrapper.find('.custom-media-body').contains('Testing is as successful as ever'), true);
-    t.is(wrapper.find('.custom-media-body').contains('Testing is as successful as ever'), true);
+    expect(wrapper.find('div.media').length).toBe(1);
+    expect(wrapper.find('img').length).toBe(1);
+    expect(wrapper.find('div + a').length).toBe(1);
+    expect(wrapper.find('a[href=\'custom-location\']').length).toBe(1);
+    expect(wrapper.find('.custom-media').length).toBe(1);
+    expect(wrapper.find('.custom-media-element').length).toBe(1);
+    expect(wrapper.find('.custom-media-body').length).toBe(1);
+    expect(wrapper.find('.custom-media-heading').length).toBe(1);
+    expect(wrapper.find('.custom-media-heading').contains('this is a test')).toBe(true);
+    expect(
+        wrapper.find('.custom-media-body').contains('Testing is as successful as ever')
+    ).toBe(true);
+    expect(
+        wrapper.find('.custom-media-body').contains('Testing is as successful as ever')
+    ).toBe(true);
 });

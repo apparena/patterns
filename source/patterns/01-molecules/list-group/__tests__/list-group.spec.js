@@ -1,13 +1,12 @@
 /* eslint-env mocha */
 import React from 'react';
-import {test} from 'ava';
 import {shallow, configure} from 'enzyme';
 import Index from '../index';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
-test('renders a ListGroup', (t) => {
+test('renders a ListGroup', () => {
     const wrapper = shallow(
         <Index classNames="custom-list-group" listItems={[
             {disabled: 'Im disabled'},
@@ -17,9 +16,9 @@ test('renders a ListGroup', (t) => {
             ]}
         />
     );
-    t.is(wrapper.find('.custom-list-group').length, 1);
-    t.is(wrapper.find('ul.list-group').length, 1);
-    t.is(wrapper.find('.list-group-item').length, 4);
-    t.is(wrapper.find('.disabled').length, 1);
-    t.is(wrapper.find('.list-group-item-danger').length, 1);
+    expect(wrapper.find('.custom-list-group').length).toBe(1);
+    expect(wrapper.find('ul.list-group').length).toBe(1);
+    expect(wrapper.find('.list-group-item').length).toBe(4);
+    expect(wrapper.find('.disabled').length).toBe(1);
+    expect(wrapper.find('.list-group-item-danger').length).toBe(1);
 });
