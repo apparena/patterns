@@ -39,7 +39,7 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$black:  #000033 !default;
+$black:  #000000 !default;
 $gray-100: lighten($black, 90%) !default;
 $gray-200: lighten($black, 80%) !default;
 $gray-300: lighten($black, 70%) !default;
@@ -62,6 +62,9 @@ $theme-colors: (
         dark: $gray-800
 ) !default;
 
+$body-color: $black !default;
+$body-bg: theme-color('secondary') !default;
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -82,7 +85,6 @@ $font-family-sans-serif: 'Open Sans', Arial, sans-serif !default;
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
-$body-color: $gray-700 !default;
 
 //Cards
 $card-bg: #fff !default;

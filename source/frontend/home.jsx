@@ -261,7 +261,7 @@ class Home extends ReactComponent {
                                         id="searchInput"
                                         placeholder="Search component..."
                                         onChange={::this.search}
-                                        value={this.state.searchQuery}
+                                        defaultValue={this.state.searchQuery}
                                     />
                                 </FormGroup>
                             </div>

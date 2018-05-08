@@ -31,7 +31,7 @@ export default class FormCustomControlExample extends React.Component {
 
         <Input
           name="input-value"
-          value="Input with value"
+          defaultValue="Input with value"
           onChange={this.handleChange.bind(this)}
         />
 
@@ -46,7 +46,9 @@ export default class FormCustomControlExample extends React.Component {
 
         <Alert type="info">
           <h5>Output</h5>
-          {this.state.changedElementValue}
+          <p>
+            {this.state.changedElementValue}
+          </p>
         </Alert>
 
       </div>
