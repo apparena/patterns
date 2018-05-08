@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactComponent from '../../react-utils/component/index';
 import Button from '../../00-atoms/button';
-import Icon from '../../00-atoms/icons/index';
 import cx from 'classnames';
 import styles from './index.scss';
 
@@ -12,7 +11,6 @@ export default class Copy extends ReactComponent {
     static propTypes = {
         className: PropTypes.string,
         imgSrc: PropTypes.string,
-        icon: PropTypes.string,
         href: PropTypes.string,
         headline: PropTypes.string.isRequired,
         text: PropTypes.string,
@@ -23,7 +21,6 @@ export default class Copy extends ReactComponent {
     renderContent() {
         const {
             imgSrc,
-            icon,
             headline,
             text,
             btnText,
@@ -34,11 +31,8 @@ export default class Copy extends ReactComponent {
                 {
                     imgSrc ?
                         <div className={styles.img}>
-                            <img src={imgSrc} alt="presentation"/>
-                        </div> :
-                        <div className={styles.icon}>
-                            <Icon name={icon} size="5x"/>
-                        </div>
+                            <img src={imgSrc} />
+                        </div> : ''
                 }
                 <h3>{headline}</h3>
                 {text && <p>{text}</p>}
