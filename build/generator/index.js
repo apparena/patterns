@@ -96,7 +96,7 @@ function createComponentsList(categories) {
       let name = category;
       switch (category) {
         case '00-atoms':
-          name = 'Atom';
+          name = 'Atoms';
           break;
         case '01-molecules':
           name = 'Molecules';

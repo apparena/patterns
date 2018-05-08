@@ -33,6 +33,7 @@ import Card from './01-molecules/card';
 import Dropdown from './01-molecules/dropdown';
 import FormGroup from './01-molecules/forms/form-group';
 import InputGroup from './01-molecules/input-group';
+import Intro from './01-molecules/box';
 import ListGroup from './01-molecules/list-group';
 import Modal from './01-molecules/modal';
 import ModalBody from './01-molecules/modal/modal-body';
@@ -91,6 +92,7 @@ export {
   Icon,
   Input,
   InputGroup,
+  Intro,
   ListGroup,
   Modal,
   ModalBody,

@@ -11,76 +11,76 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const config = require('./env/common/config');
 
 module.exports = {
-    context: config.paths.assets,
-    mode: config.mode,
-    module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/,
-                resolve: {extensions: ['.js', '.jsx']},
-                exclude: /node_modules/,
-                use: [
-                    'babel-loader'
-                ]
-            },
-           {
-                test: /\.(scss|css)$/,
-                use: [
-                    config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true,
-                            importLoaders: 2,
-                            localIdentName: '[local]--[hash:base64:5]',
-                            camelCase: true,
-                            sourceMap: true
-                        }
-                    },
-                    'resolve-url-loader?sourceMap',
-                    'sass-loader?sourceMap'
-                ]
-            },
-            {
-                test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: `vendor/[name].[ext]`
-                    }
-                }]
-            },
-            {
-                test: /\.html$/,
-                use: ['html-loader']
-            }
+  context: config.paths.assets,
+  mode: config.mode,
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        resolve: { extensions: ['.js', '.jsx'] },
+        exclude: /node_modules/,
+        use: [
+          'babel-loader'
         ]
-    },
-    optimization: {},
-    output: {
-        path: config.paths.dist,
-        publicPath: config.publicPath,
-        filename: `${config.paths.scripts}/${config.assetsFilenames}.js`,
-        chunkFilename: `${config.paths.scripts}/chunks/${config.assetsFilenames}[chunkhash].js`
-    },
-    resolve: {
-        alias: {
-            'apparena-patterns-react$': path.resolve(config.paths.root, 'source/patterns/index.js'),
-            'apparena-patterns-react': path.resolve(config.paths.root, 'source/'),
-            Frontend: path.resolve(config.paths.root, 'source/frontend/'),
-            Utils: path.resolve(config.paths.root, 'source/patterns/react-utils/')
-        }
-    },
-    plugins: [
-        new HtmlWebPackPlugin({
-            template: './source/index.html',
-            filename: './index.html'
-        }),
-        new MiniCssExtractPlugin({
-            filename: `${config.paths.styles}/${config.assetsFilenames}.css`
-        }),
-        new webpack.IgnorePlugin(/^props$/)
+      },
+      {
+        test: /\.(scss|css)$/,
+        use: [
+          config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 2,
+              localIdentName: '[local]--[hash:base64:5]',
+              camelCase: true,
+              sourceMap: true
+            }
+          },
+          'resolve-url-loader?sourceMap',
+          'sass-loader?sourceMap'
+        ]
+      },
+      {
+        test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: `vendor/[name].[ext]`
+          }
+        }]
+      },
+      {
+        test: /\.html$/,
+        use: ['html-loader']
+      }
     ]
+  },
+  optimization: {},
+  output: {
+    path: config.paths.dist,
+    publicPath: config.publicPath,
+    filename: `${config.paths.scripts}/${config.assetsFilenames}.js`,
+    chunkFilename: `${config.paths.scripts}/chunks/${config.assetsFilenames}[chunkhash].js`
+  },
+  resolve: {
+    alias: {
+      'apparena-patterns-react$': path.resolve(config.paths.root, 'source/patterns/index.js'),
+      'apparena-patterns-react': path.resolve(config.paths.root, 'source/'),
+      Frontend: path.resolve(config.paths.root, 'source/frontend/'),
+      Utils: path.resolve(config.paths.root, 'source/patterns/react-utils/')
+    }
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './source/index.html',
+      filename: './index.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: `${config.paths.styles}/${config.assetsFilenames}.css`
+    }),
+    new webpack.IgnorePlugin(/^props$/)
+  ]
 };
 
 /* eslint-enable no-var */

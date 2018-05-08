@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Button, Input, ReactComponent} from '../../../index';
+import {Button, Input, ReactComponent} from '../../../../index';
 import cx from 'classnames';
-import styles from './colorPicker.scss';
+import styles from './index.scss';
 import {CustomPicker as customPicker} from 'react-color';
 import {Hue, Saturation, Swatch} from 'react-color/lib/components/common';
 import ColorHelper from 'react-color/lib/helpers/color';
-import Pointer from './pointer';
+import Pointer from './../pointer';
 
-class ColorPicker extends React.Component {
+class Picker extends React.Component {
     static propTypes = {
         width: PropTypes.string,
         triangle: PropTypes.string,
@@ -145,7 +145,7 @@ class ColorPicker extends React.Component {
                             onClick={this.handleSubmit}
                             isDisabled={this.state.buttonDisabled}
                         >
-                            {this.t('button.submit')}
+                            {'Submit'}
                         </Button>
                     </div>
                 </div>
@@ -154,4 +154,4 @@ class ColorPicker extends React.Component {
     }
 }
 
-export default customPicker(ColorPicker);
+export default customPicker(Picker);

@@ -20,7 +20,7 @@ export default class CustomControl extends React.Component {
         /**
          * ID of the input field. This is required as the Label needs to be assigned to the input field via ID
          */
-        id: PropTypes.string.isRequired,
+        id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
         /**
          * Label for the input field
          */
