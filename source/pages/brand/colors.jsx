@@ -118,7 +118,7 @@ class render extends ReactComponent {
                                   ['#FF2731', '#FF525A', '#FF7D83', '#FFA9AD', '#FFD4D6'],
                                   ['#FFDB16', '#FFE245', '#FFE973', '#FFF1A2', '#FFF8D0'],
                                   ['#00DEFF', '#33E5FF', '#66EBFF', '#99F2FF', '#CCF8FF'],
-                                  ['#40F99B', '#66FAAF', '#8CFBC3', '#B3FDD7', '#D9FEEB']
+                                  ['#10e28b', '#40E8A2', '#70EEB9', '#9FF3D1', '#CFF9E8']
                                 ]}
                                 triangle={'hide'}
                                 onChange={::this.handleSwatchChange}

@@ -9,11 +9,7 @@ export default class FormColorExample extends React.Component {
 
         <ColorPicker displayColorPicker={false} />
 
-        <ColorPicker presetColors={['#ff0000', '#00ff00']} />
 
-        <ColorPicker value="#0000ff" />
-
-        <ColorPicker showOnlyPicker />
       </div>
     );
   }
