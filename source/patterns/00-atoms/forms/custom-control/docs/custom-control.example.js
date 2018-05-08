@@ -1,5 +1,5 @@
 import React from 'react';
-import { CustomControl } from 'apparena-patterns-react';
+import { CustomControl, Input } from 'apparena-patterns-react';
 
 export default class FormCustomControlExample extends React.Component {
   constructor(props, context) {
@@ -7,12 +7,13 @@ export default class FormCustomControlExample extends React.Component {
     this.state = { clickHandlerText: '' };
   }
 
-  /*
+  /**
    * Receives the state of the checkbox
+   * @param {SyntheticEvent} event The react `SyntheticEvent`
    */
-  handleClick(state) {
+  handleCheckboxChange(event) {
     this.setState({
-      clickHandlerText: `Checkbox is ${state.checked ? 'checked' : 'not checked'}`,
+      clickHandlerText: `Checkbox with id ${event.target.id} is ${event.target.checked ? 'checked' : 'not checked'}`,
     });
   }
 
@@ -20,49 +21,59 @@ export default class FormCustomControlExample extends React.Component {
     return (
       <div>
         <h3>Checkboxes</h3>
+
+        <Input
+          name="clickHandlerText"
+          value={this.state.clickHandlerText}
+        />
+
         <CustomControl
           label="Simple Checkbox"
+          id="simple-checkbox"
           name="simple-checkbox"
           type="checkbox"
           value="off"
+          onChange={this.handleCheckboxChange.bind(this)}
         />
         <CustomControl
           checked
           label="Simple Checkbox checked"
+          id="simple-checkbox-checked"
           name="simple-checkbox-checked"
           type="checkbox"
           value="on"
+          onChange={this.handleCheckboxChange.bind(this)}
         />
         <CustomControl
           checked
           disabled
           label="Simple Checkbox disabled"
           name="simple-checkbox-disabled"
+          id="simple-checkbox-disabled"
           type="checkbox"
           value="on"
+          onChange={this.handleCheckboxChange.bind(this)}
+        />
+
+
+        <CustomControl
+          checked
+          label="validationState 'invalid'"
+          id="test5"
+          name="test5"
+          validationState="invalid"
+          type="checkbox"
+          onChange={this.handleCheckboxChange.bind(this)}
         />
         <CustomControl
           checked
-          label="Simple Checkbox with click handler"
-          name="simple-checkbox-clickHandler"
+          label="validationState 'valid'"
+          id="test6"
+          name="test6"
+          validationState="valid"
           type="checkbox"
-          onChange={this.handleClick.bind(this)}
+          onChange={this.handleCheckboxChange.bind(this)}
         />
-          <input className="form-control" type="text" value={this.state.clickHandlerText} />
-          <CustomControl
-              checked
-              label="Invalid"
-              name="test5"
-              validationState="invalid"
-              type="checkbox"
-          />
-          <CustomControl
-              checked
-              label="Valid"
-              name="test6"
-              validationState="valid"
-              type="checkbox"
-          />
 
 
         <hr />
@@ -70,39 +81,49 @@ export default class FormCustomControlExample extends React.Component {
         <h3>Radio buttons</h3>
         <CustomControl
           label="Simple Radio"
+          id="simple-radio"
           name="simple-radio"
           type="radio"
           value="off"
+          onChange={this.handleCheckboxChange.bind(this)}
         />
         <CustomControl
           checked
           label="Simple Radio checked"
+          id="simple-radio-checked"
           name="simple-radio-checked"
           type="radio"
           value="on"
+          onChange={this.handleCheckboxChange.bind(this)}
         />
         <CustomControl
           checked
           disabled
           label="Simple Radio disabled"
+          id="simple-radio-disabled"
           name="simple-radio-disabled"
           type="radio"
           value="on"
+          onChange={this.handleCheckboxChange.bind(this)}
         />
-          <CustomControl
-              checked
-              label="Invalid"
-              name="test5"
-              validationState="invalid"
-              type="radio"
-          />
-          <CustomControl
-              checked
-              label="Valid"
-              name="test6"
-              validationState="valid"
-              type="radio"
-          />
+        <CustomControl
+          checked
+          label="Invalid"
+          id="radio-invalid"
+          name="radio-invalid"
+          validationState="invalid"
+          type="radio"
+          onChange={this.handleCheckboxChange.bind(this)}
+        />
+        <CustomControl
+          checked
+          label="Valid"
+          id="radio-valid"
+          name="radio-valid"
+          validationState="valid"
+          type="radio"
+          onChange={this.handleCheckboxChange.bind(this)}
+        />
       </div>
     );
   }

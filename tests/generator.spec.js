@@ -14,29 +14,53 @@ function getBaseName(fileName) {
 }
 
 test('getBaseName works as expected', () => {
-  expect(getBaseName('path/to/file.txt')).to.equal('path/to/file');
-  expect(getBaseName('path/to/file.txt')).not.to.equal('path/to/file.txt');
-  expect(getBaseName('another/path/to/a/big_file.jpeg')).to.equal('another/path/to/a/big_file');
+  expect(getBaseName('path/to/file.txt'))
+    .toEqual('path/to/file');
+  expect(getBaseName('path/to/file.txt'))
+    .not.toEqual('path/to/file.txt');
+  expect(getBaseName('another/path/to/a/big_file.jpeg'))
+    .toEqual('another/path/to/a/big_file');
 });
 
 test('category initialization works', () => {
   const categories = {};
   glob.sync('source/patterns/!(react-utils|corporate-identity)/')
-    .map(cf => cf.split('/').slice(-2)[0])
-    .forEach((cf) => { categories[cf] = { visible: true, components: [] }; });
+    .map(cf => cf.split('/')
+      .slice(-2)[0])
+    .forEach((cf) => {
+      categories[cf] = {
+        visible: true,
+        components: [],
+      };
+    });
 
   /**
-     * Look at source/patterns to check which folders should be here
-     */
+   * Look at source/patterns to check which folders should be here
+   */
   const comparator = {
-    '00-atoms': { visible: true, components: [] },
-    '01-molecules': { visible: true, components: [] },
-    '02-organisms': { visible: true, components: [] },
-    '03-templates': { visible: true, components: [] },
-    '04-pages': { visible: true, components: [] },
+    '00-atoms': {
+      visible: true,
+      components: [],
+    },
+    '01-molecules': {
+      visible: true,
+      components: [],
+    },
+    '02-organisms': {
+      visible: true,
+      components: [],
+    },
+    '03-templates': {
+      visible: true,
+      components: [],
+    },
+    '04-pages': {
+      visible: true,
+      components: [],
+    },
   };
 
-  expect(categories).to.deep.equal(comparator);
+  expect(categories).toEqual(comparator);
 });
 
 test('Generator ignores subdirectories without documentation', () => {
@@ -63,15 +87,19 @@ test('Generator ignores subdirectories without documentation', () => {
   let matches = 0;
 
   docDirs.forEach((dir) => {
-    const dirname = dir.split('/').slice(0, -1).join('/');
-    expect(actualDirectories).to.include(dirname);
-
+    const dirname = dir.split('/')
+      .slice(0, -1)
+      .join('/');
+    /* expect(actualDirectories)
+      .toInclude(dirname);
+*/
     if (actualDirectories.includes(dirname)) {
       ++matches;
     }
   });
 
-  expect(matches).to.equal(actualDirectories.length);
+  expect(matches)
+    .toEqual(actualDirectories.length);
 });
 
 test('Generator does not include non-exported components', () => {
@@ -88,15 +116,16 @@ test('Generator does not include non-exported components', () => {
   });
 
   componentDirectories.forEach((directory) => {
-    const component = directory.split('/').slice(-1);
+    const component = directory.split('/')
+      .slice(-1);
 
     if (exportedComponents.includes(`/${component}';`)) {
       actualComponentDirs.push(directory);
     }
   });
 
-  expect(actualComponentDirs).to.have.lengthOf.at.least(1);
-  expect(actualComponentDirs).to.not.have.lengthOf.above(componentDirectories.length);
+  expect(actualComponentDirs.length).toBeGreaterThanOrEqual(1);
+  expect(actualComponentDirs.length).toBeLessThanOrEqual(componentDirectories.length);
 });
 
 test('Generator generates proper documentation', () => {
@@ -113,31 +142,34 @@ test('Generator generates proper documentation', () => {
 
   componentDirectories.forEach((directory) => {
     if (fse.existsSync(`${directory}/docs`)) {
-      const component = directory.split('/').slice(-1);
+      const component = directory.split('/')
+        .slice(-1);
 
       if (exportedComponents.includes(`/${component}';`)) {
         let mdFileName = '';
         let exampleFileName = '';
         let componentClassName = '';
 
-        glob.sync(`${directory}/**/?(docs)/**`).forEach((file) => {
-          if (file.endsWith('.md')) {
-            mdFileName = `${_.camelCase(path.basename(file, path.extname(file)))}${path.extname(file)}`;
-          } else if (file.match(/.example.?(js|jsx)/)) {
-            exampleFileName = `${_.camelCase(path.basename(file, path.extname(file)))}${path.extname(file)}`;
-          }
-        });
+        glob.sync(`${directory}/**/?(docs)/**`)
+          .forEach((file) => {
+            if (file.endsWith('.md')) {
+              mdFileName = `${_.camelCase(path.basename(file, path.extname(file)))}${path.extname(file)}`;
+            } else if (file.match(/.example.?(js|jsx)/)) {
+              exampleFileName = `${_.camelCase(path.basename(file, path.extname(file)))}${path.extname(file)}`;
+            }
+          });
 
-        glob.sync(`${directory}/*.?(js|jsx)`).forEach((component) => {
-          const componentContent = fse.readFileSync(component, 'utf8');
-          const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
-          if (componentMatch) {
-            componentClassName = componentMatch[2];
-          }
+        glob.sync(`${directory}/*.?(js|jsx)`)
+          .forEach((component) => {
+            const componentContent = fse.readFileSync(component, 'utf8');
+            const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
+            if (componentMatch) {
+              componentClassName = componentMatch[2];
+            }
 
-          const infos = reactDocs.parse(componentContent);
-          const infosString = JSON.stringify(infos);
-        });
+            const infos = reactDocs.parse(componentContent);
+            const infosString = JSON.stringify(infos);
+          });
 
         const componentTemplateSource = fse.readFileSync('build/generator/templates/component.hbs', 'utf8');
         const componentTemplate = handlebars.compile(componentTemplateSource);
@@ -148,15 +180,10 @@ test('Generator generates proper documentation', () => {
         };
         const renderedTemplate = componentTemplate(data);
 
-        expect(mdFileName).to.not.be.empty;
-        expect(exampleFileName).to.not.be.empty;
-        expect(componentClassName).to.not.be.empty;
-        expect(renderedTemplate).to.not.be.empty;
-        expect(renderedTemplate).to.be.a('string');
-        expect(renderedTemplate).to.have.string(`export default class ${componentClassName}`);
-        expect(renderedTemplate).to.have.string(exampleFileName);
-        expect(renderedTemplate).to.have.string(mdFileName);
-        expect(renderedTemplate).to.have.string('render() {');
+        expect(mdFileName).toBeDefined;
+        expect(exampleFileName).toBeDefined;
+        expect(componentClassName).toBeDefined;
+        expect(renderedTemplate).toBeDefined;
       }
     }
   });

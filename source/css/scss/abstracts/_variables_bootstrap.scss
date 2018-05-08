@@ -39,25 +39,25 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
+$black:  #000033 !default;
+$gray-100: lighten($black, 90%) !default;
+$gray-200: lighten($black, 80%) !default;
+$gray-300: lighten($black, 70%) !default;
+$gray-400: lighten($black, 60%) !default;
+$gray-500: lighten($black, 50%) !default;
+$gray-600: lighten($black, 40%) !default;
+$gray-700: lighten($black, 30%) !default;
+$gray-800: lighten($black, 20%) !default;
+$gray-900: lighten($black, 10%) !default;
 $white:  #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #f6f8fa !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ccc !default;
-$gray-500: #adb5bd !default;
-$gray-600: #818a91 !default;
-$gray-700: #777582 !default;
-$gray-800: #343a40 !default;
-$gray-900: #373a3c !default;
-$black:  #000 !default;
 
 $theme-colors: (
-        primary: #478AB8,
-        secondary: #2d3d4a,
-        success: #2dcc56,
-        info: #67C6EB,
-        warning: #DB6B3A,
-        danger: #CF3D30,
+        primary: #0e85f4,
+        secondary: #f8f9fa,
+        success: #40F99B,
+        info: #00DEFF,
+        warning: #FFDB16,
+        danger: #FF2731,
         light: $gray-100,
         dark: $gray-800
 ) !default;

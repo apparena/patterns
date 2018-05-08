@@ -18,9 +18,9 @@ export default class CustomControl extends React.Component {
          */
         disabled: PropTypes.bool,
         /**
-         * ID of the input field
+         * ID of the input field. This is required as the Label needs to be assigned to the input field via ID
          */
-        id: PropTypes.string,
+        id: PropTypes.string.isRequired,
         /**
          * Label for the input field
          */
@@ -31,7 +31,9 @@ export default class CustomControl extends React.Component {
         name: PropTypes.string.isRequired,
 
         /**
-         * Callback function called with the updated state
+         * Gets called when the user changes the checkbox state
+         *
+         * @param {SyntheticEvent} event The react `SyntheticEvent`
          */
         onChange: PropTypes.func,
         /**
@@ -45,12 +47,13 @@ export default class CustomControl extends React.Component {
         /**
          * the value of the input field, which will be submitted
          */
-        value: PropTypes.string,
+        value: PropTypes.string
     };
 
     static defaultProps = {
         checked: false,
         disabled: false,
+        id: false,
         type: 'checkbox',
         validationState: 'default',
         value: '',
@@ -67,18 +70,13 @@ export default class CustomControl extends React.Component {
 
     /**
      * Function which will be called every time the checkbox state changes
-     * @param event
+     * @param {SyntheticEvent} event The react `SyntheticEvent`
      */
-    toggleCheckbox = (event) => {
-        if (!this.props.disabled) {
-            this.setState({
-                checked: !this.state.checked
-            }, () => {
-                // Callback
-                this.props.onChange(this.state);
-            });
-        }
-
+    handleChange = (event) => {
+        this.setState({
+            checked: event.target.checked
+        });
+        this.props.onChange(event);
     };
 
     render() {
@@ -97,25 +95,23 @@ export default class CustomControl extends React.Component {
         }
 
         return (
-            <div className={styles['form-group']}>
-                <div
-                    className={cx(styles['custom-control'], styles[typeClassName])}
-                    onClick={this.toggleCheckbox.bind(this)}
+            <div
+                className={cx(styles['custom-control'], styles[typeClassName])}
+            >
+                <input checked={this.state.checked}
+                       className={inputStyle}
+                       disabled={this.props.disabled}
+                       id={this.props.id}
+                       name={this.props.name}
+                       type={this.props.type}
+                       value={this.props.value}
+                       onChange={this.handleChange.bind(this)}
+                />
+                <label className={labelStyle}
+                       htmlFor={this.props.id}
                 >
-                    <input checked={this.state.checked}
-                           className={inputStyle}
-                           disabled={this.props.disabled}
-                           id={this.props.id}
-                           name={this.props.name}
-                           type={this.props.type}
-                           value={this.props.value}
-                    />
-                    <label className={labelStyle}
-                           htmlFor={this.props.id}
-                    >
-                        {this.props.label}
-                    </label>
-                </div>
+                    {this.props.label}
+                </label>
             </div>
         );
     }

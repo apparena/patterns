@@ -9,6 +9,10 @@
   Atoms Forms
  ========================================================================== */
 
+input::placeholder {
+  opacity: 0.6;
+}
+
 .form-inline {
   box-shadow: initial;
   border: initial;
@@ -41,4 +45,19 @@
 
 .input-ie-fix {
   height: 3em;
+}
+
+.withIcon {
+
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  i {
+    position: absolute;
+    left: 10px;
+  }
+  input {
+    padding-left: 30px;
+  }
 }
