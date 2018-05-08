@@ -3,48 +3,84 @@ import PropTypes from 'prop-types';
 import styles from './index.scss';
 import cx from 'classnames';
 
-function Input({className, style, refCallback, defaultValue, isDisabled, ...props}) {
-    if (refCallback) {
-        props.ref = refCallback; // eslint-disable-line
-    }
-    if (isDisabled) {
-        props.disabled = isDisabled; // eslint-disable-line
-    }
-    props.value = defaultValue; // eslint-disable-line
-    props.className = cx(
-        styles['form-control'],
-        ((navigator.userAgent.indexOf("MSIE") !== -1 ) || (!!document.documentMode === true )) && styles['input-ie-fix'],
-        style && styles[`form-${style}`],
-        className
-    );
 
-    return <input {...props} />;
+export default class Input extends React.Component {
+
+    static propTypes = {
+        /**
+         * Should the input field automatically being focused on load?
+         */
+        autoFocus: PropTypes.bool,
+        /**
+         * CSS classes
+         */
+        className: PropTypes.string,
+        /**
+         * If the input field is disabled or not
+         */
+        disabled: PropTypes.bool,
+        /**
+         * Classname for an icon to be added to the beginning of the input field, e.g. 'icon icon-search'
+         */
+        icon: PropTypes.string,
+        /**
+         * ID of the input field. This is required as the Label needs to be assigned to the input field via ID
+         */
+        id: PropTypes.string,
+        /**
+         * Name of the input field
+         */
+        name: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        /**
+         * Gets called when the user changes the input field
+         *
+         * @param {SyntheticEvent} event The react `SyntheticEvent`
+         */
+        onChange: PropTypes.func.isRequired,
+        /**
+         * HTML5 placeholder
+         */
+        placeholder: PropTypes.string,
+        /**
+         * HTML tab index
+         */
+        tabIndex: PropTypes.number,
+        /**
+         * What type of input field should get rendered
+         * @see https://www.w3schools.com/html/html_form_input_types.asp HTML5 Input types
+         */
+        type: PropTypes.string,
+    };
+
+    static defaultProps = {
+        autoFocus: false,
+        disabled: false,
+        icon: false,
+        tabIndex: 0,
+        type: 'text',
+    };
+
+    render() {
+
+        const className = cx(
+            styles['form-control'],
+            ((navigator.userAgent.indexOf('MSIE') !== -1) || (!!document.documentMode === true)) && styles['input-ie-fix'],
+            this.props.className
+        );
+
+        // If an item is submitted, then
+        if (this.props.icon) {
+            return (
+                <div className={styles.withIcon}>
+                    <i className={this.props.icon}></i>
+                    <input {...this.props} className={className} />
+                </div>
+
+            );
+        }
+
+        return (
+            <input {...this.props} className={className} />
+        );
+    }
 }
-
-Input.propTypes = {
-    onChange: PropTypes.func.isRequired,
-    defaultValue: PropTypes.string,
-    placeholder: PropTypes.string,
-    onKeyUp: PropTypes.func,
-    refCallback: PropTypes.func,
-    id: PropTypes.string,
-    className: PropTypes.string,
-    name: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    type: PropTypes.string,
-    tabIndex: PropTypes.number,
-    isDisabled: PropTypes.bool,
-    autoFocus: PropTypes.bool,
-    style: PropTypes.oneOf(['dotted', 'inline'])
-};
-
-Input.defaultProps = {
-    defaultValue: '',
-    tabIndex: 0,
-    type: 'text',
-    autoFocus: false,
-    isDisabled: false
-};
-
-Input.displayName = 'Input';
-
-export default Input;

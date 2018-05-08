@@ -5,3 +5,84 @@
 @import "../../../../css/scss/abstracts/mixins";
 @import "~bootstrap/scss/close";
 @import "~bootstrap/scss/alert";
+
+
+
+@mixin alert-options($background, $border, $color) {
+  color: $color;
+  //@include gradient-bg($background);
+  background: $background;
+  border-color: $border;
+
+  hr {
+    border-top-color: darken($border, 5%);
+  }
+
+  .alert-link {
+    color: darken($color, 10%);
+  }
+}
+
+
+//
+// Base styles
+//
+.alert {
+  position: relative;
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $alert-margin-bottom;
+  border-width: $alert-border-width;
+  border-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 52px;
+  @include border-radius($alert-border-radius);
+
+  .icon {
+    position: absolute;
+    left: 15px;
+
+    img {
+      width: 24px;
+    }
+  }
+}
+
+// Headings for larger alerts
+.alert-heading {
+  // Specified to prevent conflicts of changing $headings-color
+  color: inherit;
+}
+
+// Provide class for links that match alerts
+.alert-link {
+  font-weight: $alert-link-font-weight;
+}
+
+
+// Dismissible alerts
+//
+// Expand  right padding and account for  close button's positioning.
+
+.alert-dismissible {
+  // Adjust close link position
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $alert-padding-y $alert-padding-x;
+    color: inherit;
+  }
+}
+
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing  alert.
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-options(theme-color('secondary'), theme-color-level($color), theme-color-level($color, 6));
+  }
+}

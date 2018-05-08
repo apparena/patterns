@@ -255,11 +255,13 @@ class Home extends ReactComponent {
                     <div className={styles.sidebar}>
                         {!this.state.currentStaticPage && (
                             <div className={styles.searchBox}>
-                                <FormGroup label={'Suchen'}>
+                                <FormGroup>
                                     <Input
+                                        icon="icon icon-search"
                                         id="searchInput"
+                                        placeholder="Search component..."
                                         onChange={::this.search}
-                                        defaultValue={this.state.searchQuery}
+                                        value={this.state.searchQuery}
                                     />
                                 </FormGroup>
                             </div>

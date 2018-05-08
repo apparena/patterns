@@ -20,3 +20,9 @@ test('Input accepts custom functions', () => {
     .simulate('change', { target: { value: 'My new value' } });
   expect(onChange.calledTwice).toBe(true);
 });
+
+test('Input with icon has an i tag', () => {
+  const onChange = spy();
+  const wrapper = mount(<Input icon="icon icon-search" onChange={onChange} />);
+  expect(wrapper.find('i').length).toBe(1);
+});
