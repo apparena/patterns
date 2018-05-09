@@ -1,28 +1,26 @@
-'use strict'; // eslint-disable-line
-/* eslint-disable  */
-/* eslint-disable no-var */
-
 const webpack = require('webpack');
+const util = require('util');
 const merge = require('webpack-merge');
 const config = merge(require('./env/common/config'), require('./env/dev/config'));
-console.log(config);
-
-module.exports = merge(require('./webpack.config.common'), {
-    devtool: 'source-map',
-    devServer: {
-        contentBase: config.paths.dist,
-        historyApiFallback: true,
-        hot: true,
-        headers: {
-            'Access-Control-Allow-Origin': '*'
-        }
+const webpackConfig = merge(require('./webpack.config.common'), {
+  devtool: 'source-map',
+  devServer: {
+    contentBase: config.paths.dist,
+    historyApiFallback: true,
+    hot: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
     },
-    entry: config.entry,
-    module: {},
-    output: {},
-    plugins: [
-        new webpack.NamedModulesPlugin(),
-        new webpack.HotModuleReplacementPlugin()
-    ]
+  },
+  entry: config.entry,
+  module: {},
+  output: {},
+  plugins: [
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 });
-/* eslint-enable no-var */
+
+console.log(util.inspect(webpackConfig, { depth: 3 }));
+
+module.exports = webpackConfig;

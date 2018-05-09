@@ -17,6 +17,7 @@
   "scripts": {
     "build": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.dev.js && babel ./source/patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
     "build:prod": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.prod.js && babel ./source/patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
+    "build:stats": "webpack --profile --progress --json > stats.json --config build/webpack/webpack.config.prod.js",
     "publish:generator:apparena-pattern": "npm publish source/generator-apparena-pattern",
     "start": "webpack-dev-server --progress --color --display-error-details --config build/webpack/webpack.config.dev.js --open",
     "test": "jest",
@@ -156,7 +157,8 @@
     "webpack-cli": "^2.0.14",
     "webpack-dev-server": "^3.1.3",
     "webpack-merge": "^4.1.2",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "webpack-visualizer-plugin": "^0.1.11"
   },
   "jest": {
     "setupFiles": [
