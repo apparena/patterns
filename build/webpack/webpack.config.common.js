@@ -24,21 +24,35 @@ module.exports = {
         ]
       },
       {
-        test: /\.(scss|css)$/,
-        use: [
-          config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+        oneOf: [
           {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              importLoaders: 2,
-              localIdentName: '[local]--[hash:base64:5]',
-              camelCase: true,
-              sourceMap: true
-            }
+            // Global imports without css modules
+            test: /\.global\.(scss|css)$/,
+            use: [
+              config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+              'css-loader',
+              'resolve-url-loader',
+              'sass-loader'
+            ]
           },
-          'resolve-url-loader?sourceMap',
-          'sass-loader?sourceMap'
+          {
+            // Default imports using local styles
+            test: /\.(scss|css)$/,
+            use: [
+              config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+              {
+                loader: 'css-loader',
+                options: {
+                  modules: true,
+                  importLoaders: 2,
+                  localIdentName: config.mode === 'production' ? '[hash:base64:5]' : '[local]--[hash:base64:5]',
+                  sourceMap: true
+                }
+              },
+              'resolve-url-loader?sourceMap',
+              'sass-loader?sourceMap'
+            ]
+          }
         ]
       },
       {
