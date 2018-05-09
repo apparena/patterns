@@ -1,6 +1,3 @@
-'use strict'; // eslint-disable-line
-/* eslint-disable */
-/* eslint-disable no-var */
 /**
  * Webpack configuration available to all environments
  */
@@ -8,6 +5,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Visualizer = require('webpack-visualizer-plugin');
 const config = require('./env/common/config');
 
 module.exports = {
@@ -20,8 +18,8 @@ module.exports = {
         resolve: { extensions: ['.js', '.jsx'] },
         exclude: /node_modules/,
         use: [
-          'babel-loader'
-        ]
+          'babel-loader',
+        ],
       },
       {
         oneOf: [
@@ -32,8 +30,8 @@ module.exports = {
               config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
               'css-loader',
               'resolve-url-loader',
-              'sass-loader'
-            ]
+              'sass-loader',
+            ],
           },
           {
             // Default imports using local styles
@@ -46,55 +44,54 @@ module.exports = {
                   modules: true,
                   importLoaders: 2,
                   localIdentName: config.mode === 'production' ? '[hash:base64:5]' : '[local]--[hash:base64:5]',
-                  sourceMap: true
-                }
+                  sourceMap: true,
+                },
               },
               'resolve-url-loader?sourceMap',
-              'sass-loader?sourceMap'
-            ]
-          }
-        ]
+              'sass-loader?sourceMap',
+            ],
+          },
+        ],
       },
       {
         test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg)$/,
         use: [{
           loader: 'file-loader',
           options: {
-            name: `vendor/[name].[ext]`
-          }
-        }]
+            name: 'vendor/[name].[ext]',
+          },
+        }],
       },
       {
         test: /\.html$/,
-        use: ['html-loader']
-      }
-    ]
+        use: ['html-loader'],
+      },
+    ],
   },
   optimization: {},
   output: {
     path: config.paths.dist,
     publicPath: config.publicPath,
     filename: `${config.paths.scripts}/${config.assetsFilenames}.js`,
-    chunkFilename: `${config.paths.scripts}/chunks/${config.assetsFilenames}[chunkhash].js`
+    chunkFilename: `${config.paths.scripts}/chunks/${config.assetsFilenames}[chunkhash].js`,
   },
   resolve: {
     alias: {
       'apparena-patterns-react$': path.resolve(config.paths.root, 'source/patterns/index.js'),
       'apparena-patterns-react': path.resolve(config.paths.root, 'source/'),
       Frontend: path.resolve(config.paths.root, 'source/frontend/'),
-      Utils: path.resolve(config.paths.root, 'source/patterns/react-utils/')
-    }
+      Utils: path.resolve(config.paths.root, 'source/patterns/react-utils/'),
+    },
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: './source/index.html',
-      filename: './index.html'
+      filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: `${config.paths.styles}/${config.assetsFilenames}.css`
+      filename: `${config.paths.styles}/${config.assetsFilenames}.css`,
     }),
-    new webpack.IgnorePlugin(/^props$/)
-  ]
+    new webpack.IgnorePlugin(/^props$/),
+    new Visualizer(),
+  ],
 };
-
-/* eslint-enable no-var */
