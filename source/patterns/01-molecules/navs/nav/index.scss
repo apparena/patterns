@@ -1,5 +1,20 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/utilities/flex";
+@import "../../../../css/scss/abstracts/variables";
+@import "../../../../css/scss/abstracts/mixins";
+
+// Use styles of bootstrap 4.1 nav component, but without the styles of nav-items and nav-links
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-tabs {
+  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+}
+
+.nav-vertical {
+  flex-direction: column;
+}
+
