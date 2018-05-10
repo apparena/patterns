@@ -56,7 +56,7 @@ export default class IconsExample extends React.Component {
         </Col>
       </Row>
 
-      <h3>Animations</h3>
+      <h3>Animations.</h3>
       <Row>
         <Col xs="2" key="atoms-l" className={styles.iconColumn}>
           <Icon name="atoms-l" pulse size="3x"/>
