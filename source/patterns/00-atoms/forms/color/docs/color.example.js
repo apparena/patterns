@@ -7,8 +7,18 @@ export default class FormColorExample extends React.Component {
   getInitialState() {
     return {
       color1: '#CCFFCC',
-      onChange(hex) {
-        this.state.color1 = hex;
+      displayPicker: true,
+      onChange(event) {
+        console.log(event);
+      },
+      onClick(event) {
+        console.log(event);
+      },
+      onInputChange(event) {
+        console.log(event);
+      },
+      onSubmit(event) {
+        console.log(event);
       },
     };
 }
@@ -21,10 +31,10 @@ export default class FormColorExample extends React.Component {
           name="color1"
           value={this.state.color1 || ''}
           onChange={this.state.onChange}
-          displayColorPicker={this.state.displayColorPicker1}
-          onInputChange={this.onColorChange1}
-          onSubmit={this.onColorSubmit1}
-          handleClick={this.showColorPicker1}
+          displayColorPicker={this.state.displayPicker}
+          onInputChange={this.onInputChange}
+          onSubmit={this.onSubmit}
+          handleClick={this.onClick}
         />
 
         <ColorPicker displayColorPicker={false} />

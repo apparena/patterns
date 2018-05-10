@@ -44,6 +44,7 @@ module.exports = {
                   modules: true,
                   importLoaders: 2,
                   localIdentName: config.mode === 'production' ? '[hash:base64:5]' : '[local]--[hash:base64:5]',
+                  camelCase: true,
                   sourceMap: true,
                 },
               },
