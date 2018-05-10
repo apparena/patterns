@@ -1,5 +1,29 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
+@import "../../../../css/scss/abstracts/variables";
+@import "../../../../css/scss/abstracts/mixins";
 @import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/utilities/flex";
+
+.nav-item {
+  .nav-link {
+    color: theme-color('dark');
+    opacity: 0.9;
+    border-bottom: 2px solid transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 4px 8px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.active {
+      opacity: 1;
+      font-weight: bold;
+      border-bottom: 2px solid fade-out($color: theme-color('primary'), $amount: 0.2);
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+}
