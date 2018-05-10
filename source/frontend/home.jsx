@@ -146,7 +146,7 @@ class Home extends ReactComponent {
             });
 
             return (
-                <Nav pills stacked vertical>
+                <Nav className={styles.sidebarStaticPages} vertical>
                     {items}
                 </Nav>
             );
@@ -162,7 +162,7 @@ class Home extends ReactComponent {
                     onClick={this.toggleCategory.bind(this, index)}
                     className={styles['category-nav-title']}
                 >
-                    <Nav pills stacked vertical>
+                    <Nav pills vertical>
                         {this.state.minimizedCategories[index] === true ? category.componentList.map((component, i) => {
                             return (
                                 <NavItem key={i} active={this.props.location.pathname.split('/')[1] === component}>
