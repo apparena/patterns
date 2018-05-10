@@ -6,7 +6,7 @@ import styles from './index.scss';
 import {CustomPicker as customPicker} from 'react-color';
 import {Hue, Saturation, Swatch} from 'react-color/lib/components/common';
 import ColorHelper from 'react-color/lib/helpers/color';
-import Pointer from './../pointer';
+import Pointer from './../hue-pointer';
 
 class Picker extends React.Component {
     static propTypes = {

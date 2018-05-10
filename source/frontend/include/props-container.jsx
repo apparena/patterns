@@ -65,7 +65,7 @@ export default class Props extends ReactComponent {
         return (
             <tr key={i} className={styles.prop}>
                 <th className={'key'}>
-                    {key}
+                    {key} {prop.required? <small className={styles.isRequired}><i>Required</i></small>: ''}
                 </th>
                 <td className={'type'}>
                     <code>
@@ -111,7 +111,7 @@ export default class Props extends ReactComponent {
                             </th>
                         </tr>
                         </thead>
-                        {Object.keys(infos.props).map(::this.renderProp)}
+                        {Object.keys(infos.props).sort().map(::this.renderProp)}
                     </Table>
                 </div>
             );

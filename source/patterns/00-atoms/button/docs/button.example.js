@@ -49,6 +49,9 @@ export default function ButtonExample() {
         <Col xs={3}>
           <Button type="primary" size="lg">lg</Button>
         </Col>
+        <Col xs={3}>
+          <Button type="primary" size="lg" block>block</Button>
+        </Col>
       </Row>
 
       <h3>States</h3>

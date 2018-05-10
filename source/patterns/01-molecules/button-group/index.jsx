@@ -13,7 +13,7 @@ export default class ButtonGroup extends ReactComponent {
 
     render() {
         return (
-            <div className={styles.btnGroup} role="group">
+            <div className={styles['btn-group']} role="group">
                 {this.props.children}
             </div>
         );

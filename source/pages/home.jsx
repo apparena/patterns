@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent, Container, Col, Row, Button, Icon } from '../patterns/index';
 import { Link } from 'react-router-dom';
-import styles from './home.scss';
+import styles from '../css/main.scss';
 
 export default class Home extends ReactComponent {
   render() {

@@ -1,3 +1,5 @@
+@import "../../css/scss/abstracts/variables";
+
 
 .example-root {
   background-color: #F4F5F7;
@@ -44,6 +46,7 @@
       }
     }
   }
+
   .code-block {
     animation: ezODIH 200ms ease-out;
     -webkit-animation: ezODIH 200ms ease-out;
@@ -102,6 +105,11 @@
       font-size: 80%;
     }
   }
+
+  .isRequired {
+    color: theme-color('danger');
+  }
+
   .description {
     border-radius: 3px;
     border-left: 3px solid #ccc;
