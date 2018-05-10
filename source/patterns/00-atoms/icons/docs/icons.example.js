@@ -56,6 +56,24 @@ export default class IconsExample extends React.Component {
         </Col>
       </Row>
 
+      <h3>Fixed width</h3>
+      <ul>
+        <li><Icon name="chevron-o-right" fixedWidth size="1x"/> Fixed width</li>
+        <li><Icon name="close" fixedWidth size="1x"/> Fixed width</li>
+        <li><Icon name="users" fixedWidth size="1x"/> Fixed width</li>
+        <li><Icon name="chevron-o-right" fixedWidth size="2x"/> Fixed width</li>
+        <li><Icon name="close" fixedWidth size="2x"/> Fixed width</li>
+        <li><Icon name="users" fixedWidth size="2x"/> Fixed width</li>
+        <li><Icon name="chevron-o-right" fixedWidth size="3x"/> Fixed width</li>
+        <li><Icon name="close" fixedWidth size="3x"/> Fixed width</li>
+        <li><Icon name="users" fixedWidth size="3x"/> Fixed width</li>
+      </ul>
+      <ul>
+        <li><Icon name="chevron-o-right" size="2x"/> Without fixed width</li>
+        <li><Icon name="close" size="2x"/> Without fixed width</li>
+        <li><Icon name="users" size="2x"/> Without fixed width</li>
+      </ul>
+
       <h3>Animations</h3>
       <Row>
         <Col xs="2" key="atoms-l" className={styles.iconColumn}>

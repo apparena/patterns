@@ -1,29 +1,147 @@
 @import "../../../../css/scss/abstracts/variables";
 @import "../../../../css/scss/abstracts/mixins";
-@import "~bootstrap/scss/nav";
 
-.nav-item {
+// Get styles of bootstrap 4.1 navs component. Extract only styles for nav-item and nav-link
+.nav-link {
+  display: block;
+  padding: $nav-link-padding-y $nav-link-padding-x;
+  transition: all 0.2s ease-out;
+
+  &.active {
+    opacity: 1;
+    font-weight: bold;
+    border-bottom: 2px solid fade-out($color: theme-color('primary'), $amount: 0.2);
+    margin-bottom: -2px;
+  }
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  // Disabled state lightens text
+  &.disabled {
+    color: $nav-link-disabled-color;
+  }
+}
+
+//
+// Tabs
+//
+.nav-tabs {
+
+  &.nav-item {
+    margin-bottom: -$nav-tabs-border-width;
+  }
+
   .nav-link {
-    color: theme-color('dark');
-    opacity: 0.9;
-    border-bottom: 2px solid transparent;
+    opacity: 0.6;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    padding: 4px 8px;
-    transition: all 0.2s ease-out;
+    border-bottom: 2px solid transparent;
+    @include border-top-radius($nav-tabs-border-radius);
+
+    @include hover-focus {
+      border-color: $nav-tabs-link-hover-border-color;
+    }
 
     &:hover {
       opacity: 1;
     }
 
-    &.active {
-      opacity: 1;
-      font-weight: bold;
-      border-bottom: 2px solid fade-out($color: theme-color('primary'), $amount: 0.2);
-      border-top: 0;
-      border-left: 0;
-      border-right: 0;
+    &.disabled {
+      color: $nav-link-disabled-color;
+      background-color: transparent;
+      border-color: transparent;
     }
+  }
+
+  .nav-link.active,
+  &.nav-item.show .nav-link {
+    opacity: 1;
+    font-weight: bold;
+    border-bottom: 2px solid fade-out($color: theme-color('primary'), $amount: 0.2);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  &.dropdown-menu {
+    // Make dropdown border overlap tab border
+    margin-top: -$nav-tabs-border-width;
+    // Remove the top rounded corners here since there is a hard edge above the menu
+    @include border-top-radius(0);
+  }
+}
+
+
+//
+// Vertical
+//
+
+.nav-vertical {
+  .nav-link {
+    opacity: 0.6;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 2px solid transparent;
+    @include border-right-radius($nav-tabs-border-radius);
+
+    @include hover-focus {
+      border-color: $nav-tabs-link-hover-border-color;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .nav-link.active,
+  &.nav-item.show .nav-link {
+    opacity: 1;
+    font-weight: bold;
+    border-left: 2px solid fade-out($color: theme-color('primary'), $amount: 0.2);
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -2px;
+    background-color: $nav-tabs-link-active-bg;
+  }
+}
+
+//
+// Pills
+//
+
+.nav-pills {
+  .nav-link {
+    @include border-radius($nav-pills-border-radius);
+  }
+
+  .nav-link.active,
+  &.show > .nav-link {
+    color: $nav-pills-link-active-color;
+    background-color: $nav-pills-link-active-bg;
+  }
+}
+
+
+//
+// Justified variants
+//
+
+.nav-fill {
+  &.nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+.nav-justified {
+  &.nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
   }
 }
