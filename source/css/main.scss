@@ -11,46 +11,6 @@
 @import "scss/abstracts/mixins";
 
 /*------------------------------------*\
-    Vendor
-\*------------------------------------*/
-//@import "~bootstrap/scss/variables";
-//@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/print";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/images";
-@import "~bootstrap/scss/code";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/tables";
-@import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/transitions";
-@import "~bootstrap/scss/dropdown";
-@import "~bootstrap/scss/button-group";
-@import "~bootstrap/scss/input-group";
-@import "~bootstrap/scss/custom-forms";
-@import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/navbar";
-@import "~bootstrap/scss/card";
-@import "~bootstrap/scss/breadcrumb";
-@import "~bootstrap/scss/pagination";
-@import "~bootstrap/scss/badge";
-@import "~bootstrap/scss/jumbotron";
-@import "~bootstrap/scss/alert";
-@import "~bootstrap/scss/progress";
-@import "~bootstrap/scss/media";
-@import "~bootstrap/scss/list-group";
-@import "~bootstrap/scss/close";
-@import "~bootstrap/scss/modal";
-@import "~bootstrap/scss/tooltip";
-@import "~bootstrap/scss/popover";
-@import "~bootstrap/scss/carousel";
-@import "~bootstrap/scss/utilities";
-
-
-/*------------------------------------*\
     Patterns
 \*------------------------------------*/
 
@@ -63,25 +23,19 @@
 @import "../patterns/01-molecules/breadcrumb/index";
 @import "../patterns/01-molecules/card/index";
 @import "../patterns/01-molecules/dropdown/index";
-@import "../patterns/01-molecules/forms/form-group";
+@import "../patterns/01-molecules/forms/form-group/index";
 @import "../patterns/01-molecules/forms/select";
 @import "../patterns/01-molecules/input-group/index";
 @import "../patterns/01-molecules/modal/index";
 @import "../patterns/01-molecules/navbar/index";
-@import "../patterns/01-molecules/navbar/navbar-form";
 @import "../patterns/01-molecules/messages/notification/index";
 @import "../patterns/01-molecules/messages/banner-message/index";
-@import "../patterns/01-molecules/page-header/page-header";
 @import "../patterns/01-molecules/progress-tracker/index";
-@import "../patterns/01-molecules/website/usp";
 
 // Organisms
 @import "../patterns/02-organisms/auth/index";
 @import "../patterns/02-organisms/navigation/nav-secondary/index";
 @import "../patterns/02-organisms/navigation/nav-sidebar";
-@import "../patterns/02-organisms/slider/references-slider";
-@import "../patterns/02-organisms/tabs/vertical-tabs";
-
 
 /*------------------------------------*\
     $ABSTRACTS
@@ -106,3 +60,43 @@
 @import "scss/components/filter-bar";
 @import "scss/components/header";
 @import "scss/components/nav";
+
+
+/*------------------------------------*\
+    Vendor
+\*------------------------------------*/
+//@import "~bootstrap/scss/variables";
+//@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+//@import "~bootstrap/scss/print";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+//@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+//@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+//@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+//@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+//@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
