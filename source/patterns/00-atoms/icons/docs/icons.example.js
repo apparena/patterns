@@ -81,7 +81,7 @@ export default class IconsExample extends React.Component {
               <Col xs="2" key={key} className={styles.iconColumn}>
                 <Icon name={key} size="2x"/>
                 <p>
-                  <code>&lt;Icon name={key} /&gt;</code>
+                  <code>&lt;Icon name="{key}" /&gt;</code>
                 </p>
               </Col>
             );
