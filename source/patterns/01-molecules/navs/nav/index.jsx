@@ -49,7 +49,6 @@ export default class Nav extends ReactComponent {
             this.props.tabs && styles['nav-tabs'],
             this.props.pills && styles['nav-pills'],
             this.props.stacked && styles['nav-stacked'],
-            this.props.stacked && styles['nav-stacked'],
             this.props.vertical && styles['flex-column'],
             this.props.className
         );
