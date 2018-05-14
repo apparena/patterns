@@ -2,6 +2,11 @@
 @import "../../../../css/scss/abstracts/mixins";
 
 // Get styles of bootstrap 4.1 navs component. Extract only styles for nav-item and nav-link
+
+.nav-item {
+  list-style: none;
+}
+
 .nav-link {
   display: block;
   padding: $nav-link-padding-y $nav-link-padding-x;
@@ -10,8 +15,8 @@
   &.active {
     opacity: 1;
     font-weight: bold;
-    border-bottom: 2px solid fade-out($color: theme-color('primary'), $amount: 0.2);
-    margin-bottom: -2px;
+    border-bottom: 4px solid fade-out($color: theme-color('primary'), $amount: 0.2);
+    margin-bottom: -4px;
   }
 
   @include hover-focus {
