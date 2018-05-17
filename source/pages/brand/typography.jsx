@@ -1,5 +1,7 @@
 import React from 'react';
-import { Card } from 'apparena-patterns-react';
+import { Button, Card } from 'apparena-patterns-react';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { tomorrow } from 'react-syntax-highlighter/styles/prism';
 
 const title = 'Typography';
 
@@ -31,20 +33,38 @@ function render() {
         <h6>h6. Roboto heading</h6>
 
         <section>
+          <h2>Download</h2>
+
+          <p>
+            <Button
+              href="https://s3.app-arena.com/brand/typography/RobotoTTF.zip"
+            >
+              Download TTF
+            </Button>
+          </p>
+
           <h2>Embed Font</h2>
           <p> To embed your selected fonts into a webpage,
             copy this code into the <code>&lt;head&gt;</code> of your HTML document.
           </p>
-          <code>
-            &lt;href="https://fonts.googleapis.com/css?family=Roboto"
-            rel="stylesheet"&gt;
-          </code>
+          <SyntaxHighlighter
+            language="html"
+            style={tomorrow}
+          >
+            {`<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">`}
+          </SyntaxHighlighter>
         </section>
         <section>
           <h2>Specify in CSS</h2>
           <p> Use the following CSS rules to specify these families: </p>
+          <SyntaxHighlighter
+            language="css"
+            style={tomorrow}
+          >
+            {`font-family: 'Roboto', sans-serif;`}
+          </SyntaxHighlighter>
           <code>
-            font-family: 'Roboto', sans-serif;
+
           </code>
         </section>
 
@@ -55,5 +75,5 @@ function render() {
 
 export default {
   title,
-  render
+  render,
 };
