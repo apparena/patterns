@@ -13,7 +13,10 @@ const ALERT_TYPES = [
 
 export default class Alert extends ReactComponent {
   static propTypes = {
-    children: PropTypes.element.isRequired,
+    children: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.element,
+    ]).isRequired,
     /**
      * Type of alert
      */
