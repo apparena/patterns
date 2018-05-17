@@ -13,6 +13,7 @@
   transition: all 0.2s ease-out;
 
   &.active {
+    color: $body-color;
     opacity: 1;
     font-weight: bold;
     border-bottom: 2px solid fade-out($color: theme-color('primary'), $amount: 0.2);
