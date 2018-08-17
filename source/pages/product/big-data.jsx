@@ -150,7 +150,30 @@ This repo includes all serverless configuration for the Big-Data Cluster hosted 
                     </Col>
                 </Row>
             </div>
-        </Card>
+        </Card>,
+      <Card key={'4'}>
+        <div type="card-header">
+          Data enrichment service
+        </div>
+        <div type="card-body">
+          <Row>
+            <Col xs="3">
+              <img alt="thumbnail" src="https://user-images.githubusercontent.com/2752551/30404912-d5781a00-989d-11e7-8d25-5ebca177326a.png" className={styles.imgThumbnail}/>
+            </Col>
+            <Col xs="9">
+              <p>
+                A serverless boilerplate to create a data enrichment service.
+              </p>
+              <Button type="outline-primary"
+                      href="https://bitbucket.org/apparena/enrichment-service-boilerplate"
+                      className={styles.readMoreButton}
+              >
+                View on Github
+              </Button>
+            </Col>
+          </Row>
+        </div>
+      </Card>
     ];
 }
 
