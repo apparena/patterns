@@ -1,2 +1,3 @@
 build/test/coverage
 source/frontend/components
+source/generator-apparena-pattern/generators/app/templates

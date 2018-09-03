@@ -11,31 +11,11 @@ import Row from '../../00-atoms/grid/row/index';
 import Button from '../../00-atoms/button';
 
 export default class PriceTable extends ReactComponent {
-    static propTypes = {
-        /**
-         * Set the App-Manager template ID
-         */
-        templateId: PropTypes.string,
-        /**
-         * Set the App-Manager product ID
-         */
-        productId: PropTypes.string,
-        /**
-         * Define the object which determines which plans are shown.
-         */
-        plans: PropTypes.object.isRequired,
-        /**
-         * Define an onClick handler as either a custom function or an URL
-         */
-        onClick: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.func
-        ]).isRequired
-    };
+
 
     getInitState() {
-        this.handleCheckbox = ::this.onCheckbox;
-        this.handleCustomPackageButton = ::this.onCustomPackageButton;
+        this.handleCheckbox = this.onCheckbox.bind(this);
+        this.handleCustomPackageButton = this.onCustomPackageButton.bind(this);
 
         return {
             showPlans: 'single',
@@ -155,3 +135,25 @@ export default class PriceTable extends ReactComponent {
         );
     }
 }
+
+PriceTable.propTypes = {
+  /**
+   * Set the App-Manager template ID
+   */
+  templateId: PropTypes.string,
+  /**
+   * Set the App-Manager product ID
+   */
+  productId: PropTypes.string,
+  /**
+   * Define the object which determines which plans are shown.
+   */
+  plans: PropTypes.object.isRequired,
+  /**
+   * Define an onClick handler as either a custom function or an URL
+   */
+  onClick: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func
+  ]).isRequired
+};

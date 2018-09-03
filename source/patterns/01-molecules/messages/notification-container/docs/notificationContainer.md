@@ -151,11 +151,11 @@ deleteEntityModal(entity, method = 'addModal', e) {
             state={(this.state.loading) ? 'loading' : 'default'}
             onClick={this.deleteEntity.bind(this, entity)}
           >
-            {this.t('delete')}
+            {ReactComponent.t('delete')}
           </Button>
         </ModalFooter>
       </Modal>
     ));
   }
-... 
+...
 ```

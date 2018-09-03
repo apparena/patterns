@@ -6,47 +6,12 @@ import GeminiScrollbar from 'react-gemini-scrollbar';
 import styles from './scrollable.scss';
 
 export default class Scrollable extends ReactComponent {
-    static propTypes = {
-        /**
-         * Children show inside the scrollbox
-         */
-        children: PropTypes.node,
-        /**
-         * Show scrollbars upon hovering
-         */
-        autoshow: PropTypes.bool,
-        /**
-         * Addionital Classname
-         */
-        className: PropTypes.string,
-        /**
-         * Enable Lazy Loading
-         */
-        lazyLoad: PropTypes.bool,
-        /**
-         * Function called when the load more trigger is called
-         */
-        loadMore: PropTypes.func,
-        /**
-         * Position when the loadMore Function should be called
-         */
-        loadMoreTrigger: PropTypes.number,
-        /**
-         * Function called on scroll
-         */
-        onScroll: PropTypes.func
-    };
 
-    static defaultProps = {
-        autoshow: true,
-        lazyLoad: false,
-        loadMoreTrigger: 200
-    };
 
     componentDidMount() {
         const {lazyLoad, onScroll} = this.props;
         if (lazyLoad) {
-            this.refs.gemini.refs['scroll-view'].addEventListener('scroll', ::this.onScroll);
+            this.refs.gemini.refs['scroll-view'].addEventListener('scroll', this.onScroll.bind(this));
         }
         if (onScroll) {
             this.refs.gemini.refs['scroll-view'].addEventListener('scroll', onScroll);
@@ -56,7 +21,7 @@ export default class Scrollable extends ReactComponent {
     componentWillUnmount() {
         const {lazyLoad, onScroll} = this.props;
         if (lazyLoad && this.refs.gemini.refs['scroll-view']) {
-            this.refs.gemini.refs['scroll-view'].removeEventListener('scroll', ::this.onScroll);
+            this.refs.gemini.refs['scroll-view'].removeEventListener('scroll', this.onScroll.bind(this));
         }
         if (onScroll && this.refs.gemini.refs['scroll-view']) {
             this.refs.gemini.refs['scroll-view'].removeEventListener('scroll', onScroll);
@@ -89,3 +54,40 @@ export default class Scrollable extends ReactComponent {
         );
     }
 }
+
+Scrollable.propTypes = {
+  /**
+   * Children show inside the scrollbox
+   */
+  children: PropTypes.node,
+  /**
+   * Show scrollbars upon hovering
+   */
+  autoshow: PropTypes.bool,
+  /**
+   * Addionital Classname
+   */
+  className: PropTypes.string,
+  /**
+   * Enable Lazy Loading
+   */
+  lazyLoad: PropTypes.bool,
+  /**
+   * Function called when the load more trigger is called
+   */
+  loadMore: PropTypes.func,
+  /**
+   * Position when the loadMore Function should be called
+   */
+  loadMoreTrigger: PropTypes.number,
+  /**
+   * Function called on scroll
+   */
+  onScroll: PropTypes.func
+};
+
+Scrollable.defaultProps = {
+  autoshow: true,
+  lazyLoad: false,
+  loadMoreTrigger: 200
+};

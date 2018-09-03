@@ -14,12 +14,17 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        resolve: { extensions: ['.js', '.jsx'] },
-        exclude: /node_modules/,
-        use: [
-          'babel-loader',
-        ],
+        test: /\.([tj])s(x)?$/,
+        resolve: { extensions: ['.ts', '.tsx', '.js', '.jsx'] },
+        exclude: [/node_modules/, '/source/generator-apparena-pattern/generators/app/templates'],
+        use: {
+          loader: 'awesome-typescript-loader',
+        },
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader',
       },
       {
         oneOf: [
@@ -69,7 +74,6 @@ module.exports = {
       },
     ],
   },
-  optimization: {},
   output: {
     path: config.paths.dist,
     publicPath: config.publicPath,

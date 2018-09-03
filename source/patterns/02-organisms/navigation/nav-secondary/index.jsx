@@ -5,12 +5,7 @@ import cx from 'classnames';
 import styles from './index.scss';
 
 export default class SecondNav extends ReactComponent {
-    static propTypes = {
-        /**
-         * Contents of the nav
-         */
-        children: PropTypes.node.isRequired
-    };
+
 
     render() {
         const {children} = this.props;
@@ -21,3 +16,10 @@ export default class SecondNav extends ReactComponent {
         );
     }
 }
+
+SecondNav.propTypes = {
+  /**
+   * Contents of the nav
+   */
+  children: PropTypes.node.isRequired
+};

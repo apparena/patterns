@@ -23,7 +23,10 @@ const POSITIONING = [
 ];
 
 export default class Tooltip extends ReactComponent {
-    static propTypes = {
+
+
+    getInitState() {
+      this.propTypes = {
         /**
          * Defines the element which should get the tooltip
          */
@@ -48,14 +51,12 @@ export default class Tooltip extends ReactComponent {
          * Set the HTML zIndex property
          */
         zIndex: PropTypes.number
-    };
+      };
 
-    static defaultProps = {
+      this.defaultProps = {
         transition: 'fadeIn',
         positioning: 'top'
-    };
-
-    getInitState() {
+      };
         return {
             showing: false
         };
@@ -74,7 +75,7 @@ export default class Tooltip extends ReactComponent {
     }
 
     onMouseEnter() {
-        this.timeout = setTimeout(::this.showTooltip, 0);
+        this.timeout = setTimeout(this.showTooltip.bind(this), 0);
     }
 
     onMouseLeave() {
@@ -111,8 +112,8 @@ export default class Tooltip extends ReactComponent {
         return (
             <div
                 className={className || styles.root}
-                onMouseEnter={::this.onMouseEnter}
-                onMouseLeave={::this.onMouseLeave}
+                onMouseEnter={this.onMouseEnter.bind(this)}
+                onMouseLeave={this.onMouseLeave.bind(this)}
                 ref={(c) => {
                     this._handler = c;
                 }}

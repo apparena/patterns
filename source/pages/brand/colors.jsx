@@ -121,7 +121,7 @@ class render extends ReactComponent {
                                   ['#10e28b', '#40E8A2', '#70EEB9', '#9FF3D1', '#CFF9E8']
                                 ]}
                                 triangle={'hide'}
-                                onChange={::this.handleSwatchChange}
+                                onChange={this.handleSwatchChange.bind(this)}
                 />
               </Col>
               <Col xs="4">

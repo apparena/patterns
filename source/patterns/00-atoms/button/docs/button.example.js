@@ -8,31 +8,31 @@ export default function ButtonExample() {
       <h3>Types</h3>
 
       <Row>
-        <Col xs={3}>
+        <Col xs={'2'}>
           <Button type="primary">primary</Button>
           <Button type="outline-primary">outline-primary</Button>
         </Col>
-        <Col xs={3}>
+        <Col xs={'2'}>
           <Button type="secondary">secondary</Button>
           <Button type="outline-secondary">outline-secondary</Button>
         </Col>
-        <Col xs={3}>
+        <Col xs={'2'}>
           <Button type="success">success</Button>
           <Button type="outline-success">outline-success</Button>
         </Col>
-        <Col xs={3}>
+        <Col xs={'2'}>
           <Button type="info">info</Button>
           <Button type="outline-info">outline-info</Button>
         </Col>
-        <Col xs={3}>
+        <Col xs={'2'}>
           <Button type="warning">warning</Button>
           <Button type="outline-warning">outline-warning</Button>
         </Col>
-        <Col xs={3}>
+        <Col xs={'2'}>
           <Button type="danger">danger</Button>
           <Button type="outline-danger">outline-danger</Button>
         </Col>
-        <Col xs={3}>
+        <Col xs={'1'}>
           <Button type="link">link</Button>
         </Col>
       </Row>

@@ -5,7 +5,8 @@ import cx from 'classnames';
 import styles from './component.scss';
 
 export default class <%= patternName %> extends ReactComponent {
-    render() {
+    render()
+{
         return (
             <div>
 

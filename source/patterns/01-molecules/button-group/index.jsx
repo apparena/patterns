@@ -4,18 +4,18 @@ import ReactComponent from '../../react-utils/component/index';
 import styles from './index.scss';
 
 export default class ButtonGroup extends ReactComponent {
-    static propTypes = {
-        /**
-         * Button(s) that should be rendered inside of the group
-         */
-        children: PropTypes.node.isRequired
-    };
-
-    render() {
-        return (
-            <div className={styles['btn-group']} role="group">
-                {this.props.children}
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className={styles['btn-group']} role="group">
+        {this.props.children}
+      </div>
+    );
+  }
 }
+
+ButtonGroup.propTypes = {
+  /**
+   * Button(s) that should be rendered inside of the group
+   */
+  children: PropTypes.node.isRequired,
+};
