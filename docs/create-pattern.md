@@ -1,9 +1,16 @@
 # Create pattern
 
+## Requirements
+
+1. [Yeoman globally installed](http://yeoman.io/learning/index.html)
+2. Run `yarn` in your project root folder
+
+
+## Getting started
 We provide a yeoman generator that requires 2 clicks to create a new
 pattern.
 
-1. Install the generator: `npm install -g generator-apparena-pattern`
+1. Install the generator: `npm install -g generator-apparena-pattern` or  `yarn global add generator-apparena-pattern`
 2. `cd` into the App-Arena patterns root directory (it contains a `.yo-rc.json` file)
 3. Run the generator: `yo apparena-pattern`
 4. Follow the onscreen prompts
