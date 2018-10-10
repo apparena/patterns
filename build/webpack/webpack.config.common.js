@@ -44,12 +44,13 @@ module.exports = {
             use: [
               config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
               {
-                loader: 'css-loader',
+                loader: 'typings-for-css-modules-loader',
                 options: {
-                  modules: true,
+                  camelCase: true,
                   importLoaders: 2,
                   localIdentName: config.mode === 'production' ? '[hash:base64:5]' : '[local]--[hash:base64:5]',
-                  camelCase: true,
+                  modules: true,
+                  namedExport: false,
                   sourceMap: true,
                 },
               },
