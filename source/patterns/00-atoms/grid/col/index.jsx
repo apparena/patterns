@@ -193,5 +193,5 @@ Col.propTypes = {
 };
 
 Col.defaultProps = {
-  xs: 12,
+  xs: '12',
 };
