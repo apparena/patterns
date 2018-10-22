@@ -191,3 +191,7 @@ Col.propTypes = {
    */
   xlOrder: PropTypes.number,
 };
+
+Col.defaultProps = {
+  xs: 12,
+};
