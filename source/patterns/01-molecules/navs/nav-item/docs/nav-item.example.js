@@ -2,14 +2,16 @@ import React from 'react';
 import { NavItem } from 'apparena-patterns-react';
 
 export default class NavItemExample extends React.Component {
-
-  state = {
-    activeItem: 'nav1'
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeItem: 'nav1',
+    };
+  }
 
   handleChange(e) {
     this.setState({
-      activeItem: e.target.id
+      activeItem: e.target.id,
     });
   }
 
@@ -25,19 +27,23 @@ export default class NavItemExample extends React.Component {
             <a id="nav2" onClick={this.handleChange.bind(this)}>Item 2</a>
           </NavItem>
           <NavItem tabs active={this.state.activeItem === 'nav3'}>
-            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              1</a>
+            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              1
+            </a>
           </NavItem>
           <NavItem tabs active={this.state.activeItem === 'nav4'}>
-            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              2</a>
+            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              2
+            </a>
           </NavItem>
           <NavItem tabs active={this.state.activeItem === 'nav5'} disabled>
             <a id="nav5" onClick={this.handleChange.bind(this)}>Disabled item</a>
           </NavItem>
         </div>
 
-        <hr/>
+        <hr />
 
         <h3>Vertical</h3>
         <div>
@@ -48,19 +54,23 @@ export default class NavItemExample extends React.Component {
             <a id="nav2" onClick={this.handleChange.bind(this)}>Item 2</a>
           </NavItem>
           <NavItem vertical active={this.state.activeItem === 'nav3'}>
-            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              1</a>
+            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              1
+            </a>
           </NavItem>
           <NavItem vertical active={this.state.activeItem === 'nav4'}>
-            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              2</a>
+            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              2
+            </a>
           </NavItem>
           <NavItem vertical active={this.state.activeItem === 'nav5'} disabled>
             <a id="nav5" onClick={this.handleChange.bind(this)}>Disabled item</a>
           </NavItem>
         </div>
 
-        <hr/>
+        <hr />
 
         <h3>Justified</h3>
         <div>
@@ -71,19 +81,23 @@ export default class NavItemExample extends React.Component {
             <a id="nav2" onClick={this.handleChange.bind(this)}>Item 2</a>
           </NavItem>
           <NavItem justified active={this.state.activeItem === 'nav3'}>
-            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              1</a>
+            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              1
+            </a>
           </NavItem>
           <NavItem justified active={this.state.activeItem === 'nav4'}>
-            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              2</a>
+            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              2
+            </a>
           </NavItem>
           <NavItem justified active={this.state.activeItem === 'nav5'} disabled>
             <a id="nav5" onClick={this.handleChange.bind(this)}>Disabled item</a>
           </NavItem>
         </div>
 
-        <hr/>
+        <hr />
 
         <h3>Inline</h3>
         <div>
@@ -94,19 +108,23 @@ export default class NavItemExample extends React.Component {
             <a id="nav2" onClick={this.handleChange.bind(this)}>Item 2</a>
           </NavItem>
           <NavItem active={this.state.activeItem === 'nav3'}>
-            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              1</a>
+            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              1
+            </a>
           </NavItem>
           <NavItem active={this.state.activeItem === 'nav4'}>
-            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              2</a>
+            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              2
+            </a>
           </NavItem>
           <NavItem active={this.state.activeItem === 'nav5'} disabled>
             <a id="nav5" onClick={this.handleChange.bind(this)}>Disabled item</a>
           </NavItem>
         </div>
 
-        <hr/>
+        <hr />
 
         <h3>Pills vertical</h3>
         <div>
@@ -117,12 +135,16 @@ export default class NavItemExample extends React.Component {
             <a id="nav2" onClick={this.handleChange.bind(this)}>Item 2</a>
           </NavItem>
           <NavItem pills active={this.state.activeItem === 'nav3'}>
-            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              1</a>
+            <a id="nav3" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              1
+            </a>
           </NavItem>
           <NavItem pills active={this.state.activeItem === 'nav4'}>
-            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>Link
-              2</a>
+            <a id="nav4" href="javascript:void(false);" onClick={this.handleChange.bind(this)}>
+Link
+              2
+            </a>
           </NavItem>
           <NavItem pills active={this.state.activeItem === 'nav5'} disabled>
             <a id="nav5" onClick={this.handleChange.bind(this)}>Disabled item</a>
@@ -131,5 +153,4 @@ export default class NavItemExample extends React.Component {
       </div>
     );
   }
-
 }

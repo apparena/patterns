@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
 import Home from './home';
@@ -12,4 +12,3 @@ const HotRouter = () => (
 );
 
 export default hot(module)(HotRouter);
-

@@ -166,7 +166,7 @@ class Home extends ReactComponent {
                         {this.state.minimizedCategories[index] === true ? category.componentList.map((component, i) => {
                             return (
                                 <NavItem key={i} active={this.props.location.pathname.split('/')[1] === component}>
-                                    <Link to={`/ui-patterns/${component}`} onClick={::this.scrollToTop}>{component}</Link>
+                                    <Link to={`/ui-patterns/${component}`} onClick={this.scrollToTop.bind(this)}>{component}</Link>
                                 </NavItem>
                             );
                         }) : []}
@@ -237,7 +237,7 @@ class Home extends ReactComponent {
                 // seems to be a bug where the URL will become 'example/example/example-item'
                 return (
                     <NavItem key={i}>
-                        <Link to={`/${page.route}`} onClick={::this.scrollToTop}>{page.title}</Link>
+                        <Link to={`/${page.route}`} onClick={this.scrollToTop.bind(this)}>{page.title}</Link>
                     </NavItem>
                 );
             } else {
@@ -260,13 +260,13 @@ class Home extends ReactComponent {
                                         icon="icon icon-search"
                                         id="searchInput"
                                         placeholder="Search component..."
-                                        onChange={::this.search}
+                                        onChange={this.search.bind(this)}
                                         defaultValue={this.state.searchQuery}
                                     />
                                 </FormGroup>
                             </div>
                         )}
-                        {this.state.currentStaticPage === false && this.state.categories.map(::this.renderCategories)}
+                        {this.state.currentStaticPage === false && this.state.categories.map(this.renderCategories.bind(this))}
                         {this.state.currentStaticPage !== false && this.renderStaticPageSidebar()}
                     </div>
                 </Col>

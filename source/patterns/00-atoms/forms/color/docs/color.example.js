@@ -2,26 +2,27 @@ import React from 'react';
 import { ColorPicker } from 'apparena-patterns-react';
 
 export default class FormColorExample extends React.Component {
+  constructor(props) {
+    super(props);
 
-
-  getInitialState() {
-    return {
+    this.state = {
       color1: '#CCFFCC',
       displayPicker: true,
-      onChange(event) {
-        console.log(event);
-      },
-      onClick(event) {
-        console.log(event);
-      },
-      onInputChange(event) {
-        console.log(event);
-      },
-      onSubmit(event) {
-        console.log(event);
-      },
     };
-}
+  }
+
+  onChange(event) {
+    console.log(event);
+  }
+  onClick(event) {
+    console.log(event);
+  }
+  onInputChange(event) {
+    console.log(event);
+  }
+  onSubmit(event) {
+    console.log(event);
+  }
 
 
   render() {
@@ -30,7 +31,7 @@ export default class FormColorExample extends React.Component {
         <ColorPicker
           name="color1"
           value={this.state.color1 || ''}
-          onChange={this.state.onChange}
+          onChange={this.onChange}
           displayColorPicker={this.state.displayPicker}
           onInputChange={this.onInputChange}
           onSubmit={this.onSubmit}

@@ -12,7 +12,7 @@ export default class Example extends ReactComponent {
   };
 
   getInitState() {
-    this.toggleCodeSnippet = ::this.toggleCodeSnippet;
+    this.toggleCodeSnippet = this.toggleCodeSnippet.bind(this);
     return {
       showCode: false
     };
@@ -29,9 +29,9 @@ export default class Example extends ReactComponent {
     const { children, code } = this.props;
     return (
       <div className={styles['example-root']}>
-        <div title="Show Code Snippet" className={styles.header} onClick={::this.toggleCodeSnippet}>
+        <div title="Show Code Snippet" className={styles.header} onClick={this.toggleCodeSnippet.bind(this)}>
           <h4 className={styles.title}>Example</h4>
-          <div className={styles.toggle} onClick={::this.toggleCodeSnippet}>
+          <div className={styles.toggle} onClick={this.toggleCodeSnippet.bind(this)}>
             Show Code
           </div>
         </div>

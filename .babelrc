@@ -1,15 +1,11 @@
 {
   "presets": [
-    ["env"],
-    "stage-1",
-    "react"
+    "@babel/preset-react",
+    "@babel/preset-env",
+    "@babel/preset-typescript"
   ],
   "plugins": [
-    "syntax-trailing-function-commas",
-    "transform-class-properties",
-    "transform-object-rest-spread",
-    "transform-decorators-legacy",
-    "transform-function-bind",
-    "transform-runtime"
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread"
   ]
 }

@@ -14,12 +14,17 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        resolve: { extensions: ['.js', '.jsx'] },
-        exclude: /node_modules/,
-        use: [
-          'babel-loader',
-        ],
+        test: /\.([tj])s(x)?$/,
+        resolve: { extensions: ['.ts', '.tsx', '.js', '.jsx'] },
+        exclude: [/node_modules/, '/source/generator-apparena-pattern/generators/app/templates'],
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader',
       },
       {
         oneOf: [
@@ -39,12 +44,13 @@ module.exports = {
             use: [
               config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
               {
-                loader: 'css-loader',
+                loader: 'typings-for-css-modules-loader',
                 options: {
-                  modules: true,
+                  camelCase: true,
                   importLoaders: 2,
                   localIdentName: config.mode === 'production' ? '[hash:base64:5]' : '[local]--[hash:base64:5]',
-                  camelCase: true,
+                  modules: true,
+                  namedExport: false,
                   sourceMap: true,
                 },
               },
@@ -69,7 +75,6 @@ module.exports = {
       },
     ],
   },
-  optimization: {},
   output: {
     path: config.paths.dist,
     publicPath: config.publicPath,

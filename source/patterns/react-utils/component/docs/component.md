@@ -7,7 +7,7 @@ export default class MyAwesomeClass extends ReactComponent { }
 
 **Translation:**  
 Use for translations, just pass the name of the translation inside of your translations.js.  
-To initialize your translations use  
+To initialize your translations use
 ```import i18n from "i18n-js";
   import translations from "../to/your/translations";
   //Setting up i18n
@@ -17,7 +17,7 @@ To initialize your translations use
   i18n.translations = translations;`
 ```
 ```
-{this.t('my.translation')} //Call inside your xml-component
+{ReactComponent.t('my.translation')} //Call inside your xml-component
 ```
 
 **InitialState:**  

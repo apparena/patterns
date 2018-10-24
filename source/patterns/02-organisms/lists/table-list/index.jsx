@@ -5,32 +5,7 @@ import cx from 'classnames';
 import styles from './index.scss';
 
 export default class TableList extends ReactComponent {
-    static propTypes = {
-        /**
-         * The table(s) that should be grouped together
-         */
-        className: PropTypes.string,
-        /**
-         * Deprecated
-         */
-        scrollable: PropTypes.bool,
-        /**
-         * Deprecated
-         */
-        scrollableHeight: PropTypes.number,
-        /**
-         * Should rows be highlighted when hovering over them?
-         */
-        hover: PropTypes.bool,
-        /**
-         * Highlight odd rows?
-         */
-        striped: PropTypes.bool,
-        /**
-         * Draw borders around table cells?
-         */
-        bordered: PropTypes.bool
-    };
+
 
 
     render() {
@@ -54,3 +29,30 @@ export default class TableList extends ReactComponent {
         );
     }
 }
+
+TableList.propTypes = {
+  /**
+   * The table(s) that should be grouped together
+   */
+  className: PropTypes.string,
+  /**
+   * Deprecated
+   */
+  scrollable: PropTypes.bool,
+  /**
+   * Deprecated
+   */
+  scrollableHeight: PropTypes.number,
+  /**
+   * Should rows be highlighted when hovering over them?
+   */
+  hover: PropTypes.bool,
+  /**
+   * Highlight odd rows?
+   */
+  striped: PropTypes.bool,
+  /**
+   * Draw borders around table cells?
+   */
+  bordered: PropTypes.bool
+};

@@ -6,15 +6,7 @@ import Card from '../../01-molecules/card';
 import Button from '../../00-atoms/button';
 
 export default class Auth extends ReactComponent {
-    static propTypes = {
-        contextInfoTitle: PropTypes.string,
-        contextInfoText: PropTypes.string,
-        loginHeader: PropTypes.string.isRequired,
-        children: PropTypes.node.isRequired,
-        authButtonText: PropTypes.string.isRequired,
-        logoURI: PropTypes.string.isRequired,
-        onAuthClick: PropTypes.func.isRequired
-    };
+
 
     renderContextInfo() {
         if (this.props.contextInfoText && this.props.contextInfoTitle)
@@ -54,3 +46,13 @@ export default class Auth extends ReactComponent {
         );
     }
 }
+
+Auth.propTypes = {
+  contextInfoTitle: PropTypes.string,
+  contextInfoText: PropTypes.string,
+  loginHeader: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  authButtonText: PropTypes.string.isRequired,
+  logoURI: PropTypes.string.isRequired,
+  onAuthClick: PropTypes.func.isRequired
+};

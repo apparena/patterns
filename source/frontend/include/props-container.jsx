@@ -111,7 +111,7 @@ export default class Props extends ReactComponent {
                             </th>
                         </tr>
                         </thead>
-                        {Object.keys(infos.props).sort().map(::this.renderProp)}
+                        {Object.keys(infos.props).sort().map(this.renderProp.bind(this))}
                     </Table>
                 </div>
             );

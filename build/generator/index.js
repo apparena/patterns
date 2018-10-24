@@ -45,16 +45,16 @@ function generateComponentDocumentation(directory) {
     .forEach((file) => {
       if (file.endsWith('.md')) {
         mdFileName = `${path.basename(file, path.extname(file))}${path.extname(file)}`;
-      } else if (file.match(/.spec.?(js|jsx)/)) {
+      } else if (file.match(/.spec.?(js|jsx|ts|tsc)/)) {
         // TODO: Figure out testing
 
-      } else if (file.match(/.example.?(js|jsx)/)) {
+      } else if (file.match(/.example.?(js|jsx|ts|tsx)/)) {
         exampleFileName = `${path.basename(file, path.extname(file))}${path.extname(file)}`;
       }
     });
 
   // Get component files
-  glob.sync(`${directory}/*.?(js|jsx)`)
+  glob.sync(`${directory}/*.?(js|jsx|ts|tsx)/`)
     .forEach((component) => {
       const componentContent = fse.readFileSync(component, 'utf8');
       const componentMatch = componentContent.match(/export default (class)?\s?([a-zA-Z0-9]+)/);
@@ -127,7 +127,7 @@ function createComponentsList(categories) {
 /**
  * Iterate through the component sources
  */
-glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
+glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx|ts|tsx)', (err, files) => {
   const componentDirectories = [];
 
   console.log('Preparing...');
@@ -145,8 +145,10 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
    * handlebars template
    */
   console.log('Initializing categories...');
-  const categories = {},
-    indexFiles = [];
+  const categories = {};
+
+
+  const indexFiles = [];
   glob.sync('source/patterns/!(corporate-identity)/')
     .map(cf => cf.split('/')
       .slice(-2)[0])
@@ -181,7 +183,7 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
     }
 
 
-    const components = glob.sync(`${directory}/*.?(js|jsx)`)
+    const components = glob.sync(`${directory}/*.?(js|jsx|ts|tsx)`)
       .map(component => path.basename(component));
     const componentFiles = [];
 
@@ -208,7 +210,7 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx)', (err, files) => {
     componentFiles.forEach((cf) => {
       const category = categories[directory.split('/')[2]];
       if (category !== undefined) {
-        const files = glob.sync(`${cf}.?(js|jsx)`);
+        const files = glob.sync(`${cf}.?(js|jsx|ts|tsx)`);
         files.forEach((file) => {
           let className = path.basename(file, path.extname(file));
           if (className === 'index') {

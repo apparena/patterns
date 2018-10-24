@@ -9,22 +9,7 @@ import Row from '../../../00-atoms/grid/row/index';
 import Button from '../../../00-atoms/button';
 
 export default class PriceTableElement extends ReactComponent {
-    static propTypes = {
-        templateId: PropTypes.string,
-        productId: PropTypes.string,
-        imgSrc: PropTypes.string,
-        title: PropTypes.string,
-        price: PropTypes.number.isRequired,
-        articles: PropTypes.array,
-        element: PropTypes.object,
-        onClick: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.func
-        ]).isRequired,
-        isPopular: PropTypes.bool,
-        isFlatrate: PropTypes.bool,
-        discount: PropTypes.number
-    };
+
 
     getInitState() {
         const {isFlatrate, title, plans, price} = this.props;
@@ -79,7 +64,7 @@ export default class PriceTableElement extends ReactComponent {
         return (
             <div key={i}>
                 <div className={styles.infoContainer}>
-                    {block.map(::this.processInformation)}
+                    {block.map(this.processInformation.bind(this))}
                 </div>
                 {(i + 1 < this.props.articles.length) && <hr className={styles.horizontalDividerShort}/>}
             </div>
@@ -110,7 +95,7 @@ export default class PriceTableElement extends ReactComponent {
         if (typeof onClick === 'function') {
             return (
                 <Button className={styles.purchase_button}
-                       onClick={::this.onPurchase}
+                       onClick={this.onPurchase.bind(this)}
                        type="primary"
                        rounded
                 >
@@ -161,10 +146,27 @@ export default class PriceTableElement extends ReactComponent {
                         </sub>
                     </p>
                     <hr className={styles.horizontalDividerLong}/>
-                    {this.props.articles.map(::this.renderInfoBlocks)}
+                    {this.props.articles.map(this.renderInfoBlocks.bind(this))}
                     {this.renderButton()}
                 </div>
             </Col>
         );
     }
 }
+
+PriceTableElement.propTypes = {
+  templateId: PropTypes.string,
+  productId: PropTypes.string,
+  imgSrc: PropTypes.string,
+  title: PropTypes.string,
+  price: PropTypes.number.isRequired,
+  articles: PropTypes.array,
+  element: PropTypes.object,
+  onClick: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func
+  ]).isRequired,
+  isPopular: PropTypes.bool,
+  isFlatrate: PropTypes.bool,
+  discount: PropTypes.number
+};
