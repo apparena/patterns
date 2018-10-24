@@ -15,14 +15,16 @@
     "node": ">=7.0"
   },
   "scripts": {
-    "build": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.dev.js && babel ./source/patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
-    "build:prod": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.prod.js && babel ./source/patterns --ignore *.md,*.txt,*.mustache,*.spec.js,*.json  --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
+    "build": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.dev.js && babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
+    "build:prod": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.prod.js && babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
     "build:stats": "webpack --profile --progress --json > stats.json --config build/webpack/webpack.config.prod.js",
     "publish:generator:apparena-pattern": "npm publish source/generator-apparena-pattern",
     "start": "webpack-dev-server --progress --color --display-error-details --config build/webpack/webpack.config.dev.js --open",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "type-check": "tsc",
+    "build:patterns": "babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files"
   },
   "repository": {
     "type": "git",
@@ -67,14 +69,17 @@
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
     "@kadira/react-split-pane": "^1.4.7",
     "async": "^2.6.0",
     "autoprefixer": "8.3.0",
     "awesome-typescript-loader": "^5.2.0",
     "axios": "^0.18.0",
+    "babel-loader": "^8.0.4",
     "camelcase": "^5.0.0",
     "chalk": "^2.3.2",
     "clean-webpack-plugin": "^0.1.19",

@@ -8,6 +8,7 @@ interface RowProps {
     justifyContent?: 'start' | 'center' | 'end' | 'around' | 'between',
     alignItems?: 'start' | 'center' | 'end'
 }
+
 export default class Row extends React.Component<RowProps, {}>{
     constructor(props) {
         super(props);
@@ -27,6 +28,7 @@ export default class Row extends React.Component<RowProps, {}>{
             styles['row'],
             this.props.justifyContent && styles[`justify-content-${this.props.justifyContent}`],
             this.props.alignItems && styles[`align-items-${this.props.alignItems}`],
+
             this.props.className,
         );
 

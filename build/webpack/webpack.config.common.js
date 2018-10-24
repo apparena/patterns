@@ -18,7 +18,7 @@ module.exports = {
         resolve: { extensions: ['.ts', '.tsx', '.js', '.jsx'] },
         exclude: [/node_modules/, '/source/generator-apparena-pattern/generators/app/templates'],
         use: {
-          loader: 'awesome-typescript-loader',
+          loader: 'babel-loader',
         },
       },
       {

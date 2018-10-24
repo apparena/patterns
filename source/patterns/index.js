@@ -126,5 +126,5 @@ export {
   TableList,
   Tag,
   TagInput,
-  Tooltip,
+  Tooltip
 };

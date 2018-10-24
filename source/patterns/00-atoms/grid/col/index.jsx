@@ -13,6 +13,9 @@ export default class Col extends ReactComponent {
       }
     });
 
+    const hasSize = this.props.xl || this.props.lg
+      || this.props.md || this.props.sm || this.props.xs;
+
     // classes
     const componentClass = cx(
       this.props.xl && styles[`col-xl-${this.props.xl}`],
@@ -20,6 +23,7 @@ export default class Col extends ReactComponent {
       this.props.md && styles[`col-md-${this.props.md}`],
       this.props.sm && styles[`col-sm-${this.props.sm}`],
       this.props.xs && styles[`col-${this.props.xs}`],
+      !hasSize && styles.col,
       this.props.autoWidth && styles.col,
       this.props.xsOffset && styles[`offset-${this.props.xsOffset}`],
       this.props.smOffset && styles[`offset-sm-${this.props.smOffset}`],
@@ -190,8 +194,4 @@ Col.propTypes = {
    * Makes this column the n-th column (xl and up)
    */
   xlOrder: PropTypes.number,
-};
-
-Col.defaultProps = {
-  xs: '12',
 };
