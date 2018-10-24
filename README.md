@@ -74,5 +74,6 @@ If you would like to contribute patterns or add patterns to this
 library, head over to our [contributing section](/docs/contributing.md).
 
 ## License
+
 This project is licensed under the terms of the
 [MIT license](LICENSE.md)
