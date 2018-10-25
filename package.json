@@ -1,6 +1,6 @@
 {
   "name": "apparena-patterns",
-  "version": "2.2.2",
+  "version": "2.4.1",
   "license": "MIT",
   "description": "Corporate identity portal and React pattern library of App-Arena.com",
   "keywords": [
@@ -79,6 +79,8 @@
     "autoprefixer": "8.3.0",
     "awesome-typescript-loader": "^5.2.0",
     "axios": "^0.18.0",
+    "babel-core": "^7.0.0-bridge",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "camelcase": "^5.0.0",
     "chalk": "^2.3.2",
@@ -150,6 +152,7 @@
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "jest": {
+    "verbose": true,
     "setupFiles": [
       "./tests/jestsetup.js"
     ],

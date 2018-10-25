@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactComponent from '../../../react-utils/component/index';
 import Notification from '../notification/index';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 export default class NotificationContainer extends ReactComponent {
   renderNotification(notification, key) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ReactComponent } from 'apparena-patterns-react';
-import styles from './styles.scss';
+import styles from './styles.module.scss';
 import SyntaxHighlighter from 'react-syntax-highlighter/prism';
 import { tomorrow } from 'react-syntax-highlighter/styles/prism';
 

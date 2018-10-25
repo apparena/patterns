@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import styles from './index.scss';
+import styles from './index.module.scss';
 import Icon from '../../00-atoms/icons/index';
 
 function ModalHeader({className, headerText, onClose, ...props}) {

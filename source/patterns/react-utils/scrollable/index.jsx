@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactComponent from '../component';
 import cx from 'classnames';
 import GeminiScrollbar from 'react-gemini-scrollbar';
-import styles from './scrollable.scss';
+import styles from './scrollable.module.scss';
 
 export default class Scrollable extends ReactComponent {
 

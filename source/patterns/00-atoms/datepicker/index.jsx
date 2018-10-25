@@ -4,7 +4,7 @@ import cx from 'classnames';
 import 'react-dates/initialize';
 import SingleDatePicker from 'react-dates/lib/components/SingleDatePicker';
 import ReactComponent from '../../react-utils/component/index';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 export default class DatePicker extends ReactComponent {
   getInitState() {

@@ -15,27 +15,27 @@
 \*------------------------------------*/
 
 // Atoms
-@import "../patterns/00-atoms/spinner/index";
-@import "../patterns/00-atoms/button/index";
-@import "../patterns/00-atoms/icons/index";
+@import "../patterns/00-atoms/spinner/index.module";
+@import "../patterns/00-atoms/button/index.module";
+@import "../patterns/00-atoms/icons/index.module";
 
 // Molecules
-@import "../patterns/01-molecules/breadcrumb/index";
-@import "../patterns/01-molecules/card/index";
-@import "../patterns/01-molecules/dropdown/index";
-@import "../patterns/01-molecules/forms/form-group/index";
-@import "../patterns/01-molecules/forms/select";
-@import "../patterns/01-molecules/input-group/index";
-@import "../patterns/01-molecules/modal/index";
-@import "../patterns/01-molecules/navbar/index";
-@import "../patterns/01-molecules/messages/notification/index";
-@import "../patterns/01-molecules/messages/banner-message/index";
-@import "../patterns/01-molecules/progress-tracker/index";
+@import "../patterns/01-molecules/breadcrumb/index.module";
+@import "../patterns/01-molecules/card/index.module";
+@import "../patterns/01-molecules/dropdown/index.module";
+@import "../patterns/01-molecules/forms/form-group/index.module";
+@import "../patterns/01-molecules/forms/select.module";
+@import "../patterns/01-molecules/input-group/index.module";
+@import "../patterns/01-molecules/modal/index.module";
+@import "../patterns/01-molecules/navbar/index.module";
+@import "../patterns/01-molecules/messages/notification/index.module";
+@import "../patterns/01-molecules/messages/banner-message/index.module";
+@import "../patterns/01-molecules/progress-tracker/index.module";
 
 // Organisms
-@import "../patterns/02-organisms/auth/index";
-@import "../patterns/02-organisms/navigation/nav-secondary/index";
-@import "../patterns/02-organisms/navigation/nav-sidebar";
+@import "../patterns/02-organisms/auth/index.module";
+@import "../patterns/02-organisms/navigation/nav-secondary/index.module";
+@import "../patterns/02-organisms/navigation/nav-sidebar.module";
 
 /*------------------------------------*\
     $ABSTRACTS

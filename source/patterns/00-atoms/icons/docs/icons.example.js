@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Icon, Row } from 'apparena-patterns-react';
-import styles from './styles.scss';
+import styles from './styles.module.scss';
 
 export default class IconsExample extends React.Component {
   constructor(props) {

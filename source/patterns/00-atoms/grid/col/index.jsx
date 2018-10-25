@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import ReactComponent from '../../../react-utils/component/index';
-import styles from '../grid.scss';
+import styles from '../grid.module.scss';
 
 export default class Col extends ReactComponent {
   render() {

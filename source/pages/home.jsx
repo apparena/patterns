@@ -1,7 +1,9 @@
 import React from 'react';
-import { ReactComponent, Container, Col, Row, Button, Icon } from '../patterns/index';
 import { Link } from 'react-router-dom';
-import styles from '../css/main.scss';
+import {
+  ReactComponent, Container, Col, Row, Button, Icon,
+} from '../patterns/index';
+import styles from '../css/main.module.scss';
 
 export default class Home extends ReactComponent {
   render() {

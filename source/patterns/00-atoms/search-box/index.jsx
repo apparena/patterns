@@ -5,7 +5,7 @@ import i18n from 'i18n-js';
 import Input from '../forms/input';
 import InputGroup from '../../01-molecules/input-group';
 import Icon from '../icons';
-import styles from './index.scss';
+import styles from './index.module.scss';
 import ReactComponent from '../../react-utils/component';
 
 export default class SearchBox extends ReactComponent {

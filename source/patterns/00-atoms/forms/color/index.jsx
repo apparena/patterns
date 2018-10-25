@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Button, Col, ReactComponent, Row,
+  Button, Col, Row,
 } from '../../../index';
 import Picker from './picker';
 import SketchPicker from './sketchPicker';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 export default class Color extends React.Component {
   renderColorPicker() {

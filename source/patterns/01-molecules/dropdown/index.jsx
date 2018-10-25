@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import ReactComponent from '../../react-utils/component/index';
 import Button from '../../00-atoms/button';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const ESC_KEYCODE = 27;
 const NO_OP = () => undefined;

@@ -4,7 +4,7 @@ import cx from 'classnames';
 import AnimatedNumber from 'react-animated-number';
 import ReactComponent from '../../../react-utils/component/index';
 import styles from './index.scss';
-import priceTableStyles from '../index.scss';
+import priceTableStyles from '../index.module.scss';
 import Col from '../../../00-atoms/grid/col/index';
 import Row from '../../../00-atoms/grid/row/index';
 import SelectMenu from '../../../00-atoms/forms/select-menu';

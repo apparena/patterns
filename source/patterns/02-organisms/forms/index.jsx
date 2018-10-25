@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 function Form({className, type, ...props}) {
     props.className = cx(

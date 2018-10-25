@@ -4,7 +4,7 @@ import ReactComponent from '../../react-utils/component/index';
 import cx from 'classnames';
 import Portal from '../../react-utils/portal';
 import Stick from '../../react-utils/stick';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const POSITIONING = [
     'top',

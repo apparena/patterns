@@ -4,7 +4,7 @@ import {shallow, configure} from 'enzyme';
 import {spy} from 'sinon';
 import PriceTable from '../index';
 import Plans from './price-table.json';
-import styles from '../index.scss';
+import styles from '../index.module.scss';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});

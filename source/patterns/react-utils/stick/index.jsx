@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import ReactComponent from '../component';
-import styles from './stick.scss';
+import styles from './stick.module.scss';
 
 const POSITIONING = [
   'top',

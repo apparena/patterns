@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 import { ReactComponent } from '../../index';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 
 export default class AsyncLoad extends ReactComponent {
