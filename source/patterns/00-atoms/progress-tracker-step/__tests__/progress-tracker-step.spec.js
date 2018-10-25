@@ -3,7 +3,7 @@ import React from 'react';
 import {shallow, mount, configure} from 'enzyme';
 import {spy} from 'sinon';
 import ProgressTrackerStep from '../index';
-import style from '../index.scss';
+import style from '../index.module.scss';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});

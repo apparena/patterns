@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import Select from 'react-select';
 import ReactComponent from '../../../react-utils/component/index';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 export default class TagInput extends ReactComponent {
   getInitState() {

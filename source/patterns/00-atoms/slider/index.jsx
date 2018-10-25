@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import Component from '../../react-utils/component/index';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 /**
  * Verifies min/max range.

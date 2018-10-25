@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import ReactComponent from '../../../react-utils/component/index';
-import styles from '../nav-sidebar.scss';
+import styles from '../nav-sidebar.module.scss';
 
 export default class NavSecondaryGroup extends ReactComponent {
   render() {

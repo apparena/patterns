@@ -4,7 +4,7 @@ import cx from 'classnames';
 import Toggle from 'react-toggle';
 import ReactComponent from '../../../react-utils/component/index';
 import Tooltip from '../../../01-molecules/tooltip';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 export default class Checkbox extends ReactComponent {
   /**

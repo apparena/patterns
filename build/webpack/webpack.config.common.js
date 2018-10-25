@@ -7,6 +7,50 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Visualizer = require('webpack-visualizer-plugin');
 const config = require('./env/common/config');
+const autoprefixer = require('autoprefixer');
+
+const MiniCssExtractPluginLoader = {
+  loader: MiniCssExtractPlugin.loader,
+  options: {
+    publicPath: path.resolve(config.paths.dist, 'css'),
+  },
+};
+
+const CSSModuleLoader = {
+  loader: 'typings-for-css-modules-loader',
+  options: {
+    namedExport: true,
+    camelCase: true,
+    modules: true,
+    localIdentName: '[local]--[hash:base64:5]',
+    sourceMap: true,
+    importLoaders: 2,
+  },
+};
+
+const CSSLoader = {
+  loader: 'typings-for-css-modules-loader',
+  options: {
+    namedExport: false,
+    camelCase: true,
+    modules: false,
+    sourceMap: true,
+    importLoaders: 2,
+  },
+};
+
+const postCSSLoader = {
+  loader: 'postcss-loader',
+  options: {
+    ident: 'postcss',
+    sourceMap: true,
+    plugins: () => [
+      autoprefixer({
+        browsers: ['>1%', 'last 4 versions', 'Firefox ESR', 'not ie < 9'],
+      }),
+    ],
+  },
+};
 
 module.exports = {
   context: config.paths.assets,
@@ -27,37 +71,22 @@ module.exports = {
         loader: 'source-map-loader',
       },
       {
-        oneOf: [
-          {
-            // Global imports without css modules
-            test: /\.global\.(scss|css)$/,
-            use: [
-              config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
-              'css-loader',
-              'resolve-url-loader',
-              'sass-loader',
-            ],
-          },
-          {
-            // Default imports using local styles
-            test: /\.(scss|css)$/,
-            use: [
-              config.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
-              {
-                loader: 'typings-for-css-modules-loader',
-                options: {
-                  camelCase: true,
-                  importLoaders: 2,
-                  localIdentName: config.mode === 'production' ? '[hash:base64:5]' : '[local]--[hash:base64:5]',
-                  modules: true,
-                  namedExport: false,
-                  sourceMap: true,
-                },
-              },
-              'resolve-url-loader?sourceMap',
-              'sass-loader?sourceMap',
-            ],
-          },
+        test: /\.scss$/,
+        exclude: /\.module\.scss$/,
+        use: [
+          MiniCssExtractPluginLoader,
+          CSSLoader,
+          postCSSLoader,
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.module\.scss$/,
+        use: [
+          MiniCssExtractPluginLoader,
+          CSSModuleLoader,
+          postCSSLoader,
+          'sass-loader',
         ],
       },
       {

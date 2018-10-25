@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactComponent from '../../react-utils/component/index';
 import cx from 'classnames';
-import styles from './index.scss';
+import styles from './index.module.scss';
 import Element from './docs/price-table-element';
 import Checkbox from '../../00-atoms/forms/checkbox/index';
 import CustomPackage from './custom-package-creator';

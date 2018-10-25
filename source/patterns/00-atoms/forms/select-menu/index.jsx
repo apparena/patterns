@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import ReactComponent from '../../../react-utils/component/index';
 import Select from 'react-select';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 export default class SelectMenu extends ReactComponent {
     render() {

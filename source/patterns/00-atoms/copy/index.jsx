@@ -5,7 +5,7 @@ import Clipboard from 'clipboard';
 import ReactComponent from '../../react-utils/component';
 import Tooltip from '../../01-molecules/tooltip';
 import Icon from '../icons/index';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 export default class Copy extends ReactComponent {
   getInitState() {

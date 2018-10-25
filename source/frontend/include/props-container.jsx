@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {ReactComponent, Table} from 'apparena-patterns-react';
-import styles from './styles.scss';
+import styles from './styles.module.scss';
 
 export default class Props extends ReactComponent {
     static defaultProps = {

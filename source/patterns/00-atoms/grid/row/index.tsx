@@ -1,6 +1,6 @@
 import * as React from 'react';
 import cx from 'classnames';
-import styles from '../grid.scss';
+import styles from '../grid.module.scss';
 
 interface RowProps {
     children: React.ReactChild,

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactComponent from '../../react-utils/component/index';
 import Draggable from '../../react-utils/draggable';
 import cx from 'classnames';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const MODAL_TYPES = [
     'primary',

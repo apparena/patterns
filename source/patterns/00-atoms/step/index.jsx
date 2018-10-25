@@ -5,7 +5,7 @@ import cx from 'classnames';
 import {
   Button, Col, Icon, Row,
 } from '../../index';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 function Step({
   children, active, done, title, topic, btnText, onClick, btnTextDone,

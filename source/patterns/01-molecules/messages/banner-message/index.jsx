@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import ReactComponent from '../../../react-utils/component/index';
 import Icon from '../../../00-atoms/icons/index';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const ALERT_TYPES = [
   'danger',
