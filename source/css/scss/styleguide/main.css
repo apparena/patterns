@@ -2,11 +2,11 @@
 Error: File to import not found or unreadable: ~bootstrap/scss/variables.
        Load path: /mnt/c/Users/s.buckpesch/Projects/styleguide/source/css
         on line 68 of source/css/scss/abstracts/_variables_bootstrap.scss
-        from line 6 of source/css/scss/styleguide/main.scss
+        from line 6 of source/css/scss/styleguide/main.module.scss
 
 Backtrace:
 source/css/scss/abstracts/_variables_bootstrap.scss:68
-source/css/scss/styleguide/main.scss:6
+source/css/scss/styleguide/main.module.scss:6
 /var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
 /var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
