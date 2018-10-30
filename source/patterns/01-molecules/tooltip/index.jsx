@@ -97,7 +97,7 @@ export default class Tooltip extends ReactComponent {
                         transition={this.props.transition}
                         offset={10}
                     >
-                        <div className={cx(styles.tooltip, styles[this.props.positioning.split(' ')[0]])}>
+                        <div className={cx(styles.tooltip, this.props.positioning && styles[this.props.positioning.split(' ')[0]])}>
                             {label}
                         </div>
                     </Stick>
