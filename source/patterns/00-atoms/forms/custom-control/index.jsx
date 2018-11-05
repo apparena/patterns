@@ -8,8 +8,16 @@ export default class CustomControl extends React.Component {
     super(props);
 
     this.state = {
-      checked: this.props.checked
+      checked: this.props.checked,
     };
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.checked !== this.props.checked) {
+      this.setState({
+        checked: this.props.checked,
+      });
+    }
   }
 
   /**
@@ -18,10 +26,10 @@ export default class CustomControl extends React.Component {
    */
   handleChange(event) {
     this.setState({
-      checked: event.target.checked
+      checked: event.target.checked,
     });
     this.props.onChange(event);
-  };
+  }
 
   render() {
     const typeClassName = this.props.type === 'checkbox' ? 'custom-checkbox' : 'custom-radio';
@@ -106,7 +114,7 @@ CustomControl.propTypes = {
   /**
    * the value of the input field, which will be submitted
    */
-  value: PropTypes.string
+  value: PropTypes.string,
 };
 
 CustomControl.defaultProps = {
@@ -116,5 +124,5 @@ CustomControl.defaultProps = {
   type: 'checkbox',
   validationState: 'default',
   value: '',
-  onChange: () => {}
+  onChange: () => {},
 };

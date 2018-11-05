@@ -24,7 +24,8 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "type-check": "tsc",
-    "build:patterns": "babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files"
+    "build:patterns": "babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files",
+    "styleguide:build": "styleguidist build"
   },
   "repository": {
     "type": "git",
@@ -127,9 +128,11 @@
     "precss": "^3.1.2",
     "raw-loader": "^0.5.1",
     "react-docgen": "^2.20.1",
+    "react-docgen-typescript": "^1.12.0",
     "react-dom": "^16.3.1",
     "react-highlight": "^0.12.0",
     "react-hot-loader": "^4.0.1",
+    "react-styleguidist": "^8.0.3",
     "react-tap-event-plugin": "^3.0.2",
     "react-test-renderer": "^16.3.2",
     "regenerator-runtime": "^0.11.1",
