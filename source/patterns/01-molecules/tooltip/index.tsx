@@ -1,89 +1,91 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ReactComponent from '../../react-utils/component/index';
+import * as React from 'react';
 import cx from 'classnames';
 import Portal from '../../react-utils/portal';
 import Stick from '../../react-utils/stick';
 import styles from './index.module.scss';
 
-const POSITIONING = [
-    'top',
-    'top left',
-    'top right',
-    'bottom',
-    'bottom left',
-    'bottom right',
-    'left',
-    'left top',
-    'left bottom',
-    'right',
-    'right top',
-    'right bottom',
-    'overlay'
-];
+type TooltipPositionOptions =
+    'top' |
+    'top left' |
+    'top right' |
+    'bottom' |
+    'bottom left' |
+    'bottom right' |
+    'left' |
+    'left top' |
+    'left bottom' |
+    'right' |
+    'right top' |
+    'right bottom' |
+    'overlay';
 
-export default class Tooltip extends ReactComponent {
+type Props = {
+    /**
+     * Defines the element which should get the tooltip
+     */
+    children: JSX.Element,
+    /**
+     * Sets the text of the tooltip
+     */
+    label: string,
+    /**
+     * Deprecated
+     */
+    transition?: string,
+    /**
+     * Additional classNames
+     */
+    className?: string,
+    /**
+     * Set the position of the tooltip
+     */
+    positioning?: TooltipPositionOptions,
+    /**
+     * Set the HTML zIndex property
+     */
+    zIndex?: number,
+    fixed?: boolean
+}
 
+type State = {
+    showing: boolean
+}
 
-    getInitState() {
-      this.propTypes = {
-        /**
-         * Defines the element which should get the tooltip
-         */
-        children: PropTypes.node.isRequired,
-        /**
-         * Sets the text of the tooltip
-         */
-        label: PropTypes.string.isRequired,
-        /**
-         * Deprecated
-         */
-        transition: PropTypes.string,
-        /**
-         * Additional classNames
-         */
-        className: PropTypes.string,
-        /**
-         * Set the position of the tooltip
-         */
-        positioning: PropTypes.oneOf(POSITIONING),
-        /**
-         * Set the HTML zIndex property
-         */
-        zIndex: PropTypes.number
-      };
-
-      this.defaultProps = {
+export default class Tooltip extends React.Component<Props, State> {
+    public readonly defaultProps = {
         transition: 'fadeIn',
         positioning: 'top'
-      };
-        return {
-            showing: false
-        };
-    }
+    };
 
-    showTooltip() {
+    public readonly state = {
+        showing: false
+    };
+
+    private timeout;
+    private _handler;
+
+    private showTooltip() {
         this.setState({
             showing: true
         });
     }
 
-    hideTooltip() {
+    private hideTooltip() {
         this.setState({
             showing: false
         });
     }
 
-    onMouseEnter() {
+    private onMouseEnter() {
         this.timeout = setTimeout(this.showTooltip.bind(this), 0);
     }
 
-    onMouseLeave() {
+    private onMouseLeave() {
         clearTimeout(this.timeout);
         this.hideTooltip();
     }
 
-    renderTooltip() {
+    private renderTooltip() {
         if (this.state.showing) {
             const {label} = this.props;
 
