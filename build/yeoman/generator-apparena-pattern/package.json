@@ -11,6 +11,7 @@
 	"dependencies": {
 		"escodegen": "^1.9.0",
 		"esprima": "^4.0.0",
+		"lodash": "^4.17.11",
 		"uppercamelcase": "^3.0.0",
 		"yeoman-generator": "^2.0.2"
 	}
