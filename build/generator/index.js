@@ -248,5 +248,5 @@ glob('source/patterns/*/**/!(__tests__|docs)/*.?(js|jsx|ts|tsx)', (err, files) =
     components: indexFiles,
   };
   const renderedIndexTemplate = indexTemplate(indexTemplateData);
-  fse.outputFileSync('source/frontend/components/index.jsx', renderedIndexTemplate, 'utf8');
+  fse.outputFileSync('source/frontend/components/index.tsx', renderedIndexTemplate, 'utf8');
 });

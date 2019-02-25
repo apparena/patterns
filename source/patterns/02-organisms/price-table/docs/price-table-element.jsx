@@ -6,7 +6,7 @@ import styles from '../index.module.scss';
 import Tag from '../../../00-atoms/tag/index';
 import Col from '../../../00-atoms/grid/col/index';
 import Row from '../../../00-atoms/grid/row/index';
-import Button from '../../../00-atoms/button';
+import Button from '../../../00-atoms/button/Button';
 
 export default class PriceTableElement extends ReactComponent {
 

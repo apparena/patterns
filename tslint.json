@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-airbnb",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    // override tslint-react rules here
+    "jsx-no-lambda": false,
+    "prettier": true,
+    "import-name": [
+      true,
+      {
+        "clipboard" : "Clipboard",
+        "createBrowserHistory": "createHistory",
+        "classnames": "cx",
+        "counter" : "Counter",
+        "lodash": "_",
+        "reactLoadable": "Loadable",
+        "routeParser": "Route",
+        "stylesModuleScss": "styles",
+        "indexModuleScss": "styles",
+        "topNav": "TopNav",
+        "types": "actionTypes"
+      }
+    ]
+  }
+}

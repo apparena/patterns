@@ -2,7 +2,7 @@
 import React from 'react';
 import { mount, shallow, configure } from 'enzyme';
 import { spy } from 'sinon';
-import Button from '../index';
+import Button from '..';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
