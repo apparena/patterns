@@ -1,7 +1,7 @@
 /**
  * Atoms
  */
-import Button from './00-atoms/button';
+import Button from './00-atoms/button/Button';
 import Checkbox from './00-atoms/forms/checkbox';
 import Col from './00-atoms/grid/col';
 import ColorPicker from './00-atoms/forms/color';

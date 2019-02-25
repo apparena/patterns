@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import * as components from './components/index';
 import componentsList from './components/list.json';
 import cloneDeep from 'lodash/cloneDeep';
-import {Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from '../patterns/index';
+import {Alert, Card, Col, FormGroup, Input, Nav, Navbar, NavItem, NavSecondaryGroup, ReactComponent, Row, Table} from '../patterns/index';
 import styles from './styles/home.module.scss';
 import {Route, Link} from 'react-router-dom';
 import {AnimatedSwitch} from 'react-router-transition';
@@ -213,7 +213,13 @@ class Home extends ReactComponent {
     }
 
     renderUIPatternsContainer() {
-        return (
+        return [
+            <Alert type={"info"}>
+              <p>
+                This documentation will not be updated. We are currently working on a new documentation.
+                You can check it already out <a href={"docs/index.html"}> here </a>
+              </p>
+            </Alert>,
             <Card>
                 <div type="card-header">
                     Components
@@ -227,7 +233,7 @@ class Home extends ReactComponent {
                     {this.state.categories.map(this.renderTable)}
                 </div>
             </Card>
-        );
+        ];
     }
 
     renderStaticPageLinks() {

@@ -4,7 +4,7 @@ import ReactComponent from '../../react-utils/component/index';
 import styles from './index.module.scss';
 import Col from '../../00-atoms/grid/col/index';
 import Row from '../../00-atoms/grid/row/index';
-import Button from '../../00-atoms/button';
+import Button from '../../00-atoms/button/Button';
 import Slider from '../../00-atoms/slider';
 
 export default class PriceComponentSingle extends ReactComponent {

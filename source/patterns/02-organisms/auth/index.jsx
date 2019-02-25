@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactComponent from '../../react-utils/component/index';
 
 import Card from '../../01-molecules/card';
-import Button from '../../00-atoms/button';
+import Button from '../../00-atoms/button/docs';
 
 export default class Auth extends ReactComponent {
 

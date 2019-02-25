@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import ReactComponent from '../../react-utils/component/index';
-import Button from '../../00-atoms/button';
+import Button from '../../00-atoms/button/Button';
 import styles from './index.module.scss';
 
 const ESC_KEYCODE = 27;

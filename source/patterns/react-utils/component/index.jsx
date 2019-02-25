@@ -10,7 +10,7 @@ import i18n from 'i18n-js';
 export default class BaseComponent extends React.Component {
   constructor(props, children) {
     super(props, children);
-    console.warn('The ReactComponent will be removed in the next major release. Replace this component with React.Component coming from React.');
+    console.warn('The ReactComponent will be removed in the next major release. Replace this component with the Platform Component.');
     this.state = this.getInitState ? this.getInitState() : {};
   }
 

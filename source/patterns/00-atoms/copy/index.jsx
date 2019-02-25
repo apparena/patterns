@@ -58,7 +58,7 @@ export default class Copy extends ReactComponent {
         data-clipboard-text={text}
       >
         <div className={styles.clipboard}>
-          <Tooltip label={this.state.label}>
+          <Tooltip zIndex={this.props.zIndex} label={this.state.label}>
             <Icon name="clipboard" />
           </Tooltip>
         </div>
@@ -74,8 +74,10 @@ Copy.propTypes = {
   options: PropTypes.object,
   className: PropTypes.string,
   text: PropTypes.string.isRequired,
+  zIndex: PropTypes.number,
 };
 
 Copy.defaultProps = {
   options: {},
+  zIndex: 2500
 };

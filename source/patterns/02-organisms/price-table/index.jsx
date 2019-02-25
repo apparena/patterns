@@ -8,7 +8,7 @@ import Checkbox from '../../00-atoms/forms/checkbox/index';
 import CustomPackage from './custom-package-creator';
 import Col from '../../00-atoms/grid/col/index';
 import Row from '../../00-atoms/grid/row/index';
-import Button from '../../00-atoms/button';
+import Button from '../../00-atoms/button/Button';
 
 export default class PriceTable extends ReactComponent {
 

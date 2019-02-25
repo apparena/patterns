@@ -15,17 +15,17 @@
     "node": ">=7.0"
   },
   "scripts": {
-    "build": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.dev.js && babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
-    "build:prod": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.prod.js && babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js",
+    "build": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.dev.js && babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js && styleguidist build",
+    "build:prod": "babel-node build/generator/index.js && webpack --progress --color --display-error-details --config build/webpack/webpack.config.prod.js && babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files && babel-node ./build/generator/copy-files.js && styleguidist build",
     "build:stats": "webpack --profile --progress --json > stats.json --config build/webpack/webpack.config.prod.js",
     "publish:generator:apparena-pattern": "npm publish source/generator-apparena-pattern",
     "start": "webpack-dev-server --progress --color --display-error-details --config build/webpack/webpack.config.dev.js --open",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "type-check": "tsc",
     "build:patterns": "babel ./source/patterns --extensions \".tsx,.jsx,.js\" --ignore *.md,*.txt,*.mustache,*.spec.js,*.json --out-dir ./dist/apparena-patterns-react/patterns --copy-files",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "styleguide:start": "styleguidist server"
   },
   "repository": {
     "type": "git",
@@ -126,6 +126,7 @@
     "postcss": "^6.0.21",
     "postcss-loader": "^2.1.4",
     "precss": "^3.1.2",
+    "prettier": "^1.16.4",
     "raw-loader": "^0.5.1",
     "react-docgen": "^2.20.1",
     "react-docgen-typescript": "^1.12.0",
@@ -142,6 +143,10 @@
     "sinon": "^4.5.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.20.3",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.0.1",
     "typings-for-css-modules-loader": "^1.7.0",
     "uglifyjs-webpack-plugin": "^1.2.4",

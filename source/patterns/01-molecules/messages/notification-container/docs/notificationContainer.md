@@ -11,7 +11,7 @@ Within various apps we use Redux to manage notifications and modals. To
 implement that pattern you can do the follwing:
 
 1. Add a NotificationContainer to your Root component and connect your
-   redux store (e.g containers/myapp/index.jsx
+   redux store (e.g containers/myapp/index.tsx
 
 ```
 ...
@@ -108,7 +108,7 @@ export default function overlaysReducer(state = defaultState, action = {}) {
 }
 ```
 
-1. Add the reducer to your reducer index file (e.g. reducers/index.jsx)
+1. Add the reducer to your reducer index file (e.g. reducers/index.tsx)
 
 ```
 import { combineReducers } from 'redux';
