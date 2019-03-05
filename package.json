@@ -50,7 +50,7 @@
     "lodash.kebabcase": "^4.1.1",
     "npm": "^5.6.0",
     "prop-types": "^15.6.1",
-    "react": "^16.3.1",
+    "react": "^16.8.3",
     "react-addons-update": "^15.6.2",
     "react-animated-number": "^0.4.4",
     "react-color": "^2.14.1",
